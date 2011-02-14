@@ -39,21 +39,107 @@
 <body>
 
   <div id="container">
-    <header>
-
-    </header>
-    
-    <div id="main">
+    <!-- + header -->
+    <header id="header">
+      <div class="wrapper clearfix">
+        
+        <!-- + logo -->
+        <h1><a href="#" title="RMS">RMS</a></h1>
+        <!-- / logo -->
       
-      <div style="font:20px/20px courier; color: #fff; margin:40px; padding:10px; border:2px solid #000; background:#666; width:200px">
-        Hi, how are you?
+        <!-- + login -->
+        <div id="login">
+          <form id="form_login" method="post" action="">
+            <input type="text" name="search" id="form_login_search" />
+            <button type="submit" name="submit" id="form_login_submit" value="Search">S</button>
+          </form>
+          <a href="#" title="Client Login">Client Login</a>
+        </div>
+        <!-- / login -->
+      
+        <!-- + global nav -->
+        <nav>
+          <ul class="clearfix">
+            <li><a href="#" title="Risk">Risk</a></li>
+            <li><a href="#" title="Markets">Markets</a></li>
+            <li><a href="#" title="Solutions">Solutions</a></li>
+            <li><a href="#" title="About">About</a></li>
+            <li><a href="#" title="Careers">Careers</a></li>
+          </ul>
+        </nav>
+        <!-- / global nav -->
+
       </div>
-
-    </div>
+    </header>
+    <!-- / header -->
     
-    <footer>
+    <!-- + main -->
+    <div id="main" class="wrapper">
+      <!-- + banner -->
+      <section id="banner">
+        [banner graphic]
+      </section>
+      <!-- / banner -->
 
+      <!-- + search widget -->
+      <section id="search">
+        [search form]
+      </section>
+      <!-- / search widget -->
+
+      <!-- + main content -->
+      <section id="content" class="clearfix">
+        
+        <!-- + search results -->
+        <section id="search_results" class="mainSection">
+          <hgroup>
+            <h1>Job Search Results:</h1>
+          </hgroup>
+
+          <!-- + list results -->
+          <article>
+            <header>
+              <time datetime="2011-02-11" pubdate>February 11, 2011</time>
+              <h1 class="clearfix">
+                <a href="#" title="Senior Field Engineer">Senior Field Engineer</a>
+                <span class="loc">Hackensack, NJ</span>
+              </h1>
+            </header>
+            <p>Consequat ludus eros commoveo vicis bis ex quibus acsi augue veniam quod quidne. Valetudo enim quibus tation nulla lobortis, appellatio utinam, modo nunc augue utinam probo, quis.</p>
+          </article>
+
+          <article class="alt">
+            <header>
+              <time datetime="2011-02-11" pubdate>February 11, 2011</time>
+              <h1 class="clearfix">
+                <a href="#" title="Senior Linux System Administrator">Senior Linux System Administrator</a>
+                <span class="loc">Newark, CA</span>
+              </h1>
+            </header>
+            <p>Consequat ludus eros commoveo vicis bis ex quibus acsi augue veniam quod quidne. Valetudo enim quibus tation nulla lobortis, appellatio utinam, modo nunc augue utinam probo, quis.</p>
+          </article>
+          <!-- / list results -->
+        </section>
+        <!-- / search results -->
+
+        <!-- + sidebar -->
+        <aside id="sidebar">
+          [sidebar content]
+        </aside>
+        <!-- / sidebar -->
+        
+      </section>
+      <!-- / main content -->
+    </div>
+    <!-- / main -->
+    
+    <!-- + footer -->
+    <footer>
+      <div class="wrapper">
+        [footer content]
+      </div>
     </footer>
+    <!-- / footer -->
   </div> <!--! end of #container -->
 
 
