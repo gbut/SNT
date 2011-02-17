@@ -1,11 +1,11 @@
 <!-- + main -->
 <div id="main" class="wrapper">
-  <!--#include file="banner.htm" -->
-  <!--#include file="job-search.htm" -->
-  <!--#if expr="\"$DOCUMENT_NAME\" = \"template01.htm\"" -->
-    <span class="tmpMsg">This is <!--#echo var="DOCUMENT_NAME" --></span>
-  <!--#else -->
+  <!--#if expr="\"$DOCUMENT_NAME\" = \"index.htm\"" -->
+    <!--#include file="banner.htm" -->
+    <!--#include file="job-search.htm" -->
     <!--#include file="content.htm" -->
+  <!--#else -->
+    <span class="tmpMsg">This is <!--#echo var="DOCUMENT_NAME" --></span>
   <!--#endif -->
 </div>
 <!-- / main -->
