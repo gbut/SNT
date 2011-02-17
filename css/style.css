@@ -365,11 +365,22 @@ input[type=text] {
 
 
 
+/* TEMP */
 
+.tid {
+  position:absolute;
+  border:1px solid #ccc;
+  background:#eee;
+  padding:6px;
+}
 
+.tmpMsg {
+  font-size:2em;
+  font-weight:bold;
+  color:#000;
+}
 
-
-
+/* / TEMP */
 
 
 

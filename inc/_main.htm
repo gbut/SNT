@@ -2,6 +2,10 @@
 <div id="main" class="wrapper">
   <!--#include file="banner.htm" -->
   <!--#include file="job-search.htm" -->
-  <!--#include file="content.htm" -->
+  <!--#if expr="\"$DOCUMENT_NAME\" = \"template01.htm\"" -->
+    <span class="tmpMsg">This is <!--#echo var="DOCUMENT_NAME" --></span>
+  <!--#else -->
+    <!--#include file="content.htm" -->
+  <!--#endif -->
 </div>
 <!-- / main -->
