@@ -265,7 +265,8 @@ input[type=text] {
 #header #login {
   float:                right;
   clear:                right;
-  width:256px;
+  width:306px;
+  text-align:right;
   padding:              12px 0 16px;
 }
 #header #login form {
