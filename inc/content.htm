@@ -3,31 +3,21 @@
 
   <!--#if expr="\"$DOCUMENT_NAME\" = \"template01.htm\"" -->
   
-    <!--#include file="content/home.htm" -->
+    <!--#include virtual="content/home.htm" -->
     
   <!--#elif expr="\"$DOCUMENT_NAME\" = \"template02.htm\"" -->
   
-    <!--#include file="content/search-results.htm" -->
-
-    <!-- + sidebar -->
-    <aside id="sidebar">
-      [sidebar content]
-    </aside>
-    <!-- / sidebar -->
+    <!--#include virtual="content/search-results.htm" -->
+    <!--#include file="sidebar.htm" -->
     
   <!--#elif expr="\"$DOCUMENT_NAME\" = \"template03.htm\"" -->
 
-    <!--#include file="content/job-detail.htm" -->
-    
-    <!-- + sidebar -->
-    <aside id="sidebar">
-      [sidebar content]
-    </aside>
-    <!-- / sidebar -->
+    <!--#include virtual="content/job-detail.htm" -->
+    <!--#include file="sidebar.htm" -->
 
   <!--#elif expr="\"$DOCUMENT_NAME\" = \"template04.htm\"" -->
 
-    <!--#include file="content/chat.htm" -->
+    <!--#include virtual="content/chat.htm" -->
 
   <!--#else -->
   
