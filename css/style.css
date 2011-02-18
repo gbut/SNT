@@ -290,7 +290,7 @@ input[type=text] {
   display:inline;
   font-size:93%;
   font-weight:bold;
-  height:25px;
+  height:43px;
   overflow:visible;
 }
 #header nav ul li a {
@@ -304,13 +304,16 @@ input[type=text] {
   border:1px solid gray;
   border-width:0 1px;
 }
+#header nav ul li.selected {
+  border-bottom:4px solid red;
+}
 #header nav ul li a:hover,
-#header nav ul li a:active,
-#header nav ul li.hover a {
+#header nav ul li a:active {
   color:red;
   background:#f4f4f4;
   padding-bottom:50px;
 }
+
 #header nav ul li ul {
   width:460px;
   border:1px solid gray;
@@ -323,8 +326,7 @@ input[type=text] {
   z-index:1;
   display:none;
 }
-#header nav ul li:hover ul,
-#header nav ul li.hover ul {
+#header nav ul li:hover ul {
   display:block;
 }
 #header nav ul li ul li {
@@ -364,8 +366,7 @@ input[type=text] {
   top:-1px;
 }
 #header nav ul li ul li ul li a:hover,
-#header nav ul li ul li ul li a:active,
-#header nav ul li.hover ul li ul li a {
+#header nav ul li ul li ul li a:active {
   color:inherit;
   background:none;
   padding:6px 0;
