@@ -473,6 +473,29 @@ input[type=text] {
 
 /* TEMP */
 
+.indexTitle {
+  font-size:2em;
+  margin:40px 0 0 40px;
+}
+
+ul.index {
+  line-height:1.5em;
+  margin:0 40px;
+  padding:10px;
+  border:1px solid #ccc;
+  background:#eee;
+}
+ul.index li {
+  margin-left:20px;
+}
+ul.index li a {
+  text-decoration:none;
+}
+ul.index li a:hover {
+  color:#eee;
+  background:#666;
+}
+
 .tid {
   position:absolute;
   border:1px solid #ccc;
