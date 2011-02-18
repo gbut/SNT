@@ -496,11 +496,22 @@ ul.index li a:hover {
   background:#666;
 }
 
-.tid {
+ul.index.global {
+  font-size:.8em;
+  font-weight:bold;
+  margin:2px 0 0 0;
+  padding:4px;
   position:absolute;
-  border:1px solid #ccc;
-  background:#eee;
-  padding:6px;
+  z-index:100;
+  list-style-type:none;
+  opacity:0.8;
+  filter:alpha(opacity=80);
+}
+ul.index.global li {
+  margin-left:0; 
+}
+ul.index.global li a {
+  font-weight:normal;
 }
 
 .tmpMsg {
