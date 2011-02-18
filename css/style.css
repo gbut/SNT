@@ -285,16 +285,119 @@ input[type=text] {
 
 #header nav ul li {
   float:                left;
-  margin-right:3px;
+  position:             relative;
+  margin-right:-1px;
   display:inline;
+  font-size:93%;
+  font-weight:bold;
+  height:25px;
+  overflow:visible;
 }
 #header nav ul li a {
+  text-decoration:      none;
   text-transform:       uppercase;
   display:              block;
-  padding:4px;
-  background:#efefef;
-  border:1px solid #cccacb;
+  position:             relative;
+  z-index:              5;
+  height:19px;
+  padding:3px 30px;
+  border:1px solid gray;
+  border-width:0 1px;
 }
+#header nav ul li a:hover,
+#header nav ul li a:active {
+  color:red;
+  background:#f4f4f4;
+  padding-bottom:50px;
+}
+#header nav ul li ul {
+  width:460px;
+  border:1px solid gray;
+  border-width:0 1px 1px;
+  background:#f4f4f4;
+  padding:16px;
+  position:absolute;
+  top:57px;
+  left:0;
+  z-index:1;
+  display:none;
+}
+#header nav ul li:hover ul {
+  display:block;
+}
+#header nav ul li ul li {
+  float:                none;
+  margin:               0;
+  display:              block;
+  height:               auto;
+}
+#header nav ul li ul li .subnavLt {
+  width:                225px;
+  padding:              23px 23px 0 7px;
+  border-right:         1px solid gray;
+  float:                left;
+}
+#header nav ul li ul li .subnavRt {
+  width:                174px;
+  padding:              23px 7px 0 23px;
+  float:                left;
+}
+#header nav ul li ul li ul {
+  width:auto;
+  border:none;
+  background:none;
+  padding:0;
+  position:relative;
+  top:0;
+  overflow:hidden;
+}
+#header nav ul li ul li ul li {
+}
+#header nav ul li ul li ul li a {
+  text-transform:       none;
+  height:auto;
+  padding:6px 0;
+  border:1px solid gray;
+  border-width:1px 0 0;
+  top:-1px;
+}
+#header nav ul li ul li ul li a:hover,
+#header nav ul li ul li ul li a:active {
+  color:inherit;
+  background:none;
+  padding:6px 0;
+}
+#header nav ul li ul li ul li a h4 {
+  font-size:125%;
+}
+#header nav ul li ul li ul li a p {
+  color:#888;
+  font-weight:normal;
+}
+#header nav ul li ul li .extras h4 {
+  color:#888;
+  font-size:125%;
+  text-align:center;
+  margin:0 0 10px;
+}
+#header nav ul li ul li .extras img.fakeImg {
+  margin:0 auto 10px;
+  display:block;
+  width:105px;
+  height:105px;
+  background:green;
+}
+#header nav ul li ul li .extras a.cta {
+  margin:0 auto;
+  display:block;
+  color:#fff;
+  background:#3279a0;
+  text-transform:uppercase;
+  padding:10px 16px 5px;
+  text-align:center;
+  border:1px solid gray;
+}
+
 
 #main {
   padding-bottom:       20p;
