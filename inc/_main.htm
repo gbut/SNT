@@ -1,21 +1,32 @@
 <!-- + main -->
 <div id="main" class="wrapper">
 
-  <!--#if expr="\"$DOCUMENT_NAME\" = \"index.htm\"" -->
+  <!--#if expr="\"$DOCUMENT_NAME\" = \"template01.htm\"" -->
+
+    <!--#include file="content.htm" -->
+  
+  <!--#elif expr="\"$DOCUMENT_NAME\" = \"template02.htm\"" -->
 
     <!--#include file="banner.htm" -->
     <!--#include file="job-search.htm" -->
     <!--#include file="content.htm" -->
 
-  <!--#elif expr="\"$DOCUMENT_NAME\" = \"template01.htm\"" -->
+  <!--#elif expr="\"$DOCUMENT_NAME\" = \"template03.htm\"" -->
+  
+    <!--#include file="content.htm" -->
+  
+
+  <!--#elif expr="\"$DOCUMENT_NAME\" = \"template04.htm\"" -->
 
     <!--#include file="content.htm" -->
+    
 
   <!--#else -->
 
-    <span class="tmpMsg">This is <!--#echo var="DOCUMENT_NAME" --></span>
+    <span class="tmpMsg">This is <!--#echo var="DOCUMENT_NAME" --> [not yet defined]</span>
 
   <!--#endif -->
+  
 
 </div>
 <!-- / main -->
