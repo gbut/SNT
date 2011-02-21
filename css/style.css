@@ -217,12 +217,29 @@ button {  width: auto; overflow: visible; }
 
 
 
-
-
-
- /* Primary Styles
+/* Primary Styles
     Author: RMS
  */
+
+/*
+ -----------------
+ Table of Contents
+ -----------------
+ Global
+ Regions
+   Header
+   Main
+   Footer
+ Areas
+   Content
+   Sidebar
+ Modules
+ -----------------
+ */
+
+
+/* + *** GLOBAL *** */
+
 input[type=text] {
   padding:              3px 2px;
   background-color:     #fff;
@@ -235,6 +252,13 @@ input[type=text] {
   width:                960px;
   margin:               0 auto;
 }
+
+/* / *** GLOBAL *** */
+
+
+/* + *** REGIONS *** */
+
+/* + HEADER */
 
 #header {
   width:                100%;
@@ -403,6 +427,9 @@ input[type=text] {
   border:1px solid gray;
 }
 
+/* / HEADER */
+
+/* + MAIN */
 
 #main {
   padding-bottom:       20p;
@@ -410,11 +437,65 @@ input[type=text] {
   z-index:              1;
 }
 
+/* / MAIN */
+
+/* + FOOTER */
+
+
+/* / FOOTER */
+
+/* / *** REGIONS *** */
+
+
+/* + *** AREAS *** */
+
+/* + CONTENT */
+
+#main #content {
+  width:                687px;
+  margin-right:         25px;
+  float:                left;
+  display:              inline;
+  background-color:red;
+}
+
+/* / CONTENT */
+
+/* + SIDEBAR */
+
+#main aside {
+  width:                246px;
+  border:               1px solid #cccacb;
+  -moz-border-radius:   6px;
+  border-radius:        6px;
+  float:                left;
+  background-color:yellow;
+}
+
+/* / SIDEBAR */
+
+/* / *** AREAS *** */
+
+
+/* + *** MODULES *** */
+
+/* + Intro */
+/* / Intro */
+
+/* + Feature */
+
 #main #banner {
   margin-bottom:        6px;
   background-color:green;
   height:152px;
 }
+
+/* / Feature */
+
+/* + Breadcrumb */
+/* / Breadcrumb */
+
+/* + Toolbars */
 
 #main #search {
   margin-bottom:        6px;
@@ -424,22 +505,29 @@ input[type=text] {
   height:93px;
 }
 
-#main #content .mainSection {
-  width:                687px;
-  margin-right:         25px;
-  float:                left;
-  display:              inline;
-  background-color:red;
-}
+/* / Toolbars */
 
-#main #content aside {
-  width:                246px;
-  border:               1px solid #cccacb;
-  -moz-border-radius:   6px;
-  border-radius:        6px;
-  float:                left;
-  background-color:yellow;
-}
+/* + Apply */
+
+/* / Apply */
+
+/* + Share */
+
+/* / Share */
+
+/* + Follow */
+
+/* / Follow */
+
+/* + Testimonials */
+
+/* / Testimonials */
+
+/* + Plugs */
+
+/* / Plugs */
+
+/* + Search Results */
 
 #main #search_results article {
   padding:              10px 8px 18px;
@@ -471,6 +559,9 @@ input[type=text] {
   float:                right;
 }
 
+/* / Search Results */
+
+/* / *** MODULES *** */
 
 
 /* TEMP */
