@@ -240,6 +240,10 @@ button {  width: auto; overflow: visible; }
 
 /* + *** GLOBAL *** */
 
+body {
+  background:           #eee;
+}
+
 input[type=text] {
   padding:              3px 2px;
   background-color:     #fff;
@@ -249,7 +253,6 @@ input[type=text] {
 }
 
 .wrapper {
-  width:                960px;
   margin:               0 auto;
 }
 
@@ -260,25 +263,27 @@ input[type=text] {
 
 /* + HEADER */
 
-#header {
-  width:                100%;
+header {
   min-height:           99px;
   height:               auto !important;
   height:               99px;
-  margin-bottom:        6px;
   position:             relative;
   z-index:              5;
-  border-top:3px solid red;
-  border-bottom:10px solid orange;
+  background:           #fff;
+  border-bottom:2px solid #666;
 }
 
-#header h1 {
+header .wrapper {
+  width:                1000px;
+}
+
+header h1 {
   float:                left;
   position:             relative;
   top:                  41px;
   left:                 0;
 }
-#header h1 a {
+header h1 a {
   text-indent:          -9999px;
   width:                127px;
   height:               41px;
@@ -286,29 +291,29 @@ input[type=text] {
   background:red;
 }
 
-#header #login {
+header #login {
   float:                right;
   clear:                right;
   width:306px;
   text-align:right;
   padding:              12px 0 16px;
 }
-#header #login form {
+header #login form {
   display:              inline;
 }
-#header #login form input[type=text] {
+header #login form input[type=text] {
   color:                #5e5e5e;
   text-align:           right;
   -moz-border-radius:   4px 0 0 4px;
   border-radius:        4px 0 0 4px;
 }
 
-#header nav {
+header nav {
   float:                right;
   clear:                right;
 }
 
-#header nav ul li {
+header nav ul li {
   float:                left;
   position:             relative;
   margin-right:-1px;
@@ -318,7 +323,7 @@ input[type=text] {
   height:43px;
   overflow:visible;
 }
-#header nav ul li a {
+header nav ul li a {
   text-decoration:      none;
   text-transform:       uppercase;
   display:              block;
@@ -329,17 +334,17 @@ input[type=text] {
   border:1px solid gray;
   border-width:0 1px;
 }
-#header nav ul li.selected {
+header nav ul li.selected {
   border-bottom:4px solid red;
 }
-#header nav ul li a:hover,
-#header nav ul li a:active {
+header nav ul li a:hover,
+header nav ul li a:active {
   color:red;
   background:#f4f4f4;
   padding-bottom:50px;
 }
 
-#header nav ul li ul {
+header nav ul li ul {
   width:460px;
   border:1px solid gray;
   border-width:0 1px 1px;
@@ -351,27 +356,27 @@ input[type=text] {
   z-index:1;
   display:none;
 }
-#header nav ul li:hover ul {
+header nav ul li:hover ul {
   display:block;
 }
-#header nav ul li ul li {
+header nav ul li ul li {
   float:                none;
   margin:               0;
   display:              block;
   height:               auto;
 }
-#header nav ul li ul li .subnavLt {
+header nav ul li ul li .subnavLt {
   width:                225px;
   padding:              23px 23px 0 7px;
   border-right:         1px solid gray;
   float:                left;
 }
-#header nav ul li ul li .subnavRt {
+header nav ul li ul li .subnavRt {
   width:                174px;
   padding:              23px 7px 0 23px;
   float:                left;
 }
-#header nav ul li ul li ul {
+header nav ul li ul li ul {
   width:auto;
   border:none;
   background:none;
@@ -380,9 +385,9 @@ input[type=text] {
   top:0;
   overflow:hidden;
 }
-#header nav ul li ul li ul li {
+header nav ul li ul li ul li {
 }
-#header nav ul li ul li ul li a {
+header nav ul li ul li ul li a {
   text-transform:       none;
   height:auto;
   padding:6px 0;
@@ -390,33 +395,33 @@ input[type=text] {
   border-width:1px 0 0;
   top:-1px;
 }
-#header nav ul li ul li ul li a:hover,
-#header nav ul li ul li ul li a:active {
+header nav ul li ul li ul li a:hover,
+header nav ul li ul li ul li a:active {
   color:inherit;
   background:none;
   padding:6px 0;
 }
-#header nav ul li ul li ul li a h4 {
+header nav ul li ul li ul li a h4 {
   font-size:125%;
 }
-#header nav ul li ul li ul li a p {
+header nav ul li ul li ul li a p {
   color:#888;
   font-weight:normal;
 }
-#header nav ul li ul li .extras h4 {
+header nav ul li ul li .extras h4 {
   color:#888;
   font-size:125%;
   text-align:center;
   margin:0 0 10px;
 }
-#header nav ul li ul li .extras img.fakeImg {
+header nav ul li ul li .extras img.fakeImg {
   margin:0 auto 10px;
   display:block;
   width:105px;
   height:105px;
   background:green;
 }
-#header nav ul li ul li .extras a.cta {
+header nav ul li ul li .extras a.cta {
   margin:0 auto;
   display:block;
   color:#fff;
@@ -432,15 +437,29 @@ input[type=text] {
 /* + MAIN */
 
 #main {
-  padding-bottom:       20p;
+  width:                960px;
   position:             relative;
   z-index:              1;
+  background:           #fff;
+}
+
+.mainInner {
+  margin-top:           10px;
+  padding:              16px;
 }
 
 /* / MAIN */
 
 /* + FOOTER */
 
+footer {
+  text-align:           center;
+  padding:              20px 0;
+}
+
+footer .wrapper {
+  width:                960px;
+}
 
 /* / FOOTER */
 
@@ -451,12 +470,28 @@ input[type=text] {
 
 /* + CONTENT */
 
+/*
 #main #content {
   width:                687px;
   margin-right:         25px;
   float:                left;
   display:              inline;
   background-color:red;
+}
+*/
+
+#content section {
+  padding:              32px 0 26px 0;
+  border-top:1px solid #eee;
+}
+
+#content section div {
+  height:250px;
+  background:#cfcfcf;
+  float:                left;
+}
+#content section div:last-child {
+  background:#c1c1c1;
 }
 
 /* / CONTENT */
@@ -484,11 +519,16 @@ input[type=text] {
 
 /* + Feature */
 
-#main #banner {
-  margin-bottom:        6px;
-  background-color:green;
-  height:152px;
+#banner {
+  background:#00f;
+  height:176px;
 }
+
+#presenter {
+  background:#0ff;
+  height:470px;
+}
+
 
 /* / Feature */
 
@@ -590,6 +630,7 @@ ul.index li a:hover {
 }
 
 ul.index.global {
+  color:#000;
   font-size:.8em;
   font-weight:bold;
   margin:2px 0 0 0;
@@ -597,8 +638,9 @@ ul.index.global {
   position:absolute;
   z-index:100;
   list-style-type:none;
-  opacity:0.8;
-  filter:alpha(opacity=80);
+  background:#ff0;
+  opacity:0.5;
+  filter:alpha(opacity=50);
 }
 ul.index.global li {
   margin-left:0; 
