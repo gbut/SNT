@@ -437,16 +437,22 @@ header nav ul li ul li .extras a.cta {
 /* + MAIN */
 
 #main {
-  width:                960px;
+  width:                928px;
   position:             relative;
   z-index:              1;
   background:           #fff;
-}
-
-.mainInner {
   margin-top:           10px;
   padding:              16px;
+  
 }
+
+/* These templates are full width */
+#t01 #main,
+#t05 #main {
+  width:                100%;
+  margin-top:           0;
+  padding:              0;
+  }
 
 /* / MAIN */
 
@@ -470,15 +476,13 @@ footer .wrapper {
 
 /* + CONTENT */
 
-/*
-#main #content {
-  width:                687px;
-  margin-right:         25px;
+/* These templates include a sidebar */
+#t03 #content,
+#t04 #content {
+  width:                665px;
+  margin-right:         20px;
   float:                left;
-  display:              inline;
-  background-color:red;
 }
-*/
 
 #content section {
   padding:              32px 0 26px 0;
@@ -499,7 +503,7 @@ footer .wrapper {
 /* + SIDEBAR */
 
 #main aside {
-  width:                246px;
+  width:                241px;
   border:               1px solid #cccacb;
   -moz-border-radius:   6px;
   border-radius:        6px;
@@ -514,21 +518,19 @@ footer .wrapper {
 
 /* + *** MODULES *** */
 
-/* + Intro */
-/* / Intro */
-
 /* + Feature */
 
 #banner {
-  background:#00f;
   height:176px;
+  margin-bottom:        20px;
+  background:#00f;
 }
 
 #presenter {
-  background:#0ff;
   height:470px;
+  margin-bottom:        20px;
+  background:#0ff;
 }
-
 
 /* / Feature */
 
@@ -538,7 +540,7 @@ footer .wrapper {
 /* + Toolbars */
 
 #main #search {
-  margin-bottom:        6px;
+  margin-bottom:        40px;
   -moz-border-radius:   2px;
   border-radius:        2px;
   background-color:gray;
@@ -546,6 +548,40 @@ footer .wrapper {
 }
 
 /* / Toolbars */
+
+/* + Job Listings */
+
+#job_listings article {
+  padding:              10px 8px 18px;
+  background-color:     #fff;
+  border:               1px solid #fff;
+}
+
+#job_listings article time {
+  display:              none;
+}
+
+#job_listings article h3 {
+  margin:               0 0 7px;
+  padding:              0 0 5px;
+  border-bottom:        1px solid #cbcbcb;
+}
+
+#job_listings article h3 a {
+  text-decoration:      none;
+}
+
+#job_listings article h3 .loc {
+  color:                #323232;
+  padding-right:        11px;
+  float:                right;
+}
+
+/* / Job Listings */
+
+/* + Job Detail */
+
+/* / Job Detail */
 
 /* + Apply */
 
@@ -567,40 +603,6 @@ footer .wrapper {
 
 /* / Plugs */
 
-/* + Search Results */
-
-#main #search_results article {
-  padding:              10px 8px 18px;
-  background-color:     #fff;
-  border:               1px solid #fff;
-}
-#main #search_results article.alt {
-  background-color:     #f2f2f2;
-  border-color:         #c7c7c7;
-}
-
-#main #search_results article header time {
-  display:              none;
-}
-
-#main #search_results article header h1 {
-  margin:               0 0 7px;
-  padding:              0 0 5px;
-  border-bottom:        1px solid #cbcbcb;
-}
-
-#main #search_results article header h1 a {
-  text-decoration:      none;
-}
-
-#main #search_results article header h1 .loc {
-  color:                #323232;
-  padding-right:        11px;
-  float:                right;
-}
-
-/* / Search Results */
-
 /* / *** MODULES *** */
 
 
@@ -611,25 +613,15 @@ footer .wrapper {
   margin:40px 0 0 40px;
 }
 
-ul.index {
-  line-height:1.5em;
-  margin:0 40px;
-  padding:10px;
-  border:1px solid #ccc;
-  background:#eee;
-}
-ul.index li {
-  margin-left:20px;
-}
-ul.index li a {
+ul.toc li a {
   text-decoration:none;
 }
-ul.index li a:hover {
+ul.toc li a:hover {
   color:#eee;
   background:#666;
 }
 
-ul.index.global {
+ul.toc {
   color:#000;
   font-size:.8em;
   font-weight:bold;
@@ -647,6 +639,15 @@ ul.index.global li {
 }
 ul.index.global li a {
   font-weight:normal;
+}
+
+.indexPage ul.toc {
+  font-size:1em;
+  line-height:1.5em;
+  margin:0 40px;
+  padding:10px;
+  border:1px solid #ccc;
+  background:#eee;
 }
 
 .tmpMsg {

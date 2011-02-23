@@ -1,30 +1,26 @@
 <!-- + content -->
 <section id="content" class="clearfix">
 
-  <!--#if expr="\"$DOCUMENT_NAME\" = \"template01.htm\"" -->
+  <!--#if expr="\"$QUERY_STRING\" = \"t01\"" -->
   
     <!--#include virtual="content/home.htm" -->
     
-  <!--#elif expr="\"$DOCUMENT_NAME\" = \"template02.htm\"" -->
+  <!--#elif expr="\"$QUERY_STRING\" = \"t02\"" -->
   
     <!--#include virtual="content/careers.htm" -->
     
-  <!--#elif expr="\"$DOCUMENT_NAME\" = \"template03.htm\"" -->
+  <!--#elif expr="\"$QUERY_STRING\" = \"t03\"" -->
 
       <!--#include virtual="content/careers-jobs.htm" -->
 
-  <!--#elif expr="\"$DOCUMENT_NAME\" = \"template04.htm\"" -->
+  <!--#elif expr="\"$QUERY_STRING\" = \"t04\"" -->
 
     <!--#include virtual="content/careers-job_detail.htm" -->
 
-  <!--#elif expr="\"$DOCUMENT_NAME\" = \"template05.htm\"" -->
+  <!--#elif expr="\"$QUERY_STRING\" = \"t05\"" -->
 
     <!--#include virtual="content/chat.htm" -->
 
-  <!--#else -->
-  
-    <span class="tmpMsg">This is <!--#echo var="DOCUMENT_NAME" --> [not yet defined]</span>
-    
   <!--#endif -->
   
 </section>

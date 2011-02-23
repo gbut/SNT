@@ -1,19 +1,25 @@
 <!--#include virtual="inc/__html-head.htm" -->
 
-<div id="container">
-  
+<!--#if expr="\"$QUERY_STRING\" = \"\"" -->
+
   <h1 class="indexTitle">
     RMS.com
   </h1>
+
+  <div class="indexPage">
+    <!--#include virtual="inc/___toc.htm" -->
+  </div>
   
-  <ul class="index">
-    <li><a href="template01.htm">Template 01 [e.g. home]</a></li>
-    <li><a href="template02.htm">Template 02 [e.g. careers]</a></li>
-    <li><a href="template03.htm">Template 03 [e.g. careers | jobs]</a></li>
-    <li><a href="template04.htm">Template 04 [e.g. careers | job detail]</a></li>
-    <li><a href="template05.htm">Template 05 [e.g. chat]</a></li>
-  </ul>
+<!--#else -->
+
+  <div id="<!--#echo var="QUERY_STRING" -->">
+
+    <!--#include virtual="inc/_header.htm" -->
+    <!--#include virtual="inc/main.htm" -->
+    <!--#include virtual="inc/_footer.htm" -->
   
-</div> <!-- end of #container -->
+  </div>
+
+<!--#endif -->
 
 <!--#include virtual="inc/__html-foot.htm" -->
