@@ -610,7 +610,11 @@ footer .wrapper {
 
 .indexTitle {
   font-size:2em;
-  margin:40px 0 0 40px;
+  width:120px;
+  height:40px;
+  margin:40px 0 40px 40px;
+  text-indent:-9999px;
+  background: url(../images/logo.png) 0 0 no-repeat;
 }
 
 ul.toc li a {
@@ -641,7 +645,11 @@ ul.index.global li a {
   font-weight:normal;
 }
 
-.indexPage ul.toc {
+#indexPage {
+  background:#fff;
+}
+
+#indexPage ul.toc {
   font-size:1em;
   line-height:1.5em;
   margin:0 40px;
