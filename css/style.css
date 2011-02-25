@@ -110,8 +110,8 @@ html { overflow-y: scroll; }
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
-a, a:active, a:visited { color: #354173; }
-a:hover { color: #354173; }
+a, a:active, a:visited { color: #28739c; }
+a:hover { color: #28739c; }
 
 
 ul, ol { margin-left: 1.8em; }
@@ -269,13 +269,14 @@ header {
   position:             relative;
   z-index:              5;
   background:           #fff;
-     -moz-box-shadow:   0px 0px 4px #c2c2c2; 
-  -webkit-box-shadow:   0px 0px 4px #c2c2c2; 
-          box-shadow:   0px 0px 4px #c2c2c2;
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#c2c2c2')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#c2c2c2');
+     -moz-box-shadow:   0px 0px 4px #9c8f85; 
+  -webkit-box-shadow:   0px 0px 4px #9c8f85; 
+          box-shadow:   0px 0px 4px #9c8f85;
+  /* TODO: Does Modernizr take care of these? */
+	/* For IE 8 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#9c8f85')"; */
+	/* For IE 5.5 - 7 
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#9c8f85'); */
 }
 
 header .wrapper {
@@ -319,10 +320,6 @@ header #login form input[type=text] {
 /* + *** GLOBAL NAV *** */
 
 header nav {
-/*
-  float:                right;
-  clear:                right;
-*/
   position:             absolute;
   bottom:               0;
   right:                0;
@@ -335,7 +332,7 @@ header nav ul li {
   display:              inline;
   font-size:            93%;
   font-weight:          bold;
-  height:               24px;
+  height:               29px;
   overflow:             visible;
 }
 header nav ul li a {
@@ -346,12 +343,18 @@ header nav ul li a {
   position:             relative;
   z-index:              5;
   height:               15px;
-  padding:              2px 30px;
+  padding:              2px 30px 3px;
   border:               1px solid #dadada;
   border-width:         0 1px;
+  overflow:             visible;
 }
 header nav ul li.selected {
+/*  border-bottom:        4px solid #c3151c;*/
+}
+header nav ul li.selected a .tl {
+  height:               23px;
   border-bottom:        4px solid #c3151c;
+  display:              block;
 }
 header nav ul li a:visited {
   color:                #616161;
@@ -360,29 +363,36 @@ header nav ul li a:hover,
 header nav ul li a:active {
   color:                #bd081b;
   background:           #eee url(../images/bg_gnav_hover.png) top left repeat-x;
-  padding-bottom:50px;
+  padding-bottom:       30px;
+}
+header nav ul li.selected a:hover .tl,
+header nav ul li.selected a:active .tl {
+  border:               none;
 }
 
-header nav ul li ul {
+header nav ul li ul.sn {
   width:460px;
   border:               1px solid #dadada;
   border-width:         0 1px 1px;
-  background:           #eee;
   padding:16px;
   position:             absolute;
-  top:                  28px;
+  top:                  29px;
   left:                 0;
   z-index:              1;
-  display:none;
-     -moz-box-shadow:   inset 0px 0px 4px #c2c2c2; 
-  -webkit-box-shadow:   inset 0px 0px 4px #c2c2c2; 
-          box-shadow:   inset 0px 0px 4px #c2c2c2;
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#c2c2c2')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#c2c2c2');
+  display:              none;
+  background:           #eee url(../images/bg_snav_ul.png) top left repeat-x;
+  -moz-border-radius:   0 0 5px 5px;
+  border-radius:        0 0 5px 5px;
+     -moz-box-shadow:   0px 3px 3px -3px #9c8f85; 
+  -webkit-box-shadow:   0px 3px 3px -3px #9c8f85; 
+          box-shadow:   0px 3px 3px -3px #9c8f85;
+  /* TODO: Does Modernizr take care of these? */
+	/* For IE 8 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#9c8f85')";*/
+	/* For IE 5.5 - 7 
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#9c8f85');*/
 }
-header nav ul li:hover ul {
+header nav ul li:hover ul.sn {
   display:block;
 }
 header nav ul li ul li {
@@ -393,13 +403,13 @@ header nav ul li ul li {
 }
 header nav ul li ul li .subnavLt {
   width:                225px;
-  padding:              23px 23px 0 7px;
-  border-right:         1px solid gray;
+  padding:              3px 23px 0 7px;
+  border-right:         1px solid #c7c7c7;
   float:                left;
 }
 header nav ul li ul li .subnavRt {
   width:                174px;
-  padding:              23px 7px 0 23px;
+  padding:              14px 7px 0 23px;
   float:                left;
 }
 header nav ul li ul li ul {
@@ -410,28 +420,25 @@ header nav ul li ul li ul {
   position:relative;
   top:0;
   overflow:hidden;
-     -moz-box-shadow:   none;
-  -webkit-box-shadow:   none;
-          box-shadow:   none;
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=0, Color='#c2c2c2')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=0, Color='#c2c2c2');
 }
 header nav ul li ul li ul li {
 }
 header nav ul li ul li ul li a {
+  color:                #28739c;
   text-transform:       none;
   height:auto;
   padding:6px 0;
-  border:1px solid gray;
-  border-width:1px 0 0;
-  top:-1px;
+  border:               1px solid #c0c0c0;
+  border-width:         1px 0 0;
+  top:                  -1px;
+}
+header nav ul li ul li ul li a:visited {
+  color:                #28739c;
 }
 header nav ul li ul li ul li a:hover,
 header nav ul li ul li ul li a:active {
-  color:inherit;
-  background:none;
+  color:                #bd081b;
+  background:           none;
   padding:6px 0;
 }
 header nav ul li ul li ul li a h4 {
