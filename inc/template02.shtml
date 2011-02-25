@@ -3,7 +3,7 @@
   <div id="main" class="wrapper clearfix">
     
     <!--#include file="presenter.htm" -->
-    <!--#include file="content.htm" -->
+    <!--#include file="content.shtml" -->
   
   </div>
   <!-- / main -->

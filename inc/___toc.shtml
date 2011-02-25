@@ -1,0 +1,39 @@
+<!-- + toc -->
+<ul class="toc">
+  <li>
+  <!--#if expr="\"$QUERY_STRING\" = \"0.0\"" -->
+    Template 01 [e.g. home]
+  <!--#else -->
+    <a href="index.shtml?0.0">Template 01 [e.g. home]</a>
+  <!--#endif -->
+  </li>
+  <li>
+  <!--#if expr="\"$QUERY_STRING\" = \"5.0\"" -->
+    Template 02 [e.g. careers]
+  <!--#else -->
+    <a href="index.shtml?5.0">Template 02 [e.g. careers]</a>
+  <!--#endif -->
+  </li>
+  <li>
+  <!--#if expr="\"$QUERY_STRING\" = \"5.1\"" -->
+    Template 03 [e.g. careers | jobs]
+  <!--#else -->
+    <a href="index.shtml?5.1">Template 03 [e.g. careers | jobs]</a>
+  <!--#endif -->
+  </li>
+  <li>
+  <!--#if expr="\"$QUERY_STRING\" = \"5.1.1\"" -->
+    Template 04 [e.g. careers | job detail]
+  <!--#else -->
+    <a href="index.shtml?5.1.1">Template 04 [e.g. careers | job detail]</a>
+  <!--#endif -->
+  </li>
+  <li>
+  <!--#if expr="\"$QUERY_STRING\" = \"5.4\"" -->
+    Template 05 [e.g. chat]
+  <!--#else -->
+    <a href="index.shtml?5.4">Template 05 [e.g. chat]</a>
+  <!--#endif -->
+  </li>
+</ul>
+<!-- / toc -->

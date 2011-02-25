@@ -2,7 +2,7 @@
   <!-- + main -->
   <div id="main" class="wrapper clearfix">
   
-    <!--#include file="content.htm" -->
+    <!--#include file="content.shtml" -->
   
   </div>
   <!-- / main -->

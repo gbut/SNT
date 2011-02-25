@@ -1,0 +1,44 @@
+<!--#include virtual="inc/__html-head.htm" -->
+
+<!--#if expr="\"$QUERY_STRING\" = \"\"" -->
+
+  <div id="indexPage">
+    <h1 class="indexTitle">
+      RMS.com
+    </h1>
+    <!--#include virtual="inc/___toc.shtml" -->
+  </div>
+  
+<!--#else -->
+
+  <!--#include virtual="inc/_header.shtml" -->
+
+  <!--#if expr="\"$QUERY_STRING\" = \"0.0\"" -->
+  
+    <!--#include virtual="inc/template01.shtml" -->
+    
+  <!--#elif expr="\"$QUERY_STRING\" = \"5.0\"" -->
+  
+    <!--#include virtual="inc/template02.shtml" -->
+    
+  <!--#elif expr="\"$QUERY_STRING\" = \"5.1\"" -->
+  
+    <!--#include virtual="inc/template03.shtml" -->
+    
+  <!--#elif expr="\"$QUERY_STRING\" = \"5.1.1\"" -->
+  
+    <!--#include virtual="inc/template04.shtml" -->
+    
+  <!--#elif expr="\"$QUERY_STRING\" = \"5.4\"" -->
+  
+    <!--#include virtual="inc/template05.shtml" -->
+    
+  <!--#else -->
+    <span class="tmpMsg">This page for <!--#echo var="QUERY_STRING" --> is not defined.</span>
+  <!--#endif -->
+
+  <!--#include virtual="inc/_footer.htm" -->
+
+<!--#endif -->
+
+<!--#include virtual="inc/__html-foot.htm" -->

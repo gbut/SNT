@@ -1,11 +1,11 @@
-<!--#include file="___toc.htm" -->
+<!--#include file="___toc.shtml" -->
 
 <!-- + header -->
 <header class="clearfix">
   <div class="wrapper">
     
     <!-- + logo -->
-    <h1><a href="index.htm" title="RMS">RMS</a></h1>
+    <h1><a href="index.shtml" title="RMS">RMS</a></h1>
     <!-- / logo -->
 
     <!-- + login -->
