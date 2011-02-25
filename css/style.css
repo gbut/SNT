@@ -308,6 +308,8 @@ header #login form input[type=text] {
   border-radius:        4px 0 0 4px;
 }
 
+/* + *** GLOBAL NAV *** */
+
 header nav {
   float:                right;
   clear:                right;
@@ -324,6 +326,7 @@ header nav ul li {
   overflow:visible;
 }
 header nav ul li a {
+  color:                #616161;
   text-decoration:      none;
   text-transform:       uppercase;
   display:              block;
@@ -339,8 +342,8 @@ header nav ul li.selected {
 }
 header nav ul li a:hover,
 header nav ul li a:active {
-  color:red;
-  background:#f4f4f4;
+  color:                #bd081b;
+  background:           #eee url(../images/bg_gnav_hover.png) top left repeat-x;
   padding-bottom:50px;
 }
 
@@ -431,6 +434,8 @@ header nav ul li ul li .extras a.cta {
   text-align:center;
   border:1px solid gray;
 }
+
+/* / *** GLOBAL NAV *** */
 
 /* / HEADER */
 
