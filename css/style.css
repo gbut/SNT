@@ -242,6 +242,7 @@ button {  width: auto; overflow: visible; }
 
 body {
   background:           #dbe4ea;
+  overflow-x:           hidden; /* so header box-shadow doesn't create horiz scrollbar */
 }
 
 input[type=text] {
@@ -254,6 +255,7 @@ input[type=text] {
 
 .wrapper {
   margin:               0 auto;
+  position:             relative;
 }
 
 /* / *** GLOBAL *** */
@@ -264,9 +266,6 @@ input[type=text] {
 /* + HEADER */
 
 header {
-  min-height:           99px;
-  height:               auto !important;
-  height:               99px;
   position:             relative;
   z-index:              5;
   background:           #fff;
@@ -281,6 +280,9 @@ header {
 
 header .wrapper {
   width:                960px;
+  min-height:           99px;
+  height:               auto !important;
+  height:               99px;
 }
 
 header h1 {
@@ -317,8 +319,13 @@ header #login form input[type=text] {
 /* + *** GLOBAL NAV *** */
 
 header nav {
+/*
   float:                right;
   clear:                right;
+*/
+  position:             absolute;
+  bottom:               0;
+  right:                0;
 }
 
 header nav ul li {
@@ -328,7 +335,7 @@ header nav ul li {
   display:              inline;
   font-size:            93%;
   font-weight:          bold;
-  height:               43px;
+  height:               24px;
   overflow:             visible;
 }
 header nav ul li a {
@@ -338,13 +345,16 @@ header nav ul li a {
   display:              block;
   position:             relative;
   z-index:              5;
-  height:19px;
-  padding:3px 30px;
-  border:1px solid gray;
-  border-width:0 1px;
+  height:               15px;
+  padding:              2px 30px;
+  border:               1px solid #dadada;
+  border-width:         0 1px;
 }
 header nav ul li.selected {
   border-bottom:        4px solid #c3151c;
+}
+header nav ul li a:visited {
+  color:                #616161;
 }
 header nav ul li a:hover,
 header nav ul li a:active {
@@ -355,15 +365,22 @@ header nav ul li a:active {
 
 header nav ul li ul {
   width:460px;
-  border:1px solid gray;
-  border-width:0 1px 1px;
+  border:               1px solid #dadada;
+  border-width:         0 1px 1px;
   background:           #eee;
   padding:16px;
-  position:absolute;
-  top:57px;
-  left:0;
-  z-index:1;
+  position:             absolute;
+  top:                  28px;
+  left:                 0;
+  z-index:              1;
   display:none;
+     -moz-box-shadow:   inset 0px 0px 4px #c2c2c2; 
+  -webkit-box-shadow:   inset 0px 0px 4px #c2c2c2; 
+          box-shadow:   inset 0px 0px 4px #c2c2c2;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#c2c2c2')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#c2c2c2');
 }
 header nav ul li:hover ul {
   display:block;
@@ -393,6 +410,13 @@ header nav ul li ul li ul {
   position:relative;
   top:0;
   overflow:hidden;
+     -moz-box-shadow:   none;
+  -webkit-box-shadow:   none;
+          box-shadow:   none;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=0, Color='#c2c2c2')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=0, Color='#c2c2c2');
 }
 header nav ul li ul li ul li {
 }
