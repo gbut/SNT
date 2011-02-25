@@ -280,7 +280,7 @@ header {
 }
 
 header .wrapper {
-  width:                1000px;
+  width:                960px;
 }
 
 header h1 {
@@ -448,12 +448,12 @@ header nav ul li ul li .extras a.cta {
 /* + MAIN */
 
 #main {
-  width:                928px;
+/*  width:                928px;*/
+  width:                960px;
   position:             relative;
   z-index:              1;
-  background:           #fff;
   margin-top:           10px;
-  padding:              16px;
+/*  padding:              16px;*/
   
 }
 
@@ -490,8 +490,9 @@ footer .wrapper {
 /* These templates include a sidebar */
 #t03 #content,
 #t04 #content {
-  width:                665px;
-  margin-right:         20px;
+  width:                664px;
+  margin:               0 10px;
+  padding-right:        28px;
   float:                left;
 }
 
@@ -514,7 +515,7 @@ footer .wrapper {
 /* + SIDEBAR */
 
 #main aside {
-  width:                241px;
+  width:                246px;
   border:               1px solid #cccacb;
   -moz-border-radius:   6px;
   border-radius:        6px;
@@ -532,14 +533,12 @@ footer .wrapper {
 /* + Feature */
 
 #banner {
-  height:176px;
-  margin-bottom:        20px;
+  height:               348px;
   background:#00f;
 }
 
 #presenter {
   height:470px;
-  margin-bottom:        20px;
   background:#0ff;
 }
 
@@ -564,7 +563,6 @@ footer .wrapper {
 
 #job_listings article {
   padding:              10px 8px 18px;
-  background-color:     #fff;
   border:               1px solid #fff;
 }
 
