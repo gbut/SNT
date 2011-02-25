@@ -17,6 +17,22 @@
   
     <!--#include virtual="inc/template01.shtml" -->
     
+  <!--#elif expr="\"$QUERY_STRING\" = \"1.0\"" -->
+
+    <!--#include virtual="inc/template01.shtml" -->
+
+  <!--#elif expr="\"$QUERY_STRING\" = \"2.0\"" -->
+
+    <!--#include virtual="inc/template01.shtml" -->
+
+  <!--#elif expr="\"$QUERY_STRING\" = \"3.0\"" -->
+
+    <!--#include virtual="inc/template01.shtml" -->
+
+  <!--#elif expr="\"$QUERY_STRING\" = \"4.0\"" -->
+
+    <!--#include virtual="inc/template01.shtml" -->
+
   <!--#elif expr="\"$QUERY_STRING\" = \"5.0\"" -->
   
     <!--#include virtual="inc/template02.shtml" -->

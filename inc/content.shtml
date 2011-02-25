@@ -5,6 +5,22 @@
   
     <!--#include virtual="content/home.htm" -->
     
+  <!--#elif expr="\"$QUERY_STRING\" = \"1.0\"" -->
+
+    <!--#include virtual="content/risk.htm" -->
+
+  <!--#elif expr="\"$QUERY_STRING\" = \"2.0\"" -->
+
+    <!--#include virtual="content/markets.htm" -->
+
+  <!--#elif expr="\"$QUERY_STRING\" = \"3.0\"" -->
+
+    <!--#include virtual="content/solutions.htm" -->
+
+  <!--#elif expr="\"$QUERY_STRING\" = \"4.0\"" -->
+
+    <!--#include virtual="content/about.htm" -->
+
   <!--#elif expr="\"$QUERY_STRING\" = \"5.0\"" -->
   
     <!--#include virtual="content/careers.htm" -->
