@@ -245,6 +245,10 @@ body {
   overflow-x:           hidden; /* so header box-shadow doesn't create horiz scrollbar */
 }
 
+a {
+  text-decoration:      none;
+}
+
 input[type=text] {
   padding:              3px 2px;
   background-color:     #fff;
@@ -571,12 +575,13 @@ footer .wrapper {
 /* + SIDEBAR */
 
 #main aside {
-  width:                246px;
+  width:                186px;
+  padding:              24px 30px;
   border:               1px solid #cccacb;
   -moz-border-radius:   6px;
   border-radius:        6px;
   float:                left;
-  background-color:yellow;
+  background-color:     #fff;
 }
 
 /* / SIDEBAR */
@@ -589,7 +594,7 @@ footer .wrapper {
 /* + Feature */
 
 #banner {
-  height:               348px;
+  height:254px;
   background:#00f;
 }
 
@@ -605,42 +610,139 @@ footer .wrapper {
 
 /* + Toolbars */
 
-#main #search {
+#main #job_search {
+  color:#000;
   margin-bottom:        40px;
   -moz-border-radius:   2px;
   border-radius:        2px;
   background-color:gray;
-  height:93px;
+  height:67px;
 }
+
+#main #job_search div {
+  margin:               8px 0 0 45px;
+  float:                left;
+}
+
+#main #job_search label {
+  margin-bottom:        4px;
+  display:              block;
+}
+
+#main #job_search input {
+  width:                294px;
+}
+
+#main #job_search select {
+  font-size:            16px;
+  width:                240px;
+  vertical-align:       middle;
+}
+
 
 /* / Toolbars */
 
+/* + Sidebar */
+
+#sidebar .quote {
+  font-size:125%;
+  color:gray;
+}
+#sidebar .quote .author {
+  font-size:80%;
+}
+#sidebar .quote .author .title {
+  color:gray;
+}
+
+#sidebar img {
+  width:277px;
+  height:250px;
+  margin-top:10px;
+  position:             relative;
+  left:-42px;
+  background:yellow;
+}
+
+#sidebar .benefit {
+  font-size:200%;
+  color:blue;
+  margin-top:10px;
+}
+#sidebar .benefit .body {
+  color:gray;
+}
+#sidebar .benefit .subtext {
+  font-size:50%;
+  text-transform:uppercase;
+}
+
+/* / Sidebar */
+
 /* + Job Listings */
 
+#job_listings h3 {
+  font-size:            150%;
+  margin-top:30px;
+}
+
+#job_listings h3:first-child {
+  margin-top:           0;
+}
+
+#job_listings .category {
+/*  color:red;*/
+}
+
 #job_listings article {
-  padding:              10px 8px 18px;
-  border:               1px solid #fff;
+  margin-top:20px;
 }
 
 #job_listings article time {
   display:              none;
 }
 
-#job_listings article h3 {
+#job_listings article h4 {
   margin:               0 0 7px;
   padding:              0 0 5px;
   border-bottom:        1px solid #cbcbcb;
 }
 
-#job_listings article h3 a {
+#job_listings article h4 a {
   text-decoration:      none;
 }
 
-#job_listings article h3 .loc {
+#job_listings article h4 .loc {
   color:                #323232;
   padding-right:        11px;
   float:                right;
 }
+
+#job_listings .footer {
+  margin-top:30px;
+  color:black;
+}
+
+#job_listings .footer .subtext {
+  color:gray;
+}
+
+#job_listings .footer a {
+  color:black;
+}
+
+#job_listings .footer a.submit {
+  text-transform:       uppercase;
+  float:                right;
+}
+
+#job_listings .footer a.signup {
+  text-transform:       uppercase;
+  display:              block;
+  margin-top:10px;
+  padding-left:10px;
+}
+
 
 /* / Job Listings */
 
@@ -727,10 +829,6 @@ ul.index.global li a {
   font-size:2em;
   font-weight:bold;
   color:#000;
-}
-
-#sidebar {
-  height:450px;
 }
 
 /* / TEMP */

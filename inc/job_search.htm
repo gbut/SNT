@@ -1,5 +1,63 @@
 <!-- + job-search widget -->
-<section id="search">
-  [job-search form]
+<section id="job_search">
+  
+  <form id="form_jvSearch" method="post" action="">
+
+    <div>
+      <label for="jvKeyword">Search term:</label>
+      <input type="text" id="jvKeyword" name="jvKeyword" />
+    </div>
+
+    <div>
+      <label for="jvLocation">Select your location:</label>
+      <select id="jvLocation" name="jvLocation">
+        <option selected="selected" value="">All</option>
+        <option value="Bermuda">Bermuda</option>
+        <option value="Bloomington, MN">Bloomington, MN</option>
+        <option value="China">China</option>
+        <option value="Hackensack, NJ">Hackensack, NJ</option>
+        <option value="Japan">Japan</option>
+        <option value="London, UK">London, UK</option>
+        <option value="Multiple Locations - CA or NJ">Multiple Locations - CA or NJ</option>
+        <option value="New Delhi, India">New Delhi, India</option>
+        <option value="Newark, California">Newark, California</option>
+        <option value="Peoria, IL">Peoria, IL</option>
+        <option value="Zurich">Zurich</option>
+      </select>
+    </div>
+    
+    <div>
+      <label for="jvCategory">Select your field:</label>
+      <select id="jvCategory" name="jvCategory">
+        <option selected="selected" value="">All</option>
+        <option value="Administrative">Administrative</option>
+        <option value="Analyst">Analyst</option>
+        <option value="Business Development">Business Development</option>
+        <option value="College Grad Opportunities">College Grad Opportunities</option>
+        <option value="Data &amp; Analytics">Data &amp; Analytics</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Facilities">Facilities</option>
+        <option value="Finance/Accounting">Finance/Accounting</option>
+        <option value="Human Resources">Human Resources</option>
+        <option value="Information Technology">Information Technology</option>
+        <option value="Internship">Internship</option>
+        <option value="Legal">Legal</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Model Development/Model Marketing">Model Development/Model Marketing</option>
+        <option value="Model Development/Modeling">Model Development/Modeling</option>
+        <option value="Product Management">Product Management</option>
+        <option value="Product Marketing">Product Marketing</option>
+        <option value="Professional Services">Professional Services</option>
+        <option value="Quality Assurance">Quality Assurance</option>
+        <option value="Research">Research</option>
+        <option value="Sales/Account Management">Sales/Account Management</option>
+        <option value="Science">Science</option>
+        <option value="Software">Software</option>
+        <option value="Technical Support">Technical Support</option>
+      </select>
+    </div>
+
+  </form>
+  
 </section>
 <!-- / job-search widget -->
