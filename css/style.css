@@ -329,7 +329,7 @@ header nav {
   right:                0;
 }
 
-header nav ul li {
+header nav ul.sf-menu li {
   float:                left;
   position:             relative;
   margin-right:         -1px;
@@ -339,7 +339,7 @@ header nav ul li {
   height:               29px;
   overflow:             visible;
 }
-header nav ul li a {
+header nav ul.sf-menu li a {
   color:                #616161;
   text-decoration:      none;
   text-transform:       uppercase;
@@ -352,29 +352,30 @@ header nav ul li a {
   border-width:         0 1px;
   overflow:             visible;
 }
-header nav ul li.selected {
+header nav ul.sf-menu li.selected {
 /*  border-bottom:        4px solid #c3151c;*/
 }
-header nav ul li.selected a .tl {
+header nav ul.sf-menu li.selected a .tl {
   height:               23px;
   border-bottom:        4px solid #c3151c;
   display:              block;
 }
-header nav ul li a:visited {
+header nav ul.sf-menu li a:visited {
   color:                #616161;
 }
-header nav ul li a:hover,
-header nav ul li a:active {
+header nav ul.sf-menu li.sfHover a,
+header nav ul.sf-menu li a:hover,
+header nav ul.sf-menu li a:active {
   color:                #bd081b;
   background:           #eee url(../images/bg_gnav_hover.png) top left repeat-x;
   padding-bottom:       30px;
 }
-header nav ul li.selected a:hover .tl,
-header nav ul li.selected a:active .tl {
+header nav ul.sf-menu li.selected a:hover .tl,
+header nav ul.sf-menu li.selected a:active .tl {
   border:               none;
 }
 
-header nav ul li ul.sn {
+header nav ul.sf-menu li ul.sn {
   width:460px;
   border:               1px solid #dadada;
   border-width:         0 1px 1px;
@@ -396,27 +397,30 @@ header nav ul li ul.sn {
 	/* For IE 5.5 - 7 
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#9c8f85');*/
 }
-header nav ul li:hover ul.sn {
+/*
+header nav ul.sf-menu li:hover ul.sn {
   display:block;
 }
-header nav ul li ul li {
+*/
+header nav ul.sf-menu li ul li {
   float:                none;
   margin:               0;
   display:              block;
   height:               auto;
 }
-header nav ul li ul li .subnavLt {
+header nav ul.sf-menu li ul li .subnavLt {
   width:                225px;
-  padding:              3px 23px 0 7px;
+  padding:              1px 23px 0 7px;
   border-right:         1px solid #c7c7c7;
   float:                left;
 }
-header nav ul li ul li .subnavRt {
+header nav ul.sf-menu li ul li .subnavRt {
   width:                174px;
   padding:              14px 7px 0 23px;
   float:                left;
 }
-header nav ul li ul li ul {
+/*
+header nav ul.sf-menu li ul li ul {
   width:auto;
   border:none;
   background:none;
@@ -425,47 +429,68 @@ header nav ul li ul li ul {
   top:0;
   overflow:hidden;
 }
-header nav ul li ul li ul li {
+header nav ul.sf-menu li ul li ul li {
 }
-header nav ul li ul li ul li a {
+*/
+header nav ul.sf-menu li ul li .snavItems {
+  position:             relative;
+  overflow:             hidden;
+}
+header nav ul.sf-menu li.sfHover ul li .snavItem a,
+header nav ul.sf-menu li ul li .snavItem a {
   color:                #28739c;
   text-transform:       none;
-  height:auto;
-  padding:6px 0;
+  height:               auto;
+  padding:              9px 0 6px;
   border:               1px solid #c0c0c0;
   border-width:         1px 0 0;
   top:                  -1px;
+  background:           none;
 }
-header nav ul li ul li ul li a:visited {
+header nav ul.sf-menu li ul li .snavItem a:visited {
   color:                #28739c;
 }
-header nav ul li ul li ul li a:hover,
-header nav ul li ul li ul li a:active {
+header nav ul.sf-menu li ul li .snavItem a:hover,
+header nav ul.sf-menu li ul li .snavItem a:active {
   color:                #bd081b;
-  background:           none;
-  padding:6px 0;
+  padding:              9px 0 6px;
 }
-header nav ul li ul li ul li a h4 {
-  font-size:125%;
+header nav ul.sf-menu li ul li .snavItem a h4 {
+  font-size:            116%;
+  margin-bottom:        5px;
 }
-header nav ul li ul li ul li a p {
-  color:#888;
-  font-weight:normal;
+header nav ul.sf-menu li ul li .snavItem a p {
+  color:                #202020;
+  font-weight:          normal;
+  padding:              0 16px 3px 0;
+  background:           #eee url(../images/arrow_snav_item.png) 100% 1px no-repeat;
+  -moz-opacity:         0.55;
+  -ms-filter:           "alpha(opacity=55)";
+  filter:               alpha(opacity=55);
+  opacity:              0.55;
 }
-header nav ul li ul li .extras h4 {
+header nav ul.sf-menu li ul li .snavItem a:hover p,
+header nav ul.sf-menu li ul li .snavItem a:active p {
+  -moz-opacity:         1;
+  -ms-filter:           "alpha(opacity=100)";
+  filter:               alpha(opacity=100);
+  opacity:              1;
+}
+
+header nav ul.sf-menu li ul li .extras h4 {
   color:#888;
   font-size:125%;
   text-align:center;
   margin:0 0 10px;
 }
-header nav ul li ul li .extras img.fakeImg {
+header nav ul.sf-menu li ul li .extras img.fakeImg {
   margin:0 auto 10px;
   display:block;
   width:105px;
   height:105px;
   background:green;
 }
-header nav ul li ul li .extras a.cta {
+header nav ul.sf-menu li ul li .extras a.cta {
   margin:0 auto;
   display:block;
   color:#fff;
