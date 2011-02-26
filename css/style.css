@@ -488,8 +488,8 @@ header nav ul li ul li .extras a.cta {
   position:             relative;
   z-index:              1;
   margin-top:           10px;
+  padding-bottom:       40px;
 /*  padding:              16px;*/
-  
 }
 
 /* These templates are full width */
@@ -502,11 +502,23 @@ header nav ul li ul li .extras a.cta {
 
 /* / MAIN */
 
+/* + SUBFOOTER */
+
+.subfooter {
+  height:               20px;
+  border-bottom:1px solid #b9b8b8;
+  background:#bdcfd9;
+}
+
+/* / SUBFOOTER */
+
 /* + FOOTER */
 
 footer {
+  font-size:90%;
   text-align:           center;
   padding:              20px 0;
+  background:           #fff;
 }
 
 footer .wrapper {
@@ -605,13 +617,13 @@ footer .wrapper {
 }
 
 #main #job_search input {
+  padding:              2px;
   width:                294px;
 }
 
 #main #job_search select {
   font-size:            16px;
   width:                240px;
-  vertical-align:       middle;
 }
 
 
@@ -711,13 +723,14 @@ footer .wrapper {
   float:                right;
 }
 
+/*
 #job_listings .footer a.signup {
   text-transform:       uppercase;
   display:              block;
   margin-top:10px;
   padding-left:10px;
 }
-
+*/
 
 /* / Job Listings */
 
