@@ -2,7 +2,7 @@
 
 <!-- + header -->
 <header class="clearfix">
-  <div class="wrapper">
+  <div class="hearderInner wrapper clearfix">
     
     <!-- + logo -->
     <h1><a href="index.shtml" title="RMS">RMS</a></h1>
