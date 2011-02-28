@@ -1,0 +1,7 @@
+<!--#include virtual="inc/__html-head.htm" -->
+
+<div id="buttonsPage" style="padding:50px;">
+  <a href="#" class="btn btnLg">Share with a Friend</a>
+</div>
+
+<!--#include virtual="inc/__html-foot.htm" -->
