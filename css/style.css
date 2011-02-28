@@ -674,8 +674,8 @@ footer .wrapper {
   position:             relative;
   left:-42px;
 
-  -moz-radius: 10px;
-  -webkit-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
 
   -moz-box-shadow: 3px 3px 5px #ccc;
