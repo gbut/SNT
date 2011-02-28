@@ -1,3 +1,9 @@
+
+/* imports first */
+
+@import url("fonts/stylesheet.css");
+
+
 /* 
   HTML5 ✰ Boilerplate 
   
@@ -262,6 +268,26 @@ input[type=text] {
   position:             relative;
 }
 
+/* + Buttons */
+
+.btn {
+  color:                #fff;
+  font:                 100%/100% "GothamHTFBold",Arial,sans-serif;
+  text-transform:       uppercase;
+  text-align:           center;
+  display:              inline-block;
+  position:             relative;
+}
+
+.btnLg {
+  color:                #999898;
+  padding:              11px 12px 9px 44px;
+  border:               1px solid #b8b8b7;
+  background:           #d7d7d7;
+}
+
+/* / Buttons */
+
 /* / *** GLOBAL *** */
 
 
@@ -321,7 +347,7 @@ header #login form input[type=text] {
   border-radius:        4px 0 0 4px;
 }
 
-/* + *** GLOBAL NAV *** */
+/* + Global Nav */
 
 header nav {
   position:             absolute;
@@ -501,7 +527,7 @@ header nav ul.sf-menu li ul li .extras a.cta {
   border:1px solid gray;
 }
 
-/* / *** GLOBAL NAV *** */
+/* / Global Nav */
 
 /* / HEADER */
 
