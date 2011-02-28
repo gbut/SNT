@@ -699,6 +699,8 @@ footer .wrapper {
   margin-top:20px;
   position:             relative;
   left:-42px;
+  display:block;
+  border:6px solid #fff;
 
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
