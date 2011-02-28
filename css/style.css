@@ -693,10 +693,11 @@ footer .wrapper {
   color:gray;
 }
 
-#sidebar img {
+#sidebar img.photo {
   width:                226px;
   height:               131px;
   margin-top:           20px;
+  display:              block;
   position:             relative;
   left:-42px;
   border:               6px solid #fff;
@@ -708,11 +709,11 @@ footer .wrapper {
   -moz-box-shadow: 3px 3px 5px #ccc;
   -webkit-box-shadow: 3px 3px 5px #ccc;
   box-shadow: 3px 3px 5px #ccc;
-  
+
   -moz-transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
-  
+
   behavior: url(js/libs/PIE/PIE.htc);
 }
 
@@ -733,8 +734,6 @@ footer .wrapper {
   color:blue;
   text-transform:uppercase;
 }
-
-
 
 /* / Sidebar */
 
