@@ -707,12 +707,26 @@ footer .wrapper {
 }
 
 #sidebar img {
-  width:277px;
-  height:250px;
-  margin-top:10px;
+  width:                226px;
+  height:               131px;
+  margin-top:           20px;
   position:             relative;
   left:-42px;
-  background:yellow;
+  border:               6px solid #fff;
+
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+
+  -moz-box-shadow: 3px 3px 5px #ccc;
+  -webkit-box-shadow: 3px 3px 5px #ccc;
+  box-shadow: 3px 3px 5px #ccc;
+  
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  
+  behavior: url(js/libs/PIE/PIE.htc);
 }
 
 #sidebar .benefit {
@@ -732,6 +746,8 @@ footer .wrapper {
   color:blue;
   text-transform:uppercase;
 }
+
+
 
 /* / Sidebar */
 
