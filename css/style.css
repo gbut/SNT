@@ -1007,6 +1007,10 @@ ul.index.global li a {
 /* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
+  header,
+  footer {
+    width:                960px; /* force full width so bg is consistent; is this a good idea? */
+  }
   .btn {
     padding-top:          9px;
     padding-bottom:       4px;
