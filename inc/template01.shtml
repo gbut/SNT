@@ -1,9 +1,0 @@
-<div id="t01">
-  <!-- + main -->
-  <div id="main" class="wrapper clearfix">
-  
-    <!--#include file="content.shtml" -->
-      
-  </div>
-  <!-- / main -->
-</div>
