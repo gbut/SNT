@@ -1,38 +1,38 @@
 <!-- + toc -->
 <ul class="toc">
   <li>
-  <!--#if expr="\"$QUERY_STRING\" = \"0.0\"" -->
-    Template 01 [e.g. home]
+  <!--#if expr="\"$DOCUMENT_NAME\" = \"home.shtml\"" -->
+    Home
   <!--#else -->
-    <a href="index.shtml?0.0">Template 01 [e.g. home]</a>
+    <a href="home.shtml">Home</a>
   <!--#endif -->
   </li>
   <li>
-  <!--#if expr="\"$QUERY_STRING\" = \"5.0\"" -->
-    Template 02 [e.g. careers]
+  <!--#if expr="\"$DOCUMENT_NAME\" = \"careers.shtml\"" -->
+    Careers
   <!--#else -->
-    <a href="index.shtml?5.0">Template 02 [e.g. careers]</a>
+    <a href="careers.shtml">Careers</a>
   <!--#endif -->
   </li>
   <li>
-  <!--#if expr="\"$QUERY_STRING\" = \"5.1\"" -->
-    Template 03 [e.g. careers | jobs]
+  <!--#if expr="\"$DOCUMENT_NAME\" = \"careers_jobs.shtml\"" -->
+    Careers | Jobs
   <!--#else -->
-    <a href="index.shtml?5.1">Template 03 [e.g. careers | jobs]</a>
+    <a href="careers_jobs.shtml">Careers | Jobs</a>
   <!--#endif -->
   </li>
   <li>
-  <!--#if expr="\"$QUERY_STRING\" = \"5.1.1\"" -->
-    Template 04 [e.g. careers | job detail]
+  <!--#if expr="\"$DOCUMENT_NAME\" = \"careers_jobs_detail.shtml\"" -->
+    Careers | Jobs | Detail
   <!--#else -->
-    <a href="index.shtml?5.1.1">Template 04 [e.g. careers | job detail]</a>
+    <a href="careers_jobs_detail.shtml">Careers | Jobs | Detail</a>
   <!--#endif -->
   </li>
   <li>
-  <!--#if expr="\"$QUERY_STRING\" = \"5.4\"" -->
-    Template 05 [e.g. chat]
+  <!--#if expr="\"$DOCUMENT_NAME\" = \"chat.shtml\"" -->
+    Chat
   <!--#else -->
-    <a href="index.shtml?5.4">Template 05 [e.g. chat]</a>
+    <a href="chat.shtml">Chat</a>
   <!--#endif -->
   </li>
 </ul>
