@@ -1,0 +1,23 @@
+<!--#include virtual="inc/__html-head.htm" -->
+
+<!--#include virtual="inc/_header.shtml" -->
+
+<div id="t04">
+  <!-- + main -->
+  <div id="main" class="wrapper clearfix">
+
+    <!--#include virtual="inc/banner.htm" -->
+    <!-- + content -->
+    <section id="content" class="clearfix">
+      <!--#include virtual="inc/content/careers_jobs_detail.htm" -->
+    </section>
+    <!-- / content -->
+    <!--#include virtual="inc/sidebar.htm" -->
+  
+  </div>
+  <!-- / main -->
+</div>
+
+<!--#include virtual="inc/_footer.htm" -->
+
+<!--#include virtual="inc/__html-foot.htm" -->
