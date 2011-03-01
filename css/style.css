@@ -176,11 +176,11 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate.
    No text-shadow: twitter.com/miketaylr/status/12228805301 
    Also: hot pink. */
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+::-moz-selection{ background: #dbe4ea; color:#fff; text-shadow: none; }
+::selection { background:#dbe4ea; color:#fff; text-shadow: none; } 
 
 /*  j.mp/webkit-tap-highlight-color */
-a:link { -webkit-tap-highlight-color: #FF5E99; } 
+a:link { -webkit-tap-highlight-color: #dbe4ea; } 
 
 /* make buttons play nice in IE:    
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
@@ -248,7 +248,6 @@ button {  width: auto; overflow: visible; }
 
 body {
   background:           #dbe4ea;
-  overflow-x:           hidden; /* so header box-shadow doesn't create horiz scrollbar */
 }
 
 a {
@@ -1008,11 +1007,25 @@ ul.index.global li a {
 /* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
-  
+  .btn {
+    padding-top:          9px;
+    padding-bottom:       4px;
+  }
+  .btnLg {
+    padding-top:          13px;
+    padding-bottom:       9px;
+  }
   
   /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
      j.mp/textsizeadjust 
   html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+/* inverse of above */
+@media screen and (min-device-width: 481px) {
+  body {
+    overflow-x:           hidden; /* so header box-shadow doesn't create horiz scrollbar */
+  }
 }
 
 /* 
