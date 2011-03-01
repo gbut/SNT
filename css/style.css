@@ -259,8 +259,8 @@ input[type=text] {
   padding:              3px 2px;
   background-color:     #fff;
   border:               1px solid #b2b2b2;
-  -moz-border-radius:   4px 6px;
   -webkit-border-radius:4px 6px;
+  -moz-border-radius:   4px 6px;
   border-radius:        4px 6px;
 }
 
@@ -273,30 +273,46 @@ input[type=text] {
 
 .btn {
   color:                #fff;
-  font:                 100%/100% "GothamHTFBold",Arial,sans-serif;
+  font:                 77%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;
   text-transform:       uppercase;
   text-align:           center;
+  padding:              7px 20px 6px 10px;
+  border:               1px solid #878686;
   display:              inline-block;
   position:             relative;
-  -moz-border-radius:   4px;
   -webkit-border-radius:4px;
+  -moz-border-radius:   4px;
   border-radius:        4px;
+  background:           #699ab5 url(../images/btns.png) -9px -33px no-repeat;
+  background:           url(../images/btns.png) -9px -33px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
+  background:           url(../images/btns.png) -9px -33px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
+/*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#699ab5', endColorstr='#2a749d',GradientType=0 );*/
 }
 .btn:hover,
 .btn:active,
 .btn:visited {
   color:                #fff;
 }
+.btn:hover {
+  background:           #58839a url(../images/btns.png) -9px -33px no-repeat;
+  background:           url(../images/btns.png) -9px -33px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
+  background:           url(../images/btns.png) -9px -33px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
+/*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#58839a', endColorstr='#215a79',GradientType=0 );*/
+}
+.btn:active {
+  background:           #1c4c66 url(../images/btns.png) -9px -33px no-repeat;
+}
 
 .btnLg {
   color:                #999898;
+  font-size:            100%;
   text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
   padding:              11px 12px 11px 44px;
-  border:               1px solid #b8b8b7;
-  background:           #fefefe; /* old browsers */
-  background:           -moz-linear-gradient(top, #FEFEFE 0%, #D7D7D7 100%); /* firefox */
-  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#D7D7D7)); /* webkit */
-  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEFEFE', endColorstr='#D7D7D7',GradientType=0 ); /* ie */
+  border-color:         #b8b8b7;
+  background:           #fefefe url(../images/btns.png) 20px -124px no-repeat;
+  background:           url(../images/btns.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
+  background:           url(../images/btns.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+/*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#d7d7d7',GradientType=0 );*/
      -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
           box-shadow:   0 2px 4px rgba(151,151,151,0.5);
@@ -307,23 +323,23 @@ input[type=text] {
   color:                #999898;
 }
 .btnLg:hover {
-  background:           #fefefe; /* old browsers */
-  background:           -moz-linear-gradient(top, #FEFEFE 0%, #A4A4A4 100%); /* firefox */
-  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#A4A4A4)); /* webkit */
-  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEFEFE', endColorstr='#A4A4A4',GradientType=0 ); /* ie */
+  background:           #fefefe url(../images/btns.png) 20px -124px no-repeat;
+  background:           url(../images/btns.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
+  background:           url(../images/btns.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
+/*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#a4a4a4',GradientType=0 ); /* ie */*/
 }
 .btnLg:active {
-  background:           #d7d7d7 none;
+  background:           #d7d7d7 url(../images/btns.png) 20px -124px no-repeat;
 }
 
 .btnApply {
   color:                #eee;
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
   border-color:         #838383;
-  background:           #c3383d url(../images/btns.png) -30px -74px no-repeat; /* old browsers */
-  background:           url(../images/btns.png) -30px -74px no-repeat, -moz-linear-gradient(top, #C3383D 0%, #C3020A 100%); /* firefox */
-  background:           url(../images/btns.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C3383D), color-stop(100%,#C3020A)); /* webkit */
-  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#C3383D', endColorstr='#C3020A',GradientType=0 ); /* ie */
+  background:           #c3383d url(../images/btns.png) -30px -74px no-repeat;
+  background:           url(../images/btns.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
+  background:           url(../images/btns.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
+/*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3383d', endColorstr='#c3020a',GradientType=0 );*/
 }
 .btnApply:hover,
 .btnApply:active,
@@ -331,13 +347,13 @@ input[type=text] {
   color:                #eee;
 }
 .btnApply:hover {
-  background:           #93262a url(../images/btns.png) 0 150px no-repeat; /* old browsers */
-  background:           url(../images/btns.png) 0 150px no-repeat, -moz-linear-gradient(top, #93262A 0%, #8F0309 100%); /* firefox */
-  background:           url(../images/btns.png) 0 150px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262A), color-stop(100%,#8F0309)); /* webkit */
-  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#93262A', endColorstr='#8F0309',GradientType=0 ); /* ie */
+  background:           #93262a url(../images/btns.png) -30px -74px no-repeat;
+  background:           url(../images/btns.png) -30px -74px no-repeat, -moz-linear-gradient(top, #93262a 0%, #8f0309 100%);
+  background:           url(../images/btns.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262a), color-stop(100%,#8f0309));
+/*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#93262a', endColorstr='#8f0309',GradientType=0 );*/
 }
 .btnApply:active {
-  background:           #770207 none;
+  background:           #770207 url(../images/btns.png) -30px -74px no-repeat;
 }
 
 /* / Buttons */
@@ -392,6 +408,7 @@ header #login form {
 header #login form input[type=text] {
   color:                #5e5e5e;
   text-align:           right;
+  -webkit-border-radius:4px 0 0 4px;
   -moz-border-radius:   4px 0 0 4px;
   border-radius:        4px 0 0 4px;
 }
@@ -461,6 +478,7 @@ header nav ul.sf-menu li ul.sn {
   z-index:              1;
   display:              none;
   background:           #eee url(../images/bg_snav_ul.png) top left repeat-x;
+  -webkit-border-radius:0 0 5px 5px;
   -moz-border-radius:   0 0 5px 5px;
   border-radius:        0 0 5px 5px;
      -moz-box-shadow:   0px 3px 3px -3px #9c8f85; 
@@ -665,6 +683,7 @@ footer .wrapper {
   width:                186px;
   padding:              24px 30px;
   border:               1px solid #cccacb;
+  -webkit-border-radius:6px;
   -moz-border-radius:   6px;
   border-radius:        6px;
   float:                left;
@@ -700,6 +719,7 @@ footer .wrapper {
 #main #job_search {
   color:#000;
   margin-bottom:        40px;
+  -webkit-border-radius:2px;
   -moz-border-radius:   2px;
   border-radius:        2px;
   background-color:gray;
@@ -751,8 +771,8 @@ footer .wrapper {
   left:-42px;
   border:               6px solid #fff;
 
-  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 10px;
 
   -moz-box-shadow: 3px 3px 5px #ccc;
