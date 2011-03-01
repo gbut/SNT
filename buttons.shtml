@@ -1,7 +1,15 @@
 <!--#include virtual="inc/__html-head.htm" -->
 
 <div id="buttonsPage" style="padding:50px;">
+
   <a href="#" class="btn btnLg">Share with a Friend</a>
+  
+  <br /><br />
+
+  <a href="#" class="btn btnLg btnCta btnApply">Apply for this Job</a>
+  
+  <br /><br />
+  
 </div>
 
 <!--#include virtual="inc/__html-foot.htm" -->
