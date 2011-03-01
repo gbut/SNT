@@ -742,10 +742,11 @@ footer .wrapper {
   color:gray;
 }
 
-#sidebar img {
+#sidebar img.photo {
   width:                226px;
   height:               131px;
   margin-top:           20px;
+  display:block;
   position:             relative;
   left:-42px;
   border:               6px solid #fff;
@@ -757,13 +758,37 @@ footer .wrapper {
   -moz-box-shadow: 3px 3px 5px #ccc;
   -webkit-box-shadow: 3px 3px 5px #ccc;
   box-shadow: 3px 3px 5px #ccc;
-  
+
   -moz-transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
-  
+
   behavior: url(js/libs/PIE/PIE.htc);
 }
+/* TEMP */
+.tabBox .tabs {
+    margin: 0;
+    padding: 0 10px;
+    overflow: hidden;
+    margin-bottom: -1px;
+    height: 2.25em;
+}
+.tabBox .content {
+    clear: left;
+    position: relative;
+    z-index: 2;
+    padding: 2em 1em;
+    border: 1px solid #CCC;
+    background: #FFF;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: #CCC 0 0 .25em;
+    -moz-box-shadow: #CCC 0 0 .25em;
+    box-shadow: #CCC 0 0 .25em;
+    behavior: url(PIE.htc);
+}
+/* / TEMP */
 
 #sidebar .benefit {
   font-size:200%;
@@ -782,8 +807,6 @@ footer .wrapper {
   color:blue;
   text-transform:uppercase;
 }
-
-
 
 /* / Sidebar */
 
