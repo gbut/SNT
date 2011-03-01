@@ -358,6 +358,7 @@ input[type=text] {
 .btnApply {
   color:                #eee;
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
+  padding:              11px 22px 11px 47px;
   border-color:         #838383;
   background:           #c3383d url(../images/btns.png) -30px -74px no-repeat;
   background:           url(../images/btns.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
