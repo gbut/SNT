@@ -788,13 +788,23 @@ footer .wrapper {
   color:gray;
 }
 
-#sidebar img.photo {
+/* transform needs to be on wrapper or it wil get stepped on by behavior */
+#sidebar div.photo {
+  width:                241px;
+  height:               166px;
+  position:             relative;
+  left:-42px;
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+#sidebar div.photo img {
   width:                226px;
   height:               131px;
   margin-top:           20px;
   display:block;
   position:             relative;
-  left:-42px;
   border:               6px solid #fff;
 
   -webkit-border-radius: 10px;
@@ -804,10 +814,6 @@ footer .wrapper {
   -moz-box-shadow: 3px 3px 5px #ccc;
   -webkit-box-shadow: 3px 3px 5px #ccc;
   box-shadow: 3px 3px 5px #ccc;
-
-  -moz-transform: rotate(-3deg);
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
 
   behavior: url(/PIE.htc);
 }
