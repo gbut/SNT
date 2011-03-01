@@ -320,10 +320,18 @@ input[type=text] {
   color:                #eee;
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
   border-color:         #838383;
-  background:           #c3383d url(../images/btns.png) -30px -74px no-repeat; /* old browsers */
-  background:           url(../images/btns.png) -30px -74px no-repeat, -moz-linear-gradient(top, #C3383D 0%, #C3020A 100%); /* firefox */
-  background:           url(../images/btns.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C3383D), color-stop(100%,#C3020A)); /* webkit */
-  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#C3383D', endColorstr='#C3020A',GradientType=0 ); /* ie */
+  background-color:     #c3383d;
+  background-position:  -30px -74px;
+  background-repeat:    no-repeat;
+  background-image:     url(../images/btns.png);
+  background-image:     url(../images/btns.png), -moz-linear-gradient(top, #C3383D 0%, #C3020A 100%);
+  background-image:     url(../images/btns.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C3383D), color-stop(100%,#C3020A));
+/*
+  background:           #c3383d url(../images/btns.png) -30px -74px no-repeat;
+  background:           url(../images/btns.png) -30px -74px no-repeat, -moz-linear-gradient(top, #C3383D 0%, #C3020A 100%);
+  background:           url(../images/btns.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C3383D), color-stop(100%,#C3020A));
+*/
+  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#C3383D', endColorstr='#C3020A',GradientType=0 );
 }
 .btnApply:hover,
 .btnApply:active,
