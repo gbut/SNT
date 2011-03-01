@@ -176,11 +176,11 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate.
    No text-shadow: twitter.com/miketaylr/status/12228805301 
    Also: hot pink. */
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+::-moz-selection{ background: #dbe4ea; color:#fff; text-shadow: none; }
+::selection { background:#dbe4ea; color:#fff; text-shadow: none; } 
 
 /*  j.mp/webkit-tap-highlight-color */
-a:link { -webkit-tap-highlight-color: #FF5E99; } 
+a:link { -webkit-tap-highlight-color: #dbe4ea; } 
 
 /* make buttons play nice in IE:    
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
@@ -248,7 +248,6 @@ button {  width: auto; overflow: visible; }
 
 body {
   background:           #dbe4ea;
-  overflow-x:           hidden; /* so header box-shadow doesn't create horiz scrollbar */
 }
 
 a {
@@ -421,13 +420,33 @@ header h1 a {
   background:           transparent url(../images/logo.png) top left no-repeat;
 }
 
+/* + Client Login */
+
 header #login {
   float:                right;
   clear:                right;
   width:306px;
   text-align:right;
-  padding:              12px 0 16px;
+  padding:              12px 0 0;
 }
+header #login #btnClientLogin {
+  color:                #2d7db5;
+  font:                 85%/100% Arial,sans-serif;
+  text-align:           center;
+  padding:              7px;
+  border:               1px solid #c5c5c5;
+  display:              inline-block;
+  position:             relative;
+  -webkit-border-radius:4px 4px 1px 1px;
+  -moz-border-radius:   4px 4px 1px 1px;
+  border-radius:        4px 4px 1px 1px;
+  background:           #ebebeb;
+  background:           -moz-linear-gradient(top, #ffffff 0%, #ebebeb 100%);
+  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb));
+  -pie-background:      linear-gradient(#ffffff, #ebebeb);
+  behavior: url(/PIE.htc);
+}
+/*
 header #login form {
   display:              inline;
 }
@@ -438,6 +457,9 @@ header #login form input[type=text] {
   -moz-border-radius:   4px 0 0 4px;
   border-radius:        4px 0 0 4px;
 }
+*/
+
+/* / Client Login */
 
 /* + Global Nav */
 
@@ -510,11 +532,6 @@ header nav ul.sf-menu li ul.sn {
      -moz-box-shadow:   0px 3px 3px -3px #9c8f85; 
   -webkit-box-shadow:   0px 3px 3px -3px #9c8f85; 
           box-shadow:   0px 3px 3px -3px #9c8f85;
-  /* TODO: Does Modernizr take care of these? */
-	/* For IE 8 
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#9c8f85')";*/
-	/* For IE 5.5 - 7 
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#9c8f85');*/
 }
 /*
 header nav ul.sf-menu li:hover ul.sn {
@@ -1014,11 +1031,29 @@ ul.index.global li a {
 /* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
-  
+  header,
+  footer {
+    width:                960px; /* force full width so bg is consistent; is this a good idea? */
+  }
+  .btn {
+    padding-top:          9px;
+    padding-bottom:       4px;
+  }
+  .btnLg {
+    padding-top:          13px;
+    padding-bottom:       9px;
+  }
   
   /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
      j.mp/textsizeadjust 
   html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+/* inverse of above */
+@media screen and (min-device-width: 481px) {
+  body {
+    overflow-x:           hidden; /* so header box-shadow doesn't create horiz scrollbar */
+  }
 }
 
 /* 

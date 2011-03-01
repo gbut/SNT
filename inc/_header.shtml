@@ -2,7 +2,7 @@
 
 <!-- + header -->
 <header class="clearfix">
-  <div class="hearderInner wrapper clearfix">
+  <div class="headerInner wrapper clearfix">
     
     <!-- + logo -->
     <h1><a href="index.shtml" title="RMS">RMS</a></h1>
@@ -10,11 +10,13 @@
 
     <!-- + login -->
     <div id="login">
+      <a href="#" id="btnClientLogin" title="Client Login">Client Login</a>
+<!--
       <form id="form_login" method="post" action="">
         <input type="text" name="search" id="form_login_search" />
         <button type="submit" name="submit" id="form_login_submit" value="Search">S</button>
       </form>
-      <a href="#" title="Client Login">Client Login</a>
+-->
     </div>
     <!-- / login -->
   
