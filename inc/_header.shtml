@@ -10,11 +10,13 @@
 
     <!-- + login -->
     <div id="login">
+      <a href="#" id="btnClientLogin" title="Client Login">Client Login</a>
+<!--
       <form id="form_login" method="post" action="">
         <input type="text" name="search" id="form_login_search" />
         <button type="submit" name="submit" id="form_login_submit" value="Search">S</button>
       </form>
-      <a href="#" title="Client Login">Client Login</a>
+-->
     </div>
     <!-- / login -->
   

@@ -420,13 +420,33 @@ header h1 a {
   background:           transparent url(../images/logo.png) top left no-repeat;
 }
 
+/* + Client Login */
+
 header #login {
   float:                right;
   clear:                right;
   width:306px;
   text-align:right;
-  padding:              12px 0 16px;
+  padding:              12px 0 0;
 }
+header #login #btnClientLogin {
+  color:                #2d7db5;
+  font:                 85%/100% Arial,sans-serif;
+  text-align:           center;
+  padding:              7px;
+  border:               1px solid #c5c5c5;
+  display:              inline-block;
+  position:             relative;
+  -webkit-border-radius:4px 4px 1px 1px;
+  -moz-border-radius:   4px 4px 1px 1px;
+  border-radius:        4px 4px 1px 1px;
+  background:           #ebebeb;
+  background:           -moz-linear-gradient(top, #ffffff 0%, #ebebeb 100%);
+  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb));
+  -pie-background:      linear-gradient(#ffffff, #ebebeb);
+  behavior: url(/PIE.htc);
+}
+/*
 header #login form {
   display:              inline;
 }
@@ -437,6 +457,9 @@ header #login form input[type=text] {
   -moz-border-radius:   4px 0 0 4px;
   border-radius:        4px 0 0 4px;
 }
+*/
+
+/* / Client Login */
 
 /* + Global Nav */
 
@@ -509,11 +532,6 @@ header nav ul.sf-menu li ul.sn {
      -moz-box-shadow:   0px 3px 3px -3px #9c8f85; 
   -webkit-box-shadow:   0px 3px 3px -3px #9c8f85; 
           box-shadow:   0px 3px 3px -3px #9c8f85;
-  /* TODO: Does Modernizr take care of these? */
-	/* For IE 8 
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#9c8f85')";*/
-	/* For IE 5.5 - 7 
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#9c8f85');*/
 }
 /*
 header nav ul.sf-menu li:hover ul.sn {
