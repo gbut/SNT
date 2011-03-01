@@ -271,6 +271,25 @@ input[type=text] {
 
 /* + Buttons */
 
+#thing {
+  border: 1px solid #696;
+  padding: 60px 0;
+  text-align: center;
+  width: 200px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: #666 0px 2px 3px;
+  -moz-box-shadow: #666 0px 2px 3px;
+  box-shadow: #666 0px 2px 3px;
+  background: #EEFF99;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#EEFF99), to(#66EE33));
+  background: -moz-linear-gradient(#EEFF99, #66EE33);
+  background: linear-gradient(#EEFF99, #66EE33);
+  -pie-background: linear-gradient(#EEFF99, #66EE33);
+  behavior: url(js/libs/PIE/PIE.htc);
+}
+
 .btn {
   color:                #fff;
   font:                 77%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;
@@ -286,7 +305,9 @@ input[type=text] {
   background:           #699ab5 url(../images/btns.png) -9px -33px no-repeat;
   background:           url(../images/btns.png) -9px -33px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
   background:           url(../images/btns.png) -9px -33px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
+  -pie-background:      url(images/btns.png) -9px -33px no-repeat, linear-gradient(#699ab5, #2a749d);
 /*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#699ab5', endColorstr='#2a749d',GradientType=0 );*/
+  behavior: url(js/libs/PIE/PIE.htc);
 }
 .btn:hover,
 .btn:active,
@@ -297,7 +318,9 @@ input[type=text] {
   background:           #58839a url(../images/btns.png) -9px -33px no-repeat;
   background:           url(../images/btns.png) -9px -33px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
   background:           url(../images/btns.png) -9px -33px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
+  -pie-background:      url(images/btns.png) -9px -33px no-repeat, linear-gradient(#58839a, #215a79);
 /*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#58839a', endColorstr='#215a79',GradientType=0 );*/
+  behavior: url(js/libs/PIE/PIE.htc);
 }
 .btn:active {
   background:           #1c4c66 url(../images/btns.png) -9px -33px no-repeat;
@@ -312,10 +335,12 @@ input[type=text] {
   background:           #fefefe url(../images/btns.png) 20px -124px no-repeat;
   background:           url(../images/btns.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
   background:           url(../images/btns.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+  -pie-background:      url(images/btns.png) 20px -124px no-repeat, linear-gradient(#fefefe, #d7d7d7);
 /*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#d7d7d7',GradientType=0 );*/
      -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
           box-shadow:   0 2px 4px rgba(151,151,151,0.5);
+  behavior: url(js/libs/PIE/PIE.htc);
 }
 .btnLg:hover,
 .btnLg:active,
@@ -326,7 +351,9 @@ input[type=text] {
   background:           #fefefe url(../images/btns.png) 20px -124px no-repeat;
   background:           url(../images/btns.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
   background:           url(../images/btns.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
-/*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#a4a4a4',GradientType=0 ); /* ie */*/
+  -pie-background:      url(images/btns.png) 20px -124px no-repeat, linear-gradient(#fefefe, #a4a4a4);
+/*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#a4a4a4',GradientType=0 );*/
+  behavior: url(js/libs/PIE/PIE.htc);
 }
 .btnLg:active {
   background:           #d7d7d7 url(../images/btns.png) 20px -124px no-repeat;
@@ -339,7 +366,9 @@ input[type=text] {
   background:           #c3383d url(../images/btns.png) -30px -74px no-repeat;
   background:           url(../images/btns.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
   background:           url(../images/btns.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
+  -pie-background:      url(images/btns.png) -30px -74px no-repeat, linear-gradient(#c3383d, #c3020a);
 /*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3383d', endColorstr='#c3020a',GradientType=0 );*/
+  behavior: url(js/libs/PIE/PIE.htc);
 }
 .btnApply:hover,
 .btnApply:active,
@@ -350,7 +379,9 @@ input[type=text] {
   background:           #93262a url(../images/btns.png) -30px -74px no-repeat;
   background:           url(../images/btns.png) -30px -74px no-repeat, -moz-linear-gradient(top, #93262a 0%, #8f0309 100%);
   background:           url(../images/btns.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262a), color-stop(100%,#8f0309));
+  -pie-background:      url(images/btns.png) -30px -74px no-repeat, linear-gradient(#93262a, #8f0309);
 /*  filter:               progid:DXImageTransform.Microsoft.gradient( startColorstr='#93262a', endColorstr='#8f0309',GradientType=0 );*/
+  behavior: url(js/libs/PIE/PIE.htc);
 }
 .btnApply:active {
   background:           #770207 url(../images/btns.png) -30px -74px no-repeat;
