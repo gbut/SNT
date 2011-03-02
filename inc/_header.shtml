@@ -9,11 +9,28 @@
     <!-- / logo -->
 
     <!-- + login -->
-    <div id="login" class="ope">
+    <div id="login" class="NOTopen">
       <a href="#" id="btnClientLogin" title="Client Login">Client Login</a>
-      <form id="form_login" method="post" action="">
-        <input type="text" name="search" id="form_login_search" />
-        <button type="submit" name="submit" id="form_login_submit" value="Search">S</button>
+      <form id="form_login" method="post" action="" class="clearfix">
+        <h3>Private Client Area</h3>
+        <ul class="benefits">
+          <li>
+            <h4>Benefit One.</h4>
+            <p>Lorem ipsum dolor consectet.</p>
+          </li>
+          <li>
+            <h4>Benefit Two.</h4>
+            <p>Vivamus ante mi, venenatis quis.</p>
+          </li>
+          <li>
+            <h4>Benefit Three.</h4>
+            <p>Integer elementum leo sed erat.</p>
+          </li>
+        </ul>
+        <fieldset>
+          <input type="text" name="search" id="form_login_search" />
+          <button type="submit" name="submit" id="form_login_submit" value="Search">S</button>
+        </fieldset>
       </form>
     </div>
     <!-- / login -->

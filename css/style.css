@@ -392,7 +392,7 @@ input[type=text] {
 
 header {
   position:             relative;
-  z-index:              5;
+  z-index:              50;
   background:           #fff;
      -moz-box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
   -webkit-box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
@@ -401,6 +401,7 @@ header {
 
 header .wrapper {
   width:                960px;
+  padding:              0 40px;
   min-height:           77px;
   height:               auto !important;
   height:               77px;
@@ -473,8 +474,9 @@ header #login.open #btnClientLogin {
 }
 
 header #login form {
-  width:                441px;
-  height:               249px;
+  width:                411px;
+  height:               229px;
+  padding:              5px 15px 15px;
   border:               2px solid #b7b7b7;
   background:           #090909;
   z-index:              1;
@@ -492,6 +494,63 @@ header #login form {
 header #login.open form {
   display:              block;
 }
+
+header #login form h3 {
+  color:                #c3151c;
+  font:                 197%/153.9% "GothamHTFBook",Tahoma,Arial,sans-serif;
+  margin-bottom:        15px;
+  border-bottom:        1px solid #2d2d2d;
+}
+
+header #login form ul.benefits {
+  width:                174px;
+  margin:               0;
+  padding:              15px 20px 0;
+  list-style:           none;
+  border-right:         1px solid #2d2d2d;
+  float:                left;
+  position:             relative;
+  top:                  0;
+  left:                 1px;
+}
+
+header #login form ul.benefits li {
+  padding-bottom:       16px;
+}
+
+header #login form ul.benefits li h4 {
+  color:                #e5e3e3;
+  font:                 116%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+  padding-bottom:       4px;
+}
+
+header #login form ul.benefits li p {
+  color:                #858484;
+  font:                 93%/100% Tahoma,Arial,sans-serif;
+  font-family:          Tahoma,Arial,sans-serif;
+}
+
+header #login form fieldset {
+  width:                147px;
+  padding:              13px 19px 8px 29px;
+  border-left:          1px solid #2d2d2d;
+  float:                left;
+}
+
+#loginOverlay {
+  width:                100%;
+  height:               100%;
+  background:           #000;
+  overflow:             hidden;
+  position:             fixed;
+  z-index:              3;
+  -moz-opacity:         0.72;
+  -ms-filter:           "alpha(opacity=72)";
+  filter:               alpha(opacity=72);
+  opacity:              0.72;
+  display:              none;
+}
+
 
 /*
 header #login form {
@@ -513,7 +572,7 @@ header #login form input[type=text] {
 header nav {
   position:             absolute;
   bottom:               0;
-  right:                -30px;
+  right:                10px;
   z-index:              10;
 }
 
@@ -697,8 +756,9 @@ header nav ul.sf-menu li ul li .extras a.cta {
   position:             relative;
   z-index:              1;
   margin-top:           10px;
-  padding-bottom:       40px;
+/*  padding-bottom:       40px;*/
 /*  padding:              16px;*/
+  padding:              0 40px 40px;
 }
 
 /* These templates are full width */
@@ -728,10 +788,13 @@ footer {
   text-align:           center;
   padding:              20px 0;
   background:           #fff;
+  position:             relative;
+  z-index:              50;
 }
 
 footer .wrapper {
   width:                960px;
+  padding:              0 40px;
 }
 
 /* / FOOTER */
@@ -1084,7 +1147,11 @@ ul.index.global li a {
 @media screen and (max-device-width: 480px) {
   header,
   footer {
-    width:                960px; /* force full width so bg is consistent; is this a good idea? */
+    width:                1040px; /* force full width so bg is consistent; is this a good idea? */
+    padding:              0;
+  }
+  footer {
+    padding:              20px 0;
   }
   .btn {
     padding-top:          9px;

@@ -1,26 +1,273 @@
-/* Author: 
+/***********************************************************
+ *
+ *	File:			script.js
+ *	Author:		RMS
+ *	Created:	March 2011
+ *
+ **********************************************************/
 
+function inspect(obj) {
+  var str = '';
+  for (var i in obj) str += i + ': ' + obj[i] + '\n';
+  alert(str);
+}
+
+
+$(document).ready(function(){
+  
+	//===============================================
+	//	[CLASS NAME]
+	//  [class description]
+	//===============================================
+  (function($){
+    $.fn.dMgr = function(options) {
+      return this.each(function() {
+        new $dm(this, options);
+      });
+    };
+    
+    var defaults = {
+    };
+    
+    /**
+     * The xxx object.
+     *
+     * @constructor
+     * @name $.dMgr
+     * @param Object e The element to create the xxx for.
+     * @param Hash o A set of key/value pairs to set as configuration properties.
+     */
+    $.dMgr = function(e, o) {
+      this.options            = $.extend({}, defaults, o || {});
+
+      // elements
+      var self                = this;
+      this.container          = $(e);
+      
+      // flags, measurements
+      
+      // initialize
+
+    };
+
+    // Create shortcut for internal use
+    var $dm = $.dMgr;
+    $dm.fn = $dm.prototype = {};
+    $dm.fn.extend = $dm.extend = $.extend;
+
+    $dm.fn.extend({
+      /**
+       * [method description]
+       *
+       * @name someMethod
+       * @type undefined
+       */
+      someMethod: function() {
+      }
+
+    });
+
+  })(jQuery);
+  
+
+	//===============================================
+	//	VOID LINKS (HREF="#")
+	//===============================================
+	$(function(){
+		$('body').click(function(e){
+			var clicked = $(e.target);
+			if ((clicked.get(0).tagName.toLowerCase() != 'a') && (clicked.parents('a').length)) clicked = clicked.parents('a').get(0);
+			if ((typeof clicked) != 'undefined' && $(clicked).attr('href') == '#') e.preventDefault();
+		});
+	});
+
+	//===============================================
+	//	EXTERNAL LINKS
+	//===============================================
+	$(function(){
+		$('a[rel="external"], a.external').each(function() {
+			$(this).attr({
+			  'class': $(this).attr('class') + ' external',
+				'target': 'rms'
+			}); 
+		});
+	});
+
+  //===============================================
+  //	CLIENT LOGIN
+  //===============================================
+  $(function(){
+  	$('<div id="loginOverlay"></div>').prependTo($('#body')).click(function(e){
+  	  $('#btnClientLogin').triggerHandler('click');
+  	});
+  	$('#btnClientLogin').click(function(e){
+  	  if ($('#login').hasClass('open')) {
+    	  $('#loginOverlay').fadeOut(150);
+    	  $('#login').removeClass('open');
+  	  } else {
+    	  $('#loginOverlay').fadeIn(150);
+    	  $('#login').addClass('open');
+  	  }
+  	});
+  });
+
+/*
+  //===============================================
+  //  INPUT FIELD HINTS
+  //  EZPZ Hint v1.1.1; Copyright (c) 2009 Mike Enriquez, http://theezpzway.com; Released under the MIT License
+  //===============================================
+  (function($){
+    $.fn.ezpz_hint = function(options){
+      var defaults = {
+        hintClass: 'ezpz-hint',
+        hintName: 'ezpz_hint_dummy_input'
+      };
+      var settings = $.extend(defaults, options);
+      
+      return this.each(function(){
+        var hint;
+        var dummy_input;
+        
+        // grab the input's title attribute
+        text = $(this).attr('title');
+        
+        // create a dummy input and place it before the input
+        $('<input type="text" name="temp" value="" />').insertBefore($(this));
+        
+        // set the dummy input's attributes
+        hint = $(this).prev('input:first');
+        hint.attr('class', $(this).attr('class'));
+        hint.attr('size', $(this).attr('size'));
+        hint.attr('name', settings.hintName);
+        hint.attr('autocomplete', 'off');
+        hint.attr('tabIndex', $(this).attr('tabIndex'));
+        hint.addClass(settings.hintClass);
+        hint.val(text);
+        
+        // hide the input
+        $(this).hide();
+        
+        // don't allow autocomplete (sorry, no remember password)
+        $(this).attr('autocomplete', 'off');
+        
+        // bind focus event on the dummy input to swap with the real input
+        hint.focus(function(){
+          dummy_input = $(this);
+          $(this).next('input:first').show();
+          $(this).next('input:first').focus();
+          $(this).next('input:first').unbind('blur').blur(function(){
+            if ($(this).val() == '') {
+              $(this).hide();
+              dummy_input.show();
+            }
+          });
+          $(this).hide();
+        });
+        
+        // swap if there is a default value
+        if ($(this).val() != ''){
+          hint.focus();
+        };
+        
+        // remove the dummy inputs so that they don't get submitted
+        $('form').submit(function(){
+          $('.' + settings.hintName).remove();
+        });
+      });
+      
+    };
+    // attach to relevant inputs
+    $('input.ffHint').ezpz_hint();
+  })(jQuery);
+
+
+  //===============================================
+  //  LOGIN INPUT FIELD HINTS
+  //  EZPZ Hint disables autocomplete - this is an alternative for forms with password fields
+  //===============================================
+  (function($){
+    $.fn.addHint = function(options){
+      var defaults = {
+        hintClass: 'fHint',
+        fudgeDims: { //text fields seem to add extra padding
+          top: 2,
+          left: 1
+        }
+      };
+      var settings = $.extend(defaults, options);
+      
+      return this.each(function(){
+        // create a dummy input overlay and place it after the input
+        var hint = $('<div class="fHint"></div>').insertAfter($(this));
+        
+        // establish relationship between elements
+        hint.data('field', $(this));
+        $(this).data('overlay', hint);
+        
+        // grab the input's title attribute
+        var text = $(this).attr('title');
+        
+        //IE8 chokes on border widths
+        //see http://code.google.com/p/jquery-megamenu/issues/detail?id=3
+        var bTop  = ($(this).css('border-top-width')=='medium') ? 0 : $(this).css('border-top-width');
+        var bLt   = ($(this).css('border-left-width')=='medium') ? 0 : $(this).css('border-left-width');
+        
+        // set the overlay's attributes based on related input field
+        hint.html(text);
+        hint.css({
+          'width':        $(this).css('width'),
+          'height':       $(this).css('height'),
+          'padding-top':  $(this).css('padding-top'),
+          'padding-left': $(this).css('padding-left'),
+          'top':          parseInt($(this).css('margin-top')) + parseInt(bTop) + parseInt($(this).parent().css('padding-top')) + settings.fudgeDims.top,
+          'left':         parseInt($(this).css('margin-left')) + parseInt(bLt) + parseInt($(this).parent().css('padding-left')) + settings.fudgeDims.left,
+          'font-size':    $(this).css('font-size')
+        });
+        
+        // bind click on the overlay, focus/blur on field
+        hint.click(function(){
+          $(this).hide();
+          $(this).data('field').focus();
+        });
+        $(this).bind('focus', function(){
+          $(this).data('overlay').hide();
+        }).bind('blur', function(){
+          if (!$(this).val()) $(this).data('overlay').show();
+        });
+        
+        // on page load, show/hide overlay based on data in field
+        $(this).triggerHandler('blur');
+      });
+      
+    };
+    // attach to relevant inputs
+    $('input.addHint').addHint();
+  })(jQuery);
 */
 
+});
 
 
+/**
+ * Declare a global timer for enabling a sort of "onResizeEnd" event.
+ */
+var _resizeTimer = null;
 
 
+/**
+ * Fn for scrolling to top of page.
+ */
+/*
+function scrollToTop() {
+  window.scroll(0,0);
+}
+*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**
+ * Wrapper for setting fade durations.
+ * PNGs get a black halo when faded in IE, so IE-specific js returns zero.
+ */
+function fadeDuration(dur) {
+  return dur;
+}
 
