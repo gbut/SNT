@@ -254,8 +254,10 @@ a {
   text-decoration:      none;
 }
 
-input[type=text] {
-  padding:              3px 2px;
+input[type=text],
+input[type=password] {
+  font:                 85%/100% Tahoma,Arial,sans-serif;
+  padding:              3px 5px;
   background-color:     #fff;
   border:               1px solid #b2b2b2;
   -webkit-border-radius:4px 6px;
@@ -558,7 +560,7 @@ header #login form label {
 header #login form input[type=text],
 header #login form input[type=password] {
   color:                #5e5e5e;
-  width:                141px;
+  width:                135px;
   margin:               5px 0;
   border:               1px solid #bdbcbd;
   display:              block;
