@@ -425,9 +425,9 @@ header h1 a {
 header #login {
   float:                right;
   clear:                right;
-  width:306px;
-  text-align:right;
   padding:              12px 0 0;
+  position:             relative;
+  overflow:             visible;
 }
 header #login #btnClientLogin {
   color:                #2d7db5;
