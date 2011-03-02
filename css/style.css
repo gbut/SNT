@@ -477,7 +477,7 @@ header #login.open #btnClientLogin {
 
 header #login form {
   width:                411px;
-  height:               229px;
+/*  height:               229px;*/
   padding:              5px 15px 15px;
   border:               2px solid #b7b7b7;
   background:           #090909;
@@ -487,7 +487,7 @@ header #login form {
   border-radius:        2px 0 7px 7px;
   display:              none;
   position:             absolute;
-  bottom:               -251px;
+  top:                  25px;
   right:                0;
      -moz-box-shadow:   0 4px 12px rgba(0,0,0,0.7); 
   -webkit-box-shadow:   0 4px 12px rgba(0,0,0,0.7); 
@@ -502,6 +502,8 @@ header #login form h3 {
   font:                 197%/153.9% "GothamHTFBook",Tahoma,Arial,sans-serif;
   margin-bottom:        15px;
   border-bottom:        1px solid #2d2d2d;
+  padding-left:         75px;
+  background:           transparent url(../images/logo_sm.png) 0 10px no-repeat;
 }
 
 header #login form ul.benefits {
@@ -617,8 +619,9 @@ header nav ul.sf-menu li {
   height:               29px;
   overflow:             visible;
 }
-header nav ul.sf-menu li a {
+header nav ul.sf-menu li a.pn {
   color:                #616161;
+  font:                 108%/100% "FreightSansBold",Helvetica,sans-serif;
   text-decoration:      none;
   text-transform:       uppercase;
   display:              block;
@@ -630,40 +633,41 @@ header nav ul.sf-menu li a {
   border-width:         0 1px;
   overflow:             visible;
 }
-header nav ul.sf-menu li:first-child a {
+header nav ul.sf-menu li:first-child a.pn {
   border-left:          none;
 }
-header nav ul.sf-menu li:last-child a {
+header nav ul.sf-menu li:last-child a.pn {
   border-right:         none;
 }
 header nav ul.sf-menu li.selected {
 /*  border-bottom:        4px solid #c3151c;*/
 }
-header nav ul.sf-menu li.selected a .tl {
+header nav ul.sf-menu li.selected a.pn .tl {
   height:               23px;
   border-bottom:        4px solid #c3151c;
   display:              block;
 }
-header nav ul.sf-menu li a:visited {
+header nav ul.sf-menu li a.pn:visited {
   color:                #616161;
 }
-header nav ul.sf-menu li.sfHover a,
-header nav ul.sf-menu li a:hover,
-header nav ul.sf-menu li a:active {
+header nav ul.sf-menu li.sfHover a.pn,
+header nav ul.sf-menu li a.pn:hover,
+header nav ul.sf-menu li a.pn:active {
   color:                #bd081b;
   background:           #eee url(../images/bg_gnav_hover.png) top left repeat-x;
   padding-bottom:       30px;
 }
-header nav ul.sf-menu li.selected a:hover .tl,
-header nav ul.sf-menu li.selected a:active .tl {
+header nav ul.sf-menu li.selected a.pn:hover .tl,
+header nav ul.sf-menu li.selected a.pn:active .tl {
   border:               none;
 }
 
 header nav ul.sf-menu li ul.sn {
-  width:460px;
+  font:                 100%/100% Tahoma,Helvetica,sans-serif;
+  width:                460px;
   border:               1px solid #dadada;
   border-width:         0 1px 1px;
-  padding:16px;
+  padding:              16px;
   position:             absolute;
   top:                  29px;
   left:                 0;
@@ -699,6 +703,9 @@ header nav ul.sf-menu li ul li .subnavRt {
   padding:              14px 7px 0 23px;
   float:                left;
 }
+header nav ul.sf-menu li ul li .extras {
+  text-align:           center;
+}
 /*
 header nav ul.sf-menu li ul li ul {
   width:auto;
@@ -719,6 +726,7 @@ header nav ul.sf-menu li ul li .snavItems {
 header nav ul.sf-menu li.sfHover ul li .snavItem a,
 header nav ul.sf-menu li ul li .snavItem a {
   color:                #28739c;
+  font:                 100%/100% Tahoma,Helvetica,sans-serif;
   text-transform:       none;
   height:               auto;
   padding:              9px 0 6px;
@@ -737,6 +745,7 @@ header nav ul.sf-menu li ul li .snavItem a:active {
 }
 header nav ul.sf-menu li ul li .snavItem a h4 {
   font-size:            116%;
+  font:                 116%/100% "GothamHTFMedium",Tahoma,Helvetica,sans-serif;
   margin-bottom:        5px;
 }
 header nav ul.sf-menu li ul li .snavItem a p {
@@ -771,14 +780,6 @@ header nav ul.sf-menu li ul li .extras img.fakeImg {
   background:green;
 }
 header nav ul.sf-menu li ul li .extras a.cta {
-  margin:0 auto;
-  display:block;
-  color:#fff;
-  background:#3279a0;
-  text-transform:uppercase;
-  padding:10px 16px 5px;
-  text-align:center;
-  border:1px solid gray;
 }
 
 /* / Global Nav */
