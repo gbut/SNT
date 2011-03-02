@@ -9,14 +9,12 @@
     <!-- / logo -->
 
     <!-- + login -->
-    <div id="login">
+    <div id="login" class="ope">
       <a href="#" id="btnClientLogin" title="Client Login">Client Login</a>
-<!--
       <form id="form_login" method="post" action="">
         <input type="text" name="search" id="form_login_search" />
         <button type="submit" name="submit" id="form_login_submit" value="Search">S</button>
       </form>
--->
     </div>
     <!-- / login -->
   
