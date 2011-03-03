@@ -972,24 +972,25 @@ footer a {
 /* + Sidebar */
 
 #sidebar .quote {
-  font-size:125%;
-  color:gray;
+  font:                 125%/125% "GothamHTFBook",Tahoma,Arial,sans-serif;
+  color:                #606060;
 }
 #sidebar .quote .author {
-  font-size:80%;
+  font:                 77%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;
+  color:                #6e8394;
+  margin-top:           4px;
 }
 #sidebar .quote .author .title {
-  color:gray;
+  font-family:          "GothamHTFBook",Tahoma,Arial,sans-serif;
 }
 
-/* transform needs to be on wrapper or it wil get stepped on by behavior */
+/* transform needs to be on wrapper or it will get stepped on by behavior */
 #sidebar div.photo {
   width:                241px;
   height:               166px;
   position:             relative;
 /*  -sand-transform: rotate(-3deg);*/
 }
-
 
 #sidebar div.photo img {
   width:                226px;
@@ -1016,21 +1017,20 @@ footer a {
 }
 
 #sidebar .benefit {
-  font-size:200%;
-  font-weight:bold;
-  line-height:.9;
-  color:gray;
-  margin:10px 0 20px;
+  font:                 bold 220%/90% Arial, Helvetica, sans-serif;
+  color:                #849db1;
+  margin:               10px 0 20px;
 }
 #sidebar .benefit h4 {
-  font-size:120%;
-  font-weight:bold;
-  color:blue;
+  font-size:            120%;
+  color:                #586976;
+  margin-bottom:        4px;
 }
 #sidebar .benefit .subtext {
-  font-size:70%;
-  color:blue;
-  text-transform:uppercase;
+  font-size:            70%;
+  line-height:          90%;
+  color:                #586976;
+  text-transform:       uppercase;
 }
 
 /* / Sidebar */
