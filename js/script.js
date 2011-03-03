@@ -107,6 +107,7 @@ $(document).ready(function(){
   	  } else {
     	  $('#loginOverlay').fadeIn(150);
     	  $('#login').addClass('open');
+    	  $('#form_login input[type=text]').eq(0).focus();
   	  }
   	});
   });
