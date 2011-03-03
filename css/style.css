@@ -984,15 +984,23 @@ footer a {
   font-family:          "GothamHTFBook",Tahoma,Arial,sans-serif;
 }
 
+#sidebar #photo {
+  position:             relative;
+  margin-bottom:        80px;
+}
+
 /* transform needs to be on wrapper or it will get stepped on by behavior */
-#sidebar div.photo {
+#sidebar div.photo,
+#sidebar div.photo2 {
   width:                241px;
   height:               166px;
   position:             relative;
+  z-index:              2;
 /*  -sand-transform: rotate(-3deg);*/
 }
 
-#sidebar div.photo img {
+#sidebar div.photo img,
+#sidebar div.photo2 img {
   width:                226px;
   height:               131px;
   margin-top:           20px;
@@ -1001,9 +1009,9 @@ footer a {
   left:-42px;
   border:               6px solid #fff;
 
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
 
   -moz-box-shadow: 3px 3px 5px #ccc;
   -webkit-box-shadow: 3px 3px 5px #ccc;
@@ -1014,6 +1022,19 @@ footer a {
   transform: rotate(-3deg);
   
   behavior: url(/PIE.htc);
+}
+
+#sidebar div.photo2 {
+  position:             absolute;
+  left:                 30px;
+  top:                  60px;
+  z-index:              1;
+}
+
+#sidebar div.photo2 img {
+  -moz-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
 }
 
 #sidebar .benefit {
