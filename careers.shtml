@@ -2,7 +2,7 @@
 
 <!--#include virtual="inc/_header.shtml" -->
 
-<div id="t02">
+<div id="t02" class="contentOuter">
   <!-- + main -->
   <div id="main" class="wrapper clearfix">
     

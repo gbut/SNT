@@ -247,7 +247,7 @@ button {  width: auto; overflow: visible; }
 /* + *** GLOBAL *** */
 
 body {
-  background:           #dbe4ea;
+/*  background:           #dbe4ea;*/
 }
 
 a {
@@ -828,8 +828,11 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
   width:                960px;
   position:             relative;
   z-index:              1;
+/*
   margin-top:           15px;
   padding:              0 40px 40px;
+*/
+  padding:              15px 40px 40px;
 }
 
 /* These templates are full width */
@@ -838,6 +841,10 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
   width:                100%;
   margin-top:           0;
   padding:              0;
+}
+
+.contentOuter {
+  background:           #dbe4ea;
 }
 
 /* / MAIN */
