@@ -1,6 +1,15 @@
 
 /*** ESSENTIAL STYLES ***/
+
+/*
 .sf-menu, .sf-menu * {
+  margin:     0;
+  padding:    0;
+  list-style:   none;
+}
+*/
+/* more specific: */
+.sf-menu, .sf-menu *:not('.btn') {
 	margin:			0;
 	padding:		0;
 	list-style:		none;
@@ -23,7 +32,14 @@
 	float:			left;
 	position:		relative;
 }
+/*
 .sf-menu a {
+  display:    block;
+  position:   relative;
+}
+*/
+/* more specific: */
+.sf-menu a:not('.btn') {
 	display:		block;
 	position:		relative;
 }
