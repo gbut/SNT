@@ -681,9 +681,9 @@ header nav ul.sf-menu li ul.sn {
   -webkit-border-radius:0 0 5px 5px;
   -moz-border-radius:   0 0 5px 5px;
   border-radius:        0 0 5px 5px;
-     -moz-box-shadow:   0px 3px 3px -3px #9c8f85; 
-  -webkit-box-shadow:   0px 3px 3px -3px #9c8f85; 
-          box-shadow:   0px 3px 3px -3px #9c8f85;
+     -moz-box-shadow:   2px 3px 6px -3px #9c8f85; 
+  -webkit-box-shadow:   2px 3px 6px -3px #9c8f85; 
+          box-shadow:   2px 3px 6px -3px #9c8f85;
 }
 
 header nav ul.sf-menu li ul li {
@@ -693,26 +693,40 @@ header nav ul.sf-menu li ul li {
   height:               auto;
 }
 header nav ul.sf-menu li ul li .subnavLt {
+  text-align:           center;
   width:                225px;
-  padding:              1px 23px 0 7px;
+  padding:              8px 24px 0 6px;
   border-right:         1px solid #c7c7c7;
   float:                left;
+  position:             relative;
+  top:                  0;
+  left:                 1px;
 }
 header nav ul.sf-menu li ul li .subnavRt {
-  width:                174px;
-  padding:              14px 7px 0 23px;
-  float:                left;
-}
-header nav ul.sf-menu li ul li .extras {
   text-align:           center;
+  width:                173px;
+  padding:              8px 7px 0 23px;
+  border-left:          1px solid #c7c7c7;
+  float:                left;
+  position:             relative;
+}
+header nav ul.sf-menu li ul.sn li img.gnavImg {
+  margin:               0 auto 5px;
+  display:              block;
 }
 
-header nav ul.sf-menu li ul li .snavItems {
+header nav ul.sf-menu li ul li ul.snavItems {
+  text-align:           left;
+  width:                auto;
   position:             relative;
-  overflow:             hidden;
+  top:                  0;
+  left:                 0;
 }
-header nav ul.sf-menu li.sfHover ul li .snavItem a,
-header nav ul.sf-menu li ul li .snavItem a {
+header nav ul.sf-menu li ul li ul.snavItems li {
+  font-size:            100%;
+}
+header nav ul.sf-menu li ul li ul.snavItems li a,
+header nav ul.sf-menu li.sfHover ul li ul.snavItems li a {
   color:                #28739c;
   font:                 100%/100% Tahoma,Helvetica,sans-serif;
   text-transform:       none;
@@ -720,59 +734,86 @@ header nav ul.sf-menu li ul li .snavItem a {
   padding:              9px 0 6px;
   border:               1px solid #c0c0c0;
   border-width:         1px 0 0;
-  top:                  -1px;
   background:           none;
+  display:              block;
 }
-header nav ul.sf-menu li ul li .snavItem a:visited {
+header nav ul.sf-menu li ul li ul.snavItems li a:visited {
   color:                #28739c;
 }
-header nav ul.sf-menu li ul li .snavItem a:hover,
-header nav ul.sf-menu li ul li .snavItem a:active {
+header nav ul.sf-menu li ul li ul.snavItems li a:hover,
+header nav ul.sf-menu li ul li ul.snavItems li a:active {
   color:                #bd081b;
   padding:              9px 0 6px;
 }
-header nav ul.sf-menu li ul li .snavItem a h4 {
-  font-size:            116%;
+header nav ul.sf-menu li ul li ul.snavItems li a h4 {
   font:                 116%/100% "GothamHTFMedium",Tahoma,Helvetica,sans-serif;
   margin-bottom:        5px;
 }
-header nav ul.sf-menu li ul li .snavItem a p {
+header nav ul.sf-menu li ul li ul.snavItems li a p {
   color:                #202020;
   font-weight:          normal;
   padding:              0 16px 3px 0;
+  float:                left;
   background:           #eee url(../images/arrow_snav_item.png) 100% 1px no-repeat;
   -moz-opacity:         0.55;
   -ms-filter:           "alpha(opacity=55)";
   filter:               alpha(opacity=55);
   opacity:              0.55;
 }
-header nav ul.sf-menu li ul li .snavItem a:hover p,
-header nav ul.sf-menu li ul li .snavItem a:active p {
+header nav ul.sf-menu li ul li ul.snavItems li a:hover p,
+header nav ul.sf-menu li ul li ul.snavItems li a:active p {
   -moz-opacity:         1;
   -ms-filter:           "alpha(opacity=100)";
   filter:               alpha(opacity=100);
   opacity:              1;
 }
 
-header nav ul.sf-menu li ul li .extras h4 {
-  color:#888;
-  font-size:125%;
-  text-align:center;
-  margin:0 0 10px;
-}
-header nav ul.sf-menu li ul li .extras img.fakeImg {
-  margin:0 auto 10px;
-  display:block;
-  width:105px;
-  height:105px;
-  background:green;
-}
-header nav ul.sf-menu li ul li .extras a.cta {
-}
-
 /* section-specific rules for submenus */
 
-header nav ul.sf-menu li ul.sn.careers {
+header nav ul.sf-menu li ul.sn.risk li .subnavLt {
+  padding-top:          1px;
+}
+header nav ul.sf-menu li ul.sn.risk li .subnavRt h4 {
+  color:                #797979;
+  font:                 108%/131% "GothamHTFMedium",Tahoma,Helvetica,sans-serif;
+  text-align:           center;
+  margin:               0 0 10px;
+}
+
+header nav ul.sf-menu li ul.sn.careers li h3 {
+  color:                #28739c;
+  font:                 116%/100% "GothamHTFMedium",Tahoma,Helvetica,sans-serif;
+  text-align:           left;
+  margin-bottom:        19px;
+  padding-bottom:       12px;
+  border-bottom:        1px solid #c0c0c0;
+}
+header nav ul.sf-menu li ul.sn.careers li .subnavLt a.cta {
+  color:                #1f1f1f;
+  font:                 bold 93%/100% Tahoma,Helvetica,sans-serif;
+  text-transform:       uppercase;
+  padding-right:        13px;
+  background:           transparent url(../images/arrow_snav_item.png) 100% 2px no-repeat;
+}
+header nav ul.sf-menu li ul.sn.careers li img.gnavImg {
+  margin-bottom:        17px;
+}
+header nav ul.sf-menu li ul.sn.careers li ul.snavItems {
+  padding:              0 0 11px;
+  position:             relative;
+  top:                  -7px;
+}
+header nav ul.sf-menu li ul.sn.careers li .subnavRt h3,
+header nav ul.sf-menu li ul.sn.careers li ul.snavItems li a {
+  padding-left:         34px;
+}
+header nav ul.sf-menu li ul.sn.careers li ul.snavItems li a {
+  color:                #636363;
+  border-style:         dotted;
+}
+
+header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
+  border:               none;
 }
 
 
