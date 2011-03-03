@@ -838,7 +838,7 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
   width:                100%;
   margin-top:           0;
   padding:              0;
-  }
+}
 
 /* / MAIN */
 
@@ -1215,6 +1215,15 @@ display:none;
 /* + Plugs */
 
 /* / Plugs */
+
+/* + Chat */
+
+#bg_chat {
+  height:               711px;
+  background:           transparent url(../images/bg_chat.jpg) top center no-repeat;
+}
+
+/* / Chat */
 
 /* / *** MODULES *** */
 
