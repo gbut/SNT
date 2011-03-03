@@ -803,9 +803,7 @@ header nav ul.sf-menu li ul li .extras a.cta {
   width:                960px;
   position:             relative;
   z-index:              1;
-  margin-top:           10px;
-/*  padding-bottom:       40px;*/
-/*  padding:              16px;*/
+  margin-top:           15px;
   padding:              0 40px 40px;
 }
 
@@ -832,7 +830,8 @@ header nav ul.sf-menu li ul li .extras a.cta {
 /* + FOOTER */
 
 footer {
-  font-size:90%;
+  font-size:            90%;
+  color:                #838282;
   text-align:           center;
   padding:              20px 0;
   background:           #fff;
@@ -843,6 +842,10 @@ footer {
 footer .wrapper {
   width:                960px;
   padding:              0 40px;
+}
+
+footer a {
+  color:                #414040;
 }
 
 /* / FOOTER */
@@ -883,6 +886,7 @@ footer .wrapper {
 
 #main aside {
   width:                186px;
+  margin-top:           10px;
   padding:              24px 30px;
   border:               1px solid #cccacb;
   -webkit-border-radius:6px;
@@ -902,8 +906,12 @@ footer .wrapper {
 /* + Feature */
 
 #banner {
-  height:254px;
-  background:#00f;
+  height:               255px;
+}
+
+#banner img {
+  height:               255px;
+  width:                960px;
 }
 
 #presenter {
@@ -918,32 +926,52 @@ footer .wrapper {
 
 /* + Toolbars */
 
-#main #job_search {
-  color:#000;
-  margin-bottom:        40px;
-  -webkit-border-radius:2px;
-  -moz-border-radius:   2px;
-  border-radius:        2px;
-  background-color:gray;
-  height:67px;
+#job_search {
+  font-family:          Arial, Helvetica, sans-serif;
+  font-weight:          bold;
+  color:                #2e2e2e;
+  margin-bottom:        26px;
 }
 
-#main #job_search div {
-  margin:               8px 0 0 45px;
+#job_search form,
+#job_search .sideLt,
+#job_search .sideRt {
+  height:               67px;
+  float:                left;
+  background:           transparent url(../images/bg_job_search.png) 0 0 no-repeat;
+}
+
+#job_search .sideLt,
+#job_search .sideRt {
+  width:                5px;
+}
+
+#job_search .sideRt {
+  background-position:  0 -134px;
+}
+
+#job_search form {
+  width:                950px;
+  background-position:  0 -67px;
+  background-repeat:    repeat-x;
+}
+
+#job_search form div {
+  margin:               12px 0 0 45px;
   float:                left;
 }
 
-#main #job_search label {
+#job_search form label {
   margin-bottom:        4px;
   display:              block;
 }
 
-#main #job_search input {
+#job_search form input {
   padding:              2px;
   width:                294px;
 }
 
-#main #job_search select {
+#job_search form select {
   font-size:            16px;
   width:                240px;
 }
@@ -954,26 +982,35 @@ footer .wrapper {
 /* + Sidebar */
 
 #sidebar .quote {
-  font-size:125%;
-  color:gray;
+  font:                 125%/125% "GothamHTFBook",Tahoma,Arial,sans-serif;
+  color:                #606060;
 }
 #sidebar .quote .author {
-  font-size:80%;
+  font:                 77%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;
+  color:                #6e8394;
+  margin-top:           4px;
 }
 #sidebar .quote .author .title {
-  color:gray;
+  font-family:          "GothamHTFBook",Tahoma,Arial,sans-serif;
 }
 
-/* transform needs to be on wrapper or it wil get stepped on by behavior */
-#sidebar div.photo {
+#sidebar #photo {
+  position:             relative;
+  margin-bottom:        80px;
+}
+
+/* transform needs to be on wrapper or it will get stepped on by behavior */
+#sidebar div.photo,
+#sidebar div.photo2 {
   width:                241px;
   height:               166px;
   position:             relative;
+  z-index:              2;
 /*  -sand-transform: rotate(-3deg);*/
 }
 
-
-#sidebar div.photo img {
+#sidebar div.photo img,
+#sidebar div.photo2 img {
   width:                226px;
   height:               131px;
   margin-top:           20px;
@@ -982,9 +1019,9 @@ footer .wrapper {
   left:-42px;
   border:               6px solid #fff;
 
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
 
   -moz-box-shadow: 3px 3px 5px #ccc;
   -webkit-box-shadow: 3px 3px 5px #ccc;
@@ -997,22 +1034,34 @@ footer .wrapper {
   behavior: url(/PIE.htc);
 }
 
+#sidebar div.photo2 {
+  position:             absolute;
+  left:                 30px;
+  top:                  60px;
+  z-index:              1;
+}
+
+#sidebar div.photo2 img {
+  -moz-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
 #sidebar .benefit {
-  font-size:200%;
-  font-weight:bold;
-  line-height:.9;
-  color:gray;
-  margin:10px 0 20px;
+  font:                 bold 220%/90% Arial, Helvetica, sans-serif;
+  color:                #849db1;
+  margin:               10px 0 20px;
 }
 #sidebar .benefit h4 {
-  font-size:120%;
-  font-weight:bold;
-  color:blue;
+  font-size:            120%;
+  color:                #586976;
+  margin-bottom:        4px;
 }
 #sidebar .benefit .subtext {
-  font-size:70%;
-  color:blue;
-  text-transform:uppercase;
+  font-size:            70%;
+  line-height:          90%;
+  color:                #586976;
+  text-transform:       uppercase;
 }
 
 /* / Sidebar */
@@ -1020,16 +1069,17 @@ footer .wrapper {
 /* + Job Listings */
 
 #job_listings h3 {
-  font-size:            150%;
-  margin-top:30px;
+  font:                 160%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+  color:                #181818;
+  margin-top:           30px;
 }
 
 #job_listings h3:first-child {
   margin-top:           0;
 }
 
-#job_listings .category {
-  color:red;
+#job_listings h3 .category {
+  color:                #c3151c;
 }
 
 #job_listings article {
@@ -1041,12 +1091,14 @@ footer .wrapper {
 }
 
 #job_listings article h4 {
+  font-size:            110%;
   margin:               0 0 7px;
   padding:              0 0 5px;
   border-bottom:        1px solid #cbcbcb;
 }
 
 #job_listings article h4 a {
+  color:                #13587e;
   text-decoration:      none;
 }
 
@@ -1057,31 +1109,33 @@ footer .wrapper {
 }
 
 #job_listings .footer {
-  margin-top:30px;
-  color:black;
+  font:                 110%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+  color:                #232323;
+  margin-top:           36px;
 }
 
 #job_listings .footer .subtext {
-  color:gray;
-}
-
-#job_listings .footer a {
-  color:black;
+  color:                #696969;
 }
 
 #job_listings .footer a.submit {
+  font-size:            90%;
+  color:                #1d3a4a;
   text-transform:       uppercase;
+  height:               16px;
+  display:              block;
+  padding-left:         20px;
+  background:           transparent url(../images/icon_submit_res.gif) 0 0 no-repeat;
   float:                right;
 }
 
-/*
-#job_listings .footer a.signup {
-  text-transform:       uppercase;
-  display:              block;
-  margin-top:10px;
-  padding-left:10px;
+#job_listings .more {
+  margin-right:10px;
+  display:block;
+  float:right;
+  position:relative;
+  top:-16px;
 }
-*/
 
 /* / Job Listings */
 
