@@ -19,7 +19,20 @@
       animation:   {opacity:'show'},
       speed:       100,
       autoArrows:  false,
-      dropShadows: false
+      dropShadows: false,
+      onInit:      function(){ // keep submenus in bounds
+        var self = this;
+        var moveSubnavs = function(){
+          var navW = $(this).parent().outerWidth();
+          $(this).children().each(function(i, el){
+            var p = $(this).position();
+            var w = Math.round(p.left) + 494; // horiz submenu position plus submenu width
+            var fudge = 2;
+            if (w > navW) $(this).find('ul.sn').css('left', (navW - w + fudge));
+          });
+        };
+        window.setTimeout(function(){moveSubnavs.call(self);}, 300); // @font-face must render first, else navW value is off
+      }
     }); 
   </script>
 

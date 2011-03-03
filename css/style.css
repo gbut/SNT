@@ -102,7 +102,7 @@ body, select, input, textarea {
   /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
   color: #444; 
   /* set your base font here, to apply evenly */
-  font-family: "Lucida Grande",Helvetica,sans-serif;
+  font-family: Tahoma,"Lucida Grande",Helvetica,sans-serif;
 }
 
 /* Headers (h1,h2,etc) have no default font-size or margin,
@@ -331,10 +331,10 @@ input[type=password] {
   text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
   padding:              11px 12px 11px 44px;
   border-color:         #b8b8b7;
-  background:           #fefefe url(../images/btns.png) 20px -124px no-repeat;
-  background:           url(../images/btns.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
-  background:           url(../images/btns.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
-  -pie-background:      url(images/btns.png) 20px -124px no-repeat, linear-gradient(#fefefe, #d7d7d7);
+  background:           #fefefe url(../images/btns.png) 20px -874px no-repeat;
+  background:           url(../images/btns.png) 20px -874px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
+  background:           url(../images/btns.png) 20px -874px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+  -pie-background:      url(images/btns.png) 20px -874px no-repeat, linear-gradient(#fefefe, #d7d7d7);
      -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
           box-shadow:   0 2px 4px rgba(151,151,151,0.5);
@@ -346,14 +346,14 @@ input[type=password] {
   color:                #999898;
 }
 .btnLg:hover {
-  background:           #fefefe url(../images/btns.png) 20px -124px no-repeat;
-  background:           url(../images/btns.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
-  background:           url(../images/btns.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
-  -pie-background:      url(images/btns.png) 20px -124px no-repeat, linear-gradient(#fefefe, #a4a4a4);
+  background:           #fefefe url(../images/btns.png) 20px -874px no-repeat;
+  background:           url(../images/btns.png) 20px -874px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
+  background:           url(../images/btns.png) 20px -874px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
+  -pie-background:      url(images/btns.png) 20px -874px no-repeat, linear-gradient(#fefefe, #a4a4a4);
   behavior: url(/PIE.htc);
 }
 .btnLg:active {
-  background:           #d7d7d7 url(../images/btns.png) 20px -124px no-repeat;
+  background:           #d7d7d7 url(../images/btns.png) 20px -874px no-repeat;
 }
 
 .btnApply {
@@ -361,10 +361,10 @@ input[type=password] {
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
   padding:              11px 22px 11px 47px;
   border-color:         #838383;
-  background:           #c3383d url(../images/btns.png) -30px -74px no-repeat;
-  background:           url(../images/btns.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
-  background:           url(../images/btns.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
-  -pie-background:      url(images/btns.png) -30px -74px no-repeat, linear-gradient(#c3383d, #c3020a);
+  background:           #c3383d url(../images/btns.png) -30px -824px no-repeat;
+  background:           url(../images/btns.png) -30px -824px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
+  background:           url(../images/btns.png) -30px -824px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
+  -pie-background:      url(images/btns.png) -30px -824px no-repeat, linear-gradient(#c3383d, #c3020a);
   behavior: url(/PIE.htc);
 }
 .btnApply:hover,
@@ -373,14 +373,14 @@ input[type=password] {
   color:                #eee;
 }
 .btnApply:hover {
-  background:           #93262a url(../images/btns.png) -30px -74px no-repeat;
-  background:           url(../images/btns.png) -30px -74px no-repeat, -moz-linear-gradient(top, #93262a 0%, #8f0309 100%);
-  background:           url(../images/btns.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262a), color-stop(100%,#8f0309));
-  -pie-background:      url(images/btns.png) -30px -74px no-repeat, linear-gradient(#93262a, #8f0309);
+  background:           #93262a url(../images/btns.png) -30px -824px no-repeat;
+  background:           url(../images/btns.png) -30px -824px no-repeat, -moz-linear-gradient(top, #93262a 0%, #8f0309 100%);
+  background:           url(../images/btns.png) -30px -824px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262a), color-stop(100%,#8f0309));
+  -pie-background:      url(images/btns.png) -30px -824px no-repeat, linear-gradient(#93262a, #8f0309);
   behavior: url(/PIE.htc);
 }
 .btnApply:active {
-  background:           #770207 url(../images/btns.png) -30px -74px no-repeat;
+  background:           #770207 url(../images/btns.png) -30px -824px no-repeat;
 }
 
 /* / Buttons */
@@ -546,7 +546,7 @@ header #login form fieldset {
   background:           #000;
   overflow:             hidden;
   position:             fixed;
-  z-index:              3;
+  z-index:              60;
   -moz-opacity:         0.72;
   -ms-filter:           "alpha(opacity=72)";
   filter:               alpha(opacity=72);
@@ -619,9 +619,9 @@ header nav ul.sf-menu li {
   height:               29px;
   overflow:             visible;
 }
-header nav ul.sf-menu li a.pn {
+header nav ul.sf-menu li a.pn,
+header nav ul.sf-menu li .snavItem a {
   color:                #616161;
-  font:                 108%/100% "FreightSansBold",Helvetica,sans-serif;
   text-decoration:      none;
   text-transform:       uppercase;
   display:              block;
@@ -632,6 +632,9 @@ header nav ul.sf-menu li a.pn {
   border:               1px solid #dadada;
   border-width:         0 1px;
   overflow:             visible;
+}
+header nav ul.sf-menu li a.pn {
+  font:                 108%/100% "FreightSansBold",Helvetica,sans-serif;
 }
 header nav ul.sf-menu li:first-child a.pn {
   border-left:          none;
@@ -653,10 +656,11 @@ header nav ul.sf-menu li a.pn:visited {
 header nav ul.sf-menu li.sfHover a.pn,
 header nav ul.sf-menu li a.pn:hover,
 header nav ul.sf-menu li a.pn:active {
-  color:                #bd081b;
+  color:                #0f0f0f; /* #bd081b */
   background:           #eee url(../images/bg_gnav_hover.png) top left repeat-x;
   padding-bottom:       30px;
 }
+header nav ul.sf-menu li.sfHover a.pn .tl,
 header nav ul.sf-menu li.selected a.pn:hover .tl,
 header nav ul.sf-menu li.selected a.pn:active .tl {
   border:               none;
@@ -681,6 +685,12 @@ header nav ul.sf-menu li ul.sn {
   -webkit-box-shadow:   0px 3px 3px -3px #9c8f85; 
           box-shadow:   0px 3px 3px -3px #9c8f85;
 }
+/*
+header nav ul.sf-menu li:last-child ul.sn {
+  padding-right:        17px;
+  border-right:         none;
+}
+*/
 /*
 header nav ul.sf-menu li:hover ul.sn {
   display:block;
