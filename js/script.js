@@ -245,6 +245,40 @@ $(document).ready(function(){
   })(jQuery);
 */
 
+  //===============================================
+  //  Show/Hide Job Listings
+  //===============================================
+
+  $(function(){
+  	$('#form_jvSearch select').change(function() {
+  	  
+  	  // get user values
+      region = $('#jvRegion').val();
+      category = $('#jvCategory').val();
+      
+  	  // hide all listings, then iterate and selectively show
+  	  $('#job_listings article').hide().each(function() {
+        thisRegion = $(this).find('.region').html();
+        thisCategory = $(this).prevAll('h3').find('.category').html();
+        if ((!region || (thisRegion == region)) && (!category || (thisCategory == category))) {
+          $(this).show();
+        }
+      });
+      
+      // hide all category headers, then iterate and selectively show
+      $('#job_listings h3').hide().each(function() {
+        header = $(this);
+        $(this).nextUntil(':not(article)').each(function() {
+          if ($(this).is(':visible')) {
+            $(header).show();
+            return false;
+          }
+        });
+      });
+      
+  	});
+  });
+
 });
 
 

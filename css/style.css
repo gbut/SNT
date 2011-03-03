@@ -1125,6 +1125,7 @@ footer a {
   float:right;
   position:relative;
   top:-16px;
+display:none;
 }
 
 /* / Job Listings */
