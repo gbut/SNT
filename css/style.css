@@ -176,8 +176,8 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate.
    No text-shadow: twitter.com/miketaylr/status/12228805301 
    Also: hot pink. */
-::-moz-selection{ background: #dbe4ea; color:#fff; text-shadow: none; }
-::selection { background:#dbe4ea; color:#fff; text-shadow: none; } 
+/* ::-moz-selection{ background: #dbe4ea; color:#fff; text-shadow: none; }
+::selection { background:#dbe4ea; color:#fff; text-shadow: none; }  rem for now, causing problems for cssSandpaper  */
 
 /*  j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #dbe4ea; } 
@@ -930,14 +930,30 @@ footer a {
 
 /* + Feature */
 
-#banner {
-  height:               255px;
+#banner img {
+  float:                left;
 }
 
-#banner img {
+#t03 #banner {
+  height:               255px;
+}
+#t03 #banner img {
   height:               255px;
   width:                960px;
 }
+
+#t04 #banner {
+  height:               177px;
+}
+#t04 #banner img {
+  height:               177px;
+  width:                715px;
+}
+#t04 #banner img:first-child {
+  width:                236px;
+  margin-right:           9px;
+}
+
 
 #presenter {
   height:470px;
@@ -1027,20 +1043,27 @@ footer a {
   margin-bottom:        88px;
 }
 
-/* transform needs to be on wrapper or it will get stepped on by behavior */
+/* cssSandpaper transform needs to be on wrapper or it will get stepped on by behavior */
 #sidebar #photo .photo,
 #sidebar #photo .photo2 {
   width:                241px;
   height:               166px;
   position:             relative;
   z-index:              2;
-/*  -sand-transform: rotate(-3deg);*/
+  -moz-transform:       rotate(-3deg);
+  -webkit-transform:    rotate(-3deg);
+  transform:            rotate(-3deg);
+  -sand-transform:      rotate(-3deg);
 }
 #sidebar #photo .photo2 {
   position:             absolute;
   left:                 30px;
   top:                  68px;
   z-index:              1;
+  -moz-transform:       rotate(3deg);
+  -webkit-transform:    rotate(3deg);
+  transform:            rotate(3deg);
+  -sand-transform:      rotate(3deg);
 }
 
 #sidebar #photo .container {
@@ -1059,16 +1082,10 @@ footer a {
   -webkit-box-shadow:   3px 3px 5px #ccc;
   box-shadow:           3px 3px 5px #ccc;
   
-  -moz-transform:       rotate(-3deg);
-  -webkit-transform:    rotate(-3deg);
-  transform:            rotate(-3deg);
   
   behavior: url(/PIE.htc);
 }
 #sidebar #photo .photo2 .container {
-  -moz-transform:       rotate(3deg);
-  -webkit-transform:    rotate(3deg);
-  transform:            rotate(3deg);
 }
 
 #sidebar #photo img {

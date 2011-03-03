@@ -6,16 +6,22 @@
   <!-- + main -->
   <div id="main" class="wrapper clearfix">
 
-    <!--#include virtual="inc/banner.htm" -->
+    <!--#include virtual="inc/banner/careers_jobs_detail.htm" -->
     <!-- + content -->
     <section id="content" class="clearfix">
       <!--#include virtual="inc/content/careers_jobs_detail.htm" -->
     </section>
     <!-- / content -->
-    <!--#include virtual="inc/sidebar.htm" -->
+    <!--#include virtual="inc/sidebar/careers_jobs_detail.htm" -->
   
   </div>
   <!-- / main -->
+
+  <!-- + subfooter -->
+  <div class="subfooter">
+  </div>
+  <!-- / subfooter -->
+
 </div>
 
 <!--#include virtual="inc/_footer.htm" -->

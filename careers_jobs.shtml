@@ -6,14 +6,14 @@
   <!-- + main -->
   <div id="main" class="wrapper clearfix">
 
-    <!--#include virtual="inc/banner.htm" -->
+    <!--#include virtual="inc/banner/careers_jobs.htm" -->
     <!--#include virtual="inc/job_search.htm" -->
     <!-- + content -->
     <section id="content" class="clearfix">
       <!--#include virtual="inc/content/careers_jobs.htm" -->
     </section>
     <!-- / content -->
-    <!--#include virtual="inc/sidebar.htm" -->
+    <!--#include virtual="inc/sidebar/careers_jobs.htm" -->
         
   </div>
   <!-- / main -->
