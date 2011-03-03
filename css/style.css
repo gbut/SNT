@@ -983,7 +983,7 @@ footer a {
 
 #sidebar #photo {
   position:             relative;
-  margin-bottom:        80px;
+  margin-bottom:        88px;
 }
 
 /* transform needs to be on wrapper or it will get stepped on by behavior */
@@ -998,7 +998,7 @@ footer a {
 #sidebar #photo .photo2 {
   position:             absolute;
   left:                 30px;
-  top:                  60px;
+  top:                  68px;
   z-index:              1;
 }
 
@@ -1044,7 +1044,7 @@ footer a {
 #sidebar .benefit {
   font:                 bold 220%/90% Arial, Helvetica, sans-serif;
   color:                #849db1;
-  margin:               10px 0 20px;
+  margin-bottom:        20px;
 }
 #sidebar .benefit h4 {
   font-size:            120%;
