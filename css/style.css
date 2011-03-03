@@ -987,51 +987,58 @@ footer a {
 }
 
 /* transform needs to be on wrapper or it will get stepped on by behavior */
-#sidebar div.photo,
-#sidebar div.photo2 {
+#sidebar #photo .photo,
+#sidebar #photo .photo2 {
   width:                241px;
   height:               166px;
   position:             relative;
   z-index:              2;
 /*  -sand-transform: rotate(-3deg);*/
 }
-
-#sidebar div.photo img,
-#sidebar div.photo2 img {
-  width:                226px;
-  height:               131px;
-  margin-top:           20px;
-  display:block;
-  position:             relative;
-  left:-42px;
-  border:               6px solid #fff;
-
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-
-  -moz-box-shadow: 3px 3px 5px #ccc;
-  -webkit-box-shadow: 3px 3px 5px #ccc;
-  box-shadow: 3px 3px 5px #ccc;
-  
-  -moz-transform: rotate(-3deg);
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-  
-  behavior: url(/PIE.htc);
-}
-
-#sidebar div.photo2 {
+#sidebar #photo .photo2 {
   position:             absolute;
   left:                 30px;
   top:                  60px;
   z-index:              1;
 }
 
-#sidebar div.photo2 img {
-  -moz-transform: rotate(3deg);
-  -webkit-transform: rotate(3deg);
-  transform: rotate(3deg);
+#sidebar #photo .container {
+  width:                238px;
+  height:               143px;
+  margin-top:           20px;
+  position:             relative;
+  left:                 -42px;
+  border:               1px solid #cbcbcb;
+
+  -webkit-border-radius:15px;
+  -moz-border-radius:   15px;
+  border-radius:        15px;
+
+  -moz-box-shadow:      3px 3px 5px #ccc;
+  -webkit-box-shadow:   3px 3px 5px #ccc;
+  box-shadow:           3px 3px 5px #ccc;
+  
+  -moz-transform:       rotate(-3deg);
+  -webkit-transform:    rotate(-3deg);
+  transform:            rotate(-3deg);
+  
+  behavior: url(/PIE.htc);
+}
+#sidebar #photo .photo2 .container {
+  -moz-transform:       rotate(3deg);
+  -webkit-transform:    rotate(3deg);
+  transform:            rotate(3deg);
+}
+
+#sidebar #photo img {
+  width:                226px;
+  height:               131px;
+  border:               6px solid #fff;
+
+  -webkit-border-radius:15px;
+  -moz-border-radius:   15px;
+  border-radius:        15px;
+
 }
 
 #sidebar .benefit {
