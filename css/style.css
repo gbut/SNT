@@ -102,7 +102,7 @@ body, select, input, textarea {
   /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
   color: #444; 
   /* set your base font here, to apply evenly */
-  font-family: Tahoma,"Lucida Grande",Helvetica,sans-serif;
+  font-family: "Lucida Grande",Helvetica,sans-serif;
 }
 
 /* Headers (h1,h2,etc) have no default font-size or margin,
@@ -657,12 +657,12 @@ header nav ul.sf-menu li.sfHover a.pn,
 header nav ul.sf-menu li a.pn:hover,
 header nav ul.sf-menu li a.pn:active {
   color:                #0f0f0f; /* #bd081b */
+}
+header nav ul.sf-menu li.sfHover a.pn {
   background:           #eee url(../images/bg_gnav_hover.png) top left repeat-x;
   padding-bottom:       30px;
 }
-header nav ul.sf-menu li.sfHover a.pn .tl,
-header nav ul.sf-menu li.selected a.pn:hover .tl,
-header nav ul.sf-menu li.selected a.pn:active .tl {
+header nav ul.sf-menu li.sfHover a.pn .tl {
   border:               none;
 }
 
@@ -685,17 +685,7 @@ header nav ul.sf-menu li ul.sn {
   -webkit-box-shadow:   0px 3px 3px -3px #9c8f85; 
           box-shadow:   0px 3px 3px -3px #9c8f85;
 }
-/*
-header nav ul.sf-menu li:last-child ul.sn {
-  padding-right:        17px;
-  border-right:         none;
-}
-*/
-/*
-header nav ul.sf-menu li:hover ul.sn {
-  display:block;
-}
-*/
+
 header nav ul.sf-menu li ul li {
   float:                none;
   margin:               0;
@@ -716,19 +706,7 @@ header nav ul.sf-menu li ul li .subnavRt {
 header nav ul.sf-menu li ul li .extras {
   text-align:           center;
 }
-/*
-header nav ul.sf-menu li ul li ul {
-  width:auto;
-  border:none;
-  background:none;
-  padding:0;
-  position:relative;
-  top:0;
-  overflow:hidden;
-}
-header nav ul.sf-menu li ul li ul li {
-}
-*/
+
 header nav ul.sf-menu li ul li .snavItems {
   position:             relative;
   overflow:             hidden;
@@ -791,6 +769,12 @@ header nav ul.sf-menu li ul li .extras img.fakeImg {
 }
 header nav ul.sf-menu li ul li .extras a.cta {
 }
+
+/* section-specific rules for submenus */
+
+header nav ul.sf-menu li ul.sn.careers {
+}
+
 
 /* / Global Nav */
 
@@ -967,8 +951,11 @@ footer a {
 }
 
 #job_search form input {
-  padding:              2px;
-  width:                294px;
+/*  padding:              2px;*/
+  width:                290px;
+  -webkit-border-radius:2px;
+  -moz-border-radius:   2px;
+  border-radius:        2px;
 }
 
 #job_search form select {
@@ -1069,7 +1056,7 @@ footer a {
 /* + Job Listings */
 
 #job_listings h3 {
-  font:                 160%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+  font:                 167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
   color:                #181818;
   margin-top:           30px;
 }
@@ -1091,7 +1078,7 @@ footer a {
 }
 
 #job_listings article h4 {
-  font-size:            110%;
+  font-size:            108%;
   margin:               0 0 7px;
   padding:              0 0 5px;
   border-bottom:        1px solid #cbcbcb;
