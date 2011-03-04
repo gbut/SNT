@@ -38,8 +38,8 @@
           <input type="checkbox" name="remember" id="form_login_remember" value="1" />
           <label id="form_login_remember_label" for="form_login_remember">Remember me</label>
           
-          <!-- <button type="submit" name="login" class="btn" id="form_login_login" value="Log In">Log In</button> -->
-          <a href="#" class="btn" id="form_login_login">Log In</a>
+          <!-- <button type="submit" name="login" class="btn btnSm" id="form_login_login" value="Log In">Log In</button> -->
+          <a href="#" class="btn btnSm" id="form_login_login">Log In</a>
         </fieldset>
       </form>
     </div>

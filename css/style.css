@@ -293,48 +293,51 @@ input[type=password] {
 
 .btn {
   color:                #fff;
-  font:                 77%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;
+  font:                 100%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;
   text-transform:       uppercase;
   text-align:           center;
-  padding:              7px 20px 6px 10px;
   border:               1px solid #878686;
   display:              inline-block;
   position:             relative;
   -webkit-border-radius:4px;
   -moz-border-radius:   4px;
   border-radius:        4px;
-  background:           #699ab5 url(../images/btns.png) 100% 0 no-repeat;
-  background:           url(../images/btns.png) 100% 0 no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
-  background:           url(../images/btns.png) 100% 0 no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
-  -pie-background:      url(images/btns.png) 100% 0 no-repeat, linear-gradient(#699ab5, #2a749d);
+}
+
+.btnSm {
+  font-size:            77%;
+  padding:              7px 20px 6px 10px;
+  background:           #699ab5 url(../images/btns_rt.png) 100% -101px no-repeat;
+  background:           url(../images/btns_rt.png) 100% -101px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
+  background:           url(../images/btns_rt.png) 100% -101px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
+  -pie-background:      url(images/btns_rt.png) 100% -101px no-repeat, linear-gradient(#699ab5, #2a749d);
   behavior: url(/PIE.htc);
 }
-.btn:hover,
-.btn:active,
-.btn:visited {
+.btnSm:hover,
+.btnSm:active,
+.btnSm:visited {
   color:                #fff;
 }
-.btn:hover {
-  background:           #58839a url(../images/btns.png) 100% 0 no-repeat;
-  background:           url(../images/btns.png) 100% 0 no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
-  background:           url(../images/btns.png) 100% 0 no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
-  -pie-background:      url(images/btns.png) 100% 0 no-repeat, linear-gradient(#58839a, #215a79);
+.btnSm:hover {
+  background:           #58839a url(../images/btns_rt.png) 100% -101px no-repeat;
+  background:           url(../images/btns_rt.png) 100% -101px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
+  background:           url(../images/btns_rt.png) 100% -101px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
+  -pie-background:      url(images/btns_rt.png) 100% -101px no-repeat, linear-gradient(#58839a, #215a79);
   behavior: url(/PIE.htc);
 }
-.btn:active {
-  background:           #1c4c66 url(../images/btns.png) 100% 0 no-repeat;
+.btnSm:active {
+  background:           #1c4c66 url(../images/btns_rt.png) 100% -101px no-repeat;
 }
 
 .btnLg {
   color:                #999898;
-  font-size:            100%;
   text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
   padding:              11px 12px 11px 44px;
   border-color:         #b8b8b7;
-  background:           #fefefe url(../images/btns.png) 20px -874px no-repeat;
-  background:           url(../images/btns.png) 20px -874px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
-  background:           url(../images/btns.png) 20px -874px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
-  -pie-background:      url(images/btns.png) 20px -874px no-repeat, linear-gradient(#fefefe, #d7d7d7);
+  background:           #fefefe url(../images/btns_lt.png) 20px -124px no-repeat;
+  background:           url(../images/btns_lt.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
+  background:           url(../images/btns_lt.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+  -pie-background:      url(images/btns_lt.png) 20px -124px no-repeat, linear-gradient(#fefefe, #d7d7d7);
      -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
           box-shadow:   0 2px 4px rgba(151,151,151,0.5);
@@ -346,14 +349,14 @@ input[type=password] {
   color:                #999898;
 }
 .btnLg:hover {
-  background:           #fefefe url(../images/btns.png) 20px -874px no-repeat;
-  background:           url(../images/btns.png) 20px -874px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
-  background:           url(../images/btns.png) 20px -874px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
-  -pie-background:      url(images/btns.png) 20px -874px no-repeat, linear-gradient(#fefefe, #a4a4a4);
+  background:           #fefefe url(../images/btns_lt.png) 20px -124px no-repeat;
+  background:           url(../images/btns_lt.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
+  background:           url(../images/btns_lt.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
+  -pie-background:      url(images/btns_lt.png) 20px -124px no-repeat, linear-gradient(#fefefe, #a4a4a4);
   behavior: url(/PIE.htc);
 }
 .btnLg:active {
-  background:           #d7d7d7 url(../images/btns.png) 20px -874px no-repeat;
+  background:           #d7d7d7 url(../images/btns_lt.png) 20px -124px no-repeat;
 }
 
 .btnApply {
@@ -361,10 +364,10 @@ input[type=password] {
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
   padding:              11px 22px 11px 47px;
   border-color:         #838383;
-  background:           #c3383d url(../images/btns.png) -30px -824px no-repeat;
-  background:           url(../images/btns.png) -30px -824px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
-  background:           url(../images/btns.png) -30px -824px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
-  -pie-background:      url(images/btns.png) -30px -824px no-repeat, linear-gradient(#c3383d, #c3020a);
+  background:           #c3383d url(../images/btns_lt.png) -30px -74px no-repeat;
+  background:           url(../images/btns_lt.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
+  background:           url(../images/btns_lt.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
+  -pie-background:      url(images/btns_lt.png) -30px -74px no-repeat, linear-gradient(#c3383d, #c3020a);
   behavior: url(/PIE.htc);
 }
 .btnApply:hover,
@@ -373,14 +376,14 @@ input[type=password] {
   color:                #eee;
 }
 .btnApply:hover {
-  background:           #93262a url(../images/btns.png) -30px -824px no-repeat;
-  background:           url(../images/btns.png) -30px -824px no-repeat, -moz-linear-gradient(top, #93262a 0%, #8f0309 100%);
-  background:           url(../images/btns.png) -30px -824px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262a), color-stop(100%,#8f0309));
-  -pie-background:      url(images/btns.png) -30px -824px no-repeat, linear-gradient(#93262a, #8f0309);
+  background:           #93262a url(../images/btns_lt.png) -30px -74px no-repeat;
+  background:           url(../images/btns_lt.png) -30px -74px no-repeat, -moz-linear-gradient(top, #93262a 0%, #8f0309 100%);
+  background:           url(../images/btns_lt.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262a), color-stop(100%,#8f0309));
+  -pie-background:      url(images/btns_lt.png) -30px -74px no-repeat, linear-gradient(#93262a, #8f0309);
   behavior: url(/PIE.htc);
 }
 .btnApply:active {
-  background:           #770207 url(../images/btns.png) -30px -824px no-repeat;
+  background:           #770207 url(../images/btns_lt.png) -30px -74px no-repeat;
 }
 
 /* / Buttons */
