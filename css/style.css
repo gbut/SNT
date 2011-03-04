@@ -1052,6 +1052,9 @@ footer a {
   position:             relative;
   margin-bottom:        88px;
 }
+#t04 #sidebar #photo {
+  margin-bottom:        0;
+}
 
 /* cssSandpaper transform needs to be on wrapper or it will get stepped on by behavior */
 #sidebar #photo .photo,
@@ -1092,10 +1095,10 @@ footer a {
   -webkit-box-shadow:   3px 3px 5px #ccc;
   box-shadow:           3px 3px 5px #ccc;
   
-  
   behavior: url(/PIE.htc);
 }
-#sidebar #photo .photo2 .container {
+#t04 #sidebar #photo .container {
+  left:                 -23px;
 }
 
 #sidebar #photo img {
@@ -1106,7 +1109,6 @@ footer a {
   -webkit-border-radius:15px;
   -moz-border-radius:   15px;
   border-radius:        15px;
-
 }
 
 #sidebar .benefit {
