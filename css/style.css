@@ -958,7 +958,7 @@ aside {
 aside section {
   width:                214px;
   margin-top:           5px;
-  padding:              24px 16px;
+  padding:              16px 16px 24px;
   border:               1px solid #cccacb;
   float:                left;
   background-color:     #fff;
@@ -1105,7 +1105,7 @@ aside .quote .author .title {
 
 aside #photo {
   position:             relative;
-  margin-bottom:        88px;
+  margin-bottom:        92px;
 }
 #t04 aside #photo {
   margin-bottom:        0;
@@ -1115,7 +1115,7 @@ aside #photo {
 aside #photo .photo,
 aside #photo .photo2 {
   width:                241px;
-  height:               166px;
+  height:               162px;
   position:             relative;
   z-index:              2;
   -moz-transform:       rotate(-3deg);
@@ -1137,7 +1137,7 @@ aside #photo .photo2 {
 aside #photo .container {
   width:                238px;
   height:               143px;
-  margin-top:           20px;
+  margin-top:           16px;
   position:             relative;
   left:                 -28px;
   border:               1px solid #cbcbcb;
@@ -1152,6 +1152,10 @@ aside #photo .container {
   
   behavior: url(/PIE.htc);
 }
+aside #photo .photo2 .container {
+  margin-top:           20px;
+}
+
 #t04 aside #photo .container {
   left:                 -8px;
 }
@@ -1181,6 +1185,57 @@ aside .benefit .subtext {
   line-height:          90%;
   color:                #586976;
   text-transform:       uppercase;
+}
+
+aside .share {
+  width:                162px;
+  margin:               15px auto 0;
+}
+aside .share div,
+aside .share a {
+  float:                left;
+}
+aside .share .label {
+  font:                 115%/240% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+  color:                #5c5c5c;
+}
+aside .share a.facebook,
+aside .share a.twitter {
+  width:                32px;
+  height:               32px;
+  display:              block;
+  margin-left:          10px;
+  background:           transparent url(../img/icon_sprite.png) 0 0 no-repeat;
+}
+aside .share a.twitter {
+  background-position:  0 -32px;
+}
+
+aside .callout {
+  font:                 normal 120%/180% Arial, Helvetica, sans-serif;
+  color:                #6b8192;
+  margin-bottom:        20px;
+  position:             relative;
+}
+aside .callout h4 {
+  font-size:            115%;
+  line-height:          130%;
+  color:                #586976;
+  text-align:           center;
+  margin-bottom:        10px;
+}
+aside .callout a {
+  font-size:            70%;
+  font-weight:          bold;
+  color:                #586976;
+  text-transform:       uppercase;
+  position:             absolute;
+  bottom:               -36px;
+  right:                0;
+}
+aside .callout .highlight {
+  font-size:            150%;
+  color:                #c3151c;
 }
 
 /* / Sidebar */
