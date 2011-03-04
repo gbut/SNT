@@ -392,7 +392,9 @@ input[type=password] {
 .btnApply {
   color:                #eee;
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
-  padding:              9px 22px 8px 47px;
+  margin-bottom:        10px;
+  padding-right:        22px;
+  padding-left:         47px;
   border-color:         #838383;
   background:           #c3383d url(../img/btns_lt.png) -30px -74px no-repeat;
   background:           url(../img/btns_lt.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
