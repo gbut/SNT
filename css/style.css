@@ -307,10 +307,10 @@ input[type=password] {
 .btnSm {
   font-size:            77%;
   padding:              7px 20px 6px 10px;
-  background:           #699ab5 url(../images/btns_rt.png) 100% -101px no-repeat;
-  background:           url(../images/btns_rt.png) 100% -101px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
-  background:           url(../images/btns_rt.png) 100% -101px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
-  -pie-background:      url(images/btns_rt.png) 100% -101px no-repeat, linear-gradient(#699ab5, #2a749d);
+  background:           #699ab5 url(../img/btns_rt.png) 100% -101px no-repeat;
+  background:           url(../img/btns_rt.png) 100% -101px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
+  background:           url(../img/btns_rt.png) 100% -101px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
+  -pie-background:      url(img/btns_rt.png) 100% -101px no-repeat, linear-gradient(#699ab5, #2a749d);
   behavior: url(/PIE.htc);
 }
 .btnSm:hover,
@@ -319,14 +319,14 @@ input[type=password] {
   color:                #fff;
 }
 .btnSm:hover {
-  background:           #58839a url(../images/btns_rt.png) 100% -101px no-repeat;
-  background:           url(../images/btns_rt.png) 100% -101px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
-  background:           url(../images/btns_rt.png) 100% -101px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
-  -pie-background:      url(images/btns_rt.png) 100% -101px no-repeat, linear-gradient(#58839a, #215a79);
+  background:           #58839a url(../img/btns_rt.png) 100% -101px no-repeat;
+  background:           url(../img/btns_rt.png) 100% -101px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
+  background:           url(../img/btns_rt.png) 100% -101px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
+  -pie-background:      url(img/btns_rt.png) 100% -101px no-repeat, linear-gradient(#58839a, #215a79);
   behavior: url(/PIE.htc);
 }
 .btnSm:active {
-  background:           #1c4c66 url(../images/btns_rt.png) 100% -101px no-repeat;
+  background:           #1c4c66 url(../img/btns_rt.png) 100% -101px no-repeat;
 }
 
 .btnLg {
@@ -334,10 +334,10 @@ input[type=password] {
   text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
   padding:              11px 12px 11px 44px;
   border-color:         #b8b8b7;
-  background:           #fefefe url(../images/btns_lt.png) 20px -124px no-repeat;
-  background:           url(../images/btns_lt.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
-  background:           url(../images/btns_lt.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
-  -pie-background:      url(images/btns_lt.png) 20px -124px no-repeat, linear-gradient(#fefefe, #d7d7d7);
+  background:           #fefefe url(../img/btns_lt.png) 20px -124px no-repeat;
+  background:           url(../img/btns_lt.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
+  background:           url(../img/btns_lt.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+  -pie-background:      url(img/btns_lt.png) 20px -124px no-repeat, linear-gradient(#fefefe, #d7d7d7);
      -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
           box-shadow:   0 2px 4px rgba(151,151,151,0.5);
@@ -349,14 +349,14 @@ input[type=password] {
   color:                #999898;
 }
 .btnLg:hover {
-  background:           #fefefe url(../images/btns_lt.png) 20px -124px no-repeat;
-  background:           url(../images/btns_lt.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
-  background:           url(../images/btns_lt.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
-  -pie-background:      url(images/btns_lt.png) 20px -124px no-repeat, linear-gradient(#fefefe, #a4a4a4);
+  background:           #fefefe url(../img/btns_lt.png) 20px -124px no-repeat;
+  background:           url(../img/btns_lt.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
+  background:           url(../img/btns_lt.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
+  -pie-background:      url(img/btns_lt.png) 20px -124px no-repeat, linear-gradient(#fefefe, #a4a4a4);
   behavior: url(/PIE.htc);
 }
 .btnLg:active {
-  background:           #d7d7d7 url(../images/btns_lt.png) 20px -124px no-repeat;
+  background:           #d7d7d7 url(../img/btns_lt.png) 20px -124px no-repeat;
 }
 
 .btnChat {
@@ -364,10 +364,10 @@ input[type=password] {
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
   padding:              9px 12px 8px 37px;
   border-color:         #838383;
-  background:           #699ab5 url(../images/btns_lt.png) 13px -127px no-repeat;
-  background:           url(../images/btns_lt.png) 13px -127px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
-  background:           url(../images/btns_lt.png) 13px -127px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
-  -pie-background:      url(images/btns_lt.png) 13px -127px no-repeat, linear-gradient(#699ab5, #2a749d);
+  background:           #699ab5 url(../img/btns_lt.png) 13px -127px no-repeat;
+  background:           url(../img/btns_lt.png) 13px -127px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
+  background:           url(../img/btns_lt.png) 13px -127px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
+  -pie-background:      url(img/btns_lt.png) 13px -127px no-repeat, linear-gradient(#699ab5, #2a749d);
      -moz-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
           box-shadow:   0 2px 4px rgba(0,0,0,0.5);
@@ -379,14 +379,14 @@ input[type=password] {
   color:                #eee;
 }
 .btnChat:hover {
-  background:           #58839a url(../images/btns_lt.png) 13px -127px no-repeat;
-  background:           url(../images/btns_lt.png) 13px -127px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
-  background:           url(../images/btns_lt.png) 13px -127px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
-  -pie-background:      url(images/btns_lt.png) 13px -127px no-repeat, linear-gradient(#58839a, #215a79);
+  background:           #58839a url(../img/btns_lt.png) 13px -127px no-repeat;
+  background:           url(../img/btns_lt.png) 13px -127px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
+  background:           url(../img/btns_lt.png) 13px -127px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
+  -pie-background:      url(img/btns_lt.png) 13px -127px no-repeat, linear-gradient(#58839a, #215a79);
   behavior: url(/PIE.htc);
 }
 .btnChat:active {
-  background:           #1c4c66 url(../images/btns_lt.png) 13px -127px no-repeat;
+  background:           #1c4c66 url(../img/btns_lt.png) 13px -127px no-repeat;
 }
 
 .btnApply {
@@ -394,10 +394,10 @@ input[type=password] {
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
   padding:              9px 22px 8px 47px;
   border-color:         #838383;
-  background:           #c3383d url(../images/btns_lt.png) -30px -74px no-repeat;
-  background:           url(../images/btns_lt.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
-  background:           url(../images/btns_lt.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
-  -pie-background:      url(images/btns_lt.png) -30px -74px no-repeat, linear-gradient(#c3383d, #c3020a);
+  background:           #c3383d url(../img/btns_lt.png) -30px -74px no-repeat;
+  background:           url(../img/btns_lt.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
+  background:           url(../img/btns_lt.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
+  -pie-background:      url(img/btns_lt.png) -30px -74px no-repeat, linear-gradient(#c3383d, #c3020a);
   behavior: url(/PIE.htc);
 }
 .btnApply:hover,
@@ -406,14 +406,14 @@ input[type=password] {
   color:                #eee;
 }
 .btnApply:hover {
-  background:           #93262a url(../images/btns_lt.png) -30px -74px no-repeat;
-  background:           url(../images/btns_lt.png) -30px -74px no-repeat, -moz-linear-gradient(top, #93262a 0%, #8f0309 100%);
-  background:           url(../images/btns_lt.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262a), color-stop(100%,#8f0309));
-  -pie-background:      url(images/btns_lt.png) -30px -74px no-repeat, linear-gradient(#93262a, #8f0309);
+  background:           #93262a url(../img/btns_lt.png) -30px -74px no-repeat;
+  background:           url(../img/btns_lt.png) -30px -74px no-repeat, -moz-linear-gradient(top, #93262a 0%, #8f0309 100%);
+  background:           url(../img/btns_lt.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262a), color-stop(100%,#8f0309));
+  -pie-background:      url(img/btns_lt.png) -30px -74px no-repeat, linear-gradient(#93262a, #8f0309);
   behavior: url(/PIE.htc);
 }
 .btnApply:active {
-  background:           #770207 url(../images/btns_lt.png) -30px -74px no-repeat;
+  background:           #770207 url(../img/btns_lt.png) -30px -74px no-repeat;
 }
 
 /* / Buttons */
@@ -453,7 +453,7 @@ header h1 a {
   width:                120px;
   height:               40px;
   display:              block;
-  background:           transparent url(../images/logo.png) top left no-repeat;
+  background:           transparent url(../img/logo.png) top left no-repeat;
 }
 
 /* + Client Login */
@@ -536,7 +536,7 @@ header #login form h3 {
   margin-bottom:        15px;
   border-bottom:        1px solid #2d2d2d;
   padding-left:         75px;
-  background:           transparent url(../images/logo_sm.png) 0 10px no-repeat;
+  background:           transparent url(../img/logo_sm.png) 0 10px no-repeat;
 }
 
 header #login form ul.benefits {
@@ -692,7 +692,7 @@ header nav ul.sf-menu li a.pn:active {
   color:                #0f0f0f; /* #bd081b */
 }
 header nav ul.sf-menu li.sfHover a.pn {
-  background:           #eee url(../images/bg_gnav_hover.png) top left repeat-x;
+  background:           #eee url(../img/bg_gnav_hover.png) top left repeat-x;
   padding-bottom:       30px;
 }
 header nav ul.sf-menu li.sfHover a.pn .tl {
@@ -710,7 +710,7 @@ header nav ul.sf-menu li ul.sn {
   left:                 0;
   z-index:              1;
   display:              none;
-  background:           #eee url(../images/bg_snav_ul.png) top left repeat-x;
+  background:           #eee url(../img/bg_snav_ul.png) top left repeat-x;
   -webkit-border-radius:0 0 5px 5px;
   -moz-border-radius:   0 0 5px 5px;
   border-radius:        0 0 5px 5px;
@@ -787,7 +787,7 @@ header nav ul.sf-menu li ul li ul.snavItems li a p {
   font-weight:          normal;
   padding:              0 16px 3px 0;
   float:                left;
-  background:           #eee url(../images/arrow_snav_item.png) 100% 1px no-repeat;
+  background:           #eee url(../img/arrow_snav_item.png) 100% 1px no-repeat;
   -moz-opacity:         0.55;
   -ms-filter:           "alpha(opacity=55)";
   filter:               alpha(opacity=55);
@@ -826,7 +826,7 @@ header nav ul.sf-menu li ul.sn.careers li .subnavLt a.cta {
   font:                 bold 93%/100% Tahoma,Helvetica,sans-serif;
   text-transform:       uppercase;
   padding-right:        13px;
-  background:           transparent url(../images/arrow_snav_item.png) 100% 2px no-repeat;
+  background:           transparent url(../img/arrow_snav_item.png) 100% 2px no-repeat;
 }
 header nav ul.sf-menu li ul.sn.careers li img.gnavImg {
   margin-bottom:        17px;
@@ -1019,7 +1019,7 @@ footer a {
 #job_search .sideRt {
   height:               67px;
   float:                left;
-  background:           transparent url(../images/bg_job_search.png) 0 0 no-repeat;
+  background:           transparent url(../img/bg_job_search.png) 0 0 no-repeat;
 }
 
 #job_search .sideLt,
@@ -1219,7 +1219,7 @@ footer a {
   height:               16px;
   display:              block;
   padding-left:         20px;
-  background:           transparent url(../images/icon_submit_res.gif) 0 0 no-repeat;
+  background:           transparent url(../img/icon_submit_res.gif) 0 0 no-repeat;
   float:                right;
 }
 
@@ -1262,7 +1262,7 @@ display:none;
 
 #bg_chat {
   height:               711px;
-  background:           #2b1606 url(../images/bg_chat.jpg) top center no-repeat;
+  background:           #2b1606 url(../img/bg_chat.jpg) top center no-repeat;
 }
 
 #bg_chat .wrapper {
@@ -1310,7 +1310,7 @@ display:none;
   height:40px;
   margin:40px 0 40px 40px;
   text-indent:-9999px;
-  background: url(../images/logo.png) 0 0 no-repeat;
+  background: url(../img/logo.png) 0 0 no-repeat;
 }
 
 ul.toc li a {
