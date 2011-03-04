@@ -949,16 +949,33 @@ footer a {
 
 /* + SIDEBAR */
 
-#main aside {
-  width:                186px;
-  margin-top:           10px;
-  padding:              24px 30px;
+aside {
+  margin-top:           5px;
+}
+
+aside section {
+  width:                214px;
+  margin-top:           5px;
+  padding:              24px 16px;
   border:               1px solid #cccacb;
+  float:                left;
+  background-color:     #fff;
+}
+/* only child */
+aside section:first-child:last-child {
   -webkit-border-radius:6px;
   -moz-border-radius:   6px;
   border-radius:        6px;
-  float:                left;
-  background-color:     #fff;
+}
+aside section:first-child {
+  -webkit-border-radius:6px 6px 0 0;
+  -moz-border-radius:   6px 6px 0 0;
+  border-radius:        6px 6px 0 0;
+}
+aside section:last-child {
+  -webkit-border-radius:0 0 6px 6px;
+  -moz-border-radius:   0 0 6px 6px;
+  border-radius:        0 0 6px 6px;
 }
 
 /* / SIDEBAR */
@@ -1065,30 +1082,36 @@ footer a {
 
 /* + Sidebar */
 
-#sidebar .quote {
+aside .quote,
+aside .benefit {
+  margin:               0 14px;
+}
+
+aside .quote {
   font:                 125%/125% "GothamHTFBook",Tahoma,Arial,sans-serif;
   color:                #606060;
+  margin:               0 14px;
 }
-#sidebar .quote .author {
+aside .quote .author {
   font:                 77%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;
   color:                #6e8394;
   margin-top:           4px;
 }
-#sidebar .quote .author .title {
+aside .quote .author .title {
   font-family:          "GothamHTFBook",Tahoma,Arial,sans-serif;
 }
 
-#sidebar #photo {
+aside #photo {
   position:             relative;
   margin-bottom:        88px;
 }
-#t04 #sidebar #photo {
+#t04 aside #photo {
   margin-bottom:        0;
 }
 
 /* cssSandpaper transform needs to be on wrapper or it will get stepped on by behavior */
-#sidebar #photo .photo,
-#sidebar #photo .photo2 {
+aside #photo .photo,
+aside #photo .photo2 {
   width:                241px;
   height:               166px;
   position:             relative;
@@ -1098,7 +1121,7 @@ footer a {
   transform:            rotate(-3deg);
   -sand-transform:      rotate(-3deg);
 }
-#sidebar #photo .photo2 {
+aside #photo .photo2 {
   position:             absolute;
   left:                 30px;
   top:                  68px;
@@ -1109,12 +1132,12 @@ footer a {
   -sand-transform:      rotate(3deg);
 }
 
-#sidebar #photo .container {
+aside #photo .container {
   width:                238px;
   height:               143px;
   margin-top:           20px;
   position:             relative;
-  left:                 -42px;
+  left:                 -28px;
   border:               1px solid #cbcbcb;
 
   -webkit-border-radius:15px;
@@ -1127,11 +1150,11 @@ footer a {
   
   behavior: url(/PIE.htc);
 }
-#t04 #sidebar #photo .container {
-  left:                 -23px;
+#t04 aside #photo .container {
+  left:                 -8px;
 }
 
-#sidebar #photo img {
+aside #photo img {
   width:                226px;
   height:               131px;
   border:               6px solid #fff;
@@ -1141,17 +1164,17 @@ footer a {
   border-radius:        15px;
 }
 
-#sidebar .benefit {
+aside .benefit {
   font:                 bold 220%/90% Arial, Helvetica, sans-serif;
   color:                #849db1;
   margin-bottom:        20px;
 }
-#sidebar .benefit h4 {
+aside .benefit h4 {
   font-size:            120%;
   color:                #586976;
   margin-bottom:        4px;
 }
-#sidebar .benefit .subtext {
+aside .benefit .subtext {
   font-size:            70%;
   line-height:          90%;
   color:                #586976;
