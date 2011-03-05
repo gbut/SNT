@@ -102,7 +102,8 @@ body, select, input, textarea {
   /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
   color: #444; 
   /* set your base font here, to apply evenly */
-  font-family: "Lucida Grande",Helvetica,sans-serif;
+  /*font-family: "Lucida Grande",Helvetica,sans-serif;*/
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Headers (h1,h2,etc) have no default font-size or margin,
@@ -928,11 +929,16 @@ footer a {
 #t03 #content,
 #t04 #content {
   width:                664px;
-  margin:               0 10px;
+  margin:               20px 10px 0;
   padding-right:        28px;
   float:                left;
 }
+#t04 #content {
+  width:                674px;
+  margin-left:          0;
+}
 
+/* ??? */
 #content section {
   padding:              32px 0 26px 0;
   border-top:1px solid #eee;
@@ -952,7 +958,7 @@ footer a {
 /* + SIDEBAR */
 
 aside {
-  margin-top:           5px;
+  margin-top:           15px;
 }
 
 aside section {
@@ -1013,7 +1019,6 @@ aside section:last-child {
   margin-right:           9px;
 }
 
-
 #presenter {
   height:470px;
   background:#0ff;
@@ -1027,10 +1032,8 @@ aside section:last-child {
 /* + Toolbars */
 
 #job_search {
-  font-family:          Arial, Helvetica, sans-serif;
   font-weight:          bold;
   color:                #2e2e2e;
-  margin-bottom:        26px;
 }
 
 #job_search form,
@@ -1315,6 +1318,41 @@ display:none;
 /* / Job Listings */
 
 /* + Job Detail */
+
+#job_detail {
+  font-size:            110%;
+  line-height:          150%;
+  color:                #424242;
+}
+
+#job_detail .breadcrumb {
+  font-size:            76%;
+  line-height:          76%;
+  text-transform:       uppercase;
+  margin-bottom:        6px;
+}
+#job_detail .breadcrumb .sep {
+  font-size:            140%;
+}
+
+#job_detail h3 {
+  font:                 197%/76% "GothamHTFBook",Tahoma,Arial,sans-serif;
+  color:                #13587e;
+  margin-bottom:        15px;
+}
+
+#job_detail .subhead {
+  font-size:            110%;
+  font-weight:          bold;
+  color:                #292929;
+  padding-bottom:       2px;
+  border-bottom:        1px solid #cbcbcb;
+  margin-bottom:        15px;
+}
+
+#job_detail .subhead .reqid {
+  float:                right;
+}
 
 /* / Job Detail */
 
