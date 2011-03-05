@@ -929,12 +929,13 @@ footer a {
 #t03 #content,
 #t04 #content {
   width:                664px;
-  margin:               20px 10px 0;
+  margin:               30px 10px 0;
   padding-right:        28px;
   float:                left;
 }
 #t04 #content {
   width:                674px;
+  margin-top:           20px;
   margin-left:          0;
 }
 
@@ -958,6 +959,9 @@ footer a {
 /* + SIDEBAR */
 
 aside {
+  margin-top:           30px;
+}
+#t04 aside {
   margin-top:           15px;
 }
 
