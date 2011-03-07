@@ -972,13 +972,11 @@ aside section {
   border:               1px solid #cccacb;
   float:                left;
   background-color:     #fff;
+  -moz-box-shadow:      inset 0 0 5px #ccc;
+  -webkit-box-shadow:   inset 0 0 5px #ccc;
+  box-shadow:           inset 0 0 5px #ccc;
   
-  -moz-box-shadow:      inset 0 1px 10px #ccc;
-  -webkit-box-shadow:   inset 0 1px 10px #ccc;
-  box-shadow:           inset 0 1px 10px #ccc;
-  
-  behavior: url(/PIE.htc);
-  
+  behavior: url(/PIE.htc);  
 }
 /* only child */
 aside section:first-child:last-child {
@@ -990,6 +988,11 @@ aside section:first-child {
   -webkit-border-radius:6px 6px 0 0;
   -moz-border-radius:   6px 6px 0 0;
   border-radius:        6px 6px 0 0;
+  
+  -moz-box-shadow:      inset 0 1px 5px #ccc;
+  -webkit-box-shadow:   inset 0 1px 5px #ccc;
+  box-shadow:           inset 0 1px 5px #ccc;
+  
 }
 aside section:last-child {
   -webkit-border-radius:0 0 6px 6px;

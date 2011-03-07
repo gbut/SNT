@@ -1,11 +1,11 @@
-<!--#include file="___toc.shtml" -->
+<!--#include virtual="/rms/inc/___toc.asp" -->
 
 <!-- + header -->
 <header class="clearfix">
   <div class="headerInner wrapper clearfix">
     
     <!-- + logo -->
-    <h1><a href="index.shtml" title="RMS">RMS</a></h1>
+    <h1><a href="index.asp" title="RMS">RMS</a></h1>
     <!-- / logo -->
 
     <!-- + login -->
