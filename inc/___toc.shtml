@@ -8,31 +8,31 @@
   <!--#endif -->
   </li>
   <li>
-  <!--#if expr="\"$DOCUMENT_NAME\" = \"careers.shtml\"" -->
+  <!--#if expr="\"$DOCUMENT_NAME\" = \"careers\"" -->
     Careers
   <!--#else -->
-    <a href="careers.shtml">Careers</a>
+    <a href="careers">Careers</a>
   <!--#endif -->
   </li>
   <li>
-  <!--#if expr="\"$DOCUMENT_NAME\" = \"careers_jobs.shtml\"" -->
+  <!--#if expr="\"$DOCUMENT_NAME\" = \"careers/jobs\"" -->
     Careers | Jobs
   <!--#else -->
-    <a href="careers_jobs.shtml">Careers | Jobs</a>
+    <a href="careers/jobs">Careers | Jobs</a>
   <!--#endif -->
   </li>
   <li>
-  <!--#if expr="\"$DOCUMENT_NAME\" = \"careers_jobs_detail.shtml\"" -->
+  <!--#if expr="\"$DOCUMENT_NAME\" = \"careers/jobs/index_id.shtml\"" -->
     Careers | Jobs | Detail
   <!--#else -->
-    <a href="careers_jobs_detail.shtml">Careers | Jobs | Detail</a>
+    <a href="careers/jobs/index_id.shtml">Careers | Jobs | Detail</a>
   <!--#endif -->
   </li>
   <li>
-  <!--#if expr="\"$DOCUMENT_NAME\" = \"chat.shtml\"" -->
+  <!--#if expr="\"$DOCUMENT_NAME\" = \"careers/chat\"" -->
     Chat
   <!--#else -->
-    <a href="chat.shtml">Chat</a>
+    <a href="careers/chat">Chat</a>
   <!--#endif -->
   </li>
 </ul>
