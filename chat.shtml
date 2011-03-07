@@ -1,6 +1,6 @@
-<!--#include virtual="inc/__html-head.htm" -->
+<!--#include virtual="/rms/inc/__html-head.htm" -->
 
-<!--#include virtual="inc/_header.shtml" -->
+<!--#include virtual="/rms/inc/_header.shtml" -->
 
 <div id="t05" class="contentOuter">
   <!-- + main -->
@@ -8,7 +8,7 @@
   
     <!-- + content -->
     <section id="content" class="clearfix">
-      <!--#include virtual="inc/content/chat.htm" -->
+      <!--#include virtual="/rms/inc/content/chat.htm" -->
     </section>
     <!-- / content -->
   
@@ -16,6 +16,6 @@
   <!-- / main -->
 </div>
 
-<!--#include virtual="inc/_footer.htm" -->
+<!--#include virtual="/rms/inc/_footer.htm" -->
 
-<!--#include virtual="inc/__html-foot.htm" -->
+<!--#include virtual="/rms/inc/__html-foot.htm" -->

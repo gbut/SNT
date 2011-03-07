@@ -1,10 +1,10 @@
-<!--#include virtual="inc/__html-head.htm" -->
+<!--#include virtual="/rms/inc/__html-head.htm" -->
 
 <div id="indexPage">
   <h1 class="indexTitle">
     RMS.com
   </h1>
-  <!--#include virtual="inc/___toc.shtml" -->
+  <!--#include virtual="/rms/inc/___toc.shtml" -->
 </div>
   
-<!--#include virtual="inc/__html-foot.htm" -->
+<!--#include virtual="/rms/inc/__html-foot.htm" -->
