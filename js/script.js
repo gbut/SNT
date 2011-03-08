@@ -253,6 +253,12 @@ $(document).ready(function(){
   $(function(){
   	$('#form_jvSearch select').change(function() {
   	  
+  	  // initialize
+  	  none = 1;
+  	  $('#none_found').hide();
+  	   $('#none_found .region').html('');
+  	   $('#none_found .category').html('');
+  	  
   	  // get user values
       region = $('#jvRegion').val();
       category = $('#jvCategory').val();
@@ -263,6 +269,7 @@ $(document).ready(function(){
         thisCategory = $(this).prevAll('h3').find('.category').html();
         if ((!region || (thisRegion == region)) && (!category || (thisCategory == category))) {
           $(this).show();
+          none = 0;
         }
       });
       
@@ -276,6 +283,15 @@ $(document).ready(function(){
           }
         });
       });
+      
+      // if none found, show message
+      if (none) {
+        if (region)
+          $('#none_found .region').html(' in '+region);
+        if (category)
+          $('#none_found .category').html(' for '+category);
+        $('#none_found').show();
+      }
       
   	});
   });

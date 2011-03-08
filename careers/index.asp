@@ -15,6 +15,12 @@
   
   </div>
   <!-- / main -->
+  
+  <!-- + subfooter -->
+  <div class="subfooter">
+  </div>
+  <!-- / subfooter -->
+  
 </div>
 
 <!--#include virtual="/rms/inc/_footer.htm" -->

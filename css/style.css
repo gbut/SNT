@@ -266,6 +266,11 @@ input[type=password] {
   border-radius:        4px 6px;
 }
 
+em {
+  font-style:           normal;
+  color:                #c3151c;
+}
+
 .wrapper {
   margin:               0 auto;
   position:             relative;
@@ -859,6 +864,10 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
 
 /* + MAIN */
 
+.contentOuter {
+  background:           #dbe4ea;
+}
+
 #main {
 /*  width:                928px;*/
   width:                960px;
@@ -879,9 +888,12 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
   padding:              0;
 }
 
-.contentOuter {
-  background:           #dbe4ea;
+#t02 #main {
+  width:                940px;
+  padding:              10px;
+  background:           #fff;
 }
+
 
 /* / MAIN */
 
@@ -939,19 +951,10 @@ footer a {
   margin-left:          0;
 }
 
-/* ??? */
-#content section {
-  padding:              32px 0 26px 0;
-  border-top:1px solid #eee;
-}
-
-#content section div {
-  height:250px;
-  background:#cfcfcf;
-  float:                left;
-}
-#content section div:last-child {
-  background:#c1c1c1;
+#content h3 {
+  font:                 167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+  color:                #181818;
+  margin-top:           30px;
 }
 
 /* / CONTENT */
@@ -1034,7 +1037,7 @@ aside section:last-child {
 }
 
 #presenter {
-  height:470px;
+  height:390px;
   background:#0ff;
 }
 
@@ -1278,13 +1281,59 @@ aside ul.nav li a.selected {
 
 /* / Sidebar */
 
-/* + Job Listings */
+/* + Careers */
 
-#job_listings h3 {
-  font:                 167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
-  color:                #181818;
-  margin-top:           30px;
+#careers section {
+  padding:              32px 18px 26px;
+  border-top:1px solid #eee;
 }
+
+#careers section .row {
+  margin-bottom:35px;
+}
+#careers section .row:last-child {
+  margin-bottom:        0;
+}
+
+#careers section .col2 {
+  width:                452px;
+  float:                left;
+}
+#careers section .col2:last-child {
+  width:                451px;
+  border-left:1px solid #eee;
+}
+
+#careers section .col3 {
+  width:                301px;
+  float:                left;
+}
+#careers section .col3:last-child {
+  width:                302px;
+}
+#careers section .col3 .icon {
+  width:75px;
+  height:75px;
+  margin:0 15px;
+  background:#ccc;
+  float:                left;
+}
+#careers section .col3 .text {
+  color:#ccc;
+}
+#careers section .col3 a.link {
+  font-weight:          bold;
+  text-transform:       uppercase;
+  margin-left:105px;
+  display:              block;
+}
+#careers section .col3 a.link em {
+  font-size:            150%;
+  color:                #c3151c;
+}
+/* / Careers */
+
+/* + Job Listings */
 
 #job_listings h3:first-child {
   margin-top:           0;
@@ -1348,6 +1397,10 @@ aside ul.nav li a.selected {
   position:relative;
   top:-16px;
 display:none;
+}
+
+#job_listings #none_found {
+  display:              none;
 }
 
 /* / Job Listings */
