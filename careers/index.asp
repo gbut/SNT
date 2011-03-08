@@ -6,7 +6,6 @@
   <!-- + main -->
   <div id="main" class="wrapper clearfix">
     
-    <!--#include virtual="/rms/inc/presenter.htm" -->
     <!-- + content -->
     <section id="content" class="clearfix">
       <!--#include virtual="/rms/inc/content/careers.htm" -->

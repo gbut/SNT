@@ -954,7 +954,6 @@ footer a {
 #content h3 {
   font:                 167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
   color:                #181818;
-  margin-top:           30px;
 }
 
 /* / CONTENT */
@@ -1334,6 +1333,10 @@ aside ul.nav li a.selected {
 /* / Careers */
 
 /* + Job Listings */
+
+#job_listings h3 {
+  margin-top:           30px;
+}
 
 #job_listings h3:first-child {
   margin-top:           0;
