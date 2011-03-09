@@ -1090,12 +1090,23 @@ aside section:last-child {
   display:              block;
 }
 
-#job_search form input {
-/*  padding:              2px;*/
+/* keyword search */
+#job_search form input{
   width:                290px;
   -webkit-border-radius:2px;
   -moz-border-radius:   2px;
   border-radius:        2px;
+}
+
+#job_search #message {
+  color:                #555;
+  width:                290px;
+}
+
+#job_search #message div {
+  color:                #2e2e2e;
+  margin:               0 0 7px;
+  float:                none;
 }
 
 #job_search form select {
@@ -1385,6 +1396,11 @@ aside ul.nav li a.selected {
 /* / Careers */
 
 /* + Job Listings */
+
+/* hide job listings until pre-filtered */
+#job_listings {
+  visibility:           hidden;
+}
 
 #job_listings h3 {
   margin-top:           30px;

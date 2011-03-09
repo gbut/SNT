@@ -247,6 +247,56 @@ $(document).ready(function(){
 */
 
   //===============================================
+  //  Pre-filter Job Listings on Geolocation
+  //===============================================
+
+  $(function(){
+    // get regions as set from backend
+    geoloc_region = $('#job_listings #geoloc_regions').html();
+    if (geoloc_region) {
+      
+      // initialize message
+      msg = '<div>Showing results for:</div>';
+      
+      // parse list (can be multiple values)
+      regions = geoloc_region.split('|');
+      
+      for (x in regions) {
+      
+        // hide all listings, then iterate and selectively show
+    	  $('#job_listings article').hide().each(function() {
+          thisRegion = $(this).find('.region').html();
+          if (thisRegion == regions[x]) {
+            $(this).show();
+            none = 0;
+          }
+        });
+        
+        // build string for messaging
+        if (x>0) msg += ' &amp; ';
+        msg += regions[x];
+
+      }
+      
+      // hide all category headers, then iterate and selectively show
+      $('#job_listings h3').hide().each(function() {
+        header = $(this);
+        $(this).nextUntil(':not(article)').each(function() {
+          if ($(this).is(':visible')) {
+            $(header).show();
+            return false;
+          }
+        });
+      });
+      
+      $('#job_search #message').html(msg);
+      
+    }
+    $('#job_listings').css('visibility','visible');
+    
+  });
+
+  //===============================================
   //  Show/Hide Job Listings
   //===============================================
 
@@ -256,8 +306,7 @@ $(document).ready(function(){
   	  // initialize
   	  none = 1;
   	  $('#none_found').hide();
-  	   $('#none_found .region').html('');
-  	   $('#none_found .category').html('');
+  	  $('#none_found span').html('');
   	  
   	  // get user values
       region = $('#jvRegion').val();
@@ -334,8 +383,6 @@ function fadeDuration(dur) {
  * Handle long job listings list
  * max = 4
  */
- 
-// *** move html for append to page *** 
 function jobListingsDisplay() {
   $('#job_listings h3:visible').each(function() {
     if ($(this).nextUntil(':not(article)').filter(':visible').length > 4) {
