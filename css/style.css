@@ -276,6 +276,11 @@ em {
   position:             relative;
 }
 
+/* used by jobListingsDisplay() */
+.hide {
+  display:              none !important;
+}
+
 /* + Buttons */
 
 #thing {
@@ -1253,7 +1258,7 @@ aside .callout a {
   bottom:               -36px;
   right:                0;
 }
-aside .callout .highlight {
+aside .callout em {
   font-size:            150%;
   color:                #c3151c;
 }
@@ -1450,7 +1455,14 @@ display:none;
 }
 
 #job_listings #none_found {
+  font-size:            120%;
+  color:                #c3151c;
+  margin-top:           10px;
   display:              none;
+}
+
+#job_listings .show_all {
+  
 }
 
 /* / Job Listings */

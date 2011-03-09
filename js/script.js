@@ -293,6 +293,13 @@ $(document).ready(function(){
         $('#none_found').show();
       }
       
+      jobListingsDisplay();
+      
+  	});
+  	
+  	// show all
+  	$('#job_listings .show_all').live('click', function() {
+  	  alert('show all TK');
   	});
   });
 
@@ -322,3 +329,17 @@ function fadeDuration(dur) {
   return dur;
 }
 
+/**
+ * Handle long job listings list
+ * max = 4
+ */
+ 
+// *** move html for append to page *** 
+function jobListingsDisplay() {
+  $('#job_listings h3:visible').each(function() {
+    if ($(this).nextUntil(':not(article)').filter(':visible').length > 4) {
+      $(this).nextUntil(':not(article)').filter(':visible:gt(3)').addClass('hide');
+      $(this).nextUntil(':not(article)').filter(':visible:eq(3)').append('<a href="#" class="show_all">Show all</a>');
+    }
+  });
+}
