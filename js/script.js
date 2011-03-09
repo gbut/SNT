@@ -299,7 +299,8 @@ $(document).ready(function(){
   	
   	// show all
   	$('#job_listings .show_all').live('click', function() {
-  	  alert('show all TK');
+  	  $(this).hide();
+  	  $(this).nextUntil(':not(article)').filter('.hide').hide().removeClass('hide').fadeIn('slow');
   	});
   });
 
@@ -339,7 +340,7 @@ function jobListingsDisplay() {
   $('#job_listings h3:visible').each(function() {
     if ($(this).nextUntil(':not(article)').filter(':visible').length > 4) {
       $(this).nextUntil(':not(article)').filter(':visible:gt(3)').addClass('hide');
-      $(this).nextUntil(':not(article)').filter(':visible:eq(3)').append('<a href="#" class="show_all">Show all</a>');
+      $(this).nextUntil(':not(article)').filter(':visible:eq(3)').after($('#show_all').html());
     }
   });
 }
