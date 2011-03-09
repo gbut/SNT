@@ -1444,6 +1444,11 @@ aside ul.nav li a.selected {
   font:                 110%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
   color:                #232323;
   margin-top:           36px;
+  padding:              10px;
+  border:               1px solid #b2b2b2;
+  -webkit-border-radius:4px 6px;
+  -moz-border-radius:   4px 6px;
+  border-radius:        4px 6px;
 }
 
 #job_listings .footer .subtext {
@@ -1522,9 +1527,38 @@ display:none;
 
 /* / Job Detail */
 
-/* + Apply */
+/* + Job Apply */
 
-/* / Apply */
+#job_apply legend {
+  font:167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+  padding:0 0 20px 20px;
+}
+
+#job_apply legend em {
+  color:                #c3151c;
+}
+
+#job_apply label {
+  text-align:           right;
+  width:100px;
+  height:34px;
+  margin:               0 18px 10px 0;
+  display:              inline-block;
+}
+
+#job_apply input {
+  width:530px;
+  height:34px;
+  padding:0;
+  margin:               0 0 10px 0;
+  display:              inline-block;
+  -webkit-border-radius:0 0;
+  -moz-border-radius:   0 0;
+  border-radius:        0 0;
+}
+
+
+/* / Job Apply */
 
 /* + Share */
 
