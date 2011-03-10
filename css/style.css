@@ -306,7 +306,7 @@ em {
   color:                #fff;
   font:                 100%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;
   text-transform:       uppercase;
-  text-align:           center;
+  text-align:           left;
   border:               1px solid #878686;
   display:              inline-block;
   position:             relative;
@@ -427,6 +427,16 @@ em {
 }
 .btnApply:active {
   background:           #770207 url(../img/btns_lt.png) -30px -74px no-repeat;
+}
+
+/* if larger buttons are in a narrow container, relax right padding and let them go full width */
+aside section .btnLg,
+aside section .btnApply {
+  padding-right:        9px;
+  display:              block;
+}
+aside section .btnApply {
+  padding-right:        19px;
 }
 
 /* / Buttons */
@@ -1223,7 +1233,7 @@ aside .benefit .subtext {
 }
 
 aside .share {
-  width:                162px;
+  width:                165px;
   margin:               15px auto 0;
 }
 aside .share div,
