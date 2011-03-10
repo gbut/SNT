@@ -417,7 +417,10 @@ $(document).ready(function(){
   //===============================================
 
   $('#quoteTabs').tabs({
-    fx: { opacity:'toggle', duration:200 }
+    fx: { opacity:'toggle', duration:400 },
+    create: function(e, ui) {
+      $(e.target).tabs('rotate', 5000);
+    }
   });
 
 });
