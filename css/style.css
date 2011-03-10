@@ -256,14 +256,24 @@ a {
 }
 
 input[type=text],
-input[type=password] {
-  font:                 85%/100% Tahoma,Arial,sans-serif;
+input[type=password],
+textarea {
+  font:                 100%/100% Tahoma,Arial,sans-serif;
+  width:                135px;
   padding:              3px 5px;
   background-color:     #fff;
-  border:               1px solid #b2b2b2;
-  -webkit-border-radius:4px 6px;
-  -moz-border-radius:   4px 6px;
-  border-radius:        4px 6px;
+  border:               1px solid #a5a5a5;
+  display:              block;
+  -webkit-border-radius:1px;
+  -moz-border-radius:   1px;
+  border-radius:        1px;
+     -moz-box-shadow:   inset 1px 2px 2px #d5d5d5; 
+  -webkit-box-shadow:   inset 1px 2px 2px #d5d5d5; 
+          box-shadow:   inset 1px 2px 2px #d5d5d5;
+}
+
+fieldset {
+  padding-bottom:       20px;
 }
 
 em {
@@ -618,6 +628,7 @@ header #login form label {
 header #login form input[type=text],
 header #login form input[type=password] {
   color:                #5e5e5e;
+  font-size:            85%;
   width:                135px;
   margin:               5px 0;
   border:               1px solid #bdbcbd;
@@ -1602,31 +1613,35 @@ display:none;
 #job_apply label {
   text-align:           right;
   width:100px;
-  height:34px;
+  height:27px;
   margin:               0 18px 10px 0;
   display:              inline-block;
 }
 
 #job_apply input {
-  width:530px;
-  height:34px;
+  width:520px;
+  height:26px;
+/*
   padding:0;
   margin:               0 0 10px 0;
+*/
   display:              inline-block;
+/*
   -webkit-border-radius:0 0;
   -moz-border-radius:   0 0;
   border-radius:        0 0;
+*/
 }
 
 #job_apply textarea {
-  width:530px;
+  width:520px;
   height:115px;
-  margin:0 0 10px 118px;
+  margin:0 0 10px 121px;
 }
 
 #job_apply #jvsubmitlinkedinprofile,
 #job_apply #submit {
-  margin:0 0 10px 118px;
+  margin:0 0 10px 121px;
 }
 
 /* / Job Apply */
