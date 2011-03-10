@@ -1,5 +1,45 @@
 <!-- + careers-jobs -->
 <div id="job_listings">
+
+<!-- temp hot jbs mock up
+  <h3><span class="category">HOT JOBS</span></h3>
+
+  <article>
+    <time datetime="2/8/11" pubdate>2/8/11</time>
+    <h4 class="clearfix">
+      <a href="careers/jobs/index_id.asp?oLgAVfwg" title="Senior Linux System Administrator">Senior Linux System Administrator</a>
+      <span class="category" style="position:absolute; left:380px">Administrative</span>
+      <span class="region">San Francisco Area</span>
+    </h4>
+  </article>
+
+  <article>
+    <time datetime="2/8/11" pubdate>2/8/11</time>
+    <h4 class="clearfix">
+      <a href="careers/jobs/index_id.asp?o1YCVfwg" title="Risk Analyst">Risk Analyst</a>
+      <span class="category" style="position:absolute; left:380px">Analyst</span>
+      <span class="region">New Delhi, India</span>
+    </h4>
+  </article>
+  
+  <article>
+    <time datetime="2/15/11" pubdate>2/15/11</time>
+    <h4 class="clearfix">
+      <a href="careers/jobs/index_id.asp?oi8gVfwl" title="Principal Account Manager">Principal Account Manager</a>
+      <span class="category" style="position:absolute; left:380px">Business Development</span>
+      <span class="region">New York City Metro</span>
+    </h4>
+  </article>
+
+  <article>
+    <time datetime="2/22/11" pubdate>2/22/11</time>
+    <h4 class="clearfix">
+      <a href="careers/jobs/index_id.asp?oodCVfwS" title="Senior Coordinator/System Administrator">Senior Coordinator/System Administrator</a>
+      <span class="category" style="position:absolute; left:380px">Human Resources</span>
+      <span class="region">San Francisco Area</span>
+    </h4>
+  </article>
+-->
   
   <h3><span class="category">Administrative</span> Positions</h3>
     
