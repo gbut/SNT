@@ -410,6 +410,15 @@ $(document).ready(function(){
   
   // on page load...
   jobListingsTruncation();
+  
+
+  //===============================================
+  //  Sidebar rotation
+  //===============================================
+
+  $('#quoteTabs').tabs({
+    fx: { opacity:'toggle', duration:200 }
+  });
 
 });
 

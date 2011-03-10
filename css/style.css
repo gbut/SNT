@@ -1236,7 +1236,7 @@ aside .share .label {
 }
 aside .share a.facebook,
 aside .share a.twitter,
-aside ul.nav li a {
+aside .ui-tabs ul.ui-tabs-nav li a {
   width:                32px;
   height:               32px;
   display:              block;
@@ -1274,23 +1274,65 @@ aside .callout em {
   color:                #c3151c;
 }
 
-aside ul.nav {
+/* jQuery UI overrides */
+aside .ui-widget {
+  font-size:            100%;
+}
+aside .ui-widget-content {
+  background:           none;
+  border:               none;
+}
+aside .ui-widget-header {
+  color:                #333;
+  background:           none;
+  border:               none;
+}
+aside .ui-tabs {
+  padding:              0;
+}
+aside .ui-tabs .ui-tabs-panel {
+  padding:              0 0 13px;
+}
+aside .ui-tabs ul.ui-tabs-nav {
   text-align:           center;
+  width:                100%;
   margin:               0;
   padding:              0;
   list-style-type:      none;
+  cursor:               pointer;
+  position:             absolute;
+  left:                 0;
+  bottom:               -2px;
 }
-aside ul.nav li {
+aside .ui-tabs ul.ui-tabs-nav li {
+  margin:               0;
+  background:           none;
+  border:               none;
   display:              inline;
+  top:                  0;
+  float:                none;
+  cursor:               pointer;
 }
-aside ul.nav li a {
+aside .ui-tabs ul.ui-tabs-nav li.ui-tabs-selected,
+aside .ui-tabs ul.ui-tabs-nav li.ui-state-active,
+aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover {
+  padding:              0;
+}
+aside .ui-tabs ul.ui-tabs-nav li a {
+  text-indent:          -9999px;
   height:               10px;
   width:                9px;
   margin:               0 5px;
+  padding:              0;
   display:              inline-block;
   background-position:  0 -64px;
+  float:                none;
+  cursor:               pointer;
+  overflow:hidden;
 }
-aside ul.nav li a.selected {
+aside .ui-tabs ul.ui-tabs-nav li.ui-tabs-selected a,
+aside .ui-tabs ul.ui-tabs-nav li.ui-state-active a,
+aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   background-position:  0 -74px;
 }
 
