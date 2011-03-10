@@ -364,8 +364,7 @@ $(document).ready(function(){
   	  none = 1;
   	  $('#none_found').hide();
   	  $('#none_found span').html('');
-  	  $('#job_listings article').show();
-  	  $('#job_listings h3').show();
+  	  $('#job_listings article').removeClass('hide');
   	  $('.show_all').not('#show_all .show_all').remove(); // remove previously inserted links, but not the source
   	  
   	  // get user value
@@ -373,7 +372,7 @@ $(document).ready(function(){
       
   	  // hide all listings, then iterate and selectively show
   	  $('#job_listings article').hide().each(function() {
-        thisCategory = $(this).prevAll('h3').find('.category').html();
+        thisCategory = $(this).prevAll('h3').eq(0).find('.category').text();
         if (!category || (thisCategory == category)) {
           $(this).show();
           none = 0;
@@ -393,12 +392,12 @@ $(document).ready(function(){
       
       // if none found, show message
       if (none) {
-        if (category)
-          $('#none_found .category').html(' for '+category);
+        $('#none_found .category').html(' for '+category);
         $('#none_found').show();
       }
 
-      jobListingsDisplay();
+      if (!category)
+        jobListingsTruncation();
       
   	});
   	
@@ -409,7 +408,8 @@ $(document).ready(function(){
   	});
   });
   
-  jobListingsDisplay();
+  // on page load...
+  jobListingsTruncation();
 
 });
 
@@ -441,7 +441,7 @@ function fadeDuration(dur) {
  * Handle long job listings list
  * max = 4
  */
-function jobListingsDisplay() {
+function jobListingsTruncation() {
   $('#job_listings h3:visible').each(function() {
     if ($(this).nextUntil(':not(article)').filter(':visible').length > 4) {
       $(this).nextUntil(':not(article)').filter(':visible:gt(3)').addClass('hide');
