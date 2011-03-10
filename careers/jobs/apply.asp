@@ -1,4 +1,4 @@
-<!--#include virtual="/rms/inc/__html-head.htm" -->
+<!--#include virtual="/rms/inc/__html-head.asp" -->
 
 <!--#include virtual="/rms/inc/_header.asp" -->
 
@@ -8,10 +8,10 @@
 
     <!-- + content -->
     <section id="content" class="clearfix">
-      <!--#include virtual="/rms/inc/content/careers_jobs_detail_apply.htm" -->
+      <!--#include virtual="/rms/inc/content/careers_jobs_detail_apply.asp" -->
     </section>
     <!-- / content -->
-    <!--#include virtual="/rms/inc/sidebar/careers_jobs_detail_apply.htm" -->
+    <!--#include virtual="/rms/inc/sidebar/careers_jobs_detail_apply.asp" -->
   
   </div>
   <!-- / main -->
@@ -23,6 +23,6 @@
 
 </div>
 
-<!--#include virtual="/rms/inc/_footer.htm" -->
+<!--#include virtual="/rms/inc/_footer.asp" -->
 
-<!--#include virtual="/rms/inc/__html-foot.htm" -->
+<!--#include virtual="/rms/inc/__html-foot.asp" -->

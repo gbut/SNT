@@ -1,4 +1,4 @@
-<!--#include virtual="/rms/inc/__html-head.htm" -->
+<!--#include virtual="/rms/inc/__html-head.asp" -->
 
 <!--#include virtual="/rms/inc/_header.asp" -->
 
@@ -8,7 +8,7 @@
   
     <!-- + content -->
     <section id="content" class="clearfix">
-      <!--#include virtual="/rms/inc/content/home.htm" -->
+      <!--#include virtual="/rms/inc/content/home.asp" -->
     </section>
     <!-- / content -->
       
@@ -16,6 +16,6 @@
   <!-- / main -->
 </div>
 
-<!--#include virtual="/rms/inc/_footer.htm" -->
+<!--#include virtual="/rms/inc/_footer.asp" -->
 
-<!--#include virtual="/rms/inc/__html-foot.htm" -->
+<!--#include virtual="/rms/inc/__html-foot.asp" -->

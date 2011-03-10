@@ -45,7 +45,7 @@
     </div>
     <!-- / login -->
   
-    <!--#include file="nav.htm" -->
+    <!--#include file="nav.asp" -->
   
   </div>
 </header>
