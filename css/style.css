@@ -440,7 +440,7 @@ em {
 
 header {
   position:             relative;
-  z-index:              50;
+  z-index:              150;
   background:           #fff;
      -moz-box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
   -webkit-box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
@@ -1670,7 +1670,7 @@ ul.toc {
   margin:2px 0 0 0;
   padding:4px;
   position:absolute;
-  z-index:100;
+  z-index:1000;
   list-style-type:none;
   background:#ff0;
   opacity:0.5;
