@@ -247,11 +247,66 @@ $(document).ready(function(){
 */
 
   //===============================================
+  //  Pre-filter Job Listings on Geolocation
+  //===============================================
+
+  $(function(){
+    // get regions as set from backend
+    geoloc_region = $('#job_listings #geoloc_regions').html();
+    if (geoloc_region) {
+      
+      // initialize message
+      msg = '<div>Showing results for:</div>';
+      
+      // parse list (can be multiple values)
+      regions = geoloc_region.split('|');
+      
+      for (x in regions) {
+      
+        // hide all listings, then iterate and selectively show
+    	  $('#job_listings article').hide().each(function() {
+          thisRegion = $(this).find('.region').html();
+          if (thisRegion == regions[x]) {
+            $(this).show();
+            none = 0;
+          }
+        });
+        
+        // build string for messaging
+        if (x>0) msg += ' &amp; ';
+        msg += regions[x];
+
+      }
+      
+      // hide all category headers, then iterate and selectively show
+      $('#job_listings h3').hide().each(function() {
+        header = $(this);
+        $(this).nextUntil(':not(article)').each(function() {
+          if ($(this).is(':visible')) {
+            $(header).show();
+            return false;
+          }
+        });
+      });
+      
+      $('#job_search #message').html(msg);
+      
+    }
+    $('#job_listings').css('visibility','visible');
+    
+  });
+
+  //===============================================
   //  Show/Hide Job Listings
   //===============================================
 
   $(function(){
   	$('#form_jvSearch select').change(function() {
+  	  
+  	  // initialize
+  	  none = 1;
+  	  $('#none_found').hide();
+  	  $('#none_found span').html('');
   	  
   	  // get user values
       region = $('#jvRegion').val();
@@ -263,6 +318,7 @@ $(document).ready(function(){
         thisCategory = $(this).prevAll('h3').find('.category').html();
         if ((!region || (thisRegion == region)) && (!category || (thisCategory == category))) {
           $(this).show();
+          none = 0;
         }
       });
       
@@ -277,6 +333,23 @@ $(document).ready(function(){
         });
       });
       
+      // if none found, show message
+      if (none) {
+        if (region)
+          $('#none_found .region').html(' in '+region);
+        if (category)
+          $('#none_found .category').html(' for '+category);
+        $('#none_found').show();
+      }
+      
+      jobListingsDisplay();
+      
+  	});
+  	
+  	// show all
+  	$('#job_listings .show_all').live('click', function() {
+  	  $(this).hide();
+  	  $(this).nextUntil(':not(article)').filter('.hide').hide().removeClass('hide').fadeIn('slow');
   	});
   });
 
@@ -306,3 +379,15 @@ function fadeDuration(dur) {
   return dur;
 }
 
+/**
+ * Handle long job listings list
+ * max = 4
+ */
+function jobListingsDisplay() {
+  $('#job_listings h3:visible').each(function() {
+    if ($(this).nextUntil(':not(article)').filter(':visible').length > 4) {
+      $(this).nextUntil(':not(article)').filter(':visible:gt(3)').addClass('hide');
+      $(this).nextUntil(':not(article)').filter(':visible:eq(3)').after($('#show_all').html());
+    }
+  });
+}
