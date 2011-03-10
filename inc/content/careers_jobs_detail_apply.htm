@@ -11,7 +11,7 @@
     Newark, California
   </div>
 
-  <form>
+  <form name="jvform" method="post" action="http://hire.jobvite.com/CompanyJobs/Careers.aspx?" id="jvform">
 
     <fieldset>
       <legend>About <em>You</em></legend>
@@ -28,17 +28,17 @@
     <fieldset>
       <legend>Your <em>Resumé</em></legend>
       <label for="jvresume">Upload:</label>
-      <input type="button" id="ImportResume" name="ImportResume" />
+      <a href="#" name="ImportResume" id="ImportResume" class="btn btnLg" onclick="jvAddAttachment('jvresume', '[id]');return false;">Upload My Resumé</a>
       <textarea id="jvresume" name="jvresume"></textarea>
-      <input type="button" id="jvsubmitlinkedinprofile" name="jvsubmitlinkedinprofile" />
+      <a href="#" id="jvsubmitlinkedinprofile" class="btn btnLg" onclick="jvtoggleliprofile(true)">Include LinkedIn Profile</a>
     </fieldset>
     
     <fieldset>
       <legend>Your <em>Cover Letter</em></legend>
       <label for="jvcoverletter">Upload:</label>
-      <input type="button" id="ImportCL" name="ImportCL" />
+      <a href="#" name="ImportCL" id="ImportCL" class="btn btnLg" onclick="jvAddAttachment('jvresume', '[id]');return false;">Upload My Cover Letter</a>
       <textarea id="jvcoverletter" name="jvcoverletter"></textarea>
-      <input type="submit" />
+      <a href="#" name="submit" id="submit" class="btn btnLg" onclick="submit();">Apply</a>
     </fieldset>
     
   </form>

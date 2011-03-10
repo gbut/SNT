@@ -1529,6 +1529,20 @@ display:none;
 
 /* + Job Apply */
 
+#job_apply .back {
+  margin-bottom:15px;
+}
+
+#job_apply h2 {
+  font:197%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+  margin-bottom:10px;
+}
+
+#job_apply .subhead {
+  font-weight:bold;
+  margin-bottom:25px;
+}
+
 #job_apply legend {
   font:167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
   padding:0 0 20px 20px;
@@ -1557,6 +1571,16 @@ display:none;
   border-radius:        0 0;
 }
 
+#job_apply textarea {
+  width:530px;
+  height:115px;
+  margin:0 0 10px 118px;
+}
+
+#job_apply #jvsubmitlinkedinprofile,
+#job_apply #submit {
+  margin:0 0 10px 118px;
+}
 
 /* / Job Apply */
 
