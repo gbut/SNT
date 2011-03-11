@@ -613,10 +613,10 @@ header #login form fieldset {
   overflow:             hidden;
   position:             fixed;
   z-index:              60;
-  -moz-opacity:         0.72;
-  -ms-filter:           "alpha(opacity=72)";
-  filter:               alpha(opacity=72);
-  opacity:              0.72;
+  -moz-opacity:         0;
+  -ms-filter:           "alpha(opacity=0)";
+  filter:               alpha(opacity=0);
+  opacity:              0;
   display:              none;
 }
 

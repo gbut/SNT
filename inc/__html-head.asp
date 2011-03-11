@@ -7,6 +7,7 @@
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
+  <!--[if IE ]><base href="http://192.168.1.101/rms/" /><![endif]-->
   <base href="http://localhost/rms/" />
   <!-- base href="http://localhost:8888/rms/" / -->
   
