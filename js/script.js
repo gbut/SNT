@@ -102,11 +102,9 @@ $(document).ready(function(){
   	});
   	$('#btnClientLogin').click(function(e){
   	  if ($('#login').hasClass('open')) {
-//    	  $('#loginOverlay').fadeOut(150);
     	  $('#loginOverlay').animate({opacity:0}, 150, function(){ $(this).hide(); });
     	  $('#login').removeClass('open');
   	  } else {
-//    	  $('#loginOverlay').fadeIn(150);
     	  $('#loginOverlay').show().animate({opacity:0.72}, 150);
     	  $('#login').addClass('open');
     	  $('#form_login input[type=text]').eq(0).focus();
@@ -419,10 +417,10 @@ $(document).ready(function(){
   //===============================================
 
   $('#quoteTabs').tabs({
-    fx: { opacity:'toggle', duration:400 },
-    create: function(e, ui) {
-      $(e.target).tabs('rotate', 5000);
-    }
+    fx: { opacity:'toggle', duration:400 }// ,
+    //     create: function(e, ui) {
+    //       $(e.target).tabs('rotate', 5000);
+    //     }
   });
 
 });

@@ -270,6 +270,7 @@ textarea {
      -moz-box-shadow:   inset 1px 2px 2px #d5d5d5; 
   -webkit-box-shadow:   inset 1px 2px 2px #d5d5d5; 
           box-shadow:   inset 1px 2px 2px #d5d5d5;
+  behavior: url(/PIE.htc);
 }
 
 fieldset {
@@ -465,6 +466,7 @@ header {
      -moz-box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
   -webkit-box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
           box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
+  behavior: url(/PIE.htc);
 }
 
 header .wrapper {
@@ -499,6 +501,7 @@ header #login {
   left:                 7px;
   overflow:             visible;
   z-index:              100;
+  behavior: url(/PIE.htc);
 }
 header #login.open {
   -webkit-border-radius:4px 4px 0 0;
@@ -752,6 +755,7 @@ header nav ul.sf-menu li ul.sn {
      -moz-box-shadow:   2px 3px 6px -3px #9c8f85; 
   -webkit-box-shadow:   2px 3px 6px -3px #9c8f85; 
           box-shadow:   2px 3px 6px -3px #9c8f85;
+  behavior: url(/PIE.htc);
 }
 
 header nav ul.sf-menu li ul li {
@@ -1507,6 +1511,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   -webkit-border-radius:4px 6px;
   -moz-border-radius:   4px 6px;
   border-radius:        4px 6px;
+  behavior: url(/PIE.htc);
 }
 
 #job_listings .footer .subtext {
