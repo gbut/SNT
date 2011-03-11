@@ -344,10 +344,10 @@ em {
   background:           url(../img/btns_rt.png) 100% -101px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
   background:           url(../img/btns_rt.png) 100% -101px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
   -pie-background:      url(img/btns_rt.png) 100% -101px no-repeat, linear-gradient(#58839a, #215a79);
-  behavior: url(/PIE.htc);
 }
 .btnSm:active {
   background:           #1c4c66 url(../img/btns_rt.png) 100% -101px no-repeat;
+  -pie-background:      #1c4c66 url(img/btns_rt.png) 100% -101px no-repeat;
 }
 
 .btnLg {
@@ -374,10 +374,10 @@ em {
   background:           url(../img/btns_lt.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
   background:           url(../img/btns_lt.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
   -pie-background:      url(img/btns_lt.png) 20px -124px no-repeat, linear-gradient(#fefefe, #a4a4a4);
-  behavior: url(/PIE.htc);
 }
 .btnLg:active {
   background:           #d7d7d7 url(../img/btns_lt.png) 20px -124px no-repeat;
+  -pie-background:      #d7d7d7 url(img/btns_lt.png) 20px -124px no-repeat;
 }
 
 .btnChat {
@@ -404,10 +404,10 @@ em {
   background:           url(../img/btns_lt.png) 13px -127px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
   background:           url(../img/btns_lt.png) 13px -127px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
   -pie-background:      url(img/btns_lt.png) 13px -127px no-repeat, linear-gradient(#58839a, #215a79);
-  behavior: url(/PIE.htc);
 }
 .btnChat:active {
   background:           #1c4c66 url(../img/btns_lt.png) 13px -127px no-repeat;
+  -pie-background:      #1c4c66 url(img/btns_lt.png) 13px -127px no-repeat;
 }
 
 .btnApply {
@@ -433,10 +433,10 @@ em {
   background:           url(../img/btns_lt.png) -30px -74px no-repeat, -moz-linear-gradient(top, #93262a 0%, #8f0309 100%);
   background:           url(../img/btns_lt.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262a), color-stop(100%,#8f0309));
   -pie-background:      url(img/btns_lt.png) -30px -74px no-repeat, linear-gradient(#93262a, #8f0309);
-  behavior: url(/PIE.htc);
 }
 .btnApply:active {
   background:           #770207 url(../img/btns_lt.png) -30px -74px no-repeat;
+  -pie-background:      #770207 url(img/btns_lt.png) -30px -74px no-repeat;
 }
 
 /* if larger buttons are in a narrow container, relax right padding and let them go full width */
@@ -539,6 +539,8 @@ header #login.open #btnClientLogin {
   -moz-border-radius:   4px 4px 0 0;
   border-radius:        4px 4px 0 0;
   background:           #090909;
+  -pie-background:      #090909;
+  behavior: url(/PIE.htc);
 }
 
 header #login form {
