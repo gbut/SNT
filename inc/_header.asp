@@ -5,7 +5,7 @@
   <div class="headerInner wrapper clearfix">
     
     <!-- + logo -->
-    <h1><a href="/index.asp" title="RMS">RMS</a></h1>
+    <h1><a href="/" title="RMS">RMS</a></h1>
     <!-- / logo -->
 
     <!-- + login -->

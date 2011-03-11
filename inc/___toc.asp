@@ -1,7 +1,7 @@
 <!-- + toc -->
 <ul class="toc">
   <li>
-    <a href="home.asp">Home</a>
+    <a href="/home.asp">Home</a>
   </li>
   <li>
     <a href="/careers">Careers</a>
