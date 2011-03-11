@@ -905,8 +905,8 @@
 
   <div class="footer">
     Don't see your dream job?
-    <span class="subtext">We read all resumés, so apply today.</span>
-    <a href="#" class="submit">Submit resumé</a>
+    <span class="subtext">We read all résumés, so apply today.</span>
+    <a href="#" class="submit">Submit résumé</a>
   </div>
   
   <div id="show_all" class="hide">

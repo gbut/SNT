@@ -26,9 +26,9 @@
     </fieldset>
     
     <fieldset>
-      <legend>Your <em>Resumé</em></legend>
+      <legend>Your <em>Résumé</em></legend>
       <label for="jvresume">Upload:</label>
-      <a href="#" name="ImportResume" id="ImportResume" class="btn btnLg" onclick="jvAddAttachment('jvresume', '[id]');return false;">Upload My Resumé</a>
+      <a href="#" name="ImportResume" id="ImportResume" class="btn btnLg" onclick="jvAddAttachment('jvresume', '[id]');return false;">Upload My Résumé</a>
       <textarea id="jvresume" name="jvresume"></textarea>
       <a href="#" id="jvsubmitlinkedinprofile" class="btn btnLg" onclick="jvtoggleliprofile(true)">Include LinkedIn Profile</a>
     </fieldset>
