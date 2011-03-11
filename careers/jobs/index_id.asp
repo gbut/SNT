@@ -1,18 +1,18 @@
-<!--#include virtual="/rms/inc/__html-head.asp" -->
+<!--#include virtual="/inc/__html-head.asp" -->
 
-<!--#include virtual="/rms/inc/_header.asp" -->
+<!--#include virtual="/inc/_header.asp" -->
 
 <div id="t04" class="contentOuter">
   <!-- + main -->
   <div id="main" class="wrapper clearfix">
 
-    <!--#include virtual="/rms/inc/banner/careers_jobs_detail.asp" -->
+    <!--#include virtual="/inc/banner/careers_jobs_detail.asp" -->
     <!-- + content -->
     <section id="content" class="clearfix">
-      <!--#include virtual="/rms/inc/content/careers_jobs_detail.asp" -->
+      <!--#include virtual="/inc/content/careers_jobs_detail.asp" -->
     </section>
     <!-- / content -->
-    <!--#include virtual="/rms/inc/sidebar/careers_jobs_detail.asp" -->
+    <!--#include virtual="/inc/sidebar/careers_jobs_detail.asp" -->
   
   </div>
   <!-- / main -->
@@ -24,6 +24,6 @@
 
 </div>
 
-<!--#include virtual="/rms/inc/_footer.asp" -->
+<!--#include virtual="/inc/_footer.asp" -->
 
-<!--#include virtual="/rms/inc/__html-foot.asp" -->
+<!--#include virtual="/inc/__html-foot.asp" -->

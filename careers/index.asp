@@ -1,6 +1,6 @@
-<!--#include virtual="/rms/inc/__html-head.asp" -->
+<!--#include virtual="/inc/__html-head.asp" -->
 
-<!--#include virtual="/rms/inc/_header.asp" -->
+<!--#include virtual="/inc/_header.asp" -->
 
 <div id="t02" class="contentOuter">
   <!-- + main -->
@@ -8,7 +8,7 @@
     
     <!-- + content -->
     <section id="content" class="clearfix">
-      <!--#include virtual="/rms/inc/content/careers.asp" -->
+      <!--#include virtual="/inc/content/careers.asp" -->
     </section>
     <!-- / content -->
   
@@ -22,6 +22,6 @@
   
 </div>
 
-<!--#include virtual="/rms/inc/_footer.asp" -->
+<!--#include virtual="/inc/_footer.asp" -->
 
-<!--#include virtual="/rms/inc/__html-foot.asp" -->
+<!--#include virtual="/inc/__html-foot.asp" -->

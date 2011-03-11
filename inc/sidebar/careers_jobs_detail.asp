@@ -2,7 +2,7 @@
 <aside>
   <section>
 
-    <a href="careers/jobs/apply.asp" class="btn btnLg btnApply">Apply for this Job</a>
+    <a href="/careers/jobs/apply.asp" class="btn btnLg btnApply">Apply for this Job</a>
     <a href="#" class="btn btnLg">Share with a Friend</a>
 
     <div class="share clearfix">
@@ -16,7 +16,7 @@
     <div id="photo">
       <div class="photo">
         <div class="container">
-          <img src="img/photo_employee_03.jpg" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/photo_employee_03.jpg" alt="Employee Photo" title="Employee Photo">
         </div>
       </div>
     </div>  

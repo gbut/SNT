@@ -2,7 +2,7 @@
 <div id="job_apply">
   
   <div class="back">
-    <a href="careers/jobs" title="Back to Job Openings">Back to Job Openings</a>
+    <a href="/careers/jobs" title="Back to Job Openings">Back to Job Openings</a>
   </div>
   
   <h2>Apply for <em>Senior Field Engineer</em></h2>

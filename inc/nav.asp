@@ -29,7 +29,7 @@
           </div>
           <div class="subnavRt">
             <h4>Provider of<br />the Year 2010</h4>
-            <img src="img/gnav/risk_provider_2010.jpg" class="gnavImg" alt="Provider of the Year 2010" />
+            <img src="/img/gnav/risk_provider_2010.jpg" class="gnavImg" alt="Provider of the Year 2010" />
             <a href="#" class="btn btnSm cta">Latest News</a>
           </div>
         </li>
@@ -45,12 +45,12 @@
       <a href="#" class="pn" title="About"><span class="tl">About</span></a>
     </li>
     <li class="selected">
-      <a href="careers" class="pn" title="Careers"><span class="tl">Careers</span></a>
+      <a href="/careers" class="pn" title="Careers"><span class="tl">Careers</span></a>
       <ul class="sn careers">
         <li class="clearfix">
           <div class="subnavLt">
             <h3>Meet Us</h3>
-            <img src="img/gnav/careers_meet_us.jpg" class="gnavImg" alt="Meet Us" />
+            <img src="/img/gnav/careers_meet_us.jpg" class="gnavImg" alt="Meet Us" />
             <a href="#" class="cta">See More Photos on Flickr</a>
           </div>
           <div class="subnavRt">

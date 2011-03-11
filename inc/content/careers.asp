@@ -6,7 +6,7 @@
   </div>
 
   <div id="positions" class="clearfix">
-    <a href="careers/jobs" class="btn btnLg">Open positions</a>
+    <a href="/careers/jobs" class="btn btnLg">Open positions</a>
   </div>
 
   <section class="clearfix">
@@ -102,7 +102,7 @@
       <div class="text">
         <h4>See if we're right for you</h4>
         Picking an employer is a big decision, and we know we're not right for everyone. Play this fun game to find out.
-        <a href="careers/game" class="btn btnLg">Play the game</a>
+        <a href="/careers/game" class="btn btnLg">Play the game</a>
       </div>
     </div>
     <div class="col2">
@@ -110,7 +110,7 @@
       <div class="text">
         <h4>Chat with us right away</h4>
         Sometimes, a quick chat is all you need to know. We're available to chat online whenever you are.
-        <a href="careers/chat" class="btn btnLg">Start a chat</a>
+        <a href="/careers/chat" class="btn btnLg">Start a chat</a>
       </div>
     </div>
   </section>
