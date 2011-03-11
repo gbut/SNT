@@ -22,12 +22,12 @@
         <div id="photo">
           <div class="photo">
             <div class="container">
-              <img src="img/photo_employee_01.jpg" alt="Employee Photo" title="Employee Photo">
+              <img src="/img/photo_employee_01.jpg" alt="Employee Photo" title="Employee Photo">
             </div>
           </div>
           <div class="photo2">
             <div class="container">
-              <img src="img/photo_employee_02.jpg" alt="Employee Photo" title="Employee Photo">
+              <img src="/img/photo_employee_02.jpg" alt="Employee Photo" title="Employee Photo">
             </div>
           </div>
         </div>
@@ -52,12 +52,12 @@
         <div id="photo">
           <div class="photo">
             <div class="container">
-              <img src="img/photo_employee_01.jpg" alt="Employee Photo" title="Employee Photo">
+              <img src="/img/photo_employee_01.jpg" alt="Employee Photo" title="Employee Photo">
             </div>
           </div>
           <div class="photo2">
             <div class="container">
-              <img src="img/photo_employee_02.jpg" alt="Employee Photo" title="Employee Photo">
+              <img src="/img/photo_employee_02.jpg" alt="Employee Photo" title="Employee Photo">
             </div>
           </div>
         </div>
@@ -82,12 +82,12 @@
         <div id="photo">
           <div class="photo">
             <div class="container">
-              <img src="img/photo_employee_01.jpg" alt="Employee Photo" title="Employee Photo">
+              <img src="/img/photo_employee_01.jpg" alt="Employee Photo" title="Employee Photo">
             </div>
           </div>
           <div class="photo2">
             <div class="container">
-              <img src="img/photo_employee_02.jpg" alt="Employee Photo" title="Employee Photo">
+              <img src="/img/photo_employee_02.jpg" alt="Employee Photo" title="Employee Photo">
             </div>
           </div>
         </div>
@@ -112,12 +112,12 @@
         <div id="photo">
           <div class="photo">
             <div class="container">
-              <img src="img/photo_employee_01.jpg" alt="Employee Photo" title="Employee Photo">
+              <img src="/img/photo_employee_01.jpg" alt="Employee Photo" title="Employee Photo">
             </div>
           </div>
           <div class="photo2">
             <div class="container">
-              <img src="img/photo_employee_02.jpg" alt="Employee Photo" title="Employee Photo">
+              <img src="/img/photo_employee_02.jpg" alt="Employee Photo" title="Employee Photo">
             </div>
           </div>
         </div>
