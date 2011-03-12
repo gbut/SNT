@@ -270,7 +270,7 @@ textarea {
      -moz-box-shadow:   inset 1px 2px 2px #d5d5d5; 
   -webkit-box-shadow:   inset 1px 2px 2px #d5d5d5; 
           box-shadow:   inset 1px 2px 2px #d5d5d5;
-  behavior: url(/PIE.htc);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 
 fieldset {
@@ -310,7 +310,7 @@ em {
   background: -moz-linear-gradient(#EEFF99, #66EE33);
   background: linear-gradient(#EEFF99, #66EE33);
   -pie-background: linear-gradient(#EEFF99, #66EE33);
-  behavior: url(/PIE.htc);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 
 .btn {
@@ -333,7 +333,7 @@ em {
   background:           url(../img/btns_rt.png) 100% -101px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
   background:           url(../img/btns_rt.png) 100% -101px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
   -pie-background:      url(/img/btns_rt.png) 100% -101px no-repeat, linear-gradient(#699ab5, #2a749d);
-  behavior: url(/PIE.htc);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 .btnSm:hover,
 .btnSm:active,
@@ -363,7 +363,7 @@ em {
      -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
           box-shadow:   0 2px 4px rgba(151,151,151,0.5);
-  behavior: url(/PIE.htc);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 .btnLg:hover,
 .btnLg:active,
@@ -393,7 +393,7 @@ em {
      -moz-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
           box-shadow:   0 2px 4px rgba(0,0,0,0.5);
-  behavior: url(/PIE.htc);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 .btnChat:hover,
 .btnChat:active,
@@ -422,7 +422,7 @@ em {
   background:           url(../img/btns_lt.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
   background:           url(../img/btns_lt.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
   -pie-background:      url(/img/btns_lt.png) -30px -74px no-repeat, linear-gradient(#c3383d, #c3020a);
-  behavior: url(/PIE.htc);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 .btnApply:hover,
 .btnApply:active,
@@ -466,7 +466,7 @@ header {
      -moz-box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
   -webkit-box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
           box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
-  behavior: url(/PIE.htc);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 
 header .wrapper {
@@ -501,7 +501,7 @@ header #login {
   left:                 7px;
   overflow:             visible;
   z-index:              100;
-  behavior: url(/PIE.htc);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 header #login.open {
   -webkit-border-radius:4px 4px 0 0;
@@ -530,7 +530,7 @@ header #login #btnClientLogin {
   background:           -moz-linear-gradient(top, #ffffff 0%, #ebebeb 100%);
   background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb));
   -pie-background:      linear-gradient(#ffffff, #ebebeb);
-  behavior: url(/PIE.htc);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 header #login.open #btnClientLogin {
   color:                #cdcdcd;
@@ -755,7 +755,7 @@ header nav ul.sf-menu li ul.sn {
      -moz-box-shadow:   2px 3px 6px -3px #9c8f85; 
   -webkit-box-shadow:   2px 3px 6px -3px #9c8f85; 
           box-shadow:   2px 3px 6px -3px #9c8f85;
-  behavior: url(/PIE.htc);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 
 header nav ul.sf-menu li ul li {
@@ -1009,7 +1009,7 @@ aside section {
   -webkit-box-shadow:   inset 0 0 5px #ccc;
   box-shadow:           inset 0 0 5px #ccc;
   
-  behavior: url(/PIE.htc);  
+  behavior: url(/js/libs/PIE/PIE.htc);  
 }
 aside section:first-child {
   -webkit-border-radius:6px 6px 0 0;
@@ -1210,7 +1210,7 @@ aside #photo .container {
   -webkit-box-shadow:   1px 1px 10px #ccc; 
   box-shadow:           1px 1px 10px #ccc;
   
-  behavior: url(/PIE.htc);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 aside #photo .photo2 .container {
   margin-top:           20px;
@@ -1511,7 +1511,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   -webkit-border-radius:4px 6px;
   -moz-border-radius:   4px 6px;
   border-radius:        4px 6px;
-  behavior: url(/PIE.htc);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 
 #job_listings .footer .subtext {
