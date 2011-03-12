@@ -249,6 +249,7 @@ button {  width: auto; overflow: visible; }
 
 body {
 /*  background:           #dbe4ea;*/
+  padding-top:          77px; /* leave room for fixed header */
 }
 
 a {
@@ -293,25 +294,6 @@ em {
 }
 
 /* + Buttons */
-
-#thing {
-  border: 1px solid #696;
-  padding: 60px 0;
-  text-align: center;
-  width: 200px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-box-shadow: #666 0px 2px 3px;
-  -moz-box-shadow: #666 0px 2px 3px;
-  box-shadow: #666 0px 2px 3px;
-  background: #EEFF99;
-  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#EEFF99), to(#66EE33));
-  background: -moz-linear-gradient(#EEFF99, #66EE33);
-  background: linear-gradient(#EEFF99, #66EE33);
-  -pie-background: linear-gradient(#EEFF99, #66EE33);
-  behavior: url(/js/libs/PIE/PIE.htc);
-}
 
 .btn {
   color:                #fff;
@@ -460,7 +442,10 @@ aside section .btnApply {
 /* + HEADER */
 
 header {
-  position:             relative;
+  position:             fixed; /* relative */
+  width:                100%;
+  left:                 0;
+  top:                  0;
   z-index:              150;
   background:           #fff;
      -moz-box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
@@ -472,8 +457,11 @@ header {
 header .wrapper {
   width:                960px;
   padding:              0 40px;
+/* header position is now fixed, so wrapper height is moot */
+/*
   min-height:           77px;
   height:               auto !important;
+*/
   height:               77px;
 }
 
@@ -1009,7 +997,7 @@ aside section {
   -webkit-box-shadow:   inset 0 0 5px #ccc;
   box-shadow:           inset 0 0 5px #ccc;
   
-  behavior: url(/js/libs/PIE/PIE.htc);  
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 aside section:first-child {
   -webkit-border-radius:6px 6px 0 0;
@@ -1019,7 +1007,6 @@ aside section:first-child {
   -moz-box-shadow:      inset 0 1px 5px #ccc;
   -webkit-box-shadow:   inset 0 1px 5px #ccc;
   box-shadow:           inset 0 1px 5px #ccc;
-  
 }
 aside section:last-child {
   -webkit-border-radius:0 0 6px 6px;
@@ -1768,6 +1755,33 @@ ul.index.global li a {
   font-size:2em;
   font-weight:bold;
   color:#000;
+}
+
+
+#buttonsPage #thing {
+  border: 1px solid #696;
+  padding: 60px 0;
+  text-align: center;
+  width: 200px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: #666 0px 2px 3px;
+  -moz-box-shadow: #666 0px 2px 3px;
+  box-shadow: #666 0px 2px 3px;
+  background: #EEFF99;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#EEFF99), to(#66EE33));
+  background: -moz-linear-gradient(#EEFF99, #66EE33);
+  background: linear-gradient(#EEFF99, #66EE33);
+  -pie-background: linear-gradient(#EEFF99, #66EE33);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+
+#selectivizrPage section:first-child {
+  background:red;
+}
+#selectivizrPage section:last-child {
+  background:green;
 }
 
 /* / TEMP */

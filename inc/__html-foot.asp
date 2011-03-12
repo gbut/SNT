@@ -10,7 +10,9 @@
   <script type="text/javascript" src="/js/libs/cssSandpaper/jcoglan.com/sylvester.js"></script>
   <script type="text/javascript" src="/js/libs/cssSandpaper/cssSandpaper.js"></script> -->
 
-  <script src="/js/libs/selectivizr-1.0.1/selectivizr.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script src="/js/libs/selectivizr-1.0.1/selectivizr.js"></script>
+  <![endif]-->
 
   <script src="/js/libs/superfish-1.4.8/js/hoverIntent.js"></script>
   <script src="/js/libs/superfish-1.4.8/js/superfish.js"></script>
