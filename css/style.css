@@ -1106,7 +1106,7 @@ aside section:only-child {
 }
 
 #job_search form div {
-  margin:               12px 0 0 45px;
+  margin:               12px 0 0 5px;
   float:                left;
 }
 
@@ -1136,7 +1136,7 @@ aside section:only-child {
 
 #job_search form select {
   font-size:            16px;
-  width:                240px;
+  width:                300px;
 }
 
 
