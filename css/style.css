@@ -1014,7 +1014,8 @@ aside section {
   
   behavior: url(/js/libs/PIE/PIE.htc);
 }
-aside section:first-child {
+aside section:first-child,
+aside section.pie_first-child {
   -webkit-border-radius:6px 6px 0 0;
   -moz-border-radius:   6px 6px 0 0;
   border-radius:        6px 6px 0 0;
@@ -1028,7 +1029,8 @@ aside section:last-child {
   -moz-border-radius:   0 0 6px 6px;
   border-radius:        0 0 6px 6px;
 }
-aside section:only-child {
+aside section:only-child,
+aside section.pie_first-child.slvzr-last-child {
   -webkit-border-radius:6px;
   -moz-border-radius:   6px;
   border-radius:        6px;
