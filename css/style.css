@@ -671,12 +671,27 @@ header nav {
 header nav ul.sf-menu li {
   float:                left;
   position:             relative;
+/*
   margin-right:         -1px;
   display:              inline;
+*/
   font-size:            93%;
   font-weight:          bold;
   height:               29px;
   overflow:             visible;
+}
+/* IE ignores negative right-margin, so we do something less efficient */
+header nav ul.sf-menu li:nth-child(4) {
+  left:                 1px;
+}
+header nav ul.sf-menu li:nth-child(3) {
+  left:                 2px;
+}
+header nav ul.sf-menu li:nth-child(2) {
+  left:                 3px;
+}
+header nav ul.sf-menu li:nth-child(1) {
+  left:                 4px;
 }
 header nav ul.sf-menu li a.pn,
 header nav ul.sf-menu li .snavItem a {
