@@ -5,29 +5,7 @@
   
   <form id="form_jvSearch" method="post" action="">
 
-    <div id="message">
-      <!-- 
-      <label for="jvKeyword">Search term:</label>
-      <input type="text" id="jvKeyword" name="jvKeyword" />
-      -->
-    </div>
-
     <div>
-      <!--
-      <label for="jvRegion">Select your location:</label>
-      <select id="jvRegion" name="jvRegion">
-        <option selected="selected" value="">All</option>
-        <option value="London">London</option>
-        <option value="New Delhi, India">New Delhi, India</option>
-        <option value="New York City Metro">New York City Metro</option>
-        <option value="Peoria, IL">Peoria, IL</option>
-        <option value="San Francisco Area">San Francisco Area</option>
-        <option value="Zurich">Zurich</option>
-      </select>
-      -->
-    </div>
-    
-    <div style="float:right; margin-right:5px">
       <label for="jvCategory">Select your field:</label>
       <select id="jvCategory" name="jvCategory">
         <option selected="selected" value="">All</option>
