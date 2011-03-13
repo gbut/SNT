@@ -15,12 +15,6 @@
   
   </div>
   <!-- / main -->
-
-  <!-- + subfooter -->
-  <div class="subfooter">
-  </div>
-  <!-- / subfooter -->
-
 </div>
 
 <!--#include virtual="/inc/_footer.asp" -->

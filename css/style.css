@@ -900,6 +900,7 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
 
 .contentOuter {
   background:           #dbe4ea;
+  border-bottom:        20px solid #bdcfd9; /* formerly .subfooter */
 }
 
 #main {
@@ -933,11 +934,13 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
 
 /* + SUBFOOTER */
 
+/*
 .subfooter {
   height:               20px;
   border-bottom:1px solid #b9b8b8;
   background:#bdcfd9;
 }
+*/
 
 /* / SUBFOOTER */
 
@@ -949,6 +952,7 @@ footer {
   text-align:           center;
   padding:              20px 0;
   background:           #fff;
+  border-top:           1px solid #b9b8b8;
   position:             relative;
   z-index:              50;
 }
@@ -1741,7 +1745,9 @@ ul.toc {
   font-weight:bold;
   margin:2px 0 0 0;
   padding:4px;
-  position:absolute;
+  position:fixed;
+  top:5px;
+  left:5px;
   z-index:1000;
   list-style-type:none;
   background:#ff0;
