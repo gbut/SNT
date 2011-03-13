@@ -1809,6 +1809,9 @@ display:none;
   -moz-border-radius:   0 6px 6px 0;
   border-radius:        0 6px 6px 0;
 }
+#legalTabs ul.tabs li.ui-state-focus a {
+  outline:              none;
+}
 
 #legalTabs ul.tabs li a .pointer {
   height:               5px;
