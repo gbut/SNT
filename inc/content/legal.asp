@@ -4,8 +4,8 @@
 
   <div id="legalTabs">
     <ul class="tabs">
-      <li><a href="#privacy">Privacy Policy</a></li>
-      <li><a href="#terms">Terms &amp; Conditions</a></li>
+      <li><a href="#privacy">Privacy Policy<span class="pointer"><span class="inner">*</span></span></a></li>
+      <li><a href="#terms">Terms &amp; Conditions<span class="pointer"><span class="inner">*</span></span></a></li>
     </ul>
     
     <div id="privacy">

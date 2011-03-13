@@ -1783,6 +1783,7 @@ display:none;
   background:           none;
   float:                none;
   display:              block;
+  position:             relative;
   background:           #f7f6f6;
   background:           -moz-linear-gradient(top, #f7f6f6 0%, #d0cfcf 100%);
   background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f6f6), color-stop(100%,#d0cfcf));
@@ -1807,6 +1808,37 @@ display:none;
   -webkit-border-radius:0 6px 6px 0;
   -moz-border-radius:   0 6px 6px 0;
   border-radius:        0 6px 6px 0;
+}
+
+#legalTabs ul.tabs li a .pointer {
+  height:               5px;
+  width:                3px;
+  display:              none;
+  position:             absolute;
+  left:                 50%;
+  bottom:               -10px;
+  -webkit-border-radius:0 0 24px 0;
+  -moz-border-radius:   0 0 24px 0;
+  border-radius:        0 0 24px 0;
+     -moz-box-shadow:   4px -4px 9px rgba(0,0,0,0.7); 
+  -webkit-box-shadow:   4px -4px 9px rgba(0,0,0,0.7); 
+          box-shadow:   4px -4px 9px rgba(0,0,0,0.7);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+#legalTabs ul.tabs li a .pointer .inner {
+  text-indent:          -9999px;
+  border-color:         #848383 transparent transparent transparent;
+  border-style:         solid;
+  border-width:         10px;
+  height:               0;
+  width:                0;
+  position:             relative;
+  left:                 -10px;
+  top:                  -5px;
+  display:              block;
+}
+#legalTabs ul.tabs li.ui-tabs-selected a .pointer {
+  display:              block;
 }
 
 #legalTabs .ui-tabs-panel {
