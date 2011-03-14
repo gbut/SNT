@@ -26,12 +26,26 @@
     </div>
   </div>
 
+<!--
   <div id="positions" class="clearfix">
     <a href="/careers/jobs" class="btn btnLg">Open positions</a>
   </div>
+-->
 
-  <section class="clearfix">
-    [content tbd]
+  <section class="careersHomeIntro clearfix">
+    <div class="lt">
+      <h4>Et mara paulatim ideo haero venio at ti</h4>
+      <h5>Dolore obruo wisi quis defui, quae. Cogo voco, adipiscing expuo adsum feugiat quidem, saluto adsum. Esse usitas iusto consequ.</h5>
+      <p>Esse usitas iusto consequat, capto adipiscing illum virtus mara tiote, appellatio reprobo luptatum regula adipiscing exputo adsum veritas amichite melia todoa meite paiti. Dolore obruo wisi quis defui, quae. Cogo voco, adipiscing exputo adsum feugiat quidem, asluto adsum.</p>
+      <p>Amichite melia todoa meite paiti. Dolore obruo wisi quis defui, quae. Cogo voco, adipiscing exputo adsum feugiat quidem, asluto adsum.</p>
+    </div>
+    <div class="rt">
+      <span class="imgCont"><img src="/img/photo_hshah.jpg" alt="Hemant Shah, CEO" /></span>
+      <blockquote>
+        <p><em>Et mara paulatim todei</em> ideo haero venio meti do dolor interdi vulput. Dueite drerito iti duis.</p>
+        <p class="attr">&mdash; <em>Hemant Shah</em>, CEO</p>
+      </blockquote>
+    </div>
   </section>
 
   <section class="clearfix">
@@ -39,7 +53,7 @@
     <div class="graphic"></div>
     <div class="text">
       <h4>Nobel Laureates. Yep, we have a couple of those people.</h4>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
     </div>
   </section>
 
@@ -50,21 +64,21 @@
         <div class="icon"></div>
         <div class="text">
           <h4>Lorem Magna</h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
       <div class="col3"></h4>
         <div class="icon"></div>
         <div class="text">
           <h4>Lorem Magna</h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
       <div class="col3">
         <div class="icon"></div>
         <div class="text">
           <h4>Lorem Magna</h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
     </div>
@@ -73,21 +87,21 @@
         <div class="icon"></div>
         <div class="text">
           <h4>Lorem Magna</h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
       <div class="col3"></h4>
         <div class="icon"></div>
         <div class="text">
           <h4>Lorem Magna</h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
       <div class="col3">
         <div class="icon"></div>
         <div class="text">
           <h4>Lorem Magna</h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
     </div>
@@ -122,7 +136,7 @@
       <div class="icon"></div>
       <div class="text">
         <h4>See if we're right for you</h4>
-        Picking an employer is a big decision, and we know we're not right for everyone. Play this fun game to find out.
+        <p>Picking an employer is a big decision, and we know we're not right for everyone. Play this fun game to find out.</p>
         <a href="/careers/game" class="btn btnLg">Play the game</a>
       </div>
     </div>
@@ -130,7 +144,7 @@
       <div class="icon"></div>
       <div class="text">
         <h4>Chat with us right away</h4>
-        Sometimes, a quick chat is all you need to know. We're available to chat online whenever you are.
+        <p>Sometimes, a quick chat is all you need to know. We're available to chat online whenever you are.</p>
         <a href="/careers/chat" class="btn btnLg">Start a chat</a>
       </div>
     </div>

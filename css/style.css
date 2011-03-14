@@ -287,6 +287,10 @@ p {
   margin-bottom:        10px;
 }
 
+img {
+  display:              block; /* removes visual bottom margin due to line height */
+}
+
 .wrapper {
   margin:               0 auto;
   position:             relative;
@@ -912,7 +916,7 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
 }
 
 #t02.contentOuter {
-  padding-top:          27px;
+  padding:              27px 0 39px;
 }
 
 #main {
@@ -1555,6 +1559,43 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   bottom:10px;
 }
 
+#careers .careersHomeIntro {
+  padding:              31px 13px 26px;
+  border:               none;
+}
+
+#careers .careersHomeIntro .lt {
+  width:                433px;
+  padding:              10px 25px 4px 0;
+  border-right:         1px solid #d7d7d7;
+  float:                left;
+  position:             relative;
+  left:                 1px;
+}
+#careers .careersHomeIntro .rt {
+  width:                396px;
+  padding:              17px 25px 14px 33px;
+  border-left:          1px solid #d7d7d7;
+  float:                left;
+}
+
+#careers .careersHomeIntro .rt .imgCont {
+  padding:              8px;
+  background-color:     #fff;
+  border:               1px solid #c3c3c3;
+  float:                left;
+  -webkit-border-radius:8px;
+  -moz-border-radius:   8px;
+  border-radius:        8px;
+     -moz-box-shadow:   1px 1px 6px rgba(0,0,0,0.6); 
+  -webkit-box-shadow:   1px 1px 6px rgba(0,0,0,0.6); 
+          box-shadow:   1px 1px 6px rgba(0,0,0,0.6);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+
+#careers .careersHomeIntro .rt blockquote {
+  padding-left:         201px;
+}
 
 /* / Careers */
 
