@@ -1091,6 +1091,27 @@ aside section.pie_first-child.slvzr-last-child {
   position:             relative;
 }
 
+#presenter img.hero {
+  position:             relative;
+  z-index:              1;
+}
+
+#presenter #vidOverlay {
+  width:                100%;
+  height:               390px;
+  overflow:             hidden;
+  position:             absolute;
+  top:                  0;
+  left:                 0;
+  background:           #0f0f0f;
+  z-index:              10;
+  display:              none;
+}
+
+#presenter #vidOverlay iframe {
+  margin:               15px 0 0 150px;
+}
+
 #presenterNav {
   text-align:           center;
   height:               39px;
@@ -1117,6 +1138,7 @@ aside section.pie_first-child.slvzr-last-child {
   width:                165px;
   height:               39px;
   display:              block;
+  overflow:             hidden;
 }
 #presenterNav ul li a:hover,
 #presenterNav ul li a:active {

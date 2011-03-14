@@ -16,58 +16,79 @@ function inspect(obj) {
 $(document).ready(function(){
   
 	//===============================================
-	//	[CLASS NAME]
-	//  [class description]
+	//	VIDEO PRESENTER
+	//  Manages interactions related to hero video (Careers)
 	//===============================================
   (function($){
-    $.fn.dMgr = function(options) {
+    $.fn.videoPresenter = function(options) {
       return this.each(function() {
-        new $dm(this, options);
+        new $vp(this, options);
       });
     };
     
     var defaults = {
+      dur:250
     };
     
     /**
-     * The xxx object.
+     * The videoPresenter object.
      *
      * @constructor
-     * @name $.dMgr
-     * @param Object e The element to create the xxx for.
+     * @name $.videoPresenter
+     * @param Object e The element to create the videoPresenter for.
      * @param Hash o A set of key/value pairs to set as configuration properties.
      */
-    $.dMgr = function(e, o) {
+    $.videoPresenter = function(e, o) {
       this.options            = $.extend({}, defaults, o || {});
 
       // elements
       var self                = this;
       this.container          = $(e);
+      this.win                = $('#presenter');
+      this.nav                = $('#presenterNav').find('ul');
+      this.heroImg            = this.win.find('img.hero');
+      this.vBg                = $('#vidOverlay');
       
       // flags, measurements
+      this.heroH              = this.heroImg.height();
       
-      // initialize
+      // attach behaviors
+      this.nav.children().each(function(){
+//        inspect($(this).find('a'));
+        $(this).find('a').bind('click', { obj: self }, self.showVideo);
+      });
 
     };
 
     // Create shortcut for internal use
-    var $dm = $.dMgr;
-    $dm.fn = $dm.prototype = {};
-    $dm.fn.extend = $dm.extend = $.extend;
+    var $vp = $.videoPresenter;
+    $vp.fn = $vp.prototype = {};
+    $vp.fn.extend = $vp.extend = $.extend;
 
-    $dm.fn.extend({
+    $vp.fn.extend({
       /**
-       * [method description]
+       * Shows a video.
        *
-       * @name someMethod
+       * @name showVideo
        * @type undefined
        */
-      someMethod: function() {
+      showVideo: function(e) {
+        var o = e.data.obj; //the instantiated $.videoPresenter object
+		    var onComplete = function() { o.vBg.fadeIn(400); };
+        o.heroImg.animate(
+          { top:-o.heroH },
+          o.options.dur,
+          'easeOutQuint',
+          onComplete
+        );
+        e.preventDefault();
       }
 
     });
 
   })(jQuery);
+  
+  if ($('#presenterCont').length) $('#presenterCont').videoPresenter();
   
 
 	//===============================================

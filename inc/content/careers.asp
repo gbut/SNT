@@ -4,6 +4,9 @@
   <div id="presenterCont">
     <div id="presenter">
       <img class="hero" src="/img/hero_careers_home.jpg" alt="We Were Always This Cool" />
+      <div id="vidOverlay">
+        <iframe src="http://www.maddash.net/approval/rms/career.htm" name="movie" width="640" height="360" scrolling="No" frameborder="0" id="movie">Video</iframe>
+      </div>
     </div>
     <div id="presenterNav">
       <ul>
