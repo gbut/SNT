@@ -20,16 +20,8 @@
           </div>
         </div>
         <div id="photo">
-          <div class="photo">
-            <div class="container">
-              <img src="/img/photo_employee_01.jpg" alt="Employee Photo" title="Employee Photo">
-            </div>
-          </div>
-          <div class="photo2">
-            <div class="container">
-              <img src="/img/photo_employee_02.jpg" alt="Employee Photo" title="Employee Photo">
-            </div>
-          </div>
+          <img src="/img/photo_employee_01.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/photo_employee_02.png" alt="Employee Photo" title="Employee Photo">
         </div>
         <div class="benefit">
           <h4>Benefit #9</h4>

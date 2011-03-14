@@ -177,8 +177,8 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate.
    No text-shadow: twitter.com/miketaylr/status/12228805301 
    Also: hot pink. */
-/* ::-moz-selection{ background: #dbe4ea; color:#fff; text-shadow: none; }
-::selection { background:#dbe4ea; color:#fff; text-shadow: none; }  rem for now, causing problems for cssSandpaper  */
+::-moz-selection{ background: #dbe4ea; color:#fff; text-shadow: none; }
+::selection { background:#dbe4ea; color:#fff; text-shadow: none; }
 
 /*  j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #dbe4ea; } 
@@ -1283,6 +1283,7 @@ aside #photo {
 }
 
 /* cssSandpaper transform needs to be on wrapper or it will get stepped on by behavior */
+/*
 aside #photo .photo,
 aside #photo .photo2 {
   width:                241px;
@@ -1330,7 +1331,8 @@ aside #photo .photo2 .container {
 #t04 aside #photo .container {
   left:                 -8px;
 }
-
+*/
+/*
 aside #photo img {
   width:                226px;
   height:               131px;
@@ -1339,6 +1341,21 @@ aside #photo img {
   -webkit-border-radius:15px;
   -moz-border-radius:   15px;
   border-radius:        15px;
+}
+*/
+aside #photo img {
+  width:                253px;
+  height:               165px;
+  margin-top:           16px;
+  position:             relative;
+  left:                 -28px;
+  z-index:              2;
+}
+aside #photo img:last-child {
+  position:             absolute;
+  top:                  74px;
+  left:                 0;
+  z-index:              1;
 }
 
 aside .benefit {

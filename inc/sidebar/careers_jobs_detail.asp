@@ -13,11 +13,7 @@
     </div>
 
     <div id="photo">
-      <div class="photo">
-        <div class="container">
-          <img src="/img/photo_employee_03.jpg" alt="Employee Photo" title="Employee Photo">
-        </div>
-      </div>
+      <img src="/img/photo_employee_03.png" alt="Employee Photo" title="Employee Photo">
     </div>  
   
     <div class="quote">
