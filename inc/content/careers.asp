@@ -3,7 +3,11 @@
 
   <div id="presenterCont">
     <div id="presenter">
-      <div class="hero"><img src="/img/hero_careers_home_lt.jpg" alt="RMS" /><img src="/img/hero_careers_home_rt.png" alt="We Were Always This Cool" /></div>
+      <div class="hero clearfix">
+        <img src="/img/hero_careers_home_lt.jpg" alt="RMS" />
+        <img src="/img/hero_careers_home_rt.png" alt="We Were Always This Cool" />
+        <a href="/careers/jobs" class="btn btnOpenPositions">Open Positions &raquo;</a>
+      </div>
       <div id="vidOverlay">
         <iframe src="http://www.maddash.net/approval/rms/career.htm" name="movie" width="640" height="360" scrolling="No" frameborder="0" id="movie">Video</iframe>
       </div>
@@ -25,12 +29,6 @@
       </ul>
     </div>
   </div>
-
-<!--
-  <div id="positions" class="clearfix">
-    <a href="/careers/jobs" class="btn btnLg">Open positions</a>
-  </div>
--->
 
   <section class="careersHomeIntro clearfix">
     <div class="lt">

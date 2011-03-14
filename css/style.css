@@ -430,6 +430,37 @@ img {
   -pie-background:      #770207 url(/img/btns_lt.png) -30px -74px no-repeat;
 }
 
+.btnOpenPositions {
+  color:                #b00e13;
+  text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
+  width:                137px;
+  padding:              10px 12px 9px 40px;
+  border:               none;
+  background:           #fefefe url(../img/btns_lt.png) -84px -25px no-repeat;
+  background:           url(../img/btns_lt.png) -84px -25px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
+  background:           url(../img/btns_lt.png) -84px -25px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+  -pie-background:      url(/img/btns_lt.png) -84px -25px no-repeat, linear-gradient(#fefefe, #d7d7d7);
+     -moz-box-shadow:   0 2px 4px rgba(42,42,42,0.5); 
+  -webkit-box-shadow:   0 2px 4px rgba(42,42,42,0.5); 
+          box-shadow:   0 2px 4px rgba(42,42,42,0.5);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+.btnOpenPositions:hover,
+.btnOpenPositions:active,
+.btnOpenPositions:visited {
+  color:                #b00e13;
+}
+.btnOpenPositions:hover {
+  background:           #fefefe url(../img/btns_lt.png) -84px -25px no-repeat;
+  background:           url(../img/btns_lt.png) -84px -25px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
+  background:           url(../img/btns_lt.png) -84px -25px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
+  -pie-background:      url(/img/btns_lt.png) -84px -25px no-repeat, linear-gradient(#fefefe, #a4a4a4);
+}
+.btnOpenPositions:active {
+  background:           #d7d7d7 url(../img/btns_lt.png) -84px -25px no-repeat;
+  -pie-background:      #d7d7d7 url(/img/btns_lt.png) -84px -25px no-repeat;
+}
+
 /* if larger buttons are in a narrow container, relax right padding and let them go full width */
 aside section .btnLg,
 aside section .btnApply {
@@ -1101,8 +1132,15 @@ aside section.pie_first-child.slvzr-last-child {
 }
 #presenter .hero img {
   position:             relative;
-  display:              inline-block;
+  float:                left;
   z-index:              1;
+}
+#presenter .hero .btn {
+  color:                #b00e13;
+  position:             absolute;
+  right:                17px;
+  bottom:               18px;
+  z-index:              10;
 }
 
 #presenter #vidOverlay {
