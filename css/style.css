@@ -371,6 +371,38 @@ img {
   -pie-background:      #d7d7d7 url(/img/btns_lt.png) 20px -124px no-repeat;
 }
 
+.btnLgDark {
+  color:                #eee;
+  text-align:           center;
+  text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
+  width:                130px;
+  padding:              10px 10px 9px;
+  border-color:         #838383;
+  background:           #838383;
+  background:           -moz-linear-gradient(top, #838383 0%, #5f5f5f 100%);
+  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#838383), color-stop(100%,#5f5f5f));
+  -pie-background:      linear-gradient(#838383, #5f5f5f);
+     -moz-box-shadow:   0 2px 4px rgba(42,42,42,0.5); 
+  -webkit-box-shadow:   0 2px 4px rgba(42,42,42,0.5); 
+          box-shadow:   0 2px 4px rgba(42,42,42,0.5);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+.btnLgDark:hover,
+.btnLgDark:active,
+.btnLgDark:visited {
+  color:                #eee;
+}
+.btnLgDark:hover {
+  background:           #838383;
+  background:           -moz-linear-gradient(top, #838383 0%, #2f2f2f 100%);
+  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#838383), color-stop(100%,#2f2f2f));
+  -pie-background:      linear-gradient(#838383, #2f2f2f);
+}
+.btnLgDark:active {
+  background:           #5f5f5f;
+  -pie-background:      #5f5f5f;
+}
+
 .btnChat {
   color:                #eee;
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
@@ -1514,24 +1546,32 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 
 /* + Careers */
 
+#careers section {
+  color:                #7e7e7e;
+  font:                 108%/146.5% Helvetica,sans-serif;
+  padding:              15px 18px;
+  border-top:           2px solid #f2f2f2;
+}
+
 #careers h3 {
-  margin-bottom:10px;
+  font-size:            150%;
+  margin-bottom:        19px;
 }
 
 #careers h4 {
- font-size:120%;
-}
-
-#careers section {
-  padding:15px 18px;
-  border-top:1px solid #eee;
+  color:                #757474;
+  font:                 138.5%/140% "GothamHTFMedium",Tahoma,Arial,sans-serif;
 }
 
 #careers section .row {
-  margin-bottom:35px;
+  margin-bottom:        24px;
+  padding-top:          5px;
 }
 #careers section .row:last-child {
   margin-bottom:        0;
+}
+#careers section .row.lastIconRow {
+  margin-bottom:        7px;
 }
 
 #careers section .col2 {
@@ -1540,10 +1580,11 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 }
 #careers section .col2:last-child {
   width:                451px;
-  border-left:1px solid #eee;
+  border-left:          1px solid #f2f2f2;
 }
 
 #careers section .col3 {
+  color:                #999;
   width:                301px;
   float:                left;
 }
@@ -1551,71 +1592,30 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   width:                302px;
 }
 
+#careers section .col3 p {
+  line-height:          114.3%;
+  padding-top:          2px;
+}
+
+#careers section .nobel h4 {
+  color:                #8d8d8d;
+  font-size:            171.4%;
+}
+
 #careers section .graphic {
-  width:105px;
-  height:105px;
-  margin:0 25px;
-  background:#ccc;
+  margin:               0 25px;
   float:                left;
 }
 
-#careers section .icon {
-  width:75px;
-  height:75px;
-  margin:0 15px;
-  background:#ccc;
-  float:                left;
-}
-
-#careers section .text {
-  color:#ccc;
-}
-
-#careers section a.link {
-  font-weight:          bold;
-  text-transform:       uppercase;
-  margin-left:105px;
-  display:              block;
-}
-
-#careers section a.link em {
-  font-size:            150%;
-  color:                #c3151c;
-}
-
-#careers #positions {
-  margin:10px 0;
-  text-align:right;
-}
-
-#careers #team {
-  height:321px;
-  background:#efe;
-}
-
-#careers #modules .col2 {
-  height:150px;
+#careers .careersHomeIntro,
+#careers #modules {
+  padding:              31px 13px 26px;
+  border:               none;
   position:             relative;
 }
 
-#careers #modules .text {
-  padding-right:60px;
-}
-
-#careers #modules .btn {
-  position:             absolute;
-  left:105px;
-  bottom:10px;
-}
-
-#careers .careersHomeIntro {
-  color:                #7e7e7e;
-  font:                 108%/146.5% Helvetica,sans-serif;
-  padding:              31px 13px 26px;
-  border:               none;
-}
-
-#careers .careersHomeIntro .lt {
+#careers .careersHomeIntro .lt,
+#careers #modules .lt {
   width:                433px;
   padding:              10px 25px 4px 0;
   border-right:         1px solid #d7d7d7;
@@ -1623,7 +1623,8 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   position:             relative;
   left:                 1px;
 }
-#careers .careersHomeIntro .rt {
+#careers .careersHomeIntro .rt,
+#careers #modules .rt {
   width:                396px;
   padding:              17px 25px 14px 33px;
   border-left:          1px solid #d7d7d7;
@@ -1632,8 +1633,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 
 #careers .careersHomeIntro .lt h4 {
   color:                #8d8d8d;
-  font-size:            171.4%;
-  font-weight:          normal;
+  font:                 normal 171.4%/146.5% Helvetica,sans-serif;
   margin-bottom:        6px;
 }
 
@@ -1670,6 +1670,72 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 #careers .careersHomeIntro .rt blockquote p.attr em {
   color:                #6e8394;
   font-family:          "GothamHTFMedium",Tahoma,Arial,sans-serif;
+}
+
+#careers section .icon {
+  text-indent:          -9999px;
+  width:                72px;
+  height:               67px;
+  margin:0 15px;
+  background:           #fff url(../img/icons_career.png) 0 0 no-repeat;
+  float:                left;
+}
+#careers section .iconTools {
+  background-position:  0 -335px;
+}
+#careers section .iconCup {
+  background-position:  -72px -268px;
+}
+#careers section .iconBooks {
+  background-position:  -144px -201px;
+}
+#careers section .iconGlobe {
+  background-position:  -216px -134px;
+}
+#careers section .iconChat {
+  background-position:  -288px -67px;
+}
+#careers section .iconBolt {
+  background-position:  -360px 0;
+}
+#careers section.work .icon {
+  -moz-opacity:         0.44;
+  -ms-filter:           "alpha(opacity=44)";
+  filter:               alpha(opacity=44);
+  opacity:              0.44;
+}
+
+#careers section a.link {
+  font-weight:          bold;
+  text-transform:       uppercase;
+  margin-left:          103px;
+  display:              block;
+}
+
+#careers section a.link em {
+  font-size:            150%;
+  color:                #c3151c;
+}
+
+#careers #team {
+  height:321px;
+  background:#efe;
+}
+
+/*
+#careers #modules .col2 {
+  position:             relative;
+}
+*/
+
+#careers #modules .text {
+  width:                294px;
+  float:                left;
+  position:             relative;
+}
+
+#careers #modules .btn {
+  font-size:            92.8%;
 }
 
 /* / Careers */
