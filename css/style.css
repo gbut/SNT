@@ -1095,8 +1095,13 @@ aside section.pie_first-child.slvzr-last-child {
   position:             relative;
 }
 
-#presenter img.hero {
+#presenter .hero {
   position:             relative;
+  z-index:              1;
+}
+#presenter .hero img {
+  position:             relative;
+  display:              inline-block;
   z-index:              1;
 }
 
@@ -1159,7 +1164,7 @@ aside section.pie_first-child.slvzr-last-child {
   width:                59px;
   height:               37px;
   margin-right:         6px;
-  background:           pink;
+  background:           url(../img/vid_nav_careers_home.jpg) 0 0 no-repeat;
   border:               1px solid #f0f0f0;
   float:                left;
   display:              inline;
@@ -1168,6 +1173,12 @@ aside section.pie_first-child.slvzr-last-child {
   -moz-border-radius:   4px;
   border-radius:        4px;
   behavior: url(/js/libs/PIE/PIE.htc);
+}
+#presenterNav ul li a .imgCont.vid2 {
+  background-position:  0 -37px;
+}
+#presenterNav ul li a .imgCont.vid3 {
+  background-position:  0 -74px;
 }
 
 /* / Feature */
