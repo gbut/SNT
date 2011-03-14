@@ -2,7 +2,7 @@
 <nav>
   <ul class="sf-menu clearfix">
     <li>
-      <a href="#" class="pn" title="Risk"><span class="tl">Risk</span></a>
+      <a href="/risk" class="pn" title="Risk"><span class="tl">Risk</span></a>
       <ul class="sn risk">
         <li class="clearfix">
           <div class="subnavLt">
@@ -36,13 +36,13 @@
       </ul>
     </li>
     <li>
-      <a href="#" class="pn" title="Markets"><span class="tl">Markets</span></a>
+      <a href="/markets" class="pn" title="Markets"><span class="tl">Markets</span></a>
     </li>
     <li>
-      <a href="#" class="pn" title="Solutions"><span class="tl">Solutions</span></a>
+      <a href="/solutions" class="pn" title="Solutions"><span class="tl">Solutions</span></a>
     </li>
     <li>
-      <a href="#" class="pn" title="About"><span class="tl">About</span></a>
+      <a href="/about" class="pn" title="About"><span class="tl">About</span></a>
     </li>
     <li class="selected">
       <a href="/careers" class="pn" title="Careers"><span class="tl">Careers</span></a>
