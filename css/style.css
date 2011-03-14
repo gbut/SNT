@@ -1571,6 +1571,8 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 }
 
 #careers .careersHomeIntro {
+  color:                #7e7e7e;
+  font:                 108%/146.5% Helvetica,sans-serif;
   padding:              31px 13px 26px;
   border:               none;
 }
@@ -1590,6 +1592,17 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   float:                left;
 }
 
+#careers .careersHomeIntro .lt h4 {
+  color:                #8d8d8d;
+  font-size:            171.4%;
+  font-weight:          normal;
+  margin-bottom:        6px;
+}
+
+#careers .careersHomeIntro .lt h5 {
+  margin-bottom:        4px;
+}
+
 #careers .careersHomeIntro .rt .imgCont {
   padding:              8px;
   background-color:     #fff;
@@ -1605,7 +1618,20 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 }
 
 #careers .careersHomeIntro .rt blockquote {
+  color:                #838383;
+  font:                 142.9%/140% "GothamHTFMedium",Tahoma,Arial,sans-serif;
   padding-left:         201px;
+}
+#careers .careersHomeIntro .rt blockquote em {
+  color:                #464747;
+}
+#careers .careersHomeIntro .rt blockquote p.attr {
+  color:                #6e8394;
+  font:                 70%/100% "GothamHTFBook",Tahoma,Arial,sans-serif;
+}
+#careers .careersHomeIntro .rt blockquote p.attr em {
+  color:                #6e8394;
+  font-family:          "GothamHTFMedium",Tahoma,Arial,sans-serif;
 }
 
 /* / Careers */
