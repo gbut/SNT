@@ -5,11 +5,6 @@
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
   <script type="text/javascript" src="/js/libs/jquery-ui-1.8.10.custom.min.js"></script>
 
-  <script type="text/javascript" src="/js/libs/cssSandpaper/EventHelpers.js"></script>
-  <script type="text/javascript" src="/js/libs/cssSandpaper/cssQuery-p.js"></script>
-  <script type="text/javascript" src="/js/libs/cssSandpaper/jcoglan.com/sylvester.js"></script>
-  <script type="text/javascript" src="/js/libs/cssSandpaper/cssSandpaper.js"></script>
-
   <!--[if (gte IE 6)&(lte IE 8)]>
     <script src="/js/libs/selectivizr-1.0.1/selectivizr.js"></script>
   <![endif]-->

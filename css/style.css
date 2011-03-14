@@ -177,8 +177,8 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate.
    No text-shadow: twitter.com/miketaylr/status/12228805301 
    Also: hot pink. */
-/* ::-moz-selection{ background: #dbe4ea; color:#fff; text-shadow: none; }
-::selection { background:#dbe4ea; color:#fff; text-shadow: none; }  rem for now, causing problems for cssSandpaper  */
+::-moz-selection{ background: #dbe4ea; color:#fff; text-shadow: none; }
+::selection { background:#dbe4ea; color:#fff; text-shadow: none; }
 
 /*  j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #dbe4ea; } 
@@ -1344,15 +1344,16 @@ aside .quote .author .title {
   font-family:          "GothamHTFBook",Tahoma,Arial,sans-serif;
 }
 
-aside #photo {
+aside #photo,
+aside #photo2 {
   position:             relative;
-  margin-bottom:        98px;
 }
-#t04 aside #photo {
-  margin-bottom:        0;
+aside #photo2 {
+  margin-bottom:        98px;
 }
 
 /* cssSandpaper transform needs to be on wrapper or it will get stepped on by behavior */
+/*
 aside #photo .photo,
 aside #photo .photo2 {
   width:                241px;
@@ -1400,7 +1401,8 @@ aside #photo .photo2 .container {
 #t04 aside #photo .container {
   left:                 -8px;
 }
-
+*/
+/*
 aside #photo img {
   width:                226px;
   height:               131px;
@@ -1409,6 +1411,25 @@ aside #photo img {
   -webkit-border-radius:15px;
   -moz-border-radius:   15px;
   border-radius:        15px;
+}
+*/
+aside #photo img,
+aside #photo2 img {
+  width:                253px;
+  height:               165px;
+  margin-top:           10px;
+  position:             relative;
+  left:                 -13px;
+}
+aside #photo2 img {
+  left:                 -28px;
+  z-index:              2;
+}
+aside #photo2 img:last-child {
+  position:             absolute;
+  top:                  80px;
+  left:                 0;
+  z-index:              1;
 }
 
 aside .benefit {
