@@ -10,7 +10,7 @@
     <a href="/careers/jobs">Careers | Jobs</a>
   </li>
   <li>
-    <a href="/careers/jobs/index_id.asp">Careers | Jobs | Detail</a>
+    <a href="/careers/jobs/default_id.asp">Careers | Jobs | Detail</a>
   </li>
   <li>
     <a href="/careers/chat">Chat</a>
