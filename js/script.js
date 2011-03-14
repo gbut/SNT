@@ -429,7 +429,7 @@ $(document).ready(function(){
   //===============================================
 
   $('#legalTabs').tabs({
-    //fx: { opacity:'toggle', duration:400 }
+    fx: { opacity:'toggle', duration:400 }
   });
 
 });

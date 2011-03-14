@@ -1,8 +1,26 @@
 <!-- + careers -->
 <div id="careers">
 
-  <div id="presenter">
-    [presenter widget]
+  <div id="presenterCont">
+    <div id="presenter">
+      <img class="hero" src="/img/hero_careers_home.jpg" alt="We Were Always This Cool" />
+    </div>
+    <div id="presenterNav">
+      <ul>
+        <li><a href="#">
+          <span class="imgCont">Video #1</span>
+          <span>Lorem ipsum dolor suspendisse imper</span>
+        </a></li>
+        <li><a href="#">
+          <span class="imgCont">Video #2</span>
+          <span>Lorem ipsum dolor suspendisse imper</span>
+        </a></li>
+        <li><a href="#">
+          <span class="imgCont">Video #3</span>
+          <span>Lorem ipsum dolor suspendisse imper</span>
+        </a></li>
+      </ul>
+    </div>
   </div>
 
   <div id="positions" class="clearfix">
