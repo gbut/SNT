@@ -19,7 +19,7 @@
             &mdash; Joel Kedd, <span class="title">Engineer</span>
           </div>
         </div>
-        <div id="photo">
+        <div id="photo2">
           <img src="/img/photo_employee_01.png" alt="Employee Photo" title="Employee Photo">
           <img src="/img/photo_employee_02.png" alt="Employee Photo" title="Employee Photo">
         </div>

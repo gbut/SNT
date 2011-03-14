@@ -1312,12 +1312,12 @@ aside .quote .author .title {
   font-family:          "GothamHTFBook",Tahoma,Arial,sans-serif;
 }
 
-aside #photo {
+aside #photo,
+aside #photo2 {
   position:             relative;
-  margin-bottom:        98px;
 }
-#t04 aside #photo {
-  margin-bottom:        0;
+aside #photo2 {
+  margin-bottom:        98px;
 }
 
 /* cssSandpaper transform needs to be on wrapper or it will get stepped on by behavior */
@@ -1381,17 +1381,21 @@ aside #photo img {
   border-radius:        15px;
 }
 */
-aside #photo img {
+aside #photo img,
+aside #photo2 img {
   width:                253px;
   height:               165px;
-  margin-top:           16px;
+  margin-top:           10px;
   position:             relative;
+  left:                 -13px;
+}
+aside #photo2 img {
   left:                 -28px;
   z-index:              2;
 }
-aside #photo img:last-child {
+aside #photo2 img:last-child {
   position:             absolute;
-  top:                  74px;
+  top:                  80px;
   left:                 0;
   z-index:              1;
 }
