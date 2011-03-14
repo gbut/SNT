@@ -3,7 +3,7 @@
 
   <div id="presenterCont">
     <div id="presenter">
-      <img class="hero" src="/img/hero_careers_home.jpg" alt="We Were Always This Cool" />
+      <div class="hero"><img src="/img/hero_careers_home_lt.jpg" alt="RMS" /><img src="/img/hero_careers_home_rt.png" alt="We Were Always This Cool" /></div>
       <div id="vidOverlay">
         <iframe src="http://www.maddash.net/approval/rms/career.htm" name="movie" width="640" height="360" scrolling="No" frameborder="0" id="movie">Video</iframe>
       </div>
@@ -11,15 +11,15 @@
     <div id="presenterNav">
       <ul>
         <li><a href="#">
-          <span class="imgCont">Video #1</span>
+          <span class="imgCont vid1">Video #1</span>
           <span>Lorem ipsum dolor suspendisse imper</span>
         </a></li>
         <li><a href="#">
-          <span class="imgCont">Video #2</span>
+          <span class="imgCont vid2">Video #2</span>
           <span>Lorem ipsum dolor suspendisse imper</span>
         </a></li>
         <li><a href="#">
-          <span class="imgCont">Video #3</span>
+          <span class="imgCont vid3">Video #3</span>
           <span>Lorem ipsum dolor suspendisse imper</span>
         </a></li>
       </ul>

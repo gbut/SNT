@@ -46,7 +46,7 @@ $(document).ready(function(){
       this.container          = $(e);
       this.win                = $('#presenter');
       this.nav                = $('#presenterNav').find('ul');
-      this.heroImg            = this.win.find('img.hero');
+      this.heroImg            = this.win.find('.hero');
       this.vBg                = $('#vidOverlay');
       
       // flags, measurements
