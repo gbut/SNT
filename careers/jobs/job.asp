@@ -9,7 +9,19 @@
     <!--#include virtual="/inc/banner/careers_jobs_detail.asp" -->
     <!-- + content -->
     <section id="content" class="clearfix">
-      <!--#include virtual="/inc/content/careers_jobs_detail.htm" -->
+    
+      <!-- + careers-job_detail -->
+      <div id="job_detail">
+      
+        <div class="breadcrumb">
+          <a href="/careers" title="RMS Careers">RMS Careers</a> <span class="sep">&#187;</span> <a href="/careers/jobs" title="Open Positions">Open Positions</a>
+        </div>
+    
+        <!--#include virtual="/inc/content/careers_jobs_detail.htm" -->
+      
+      </div>
+      <!-- / careers-job_detail -->
+      
     </section>
     <!-- / content -->
     <!--#include virtual="/inc/sidebar/careers_jobs_detail.asp" -->
