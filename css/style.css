@@ -1270,6 +1270,28 @@ aside section.pie_first-child.slvzr-last-child {
   background-position:  0 -74px;
 }
 
+#presenterNav ul li a .imgCont .play {
+  width:                0;
+  height:               0;
+  border-color:         transparent transparent transparent #dce4ea;
+  border-style:         solid;
+  border-width:         9px 16px;
+  position:             absolute;
+  top:                  10px;
+  left:                 24px;
+  -moz-opacity:         0.75;
+  -ms-filter:           "alpha(opacity=75)";
+  filter:               alpha(opacity=75);
+  opacity:              0.75;
+}
+#presenterNav ul li a:hover .imgCont .play,
+#presenterNav ul li a:active .imgCont .play {
+  -moz-opacity:         1;
+  -ms-filter:           "alpha(opacity=100)";
+  filter:               alpha(opacity=100);
+  opacity:              1;
+}
+
 /* / Feature */
 
 /* + Breadcrumb */
