@@ -1792,7 +1792,78 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   height:               311px;
   margin-bottom:        20px;
   position:             relative;
-  overflow:             auto;
+  overflow:             hidden;
+}
+
+#careers #team_panel {
+  width:                10000px;
+  height:               311px;
+  position:             absolute;
+  top:                  0;
+  left:                 0;
+}
+
+#careers #team_panel img {
+  position:             relative;
+  z-index:              1;
+}
+
+#careers #team_panel ul {
+  margin:               0;
+  position:             absolute;
+  top:                  0;
+  left:                 0;
+  z-index:              100;
+}
+
+#careers #team_panel ul li {
+  list-style:           none;
+  float:                left;
+}
+
+#careers #team_panel ul li a {
+  text-indent:          -9999px;
+  height:               311px;
+  display:              block;
+/*
+  background:           url(../img/TEMP_photo_team_silhouette.jpg) 0 0 no-repeat;
+  -moz-opacity:         0.6;
+  -ms-filter:           "alpha(opacity=60)";
+  filter:               alpha(opacity=60);
+  opacity:              0.6;
+*/
+}
+#careers #team_panel ul li.p1 a,
+#careers #team_panel ul li.p6 a {
+  width:                193px;
+}
+#careers #team_panel ul li.p2 a,
+#careers #team_panel ul li.p7 a {
+  width:                182px;
+/*  background-position:  -193px 0;*/
+}
+#careers #team_panel ul li.p3 a,
+#careers #team_panel ul li.p8 a {
+  width:                175px;
+/*  background-position:  -375px 0;*/
+}
+#careers #team_panel ul li.p4 a,
+#careers #team_panel ul li.p9 a {
+  width:                169px;
+/*  background-position:  -550px 0;*/
+}
+#careers #team_panel ul li.p5 a,
+#careers #team_panel ul li.p10 a {
+  width:                185px;
+/*  background-position:  -719px 0;*/
+}
+
+#careers #team_slider {
+  width:                874px;
+  height:               19px;
+  position:             absolute;
+  bottom:               17px;
+  left:                 15px;
 }
 
 #careers #tooltip {
