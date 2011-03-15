@@ -113,7 +113,22 @@
   <section class="team clearfix">
     <h3>The <em>Team</em></h3>
     <div id="team">
-      <img src="/img/TEMP_photo_employees.jpg" alt="The RMS Team" />
+      <div id="team_panel">
+        <img src="/img/TEMP_photo_team.jpg" alt="The RMS Team" />
+        <ul class="clearfix">
+          <li class="p1"><a href="#" title="Person #1">Person #1</a></li>
+          <li class="p2"><a href="#" title="Person #2">Person #2</a></li>
+          <li class="p3"><a href="#" title="Person #3">Person #3</a></li>
+          <li class="p4"><a href="#" title="Person #4">Person #4</a></li>
+          <li class="p5"><a href="#" title="Person #5">Person #5</a></li>
+          <li class="p6"><a href="#" title="Person #6">Person #6</a></li>
+          <li class="p7"><a href="#" title="Person #7">Person #7</a></li>
+          <li class="p8"><a href="#" title="Person #8">Person #8</a></li>
+          <li class="p9"><a href="#" title="Person #9">Person #9</a></li>
+          <li class="p10"><a href="#" title="Person #10">Person #10</a></li>
+        </ul>
+      </div>
+      <div id="team_slider"></div>
     </div>
     <div id="tooltip" class="clearfix">
       <div class="primary">
