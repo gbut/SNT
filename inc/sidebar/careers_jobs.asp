@@ -41,17 +41,9 @@
             &mdash; Someone else, <span class="title">Engineer</span>
           </div>
         </div>
-        <div id="photo">
-          <div class="photo">
-            <div class="container">
-              <img src="/img/photo_employee_01.jpg" alt="Employee Photo" title="Employee Photo">
-            </div>
-          </div>
-          <div class="photo2">
-            <div class="container">
-              <img src="/img/photo_employee_02.jpg" alt="Employee Photo" title="Employee Photo">
-            </div>
-          </div>
+        <div id="photo2">
+          <img src="/img/photo_employee_01.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/photo_employee_02.png" alt="Employee Photo" title="Employee Photo">
         </div>
         <div class="benefit">
           <h4>Benefit #4</h4>
@@ -71,17 +63,9 @@
             &mdash; Third Person, <span class="title">Finance</span>
           </div>
         </div>
-        <div id="photo">
-          <div class="photo">
-            <div class="container">
-              <img src="/img/photo_employee_01.jpg" alt="Employee Photo" title="Employee Photo">
-            </div>
-          </div>
-          <div class="photo2">
-            <div class="container">
-              <img src="/img/photo_employee_02.jpg" alt="Employee Photo" title="Employee Photo">
-            </div>
-          </div>
+        <div id="photo2">
+          <img src="/img/photo_employee_01.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/photo_employee_02.png" alt="Employee Photo" title="Employee Photo">
         </div>
         <div class="benefit">
           <h4>Benefit #5</h4>
@@ -101,17 +85,9 @@
             &mdash; Bill Gates, <span class="title">Engineer</span>
           </div>
         </div>
-        <div id="photo">
-          <div class="photo">
-            <div class="container">
-              <img src="/img/photo_employee_01.jpg" alt="Employee Photo" title="Employee Photo">
-            </div>
-          </div>
-          <div class="photo2">
-            <div class="container">
-              <img src="/img/photo_employee_02.jpg" alt="Employee Photo" title="Employee Photo">
-            </div>
-          </div>
+        <div id="photo2">
+          <img src="/img/photo_employee_01.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/photo_employee_02.png" alt="Employee Photo" title="Employee Photo">
         </div>
         <div class="benefit">
           <h4>Benefit #19</h4>
