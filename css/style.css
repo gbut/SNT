@@ -1097,8 +1097,7 @@ aside section {
   background-color:     #fff;
   -moz-box-shadow:      inset 0 0 5px #ccc;
   -webkit-box-shadow:   inset 0 0 5px #ccc;
-  box-shadow:           inset 0 0 5px #ccc;
-  
+  box-shadow:           inset 0 0 5px #ccc; 
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 aside section:first-child,
@@ -1106,7 +1105,6 @@ aside section.pie_first-child {
   -webkit-border-radius:6px 6px 0 0;
   -moz-border-radius:   6px 6px 0 0;
   border-radius:        6px 6px 0 0;
-  
   -moz-box-shadow:      inset 0 1px 5px #ccc;
   -webkit-box-shadow:   inset 0 1px 5px #ccc;
   box-shadow:           inset 0 1px 5px #ccc;
@@ -1479,7 +1477,7 @@ aside .benefit {
   margin-bottom:        20px;
 }
 aside .benefit h4 {
-  font-size:            125%;
+  font-size:            115%;
   color:                #586976;
   margin-bottom:        4px;
 }
@@ -1547,6 +1545,7 @@ aside .ui-widget {
   font-size:            100%;
 }
 aside .ui-widget-content {
+  height:               535px;
   background:           none;
   border:               none;
 }
@@ -2355,6 +2354,26 @@ display:none;
 /* / Legal */
 
 /* / *** MODULES *** */
+
+/* / *** JOBVITE *** */
+
+/* 
+ overrides for files hosetd on jobvite
+ and referenced iin an iframe
+*/
+
+body#jobvite {
+  padding:              0;
+  margin:               0;
+}
+
+#jobvite .btnApply {
+  width:                148px;
+  padding-right:        19px;
+  display:              block;
+}
+
+/* / *** JOBVITE *** */
 
 
 /* TEMP */
