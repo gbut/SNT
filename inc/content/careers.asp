@@ -6,7 +6,6 @@
       <div class="hero clearfix">
         <img src="/img/hero_careers_home_lt.jpg" alt="RMS" />
         <img src="/img/hero_careers_home_rt.png" alt="We Were Always This Cool" />
-        <a href="/careers/jobs" class="btn btnOpenPositions">Open Positions &raquo;</a>
       </div>
       <div id="vidOverlay">
         <iframe src="http://www.maddash.net/approval/rms/career.htm" name="movie" width="640" height="360" scrolling="No" frameborder="0" id="movie">Video</iframe>
@@ -27,6 +26,7 @@
           <span>Lorem ipsum dolor suspendisse imper</span>
         </a></li>
       </ul>
+      <a href="/careers/jobs" class="btn btnOpenPositions">Open Positions &raquo;</a>
     </div>
   </div>
 
@@ -115,24 +115,22 @@
     <div id="team">
       <img src="/img/TEMP_photo_employees.jpg" alt="The RMS Team" />
     </div>
-    <div style="position:relative;">
-      <div id="tooltip" class="clearfix">
-        <div class="primary">
-          <div class="imgCont"><img src="/img/TEMP_photo_jli_alt.jpg" alt="Jane Li" /></div>
-          <div class="text">
-            <h5>Jane Li</h5>
-            <p>Engineer</p>
-            <p>San Francisco</p>
-          </div>
+    <div id="tooltip" class="clearfix">
+      <div class="primary">
+        <div class="imgCont"><img src="/img/TEMP_photo_jli_alt.jpg" alt="Jane Li" /></div>
+        <div class="text">
+          <h5>Jane Li</h5>
+          <p>Engineer</p>
+          <p>San Francisco</p>
         </div>
-        <div class="secondary">
-          <h6>Lorem Dolores</h6>
-          <p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>
-          <h6>Gratisei Helios</h6>
-          <p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>
-        </div>
-        <div class="pointer"><div class="inner"></div></div>
       </div>
+      <div class="secondary">
+        <h6>Lorem Dolores</h6>
+        <p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>
+        <h6>Gratisei Helios</h6>
+        <p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>
+      </div>
+      <div class="pointer"><div class="inner"></div></div>
     </div>
   </section>
 
