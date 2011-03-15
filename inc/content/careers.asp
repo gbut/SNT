@@ -14,15 +14,15 @@
     <div id="presenterNav">
       <ul>
         <li><a href="#">
-          <span class="imgCont vid1">Video #1</span>
+          <span class="imgCont vid1">Video #1<span class="play"></span></span>
           <span>Lorem ipsum dolor suspendisse imper</span>
         </a></li>
         <li><a href="#">
-          <span class="imgCont vid2">Video #2</span>
+          <span class="imgCont vid2">Video #2<span class="play"></span></span>
           <span>Lorem ipsum dolor suspendisse imper</span>
         </a></li>
         <li><a href="#">
-          <span class="imgCont vid3">Video #3</span>
+          <span class="imgCont vid3">Video #3<span class="play"></span></span>
           <span>Lorem ipsum dolor suspendisse imper</span>
         </a></li>
       </ul>
