@@ -291,6 +291,10 @@ img {
   display:              block; /* removes visual bottom margin due to line height */
 }
 
+section {
+  position:             relative;
+}
+
 .wrapper {
   margin:               0 auto;
   position:             relative;
@@ -1589,7 +1593,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   padding-top:          5px;
 }
 #careers section .row:last-child {
-  margin-bottom:        0;
+  margin-bottom:        10px;
 }
 #careers section .row.lastIconRow {
   margin-bottom:        7px;
@@ -1631,8 +1635,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 #careers .careersHomeIntro,
 #careers #modules {
   padding:              31px 13px 26px;
-  border:               none;
   position:             relative;
+}
+#careers #modules {
+  padding-top:          23px;
 }
 
 #careers .careersHomeIntro .lt,
@@ -1650,6 +1656,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   padding:              17px 25px 14px 33px;
   border-left:          1px solid #d7d7d7;
   float:                left;
+}
+#careers #modules .rt {
+  padding-top:          10px;
 }
 
 #careers .careersHomeIntro .lt h4 {
@@ -1738,9 +1747,110 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   color:                #c3151c;
 }
 
+#careers section.team {
+  z-index:              20;
+}
+
 #careers #team {
-  height:321px;
-  background:#efe;
+  width:                904px;
+  height:               311px;
+  margin-bottom:        20px;
+  position:             relative;
+  overflow:             auto;
+}
+
+#careers #tooltip {
+  color:                #5270ae;
+  width:                592px;
+  height:               128px;
+  padding:              12px 15px 10px;
+  background-color:     #e8e8e8;
+  border:               2px solid #bababa;
+  position:             absolute;
+  top:-100px;
+  left:150px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:   7px;
+  border-radius:        7px;
+     -moz-box-shadow:   5px 5px 6px rgba(0,0,0,0.5); 
+  -webkit-box-shadow:   5px 5px 6px rgba(0,0,0,0.5); 
+          box-shadow:   5px 5px 6px rgba(0,0,0,0.5);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+
+#careers #tooltip .pointer {
+  border-color:         transparent transparent #bababa;
+  border-style:         solid;
+  border-width:         16px;
+  height:               0;
+  width:                0;
+  position:             absolute;
+  left:                 303px;
+  top:                  -32px;
+  overflow:             visible;
+}
+
+#careers #tooltip .pointer .inner {
+  border-color:         transparent transparent #e8e8e8;
+  border-style:         solid;
+  border-width:         13px;
+  height:               0;
+  width:                0;
+  position:             absolute;
+  left:                 -13px;
+  top:                  -10px;
+  overflow:             hidden;
+}
+
+#careers #tooltip .primary {
+  width:                296px;
+  height:               110px;
+  padding:              8px;
+  background-color:     #d6dae1;
+  border:               1px solid #d1d2d4;
+  float:                left;
+}
+
+#careers #tooltip .primary .imgCont {
+  width:                172px;
+  border:               2px solid #c9cacc;
+  float:                left;
+  -webkit-border-radius:2px;
+  -moz-border-radius:   2px;
+  border-radius:        2px;
+}
+
+#careers #tooltip .primary .text {
+  width:                107px;
+  padding-left:         13px;
+  float:                left;
+}
+
+#careers #tooltip .primary .text h5 {
+  font-size:            142.8%;
+  margin-bottom:        3px;
+}
+
+#careers #tooltip .primary .text p {
+  font-weight:          bold;
+  line-height:          116%;
+  margin-bottom:        1px;
+}
+
+#careers #tooltip .secondary {
+  line-height:          108%;
+  width:                264px;
+  padding:              9px 0 0 14px;
+  float:                left;
+}
+
+#careers #tooltip .secondary h6 {
+  font-size:            114.3%;
+  margin-bottom:        3px;
+}
+
+#careers #tooltip .secondary p {
+  margin-bottom:        15px;
 }
 
 /*

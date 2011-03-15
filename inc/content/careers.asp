@@ -110,10 +110,29 @@
     </div>    
   </section>
 
-  <section class="clearfix">
+  <section class="team clearfix">
     <h3>The <em>Team</em></h3>
     <div id="team">
-      
+      <img src="/img/TEMP_photo_employees.jpg" alt="The RMS Team" />
+    </div>
+    <div style="position:relative;">
+      <div id="tooltip" class="clearfix">
+        <div class="primary">
+          <div class="imgCont"><img src="/img/TEMP_photo_jli_alt.jpg" alt="Jane Li" /></div>
+          <div class="text">
+            <h5>Jane Li</h5>
+            <p>Engineer</p>
+            <p>San Francisco</p>
+          </div>
+        </div>
+        <div class="secondary">
+          <h6>Lorem Dolores</h6>
+          <p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>
+          <h6>Gratisei Helios</h6>
+          <p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>
+        </div>
+        <div class="pointer"><div class="inner"></div></div>
+      </div>
     </div>
   </section>
 
