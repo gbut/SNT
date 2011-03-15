@@ -2284,6 +2284,26 @@ display:none;
 
 /* / *** MODULES *** */
 
+/* / *** JOBVITE *** */
+
+/* 
+ overrides for files hosetd on jobvite
+ and referenced iin an iframe
+*/
+
+body#jobvite {
+  padding:              0;
+  margin:               0;
+}
+
+#jobvite .btnApply {
+  width:                148px;
+  padding-right:        19px;
+  display:              block;
+}
+
+/* / *** JOBVITE *** */
+
 
 /* TEMP */
 
