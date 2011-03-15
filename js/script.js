@@ -92,6 +92,107 @@ $(document).ready(function(){
   
 
 	//===============================================
+	//	TEAM PHOTO
+	//  Manages interactions related to Team Photo
+	//===============================================
+  (function($){
+    $.fn.teamPhoto = function(options) {
+      return this.each(function() {
+        new $tp(this, options);
+      });
+    };
+
+    var defaults = {
+      dur:250
+    };
+
+    /**
+     * The teamPhoto object.
+     *
+     * @constructor
+     * @name $.teamPhoto
+     * @param Object e The element to create the teamPhoto for.
+     * @param Hash o A set of key/value pairs to set as configuration properties.
+     */
+    $.teamPhoto = function(e, o) {
+      this.options            = $.extend({}, defaults, o || {});
+
+      // elements
+      var self                = this;
+      this.container          = $(e);
+      this.panel              = $('#team_panel');
+      this.slider             = $('#team_slider');
+      this.handle             = this.slider.find('a.ui-slider-handle');
+      this.photo              = this.panel.find('img.photo');
+      this.people             = this.panel.find('ul');
+      
+      // flags, measurements
+      this.winW               = this.container.width();
+      this.photoW             = this.photo.width();
+
+      // attach behaviors
+/*
+      this.people.children().each(function(){
+        $(this).find('a').bind('click', { obj: self }, self.showVideo);
+      });
+*/
+      
+      // instantiate slider
+      if (this.winW >= this.photoW) {
+        this.slider.hide();
+      } else {
+        this.slider.slider({
+          max:      this.photoW - this.winW,
+          create:   function(e, ui){
+            $(self.slider.find('a.ui-slider-handle')).hover(
+              function(e){
+                $(this).stop().fadeTo(300, 0.85);
+              },
+              function(e){
+                $(this).stop().fadeTo(300, 0.7);
+              }
+            );
+          },
+          slide:    function(e, ui){
+            self.panel.css('left',-ui.value);
+          }
+        });
+      }
+      
+    };
+
+    // Create shortcut for internal use
+    var $tp = $.teamPhoto;
+    $tp.fn = $tp.prototype = {};
+    $tp.fn.extend = $tp.extend = $.extend;
+
+    $tp.fn.extend({
+      /**
+       * Shows a video.
+       *
+       * @name showVideo
+       * @type undefined
+       */
+      showVideo: function(e) {
+        var o = e.data.obj; //the instantiated $.videoPresenter object
+		    var onComplete = function() { o.vBg.fadeIn(400); };
+        o.heroImg.animate(
+          { top:-o.heroH },
+          o.options.dur,
+          'easeOutQuint',
+          onComplete
+        );
+        e.preventDefault();
+      }
+
+    });
+
+  })(jQuery);
+
+  if ($('#team').length) $('#team').teamPhoto();
+
+
+	//===============================================
 	//	VOID LINKS (HREF="#")
 	//===============================================
 	$(function(){

@@ -114,7 +114,7 @@
     <h3>The <em>Team</em></h3>
     <div id="team">
       <div id="team_panel">
-        <img src="/img/TEMP_photo_team.jpg" alt="The RMS Team" />
+        <img src="/img/TEMP_photo_team.jpg" class="photo" alt="The RMS Team" />
         <ul class="clearfix">
           <li class="p1"><a href="#" title="Person #1">Person #1</a></li>
           <li class="p2"><a href="#" title="Person #2">Person #2</a></li>
