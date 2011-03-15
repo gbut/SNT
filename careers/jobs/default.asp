@@ -10,7 +10,7 @@
     <!--#include virtual="/inc/job_search.asp" -->
     <!-- + content -->
     <section id="content" class="clearfix">
-      <!--#include virtual="/inc/content/careers_jobs.asp" -->
+      <!--#include virtual="/inc/content/careers_jobs.htm" -->
     </section>
     <!-- / content -->
     <!--#include virtual="/inc/sidebar/careers_jobs.asp" -->
