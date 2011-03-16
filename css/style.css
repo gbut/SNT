@@ -277,6 +277,9 @@ textarea {
 fieldset {
   padding-bottom:       20px;
 }
+fieldset:last-child {
+  padding-bottom:       0;
+}
 
 em {
   font-style:           normal;
@@ -496,6 +499,97 @@ section {
   background:           #d7d7d7 url(../img/btns_lt.png) -84px -25px no-repeat;
   -pie-background:      #d7d7d7 url(/img/btns_lt.png) -84px -25px no-repeat;
 }
+
+.btnUpload {
+  color:                #999898;
+  text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
+  padding:              11px 12px 11px 44px;
+  border-color:         #b8b8b7;
+  background:           #fefefe url(../img/btns_lt_apply.png) 20px -124px no-repeat;
+  background:           url(../img/btns_lt_apply.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
+  background:           url(../img/btns_lt_apply.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+  -pie-background:      url(/img/btns_lt_apply.png) 20px -124px no-repeat, linear-gradient(#fefefe, #d7d7d7);
+     -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+  -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+          box-shadow:   0 2px 4px rgba(151,151,151,0.5);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+.btnUpload:hover,
+.btnUpload:active,
+.btnUpload:visited {
+  color:                #999898;
+}
+.btnUpload:hover {
+  background:           #fefefe url(../img/btns_lt_apply.png) 20px -124px no-repeat;
+  background:           url(../img/btns_lt_apply.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
+  background:           url(../img/btns_lt_apply.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
+  -pie-background:      url(/img/btns_lt_apply.png) 20px -124px no-repeat, linear-gradient(#fefefe, #a4a4a4);
+}
+.btnUpload:active {
+  background:           #d7d7d7 url(../img/v.png) 20px -124px no-repeat;
+  -pie-background:      #d7d7d7 url(/img/btns_lt_apply.png) 20px -124px no-repeat;
+}
+
+.btnLinkedIn {
+  color:                #999898;
+  text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
+  padding:              11px 12px 11px 44px;
+  border-color:         #b8b8b7;
+  background:           #fefefe url(../img/btns_lt_apply.png) -30px -74px no-repeat;
+  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
+  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+  -pie-background:      url(/img/btns_lt_apply.png) -30px -74px no-repeat, linear-gradient(#fefefe, #d7d7d7);
+     -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+  -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+          box-shadow:   0 2px 4px rgba(151,151,151,0.5);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+.btnLinkedIn:hover,
+.btnLinkedIn:active,
+.btnLinkedIn:visited {
+  color:                #999898;
+}
+.btnLinkedIn:hover {
+  background:           #fefefe url(../img/btns_lt_apply.png) -30px -74px no-repeat;
+  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
+  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
+  -pie-background:      url(/img/btns_lt_apply.png) -30px -74px no-repeat, linear-gradient(#fefefe, #a4a4a4);
+}
+.btnLinkedIn:active {
+  background:           #d7d7d7 url(../img/btns_lt_apply.png) -30px -74px no-repeat;
+  -pie-background:      #d7d7d7 url(/img/btns_lt_apply.png) -30px -74px no-repeat;
+}
+
+.btnSubmit {
+  color:                #eee;
+  text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
+  padding:              9px 12px 8px 37px;
+  border-color:         #838383;
+  background:           #699ab5 url(../img/btns_lt_apply.png) -84px -25px no-repeat;
+  background:           url(../img/btns_lt_apply.png) -84px -25px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
+  background:           url(../img/btns_lt_apply.png) -84px -25px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
+  -pie-background:      url(/img/btns_lt_apply.png) -84px -25px no-repeat, linear-gradient(#699ab5, #2a749d);
+     -moz-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
+  -webkit-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
+          box-shadow:   0 2px 4px rgba(0,0,0,0.5);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+.btnSubmit:hover,
+.btnSubmit:active,
+.btnSubmit:visited {
+  color:                #eee;
+}
+.btnSubmit:hover {
+  background:           #58839a url(../img/btns_lt_apply.png) -84px -25px no-repeat;
+  background:           url(../img/btns_lt_apply.png) -84px -25px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
+  background:           url(../img/btns_lt_apply.png) -84px -25px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
+  -pie-background:      url(/img/btns_lt_apply.png) -84px -25px no-repeat, linear-gradient(#58839a, #215a79);
+}
+.btnSubmit:active {
+  background:           #1c4c66 url(../img/btns_lt_apply.png) -84px -25px no-repeat;
+  -pie-background:      #1c4c66 url(/img/btns_lt_apply.png) -84px -25px no-repeat;
+}
+
 
 /* if larger buttons are in a narrow container, relax right padding and let them go full width */
 aside section .btnLg,
@@ -1487,6 +1581,18 @@ aside .benefit .subtext {
   color:                #586976;
   text-transform:       uppercase;
 }
+aside .benefit2 {
+  font:                 normal 135%/150% Arial, Helvetica, sans-serif;
+  color:                #6b8192;
+  margin-top:           20px;
+  margin-bottom:        0;
+}
+aside .benefit2 h4 {
+  text-transform:       uppercase;
+}
+aside .benefit2 h4 em {
+  color:                #c3151c;
+}
 
 aside .share {
   width:                165px;
@@ -2132,61 +2238,72 @@ display:none;
 
 /* + Job Apply */
 
-#job_apply .back {
-  margin-bottom:15px;
+#job_apply a.back {
+  color:                #292929;
+  margin-bottom:        15px;
+  padding-left:         15px;
+  display:              inline-block;
+  background:           transparent url(../img/arrow_back.png) 0 50% no-repeat;
 }
 
 #job_apply h2 {
-  font:197%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
-  margin-bottom:10px;
+  font:                 197%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+  margin-bottom:        10px;
+}
+#job_apply h2 em {
+  color:                #13587e;
 }
 
 #job_apply .subhead {
-  font-weight:bold;
-  margin-bottom:25px;
+  font-size:            120%;
+  font-weight:          bold;
+  margin-bottom:        25px;
 }
 
 #job_apply legend {
-  font:167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
-  padding:0 0 20px 20px;
+  font:                 167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+  padding:              0 0 20px 20px;
 }
 
 #job_apply legend em {
   color:                #c3151c;
 }
+#job_apply legend span {
+  font-size:            75%;
+  color:                #8e959a;
+}
 
 #job_apply label {
+  font-size:            110%;
   text-align:           right;
-  width:100px;
-  height:27px;
-  margin:               0 18px 10px 0;
+  width:                108px;
+  height:               27px;
+  margin:               0 10px 10px 0;
   display:              inline-block;
 }
 
 #job_apply input {
-  width:520px;
-  height:26px;
-/*
-  padding:0;
-  margin:               0 0 10px 0;
-*/
+  color:                #606060;
+  width:                520px;
+  height:               26px;
   display:              inline-block;
-/*
-  -webkit-border-radius:0 0;
-  -moz-border-radius:   0 0;
-  border-radius:        0 0;
-*/
 }
 
 #job_apply textarea {
-  width:520px;
-  height:115px;
-  margin:0 0 10px 121px;
+  color:                #606060;
+  width:                510px;
+  height:               95px;
+  margin:               6px 0 10px 121px;
+  padding:              10px;
 }
 
-#job_apply #jvsubmitlinkedinprofile,
-#job_apply #submit {
-  margin:0 0 10px 121px;
+#job_apply .btnLinkedIn {
+  margin:               0 0 10px 121px;
+}
+
+#job_apply .btnSubmit {
+  margin:               15px 20px 0 0;
+  float:                right;
 }
 
 /* / Job Apply */
