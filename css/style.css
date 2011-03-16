@@ -277,6 +277,9 @@ textarea {
 fieldset {
   padding-bottom:       20px;
 }
+fieldset:last-child {
+  padding-bottom:       0;
+}
 
 em {
   font-style:           normal;
@@ -495,6 +498,16 @@ section {
 .btnOpenPositions:active {
   background:           #d7d7d7 url(../img/btns_lt.png) -84px -25px no-repeat;
   -pie-background:      #d7d7d7 url(/img/btns_lt.png) -84px -25px no-repeat;
+}
+
+.btnUpload {
+  ~~
+}
+.btnLinkedIn {
+  
+}
+.btnSubmit {
+  
 }
 
 /* if larger buttons are in a narrow container, relax right padding and let them go full width */
@@ -1487,6 +1500,18 @@ aside .benefit .subtext {
   color:                #586976;
   text-transform:       uppercase;
 }
+aside .benefit2 {
+  font:                 normal 135%/150% Arial, Helvetica, sans-serif;
+  color:                #6b8192;
+  margin-top:           20px;
+  margin-bottom:        0;
+}
+aside .benefit2 h4 {
+  text-transform:       uppercase;
+}
+aside .benefit2 h4 em {
+  color:                #c3151c;
+}
 
 aside .share {
   width:                165px;
@@ -2110,61 +2135,69 @@ display:none;
 
 /* + Job Apply */
 
-#job_apply .back {
-  margin-bottom:15px;
+#job_apply a.back {
+  color:                #292929;
+  margin-bottom:        15px;
+  padding-left:         15px;
+  display:              inline-block;
+  background:           transparent url(../img/arrow_back.png) 0 50% no-repeat;
 }
 
 #job_apply h2 {
-  font:197%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
-  margin-bottom:10px;
+  font:                 197%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+  margin-bottom:        10px;
+}
+#job_apply h2 em {
+  color:                #13587e;
 }
 
 #job_apply .subhead {
-  font-weight:bold;
-  margin-bottom:25px;
+  font-size:            120%;
+  font-weight:          bold;
+  margin-bottom:        25px;
 }
 
 #job_apply legend {
-  font:167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
-  padding:0 0 20px 20px;
+  font:                 167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+  padding:              0 0 20px 20px;
 }
 
 #job_apply legend em {
   color:                #c3151c;
 }
+#job_apply legend span {
+  font-size:            75%;
+  color:                #8e959a;
+}
 
 #job_apply label {
+  font-size:            110%;
   text-align:           right;
-  width:100px;
-  height:27px;
-  margin:               0 18px 10px 0;
+  width:                108px;
+  height:               27px;
+  margin:               0 10px 10px 0;
   display:              inline-block;
 }
 
 #job_apply input {
-  width:520px;
-  height:26px;
-/*
-  padding:0;
-  margin:               0 0 10px 0;
-*/
+  width:                520px;
+  height:               26px;
   display:              inline-block;
-/*
-  -webkit-border-radius:0 0;
-  -moz-border-radius:   0 0;
-  border-radius:        0 0;
-*/
 }
 
 #job_apply textarea {
-  width:520px;
-  height:115px;
-  margin:0 0 10px 121px;
+  width:                520px;
+  height:               115px;
+  margin:               0 0 10px 121px;
 }
 
-#job_apply #jvsubmitlinkedinprofile,
-#job_apply #submit {
-  margin:0 0 10px 121px;
+#job_apply .btnLinkedIn {
+  margin:               0 0 10px 121px;
+}
+
+#job_apply .btnSubmit {
+  margin:               15px 20px 0 0;
+  float:                right;
 }
 
 /* / Job Apply */
