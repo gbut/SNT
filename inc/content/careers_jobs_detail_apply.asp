@@ -35,7 +35,7 @@
       <legend>Your <em>Cover Letter</em> <span>(optional)</span></legend>
       <label for="jvcoverletter">Upload:</label>
       <a href="#" name="ImportCL" id="ImportCL" class="btn btnLg btnUpload" onclick="jvAddAttachment('jvresume', '[id]');return false;">Upload My Cover Letter</a>
-      <textarea id="jvcoverletter" name="jvcoverletter"></textarea>
+      <textarea id="jvcoverletter" name="jvcoverletter">Or copy/type your cover letter into this text box</textarea>
       <a href="#" name="submit" id="submit" class="btn btnLg btnSubmit" onclick="submit();">Apply</a>
     </fieldset>
     

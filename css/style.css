@@ -2281,15 +2281,18 @@ display:none;
 }
 
 #job_apply input {
+  color:                #606060;
   width:                520px;
   height:               26px;
   display:              inline-block;
 }
 
 #job_apply textarea {
-  width:                520px;
-  height:               115px;
-  margin:               0 0 10px 121px;
+  color:                #606060;
+  width:                510px;
+  height:               95px;
+  margin:               6px 0 10px 121px;
+  padding:              10px;
 }
 
 #job_apply .btnLinkedIn {
