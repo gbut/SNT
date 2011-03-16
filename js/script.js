@@ -103,7 +103,9 @@ $(document).ready(function(){
     };
 
     var defaults = {
-      dur:250
+      dur:750,
+      easing:'easeOutQuint',
+      popupShim:15
     };
 
     /**
@@ -125,32 +127,64 @@ $(document).ready(function(){
       this.handle             = this.slider.find('a.ui-slider-handle');
       this.photo              = this.panel.find('img.photo');
       this.people             = this.panel.find('ul');
+      this.popup              = $('#tooltip');
+      this.pointer            = this.popup.find('.pointer');
       
       // flags, measurements
       this.winW               = this.container.width();
       this.photoW             = this.photo.width();
+      this.panelRange         = this.photoW - this.winW;
+      this.popupRange         = this.winW - this.popup.outerWidth();
+      this.popupLeft          = parseInt(this.popup.css('left'));
+      this.pointerLeft        = parseInt(this.pointer.css('left'));
+      
+      // restore popup position
+      this.popup.css({display:'none', bottom:-140});
 
       // attach behaviors
-/*
       this.people.children().each(function(){
-        $(this).find('a').bind('click', { obj: self }, self.showVideo);
+        // determine leftPos of panel needed to center this image
+        var imgOffset = Math.round($(this).position().left + ($(this).width()/2));
+        var left = Math.round((self.winW/2) - imgOffset);
+        
+        // determine boundaries and attach data to <li>
+        if (left > 0) { // can't scroll far enough to left, move popup
+          var popupLeft = self.popupLeft - left;
+          var d = { panel:0, popup:popupLeft, pointer:self.pointerLeft }
+          if (popupLeft < 0) {
+            var delta = -popupLeft;
+            d.popup = self.options.popupShim;
+            d.pointer -= delta + self.options.popupShim;
+          }
+        } else if (left < -self.panelRange) { // can't scroll far enough to right, move popup
+          var popupLeft = self.popupLeft + Math.abs(left + self.panelRange);
+          var d = { panel:-self.panelRange, popup:popupLeft, pointer:self.pointerLeft }
+          if (popupLeft > self.popupRange) {
+            var delta = popupLeft - self.popupRange;
+            d.popup = self.popupRange + self.options.popupShim;
+            d.pointer += delta - self.options.popupShim;
+          }
+        } else {
+          var d = { panel:left, popup:self.popupLeft, pointer:self.pointerLeft }
+        }
+        console.log(d);
+        $(this).data('positions', d);
+        
+        // add handler
+        $(this).find('a').bind('click', { obj: self }, self.selectPerson);
       });
-*/
       
       // instantiate slider
-      if (this.winW >= this.photoW) {
+      if (this.panelRange < 0) {
         this.slider.hide();
       } else {
         this.slider.slider({
-          max:      this.photoW - this.winW,
+          max:      this.panelRange,
           create:   function(e, ui){
+            // hover effect on scrollbar
             $(self.slider.find('a.ui-slider-handle')).hover(
-              function(e){
-                $(this).stop().fadeTo(300, 0.85);
-              },
-              function(e){
-                $(this).stop().fadeTo(300, 0.7);
-              }
+              function(){ $(this).stop().fadeTo(300, 0.85); },
+              function(){ $(this).stop().fadeTo(300, 0.7); }
             );
           },
           slide:    function(e, ui){
@@ -168,20 +202,34 @@ $(document).ready(function(){
 
     $tp.fn.extend({
       /**
-       * Shows a video.
+       * Handles selection of a team member.
        *
-       * @name showVideo
+       * @name selectPerson
        * @type undefined
        */
-      showVideo: function(e) {
-        var o = e.data.obj; //the instantiated $.videoPresenter object
-		    var onComplete = function() { o.vBg.fadeIn(400); };
+      selectPerson: function(e) {
+        var o = e.data.obj; //the instantiated $.teamPhoto object
+        var p = $(this).parent().data('positions');
+        o.popup.show();
+        o.panel.animate({
+          left: p.panel
+        }, o.options.dur, o.options.easing);
+        o.popup.animate({
+          left: p.popup
+        }, o.options.dur, o.options.easing);
+        o.pointer.animate({
+          left: p.pointer
+        }, o.options.dur, o.options.easing);
+        
+/*
+        var onComplete = function() { o.vBg.fadeIn(400); };
         o.heroImg.animate(
           { top:-o.heroH },
           o.options.dur,
           'easeOutQuint',
           onComplete
         );
+*/
         e.preventDefault();
       }
 

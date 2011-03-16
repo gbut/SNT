@@ -1823,8 +1823,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 
 #careers #team_panel ul li a {
   text-indent:          -9999px;
-  height:               311px;
+  height:               271px;
   display:              block;
+  overflow:             hidden;
+  outline:              none;
 /*
   background:           url(../img/TEMP_photo_team_silhouette.jpg) 0 0 no-repeat;
   -moz-opacity:         0.6;
@@ -1873,7 +1875,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   width:                340px;
   height:               19px;
   margin-left:          -170px;
-  background:#fff;
+  background:           #fff;
   border:               none;
   top:                  0;
   -webkit-border-radius:4px;
@@ -1894,8 +1896,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   background-color:     #e8e8e8;
   border:               2px solid #bababa;
   position:             absolute;
-  bottom:               -40px;
+  bottom:               10000px; /* move to -40px in js after taking measurements */
   left:                 167px;
+  z-index:              400;
   -webkit-border-radius:7px;
   -moz-border-radius:   7px;
   border-radius:        7px;
@@ -1903,7 +1906,6 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   -webkit-box-shadow:   5px 5px 6px rgba(0,0,0,0.5); 
           box-shadow:   5px 5px 6px rgba(0,0,0,0.5);
   behavior: url(/js/libs/PIE/PIE.htc);
-  display:              none;
 }
 
 #careers #tooltip .pointer {
