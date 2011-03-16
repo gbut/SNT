@@ -103,9 +103,10 @@ $(document).ready(function(){
     };
 
     var defaults = {
-      dur:750,
-      easing:'easeOutQuint',
-      popupShim:15
+      fadeDur:    300,
+      animDur:        750,
+      easing:     'easeOutQuint',
+      popupShim:  15 // accounts for left padding of containing section
     };
 
     /**
@@ -124,7 +125,6 @@ $(document).ready(function(){
       this.container          = $(e);
       this.panel              = $('#team_panel');
       this.slider             = $('#team_slider');
-      this.handle             = this.slider.find('a.ui-slider-handle');
       this.photo              = this.panel.find('img.photo');
       this.people             = this.panel.find('ul');
       this.popup              = $('#tooltip');
@@ -139,7 +139,7 @@ $(document).ready(function(){
       this.pointerLeft        = parseInt(this.pointer.css('left'));
       
       // restore popup position
-      this.popup.css({display:'none', bottom:-140});
+      this.popup.css({opacity:0, bottom:-140});
 
       // attach behaviors
       this.people.children().each(function(){
@@ -150,24 +150,24 @@ $(document).ready(function(){
         // determine boundaries and attach data to <li>
         if (left > 0) { // can't scroll far enough to left, move popup
           var popupLeft = self.popupLeft - left;
-          var d = { panel:0, popup:popupLeft, pointer:self.pointerLeft }
-          if (popupLeft < 0) {
+          var d = { panel:0, handle:0, popup:popupLeft, pointer:self.pointerLeft }
+          if (popupLeft < 0) { // popup will be out of bounds too, move pointer
             var delta = -popupLeft;
             d.popup = self.options.popupShim;
             d.pointer -= delta + self.options.popupShim;
           }
         } else if (left < -self.panelRange) { // can't scroll far enough to right, move popup
           var popupLeft = self.popupLeft + Math.abs(left + self.panelRange);
-          var d = { panel:-self.panelRange, popup:popupLeft, pointer:self.pointerLeft }
-          if (popupLeft > self.popupRange) {
+          var d = { panel:-self.panelRange, handle:100, popup:popupLeft, pointer:self.pointerLeft }
+          if (popupLeft > self.popupRange) { // popup will be out of bounds too, move pointer
             var delta = popupLeft - self.popupRange;
             d.popup = self.popupRange + self.options.popupShim;
             d.pointer += delta - self.options.popupShim;
           }
         } else {
-          var d = { panel:left, popup:self.popupLeft, pointer:self.pointerLeft }
+          var handleLeft = Math.abs(left) / self.panelRange * 100;
+          var d = { panel:left, handle:handleLeft, popup:self.popupLeft, pointer:self.pointerLeft }
         }
-        console.log(d);
         $(this).data('positions', d);
         
         // add handler
@@ -179,16 +179,25 @@ $(document).ready(function(){
         this.slider.hide();
       } else {
         this.slider.slider({
-          max:      this.panelRange,
-          create:   function(e, ui){
+          max: this.panelRange,
+          create: function(e, ui){
+            self.handle = $(self.slider.find('a.ui-slider-handle'));
             // hover effect on scrollbar
-            $(self.slider.find('a.ui-slider-handle')).hover(
-              function(){ $(this).stop().fadeTo(300, 0.85); },
-              function(){ $(this).stop().fadeTo(300, 0.7); }
+            self.handle.hover(
+              function(){ $(this).stop().fadeTo(self.options.fadeDur, 0.85); },
+              function(){ $(this).stop().fadeTo(self.options.fadeDur, 0.7); }
             );
           },
-          slide:    function(e, ui){
+          start: function(e, ui){
+            self.popup.fadeTo(self.options.fadeDur, 0);
+          },
+          slide: function(e, ui){
             self.panel.css('left',-ui.value);
+/*
+          },
+          stop: function(e, ui){
+            console.log(ui.value);
+*/
           }
         });
       }
@@ -210,26 +219,50 @@ $(document).ready(function(){
       selectPerson: function(e) {
         var o = e.data.obj; //the instantiated $.teamPhoto object
         var p = $(this).parent().data('positions');
-        o.popup.show();
-        o.panel.animate({
-          left: p.panel
-        }, o.options.dur, o.options.easing);
-        o.popup.animate({
-          left: p.popup
-        }, o.options.dur, o.options.easing);
-        o.pointer.animate({
-          left: p.pointer
-        }, o.options.dur, o.options.easing);
         
-/*
-        var onComplete = function() { o.vBg.fadeIn(400); };
-        o.heroImg.animate(
-          { top:-o.heroH },
-          o.options.dur,
-          'easeOutQuint',
-          onComplete
-        );
-*/
+        // animate panel
+        o.panel.animate({
+            left: p.panel
+          },
+          {
+            duration: o.options.animDur,
+            easing: o.options.easing
+          });
+        // animate popup
+        o.popup.animate({
+            left: p.popup
+          },
+          {
+            duration: o.options.animDur,
+            easing: o.options.easing,
+            queue: false
+          }).animate({
+              opacity: 1,
+            },
+            {
+              duration: o.options.fadeDur,
+              easing: o.options.easing,
+              queue: false
+            });
+        // animate pointer
+        o.pointer.animate({
+            left: p.pointer
+          },
+          {
+            duration: o.options.animDur,
+            easing: o.options.easing
+          });
+        // animate handle
+        // since this is a programmatic move, update UI value manually
+        $(o.handle).animate({
+            left: p.handle.toString() + '%'
+          },
+          {
+            duration: o.options.animDur,
+            easing: o.options.easing,
+            complete: function(){ $(this).slider('value', Math.round(p.handle * o.panelRange / 100)); }
+          });
+        
         e.preventDefault();
       }
 
