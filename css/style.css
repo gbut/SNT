@@ -501,74 +501,77 @@ section {
 }
 
 .btnUpload {
-  color:                #eee;
-  text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
-  margin-bottom:        10px;
-  padding-right:        22px;
-  padding-left:         47px;
-  border-color:         #838383;
-  background:           #c3383d url(../img/btns_lt_apply.png) -30px -74px no-repeat;
-  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
-  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
-  -pie-background:      url(/img/btns_lt_apply.png) -30px -74px no-repeat, linear-gradient(#c3383d, #c3020a);
+  color:                #999898;
+  text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
+  padding:              11px 12px 11px 44px;
+  border-color:         #b8b8b7;
+  background:           #fefefe url(../img/btns_lt_apply.png) 20px -124px no-repeat;
+  background:           url(../img/btns_lt_apply.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
+  background:           url(../img/btns_lt_apply.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+  -pie-background:      url(/img/btns_lt_apply.png) 20px -124px no-repeat, linear-gradient(#fefefe, #d7d7d7);
+     -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+  -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+          box-shadow:   0 2px 4px rgba(151,151,151,0.5);
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 .btnUpload:hover,
 .btnUpload:active,
 .btnUpload:visited {
-  color:                #eee;
+  color:                #999898;
 }
 .btnUpload:hover {
-  background:           #93262a url(../img/btns_lt_apply.png) -30px -74px no-repeat;
-  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #93262a 0%, #8f0309 100%);
-  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262a), color-stop(100%,#8f0309));
-  -pie-background:      url(/img/btns_lt_apply.png) -30px -74px no-repeat, linear-gradient(#93262a, #8f0309);
+  background:           #fefefe url(../img/btns_lt_apply.png) 20px -124px no-repeat;
+  background:           url(../img/btns_lt_apply.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
+  background:           url(../img/btns_lt_apply.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
+  -pie-background:      url(/img/btns_lt_apply.png) 20px -124px no-repeat, linear-gradient(#fefefe, #a4a4a4);
 }
 .btnUpload:active {
-  background:           #770207 url(../img/btns_lt_apply.png) -30px -74px no-repeat;
-  -pie-background:      #770207 url(/img/btns_lt_apply.png) -30px -74px no-repeat;
+  background:           #d7d7d7 url(../img/v.png) 20px -124px no-repeat;
+  -pie-background:      #d7d7d7 url(/img/btns_lt_apply.png) 20px -124px no-repeat;
 }
 
 .btnLinkedIn {
-  color:                #eee;
-  text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
-  margin-bottom:        10px;
-  padding-right:        22px;
-  padding-left:         47px;
-  border-color:         #838383;
-  background:           #c3383d url(../img/btns_lt_apply.png) -30px -74px no-repeat;
-  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
-  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
-  -pie-background:      url(/img/btns_lt_apply.png) -30px -74px no-repeat, linear-gradient(#c3383d, #c3020a);
+  color:                #999898;
+  text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
+  padding:              11px 12px 11px 44px;
+  border-color:         #b8b8b7;
+  background:           #fefefe url(../img/btns_lt_apply.png) -30px -74px no-repeat;
+  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
+  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+  -pie-background:      url(/img/btns_lt_apply.png) -30px -74px no-repeat, linear-gradient(#fefefe, #d7d7d7);
+     -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+  -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+          box-shadow:   0 2px 4px rgba(151,151,151,0.5);
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 .btnLinkedIn:hover,
 .btnLinkedIn:active,
 .btnLinkedIn:visited {
-  color:                #eee;
+  color:                #999898;
 }
 .btnLinkedIn:hover {
-  background:           #93262a url(../img/btns_lt_apply.png) -30px -74px no-repeat;
-  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #93262a 0%, #8f0309 100%);
-  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262a), color-stop(100%,#8f0309));
-  -pie-background:      url(/img/btns_lt_apply.png) -30px -74px no-repeat, linear-gradient(#93262a, #8f0309);
+  background:           #fefefe url(../img/btns_lt_apply.png) -30px -74px no-repeat;
+  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
+  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
+  -pie-background:      url(/img/btns_lt_apply.png) -30px -74px no-repeat, linear-gradient(#fefefe, #a4a4a4);
 }
 .btnLinkedIn:active {
-  background:           #770207 url(../img/btns_lt_apply.png) -30px -74px no-repeat;
-  -pie-background:      #770207 url(/img/btns_lt_apply.png) -30px -74px no-repeat;
+  background:           #d7d7d7 url(../img/btns_lt_apply.png) -30px -74px no-repeat;
+  -pie-background:      #d7d7d7 url(/img/btns_lt_apply.png) -30px -74px no-repeat;
 }
 
 .btnSubmit {
   color:                #eee;
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
-  margin-bottom:        10px;
-  padding-right:        22px;
-  padding-left:         47px;
+  padding:              9px 12px 8px 37px;
   border-color:         #838383;
-  background:           #c3383d url(../img/btns_lt_apply.png) -30px -74px no-repeat;
-  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
-  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
-  -pie-background:      url(/img/btns_lt_apply.png) -30px -74px no-repeat, linear-gradient(#c3383d, #c3020a);
+  background:           #699ab5 url(../img/btns_lt_apply.png) -84px -25px no-repeat;
+  background:           url(../img/btns_lt_apply.png) -84px -25px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
+  background:           url(../img/btns_lt_apply.png) -84px -25px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
+  -pie-background:      url(/img/btns_lt_apply.png) -84px -25px no-repeat, linear-gradient(#699ab5, #2a749d);
+     -moz-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
+  -webkit-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
+          box-shadow:   0 2px 4px rgba(0,0,0,0.5);
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 .btnSubmit:hover,
@@ -577,15 +580,16 @@ section {
   color:                #eee;
 }
 .btnSubmit:hover {
-  background:           #93262a url(../img/btns_lt_apply.png) -30px -74px no-repeat;
-  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #93262a 0%, #8f0309 100%);
-  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93262a), color-stop(100%,#8f0309));
-  -pie-background:      url(/img/btns_lt_apply.png) -30px -74px no-repeat, linear-gradient(#93262a, #8f0309);
+  background:           #58839a url(../img/btns_lt_apply.png) -84px -25px no-repeat;
+  background:           url(../img/btns_lt_apply.png) -84px -25px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
+  background:           url(../img/btns_lt_apply.png) -84px -25px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
+  -pie-background:      url(/img/btns_lt_apply.png) -84px -25px no-repeat, linear-gradient(#58839a, #215a79);
 }
 .btnSubmit:active {
-  background:           #770207 url(../img/btns_lt_apply.png) -30px -74px no-repeat;
-  -pie-background:      #770207 url(/img/btns_lt_apply.png) -30px -74px no-repeat;
+  background:           #1c4c66 url(../img/btns_lt_apply.png) -84px -25px no-repeat;
+  -pie-background:      #1c4c66 url(/img/btns_lt_apply.png) -84px -25px no-repeat;
 }
+
 
 /* if larger buttons are in a narrow container, relax right padding and let them go full width */
 aside section .btnLg,
