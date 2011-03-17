@@ -1,7 +1,7 @@
 
 /* imports first */
 
-@import url("fonts/stylesheet.css");
+/*@import url("fonts/stylesheet.css");*/ /* <-- use with @font-face only */
 
 
 /* 
@@ -312,7 +312,9 @@ section {
 
 .btn {
   color:                #fff;
-  font:                 100%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;
+/*  font:                 100%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;*/
+  font:                 700 100%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.06em;
   text-transform:       uppercase;
   text-align:           left;
   border:               1px solid #878686;
@@ -351,7 +353,7 @@ section {
 .btnLg {
   color:                #999898;
   text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
-  padding:              11px 12px 11px 44px;
+  padding:              12px 12px 10px 44px;
   border-color:         #b8b8b7;
   background:           #fefefe url(../img/btns_lt.png) 20px -124px no-repeat;
   background:           url(../img/btns_lt.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
@@ -383,7 +385,7 @@ section {
   text-align:           center;
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
   width:                130px;
-  padding:              10px 10px 9px;
+  padding:              11px 10px 8px;
   border-color:         #838383;
   background:           #838383;
   background:           -moz-linear-gradient(top, #838383 0%, #5f5f5f 100%);
@@ -413,7 +415,7 @@ section {
 .btnChat {
   color:                #eee;
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
-  padding:              9px 12px 8px 37px;
+  padding:              10px 12px 7px 37px;
   border-color:         #838383;
   background:           #699ab5 url(../img/btns_lt.png) 13px -127px no-repeat;
   background:           url(../img/btns_lt.png) 13px -127px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
@@ -473,7 +475,7 @@ section {
   color:                #b00e13;
   text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
   width:                137px;
-  padding:              10px 12px 9px 40px;
+  padding:              11px 12px 8px 40px;
   border:               none;
   background:           #fefefe url(../img/btns_lt.png) -84px -25px no-repeat;
   background:           url(../img/btns_lt.png) -84px -25px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
@@ -503,7 +505,7 @@ section {
 .btnUpload {
   color:                #999898;
   text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
-  padding:              11px 12px 11px 44px;
+  padding:              12px 12px 10px 44px;
   border-color:         #b8b8b7;
   background:           #fefefe url(../img/btns_lt_apply.png) 20px -124px no-repeat;
   background:           url(../img/btns_lt_apply.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
@@ -533,7 +535,7 @@ section {
 .btnLinkedIn {
   color:                #999898;
   text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
-  padding:              11px 12px 11px 44px;
+  padding:              12px 12px 10px 44px;
   border-color:         #b8b8b7;
   background:           #fefefe url(../img/btns_lt_apply.png) -30px -74px no-repeat;
   background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
@@ -565,10 +567,10 @@ section {
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
   padding:              9px 12px 8px 37px;
   border-color:         #838383;
-  background:           #699ab5 url(../img/btns_lt_apply.png) -84px -25px no-repeat;
-  background:           url(../img/btns_lt_apply.png) -84px -25px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
-  background:           url(../img/btns_lt_apply.png) -84px -25px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
-  -pie-background:      url(/img/btns_lt_apply.png) -84px -25px no-repeat, linear-gradient(#699ab5, #2a749d);
+  background:           #699ab5 url(../img/btns_lt_apply.png) -84px -27px no-repeat;
+  background:           url(../img/btns_lt_apply.png) -84px -27px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
+  background:           url(../img/btns_lt_apply.png) -84px -27px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
+  -pie-background:      url(/img/btns_lt_apply.png) -84px -27px no-repeat, linear-gradient(#699ab5, #2a749d);
      -moz-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
           box-shadow:   0 2px 4px rgba(0,0,0,0.5);
@@ -580,14 +582,14 @@ section {
   color:                #eee;
 }
 .btnSubmit:hover {
-  background:           #58839a url(../img/btns_lt_apply.png) -84px -25px no-repeat;
-  background:           url(../img/btns_lt_apply.png) -84px -25px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
-  background:           url(../img/btns_lt_apply.png) -84px -25px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
-  -pie-background:      url(/img/btns_lt_apply.png) -84px -25px no-repeat, linear-gradient(#58839a, #215a79);
+  background:           #58839a url(../img/btns_lt_apply.png) -84px -27px no-repeat;
+  background:           url(../img/btns_lt_apply.png) -84px -27px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
+  background:           url(../img/btns_lt_apply.png) -84px -27px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
+  -pie-background:      url(/img/btns_lt_apply.png) -84px -27px no-repeat, linear-gradient(#58839a, #215a79);
 }
 .btnSubmit:active {
-  background:           #1c4c66 url(../img/btns_lt_apply.png) -84px -25px no-repeat;
-  -pie-background:      #1c4c66 url(/img/btns_lt_apply.png) -84px -25px no-repeat;
+  background:           #1c4c66 url(../img/btns_lt_apply.png) -84px -27px no-repeat;
+  -pie-background:      #1c4c66 url(/img/btns_lt_apply.png) -84px -27px no-repeat;
 }
 
 
@@ -730,7 +732,9 @@ header #login.open form {
 
 header #login form h3 {
   color:                #c3151c;
-  font:                 197%/153.9% "GothamHTFBook",Tahoma,Arial,sans-serif;
+/*  font:                 197%/153.9% "GothamHTFBook",Tahoma,Arial,sans-serif;*/
+  font:                 400 210%/144.4% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.035em;
   margin-bottom:        15px;
   border-bottom:        1px solid #2d2d2d;
   padding-left:         75px;
@@ -755,7 +759,9 @@ header #login form ul.benefits li {
 
 header #login form ul.benefits li h4 {
   color:                #e5e3e3;
-  font:                 116%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+/*  font:                 116%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
+  font:                 600 123.1%/93% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
   padding-bottom:       4px;
 }
 
@@ -881,7 +887,10 @@ header nav ul.sf-menu li .snavItem a {
   overflow:             visible;
 }
 header nav ul.sf-menu li a.pn {
-  font:                 108%/100% "FreightSansBold",Helvetica,sans-serif;
+/*  font:                 108%/100% "FreightSansBold",Helvetica,sans-serif;*/
+  font:                 700 100%/93% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
+  padding:              3px 30px 2px;
 }
 header nav ul.sf-menu li:first-child a.pn {
   border-left:          none;
@@ -943,7 +952,7 @@ header nav ul.sf-menu li ul li {
 header nav ul.sf-menu li ul li .subnavLt {
   text-align:           center;
   width:                225px;
-  padding:              8px 24px 0 6px;
+  padding:              7px 24px 0 6px;
   border-right:         1px solid #c7c7c7;
   float:                left;
   position:             relative;
@@ -953,7 +962,7 @@ header nav ul.sf-menu li ul li .subnavLt {
 header nav ul.sf-menu li ul li .subnavRt {
   text-align:           center;
   width:                173px;
-  padding:              8px 7px 0 23px;
+  padding:              7px 7px 0 23px;
   border-left:          1px solid #c7c7c7;
   float:                left;
   position:             relative;
@@ -994,7 +1003,9 @@ header nav ul.sf-menu li ul li ul.snavItems li a:active {
   padding:              9px 0 6px;
 }
 header nav ul.sf-menu li ul li ul.snavItems li a h4 {
-  font:                 116%/100% "GothamHTFMedium",Tahoma,Helvetica,sans-serif;
+/*  font:                 116%/100% "GothamHTFMedium",Tahoma,Helvetica,sans-serif;*/
+  font:                 600 123.1%/93% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
   margin-bottom:        5px;
 }
 header nav ul.sf-menu li ul li ul.snavItems li a p {
@@ -1023,17 +1034,21 @@ header nav ul.sf-menu li ul.sn.risk li .subnavLt {
 }
 header nav ul.sf-menu li ul.sn.risk li .subnavRt h4 {
   color:                #797979;
-  font:                 108%/131% "GothamHTFMedium",Tahoma,Helvetica,sans-serif;
+/*  font:                 108%/131% "GothamHTFMedium",Tahoma,Helvetica,sans-serif;*/
+  font:                 600 116%/123.1% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
   text-align:           center;
   margin:               0 0 10px;
 }
 
 header nav ul.sf-menu li ul.sn.careers li h3 {
   color:                #28739c;
-  font:                 116%/100% "GothamHTFMedium",Tahoma,Helvetica,sans-serif;
+/*  font:                 116%/100% "GothamHTFMedium",Tahoma,Helvetica,sans-serif;*/
+  font:                 600 123.1%/116% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
   text-align:           left;
   margin-bottom:        19px;
-  padding-bottom:       12px;
+  padding-bottom:       10px;
   border-bottom:        1px solid #c0c0c0;
 }
 header nav ul.sf-menu li ul.sn.careers li .subnavLt a.cta {
@@ -1167,7 +1182,9 @@ footer a {
 }
 
 #content h3 {
-  font:                 167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+/*  font:                 167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
+  font:                 600 174%/97% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
   color:                #181818;
 }
 
@@ -1464,17 +1481,23 @@ aside .benefit {
 }
 
 aside .quote {
-  font:                 125%/125% "GothamHTFBook",Tahoma,Arial,sans-serif;
+/*  font:                 125%/125% "GothamHTFBook",Tahoma,Arial,sans-serif;*/
+  font:                 400 131%/123.1% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
   color:                #606060;
   margin:               0 14px;
 }
 aside .quote .author {
-  font:                 77%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;
+/*  font:                 77%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;*/
+  font:                 700 77%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
   color:                #6e8394;
   margin-top:           4px;
 }
 aside .quote .author .title {
-  font-family:          "GothamHTFBook",Tahoma,Arial,sans-serif;
+/*  font-family:          "GothamHTFBook",Tahoma,Arial,sans-serif;*/
+  font:                 400 100%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
 }
 
 aside #photo,
@@ -1603,7 +1626,9 @@ aside .share a {
   float:                left;
 }
 aside .share .label {
-  font:                 115%/240% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+/*  font:                 115%/240% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
+  font:                 600 123.1%/224% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
   color:                #5c5c5c;
 }
 aside .share a.facebook,
@@ -1727,7 +1752,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 
 #careers h4 {
   color:                #757474;
-  font:                 138.5%/140% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+/*  font:                 138.5%/140% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
+  font:                 600 146.5%/140% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
 }
 
 #careers section .row {
@@ -1761,7 +1788,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 
 #careers section .col3 p {
   line-height:          114.3%;
-  padding-top:          2px;
+  padding-top:          1px;
 }
 
 #careers section .nobel h4 {
@@ -1806,6 +1833,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 #careers .careersHomeIntro .lt h4 {
   color:                #8d8d8d;
   font:                 normal 171.4%/146.5% Helvetica,sans-serif;
+  letter-spacing:       0;
   margin-bottom:        6px;
 }
 
@@ -1829,19 +1857,27 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 
 #careers .careersHomeIntro .rt blockquote {
   color:                #838383;
-  font:                 142.9%/140% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+/*  font:                 142.9%/140% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
+  font:                 600 154%/132% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
   padding-left:         201px;
 }
 #careers .careersHomeIntro .rt blockquote em {
   color:                #464747;
 }
+#careers .careersHomeIntro .rt blockquote p {
+  margin-bottom:        8px;
+}
 #careers .careersHomeIntro .rt blockquote p.attr {
   color:                #6e8394;
-  font:                 70%/100% "GothamHTFBook",Tahoma,Arial,sans-serif;
+/*  font:                 70%/100% "GothamHTFBook",Tahoma,Arial,sans-serif;*/
+  font:                 400 68%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.02em;
 }
 #careers .careersHomeIntro .rt blockquote p.attr em {
   color:                #6e8394;
-  font-family:          "GothamHTFMedium",Tahoma,Arial,sans-serif;
+/*  font-family:          "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
+  font-weight:          600;
 }
 
 #careers section .icon {
@@ -2148,7 +2184,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 }
 
 #job_listings .footer {
-  font:                 110%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+/*  font:                 110%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
+  font:                 600 116%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
   color:                #232323;
   margin-top:           36px;
   padding:              10px;
@@ -2216,7 +2254,9 @@ display:none;
 }
 
 #job_detail h3 {
-  font:                 197%/76% "GothamHTFBook",Tahoma,Arial,sans-serif;
+/*  font:                 197%/76% "GothamHTFBook",Tahoma,Arial,sans-serif;*/
+  font:                 400 204%/76% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.04em;
   color:                #13587e;
   margin-bottom:        15px;
 }
@@ -2247,7 +2287,9 @@ display:none;
 }
 
 #job_apply h2 {
-  font:                 197%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
+/*  font:                 197%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
+  font:                 600 213%/93% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
   margin-bottom:        10px;
 }
 #job_apply h2 em {
@@ -2261,8 +2303,10 @@ display:none;
 }
 
 #job_apply legend {
-  font:                 167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
-  padding:              0 0 20px 20px;
+/*  font:                 167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
+  font:                 600 176%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
+  padding:              0 0 19px 20px;
 }
 
 #job_apply legend em {
@@ -2358,15 +2402,15 @@ display:none;
   position:             relative;
 }
 
-#bg_chat .hd {
-  padding:              0 0px;
-}
-
 #bg_chat .hd h2 {
   color:                #fff;
+/*
   font:                 197%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
   letter-spacing:       1px;
-  padding:              29px 0 15px;
+*/
+  font:                 600 204%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.065em;
+  padding:              28px 0 15px;
   position:             relative;
   top:                  0;
   left:                 -10px;
@@ -2392,8 +2436,10 @@ display:none;
 }
 
 #legal h2 {
-  font:                 230.8%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;
-  margin-bottom:        50px;
+/*  font:                 230.8%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
+  font:                 600 249%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
+  margin-bottom:        48px;
   text-indent:          26px;
 }
 
@@ -2434,11 +2480,13 @@ display:none;
 
 #legalTabs ul.tabs li a {
   color:                #909090;
-  font:                 116%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;
+/*  font:                 116%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;*/
+  font:                 700 123.1%/93% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
   text-transform:       uppercase;
   text-align:           center;
   width:                365px;
-  padding:              9px 10px 11px;
+  padding:              10px;
   border:               1px solid #b8b8b7;
   background:           none;
   float:                none;
