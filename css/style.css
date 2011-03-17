@@ -2558,9 +2558,10 @@ ul.toc {
   color:#000;
   font-size:.8em;
   font-weight:bold;
+  width: 300px;
   margin:2px 0 0 0;
   padding:4px;
-  position:fixed;
+/*  position:fixed; */
   top:5px;
   left:5px;
   z-index:1000;
@@ -2578,6 +2579,8 @@ ul.index.global li a {
 
 #indexPage {
   background:#fff;
+  position:relative;
+  top:-100px;
 }
 
 #indexPage ul.toc {
