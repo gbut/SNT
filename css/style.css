@@ -2236,7 +2236,7 @@ display:none;
 
 /* / Job Detail */
 
-/* + Job Apply */
+/* + Job Apply & Contact */
 
 #job_apply a.back {
   color:                #292929;
@@ -2273,7 +2273,8 @@ display:none;
   color:                #8e959a;
 }
 
-#job_apply label {
+#job_apply label,
+#contact label {
   font-size:            110%;
   text-align:           right;
   width:                108px;
@@ -2282,14 +2283,16 @@ display:none;
   display:              inline-block;
 }
 
-#job_apply input {
+#job_apply input,
+#contact input {
   color:                #606060;
   width:                520px;
   height:               26px;
   display:              inline-block;
 }
 
-#job_apply textarea {
+#job_apply textarea,
+#contact textarea {
   color:                #606060;
   width:                510px;
   height:               95px;
@@ -2306,7 +2309,22 @@ display:none;
   float:                right;
 }
 
-/* / Job Apply */
+#contact .top {
+
+}
+
+#contact form {
+  width:                674px;
+  margin:               20px 10px 0 0;
+  padding-right:        28px;
+  float:                left;
+}
+
+#contact canvas {
+  float:                left;
+}
+
+/* / Job Apply & Contact */
 
 /* + Share */
 

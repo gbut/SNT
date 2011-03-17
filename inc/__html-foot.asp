@@ -39,7 +39,11 @@
   <script src="/js/plugins.js"></script>
   <script src="/js/script.js"></script>
   <!-- end concatenated and minified scripts-->
-  
+
+
+  <!--[if IE]><script type="text/javascript" src="/js/libs/coolclock/excanvas.js"></script><![endif]-->
+  <script type="text/javascript" src="/js/libs/coolclock/coolclock.js"></script>
+  <script type="text/javascript" src="/js/libs/coolclock/moreskins.js"></script>
   
   <!--[if lt IE 7 ]>
     <script src="/js/libs/dd_belatedpng.js"></script>
