@@ -2236,7 +2236,7 @@ display:none;
 
 /* / Job Detail */
 
-/* + Job Apply */
+/* + Job Apply & Contact */
 
 #job_apply a.back {
   color:                #292929;
@@ -2273,7 +2273,8 @@ display:none;
   color:                #8e959a;
 }
 
-#job_apply label {
+#job_apply label,
+#contact label {
   font-size:            110%;
   text-align:           right;
   width:                108px;
@@ -2282,14 +2283,16 @@ display:none;
   display:              inline-block;
 }
 
-#job_apply input {
+#job_apply input,
+#contact input {
   color:                #606060;
   width:                520px;
   height:               26px;
   display:              inline-block;
 }
 
-#job_apply textarea {
+#job_apply textarea,
+#contact textarea {
   color:                #606060;
   width:                510px;
   height:               95px;
@@ -2306,7 +2309,24 @@ display:none;
   float:                right;
 }
 
-/* / Job Apply */
+#contact .top {
+
+}
+
+#contact form {
+  width:                674px;
+  margin:               20px 10px 0 0;
+  padding-right:        28px;
+  float:                left;
+}
+
+#contact canvas {
+  margin:               20px 40px;
+  float:                left;
+  display:inline-block;
+}
+
+/* / Job Apply & Contact */
 
 /* + Share */
 
@@ -2538,9 +2558,10 @@ ul.toc {
   color:#000;
   font-size:.8em;
   font-weight:bold;
+  width: 300px;
   margin:2px 0 0 0;
   padding:4px;
-  position:fixed;
+/*  position:fixed; */
   top:5px;
   left:5px;
   z-index:1000;
@@ -2558,6 +2579,8 @@ ul.index.global li a {
 
 #indexPage {
   background:#fff;
+  position:relative;
+  top:-100px;
 }
 
 #indexPage ul.toc {

@@ -39,11 +39,15 @@
   </script>
 
   
-  <!-- scripts concatenated and minified via ant build script-->
+  <!-- scripts concatenated and minified via ant build script -->
   <script src="/js/plugins.js"></script>
   <script src="/js/script.js"></script>
   <!-- end concatenated and minified scripts-->
-  
+
+  <!-- analog clock for contact page -->
+  <!--[if IE]><script type="text/javascript" src="/js/libs/coolclock/excanvas.js"></script><![endif]-->
+  <script type="text/javascript" src="/js/libs/coolclock/coolclock.js"></script>
+  <script type="text/javascript" src="/js/libs/coolclock/moreskins.js"></script>
   
   <!--[if lt IE 7 ]>
     <script src="/js/libs/dd_belatedpng.js"></script>
