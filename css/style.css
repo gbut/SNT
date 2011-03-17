@@ -2321,7 +2321,9 @@ display:none;
 }
 
 #contact canvas {
+  margin:               20px 40px;
   float:                left;
+  display:inline-block;
 }
 
 /* / Job Apply & Contact */

@@ -28,16 +28,13 @@
   </div>
   
   <h3>RMS Around the <em>Globe</em></h3>
-  <div style="background:#99a6ae; height:260px; padding:20px">
-  
-    <canvas id="clock01" class="CoolClock:swissRail:40::-7"></canvas>
-    <canvas id="clock02" class="CoolClock:swissRail:40::-5"></canvas>
-    <canvas id="clock03" class="CoolClock:swissRail:40::-4"></canvas>
-    <canvas id="clock04" class="CoolClock:swissRail:40::-3"></canvas>
-    <canvas id="clock05" class="CoolClock:swissRail:40::0"></canvas>
-    <canvas id="clock06" class="CoolClock:swissRail:40::5.5"></canvas>
-  
-  
+  <div style="background:#99a6ae; height:300px">  
+    <canvas id="clock01" class="CoolClock:swissRail:40:noSeconds:-7"></canvas>
+    <canvas id="clock02" class="CoolClock:swissRail:40:noSeconds:-5"></canvas>
+    <canvas id="clock03" class="CoolClock:swissRail:40:noSeconds:-4"></canvas>
+    <canvas id="clock04" class="CoolClock:swissRail:40:noSeconds:-3"></canvas>
+    <canvas id="clock05" class="CoolClock:swissRail:40:noSeconds:0"></canvas>
+    <canvas id="clock06" class="CoolClock:swissRail:40:noSeconds:5.5"></canvas>
   </div>
   
 </div>
