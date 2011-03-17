@@ -2276,7 +2276,7 @@ display:none;
 
 /* / Job Detail */
 
-/* + Job Apply & Contact */
+/* + Forms pages Job Apply & Contact */
 
 #job_apply a.back {
   color:                #292929;
@@ -2342,19 +2342,21 @@ display:none;
   height:               95px;
   margin:               6px 0 10px 121px;
   padding:              10px;
+  display:              inline-block;
+  vertical-align:       top;
+}
+#contact textarea {
+  margin:               0;
 }
 
 #job_apply .btnLinkedIn {
   margin:               0 0 10px 121px;
 }
 
-#job_apply .btnSubmit {
+#job_apply .btnSubmit,
+#contact .btnSubmit {
   margin:               15px 20px 0 0;
   float:                right;
-}
-
-#contact .top {
-
 }
 
 #contact form {
@@ -2364,13 +2366,51 @@ display:none;
   float:                left;
 }
 
-#contact canvas {
-  margin:               20px 40px;
-  float:                left;
-  display:inline-block;
+#contact h3 {
+  padding:              0 0 20px 0;
 }
 
-/* / Job Apply & Contact */
+#contact #offices {
+  color:#000;
+/*  color:#fff;*/
+  height:506px;
+  margin:0 24px; /* temp because map is only 912px wide, not 960 as we'd like it */
+}
+
+#contact #offices .office {
+/*  width:                160px; */
+  width:                152px; /* temp because map is only 912px wide, not 960 as we'd like it */
+  float:                left; 
+}
+
+#contact #offices .office .address {
+  font-size:85%;
+  line-height:130%;
+  width:                120px;
+  margin:               0 auto;
+}
+
+#contact #offices h5 {
+  text-transform:       uppercase;
+  margin-bottom:4px;
+}
+
+#contact canvas {
+  margin:               20px auto;
+  display:              block;
+}
+
+#contact #map {
+  height:506px;
+  position:absolute;
+  z-index:-1;
+  -moz-opacity:         0.30;
+  -ms-filter:           "alpha(opacity=30)";
+  filter:               alpha(opacity=30);
+  opacity:              0.30;
+}
+
+/* / Form pages: Job Apply & Contact */
 
 /* + Share */
 
