@@ -2236,7 +2236,7 @@ display:none;
 
 /* / Job Detail */
 
-/* + Forms: Job Apply & Contact */
+/* + Forms pages Job Apply & Contact */
 
 #job_apply a.back {
   color:                #292929;
@@ -2326,25 +2326,47 @@ display:none;
   padding:              0 0 20px 0;
 }
 
-#contact #map {
-/*  height:506px; */
-  height:120px;
-  background:#99a6ae;
+#contact #offices {
+  color:#000;
+/*  color:#fff;*/
+  height:506px;
+  margin:0 24px; /* temp because map is only 912px wide, not 960 as we'd like it */
 }
 
-#contact #map div {
-  text-align:center;
-  width:                160px;
-  padding:20px 0;
+#contact #offices .office {
+/*  width:                160px; */
+  width:                152px; /* temp because map is only 912px wide, not 960 as we'd like it */
   float:                left; 
 }
 
-#contact canvas {
+#contact #offices .office .address {
+  font-size:85%;
+  line-height:130%;
+  width:                120px;
   margin:               0 auto;
+}
+
+#contact #offices h5 {
+  text-transform:       uppercase;
+  margin-bottom:4px;
+}
+
+#contact canvas {
+  margin:               20px auto;
   display:              block;
 }
 
-/* / Forms: Job Apply & Contact */
+#contact #map {
+  height:506px;
+  position:absolute;
+  z-index:-1;
+  -moz-opacity:         0.30;
+  -ms-filter:           "alpha(opacity=30)";
+  filter:               alpha(opacity=30);
+  opacity:              0.30;
+}
+
+/* / Form pages: Job Apply & Contact */
 
 /* + Share */
 

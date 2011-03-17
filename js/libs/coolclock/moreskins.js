@@ -4,6 +4,16 @@
 */
 CoolClock.config.skins = {
 
+	RMSskin: {
+		outerBorder: { lineWidth: 1, radius:95, color: "white", alpha: 1 },
+		smallIndicator: { lineWidth: 2, startAt: 89, endAt: 93, color: "white", alpha: 1 },
+		largeIndicator: { lineWidth: 4, startAt: 80, endAt: 93, color: "white", alpha: 1 },
+		hourHand: { lineWidth: 8, startAt: -15, endAt: 50, color: "white", alpha: 1 },
+		minuteHand: { lineWidth: 7, startAt: -15, endAt: 75, color: "white", alpha: 1 },
+		secondHand: { lineWidth: 1, startAt: -20, endAt: 85, color: "red", alpha: 1 },
+		secondDecoration: { lineWidth: 1, startAt: 70, radius: 4, fillColor: "red", color: "red", alpha: 1 }
+	},
+
 	swissRail: {
 		outerBorder: { lineWidth: 1, radius:95, color: "black", alpha: 1 },
 		smallIndicator: { lineWidth: 2, startAt: 89, endAt: 93, color: "black", alpha: 1 },
