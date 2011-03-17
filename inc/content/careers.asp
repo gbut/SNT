@@ -132,14 +132,14 @@
     </div>
     <div id="tooltip" class="clearfix">
       <div class="primary">
-        <div class="imgCont"><img src="/img/TEMP_photo_jli_alt.jpg" alt="Jane Li" /></div>
-        <div class="text">
-          <h5>Jane Li</h5>
-          <p>Engineer</p>
-          <p>San Francisco</p>
+        <div class="imgCont fadeTransition"><img id="bioImg" src="/img/TEMP_photo_jli_alt.jpg" alt="Jane Li" /></div>
+        <div class="text fadeTransition">
+          <h5 id="bioName">Jane Li</h5>
+          <p id="bioPosition">Engineer</p>
+          <p id="bioLocation">San Francisco</p>
         </div>
       </div>
-      <div class="secondary">
+      <div id="bioContent" class="secondary fadeTransition">
         <h6>Lorem Dolores</h6>
         <p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>
         <h6>Gratisei Helios</h6>

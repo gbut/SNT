@@ -1929,7 +1929,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 
 #careers #team_panel ul li a {
   text-indent:          -9999px;
-  height:               271px;
+  height:               260px;
   display:              block;
   overflow:             hidden;
   outline:              none;
@@ -1972,7 +1972,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   background:           transparent;
   border:               none;
   position:             absolute;
-  bottom:               17px;
+  bottom:               26px;
   left:                 202px;
   z-index:              500;
 }
