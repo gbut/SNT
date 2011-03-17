@@ -130,6 +130,13 @@ $(document).ready(function(){
       this.popup              = $('#tooltip');
       this.pointer            = this.popup.find('.pointer');
       
+      this.bioName            = $('#bioName');
+      this.bioPosition        = $('#bioPosition');
+      this.bioLocation        = $('#bioLocation');
+      this.bioImg             = $('#bioImg');
+      this.bioContent         = $('#bioContent');
+//      this.elsToFade          = this.popup.find('.fadeTransition');
+      
       // flags, measurements
       this.winW               = this.container.width();
       this.photoW             = this.photo.width();
@@ -139,10 +146,24 @@ $(document).ready(function(){
       this.pointerLeft        = parseInt(this.pointer.css('left'));
       
       // restore popup position
-      this.popup.css({opacity:0, bottom:-140});
+      this.popup.css({opacity:0, bottom:-125});
+      
+      // FAKE DATA - figure out how we're actually going to pull this in
+      this.bios               = [
+        { name:"Jeff Daniels", position:"Actor", location:"Los Angeles", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
+        { name:"Fred Mertz", position:"Neighbor", location:"Havana", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
+        { name:"Jane Li", position:"Engineer", location:"San Francisco", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
+        { name:"Seth MacFarlane", position:"Animator", location:"Providence", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
+        { name:"Debbie Reynolds", position:"Performer", location:"Los Angeles", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
+        { name:"Hunter S. Thompson", position:"Gonzo Journalist", location:"Las Vegas", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
+        { name:"Dave Brubeck", position:"Pianist", location:"Poland", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
+        { name:"Nancy Reagan", position:"First Lady", location:"Santa Barbara", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
+        { name:"John Adams", position:"Founding Father", location:"Braintree", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
+        { name:"Betsy Ross", position:"Seamstress", location:"Virginia", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" }
+      ];
 
       // attach behaviors
-      this.people.children().each(function(){
+      this.people.children().each(function(i){
         // determine leftPos of panel needed to center this image
         var imgOffset = Math.round($(this).position().left + ($(this).width()/2));
         var left = Math.round((self.winW/2) - imgOffset);
@@ -171,7 +192,7 @@ $(document).ready(function(){
         $(this).data('positions', d);
         
         // add handler
-        $(this).find('a').bind('click', { obj: self }, self.selectPerson);
+        $(this).find('a').bind('click', { obj: self, order: i }, self.selectPerson);
       });
       
       // instantiate slider
@@ -218,6 +239,7 @@ $(document).ready(function(){
        */
       selectPerson: function(e) {
         var o = e.data.obj; //the instantiated $.teamPhoto object
+        var whichPerson = e.data.order;
         var p = $(this).parent().data('positions');
         
         // animate panel
@@ -229,6 +251,7 @@ $(document).ready(function(){
             easing: o.options.easing
           });
         // animate popup
+        o.loadInfo(whichPerson);
         o.popup.animate({
             left: p.popup
           },
@@ -264,6 +287,21 @@ $(document).ready(function(){
           });
         
         e.preventDefault();
+      },
+
+      /**
+       * Swaps in new user's biographical info.
+       *
+       * @name loadInfo
+       * @type undefined
+       */
+      loadInfo: function(person) {
+        var info = this.bios[person];
+        this.bioName.html(info.name);
+        this.bioPosition.html(info.position);
+        this.bioLocation.html(info.location);
+        this.bioImg.attr({ src: info.imgsrc, alt: info.name });
+        this.bioContent.html(info.bio);
       }
 
     });
