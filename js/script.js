@@ -686,6 +686,14 @@ $(document).ready(function(){
     return this.value === '' ? $(this).val(this.defaultValue) : null;
   });
 
+  //===============================================
+  //  Handling for jobvite apply
+  //===============================================
+
+  $('iframe#jobvite').load(function() {
+    //$('iframe#jobvite').height('500px');
+    $.scrollTo('0');
+  });
   
 });
 

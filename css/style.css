@@ -2301,6 +2301,11 @@ display:none;
   color:                #13587e;
 }
 
+#job_apply h3 {
+  font:                 600 176%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  margin-bottom:        10px;
+}
+
 #job_apply .subhead {
   font-size:            120%;
   font-weight:          bold;

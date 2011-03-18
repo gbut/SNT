@@ -49,6 +49,9 @@
   <script type="text/javascript" src="/js/libs/coolclock/coolclock.js"></script>
   <script type="text/javascript" src="/js/libs/coolclock/moreskins.js"></script>
   
+  <!-- jquery scrollto plugin -->
+  <script type="text/javascript" src="/js/libs/jquery-scrollto/jquery.scrollto-min.js"></script>
+  
   <!--[if lt IE 7 ]>
     <script src="/js/libs/dd_belatedpng.js"></script>
     <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
