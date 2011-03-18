@@ -49,11 +49,13 @@
   <script type="text/javascript" src="/js/libs/coolclock/coolclock.js"></script>
   <script type="text/javascript" src="/js/libs/coolclock/moreskins.js"></script>
   
-  <!-- jquery scrollto plugin -->
-  <script type="text/javascript" src="/js/libs/jquery-scrollto/jquery.scrollto-min.js"></script>
-  
+<<<<<<< HEAD
   <!-- canvas maps -->
   <script type="text/javascript" src="/js/libs/maps/worldmap.js"></script>
+=======
+  <!-- jquery scrollto plugin -->
+  <script type="text/javascript" src="/js/libs/jquery-scrollto/jquery.scrollto-min.js"></script>
+>>>>>>> aa9524688f53dae33af1ba3a455a410eef42b5d3
   
   <!--[if lt IE 7 ]>
     <script src="/js/libs/dd_belatedpng.js"></script>
