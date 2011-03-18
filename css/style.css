@@ -2613,20 +2613,27 @@ display:none;
 
 /* / *** JOBVITE *** */
 
+iframe#jobvite {
+  width:                694px;
+  height:               900px;
+}
+
 /* 
  overrides for files hosetd on jobvite
  and referenced iin an iframe
 */
 
 body#jobvite {
-  width:                674px;
-  height:               880px;
   padding:              0;
   margin:               0;
   background:           #dbe4ea;
 }
 
-
+body#jobvite #job_apply {
+  height:               880px;
+  width:                674px;
+  overflow:             hidden;
+}
 
 /* old, from test for standalone button
 body#jobvite {
