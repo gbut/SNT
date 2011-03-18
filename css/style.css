@@ -2376,8 +2376,7 @@ display:none;
 }
 
 #contact #offices {
-  color:#000;
-/*  color:#fff;*/
+  color:#fff;
   height:506px;
   margin:0 24px; /* temp because map is only 912px wide, not 960 as we'd like it */
 }
@@ -2409,10 +2408,10 @@ display:none;
   height:506px;
   position:absolute;
   z-index:-1;
-  -moz-opacity:         0.30;
+/*  -moz-opacity:         0.30;
   -ms-filter:           "alpha(opacity=30)";
   filter:               alpha(opacity=30);
-  opacity:              0.30;
+  opacity:              0.30;*/
 }
 
 /* / Form pages: Job Apply & Contact */
