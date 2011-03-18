@@ -2610,6 +2610,17 @@ display:none;
 */
 
 body#jobvite {
+  width:                674px;
+  height:               880px;
+  padding:              0;
+  margin:               0;
+  background:           #dbe4ea;
+}
+
+
+
+/* old, from test for standalone button
+body#jobvite {
   padding:              0;
   margin:               0;
 }
@@ -2619,6 +2630,7 @@ body#jobvite {
   padding-right:        19px;
   display:              block;
 }
+*/
 
 /* / *** JOBVITE *** */
 

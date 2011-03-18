@@ -672,7 +672,19 @@ $(document).ready(function(){
   $('#legalTabs').tabs({
     fx: { opacity:'toggle', duration:400 }
   });
+  
+  //===============================================
+  //  Form field behaviors
+  //===============================================
 
+  // Handled prefilled notes
+  $('.prefilled').click(function() {
+    return this.value === this.defaultValue ? $(this).val('') : null;
+  });
+  return $('.prefilled').blur(function() {
+    return this.value === '' ? $(this).val(this.defaultValue) : null;
+  });
+  
 });
 
 
