@@ -1627,9 +1627,10 @@ aside .share a {
 }
 aside .share .label {
 /*  font:                 115%/240% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
-  font:                 600 123.1%/224% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  font:                 600 123.1%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.03em;
   color:                #5c5c5c;
+  padding-bottom:       10px;
 }
 aside .share a.facebook,
 aside .share a.twitter,
@@ -2201,6 +2202,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   color:                #696969;
 }
 
+#job_listings .footer p {
+  margin:               0;
+}
+
 #job_listings .footer a.submit {
   font-size:            90%;
   color:                #1d3a4a;
@@ -2749,6 +2754,7 @@ ul.index.global li a {
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
   header,
+  .contentOuter,
   footer {
     width:                1040px; /* force full width so bg is consistent; is this a good idea? */
     padding:              0;
@@ -2756,13 +2762,25 @@ ul.index.global li a {
   footer {
     padding:              20px 0;
   }
+  
   .btn {
-    padding-top:          9px;
-    padding-bottom:       4px;
+    padding-top:          6px;
+    padding-bottom:       7px;
   }
   .btnLg {
     padding-top:          13px;
     padding-bottom:       9px;
+  }
+  .btnUpload {
+    padding-top:          11px;
+  }
+  .btnSubmit {
+    padding-top:          8px;
+    padding-bottom:       10px;
+  }
+  
+  aside .share {
+    width:                175px;
   }
   
   /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
