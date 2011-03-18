@@ -162,6 +162,28 @@ $(document).ready(function(){
         { name:"Betsy Ross", position:"Seamstress", location:"Virginia", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" }
       ];
 
+/*
+      // pull in XML data
+      $.ajax({
+        url: "/careers/empl_profiles.xml",
+        context: this,
+        dataType: 'xml',
+        success: function(data){
+//           alert(data);
+//           this.bios = $.parseXML('<?xml version="1.0"?><employees>something</employees>');
+// var xml = '<rss version="2.0"><channel><title>RSS Title</title></channel></rss>',
+//     xmlDoc = $.parseXML( xml ),
+//     $xml = $( xmlDoc ),
+//     $title = $xml.find( 'title' );          
+          //var xmlDoc = $.parseXML(data);
+          //$xml = $(data);
+          // inspect($(data).find('employee'));
+//          this.bios = $.parseXML($(data));
+        }
+      });
+      return;
+*/
+
       // attach behaviors
       this.people.children().each(function(i){
         // determine leftPos of panel needed to center this image
