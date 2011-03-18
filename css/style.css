@@ -1737,6 +1737,22 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 
 /* / Sidebar */
 
+/* + Risk */
+
+#risk {
+  padding-bottom:       43px;
+}
+
+#risk section {
+  margin-bottom:        15px;
+  background-color:     #f3f3f3;
+}
+#risk section.caseStudies {
+  background-color:     #eee;
+}
+
+/* / Risk */
+
 /* + Careers */
 
 #careers section {

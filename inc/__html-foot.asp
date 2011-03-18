@@ -49,6 +49,9 @@
   <script type="text/javascript" src="/js/libs/coolclock/coolclock.js"></script>
   <script type="text/javascript" src="/js/libs/coolclock/moreskins.js"></script>
   
+  <!-- canvas maps -->
+  <script type="text/javascript" src="/js/libs/maps/worldmap.js"></script>
+  
   <!--[if lt IE 7 ]>
     <script src="/js/libs/dd_belatedpng.js"></script>
     <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
