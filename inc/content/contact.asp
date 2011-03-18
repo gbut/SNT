@@ -45,11 +45,10 @@
   <div id="offices">
   
     <div class="office">
-      <canvas id="clock01" class="CoolClock:swissRail:40:noSeconds:-7"></canvas>
+      <canvas id="clock01" class="CoolClock:RMSskin:40:noSeconds:-7"></canvas>
       <div class="address">
         <h5>Corporate<br />
         Headquarters</h5>
-        RMS, Inc.<br />
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
@@ -57,16 +56,14 @@
       </div>
     </div>
     <div class="office">
-      <canvas id="clock02" class="CoolClock:swissRail:40:noSeconds:-5"></canvas>
+      <canvas id="clock02" class="CoolClock:RMSskin:40:noSeconds:-5"></canvas>
       <div class="address">
         <h5>Midwest U.S.</h5>
-        RMS, Inc.<br />
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
         Fax: 1.510.505.2501<br />
         <br />
-        RMS, Inc.<br />
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
@@ -74,10 +71,9 @@
       </div>
     </div>
     <div class="office">
-      <canvas id="clock03" class="CoolClock:swissRail:40:noSeconds:-4"></canvas>
+      <canvas id="clock03" class="CoolClock:RMSskin:40:noSeconds:-4"></canvas>
       <div class="address">
         <h5>East Coast U.S.</h5>
-        RMS, Inc.<br />
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
@@ -85,10 +81,9 @@
       </div>
     </div>
     <div class="office">
-      <canvas id="clock04" class="CoolClock:swissRail:40:noSeconds:-3"></canvas>
+      <canvas id="clock04" class="CoolClock:RMSskin:40:noSeconds:-3"></canvas>
       <div class="address">
         <h5>Bermuda</h5>
-        RMS, Inc.<br />
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
@@ -96,25 +91,22 @@
       </div>
     </div>
     <div class="office"v>
-      <canvas id="clock05" class="CoolClock:swissRail:40:noSeconds:0"></canvas>
+      <canvas id="clock05" class="CoolClock:RMSskin:40:noSeconds:0"></canvas>
       <div class="address">
         <h5>European<br />
         Headquarters</h5>
-        RMS, Inc.<br />
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
         Fax: 1.510.505.2501<br />
         <br />
         <h5>France</h5>
-        RMS, Inc.<br />
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
         Fax: 1.510.505.2501<br />
         <br />
         <h5>Switzerland</h5>
-        RMS, Inc.<br />
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
@@ -122,24 +114,21 @@
       </div>
     </div>
     <div class="office">
-      <canvas id="clock06" class="CoolClock:swissRail:40:noSeconds:5.5"></canvas>
+      <canvas id="clock06" class="CoolClock:RMSskin:40:noSeconds:5.5"></canvas>
       <div class="address">
         <h5>RMSI</h5>
-        RMS, Inc.<br />
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
         Fax: 1.510.505.2501<br />
         <br />
         <h5>China</h5>
-        RMS, Inc.<br />
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
         Fax: 1.510.505.2501<br />
         <br />
         <h5>Japan</h5>
-        RMS, Inc.<br />
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />

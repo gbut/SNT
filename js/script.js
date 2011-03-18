@@ -15,6 +15,7 @@ function inspect(obj) {
 
 $(document).ready(function(){
   
+
 	//===============================================
 	//	VIDEO PRESENTER
 	//  Manages interactions related to hero video (Careers)
@@ -672,7 +673,7 @@ $(document).ready(function(){
   });
   
   // on page load...
-  jobListingsTruncation();
+  if ($('#form_jvSearch select').length) jobListingsTruncation();
   
 
   //===============================================
@@ -694,7 +695,20 @@ $(document).ready(function(){
   $('#legalTabs').tabs({
     fx: { opacity:'toggle', duration:400 }
   });
+  
+  //===============================================
+  //  Form field behaviors
+  //===============================================
 
+  // Handled prefilled notes
+  $('.prefilled').click(function() {
+    return this.value === this.defaultValue ? $(this).val('') : null;
+  });
+  $('.prefilled').blur(function() {
+    return this.value === '' ? $(this).val(this.defaultValue) : null;
+  });
+
+  
 });
 
 
