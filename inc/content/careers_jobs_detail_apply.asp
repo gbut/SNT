@@ -3,7 +3,7 @@
   
   <a href="/careers/jobs" title="Back to Job Openings" class="back">Back to Job Openings</a>
   
-  <iframe id="jobvite" src="/inc/content/jobvite/rms_apply.htm" width="674" height="880" scrolling="no">
+  <iframe id="jobvite" src="/inc/content/jobvite/rms_apply.htm" scrolling="no">
     [iframe support required]
   </iframe>
 

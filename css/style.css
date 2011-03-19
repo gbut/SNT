@@ -2398,14 +2398,16 @@ display:none;
 
 #contact #offices {
   color:#fff;
-  height:506px;
+  height:400px;
   margin:0 24px; /* temp because map is only 912px wide, not 960 as we'd like it */
+  position:relative;
 }
 
-#contact #offices .office {
+#contact .office {
 /*  width:                160px; */
-  width:                152px; /* temp because map is only 912px wide, not 960 as we'd like it */
-  float:                left; 
+  width:                152px;  /* temp because map is only 912px wide, not 960 as we'd like it */
+  margin-top:           34px;
+  float:                left;
 }
 
 #contact #offices .office .address {
@@ -2420,19 +2422,33 @@ display:none;
   margin-bottom:4px;
 }
 
+#contact #clocks {
+  position:             absolute;
+  bottom:               10px;
+  left:                 6px;
+}
+
+#contact .clock {
+  width:                100px;
+  float:                left; 
+}
+
 #contact canvas {
-  margin:               20px auto;
+  margin:               20px auto 0;
   display:              block;
 }
 
 #contact #map {
-  height:506px;
+  height:               400px;
+  width:                912px;
+  position:             absolute;
+  z-index:              -1;
+  overflow:             hidden;
+}
+
+#contact #map iframe {
   position:absolute;
-  z-index:-1;
-/*  -moz-opacity:         0.30;
-  -ms-filter:           "alpha(opacity=30)";
-  filter:               alpha(opacity=30);
-  opacity:              0.30;*/
+  top:-17px;
 }
 
 /* / Form pages: Job Apply & Contact */
@@ -2629,20 +2645,27 @@ display:none;
 
 /* / *** JOBVITE *** */
 
+iframe#jobvite {
+  width:                694px;
+  height:               900px;
+}
+
 /* 
  overrides for files hosetd on jobvite
  and referenced iin an iframe
 */
 
 body#jobvite {
-  width:                674px;
-  height:               880px;
   padding:              0;
   margin:               0;
   background:           #dbe4ea;
 }
 
-
+body#jobvite #job_apply {
+  height:               880px;
+  width:                674px;
+  overflow:             hidden;
+}
 
 /* old, from test for standalone button
 body#jobvite {
