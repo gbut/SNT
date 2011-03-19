@@ -53,6 +53,7 @@
   <script type="text/javascript" src="/js/libs/jquery-scrollto/jquery.scrollto-min.js"></script>
   
   <!-- canvas maps -->
+  <script type="text/javascript" src="/js/libs/raphael-min.js"></script>
   <script type="text/javascript" src="/js/libs/maps/worldmap.js"></script>
   
   <!--[if lt IE 7 ]>

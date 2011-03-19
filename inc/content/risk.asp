@@ -2,7 +2,17 @@
 <div id="risk">
 
   <section class="iWorldMap clearfix">
-    <canvas id="worldmap" width="940" height="477"></canvas>
+    
+    <!-- + raphael -->
+    <div id="svgmap">
+      
+    </div>
+    <!-- / raphael -->
+    
+    <!-- + worldmap.js -->
+    <!-- <canvas id="worldmap" width="940" height="477"></canvas> -->
+    <!-- / worldmap.js -->
+
   </section>
 
   <section class="caseStudies clearfix">
