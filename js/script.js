@@ -801,6 +801,7 @@ $(document).ready(function(){
   // could use some cleanup -GB
   $('.address').mouseenter(function() {
     $(this).toggleClass('highlight');
+    $(this).prevAll('h5:first').toggleClass('highlight');
     $('#'+$(this).attr('rel')).toggleClass('highlight');
     offset = $('#'+$(this).attr('rel')).find('canvas').attr('class').substr(-4);
     $('#'+$(this).attr('rel')).find('canvas').removeClass('CoolClock:RMSskin:30:noSeconds:'+offset);
@@ -808,6 +809,7 @@ $(document).ready(function(){
     CoolClock.findAndCreateClocks();
   }).mouseleave(function(){
     $(this).toggleClass('highlight');
+    $(this).prevAll('h5:first').toggleClass('highlight');
     $('#'+$(this).attr('rel')).toggleClass('highlight');
     $('#'+$(this).attr('rel')).find('canvas').removeClass('CoolClock:RMSHskin:30::'+offset);
     $('#'+$(this).attr('rel')).find('canvas').addClass('CoolClock:RMSskin:30:noSeconds:'+offset);
