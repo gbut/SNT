@@ -2321,6 +2321,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 #job_listings article h4 a {
   color:                #13587e;
   text-decoration:      none;
+  float:                left;
 }
 
 #job_listings article h4 .region {
@@ -2341,6 +2342,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   -moz-border-radius:   4px 6px;
   border-radius:        4px 6px;
   behavior: url(/js/libs/PIE/PIE.htc);
+}
+
+#job_listings .footer .subtextOuter {
+  float:                left;
 }
 
 #job_listings .footer .subtext {
