@@ -111,7 +111,7 @@ body, select, input, textarea {
 h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
 /* always force a scrollbar in non-IE */ 
-html { overflow-y: scroll; }
+/* html { overflow-y: scroll; } *//* breaks html iniframe in Safari */
 
  
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
@@ -2698,7 +2698,7 @@ body#jobvite {
 }
 
 body#jobvite #job_apply {
-  height:               880px;
+  height:               886px;
   width:                674px;
   overflow:             hidden;
 }
