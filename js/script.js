@@ -813,6 +813,14 @@ $(document).ready(function(){
     $('#'+$(this).attr('rel')).find('canvas').addClass('CoolClock:RMSskin:30:noSeconds:'+offset);
     CoolClock.findAndCreateClocks();
   });
+  
+  //===============================================
+  //  Autocolumn: newspaper-style columns for IE
+  //===============================================
+
+  if ($.browser.msie) {
+    $('.columnize-2').columnize({ columns: 2 });
+  }
 
 });
 

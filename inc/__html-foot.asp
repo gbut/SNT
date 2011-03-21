@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
   <script type="text/javascript" src="/js/libs/jquery-ui-1.8.10.custom.min.js"></script>
+  <!--[if IE]><script type="text/javascript" src="/js/libs/autocolumn.min.js"></script><![endif]-->
 
   <!--[if (gte IE 6)&(lte IE 8)]>
     <script src="/js/libs/selectivizr-1.0.1/selectivizr.js"></script>
