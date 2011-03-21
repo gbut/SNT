@@ -1,4 +1,15 @@
-<!--#include virtual="/inc/__html-head.asp" -->
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    
+    <!--#include virtual="/inc/__html-head.asp" -->
+  
+</head>
+
+<body id="body">
 
 <!--#include virtual="/inc/_header.asp" -->
 
@@ -22,8 +33,9 @@
         </div>
 
         <div class="footer">
+          Don't see your dream job?
+          <span class="subtext">We read all résumés, so apply today.</span>
           <a href="#" class="submit">Submit résumé</a>
-          <p>Don't see your dream job? <span class="subtext">We read all résumés, so apply today.</span></p>
         </div>
 
         <div id="show_all" class="hide">
@@ -45,3 +57,6 @@
 <!--#include virtual="/inc/_footer.asp" -->
 
 <!--#include virtual="/inc/__html-foot.asp" -->
+
+</body>
+</html>
