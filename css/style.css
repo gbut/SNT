@@ -1119,6 +1119,10 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
   width:                940px;
   padding:              10px;
   background:           #fff;
+  -webkit-border-radius:4px;
+  -moz-border-radius:   4px;
+  border-radius:        4px;
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 
 
@@ -1750,6 +1754,18 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 #risk section.caseStudies {
   background-color:     #eee;
 }
+
+#risk .sectionCont {
+  width:                940px;
+  padding:              10px;
+  background:           #fff;
+  -webkit-border-radius:4px;
+  -moz-border-radius:   4px;
+  border-radius:        4px;
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+
+
 
 /* / Risk */
 
