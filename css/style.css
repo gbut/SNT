@@ -1410,6 +1410,104 @@ aside section.pie_first-child.slvzr-last-child {
 /* + Breadcrumb */
 /* / Breadcrumb */
 
+/* / General Tabs */
+
+#main ul.tabs {
+  padding:              0;
+  background:           none;
+  border:               none;
+  position:             absolute;
+  top:                  -18px;
+  left:                 90px;
+}
+
+#main ul.tabs li {
+  margin:               0;
+  padding:              0;
+  background:           none;
+  border:               1px solid #e5e5e5;
+  top:                  0;
+  z-index:              1;
+     -moz-box-shadow:   3px 2px 3px rgba(151,151,151,0.7); 
+  -webkit-box-shadow:   3px 2px 3px rgba(151,151,151,0.7); 
+          box-shadow:   3px 2px 3px rgba(151,151,151,0.7);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+#main ul.tabs li.ui-tabs-selected {
+  z-index:              10;
+}
+
+#main ul.tabs li a {
+  color:                #858585;
+  font:                 600 123.1%/93% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
+  text-transform:       uppercase;
+  text-shadow:          0 0 2px rgba(255,255,255,0.3);
+  text-align:           center;
+  width:                365px;
+  padding:              10px;
+  border:               1px solid #c6c5c5;
+  background:           none;
+  float:                none;
+  display:              block;
+  position:             relative;
+  background:           #f5f5f5;
+  background:           -moz-linear-gradient(top, #f5f5f5 0%, #d1d0d0 100%);
+  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#d1d0d0));
+  -pie-background:      linear-gradient(#f5f5f5, #d1d0d0);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+#main ul.tabs li.ui-tabs-selected a {
+  color:                #3a3a3a;
+  border-color:         #b4b3b3;
+  background:           #d9d9d9;
+  background:           -moz-linear-gradient(top, #d9d9d9 0%, #bdbcbc 100%);
+  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d9d9d9), color-stop(100%,#bdbcbc));
+  -pie-background:      linear-gradient(#d9d9d9, #bdbcbc);
+}
+#main ul.tabs li.ui-state-focus a {
+  outline:              none;
+}
+
+#main ul.tabs li a .pointer {
+  height:               5px;
+  width:                3px;
+  display:              none;
+  position:             absolute;
+  left:                 50%;
+  bottom:               -10px;
+  -webkit-border-radius:0 0 24px 0;
+  -moz-border-radius:   0 0 24px 0;
+  border-radius:        0 0 24px 0;
+     -moz-box-shadow:   4px -4px 9px rgba(0,0,0,0.7); 
+  -webkit-box-shadow:   4px -4px 9px rgba(0,0,0,0.7); 
+          box-shadow:   4px -4px 9px rgba(0,0,0,0.7);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+#main ul.tabs li a .pointer .inner {
+  text-indent:          -9999px;
+  border-color:         #848383 transparent transparent transparent;
+  border-style:         solid;
+  border-width:         10px;
+  height:               0;
+  width:                0;
+  position:             relative;
+  left:                 -10px;
+  top:                  -5px;
+  display:              block;
+}
+#main ul.tabs li.ui-tabs-selected a .pointer {
+  display:              block;
+}
+
+#main .ui-tabs-panel {
+  color:                #686767;
+  font:                 108%/167% Helvetica,sans-serif;
+  padding:              0;
+}
+
+/* / General Tabs */
+
 /* + Toolbars */
 
 #job_search {
@@ -2575,110 +2673,6 @@ display:none;
   -moz-border-radius:   5px;
   border-radius:        5px;
   behavior: url(/js/libs/PIE/PIE.htc);
-}
-
-#legalTabs ul.tabs {
-  padding:              0;
-  background:           none;
-  border:               none;
-  position:             absolute;
-  top:                  -18px;
-  left:                 90px;
-  -webkit-border-radius:6px;
-  -moz-border-radius:   6px;
-  border-radius:        6px;
-     -moz-box-shadow:   3px 2px 3px rgba(151,151,151,0.7); 
-  -webkit-box-shadow:   3px 2px 3px rgba(151,151,151,0.7); 
-          box-shadow:   3px 2px 3px rgba(151,151,151,0.7);
-  behavior: url(/js/libs/PIE/PIE.htc);
-}
-
-#legalTabs ul.tabs li {
-  margin:               0;
-  padding:              0;
-  background:           none;
-  border:               none;
-  top:                  0;
-}
-
-#legalTabs ul.tabs li a {
-  color:                #909090;
-/*  font:                 116%/100% "GothamHTFBold",Tahoma,Arial,sans-serif;*/
-  font:                 700 123.1%/93% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
-  letter-spacing:       0.03em;
-  text-transform:       uppercase;
-  text-align:           center;
-  width:                365px;
-  padding:              10px;
-  border:               1px solid #b8b8b7;
-  background:           none;
-  float:                none;
-  display:              block;
-  position:             relative;
-  background:           #f7f6f6;
-  background:           -moz-linear-gradient(top, #f7f6f6 0%, #d0cfcf 100%);
-  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f6f6), color-stop(100%,#d0cfcf));
-  -pie-background:      linear-gradient(#f7f6f6, #d0cfcf);
-  behavior: url(/js/libs/PIE/PIE.htc);
-}
-#legalTabs ul.tabs li.ui-tabs-selected a {
-  color:                #e9e7e7;
-  border-color:         #969595;
-  background:           #a4a3a3;
-  background:           -moz-linear-gradient(top, #a4a3a3 0%, #848383 100%);
-  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a4a3a3), color-stop(100%,#848383));
-  -pie-background:      linear-gradient(#a4a3a3, #848383);
-}
-#legalTabs ul.tabs li:first-child a,
-#legalTabs ul.tabs li.pie_first-child a {
-  -webkit-border-radius:6px 0 0 6px;
-  -moz-border-radius:   6px 0 0 6px;
-  border-radius:        6px 0 0 6px;
-}
-#legalTabs ul.tabs li:last-child a {
-  -webkit-border-radius:0 6px 6px 0;
-  -moz-border-radius:   0 6px 6px 0;
-  border-radius:        0 6px 6px 0;
-}
-#legalTabs ul.tabs li.ui-state-focus a {
-  outline:              none;
-}
-
-#legalTabs ul.tabs li a .pointer {
-  height:               5px;
-  width:                3px;
-  display:              none;
-  position:             absolute;
-  left:                 50%;
-  bottom:               -10px;
-  -webkit-border-radius:0 0 24px 0;
-  -moz-border-radius:   0 0 24px 0;
-  border-radius:        0 0 24px 0;
-     -moz-box-shadow:   4px -4px 9px rgba(0,0,0,0.7); 
-  -webkit-box-shadow:   4px -4px 9px rgba(0,0,0,0.7); 
-          box-shadow:   4px -4px 9px rgba(0,0,0,0.7);
-  behavior: url(/js/libs/PIE/PIE.htc);
-}
-#legalTabs ul.tabs li a .pointer .inner {
-  text-indent:          -9999px;
-  border-color:         #848383 transparent transparent transparent;
-  border-style:         solid;
-  border-width:         10px;
-  height:               0;
-  width:                0;
-  position:             relative;
-  left:                 -10px;
-  top:                  -5px;
-  display:              block;
-}
-#legalTabs ul.tabs li.ui-tabs-selected a .pointer {
-  display:              block;
-}
-
-#legalTabs .ui-tabs-panel {
-  color:                #686767;
-  font:                 108%/167% Helvetica,sans-serif;
-  padding:              0;
 }
 
 /* / Legal */

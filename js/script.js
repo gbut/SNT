@@ -757,6 +757,7 @@ $(document).ready(function(){
   //  Sidebar rotation
   //===============================================
 
+  // TODO: uncomment create fn for production
   $('#quoteTabs').tabs({
     fx: { opacity:'toggle', duration:400 }// ,
     //     create: function(e, ui) {
@@ -769,6 +770,10 @@ $(document).ready(function(){
   //  Other tabs
   //===============================================
 
+  $('#riskTabs').tabs({
+    fx: { opacity:'toggle', duration:400 }
+  });
+  
   $('#legalTabs').tabs({
     fx: { opacity:'toggle', duration:400 }
   });
