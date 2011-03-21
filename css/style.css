@@ -2413,7 +2413,7 @@ display:none;
 #contact #offices h5 {
   font-size:            85%;
   text-transform:       uppercase;
-  width:                120px;
+  width:                132px;
   margin:               5px auto;
 }
 
@@ -2421,14 +2421,14 @@ display:none;
   font-size:            85%;
   font-weight:          700;
   line-height:          130%;
-  width:                120px;
+  width:                132px;
   margin:               0 auto;
   padding:              5px 0 ;
 }
 
 #contact #offices .highlight,
 #contact #clocks .highlight {
-  color:               #0f0;
+  color:#0f0;
 }
 
 #contact #clocks {
