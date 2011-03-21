@@ -138,9 +138,9 @@
 -->
 
     <div class="office">
-      <div class="address">
-        <h5>Corporate<br />
-        Headquarters</h5>
+      <h5>Corporate<br />
+      Headquarters</h5>
+      <div class="address" rel="tz01">
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
@@ -148,13 +148,14 @@
       </div>
     </div>
     <div class="office">
-      <div class="address">
-        <h5>Midwest U.S.</h5>
+      <h5>Midwest U.S.</h5>
+      <div class="address" rel="tz02">
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
-        Fax: 1.510.505.2501<br />
-        <br />
+        Fax: 1.510.505.2501
+      </div>
+      <div class="address" rel="tz02">
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
@@ -162,8 +163,8 @@
       </div>
     </div>
     <div class="office">
-      <div class="address">
-        <h5>East Coast U.S.</h5>
+    <h5>East Coast U.S.</h5>
+      <div class="address" rel="tz03">
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
@@ -171,8 +172,8 @@
       </div>
     </div>
     <div class="office">
-      <div class="address">
-        <h5>Bermuda</h5>
+      <h5>Bermuda</h5>
+      <div class="address" rel="tz04">
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
@@ -180,21 +181,23 @@
       </div>
     </div>
     <div class="office">
-      <div class="address">
-        <h5>European<br />
-        Headquarters</h5>
+      <h5>European<br />
+      Headquarters</h5>
+      <div class="address" rel="tz05">
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
-        Fax: 1.510.505.2501<br />
-        <br />
-        <h5>France</h5>
+        Fax: 1.510.505.2501
+      </div>
+      <h5>France</h5>
+      <div class="address" rel="tz06">
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
-        Fax: 1.510.505.2501<br />
-        <br />
-        <h5>Switzerland</h5>
+        Fax: 1.510.505.2501
+      </div>
+      <h5>Switzerland</h5>
+      <div class="address" rel="tz06">
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
@@ -202,20 +205,22 @@
       </div>
     </div>
     <div class="office">
-      <div class="address">
-        <h5>RMSI</h5>
+      <h5>RMSI</h5>
+      <div class="address" rel="tz07">
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
-        Fax: 1.510.505.2501<br />
-        <br />
-        <h5>China</h5>
+        Fax: 1.510.505.2501
+      </div>
+      <h5>China</h5>
+      <div class="address" rel="tz08">
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
-        Fax: 1.510.505.2501<br />
-        <br />
-        <h5>Japan</h5>
+        Fax: 1.510.505.2501
+      </div>
+      <h5>Japan</h5>
+      <div class="address" rel="tz09">
         7575 Gateway Blvd.<br />
         Newark, CA 94560<br />
         Tel: 1.510.505.2500<br />
@@ -224,32 +229,43 @@
     </div>
     
     <div id="clocks">
-      <div class="clock">
-        <canvas id="clock01" class="CoolClock:RMSskin:30:noSeconds:-7"></canvas>
+      <div id="tz01" class="clock">
+        <canvas id="clock01" class="CoolClock:RMSskin:30:noSeconds:-7.0"></canvas>
+        Newark, CA
       </div>
-      <div class="clock">
-        <canvas id="clock02" class="CoolClock:RMSskin:30:noSeconds:-5"></canvas>
+      <div id="tz02" class="clock">
+        <canvas id="clock02" class="CoolClock:RMSskin:30:noSeconds:-5.0"></canvas>
+        Peoria, IL<br />
+        Bloomington, MN
       </div>
-      <div class="clock">
-        <canvas id="clock03" class="CoolClock:RMSskin:30:noSeconds:-4"></canvas>
+      <div id="tz03" class="clock">
+        <canvas id="clock03" class="CoolClock:RMSskin:30:noSeconds:-4.0"></canvas>
+        Hackensak, NJ
       </div>
-      <div class="clock">
-        <canvas id="clock04" class="CoolClock:RMSskin:30:noSeconds:-3"></canvas>
+      <div id="tz04" class="clock">
+        <canvas id="clock04" class="CoolClock:RMSskin:30:noSeconds:-3.0"></canvas>
+        Bermuda
       </div>
-      <div class="clock">
-        <canvas id="clock05" class="CoolClock:RMSskin:30:noSeconds:0"></canvas>
+      <div id="tz05" class="clock">
+        <canvas id="clock05" class="CoolClock:RMSskin:30:noSeconds:+0.0"></canvas>
+        London
       </div>
-      <div class="clock">
-        <canvas id="clock06" class="CoolClock:RMSskin:30:noSeconds:1"></canvas>
+      <div id="tz06" class="clock">
+        <canvas id="clock06" class="CoolClock:RMSskin:30:noSeconds:+1.0"></canvas>
+        Paris<br />
+        Zurich
       </div>
-      <div class="clock">
-        <canvas id="clock07" class="CoolClock:RMSskin:30:noSeconds:5.5"></canvas>
+      <div id="tz07" class="clock">
+        <canvas id="clock07" class="CoolClock:RMSskin:30:noSeconds:+5.5"></canvas>
+        Noida, India
       </div>
-      <div class="clock">
-        <canvas id="clock08" class="CoolClock:RMSskin:30:noSeconds:8"></canvas>
+      <div id="tz08" class="clock">
+        <canvas id="clock08" class="CoolClock:RMSskin:30:noSeconds:+8.0"></canvas>
+        Beijing
       </div>
-      <div class="clock">
-        <canvas id="clock09" class="CoolClock:RMSskin:30:noSeconds:9"></canvas>
+      <div id="tz09" class="clock">
+        <canvas id="clock09" class="CoolClock:RMSskin:30:noSeconds:+9.0"></canvas>
+        Tokyo
       </div>
     </div>
         

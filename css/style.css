@@ -2406,35 +2406,46 @@ display:none;
 #contact .office {
 /*  width:                160px; */
   width:                152px;  /* temp because map is only 912px wide, not 960 as we'd like it */
-  margin-top:           34px;
+  margin-top:           10px;
   float:                left;
 }
 
-#contact #offices .office .address {
-  font-size:85%;
-  line-height:130%;
+#contact #offices h5 {
+  font-size:            85%;
+  text-transform:       uppercase;
   width:                120px;
-  margin:               0 auto;
+  margin:               5px auto;
 }
 
-#contact #offices h5 {
-  text-transform:       uppercase;
-  margin-bottom:4px;
+#contact #offices .address {
+  font-size:            85%;
+  font-weight:          700;
+  line-height:          130%;
+  width:                120px;
+  margin:               0 auto;
+  padding:              5px 0 ;
+}
+
+#contact #offices .highlight,
+#contact #clocks .highlight {
+  color:               #0f0;
 }
 
 #contact #clocks {
   position:             absolute;
-  bottom:               10px;
+  bottom:               4px;
   left:                 6px;
 }
 
 #contact .clock {
+  font-size:            85%;
+  text-align:           center;
   width:                100px;
   float:                left; 
 }
 
 #contact canvas {
-  margin:               20px auto 0;
+  margin:               20px auto 6px;
   display:              block;
 }
 

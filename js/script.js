@@ -794,6 +794,26 @@ $(document).ready(function(){
     $.scrollTo('0');
   });
   
+  //===============================================
+  //  Contact page: offices
+  //===============================================
+
+  // could use some cleanup -GB
+  $('.address').mouseenter(function() {
+    $(this).toggleClass('highlight');
+    $('#'+$(this).attr('rel')).toggleClass('highlight');
+    offset = $('#'+$(this).attr('rel')).find('canvas').attr('class').substr(-4);
+    $('#'+$(this).attr('rel')).find('canvas').removeClass('CoolClock:RMSskin:30:noSeconds:'+offset);
+    $('#'+$(this).attr('rel')).find('canvas').addClass('CoolClock:RMSHskin:30::'+offset);
+    CoolClock.findAndCreateClocks();
+  }).mouseleave(function(){
+    $(this).toggleClass('highlight');
+    $('#'+$(this).attr('rel')).toggleClass('highlight');
+    $('#'+$(this).attr('rel')).find('canvas').removeClass('CoolClock:RMSHskin:30::'+offset);
+    $('#'+$(this).attr('rel')).find('canvas').addClass('CoolClock:RMSskin:30:noSeconds:'+offset);
+    CoolClock.findAndCreateClocks();
+  });
+
 });
 
 
