@@ -1,11 +1,11 @@
 <!-- + risk -->
 <div id="risk">
 
-  <div id="legalTabs">
+  <div id="riskTabs">
     <ul class="tabs">
-      <li><a href="#catastrophe">Natural Catastrophe<span class="pointer"><span class="inner">*</span></span></a></li>
-      <li><a href="#terrorism">Terrorism<span class="pointer"><span class="inner">*</span></span></a></li>
-      <li><a href="#longevity">Longevity &amp; Mortality<span class="pointer"><span class="inner">*</span></span></a></li>
+      <li><a href="#catastrophe">Natural Catastrophe<span class="pointer"><span class="outer"><span class="inner">*</span></span></span></a></li>
+      <li><a href="#terrorism">Terrorism<span class="pointer"><span class="outer"><span class="inner">*</span></span></span></a></li>
+      <li><a href="#longevity">Longevity &amp; Mortality<span class="pointer"><span class="outer"><span class="inner">*</span></span></span></a></li>
     </ul>
     
     <div id="catastrophe">

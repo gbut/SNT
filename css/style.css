@@ -1419,13 +1419,16 @@ aside section.pie_first-child.slvzr-last-child {
   position:             absolute;
   top:                  -18px;
   left:                 90px;
+  -webkit-border-radius:0;
+  -moz-border-radius:   0;
+  border-radius:        0;
 }
 
 #main ul.tabs li {
   margin:               0;
-  padding:              0;
-  background:           none;
-  border:               1px solid #e5e5e5;
+  padding:              1px;
+  background:           #e5e5e5;
+  border:               none;
   top:                  0;
   z-index:              1;
      -moz-box-shadow:   3px 2px 3px rgba(151,151,151,0.7); 
@@ -1439,13 +1442,13 @@ aside section.pie_first-child.slvzr-last-child {
 
 #main ul.tabs li a {
   color:                #858585;
-  font:                 600 123.1%/93% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  font:                 600 116%/93% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.03em;
   text-transform:       uppercase;
-  text-shadow:          0 0 2px rgba(255,255,255,0.3);
+  text-shadow:          0 1px 3px rgba(255,255,255,0.9);
   text-align:           center;
   width:                365px;
-  padding:              10px;
+  padding:              12px 10px 7px;
   border:               1px solid #c6c5c5;
   background:           none;
   float:                none;
@@ -1470,30 +1473,42 @@ aside section.pie_first-child.slvzr-last-child {
 }
 
 #main ul.tabs li a .pointer {
-  height:               5px;
-  width:                3px;
-  display:              none;
+  height:               8px;
+  width:                5px;
   position:             absolute;
   left:                 50%;
-  bottom:               -10px;
-  -webkit-border-radius:0 0 24px 0;
-  -moz-border-radius:   0 0 24px 0;
-  border-radius:        0 0 24px 0;
-     -moz-box-shadow:   4px -4px 9px rgba(0,0,0,0.7); 
-  -webkit-box-shadow:   4px -4px 9px rgba(0,0,0,0.7); 
-          box-shadow:   4px -4px 9px rgba(0,0,0,0.7);
+  bottom:               -8px;
+  display:              none;
+  clip:                 rect(0px 14px 16px -10px);
+  -webkit-border-radius:0 0 5px 0;
+  -moz-border-radius:   0 0 5px 0;
+  border-radius:        0 0 5px 0;
+     -moz-box-shadow:   1px 1px 11px rgba(0,0,0,0.9); 
+  -webkit-box-shadow:   1px 1px 11px rgba(0,0,0,0.9); 
+          box-shadow:   1px 1px 11px rgba(0,0,0,0.9);
   behavior: url(/js/libs/PIE/PIE.htc);
 }
-#main ul.tabs li a .pointer .inner {
-  text-indent:          -9999px;
-  border-color:         #848383 transparent transparent transparent;
+#main ul.tabs li a .pointer .outer {
+  border-color:         #e5e5e5 transparent transparent transparent;
   border-style:         solid;
   border-width:         10px;
   height:               0;
   width:                0;
   position:             relative;
   left:                 -10px;
-  top:                  -5px;
+  top:                  2px;
+  display:              block;
+}
+#main ul.tabs li a .pointer .inner {
+  text-indent:          -9999px;
+  border-color:         #bdbcbc transparent transparent transparent;
+  border-style:         solid;
+  border-width:         10px;
+  height:               0;
+  width:                0;
+  position:             relative;
+  left:                 -10px;
+  top:                  -12px;
   display:              block;
 }
 #main ul.tabs li.ui-tabs-selected a .pointer {
@@ -1843,6 +1858,29 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 
 #risk {
   padding-bottom:       43px;
+}
+
+#riskTabs {
+  font-size:            100%;
+  padding:              31px 0 0;
+  background:           none;
+  border:               none;
+  position:             relative;
+  -webkit-border-radius:0;
+  -moz-border-radius:   0;
+  border-radius:        0;
+}
+
+#riskTabs ul.tabs {
+  position:             relative;
+  left:                 24px;
+}
+#riskTabs ul.tabs li {
+  margin-right:         1px;
+  display:              inline;
+}
+#riskTabs ul.tabs li a {
+  width:                280px;
 }
 
 #risk .sectionHd {
