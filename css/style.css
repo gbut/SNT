@@ -111,7 +111,7 @@ body, select, input, textarea {
 h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
 /* always force a scrollbar in non-IE */ 
-html { overflow-y: scroll; }
+/* html { overflow-y: scroll; } *//* breaks html iniframe in Safari */
 
  
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
@@ -1706,7 +1706,7 @@ aside #photo2 img:last-child {
 }
 
 aside .benefit {
-  font:                 bold 230%/90% Arial, Helvetica, sans-serif;
+  font:                 bold 195%/95% Arial, Helvetica, sans-serif;
   color:                #849db1;
   margin-bottom:        20px;
 }
@@ -1747,7 +1747,7 @@ aside .share .label {
   font:                 600 123.1%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.03em;
   color:                #5c5c5c;
-  padding-bottom:       10px;
+  padding-top:          10px;
 }
 aside .share a.facebook,
 aside .share a.twitter,
@@ -2359,6 +2359,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 #job_listings article h4 a {
   color:                #13587e;
   text-decoration:      none;
+  float:                left;
 }
 
 #job_listings article h4 .region {
@@ -2379,6 +2380,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   -moz-border-radius:   4px 6px;
   border-radius:        4px 6px;
   behavior: url(/js/libs/PIE/PIE.htc);
+}
+
+#job_listings .footer .subtextOuter {
+  float:                left;
 }
 
 #job_listings .footer .subtext {
@@ -2736,7 +2741,7 @@ body#jobvite {
 }
 
 body#jobvite #job_apply {
-  height:               880px;
+  height:               886px;
   width:                674px;
   overflow:             hidden;
 }

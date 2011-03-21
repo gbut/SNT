@@ -33,8 +33,10 @@
         </div>
 
         <div class="footer">
-          Don't see your dream job?
-          <span class="subtext">We read all résumés, so apply today.</span>
+          <span class="subtextOuter">
+            Don't see your dream job?
+            <span class="subtext">We read all résumés, so apply today.</span>
+          </span>
           <a href="#" class="submit">Submit résumé</a>
         </div>
 
