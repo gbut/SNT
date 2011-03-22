@@ -76,14 +76,45 @@
             
           </div>
         </section>
+
+        <section class="caseStudiesNav">
+          <ul class="clearfix">
+            <li><a href="#">
+              <span class="imgCont vid1">Video #1</span>
+              <span><em>Safe Enough To Save</em><br />Chile Earthquake</span>
+            </a></li>
+            <li><a href="#">
+              <span class="imgCont vid2">Video #2</span>
+              <span><em>Super Catastrophe</em><br />Hurricane Katrina</span>
+            </a></li>
+            <li><a href="#">
+              <span class="imgCont vid3">Video #3</span>
+              <span><em>Multi-Billion Mystery</em><br />Hurricane Ike</span>
+            </a></li>
+          </ul>
+        </section>
       </div>
 
     </div>
     
     <div id="terrorism">
+      <div class="sectionHd">
+        <h3><em>A new, systematic approach to understanding terrorism</em></h3>
+      </div>
+      
+      <div class="sectionCont">
+        
+      </div>
     </div>
     
     <div id="longevity">
+      <div class="sectionHd">
+        <h3><em>Longevity &amp; Mortality</em></h3>
+      </div>
+      
+      <div class="sectionCont">
+        
+      </div>
     </div>
 
   </div>
