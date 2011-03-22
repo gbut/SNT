@@ -1257,6 +1257,16 @@ aside section.pie_first-child.slvzr-last-child {
   height:               255px;
   width:                960px;
 }
+#t03 #banner h2 {
+  font:800 250%/150% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  color:                #fff;
+  text-transform:       uppercase;
+  position:             absolute;
+  padding:              70px 135px;
+}
+#t03 #banner h3 em {
+ color:                 #c3151c;
+}
 
 #t04 #banner {
   height:               177px;
