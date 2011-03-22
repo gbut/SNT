@@ -111,8 +111,10 @@ body, select, input, textarea {
 h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
 /* always force a scrollbar in non-IE */ 
-/* html { overflow-y: scroll; } *//* breaks html iniframe in Safari */
-
+html { overflow-y: scroll; } /* breaks html iniframe in Safari; override below */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+  html { overflow-y: auto; }
+}
  
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
@@ -2702,6 +2704,20 @@ display:none;
 /* / Form pages: Job Apply & Contact */
 
 /* + Share */
+
+.addthis_toolbox {
+  position:absolute;
+  top:63px;
+}
+.addthis_toolbox a {
+  width:214px;
+  height:37px;
+  text-indent:-9999px;
+  display:block;
+}
+.addthis_toolbox a span {
+  background:none;
+}
 
 /* / Share */
 

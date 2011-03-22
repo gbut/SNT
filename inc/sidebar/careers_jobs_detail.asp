@@ -1,13 +1,22 @@
 <!-- + sidebar -->
 <aside>
   <section>
-  <!--
-    <iframe src="/inc/temp/apply.htm" width="214" height="47" scrolling="no">
-      [iframe support required]
-    </iframe>
-  -->
     <a href="/careers/jobs/apply.asp" class="btn btnLg btnApply">Apply for this Job</a>
     <a href="#" class="btn btnLg">Share with a Friend</a>
+    
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style ">
+      <a href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4d8805bd5eaa0314" class="addthis_button_compact">Share</a>
+    </div>
+    <script type="text/javascript">
+      var addthis_config = {
+        "data_track_click  back": true,
+        ui_click:                 false,
+        services_compact:         'email, delicious, linkedin, digg, facebook'
+      };
+    </script>
+    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4d8805bd5eaa0314"></script>
+    <!-- AddThis Button END -->
 
     <div class="share clearfix">
       <div class="label">
