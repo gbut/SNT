@@ -111,7 +111,7 @@ body, select, input, textarea {
 h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
 /* always force a scrollbar in non-IE */ 
-html { overflow-y: scroll; } /* breaks html iniframe in Safari; override below */
+html { overflow-y: scroll; } /* breaks html in iframe in Safari; override below */
 @media screen and (-webkit-min-device-pixel-ratio:0){
   html { overflow-y: auto; }
 }
