@@ -8,7 +8,10 @@
         <img src="/img/hero_careers_home_rt.png" alt="We Were Always This Cool" />
       </div>
       <div id="vidOverlay">
+      <!--
         <iframe src="http://www.maddash.net/approval/rms/career.htm" name="movie" width="640" height="360" scrolling="No" frameborder="0" id="movie">Video</iframe>
+      -->
+        <iframe src="http://player.vimeo.com/video/20233712?title=0&amp;byline=0&amp;portrait=0" width="640" height="352" scrolling="No" frameborder="0" id="movie">Video</iframe>
       </div>
     </div>
     <div id="presenterNav">
@@ -63,7 +66,7 @@
         <h4>Lorem Magna</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
-      <div class="col3"></h4>
+      <div class="col3">
         <div class="icon iconCup">[Cup]</div>
         <h4>Lorem Magna</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -80,7 +83,7 @@
         <h4>Lorem Magna</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
-      <div class="col3"></h4>
+      <div class="col3">
         <div class="icon iconChat">[Chat]</div>
         <h4>Lorem Magna</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -97,7 +100,7 @@
           Technology <em>&raquo;</em>
         </a>
       </div>
-      <div class="col3"></h4>
+      <div class="col3">
         <a href="#" title="Learn more" class="link">
           Sales &amp; Marketing <em>&raquo;</em>
         </a>
