@@ -105,7 +105,7 @@ $(document).ready(function(){
 
     var defaults = {
       fadeDur:    300,
-      animDur:        750,
+      animDur:    750,
       easing:     'easeOutQuint',
       popupShim:  15 // accounts for left padding of containing section
     };
@@ -147,8 +147,8 @@ $(document).ready(function(){
       this.pointerLeft        = parseInt(this.pointer.css('left'));
       
       // restore popup position
-//      this.popup.css({bottom:-125}).fadeOut(0);
-      this.popup.css({bottom:-125});
+      this.popup.css({bottom:-125}).fadeTo(0,0);
+//      this.popup.css({bottom:-125});
       
       // pull in JSON data
       $.ajax({
