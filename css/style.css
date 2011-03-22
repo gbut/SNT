@@ -1920,6 +1920,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 #risk .sectionHd h3 {
+  margin-bottom:        18px;
+}
+#risk #catastrophe .sectionHd h3 {
   margin-bottom:        7px;
 }
 
@@ -1946,11 +1949,15 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 #risk section {
-  margin-bottom:        15px;
+  margin-bottom:        10px;
+  background-color:     #eee;
+}
+#risk section.iWorldMap {
+  margin-bottom:        14px;
   background-color:     #f3f3f3;
 }
-#risk section.caseStudies {
-  background-color:     #eee;
+#risk section:last-child {
+  margin-bottom:        0;
 }
 
 #risk section.caseStudies .lt {
@@ -1980,6 +1987,65 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   -webkit-border-radius:0;
   -moz-border-radius:   0;
   border-radius:        0;
+}
+
+#risk section.caseStudiesNav ul {
+  margin:               0;
+  padding:              16px 0;
+}
+
+#risk section.caseStudiesNav ul li {
+  padding:              0 0 0 22px;
+  display:              block;
+  float:                left;
+}
+
+#risk section.caseStudiesNav ul li a {
+  color:                #000;
+  font-size:            116%;
+  line-height:          108%;
+  text-align:           left;
+  width:                288px;
+  height:               56px;
+  display:              block;
+  overflow:             hidden;
+}
+/*
+#risk section.caseStudiesNav ul li a:hover,
+#risk section.caseStudiesNav ul li a:active {
+  color:                #525252;
+}
+*/
+
+#risk section.caseStudiesNav ul li a em {
+  font-size:            112.9%;
+}
+
+#risk section.caseStudiesNav ul li a span {
+  position:             relative;
+  top:                  11px;
+}
+
+#risk section.caseStudiesNav ul li a .imgCont {
+  text-indent:          -9999px;
+  width:                89px;
+  height:               52px;
+  margin-right:         6px;
+  background:           url(../img/vid_nav_careers_home.jpg) 0 0 no-repeat;
+  border:               2px solid #898989;
+  float:                left;
+  display:              inline;
+  top:                  0;
+  -webkit-border-radius:6px;
+  -moz-border-radius:   6px;
+  border-radius:        6px;
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+#risk section.caseStudiesNav ul li a .imgCont.vid2 {
+  background-position:  0 -37px;
+}
+#risk section.caseStudiesNav ul li a .imgCont.vid3 {
+  background-position:  0 -74px;
 }
 
 
