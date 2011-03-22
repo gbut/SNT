@@ -648,6 +648,7 @@ header h1 a {
   height:               40px;
   display:              block;
   background:           transparent url(../img/logo.png) top left no-repeat;
+  overflow:             hidden;
 }
 
 header p {
@@ -1427,9 +1428,11 @@ aside section.pie_first-child.slvzr-last-child {
 #main ul.tabs li {
   margin:               0;
   padding:              1px;
+  list-style:           none;
   background:           #e5e5e5;
   border:               none;
   top:                  0;
+  float:                left;
   z-index:              1;
      -moz-box-shadow:   3px 2px 3px rgba(151,151,151,0.7); 
   -webkit-box-shadow:   3px 2px 3px rgba(151,151,151,0.7); 
@@ -1751,7 +1754,8 @@ aside .share .label {
 }
 aside .share a.facebook,
 aside .share a.twitter,
-aside .ui-tabs ul.ui-tabs-nav li a {
+aside .ui-tabs ul.ui-tabs-nav li a,
+#risk #vidCont.ui-tabs ul.ui-tabs-nav li a {
   width:                32px;
   height:               32px;
   display:              block;
@@ -1789,27 +1793,33 @@ aside .callout em {
   color:                #c3151c;
 }
 
-/* jQuery UI overrides */
-aside .ui-widget {
+/* jQueryUI Tabs overrides */
+aside .ui-widget,
+#risk #vidCont.ui-widget {
   font-size:            100%;
 }
-aside .ui-widget-content {
+aside .ui-widget-content,
+#risk #vidCont.ui-widget-content {
   height:               535px;
   background:           none;
   border:               none;
 }
-aside .ui-widget-header {
+aside .ui-widget-header,
+#risk #vidCont .ui-widget-header {
   color:                #333;
   background:           none;
   border:               none;
 }
-aside .ui-tabs {
+aside .ui-tabs,
+#risk #vidCont.ui-tabs {
   padding:              0;
 }
-aside .ui-tabs .ui-tabs-panel {
+aside .ui-tabs .ui-tabs-panel,
+#risk #vidCont.ui-tabs .ui-tabs-panel {
   padding:              0 0 13px;
 }
-aside .ui-tabs ul.ui-tabs-nav {
+aside .ui-tabs ul.ui-tabs-nav,
+#risk #vidCont.ui-tabs ul.ui-tabs-nav {
   text-align:           center;
   width:                100%;
   margin:               0;
@@ -1820,7 +1830,8 @@ aside .ui-tabs ul.ui-tabs-nav {
   left:                 0;
   bottom:               -2px;
 }
-aside .ui-tabs ul.ui-tabs-nav li {
+aside .ui-tabs ul.ui-tabs-nav li,
+#risk #vidCont.ui-tabs ul.ui-tabs-nav li {
   margin:               0;
   background:           none;
   border:               none;
@@ -1831,10 +1842,14 @@ aside .ui-tabs ul.ui-tabs-nav li {
 }
 aside .ui-tabs ul.ui-tabs-nav li.ui-tabs-selected,
 aside .ui-tabs ul.ui-tabs-nav li.ui-state-active,
-aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover {
+aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover,
+#risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-tabs-selected,
+#risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-active,
+#risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-hover {
   padding:              0;
 }
-aside .ui-tabs ul.ui-tabs-nav li a {
+aside .ui-tabs ul.ui-tabs-nav li a,
+#risk #vidCont.ui-tabs ul.ui-tabs-nav li a {
   text-indent:          -9999px;
   height:               10px;
   width:                9px;
@@ -1848,7 +1863,10 @@ aside .ui-tabs ul.ui-tabs-nav li a {
 }
 aside .ui-tabs ul.ui-tabs-nav li.ui-tabs-selected a,
 aside .ui-tabs ul.ui-tabs-nav li.ui-state-active a,
-aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
+aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
+#risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-tabs-selected a,
+#risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-active a,
+#risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   background-position:  0 -74px;
 }
 
@@ -1872,6 +1890,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 }
 
 #riskTabs ul.tabs {
+  margin-bottom:        22px;
   position:             relative;
   left:                 24px;
 }
@@ -1890,7 +1909,14 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   padding:              0 27px;
 }
 
+#risk .sectionHd h3 {
+  margin-bottom:        7px;
+}
+
 #risk .sectionHd p {
+  font-size:            107.1%;
+  line-height:          146%;
+  margin-bottom:        26px;
 	-moz-column-count:    2; 
 	-webkit-column-count: 2; 
 	column-count:         2; 
@@ -1915,6 +1941,35 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
 }
 #risk section.caseStudies {
   background-color:     #eee;
+}
+
+#risk section.caseStudies .lt {
+  width:                660px;
+  padding-bottom:       10px;
+  border-right:         10px solid #fff;
+  float:                left;
+  position:             relative;
+  top:                  0;
+  left:                 10px;
+}
+#risk section.caseStudies .rt {
+  width:                260px;
+  padding-bottom:       10px;
+  border-left:          10px solid #fff;
+  float:                left;
+}
+
+#risk #vidCont.ui-tabs {
+  height:               360px;
+  padding-bottom:       20px;
+  position:             relative;
+}
+
+#risk #vidCont.ui-tabs .ui-tabs-panel {
+  padding:              0;
+  -webkit-border-radius:0;
+  -moz-border-radius:   0;
+  border-radius:        0;
 }
 
 

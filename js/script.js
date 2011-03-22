@@ -163,6 +163,26 @@ $(document).ready(function(){
         { name:"Betsy Ross", position:"Seamstress", location:"Virginia", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" }
       ];
 
+      // pull in XML data
+      $.ajax({
+        url: "/careers/get_employee_profiles.js",
+        context: this,
+        dataType: 'json',
+        success: function(data){
+//           alert(data);
+//           this.bios = $.parseXML('<?xml version="1.0"?><employees>something</employees>');
+// var xml = '<rss version="2.0"><channel><title>RSS Title</title></channel></rss>',
+//     xmlDoc = $.parseXML( xml ),
+//     $xml = $( xmlDoc ),
+//     $title = $xml.find( 'title' );          
+          //var xmlDoc = $.parseXML(data);
+          //$xml = $(data);
+          inspect($.parseJSON(data[0]));
+//          this.bios = $.parseXML($(data));
+        }
+      });
+      return;
+
 /*
       // pull in XML data
       $.ajax({
@@ -777,6 +797,8 @@ $(document).ready(function(){
   $('#legalTabs').tabs({
     fx: { opacity:'toggle', duration:400 }
   });
+  
+  $('#vidCont').tabs();
   
   //===============================================
   //  Form field behaviors
