@@ -149,61 +149,16 @@ $(document).ready(function(){
       // restore popup position
       this.popup.css({opacity:0, bottom:-125});
       
-      // FAKE DATA - figure out how we're actually going to pull this in
-      this.bios               = [
-        { name:"Jeff Daniels", position:"Actor", location:"Los Angeles", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
-        { name:"Fred Mertz", position:"Neighbor", location:"Havana", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
-        { name:"Jane Li", position:"Engineer", location:"San Francisco", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
-        { name:"Seth MacFarlane", position:"Animator", location:"Providence", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
-        { name:"Debbie Reynolds", position:"Performer", location:"Los Angeles", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
-        { name:"Hunter S. Thompson", position:"Gonzo Journalist", location:"Las Vegas", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
-        { name:"Dave Brubeck", position:"Pianist", location:"Poland", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
-        { name:"Nancy Reagan", position:"First Lady", location:"Santa Barbara", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
-        { name:"John Adams", position:"Founding Father", location:"Braintree", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" },
-        { name:"Betsy Ross", position:"Seamstress", location:"Virginia", imgsrc:"/img/TEMP_photo_jli_alt.jpg", bio:"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>" }
-      ];
-
-      // pull in XML data
+      // pull in JSON data
       $.ajax({
-        url: "/careers/get_employee_profiles.js",
+        url: "/careers/get_employee_profiles.txt",
         context: this,
-        dataType: 'json',
+        //dataType: 'json',
         success: function(data){
-//           alert(data);
-//           this.bios = $.parseXML('<?xml version="1.0"?><employees>something</employees>');
-// var xml = '<rss version="2.0"><channel><title>RSS Title</title></channel></rss>',
-//     xmlDoc = $.parseXML( xml ),
-//     $xml = $( xmlDoc ),
-//     $title = $xml.find( 'title' );          
-          //var xmlDoc = $.parseXML(data);
-          //$xml = $(data);
-          inspect($.parseJSON(data[0]));
-//          this.bios = $.parseXML($(data));
+          //inspect($.parseJSON(data)[0]['biography']);
+          this.bios = $.parseJSON(data);
         }
       });
-      return;
-
-/*
-      // pull in XML data
-      $.ajax({
-        url: "/careers/empl_profiles.xml",
-        context: this,
-        dataType: 'xml',
-        success: function(data){
-//           alert(data);
-//           this.bios = $.parseXML('<?xml version="1.0"?><employees>something</employees>');
-// var xml = '<rss version="2.0"><channel><title>RSS Title</title></channel></rss>',
-//     xmlDoc = $.parseXML( xml ),
-//     $xml = $( xmlDoc ),
-//     $title = $xml.find( 'title' );          
-          //var xmlDoc = $.parseXML(data);
-          //$xml = $(data);
-          // inspect($(data).find('employee'));
-//          this.bios = $.parseXML($(data));
-        }
-      });
-      return;
-*/
 
       // attach behaviors
       this.people.children().each(function(i){
@@ -340,11 +295,11 @@ $(document).ready(function(){
        */
       loadInfo: function(person) {
         var info = this.bios[person];
-        this.bioName.html(info.name);
+        this.bioName.html(info.fullname);
         this.bioPosition.html(info.position);
         this.bioLocation.html(info.location);
-        this.bioImg.attr({ src: info.imgsrc, alt: info.name });
-        this.bioContent.html(info.bio);
+        this.bioImg.attr({ src: info.img_src, alt: info.fullname });
+        this.bioContent.html(info.biography['#cdata-section']);
       }
 
     });
