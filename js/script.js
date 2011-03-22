@@ -147,7 +147,8 @@ $(document).ready(function(){
       this.pointerLeft        = parseInt(this.pointer.css('left'));
       
       // restore popup position
-      this.popup.css({opacity:0, bottom:-125});
+//      this.popup.css({bottom:-125}).fadeOut(0);
+      this.popup.css({bottom:-125});
       
       // pull in JSON data
       $.ajax({

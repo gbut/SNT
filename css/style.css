@@ -2288,10 +2288,6 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   outline:              none;
 /*
   background:           url(../img/TEMP_photo_team_silhouette.jpg) 0 0 no-repeat;
-  -moz-opacity:         0.6;
-  -ms-filter:           "alpha(opacity=60)";
-  filter:               alpha(opacity=60);
-  opacity:              0.6;
 */
 }
 #careers #team_panel ul li.p1 a,
@@ -2317,6 +2313,14 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #careers #team_panel ul li.p10 a {
   width:                185px;
 /*  background-position:  -719px 0;*/
+}
+
+.ie7 #careers #team_panel ul li a {
+  background:           red;
+  -moz-opacity:         0;
+  -ms-filter:           "alpha(opacity=0)";
+  filter:               alpha(opacity=0);
+  opacity:              0;
 }
 
 #careers #team_slider {
@@ -2355,7 +2359,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   background-color:     #e8e8e8;
   border:               2px solid #bababa;
   position:             absolute;
-  bottom:               10000px; /* move to -40px in js after taking measurements */
+  bottom:               10000px; /* move to proper location in js after taking measurements */
   left:                 167px;
   z-index:              400;
   -webkit-border-radius:7px;
