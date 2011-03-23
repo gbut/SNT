@@ -4,7 +4,7 @@
 */
 CoolClock.config.skins = {
 
-	RMSskin: {
+	default: {
 		outerBorder: { lineWidth: 1, radius:95, color: "white", alpha: 1 },
 		smallIndicator: { lineWidth: 2, startAt: 89, endAt: 93, color: "white", alpha: 1 },
 		largeIndicator: { lineWidth: 4, startAt: 80, endAt: 93, color: "white", alpha: 1 },
@@ -14,7 +14,7 @@ CoolClock.config.skins = {
 		secondDecoration: { lineWidth: 1, startAt: 70, radius: 8, fillColor: "red", color: "red", alpha: 1 }
 	},
 
-	RMSHskin: {
+	highlight: {
 		outerBorder: { lineWidth: 1, radius:95, color: "0f0", alpha: 1 },
 		smallIndicator: { lineWidth: 2, startAt: 89, endAt: 93, color: "0f0", alpha: 1 },
 		largeIndicator: { lineWidth: 4, startAt: 80, endAt: 93, color: "0f0", alpha: 1 },
