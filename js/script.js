@@ -849,21 +849,24 @@ $(document).ready(function(){
   //  Contact page: offices
   //===============================================
 
-  // could use some cleanup -GB
-  $('.address').mouseenter(function() {
-    $(this).toggleClass('highlight');
-    $(this).prevAll('h5:first').toggleClass('highlight');
-    $('#'+$(this).attr('rel')).toggleClass('highlight');
-    offset = $('#'+$(this).attr('rel')).find('canvas').attr('class').substr(-4);
-    $('#'+$(this).attr('rel')).find('canvas').removeClass('CoolClock:RMSskin:30:noSeconds:'+offset);
-    $('#'+$(this).attr('rel')).find('canvas').addClass('CoolClock:RMSHskin:30::'+offset);
+  // could use some improvements/cleanup -GB
+
+  // rel specifies source
+  // class specifies target
+  
+  $('#contact #offices a, #contact #markers a, #contact #clocks a').mouseenter(function() {
+    loc = $('.'+$(this).attr('rel'));
+    clock = loc.find('canvas');
+    loc.addClass('highlight').prevAll('h5:first').addClass('highlight');
+    clock.attr('class', function(i,class) {
+      return class.replace('default','highlight').replace('noSeconds','');
+    });
     CoolClock.findAndCreateClocks();
   }).mouseleave(function(){
-    $(this).toggleClass('highlight');
-    $(this).prevAll('h5:first').toggleClass('highlight');
-    $('#'+$(this).attr('rel')).toggleClass('highlight');
-    $('#'+$(this).attr('rel')).find('canvas').removeClass('CoolClock:RMSHskin:30::'+offset);
-    $('#'+$(this).attr('rel')).find('canvas').addClass('CoolClock:RMSskin:30:noSeconds:'+offset);
+    loc.removeClass('highlight').prevAll('h5:first').removeClass('highlight');
+    clock.attr('class', function(i,class) {
+      return class.replace('highlight','default').replace('::',':noSeconds:');
+    });
     CoolClock.findAndCreateClocks();
   });
   
