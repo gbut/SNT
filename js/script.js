@@ -95,7 +95,8 @@ $(document).ready(function(){
        */
       showVideo: function(e) {
         var o = e.data.obj; //the instantiated $.videoPresenter object
-		    var onComplete = function() { o.vBg.fadeIn(400); };
+//		    var onComplete = function() { o.vBg.fadeIn(400); };
+		    var onComplete = function() { o.vBg.css({ top:0 }); };
         o.heroImg.animate(
           { top:-o.heroH },
           o.options.dur,
@@ -854,6 +855,28 @@ $(document).ready(function(){
   // rel specifies source
   // class specifies target
   
+  $('#contact #offices a, #contact #markers a, #contact #clocks a').each(function(){
+    $(this).hover(
+      function() {
+        loc = $('.'+$(this).attr('rel'));
+        clock = loc.find('canvas');
+        loc.addClass('highlight').prevAll('h5:first').addClass('highlight');
+        clock.attr('class', function(i,klass) {
+          return klass.replace('default','highlight').replace('noSeconds','');
+        });
+        CoolClock.findAndCreateClocks();
+      },
+      function(){
+        loc.removeClass('highlight').prevAll('h5:first').removeClass('highlight');
+        clock.attr('class', function(i,klass) {
+          return klass.replace('highlight','default').replace('::',':noSeconds:');
+        });
+        CoolClock.findAndCreateClocks();
+      }
+    );
+  });
+  
+/*
   $('#contact #offices a, #contact #markers a, #contact #clocks a').mouseenter(function() {
     loc = $('.'+$(this).attr('rel'));
     clock = loc.find('canvas');
@@ -869,6 +892,7 @@ $(document).ready(function(){
     });
     CoolClock.findAndCreateClocks();
   });
+*/
   
   //===============================================
   //  Autocolumn: newspaper-style columns for IE
