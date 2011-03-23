@@ -878,6 +878,29 @@ $(document).ready(function(){
     $('.columnize-2').columnize({ columns: 2 });
   }
 
+
+  //===============================================
+  //  LivePerson Chat
+  //===============================================
+
+  if ($('#bg_chat').length) {
+    $('#btn_start_chat').click(function(e){
+      $('#chat_win').css({ top: 0 });
+    });
+    
+/*
+    var _rf = window.setTimeout(function(){
+      $('.btnChatCont a').removeAttr('target')
+        .unbind('click')
+        .click(function(e){
+          $('#lp_chat_window').attr('src', $(this).attr('href'));
+          e.preventDefault();
+        });
+    }, 4000);
+*/
+  }
+
+
 });
 
 
