@@ -36,12 +36,12 @@
           There are currently no open positions<span class="category"></span><span class="region"></span>.
         </div>
 
-        <div class="footer">
+        <div class="footer clearfix">
           <span class="subtextOuter">
             Don't see your dream job?
             <span class="subtext">We read all résumés, so apply today.</span>
           </span>
-          <a href="#" class="submit">Submit résumé</a>
+          <a href="/careers/jobs/apply.asp" class="submit">Submit résumé</a>
         </div>
 
         <div id="show_all" class="hide">
