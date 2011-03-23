@@ -6,6 +6,26 @@
  *
  **********************************************************/
 
+/* RMS code section. begin
+Created by Wing
+rms_todo: remove at implementation
+*/
+
+var gbl_env = "";
+
+switch(window.location.hostname)
+{
+   case "cateamsite03":
+   case "www.rms.com":
+     gbl_env = "rms";
+     break;
+   default:
+     gbl_env = "";
+}
+
+/* RMS code section. end */
+
+
 function inspect(obj) {
   var str = '';
   for (var i in obj) str += i + ': ' + obj[i] + '\n';
@@ -121,6 +141,9 @@ $(document).ready(function(){
     $.teamPhoto = function(e, o) {
       this.options            = $.extend({}, defaults, o || {});
 
+      // fade animations will be different for IE
+      this.specialFade        = $('html').is('.ie8, .ie7');
+      
       // elements
       var self                = this;
       this.container          = $(e);
@@ -136,7 +159,6 @@ $(document).ready(function(){
       this.bioLocation        = $('#bioLocation');
       this.bioImg             = $('#bioImg');
       this.bioContent         = $('#bioContent');
-//      this.elsToFade          = this.popup.find('.fadeTransition');
       
       // flags, measurements
       this.winW               = this.container.width();
@@ -147,19 +169,38 @@ $(document).ready(function(){
       this.pointerLeft        = parseInt(this.pointer.css('left'));
       
       // restore popup position
-      this.popup.css({bottom:-125}).fadeTo(0,0);
-//      this.popup.css({bottom:-125});
+//      this.popup.css({opacity:0, bottom:-125});
+      this.teamFade(this.popup, 0, 0);
+      this.popup.css({bottom:-135});
       
       // pull in JSON data
-      $.ajax({
-        url: "/careers/get_employee_profiles.txt",
-        context: this,
-        //dataType: 'json',
-        success: function(data){
-          //inspect($.parseJSON(data)[0]['biography']);
-          this.bios = $.parseJSON(data);
-        }
-      });
+      /*
+      rms_todo: remove gbl_env and non-rms code (else)
+      */
+      if (gbl_env == "rms")
+      {
+        $.ajax({
+          type: "POST",
+          contentType: "application/json; charset=utf-8",
+          url: "/careers.asmx/get_employee_profiles",
+          cache: false,
+          context: this,
+          data: "{}",
+          dataType: "json",
+          success: function(msg) {
+            this.bios = $.parseJSON(msg.d);                    
+          }
+        });
+
+      } else {
+        $.ajax({
+          url: "/careers/get_employee_profiles.txt",
+          context: this,
+          success: function(data){
+            this.bios = $.parseJSON(data);
+          }
+        });
+      }
 
       // attach behaviors
       this.people.children().each(function(i){
@@ -209,7 +250,8 @@ $(document).ready(function(){
             );
           },
           start: function(e, ui){
-            self.popup.fadeTo(self.options.fadeDur, 0);
+//            self.popup.fadeTo(self.options.fadeDur, 0);
+            self.teamFade(self.popup, self.options.fadeDur, 0);
           },
           slide: function(e, ui){
             self.panel.css('left',-ui.value);
@@ -251,21 +293,32 @@ $(document).ready(function(){
           });
         // animate popup
         o.loadInfo(whichPerson);
-        o.popup.animate({
-            left: p.popup
-          },
-          {
-            duration: o.options.animDur,
-            easing: o.options.easing,
-            queue: false
-          }).animate({
-              opacity: 1,
+        if (o.specialFade) {
+          o.popup.show().animate({
+              left: p.popup
             },
             {
-              duration: o.options.fadeDur,
+              duration: o.options.animDur,
               easing: o.options.easing,
               queue: false
             });
+        } else {
+          o.popup.animate({
+              left: p.popup
+            },
+            {
+              duration: o.options.animDur,
+              easing: o.options.easing,
+              queue: false
+            }).animate({
+                opacity: 1,
+              },
+              {
+                duration: o.options.fadeDur,
+                easing: o.options.easing,
+                queue: false
+              });
+        }
         // animate pointer
         o.pointer.animate({
             left: p.pointer
@@ -301,6 +354,21 @@ $(document).ready(function(){
         this.bioLocation.html(info.location);
         this.bioImg.attr({ src: info.img_src, alt: info.fullname });
         this.bioContent.html(info.biography['#cdata-section']);
+      },
+
+      /**
+       * Forks fade animations for IE and non-IE, since IE doesn't handle opacity changes well (esp with css3PIE).
+       *
+       * @name teamFade
+       * @type undefined
+       */
+      teamFade: function(el, duration, opacity) {
+        if (this.specialFade) {
+          if (!opacity) $(el).hide();
+            else $(el).show();
+        } else {
+          $(el).fadeTo(duration, opacity);
+        }
       }
 
     });

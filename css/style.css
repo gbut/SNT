@@ -1081,18 +1081,6 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
 
 /* / MAIN */
 
-/* + SUBFOOTER */
-
-/*
-.subfooter {
-  height:               20px;
-  border-bottom:1px solid #b9b8b8;
-  background:#bdcfd9;
-}
-*/
-
-/* / SUBFOOTER */
-
 /* + FOOTER */
 
 footer {
@@ -2266,7 +2254,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 .ie8 #careers #team_panel ul li a {
-  background:           red;
+  background:           #fff;
   -moz-opacity:         0;
   -ms-filter:           "alpha(opacity=0)";
   filter:               alpha(opacity=0);
@@ -2298,20 +2286,27 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   -ms-filter:           "alpha(opacity=70)";
   filter:               alpha(opacity=70);
   opacity:              0.7;
+  -pie-background:rgba(255,255,255,0.7); /* necessary to render opacity properly */
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
 #careers #tooltip {
+  width:                636px;
+  height:               164px;
+  position:             absolute;
+  bottom:               10000px; /* move to proper location in js after taking measurements */
+  left:                 167px;
+  z-index:              400;
+}
+
+#careers #tooltip .body {
   color:                #5270ae;
   width:                592px;
   height:               128px;
   padding:              12px 15px 10px;
   background-color:     #e8e8e8;
   border:               2px solid #bababa;
-  position:             absolute;
-  bottom:               10000px; /* move to proper location in js after taking measurements */
-  left:                 167px;
-  z-index:              400;
+  position:             relative;
   -webkit-border-radius:7px;
   -moz-border-radius:   7px;
   border-radius:        7px;
