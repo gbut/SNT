@@ -10,6 +10,10 @@
       <h4>8-10am and 1-3 PST</h4>
       <p>Lorem ipsum dolor sit amet consecteteur adipiscing nonummy elit.</p>
     </div>
+    <div id="chat_win">
+      <p>Lorem ipsum dolor sit amet consecteteur adipiscing nonummy elit.</p>
+      <a href="#" id="btn_end_chat" class="btn btnEndChat">End Chat</a>
+    </div>
   </div>
 </div>
 <!-- / chat -->
