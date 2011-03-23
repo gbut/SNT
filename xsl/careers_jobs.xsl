@@ -50,7 +50,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <article>
         <time datetime="{date}"><xsl:value-of select="date" /></time>
         <h4 class="clearfix">
-          <a href="/careers/jobs/job.asp?{requisitionid}" title="{title}"><xsl:value-of select="title" /></a>
+          <a href="/careers/jobs/job.asp?req={requisitionid}" title="{title}"><xsl:value-of select="title" /></a>
           <xsl:for-each select="region[position() = last()]">
             <span class="region"><xsl:value-of select="self::node()" /></span>
           </xsl:for-each>
