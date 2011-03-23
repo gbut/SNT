@@ -2856,7 +2856,7 @@ display:none;
 #lp_chat_window {
   width:                495px;
   height:               358px;
-  overflow:             hidden;
+/*  overflow:             hidden;*/
 }
 
 /* / Chat */
@@ -3074,7 +3074,6 @@ ul.index.global li a {
 /* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
    consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
-  @media screen and (max-device-width: 480px) {
     header,
     .contentOuter,
     footer {

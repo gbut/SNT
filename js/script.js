@@ -885,6 +885,8 @@ $(document).ready(function(){
       $('#chat_win').css({ top: 0 });
     });
     
+    var _rf = window.setTimeout(function(){
+    }, 4000);
 /*
     var _rf = window.setTimeout(function(){
       $('.btnChatCont a').removeAttr('target')
