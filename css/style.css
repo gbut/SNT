@@ -1472,6 +1472,7 @@ aside section.pie_first-child.slvzr-last-child {
   color:                #686767;
   font:                 108%/167% Helvetica,sans-serif;
   padding:              0;
+  background:           #fff;
 }
 
 /* / General Tabs */
@@ -1568,6 +1569,10 @@ aside .quote .author .title {
 /*  font-family:          "GothamHTFBook",Tahoma,Arial,sans-serif;*/
   font:                 400 100%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.03em;
+}
+
+aside #quoteTabs {
+  padding-bottom:       20px;
 }
 
 aside #photo,
@@ -1778,7 +1783,7 @@ aside .ui-tabs ul.ui-tabs-nav,
   cursor:               pointer;
   position:             absolute;
   left:                 0;
-  bottom:               -2px;
+  bottom:               -12px;
 }
 aside .ui-tabs ul.ui-tabs-nav li,
 #risk #vidCont.ui-tabs ul.ui-tabs-nav li {
