@@ -1287,11 +1287,10 @@ aside section.pie_first-child.slvzr-last-child {
   height:               390px;
   overflow:             hidden;
   position:             absolute;
-  top:                  0;
+  top:                  -10000px;
   left:                 0;
   background:           #0f0f0f;
   z-index:              10;
-  display:              none;
 }
 
 #presenter #vidOverlay iframe {
@@ -2930,7 +2929,7 @@ display:none;
 #lp_chat_window {
   width:                495px;
   height:               358px;
-  overflow:             hidden;
+/*  overflow:             hidden;*/
 }
 
 /* / Chat */
@@ -3148,40 +3147,43 @@ ul.index.global li a {
 /* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
    consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
-  @media screen and (max-device-width: 480px) {
-    header,
-    .contentOuter,
-    footer {
-      width:                1040px; /* force full width so bg is consistent; is this a good idea? */
-      padding:              0;
-    }
-    footer {
-      padding:              20px 0;
-    }
+  header,
+  .contentOuter,
+  footer {
+    width:                1040px; /* force full width so bg is consistent; is this a good idea? */
+    padding:              0;
+  }
+  footer {
+    padding:              20px 0;
+  }
 
-    .btn {
-      padding-top:          6px;
-      padding-bottom:       7px;
-    }
-    .btnLg {
-      padding-top:          13px;
-      padding-bottom:       9px;
-    }
-    .btnUpload {
-      padding-top:          11px;
-    }
-    .btnSubmit {
-      padding-top:          8px;
-      padding-bottom:       10px;
-    }
+  .btn {
+    padding-top:          6px;
+    padding-bottom:       7px;
+  }
+  .btnLg {
+    padding-top:          13px;
+    padding-bottom:       9px;
+  }
+  .btnUpload {
+    padding-top:          11px;
+  }
+  .btnSubmit {
+    padding-top:          8px;
+    padding-bottom:       10px;
+  }
+  .btnOpenPositions {
+    padding-top:          12px;
+    padding-bottom:       9px;
+  }
 
-    aside .share {
-      width:                175px;
-    }
+  aside .share {
+    width:                175px;
+  }
 
-    /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
-       j.mp/textsizeadjust 
-    html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
+     j.mp/textsizeadjust 
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
 
 /* inverse of above */
