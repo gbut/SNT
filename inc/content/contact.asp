@@ -55,7 +55,8 @@
       <a href="#" class="noida" title="NOIDA, India"></a>
       <a href="#" class="beijing" title="Beijing, China"></a>
       <a href="#" class="tokyo" title="Tokyo, Japan"></a>
-      <script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=0&amp;up_proj=mercator&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script>
+      <!-- script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=0&amp;up_proj=mercator&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script -->
+      <script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=0&amp;up_proj=mollweide&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script>
     </div>
     <div id="clocks">
       <a href="#" class="newark">
@@ -95,7 +96,7 @@
         Tokyo
       </a>
     </div>
-    
+    <div class="mask"></div>
   </div>
   <div id="offices" class="clearfix">
   
