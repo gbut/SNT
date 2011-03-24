@@ -48,7 +48,7 @@ $(document).ready(function(){
     };
     
     var defaults = {
-      dur:250
+      dur:400
     };
     
     /**
@@ -69,15 +69,17 @@ $(document).ready(function(){
       this.nav                = $('#presenterNav').find('ul');
       this.heroImg            = this.win.find('.hero');
       this.vBg                = $('#vidOverlay');
+      this.btnClose           = this.vBg.find('a.close');
+      this.iframe             = $('#vidFrame');
       
       // flags, measurements
       this.heroH              = this.heroImg.height();
       
       // attach behaviors
       this.nav.children().each(function(){
-//        inspect($(this).find('a'));
         $(this).find('a').bind('click', { obj: self }, self.showVideo);
       });
+      $(this.btnClose).bind('click', { obj: self }, self.hideVideo);
 
     };
 
@@ -95,13 +97,34 @@ $(document).ready(function(){
        */
       showVideo: function(e) {
         var o = e.data.obj; //the instantiated $.videoPresenter object
-//		    var onComplete = function() { o.vBg.fadeIn(400); };
-		    var onComplete = function() { o.vBg.css({ top:0 }); };
+        var src = $(this).attr('href');
+		    var onComplete = function() {
+		      o.vBg.css({ top:0 });
+		      o.iframe.attr({ src: src });
+		    };
         o.heroImg.animate(
           { top:-o.heroH },
           o.options.dur,
           'easeOutQuint',
           onComplete
+        );
+        e.preventDefault();
+      },
+
+      /**
+       * Hides the video overlay.
+       *
+       * @name hideVideo
+       * @type undefined
+       */
+      hideVideo: function(e) {
+        var o = e.data.obj; //the instantiated $.videoPresenter object
+		    o.vBg.css({ top:-10000 });
+		    o.iframe.attr({ src: '' });
+        o.heroImg.animate(
+          { top:0 },
+          o.options.dur,
+          'easeOutQuint'
         );
         e.preventDefault();
       }
@@ -896,7 +919,7 @@ $(document).ready(function(){
   //  LivePerson Chat
   //===============================================
 
-  if ($('#bg_chat').length) {
+  if ($('#chat_win').length) {
     $('#btn_start_chat').click(function(e){
       $('#chat_win').css({ top: 0 });
     });

@@ -1297,10 +1297,27 @@ aside section.pie_first-child.slvzr-last-child {
   margin:               15px 0 0 150px;
 }
 
+#presenter a.close,
+#presenterNav ul li a .imgCont .play {
+  text-indent:          -9999px;
+  width:                32px;
+  height:               32px;
+  position:             absolute;
+  top:                  1px;
+  left:                 774px;
+  background:           transparent url(../img/icons_video.png) 0 0 no-repeat;
+  overflow:             hidden;
+}
+#presenter a.close:hover,
+#presenter a.close:active {
+  background-position:  0 -32px;
+}
+
+
 #presenterNav {
 /*  text-align:           center;*/
-  height:               39px;
-  padding:              12px 0 11px;
+  height:               41px;
+  padding:              11px 0 10px;
   background-color:     #f0f0f0;
   border:               1px solid #dadada;
   border-top:           0;
@@ -1334,7 +1351,7 @@ aside section.pie_first-child.slvzr-last-child {
   line-height:          125%;
   text-align:           left;
   width:                165px;
-  height:               39px;
+  height:               41px;
   display:              block;
   overflow:             hidden;
 }
@@ -1354,7 +1371,7 @@ aside section.pie_first-child.slvzr-last-child {
   height:               37px;
   margin-right:         6px;
   background:           url(../img/vid_nav_careers_home.jpg) 0 0 no-repeat;
-  border:               1px solid #f0f0f0;
+  border:               2px solid #555;
   float:                left;
   display:              inline;
   top:                  0;
@@ -1369,27 +1386,21 @@ aside section.pie_first-child.slvzr-last-child {
 #presenterNav ul li a .imgCont.vid3 {
   background-position:  0 -74px;
 }
+#presenterNav ul li a:hover .imgCont,
+#presenterNav ul li a:active .imgCont {
+  border-color:         #262626;
+}
 
 #presenterNav ul li a .imgCont .play {
-  width:                0;
-  height:               0;
-  border-color:         transparent transparent transparent #dce4ea;
-  border-style:         solid;
-  border-width:         9px 16px;
-  position:             absolute;
-  top:                  10px;
+  width:                13px;
+  height:               14px;
+  top:                  12px;
   left:                 24px;
-  -moz-opacity:         0.75;
-  -ms-filter:           "alpha(opacity=75)";
-  filter:               alpha(opacity=75);
-  opacity:              0.75;
+  background-position:  -32px 0;
 }
 #presenterNav ul li a:hover .imgCont .play,
 #presenterNav ul li a:active .imgCont .play {
-  -moz-opacity:         1;
-  -ms-filter:           "alpha(opacity=100)";
-  filter:               alpha(opacity=100);
-  opacity:              1;
+  background-position:  -32px -14px;
 }
 
 /* / Feature */
