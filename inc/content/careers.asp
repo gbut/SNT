@@ -8,21 +8,21 @@
         <img src="/img/hero_careers_home_rt.png" alt="We Were Always This Cool" />
       </div>
       <div id="vidOverlay">
-        <iframe src="http://player.vimeo.com/video/20233712?title=0&amp;byline=0&amp;portrait=0" width="640" height="352" scrolling="No" frameborder="0" id="movie">Video</iframe>
+        <iframe src="" width="640" height="352" scrolling="no" frameborder="0" id="vidFrame"></iframe>
         <a href="#" class="close">Close</a>
       </div>
     </div>
     <div id="presenterNav">
       <ul>
-        <li><a href="#">
+        <li><a href="http://player.vimeo.com/video/20233712?title=0&amp;byline=0&amp;portrait=0">
           <span class="imgCont vid1">Video #1<span class="play"></span></span>
           <span>Lorem ipsum dolor suspendisse imper</span>
         </a></li>
-        <li><a href="#">
+        <li><a href="http://player.vimeo.com/video/20233712?title=0&amp;byline=0&amp;portrait=0">
           <span class="imgCont vid2">Video #2<span class="play"></span></span>
           <span>Lorem ipsum dolor suspendisse imper</span>
         </a></li>
-        <li><a href="#">
+        <li><a href="http://player.vimeo.com/video/20233712?title=0&amp;byline=0&amp;portrait=0">
           <span class="imgCont vid3">Video #3<span class="play"></span></span>
           <span>Lorem ipsum dolor suspendisse imper</span>
         </a></li>

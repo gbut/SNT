@@ -70,6 +70,7 @@ $(document).ready(function(){
       this.heroImg            = this.win.find('.hero');
       this.vBg                = $('#vidOverlay');
       this.btnClose           = this.vBg.find('a.close');
+      this.iframe             = $('#vidFrame');
       
       // flags, measurements
       this.heroH              = this.heroImg.height();
@@ -96,7 +97,11 @@ $(document).ready(function(){
        */
       showVideo: function(e) {
         var o = e.data.obj; //the instantiated $.videoPresenter object
-		    var onComplete = function() { o.vBg.css({ top:0 }); };
+        var src = $(this).attr('href');
+		    var onComplete = function() {
+		      o.vBg.css({ top:0 });
+		      o.iframe.attr({ src: src });
+		    };
         o.heroImg.animate(
           { top:-o.heroH },
           o.options.dur,
@@ -115,6 +120,7 @@ $(document).ready(function(){
       hideVideo: function(e) {
         var o = e.data.obj; //the instantiated $.videoPresenter object
 		    o.vBg.css({ top:-10000 });
+		    o.iframe.attr({ src: '' });
         o.heroImg.animate(
           { top:0 },
           o.options.dur,
