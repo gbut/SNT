@@ -850,24 +850,31 @@ $(document).ready(function(){
   //  Contact page: offices
   //===============================================
 
-  // could use some improvements/cleanup -GB
-
-  // rel specifies source
-  // class specifies target
+  // class specifies both source and target  
+  // handles multiple locations (for clocks) as: city1 city2 [city names cannot include spaces or special chars]
   
   $('#contact #offices a, #contact #markers a, #contact #clocks a').each(function(){
     $(this).hover(
       function() {
-        loc = $('.'+$(this).attr('rel'));
-        clock = loc.find('canvas');
-        loc.addClass('highlight').prevAll('h5:first').addClass('highlight');
+        loc = $(this).attr('class');
+        locArray = loc.split(' ');
+        jQuery.each(locArray, function() {
+          $('.'+this).addClass('highlight').prevAll('h5:first').addClass('highlight');
+        });
+        clock = $('.'+loc).find('canvas');
         clock.attr('class', function(i,klass) {
           return klass.replace('default','highlight').replace('noSeconds','');
         });
         CoolClock.findAndCreateClocks();
       },
       function(){
-        loc.removeClass('highlight').prevAll('h5:first').removeClass('highlight');
+        loc = $(this).attr('class');
+        locArray = loc.split(' ');
+        jQuery.each(locArray, function() {
+          $('.'+this).removeClass('highlight').prevAll('h5:first').removeClass('highlight');
+        });
+        loc = $(this).attr('class'); // update following 'highlight' removal
+        clock = $('.'+loc).find('canvas');
         clock.attr('class', function(i,klass) {
           return klass.replace('highlight','default').replace('::',':noSeconds:');
         });
@@ -875,24 +882,6 @@ $(document).ready(function(){
       }
     );
   });
-  
-/*
-  $('#contact #offices a, #contact #markers a, #contact #clocks a').mouseenter(function() {
-    loc = $('.'+$(this).attr('rel'));
-    clock = loc.find('canvas');
-    loc.addClass('highlight').prevAll('h5:first').addClass('highlight');
-    clock.attr('class', function(i,class) {
-      return class.replace('default','highlight').replace('noSeconds','');
-    });
-    CoolClock.findAndCreateClocks();
-  }).mouseleave(function(){
-    loc.removeClass('highlight').prevAll('h5:first').removeClass('highlight');
-    clock.attr('class', function(i,class) {
-      return class.replace('highlight','default').replace('::',':noSeconds:');
-    });
-    CoolClock.findAndCreateClocks();
-  });
-*/
   
   //===============================================
   //  Autocolumn: newspaper-style columns for IE
