@@ -860,8 +860,8 @@ $(document).ready(function(){
         locArray = loc.split(' ');
         jQuery.each(locArray, function() {
           $('.'+this).addClass('highlight').prevAll('h5:first').addClass('highlight');
+          clock = $('.'+this).find('canvas');
         });
-        clock = $('.'+loc).find('canvas');
         clock.attr('class', function(i,klass) {
           return klass.replace('default','highlight').replace('noSeconds','');
         });
@@ -872,9 +872,9 @@ $(document).ready(function(){
         locArray = loc.split(' ');
         jQuery.each(locArray, function() {
           $('.'+this).removeClass('highlight').prevAll('h5:first').removeClass('highlight');
+          if (this != 'highlight')
+            clock = $('.'+this).find('canvas');
         });
-        loc = $(this).attr('class'); // update following 'highlight' removal
-        clock = $('.'+loc).find('canvas');
         clock.attr('class', function(i,klass) {
           return klass.replace('highlight','default').replace('::',':noSeconds:');
         });
