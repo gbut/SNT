@@ -847,7 +847,7 @@ $(document).ready(function(){
   });
   
   //===============================================
-  //  Contact page: offices
+  //  Contact page: rollovers for offices/markers/clocks
   //===============================================
 
   // class specifies both source and target  
@@ -856,29 +856,29 @@ $(document).ready(function(){
   $('#contact #offices a, #contact #markers a, #contact #clocks a').each(function(){
     $(this).hover(
       function() {
-        loc = $(this).attr('class');
-        locArray = loc.split(' ');
-        jQuery.each(locArray, function() {
+        loc = $(this).attr('class');  // get the location string
+        locArray = loc.split(' ');    // convert to array
+        jQuery.each(locArray, function() {  // for each location set highlights
           $('.'+this).addClass('highlight').prevAll('h5:first').addClass('highlight');
-          clock = $('.'+this).find('canvas');
+          clock = $('.'+this).find('canvas'); // find clock based on last (any) location
         });
         clock.attr('class', function(i,klass) {
-          return klass.replace('default','highlight').replace('noSeconds','');
+          return klass.replace('default','highlight').replace('noSeconds',''); // change skin and enable second hand as highlight for clock
         });
-        CoolClock.findAndCreateClocks();
+        CoolClock.findAndCreateClocks(); // update clock
       },
       function(){
-        loc = $(this).attr('class');
-        locArray = loc.split(' ');
-        jQuery.each(locArray, function() {
+        loc = $(this).attr('class');  // get the location string
+        locArray = loc.split(' ');    // convert to array
+        jQuery.each(locArray, function() {  // for each location remove highlights
           $('.'+this).removeClass('highlight').prevAll('h5:first').removeClass('highlight');
           if (this != 'highlight')
-            clock = $('.'+this).find('canvas');
+            clock = $('.'+this).find('canvas'); // find clock based on last (any) location [omit class=highlight]
         });
         clock.attr('class', function(i,klass) {
-          return klass.replace('highlight','default').replace('::',':noSeconds:');
+          return klass.replace('highlight','default').replace('::',':noSeconds:'); // change skin and disable second hand
         });
-        CoolClock.findAndCreateClocks();
+        CoolClock.findAndCreateClocks(); // update clock
       }
     );
   });
