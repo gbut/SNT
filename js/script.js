@@ -896,7 +896,7 @@ $(document).ready(function(){
   //  LivePerson Chat
   //===============================================
 
-  if ($('#bg_chat').length) {
+  if ($('#chat_win').length) {
     $('#btn_start_chat').click(function(e){
       $('#chat_win').css({ top: 0 });
     });
