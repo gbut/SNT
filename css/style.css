@@ -2735,6 +2735,7 @@ display:none;
   position:             absolute;
   bottom:               4px;
   left:                 6px;
+  z-index:              2;
 }
 
 #contact #clocks a {
@@ -2753,6 +2754,19 @@ display:none;
   display:              block;
 }
 
+#map .mask {
+  width:                912px;
+  height:               99px;
+  position:             absolute;
+  top:                  301px;
+  z-index:              1;
+  background:           #333;
+  -moz-opacity:         0.65;
+  -ms-filter:           "alpha(opacity=65)";
+  filter:               alpha(opacity=65);
+  opacity:              0.65;
+}
+
 #contact #markers {
   height:               400px;
   width:                912px;
@@ -2769,54 +2783,7 @@ display:none;
   z-index:              1;
 }
 
-/* mercator */
-#contact #markers .newark {
-  left:                 120px;
-  top:                  140px;
-}
-#contact #markers .peoria {
-  left:                 200px;
-  top:                  137px;
-}
-#contact #markers .bloomington {
-  left:                 190px;
-  top:                  130px;
-}
-#contact #markers .hackensack {
-  left:                 235px;
-  top:                  135px;
-}
-#contact #markers .bermuda {
-  left:                 248px;
-  top:                  160px;
-}
-#contact #markers .london {
-  left:                 424px;
-  top:                  97px;
-}
-#contact #markers .paris {
-  left:                 432px;
-  top:                  114px;
-}
-#contact #markers .zurich {
-  left:                 450px;
-  top:                  110px;
-}
-#contact #markers .noida {
-  left:                 622px;
-  top:                  167px;
-}
-#contact #markers .beijing {
-  left:                 720px;
-  top:                  135px;
-}
-#contact #markers .tokyo {
-  left:                 780px;
-  top:                  145px;
-}
-
-
-/* mollweide tk
+/* mercator
 #contact #markers .newark {
   left:                 120px;
   top:                  140px;
@@ -2862,6 +2829,53 @@ display:none;
   top:                  145px;
 }
 */
+
+/* mollweide */
+#contact #markers .newark {
+  left:                 193px;
+  top:                  98px;
+}
+#contact #markers .peoria {
+  left:                 242px;
+  top:                  103px;
+}
+#contact #markers .bloomington {
+  left:                 234px;
+  top:                  94px;
+}
+#contact #markers .hackensack {
+  left:                 277px;
+  top:                  107px;
+}
+#contact #markers .bermuda {
+  left:                 283px;
+  top:                  124px;
+}
+#contact #markers .london {
+  left:                 434px;
+  top:                  69px;
+}
+#contact #markers .paris {
+  left:                 441px;
+  top:                  79px;
+}
+#contact #markers .zurich {
+  left:                 450px;
+  top:                  76px;
+}
+#contact #markers .noida {
+  left:                 593px;
+  top:                  126px;
+}
+#contact #markers .beijing {
+  left:                 658px;
+  top:                  98px;
+}
+#contact #markers .tokyo {
+  left:                 710px;
+  top:                  108px;
+}
+
 
 #contact #map iframe {
   position:absolute;
