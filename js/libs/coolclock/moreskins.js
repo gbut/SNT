@@ -15,11 +15,11 @@ CoolClock.config.skins = {
 	},
 
 	highlight: {
-		outerBorder: { lineWidth: 1, radius:95, color: "0f0", alpha: 1 },
-		smallIndicator: { lineWidth: 2, startAt: 89, endAt: 93, color: "0f0", alpha: 1 },
-		largeIndicator: { lineWidth: 4, startAt: 80, endAt: 93, color: "0f0", alpha: 1 },
-		hourHand: { lineWidth: 8, startAt: -15, endAt: 50, color: "0f0", alpha: 1 },
-		minuteHand: { lineWidth: 7, startAt: -15, endAt: 75, color: "0f0", alpha: 1 },
+		outerBorder: { lineWidth: 1, radius:95, color: "#0f0", alpha: 1 },
+		smallIndicator: { lineWidth: 2, startAt: 89, endAt: 93, color: "#0f0", alpha: 1 },
+		largeIndicator: { lineWidth: 4, startAt: 80, endAt: 93, color: "#0f0", alpha: 1 },
+		hourHand: { lineWidth: 8, startAt: -15, endAt: 50, color: "#0f0", alpha: 1 },
+		minuteHand: { lineWidth: 7, startAt: -15, endAt: 75, color: "#0f0", alpha: 1 },
 		secondHand: { lineWidth: 5, startAt: -20, endAt: 85, color: "red", alpha: 1 },
 		secondDecoration: { lineWidth: 1, startAt: 70, radius: 8, fillColor: "red", color: "red", alpha: 1 }
 	},

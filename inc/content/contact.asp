@@ -56,8 +56,20 @@
       <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&msid=205465167304100688727.00049f4007883870ffbdc&ll=28.583542,77.313108&spn=0.058487,0.063858&z=14&iwloc=00049f4050e66d94f711f" class="noida" title="NOIDA, India"></a>
       <a href="#" class="beijing" title="Beijing, China"></a>
       <a href="#" class="tokyo" title="Tokyo, Japan"></a>
-      <!-- script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=0&amp;up_proj=mercator&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script -->
+      
+      <!-- mercator
+      <script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=0&amp;up_proj=mercator&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script>
+      -->
+      <!-- mercator w/coulds
+      <script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=1&amp;up_proj=mercator&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script>
+      -->
+      <!-- mollweide
       <script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=0&amp;up_proj=mollweide&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script>
+      -->
+      <!-- mollweide w/clouds -->
+      <script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=1&amp;up_proj=mollweide&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script>
+      <!-- -->
+      
     </div>
     <div id="clocks">
       <a href="#" class="newark">
