@@ -2711,6 +2711,7 @@ display:none;
   margin:               10px 24px 0;
   padding:              0 10px 10px;
   border:               1px solid #b2b2b2;
+  background:           #fff;
   -webkit-border-radius:4px 6px;
   -moz-border-radius:   4px 6px;
   border-radius:        4px 6px;
@@ -2722,6 +2723,10 @@ display:none;
   width:                148px;  /* temp because map is only 912px wide, not 960 as we'd like it */
   margin-top:           10px;
   float:                left;
+}
+
+#contact .office .tel {
+  margin-top:           4px;
 }
 
 #contact #offices h5 {
@@ -2903,8 +2908,26 @@ display:none;
 }
 
 /* hide google branding */
+/*
 #contact #map .gadget a {
   display:              none;
+}
+*/
+
+#contact #markers .gadget a,
+#contact #markers .gadget .powered {
+  background:           none; /* override background for #markers a */
+  position:absolute;
+  z-index:2;
+  top:0;
+}
+#contact #markers .gadget .powered {
+  color:#fff;
+  right:4px;
+}
+#contact #markers .gadget .powered a {
+  color:#fff;
+  right:125px;
 }
 
 /* / Form pages: Job Apply & Contact */

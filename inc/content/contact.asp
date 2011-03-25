@@ -78,7 +78,7 @@
       </a>
       <a href="#" class="peoria bloomington">
         <canvas id="tz02" class="CoolClock:default:30:noSeconds:-5.0"></canvas>
-        Peoria
+        Chicago
       </a>
       <a href="#" class="hackensack">
         <canvas id="tz03" class="CoolClock:default:30:noSeconds:-4.0"></canvas>
@@ -118,25 +118,32 @@
         Headquarters</h5>
         <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&msid=205465167304100688727.00049f4007883870ffbdc&ll=37.583222,-122.085571&spn=0.422256,0.510864&z=11&iwloc=00049f40078b339b3b46d" class="newark">
           7575 Gateway Blvd.<br />
-          Newark, CA 94560<br />
-          Tel: 1.510.505.2500<br />
-          Fax: 1.510.505.2501
+          Newark, CA 94560
+          <div class="tel">
+            Tel: 1.510.505.2500<br />
+            Fax: 1.510.505.2501
+          </div>
         </a>
       </div>
       <div class="office">
-        <h5>Midwest U.S.</h5>
+        <h5>Chicago</h5>
         <a href="#" class="peoria">
           621 SW Commercial<br />
           Suite D<br />
-          Peoria, IL 61602 <br />
-          Tel: 1.309.637.6350 <br />
-          Fax: 1.309.637.6750
+          Peoria, IL 61602
+          <div class="tel">
+            Tel: 1.309.637.6350 <br />
+            Fax: 1.309.637.6750
+          </div>
         </a>
+        <h5>Bloomington</h5>
         <a href="#" class="bloomington">
           7900 International Drive, Suite 970<br />
-          Bloomington, MN 55425<br />
-          Tel: 1.952.876.4640<br />
-          Fax: 1.952.876.4655
+          Bloomington, MN 55425
+          <div class="tel">
+            Tel: 1.952.876.4640<br />
+            Fax: 1.952.876.4655
+          </div>
         </a>
       </div>
       <div class="office">
@@ -144,9 +151,11 @@
         <a href="#" class="hackensack">
           Continental Plaza III<br />
           433 Hackensack Avenue, 5th Floor<br />
-          Hackensack, NJ 07601<br />
-          Tel: 1.201.498.8600<br />
-          Fax: 1.201.498.8601
+          Hackensack, NJ 07601
+          <div class="tel">
+            Tel: 1.201.498.8600<br />
+            Fax: 1.201.498.8601
+          </div>
         </a>
       </div>
       <div class="office">
@@ -156,9 +165,11 @@
           1st Floor<br />
           29 Victoria Street<br />
           Hamilton HM 10<br />
-          Bermuda<br />
-          Tel: 1.441.278.8800<br />
-          Fax: 1.441.278.8801
+          Bermuda
+          <div class="tel">
+            Tel: 1.441.278.8800<br />
+            Fax: 1.441.278.8801
+          </div>
         </a>
       </div>
       <div class="office">
@@ -168,15 +179,19 @@
           Peninsular House<br />
           30 Monument Street<br />
           London EC3R 8NB UK<br />
-          Tel: 44.20.7444.7600<br />
-          Fax: 44.20.7444.7601
+          <div class="tel">
+            Tel: 44.20.7444.7600<br />
+            Fax: 44.20.7444.7601
+          </div>
         </a>
         <h5>France</h5>
         <a href="#" class="paris">
           53 Rue Claude Terrasse <br />
-          75016 Paris France <br />
-          Tel: 33.1.53.84.51.86<br />
-          Fax: 33.1.53.84.51.87
+          75016 Paris France
+          <div class="tel">
+            Tel: 33.1.53.84.51.86<br />
+            Fax: 33.1.53.84.51.87
+          </div>
         </a>
         <h5>Switzerland</h5>
         <a href="#" class="zurich">
@@ -184,37 +199,44 @@
           Stampfenbachstr. 85<br />
           P.O. Box 2051<br />
           CH-8021 Zürich<br />
-          Switzerland<br />
-          Tel: 41.44.365.1500<br />
-          Fax: 41.44.365.1501
+          Switzerland
+          <div class="tel">
+            Tel: 41.44.365.1500<br />
+            Fax: 41.44.365.1501
+          </div>
         </a>
       </div>
       <div class="office">
-        <h5>RMSI</h5>
+        <h5>India</h5>
         <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&msid=205465167304100688727.00049f4007883870ffbdc&ll=28.583542,77.313108&spn=0.058487,0.063858&z=14&iwloc=00049f4050e66d94f711f" class="noida">
           A-7 Sector 16 <br />
-          NOIDA 201 301 India <br />
-          Tel: 91 120 251 1102, 251 2101<br />
-          Fax: 91 120 251 1109, 251 0963
+          NOIDA 201 301 India
+          <div class="tel">
+            Tel: 91 120 251 1102, 251 2101<br />
+            Fax: 91 120 251 1109, 251 0963
+          </div>
         </a>
         <h5>China</h5>
         <a href="#" class="beijing">
           208-11 Winland Intl. Finance Center<br />
           7 Financial Street, Xicheng District<br />
-          Beijing, China 100014<br />
-          Tel: 86.10.5833.2255<br />
-          Fax: 86.10.5833.2388
+          Beijing, China 100014
+          <div class="tel">
+            Tel: 86.10.5833.2255<br />
+            Fax: 86.10.5833.2388
+          </div>
         </a>
         <h5>Japan</h5>
         <a href="#" class="tokyo">
           Akasaka Kikyo Bldg., 4th Floor<br />
           11-15 Akasaka 3-Chome<br />
           Minato-ku<br />
-          Tokyo, 107-0052 Japan <br />
-          Tel: 81.3.5561.6851<br />
-          Fax: 81.3.5561.5890<br />
+          Tokyo, 107-0052 Japan
+          <div class="tel">
+            Tel: 81.3.5561.6851<br />
+            Fax: 81.3.5561.5890
+          </div>
         </a>
-        <a href="http://japan.rms.com">japan.rms.com</a>
       </div>
   
   </div>
