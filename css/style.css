@@ -2911,6 +2911,7 @@ display:none;
 
 /* + Share */
 
+/*
 .addthis_toolbox {
   position:absolute;
   top:63px;
@@ -2924,6 +2925,23 @@ display:none;
 .addthis_toolbox a span {
   background:none;
 }
+*/
+
+.st_sharethis_custom {
+  color:                #999898;
+  text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
+  padding:              12px 12px 10px 44px;
+  border-color:         #b8b8b7;
+  background:           #fefefe url(../img/btns_lt.png) 20px -124px no-repeat;
+  background:           url(../img/btns_lt.png) 20px -124px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
+  background:           url(../img/btns_lt.png) 20px -124px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+  -pie-background:      url(/img/btns_lt.png) 20px -124px no-repeat, linear-gradient(#fefefe, #d7d7d7);
+     -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+  -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+          box-shadow:   0 2px 4px rgba(151,151,151,0.5);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+
 
 /* / Share */
 
