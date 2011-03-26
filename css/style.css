@@ -228,7 +228,6 @@ textarea {
 
 fieldset {
   padding-bottom:       20px;
-  position:             relative;
 }
 fieldset:last-child {
   padding-bottom:       0;
@@ -2608,33 +2607,32 @@ display:none;
 
 /* + error handling */
 
-.errorMsg {
-  font:                 800 150%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
-  color:                #c3151c;
-  position:             absolute;
-  top:                  36px;
-  left:                 290px;
-}
-
 input.error,
 textarea.error {
-  -moz-box-shadow:   inset 0 0 5px 1px #c3151c; 
+  -moz-box-shadow:      inset 0 0 5px 1px #c3151c; 
   -webkit-box-shadow:   inset 0 0 5px 1px #c3151c; 
-  box-shadow:   inset 0 0 5px 1px #c3151c;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  box-shadow:           inset 0 0 5px 1px #c3151c;
+  behavior:             url(/js/libs/PIE/PIE.htc);
 }
 
 #job_apply label[generated],
-#contact label[generated] {
+#contact  label[generated] {
   line-height:          240%;
   color:                #c3151c;
-  width:                auto;
-  height:               auto;
+  text-align:           right;
+  width:                250px;
+  height:               33px;
+  margin:               0;
   position:             absolute;
-  left:                 420px;
+  top:                  0;
+  left:                 390px;
 }
 
 /* / error handling */
+
+.field {
+  position:             relative;
+}
 
 #job_apply a.back {
   color:                #292929;
@@ -2703,7 +2701,7 @@ textarea.error {
   color:                #606060;
   width:                510px;
   height:               95px;
-  margin:               6px 0 10px 121px;
+  margin:               0 0 10px 121px;
   padding:              10px;
   display:              inline-block;
   vertical-align:       top;

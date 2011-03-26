@@ -22,8 +22,8 @@
   <!-- CSS : implied media="all" --> 
   <link rel="stylesheet" href="/css/style.css?v=2" /> 
   
-  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects --> 
-  <script src="/js/libs/modernizr-1.6.min.js"></script> 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="/js/libs/modernizr-1.7.min.js"></script>
  
   <!-- TypeKit --> 
   <script type="text/javascript" src="http://use.typekit.com/krr3wdn.js"></script> 
@@ -44,25 +44,33 @@
 
   <form id="jvform" name="jvform" method="get" action="http://hire.jobvite.com/CompanyJobs/Careers.aspx?">
 
-    <div class="errorMsg"></div>
-
     <fieldset> 
       <legend>About <em>You</em></legend> 
-      <label for="jvfirstname">First Name:</label> 
-      <input type="text" id="jvfirstname" name="jvfirstname" class="required" /> 
-      <label for="jvlastname">Last Name:</label> 
-      <input type="text" id="jvlastname" name="jvlastname" class="required" /> 
-      <label for="jvemail">Email:</label> 
-      <input type="text" id="jvemail" name="jvemail" class="required email" />
-      <label for="jvphone">Phone:</label> 
-      <input type="text" id="jvphone" name="jvphone" class="required" /> 
+      <div class="field">
+        <label for="jvfirstname">First Name:</label> 
+        <input type="text" id="jvfirstname" name="jvfirstname" class="required" /> 
+      </div>
+      <div class="field">
+        <label for="jvlastname">Last Name:</label> 
+        <input type="text" id="jvlastname" name="jvlastname" class="required" /> 
+      </div>
+      <div class="field">
+        <label for="jvemail">Email:</label> 
+        <input type="text" id="jvemail" name="jvemail" class="required email" />
+      </div>
+      <div class="field">
+        <label for="jvphone">Phone:</label> 
+        <input type="text" id="jvphone" name="jvphone" class="required" /> 
+      </div>
     </fieldset> 
 
     <fieldset> 
-      <legend>Your <em>Résumé</em></legend> 
+      <legend>Your <em>Résumé</em></legend>
       <label for="jvresume">Upload:</label> 
       <a href="#" name="ImportResume" id="ImportResume" class="btn btnLg btnUpload" onclick="jvAddAttachment('jvresume', '[id]');return false;">Upload My Résumé</a> 
-      <textarea id="jvresume" name="jvresume" class="prefilled required defaultInvalid">Or copy your résumé into this text box</textarea> 
+      <div class="field">
+        <textarea id="jvresume" name="jvresume" class="prefilled required defaultInvalid">Or copy your résumé into this text box</textarea> 
+      </div>
       <a href="#" id="jvsubmitlinkedinprofile" class="btn btnLg btnLinkedIn" onclick="jvtoggleliprofile(true)">Include LinkedIn Profile</a> 
     </fieldset> 
 
@@ -70,7 +78,9 @@
       <legend>Your <em>Cover Letter</em> <span>(optional)</span></legend> 
       <label for="jvcoverletter">Upload:</label> 
       <a href="#" name="ImportCL" id="ImportCL" class="btn btnLg btnUpload" onclick="jvAddAttachment('jvresume', '[id]');return false;">Upload My Cover Letter</a> 
-      <textarea id="jvcoverletter" name="jvcoverletter" class="prefilled">Or copy/type your cover letter into this text box</textarea> 
+      <div class="field">
+        <textarea id="jvcoverletter" name="jvcoverletter" class="prefilled">Or copy/type your cover letter into this text box</textarea> 
+      </div>
       <button type="submit" class="btn btnLg btnSubmit">Apply</button>
     </fieldset> 
 
