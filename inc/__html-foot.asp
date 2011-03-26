@@ -46,7 +46,7 @@
   <script type="text/javascript" src="/js/libs/coolclock/coolclock.js"></script>
   <script type="text/javascript" src="/js/libs/coolclock/moreskins.js"></script>
   
-  <!-- jquery scrollto plugin -->
+  <!-- jquery plugins -->
   <script type="text/javascript" src="/js/libs/jquery-scrollto/jquery.scrollto-min.js"></script>
   
   <!-- canvas maps -->

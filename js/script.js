@@ -852,7 +852,7 @@ $(document).ready(function(){
   //  Form field behaviors
   //===============================================
 
-  // Handled prefilled notes
+  // Handle prefilled notes
   $('.prefilled').click(function() {
     return this.value === this.defaultValue ? $(this).val('') : null;
   });
@@ -937,7 +937,43 @@ $(document).ready(function(){
     }, 4000);
 */
   }
+  
+  //===============================================
+  //  Job Apply validiation
+  //===============================================
 
+  if ($('#jvform').length) {
+
+    // default value isn't a valid entry
+    // ** fix so this is only for 'required' **
+    jQuery.validator.addMethod("defaultInvalid", function(value, element) {
+        return value != element.defaultValue;
+    }, "");
+    
+    jQuery.validator.messages.required = "";
+
+    $("form").validate({
+        invalidHandler: function(e, validator) {
+            var errors = validator.numberOfInvalids();
+            if (errors) {
+                var message = errors == 1
+                    ? 'You missed 1 required field.<br />It has been highlighted below.'
+                    : 'You missed ' + errors + ' required fields.<br />They have been highlighted below.';
+                $("div.errorMsg").html(message);
+                $("div.errorMsg").show();
+            } else {
+                $("div.errorMsg").hide();
+            }
+        },
+        messages: {
+            email: {
+                required: " ",
+                email: "Please enter a valid email address."
+            }
+        },
+        debug:true
+    });
+  }
 
 });
 
