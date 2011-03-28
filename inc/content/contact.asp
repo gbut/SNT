@@ -73,39 +73,39 @@
     </div>
     <div id="clocks">
       <a href="#" class="newark">
-        <canvas id="tz01" class="CoolClock:default:30:noSeconds:-7.0"></canvas>
+        <canvas id="tz01" class="CoolClock:normal:30:noSeconds:-7.0"></canvas>
         Silicon Valley
       </a>
       <a href="#" class="peoria bloomington">
-        <canvas id="tz02" class="CoolClock:default:30:noSeconds:-5.0"></canvas>
+        <canvas id="tz02" class="CoolClock:normal:30:noSeconds:-5.0"></canvas>
         Chicago
       </a>
       <a href="#" class="hackensack">
-        <canvas id="tz03" class="CoolClock:default:30:noSeconds:-4.0"></canvas>
+        <canvas id="tz03" class="CoolClock:normal:30:noSeconds:-4.0"></canvas>
         New York
       </a>
       <a href="#" class="bermuda">
-        <canvas id="tz04" class="CoolClock:default:30:noSeconds:-3.0"></canvas>
+        <canvas id="tz04" class="CoolClock:normal:30:noSeconds:-3.0"></canvas>
         Bermuda
       </a>
       <a href="#" class="london">
-        <canvas id="tz05" class="CoolClock:default:30:noSeconds:+0.0"></canvas>
+        <canvas id="tz05" class="CoolClock:normal:30:noSeconds:+0.0"></canvas>
         London
       </a>
       <a href="#" class="paris zurich">
-        <canvas id="tz06" class="CoolClock:default:30:noSeconds:+1.0"></canvas>
+        <canvas id="tz06" class="CoolClock:normal:30:noSeconds:+1.0"></canvas>
         Paris | Zürich
       </a>
       <a href="#" class="noida">
-        <canvas id="tz07" class="CoolClock:default:30:noSeconds:+5.5"></canvas>
+        <canvas id="tz07" class="CoolClock:normal:30:noSeconds:+5.5"></canvas>
         New Delhi
       </a>
       <a href="#" class="beijing">
-        <canvas id="tz08" class="CoolClock:default:30:noSeconds:+8.0"></canvas>
+        <canvas id="tz08" class="CoolClock:normal:30:noSeconds:+8.0"></canvas>
         Beijing
       </a>
       <a href="#" class="tokyo">
-        <canvas id="tz09" class="CoolClock:default:30:noSeconds:+9.0"></canvas>
+        <canvas id="tz09" class="CoolClock:normal:30:noSeconds:+9.0"></canvas>
         Tokyo
       </a>
     </div>
