@@ -3061,7 +3061,7 @@ textarea.error {
   top:                  -10000px;
 }
 
-#bg_chat #chat_win {
+#chat_win {
   width:                495px;
   height:               358px;
   margin:               0 auto;
@@ -3080,11 +3080,61 @@ textarea.error {
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
+#chat_win #lp_thread {
+  font-family:          "Lucida Grande",Tahoma,Arial,sans-serif;
+/*  width:                495px;*/
+  height:               230px;
+  margin-bottom:        10px;
+  padding:              10px;
+  background:           #f8f8f9;
+  position:             relative;
+  overflow:             auto;
+}
+
+#chat_win #lp_thread .system {
+  color:                #909091;
+  font-style:           italic;
+  margin-bottom:        10px;
+}
+#chat_win #lp_thread .operator {
+  color:                #1b648b;
+  margin-bottom:        10px;
+}
+#chat_win #lp_thread .user {
+  color:                #c3151c;
+  margin-bottom:        10px;
+}
+#chat_win #lp_thread .who {
+  font-weight:          bold;
+}
+
+#chat_win #lp_type {
+  line-height:          116%;
+  width:                398px; /*488px;*/
+  height:               62px;
+  padding-right:        0;
+  background:           #f8f8f9;
+  float:                left;
+  position:             relative;
+  overflow:             auto;
+}
+
+#chat_win #lp_send {
+  float:                right;
+}
+
+#chat_win #btn_end_chat {
+  position:             absolute;
+  bottom:               26px;
+  left:                 228px;
+}
+
+/*
 #lp_chat_window {
   width:                495px;
   height:               358px;
-/*  overflow:             hidden;*/
 }
+*/
 
 /* / Chat */
 

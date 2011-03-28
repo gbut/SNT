@@ -28,11 +28,19 @@
         }
       }
       function sendText() {
+/*
         var textObj = document.getElementById('chatLine');
         if(textObj.value!=''){
           lpc.addLine(textObj.value);
           addChatText(lpc.getVisitorName(), textObj.value);
           textObj.value='';
+        }
+*/
+        var textObj = $('#lp_type');
+        if(textObj.val() != ''){
+          lpc.addLine(textObj.val());
+          addChatText(lpc.getVisitorName(), textObj.val());
+          textObj.val('');
         }
         return true;
       }
@@ -43,6 +51,7 @@
         alert('Error occured. ' + errObj.text);
       }
       function addChatText(by,text){
+/*
         var ca = document.getElementById('chatArea');
         var p = document.createElement( "div" );
         if(by!=null){
@@ -52,12 +61,17 @@
         }
         p.appendChild( document.createTextNode(text) );
         ca.appendChild(p);
-        ca.scrollTop = 50000;
+*/
+        var ca = $('#lp_thread');
+        var who = (by != null) ? '<span class="who">' + by + '</span> ' : '';
+        var str = who + text.replace(/\n/gi, '<br />');
+        ca.append($('<div class="user">' + str + '</div>'));
+        ca.scrollTop(50000);
       }
       var lpChatConfig = {
         apiKey : '280e4c40d2524aee8895e299efc4359c', // 66a2b5d32
         lpServer : 'dev.liveperson.net',
-        lpNumber : 'P89578626',
+        lpNumber : 'P89578626', // small business test account
         onLoad : function() {
           window.lpc = new lpChat();
         },
@@ -101,28 +115,30 @@
           </div>
 
           <!-- + chat window -->
-          <div id="chat_win">
-            <!-- <a href="#" id="btn_end_chat" class="btn btnEndChat">End Chat</a> -->
-
-            <div id="lp_chat_window">
-              <!--Begin LivePerson Chat Window Embed-->
-              <!-- <iframe src="http://server.iad.liveperson.net/hc/44448599/?cmd=file&file=visitorWantsToChat&site=44448599&special=style:embedded" width="495" height="358" scrolling="no" frameborder="0"></iframe> -->
-              <!--End LivePerson Chat Window Embed -->
-              
-              <button onclick='lpc.chatAvailability()'>Check Availability</button>
-
-              <button onclick='lpc.requestChat();'>Start Chat</button>
-
-              <button onclick='lpc.endChat()'>End Chat</button>
-
-              <div id='chatArea' style='border:1px solid #aaa; width:500px; height:400px; overflow:auto;'></div>
-
-              <input id='chatLine' type='text' value='write your text here...'>
-
-              <button onclick='sendText()'>Send</button>
-
-              
+          <div id="chat_win" class="clearfix">
+            <div id="lp_thread">
+              <p class="system">You are now ready to chat.</p>
+              <p class="operator"><span class="who">Nathaniel:</span> Hello, how may I help you?</p>
+              <p class="user"><span class="who">SomeDude:</span> Hi, I'm having an issue with some RMS stuff. Do you need me to be more specific?</p>
             </div>
+            <textarea id="lp_type"></textarea>
+            <button id="lp_send" onclick="sendText();">Send</button>
+            <a href="#" id="btn_end_chat" class="btn btnEndChat">End Chat</a>
+
+<!--
+            <div id="lp_chat_window">
+              <button onclick='lpc.chatAvailability()'>Check Availability</button>
+              <button onclick='lpc.requestChat();'>Start Chat</button>
+              <button onclick='lpc.endChat()'>End Chat</button>
+              <div id='chatArea' style='border:1px solid #aaa; width:500px; height:400px; overflow:auto;'></div>
+              <input id='chatLine' type='text' value='write your text here...'>
+              <button onclick='sendText()'>Send</button>
+            </div>
+-->
+
+            <!--Begin LivePerson Chat Window Embed-->
+            <!-- <iframe src="http://server.iad.liveperson.net/hc/44448599/?cmd=file&file=visitorWantsToChat&site=44448599&special=style:embedded" width="495" height="358" scrolling="no" frameborder="0"></iframe> -->
+            <!--End LivePerson Chat Window Embed -->
 
           </div>
           <!-- / chat window -->
