@@ -910,10 +910,11 @@ $(document).ready(function(){
   //  Autocolumn: newspaper-style columns for IE
   //===============================================
 
+/* causing error in IE8
   if ($.browser.msie) {
     $('.columnize-2').columnize({ columns: 2 });
   }
-
+*/
 
   //===============================================
   //  LivePerson Chat
@@ -939,7 +940,7 @@ $(document).ready(function(){
   }
   
   //===============================================
-  //  Form validiation
+  //  Form validation
   //===============================================
 
   if ($('#jvform').length) {
@@ -950,6 +951,10 @@ $(document).ready(function(){
     }, "");
     
     var validator = $("form").validate({
+// TBD
+//      invalidHandler: function(form, validator) {
+//        $(window.parent.document).scrollTo('0');
+//      },
       messages: {
         jvresume: "This field is required.",
         email: {
@@ -958,7 +963,7 @@ $(document).ready(function(){
       },
       debug:true
     });
-    
+
   }
 
 });

@@ -4,7 +4,7 @@
 */
 CoolClock.config.skins = {
 
-	default: {
+	normal: {
 		outerBorder: { lineWidth: 1, radius:95, color: "white", alpha: 1 },
 		smallIndicator: { lineWidth: 2, startAt: 89, endAt: 93, color: "white", alpha: 1 },
 		largeIndicator: { lineWidth: 4, startAt: 80, endAt: 93, color: "white", alpha: 1 },
