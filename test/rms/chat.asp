@@ -56,8 +56,8 @@
       }
       var lpChatConfig = {
         apiKey : '280e4c40d2524aee8895e299efc4359c', // 66a2b5d32
-        lpServer : 'server.iad.liveperson.net', // dev.liveperson.net
-        lpNumber : '44448599',
+        lpServer : 'dev.liveperson.net',
+        lpNumber : 'P89578626',
         onLoad : function() {
           window.lpc = new lpChat();
         },
