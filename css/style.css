@@ -2475,9 +2475,14 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   margin-top:           30px;
 }
 
+/* hot jobs */
 #job_listings h3:first-child {
   margin-top:           0;
 }
+#job_listings h3:first-child .category {
+  text-transform:       uppercase;
+}
+
 
 #job_listings h3 .category {
   color:                #c3151c;
