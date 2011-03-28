@@ -940,7 +940,7 @@ $(document).ready(function(){
   }
   
   //===============================================
-  //  Form validiation
+  //  Form validation
   //===============================================
 
   if ($('#jvform').length) {
@@ -951,6 +951,10 @@ $(document).ready(function(){
     }, "");
     
     var validator = $("form").validate({
+// TBD
+//      invalidHandler: function(form, validator) {
+//        $(window.parent.document).scrollTo('0');
+//      },
       messages: {
         jvresume: "This field is required.",
         email: {
@@ -959,7 +963,7 @@ $(document).ready(function(){
       },
       debug:true
     });
-    
+
   }
 
 });

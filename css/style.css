@@ -225,6 +225,12 @@ textarea {
           box-shadow:   inset 1px 2px 2px #d5d5d5;
   behavior: url(/js/libs/PIE/PIE.htc);
 }
+.ie7 input[type=text],
+.ie8 input[type=text],
+.ie7 input[type=password],
+.ie8 input[type=password] {
+  line-height:          200%;
+}
 
 fieldset {
   padding-bottom:       20px;
@@ -2644,6 +2650,7 @@ textarea.error {
 /* / error handling */
 
 .field {
+  margin-top:           10px;
   position:             relative;
 }
 
@@ -2680,7 +2687,7 @@ textarea.error {
 /*  font:                 167%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
   font:                 600 176%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.03em;
-  padding:              0 0 19px 20px;
+  padding:              0 0 10px 20px;
 }
 
 #job_apply legend em {
@@ -2697,7 +2704,7 @@ textarea.error {
   text-align:           right;
   width:                108px;
   height:               27px;
-  margin:               0 10px 10px 0;
+  margin:               0 10px 0 0;
   display:              inline-block;
 }
 
