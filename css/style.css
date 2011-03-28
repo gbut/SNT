@@ -1858,7 +1858,7 @@ aside .ui-tabs ul.ui-tabs-nav li a,
   margin:               0 5px;
   padding:              0;
   display:              inline-block;
-  background-position:  0 -64px;
+  background-position:  0 -60px;
   float:                none;
   cursor:               pointer;
   overflow:hidden;
@@ -1869,7 +1869,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-tabs-selected a,
 #risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-active a,
 #risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
-  background-position:  0 -74px;
+  background-position:  -9px -60px;
 }
 
 /* / Sidebar */
@@ -2823,7 +2823,7 @@ textarea.error {
   width:                9px;
   height:               10px;
   display:              block;
-  background:           transparent url(../img/icon_sprite.png) 0 -64px no-repeat; /* temp marker */
+  background:           transparent url(../img/icon_sprite.png) 0 -60px no-repeat; /* temp marker */
   position:             absolute;
   z-index:              1;
 }
@@ -2933,7 +2933,7 @@ textarea.error {
   color:#c3151c;
 }
 #contact #markers a.highlight {
- background-position:   0 -74px;
+ background-position:   -9px -60px;
 }
 
 /* hide google branding */
