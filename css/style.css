@@ -1758,14 +1758,22 @@ aside .share a.facebook,
 aside .share a.twitter,
 aside .ui-tabs ul.ui-tabs-nav li a,
 #risk #vidCont.ui-tabs ul.ui-tabs-nav li a {
-  width:                32px;
-  height:               32px;
+  width:                33px;
+  height:               30px;
   display:              block;
   margin-left:          10px;
   background:           transparent url(../img/icon_sprite.png) 0 0 no-repeat;
 }
 aside .share a.twitter {
-  background-position:  0 -32px;
+  background-position:  -33px 0;
+}
+aside .share a.facebook:hover,
+aside .share a.facebook:active {
+  background-position:  0 -30px;
+}
+aside .share a.twitter:hover,
+aside .share a.twitter:active {
+  background-position:  -33px -30px;
 }
 
 aside .callout {
