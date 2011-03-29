@@ -437,9 +437,15 @@ $(document).ready(function(){
       this.btnSend            = $('#lp_send');
       this.btnStart           = $('.openChatWin');
       this.btnEnd             = $('#btn_end_chat');
+      this.agentTyping        = $('#lp_agent_typing');
+      this.btnEmail           = $('#btn_email_transcript');
+      this.emailOverlay       = $('#lp_email_transcript');
+      this.emailAddress       = this.emailOverlay.find('input');
+      this.emailSend          = this.emailOverlay.find('button');
+      this.emailCancel        = this.emailOverlay.find('a');
       
       // flags, measurements
-      this.agentName          = 'RMS';
+      //this.agentName          = 'RMS';
       
       // attach behaviors
       this.btnStart.each(function(){
@@ -447,6 +453,9 @@ $(document).ready(function(){
       });
       $(this.btnSend).bind('click', { obj: self }, self.sendText);
       $(this.btnEnd).bind('click', { obj: self }, self.hideWin);
+      $(this.btnEmail).bind('click', { obj: self }, self.toggleEmailTranscript);
+      $(this.emailCancel).bind('click', { obj: self }, self.toggleEmailTranscript);
+      $(this.emailSend).bind('click', { obj: self }, self.emailTranscript);
       
       // load session
       this.setup();
@@ -496,12 +505,13 @@ $(document).ready(function(){
           o.btnStart.css({ top: o.options.topVisible });
           o.threadArea.empty();
           o.typeArea.val('');
+          o.agentTyping.hide();
           window.clearTimeout(st);
         }
         
         // alert the user, then end session
         o.lpc.endChat();
-        o.addChatText(null, 'Ending chat session...');
+        o.addChatText(null, 'Ending chat session...', 'system');
         var st = window.setTimeout(function(){ _hideWin(); }, 3000);
         
         e.preventDefault();
@@ -525,10 +535,8 @@ $(document).ready(function(){
        */
       requestChat: function(e) {
         var o = e.data.obj; //the instantiated $.chatWindow object
-        
         o.showWin();
         o.lpc.requestChat();
-        
         e.preventDefault();
       },
 
@@ -564,7 +572,6 @@ $(document).ready(function(){
        */
       sendText: function(e) {
         var o = e.data.obj; //the instantiated $.chatWindow object
-        
         var t = o.typeArea.val();
         if (t != ''){
           o.lpc.addLine(t.replace(/\n/gi, ' *** ')); // textarea line breaks don't get sent; replace here with some other identifiable string for agent
@@ -572,6 +579,32 @@ $(document).ready(function(){
           o.typeArea.val('');
         }
         return true;
+      },
+
+      /**
+       * Opens/dismisses dialog for emailing the chat transcript.
+       *
+       * @name toggleEmailTranscript
+       * @type undefined
+       */
+      toggleEmailTranscript: function(e) {
+        var o = e.data.obj; //the instantiated $.chatWindow object
+        if (o.emailOverlay.is(':visible')) o.emailOverlay.hide();
+          else o.emailOverlay.show();
+        e.preventDefault();
+      },
+
+      /**
+       * Emails the chat transcript.
+       *
+       * @name emailTranscript
+       * @type undefined
+       */
+      emailTranscript: function(e) {
+        var o = e.data.obj; //the instantiated $.chatWindow object
+        // validate
+        if (o.emailAddress.val() == '') return alert('Please enter an email address.');
+        o.lpc.requestTranscriptEmail(o.emailAddress.val());
       },
 
       /**
@@ -620,6 +653,17 @@ $(document).ready(function(){
       },
 
       /**
+       * Handler for checking if an agent is typing.
+       *
+       * @name onChatAgentTyping
+       * @type undefined
+       */
+      onChatAgentTyping: function(isTyping) {
+        if (isTyping) _cw.agentTyping.show();
+          else _cw.agentTyping.hide();
+      },
+
+      /**
        * Handler for chat errors.
        *
        * @name onChatError
@@ -652,8 +696,9 @@ $(document).ready(function(){
       },
       onLine : _cw.onChatLine,
       onError : _cw.onChatError,
-      onAvailability: _cw.onChatAvailable,
-      onStop: _cw.onChatStop
+      onAvailability : _cw.onChatAvailable,
+      onStop : _cw.onChatStop,
+      onAgentTyping : _cw.onChatAgentTyping
     };
     lpChatConfig.lpAddScript = function(src, ignore) {var c = lpChatConfig;if(typeof(c.lpProtocol)=='undefined'){c.lpProtocol = (document.location.toString().indexOf("https:")==0) ? "https" : "http";}if (typeof(src) == 'undefined' || typeof(src) == 'object') {src = c.lpChatSrc ? c.lpChatSrc : '/hcp/html/lpChatAPI.js';};if (src.indexOf('http') != 0) {src = c.lpProtocol + "://" + c.lpServer + src + '?site=' + c.lpNumber;} else {if (src.indexOf('site=') < 0) {if (src.indexOf('?') < 0)src = src + '?'; else src = src + '&';src = src + 'site=' + c.lpNumber;}};var s = document.createElement('script');s.setAttribute('type', 'text/javascript');s.setAttribute('charset', 'iso-8859-1');s.setAttribute('src', src);document.getElementsByTagName('head').item(0).appendChild(s);}
     if (window.attachEvent) window.attachEvent('onload', lpChatConfig.lpAddScript);
