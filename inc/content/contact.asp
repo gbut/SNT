@@ -29,7 +29,7 @@
         
     </form>
   
-    <aside>
+    <aside clear="clearfix">
       <section>
       
         <div class="share clearfix">

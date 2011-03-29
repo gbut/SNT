@@ -1,5 +1,5 @@
 <!-- + sidebar -->
-<aside>
+<aside class="clearfix">
   <section>
     <a href="/careers/jobs/apply.asp" class="btn btnLg btnApply">Apply for this Job</a>
     <!-- a href="#" class="btn btnLg">Share with a Friend</a -->
