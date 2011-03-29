@@ -1,9 +1,8 @@
 <!-- + toc -->
 <ul class="toc">
   <li><a href="/home.asp">Home</a></li>
-  <li><a href="/risk">Risk</a></li>
-  <li><a href="/markets">Markets</a></li>
-  <li><a href="/solutions">Solutions</a></li>
+  <li><a href="/risk">Risk Modeling</a></li>
+  <li><a href="/nextgen">Next Gen</a></li>
   <li><a href="/about">About</a></li>
   <li><a href="/careers">Careers</a></li>
   <li><a href="/careers/jobs">Careers | Jobs</a></li>

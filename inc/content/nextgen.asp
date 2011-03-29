@@ -1,5 +1,5 @@
 <!-- + markets -->
 <div style="height:750px; background:#ccc">
-  [markets page content]
+  [next gen page content]
 </div>
 <!-- / markets -->
