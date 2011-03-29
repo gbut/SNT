@@ -211,7 +211,7 @@ a {
 input[type=text],
 input[type=password],
 textarea {
-  font:                 100%/100% Tahoma,Arial,sans-serif;
+  font:                 100%/120% Tahoma,Arial,sans-serif;
   width:                135px;
   padding:              3px 5px;
   background-color:     #fff;
@@ -1182,9 +1182,13 @@ footer a {
 
 aside {
   margin-top:           30px;
+  float:                right;
 }
 #t04 aside {
   margin-top:           15px;
+}
+#t10 aside {
+  margin-top:           10px;
 }
 
 aside section {
@@ -1218,6 +1222,9 @@ aside section.pie_first-child.slvzr-last-child {
   -webkit-border-radius:6px;
   -moz-border-radius:   6px;
   border-radius:        6px;
+}
+#t10 aside section {
+  padding-bottom:       32px;
 }
 
 /* / SIDEBAR */
@@ -1705,6 +1712,9 @@ aside #photo2 img {
   position:             relative;
   left:                 -13px;
 }
+#t10 aside #photo img {
+  margin-top:           20px;
+}
 aside #photo2 img {
   left:                 -28px;
   z-index:              2;
@@ -1749,6 +1759,10 @@ aside .share {
   width:                168px;
   margin:               15px auto 0;
 }
+#t10 aside .share {
+  margin-top:           10px;
+}
+
 aside .share div,
 aside .share a {
   float:                left;
@@ -2727,6 +2741,7 @@ textarea.error {
   vertical-align:       top;
 }
 #contact textarea {
+  height:               30px;
   margin:               0;
 }
 
@@ -2742,23 +2757,27 @@ textarea.error {
 
 #contact form {
   width:                674px;
-  margin:               20px 10px 0 0;
+  margin:               10px 10px 0 0;
   padding-right:        28px;
   float:                left;
 }
 
 #contact h3 {
-  padding:              0 0 20px 0;
+  padding:              0 0 15px 0;
 }
 
 #contact #map {
-  height:               400px;
-  margin:               0 24px; /* temp because map is only 912px wide, not 960 as we'd like it */
+  height:               422px;
   position:             relative;
+  background:           #000;
+}
+#contact #map .gadget {
+  width:                912px;
+  margin:               0 auto;
 }
 #contact #offices {
-  margin:               10px 24px 0;
-  padding:              0 10px 10px;
+  margin:               10px 0 0;
+  padding:              0 5px 10px;
   border:               1px solid #b2b2b2;
   background:           #fff;
   -webkit-border-radius:4px 6px;
@@ -2768,8 +2787,7 @@ textarea.error {
 }
 
 #contact .office {
-/*  width:                160px; */
-  width:                148px;  /* temp because map is only 912px wide, not 960 as we'd like it */
+  width:                158px;
   margin-top:           10px;
   float:                left;
 }
@@ -2799,7 +2817,7 @@ textarea.error {
 #contact #clocks {
   position:             absolute;
   bottom:               4px;
-  left:                 6px;
+  left:                 12px;
   z-index:              2;
 }
 
@@ -2807,7 +2825,7 @@ textarea.error {
   font-size:            85%;
   text-align:           center;
   color:                #fff;
-  width:                100px;
+  width:                104px;
   float:                left; 
   display:              block;
 }
@@ -2820,10 +2838,10 @@ textarea.error {
 }
 
 #map .mask {
-  width:                912px;
+  width:                960px;
   height:               99px;
   position:             absolute;
-  top:                  301px;
+  bottom:               0;
   z-index:              1;
   background:           #333;
   -moz-opacity:         0.65;
@@ -2833,8 +2851,8 @@ textarea.error {
 }
 
 #contact #markers {
-  height:               400px;
-  width:                912px;
+  height:               422px;
+  width:                960px;
   position:             absolute;
   overflow:             hidden;
 }
@@ -2957,11 +2975,10 @@ textarea.error {
 }
 
 /* hide google branding */
-/*
-#contact #map .gadget a {
+#contact #map .gadget a,
+#contact #map .gadget .powered {
   display:              none;
 }
-*/
 
 #contact #markers .gadget a,
 #contact #markers .gadget .powered {
@@ -3073,7 +3090,7 @@ textarea.error {
   top:                  -10000px;
 }
 
-#chat_win {
+#bg_chat #chat_win {
   width:                495px;
   height:               358px;
   margin:               0 auto;
@@ -3092,61 +3109,11 @@ textarea.error {
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
-#chat_win #lp_thread {
-  font-family:          "Lucida Grande",Tahoma,Arial,sans-serif;
-/*  width:                495px;*/
-  height:               230px;
-  margin-bottom:        10px;
-  padding:              10px;
-  background:           #f8f8f9;
-  position:             relative;
-  overflow:             auto;
-}
-
-#chat_win #lp_thread .system {
-  color:                #909091;
-  font-style:           italic;
-  margin-bottom:        10px;
-}
-#chat_win #lp_thread .operator {
-  color:                #1b648b;
-  margin-bottom:        10px;
-}
-#chat_win #lp_thread .user {
-  color:                #c3151c;
-  margin-bottom:        10px;
-}
-#chat_win #lp_thread .who {
-  font-weight:          bold;
-}
-
-#chat_win #lp_type {
-  line-height:          116%;
-  width:                398px; /*488px;*/
-  height:               62px;
-  padding-right:        0;
-  background:           #f8f8f9;
-  float:                left;
-  position:             relative;
-  overflow:             auto;
-}
-
-#chat_win #lp_send {
-  float:                right;
-}
-
-#chat_win #btn_end_chat {
-  position:             absolute;
-  bottom:               26px;
-  left:                 228px;
-}
-
-/*
 #lp_chat_window {
   width:                495px;
   height:               358px;
+/*  overflow:             hidden;*/
 }
-*/
 
 /* / Chat */
 
