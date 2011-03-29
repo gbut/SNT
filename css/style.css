@@ -2867,6 +2867,7 @@ textarea.error {
 }
 
 /* mercator
+** need to adjust following change to full width map  - left +24? **
 #contact #markers .newark {
   left:                 120px;
   top:                  140px;
@@ -2915,50 +2916,49 @@ textarea.error {
 
 /* mollweide */
 #contact #markers .newark {
-  left:                 193px;
+  left:                 217px;
   top:                  98px;
 }
 #contact #markers .peoria {
-  left:                 242px;
+  left:                 266px;
   top:                  103px;
 }
 #contact #markers .bloomington {
-  left:                 234px;
+  left:                 258px;
   top:                  94px;
 }
 #contact #markers .hackensack {
-  left:                 277px;
+  left:                 301px;
   top:                  107px;
 }
 #contact #markers .bermuda {
-  left:                 283px;
+  left:                 307px;
   top:                  124px;
 }
 #contact #markers .london {
-  left:                 434px;
+  left:                 458px;
   top:                  69px;
 }
 #contact #markers .paris {
-  left:                 441px;
+  left:                 465px;
   top:                  79px;
 }
 #contact #markers .zurich {
-  left:                 450px;
+  left:                 474px;
   top:                  76px;
 }
 #contact #markers .noida {
-  left:                 593px;
+  left:                 617px;
   top:                  126px;
 }
 #contact #markers .beijing {
-  left:                 658px;
+  left:                 682px;
   top:                  98px;
 }
 #contact #markers .tokyo {
-  left:                 710px;
+  left:                 734px;
   top:                  108px;
 }
-
 
 #contact #map iframe {
   position:absolute;
