@@ -3159,18 +3159,20 @@ textarea.error {
 
 #chat_win #lp_type {
   line-height:          116%;
-  width:                398px; /*488px;*/
+  width:                488px; /*398px;*/
   height:               62px;
   padding-right:        0;
   background:           #f8f8f9;
-  float:                left;
+/*  float:                left;*/
   position:             relative;
   overflow:             auto;
 }
 
+/*
 #chat_win #lp_send {
   float:                right;
 }
+*/
 
 #chat_win #btn_end_chat {
   position:             absolute;

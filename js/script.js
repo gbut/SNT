@@ -434,7 +434,7 @@ $(document).ready(function(){
       this.win                = $(e);
       this.threadArea         = $('#lp_thread');
       this.typeArea           = $('#lp_type');
-      this.btnSend            = $('#lp_send');
+//      this.btnSend            = $('#lp_send');
       this.btnStart           = $('.openChatWin');
       this.btnEnd             = $('#btn_end_chat');
       this.agentTyping        = $('#lp_agent_typing');
@@ -451,7 +451,8 @@ $(document).ready(function(){
       this.btnStart.each(function(){
         $(this).bind('click', { obj: self }, self.requestChat);
       });
-      $(this.btnSend).bind('click', { obj: self }, self.sendText);
+//      $(this.btnSend).bind('click', { obj: self }, self.sendText);
+      $(this.typeArea).bind('keypress', { obj: self }, self.sendText);
       $(this.btnEnd).bind('click', { obj: self }, self.hideWin);
       $(this.btnEmail).bind('click', { obj: self }, self.toggleEmailTranscript);
       $(this.emailCancel).bind('click', { obj: self }, self.toggleEmailTranscript);
@@ -571,6 +572,23 @@ $(document).ready(function(){
        * @type undefined
        */
       sendText: function(e) {
+        // only alter behavior if ENTER key was pressed
+        var code = (e.keyCode ? e.keyCode : e.which);
+        if (code != 13) return true;
+        
+        var o = e.data.obj; //the instantiated $.chatWindow object
+        var t = $(this).val();
+        if (t != ''){
+          o.lpc.addLine(t.replace(/\n/gi, ' *** ')); // textarea line breaks don't get sent; replace here with some other identifiable string for agent
+          o.addChatText(o.lpc.getVisitorName(), t, 'user');
+          o.typeArea.val('');
+        }
+        e.preventDefault();
+        return true;
+      },
+/* the version below is used with a SEND button */
+/*
+      sendText: function(e) {
         var o = e.data.obj; //the instantiated $.chatWindow object
         var t = o.typeArea.val();
         if (t != ''){
@@ -580,6 +598,7 @@ $(document).ready(function(){
         }
         return true;
       },
+*/
 
       /**
        * Opens/dismisses dialog for emailing the chat transcript.

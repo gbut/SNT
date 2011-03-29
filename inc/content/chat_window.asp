@@ -2,7 +2,7 @@
     <div id="chat_win">
       <div id="lp_thread"></div>
       <textarea id="lp_type"></textarea>
-      <button id="lp_send">Send</button>
+      <!-- <button id="lp_send">Send</button> -->
       <a href="#" id="btn_end_chat" class="btn btnEndChat">End Chat</a>
       <div id="lp_agent_typing" style="width:20px;height:20px;position:absolute;top:276px;right:20px;background:blue;overflow:hidden;display:none;"></div>
       <a href="#" id="btn_email_transcript" class="" style="position:absolute;top:6px;right:20px;">Email Transcript</a>
