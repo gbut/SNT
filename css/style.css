@@ -1182,7 +1182,6 @@ footer a {
 
 aside {
   margin-top:           30px;
-  float:                right;
 }
 #t04 aside {
   margin-top:           15px;
@@ -1224,6 +1223,7 @@ aside section.pie_first-child.slvzr-last-child {
   border-radius:        6px;
 }
 #t10 aside section {
+  margin-top:           17px;
   padding-bottom:       32px;
 }
 
@@ -1777,12 +1777,18 @@ aside .share .label {
 aside .share a.facebook,
 aside .share a.twitter,
 aside .ui-tabs ul.ui-tabs-nav li a,
+#risk #vidCont.ui-tabs ul.ui-tabs-nav li a,
+#job_listings .footer a.submit {
+  background:           transparent url(../img/icon_sprite.png) 0 0 no-repeat;
+}
+aside .share a.facebook,
+aside .share a.twitter,
+aside .ui-tabs ul.ui-tabs-nav li a,
 #risk #vidCont.ui-tabs ul.ui-tabs-nav li a {
   width:                33px;
   height:               30px;
   display:              block;
   margin-left:          10px;
-  background:           transparent url(../img/icon_sprite.png) 0 0 no-repeat;
 }
 aside .share a.twitter {
   background-position:  0 -30px;
@@ -2563,13 +2569,18 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #job_listings .footer a.submit {
   font-size:            90%;
-  color:                #1d3a4a;
+  color:                #1e3b4b;
   text-transform:       uppercase;
   height:               16px;
   display:              block;
   padding-left:         20px;
-  background:           transparent url(../img/icon_submit_res.gif) 0 0 no-repeat;
+  background-position:  0 -70px;
   float:                right;
+}
+#job_listings .footer a:hover.submit,
+#job_listings .footer a:active.submit {
+  color:                #6a7f8b;
+  background-position:  0 -86px;
 }
 
 #job_listings .more {
