@@ -3088,11 +3088,15 @@ textarea.error {
   top:                  -10000px;
 }
 
+<<<<<<< HEAD
 .openChatWin {
   top:                  -10000px;
 }
 
 #chat_win {
+=======
+#bg_chat #chat_win {
+>>>>>>> c14d79b7c41602419c1ad3992dc2188f4afa8994
   width:                495px;
   height:               358px;
   margin:               0 auto;
@@ -3111,6 +3115,7 @@ textarea.error {
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
+<<<<<<< HEAD
 #chat_win #lp_thread {
   font-family:          "Lucida Grande",Tahoma,Arial,sans-serif;
 /*  width:                495px;*/
@@ -3168,11 +3173,13 @@ textarea.error {
 }
 
 /*
+=======
+>>>>>>> c14d79b7c41602419c1ad3992dc2188f4afa8994
 #lp_chat_window {
   width:                495px;
   height:               358px;
+/*  overflow:             hidden;*/
 }
-*/
 
 /* / Chat */
 

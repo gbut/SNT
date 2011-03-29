@@ -8,14 +8,22 @@
       <h3>Get In <em>Touch</em></h3>
 
       <fieldset>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" />
-        <label for="tel">Telephone:</label>
-        <input type="text" id="tel" name="tel" />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
+        <div class="field">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="field">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" />
+        </div>
+        <div class="field">
+          <label for="tel">Telephone:</label>
+          <input type="text" id="tel" name="tel" />
+        </div>
+        <div class="field">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
         <a href="#" name="submit" id="submit" class="btn btnLg btnSubmit" onclick="submit();">Send</a>
       </fieldset>
         
@@ -23,10 +31,10 @@
   
     <aside>
       <section>
-
+      
         <div class="share clearfix">
           <div class="label">
-            Follow us around the web:
+            Follow Us: 
           </div>
           <a href="http://www.facebook.com/pages/Risk-Management-Solutions/110270308995196" title="Follow us on Facebook" class="facebook"></a>
           <a href="#" title="Follow us on Twitter" class="twitter"></a>

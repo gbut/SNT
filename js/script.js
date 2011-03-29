@@ -1145,7 +1145,7 @@ $(document).ready(function(){
           clock = $('.'+this).find('canvas'); // find clock based on last (any) location
         });
         clock.attr('class', function(i,klass) {
-          return klass.replace('default','highlight').replace('noSeconds',''); // change skin and enable second hand as highlight for clock
+          return klass.replace('normal','highlight').replace('noSeconds',''); // change skin and enable second hand as highlight for clock
         });
         CoolClock.findAndCreateClocks(); // update clock
       },
@@ -1158,7 +1158,7 @@ $(document).ready(function(){
             clock = $('.'+this).find('canvas'); // find clock based on last (any) location [omit class=highlight]
         });
         clock.attr('class', function(i,klass) {
-          return klass.replace('highlight','default').replace('::',':noSeconds:'); // change skin and disable second hand
+          return klass.replace('highlight','normal').replace('::',':noSeconds:'); // change skin and disable second hand
         });
         CoolClock.findAndCreateClocks(); // update clock
       }
