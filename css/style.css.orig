@@ -1182,6 +1182,7 @@ footer a {
 
 aside {
   margin-top:           30px;
+  float:                right;
 }
 #t04 aside {
   margin-top:           15px;
@@ -1223,7 +1224,6 @@ aside section.pie_first-child.slvzr-last-child {
   border-radius:        6px;
 }
 #t10 aside section {
-  margin-top:           17px;
   padding-bottom:       32px;
 }
 
@@ -1777,18 +1777,12 @@ aside .share .label {
 aside .share a.facebook,
 aside .share a.twitter,
 aside .ui-tabs ul.ui-tabs-nav li a,
-#risk #vidCont.ui-tabs ul.ui-tabs-nav li a,
-#job_listings .footer a.submit {
-  background:           transparent url(../img/icon_sprite.png) 0 0 no-repeat;
-}
-aside .share a.facebook,
-aside .share a.twitter,
-aside .ui-tabs ul.ui-tabs-nav li a,
 #risk #vidCont.ui-tabs ul.ui-tabs-nav li a {
   width:                33px;
   height:               30px;
   display:              block;
   margin-left:          10px;
+  background:           transparent url(../img/icon_sprite.png) 0 0 no-repeat;
 }
 aside .share a.twitter {
   background-position:  0 -30px;
@@ -2569,18 +2563,13 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #job_listings .footer a.submit {
   font-size:            90%;
-  color:                #1e3b4b;
+  color:                #1d3a4a;
   text-transform:       uppercase;
   height:               16px;
   display:              block;
   padding-left:         20px;
-  background-position:  0 -70px;
+  background:           transparent url(../img/icon_submit_res.gif) 0 0 no-repeat;
   float:                right;
-}
-#job_listings .footer a:hover.submit,
-#job_listings .footer a:active.submit {
-  color:                #6a7f8b;
-  background-position:  0 -86px;
 }
 
 #job_listings .more {
@@ -3099,11 +3088,15 @@ textarea.error {
   top:                  -10000px;
 }
 
+<<<<<<< HEAD
 .openChatWin {
   top:                  -10000px;
 }
 
 #chat_win {
+=======
+#bg_chat #chat_win {
+>>>>>>> c14d79b7c41602419c1ad3992dc2188f4afa8994
   width:                495px;
   height:               358px;
   margin:               0 auto;
@@ -3122,6 +3115,7 @@ textarea.error {
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
+<<<<<<< HEAD
 #chat_win #lp_thread {
   font-family:          "Lucida Grande",Tahoma,Arial,sans-serif;
 /*  width:                495px;*/
@@ -3179,11 +3173,13 @@ textarea.error {
 }
 
 /*
+=======
+>>>>>>> c14d79b7c41602419c1ad3992dc2188f4afa8994
 #lp_chat_window {
   width:                495px;
   height:               358px;
+/*  overflow:             hidden;*/
 }
-*/
 
 /* / Chat */
 

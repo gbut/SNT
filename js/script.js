@@ -35,7 +35,6 @@ function inspect(obj) {
 
 $(document).ready(function(){
   
-
 	//===============================================
 	//	VIDEO PRESENTER
 	//  Manages interactions related to hero video (Careers)
@@ -401,6 +400,266 @@ $(document).ready(function(){
 
   if ($('#team').length) $('#team').teamPhoto();
 
+
+	//===============================================
+	//	CHAT WINDOW
+	//  Manages custom chat interactions
+	//===============================================
+  (function($){
+    $.fn.chatWindow = function(options) {
+      return this.each(function() {
+        new $cw(this, options);
+      });
+    };
+    
+    var defaults = {
+      dur: 400,
+      topVisible: 0,
+      topHidden: -10000
+    };
+    
+    /**
+     * The chatWindow object.
+     *
+     * @constructor
+     * @name $.chatWindow
+     * @param Object e The element to create the chatWindow for.
+     * @param Hash o A set of key/value pairs to set as configuration properties.
+     */
+    $.chatWindow = function(e, o) {
+      this.options            = $.extend({}, defaults, o || {});
+
+      // elements
+      var self                = this;
+      this.win                = $(e);
+      this.threadArea         = $('#lp_thread');
+      this.typeArea           = $('#lp_type');
+      this.btnSend            = $('#lp_send');
+      this.btnStart           = $('.openChatWin');
+      this.btnEnd             = $('#btn_end_chat');
+      
+      // flags, measurements
+      this.agentName          = 'RMS';
+      
+      // attach behaviors
+      this.btnStart.each(function(){
+        $(this).bind('click', { obj: self }, self.requestChat);
+      });
+      $(this.btnSend).bind('click', { obj: self }, self.sendText);
+      $(this.btnEnd).bind('click', { obj: self }, self.hideWin);
+      
+      // load session
+      this.setup();
+
+    };
+
+    // Create shortcut for internal use
+    var $cw = $.chatWindow;
+    $cw.fn = $cw.prototype = {};
+    $cw.fn.extend = $cw.extend = $.extend;
+
+    $cw.fn.extend({
+      /**
+       * Sets up a chat session.
+       *
+       * @name setup
+       * @type undefined
+       */
+      setup: function() {
+        // attach object to chat win so we have access to it on LP script load
+        this.win.data('cw', this);
+      },
+
+      /**
+       * Shows the chat window and loads the application.
+       *
+       * @name showWin
+       * @type undefined
+       */
+      showWin: function() {
+        this.win.css({ top: this.options.topVisible });
+        this.btnStart.css({ top: this.options.topHidden });
+      },
+
+      /**
+       * Hides the chat window and ends the chat session.
+       *
+       * @name hideWin
+       * @type undefined
+       */
+      hideWin: function(e) {
+        var o = e.data.obj; //the instantiated $.chatWindow object
+        
+        // define a callback
+        var _hideWin = function(){
+          o.win.css({ top: o.options.topHidden });
+          o.btnStart.css({ top: o.options.topVisible });
+          o.threadArea.empty();
+          o.typeArea.val('');
+          window.clearTimeout(st);
+        }
+        
+        // alert the user, then end session
+        o.lpc.endChat();
+        o.addChatText(null, 'Ending chat session...');
+        var st = window.setTimeout(function(){ _hideWin(); }, 3000);
+        
+        e.preventDefault();
+      },
+
+      /**
+       * Checks if any operators are available.
+       *
+       * @name checkAvailability
+       * @type undefined
+       */
+      checkAvailability: function() {
+        this.lpc.chatAvailability();
+      },
+
+      /**
+       * Request chat from available operator.
+       *
+       * @name requestChat
+       * @type undefined
+       */
+      requestChat: function(e) {
+        var o = e.data.obj; //the instantiated $.chatWindow object
+        
+        o.showWin();
+        o.lpc.requestChat();
+        
+        e.preventDefault();
+      },
+
+      /**
+       * Adds chat text to the thread.
+       *
+       * @name addChatText
+       * @type undefined
+       */
+      addChatText: function(by, text, klass) {
+        var who = (by != null) ? '<span class="who">' + by + ': </span>' : '';
+        var str = who + text.replace(/\n/gi, '<br />');
+        this.threadArea.append($('<div class="' + klass + '">' + str + '</div>')).scrollTop(50000);
+      },
+
+      /**
+       * Adds an error message to the thread.
+       *
+       * @name addChatError
+       * @type undefined
+       */
+      addChatError: function(text, isError) {
+        var e = isError || false;
+        var prefix = e ? '<strong>ERROR:</strong> ' : '';
+        this.threadArea.append($('<div class="error">' + prefix + text + '</div>')).scrollTop(50000);
+      },
+
+      /**
+       * Sends chat text.
+       *
+       * @name sendText
+       * @type undefined
+       */
+      sendText: function(e) {
+        var o = e.data.obj; //the instantiated $.chatWindow object
+        
+        var t = o.typeArea.val();
+        if (t != ''){
+          o.lpc.addLine(t.replace(/\n/gi, ' *** ')); // textarea line breaks don't get sent; replace here with some other identifiable string for agent
+          o.addChatText(o.lpc.getVisitorName(), t, 'user');
+          o.typeArea.val('');
+        }
+        return true;
+      },
+
+      /**
+       * Handler for checking for available operators.
+       *
+       * @name onChatAvailable
+       * @type undefined
+       */
+      onChatAvailable: function(availObj) {
+        if (availObj.availability == true) {
+          // initiate chat
+          _cw.btnStart.css({ top: _cw.options.topVisible });
+          _cw.requestChat();
+        } else {
+          
+        }
+      },
+
+      /**
+       * Handler for when a chat session is terminated by the server.
+       *
+       * @name onChatStop
+       * @type undefined
+       */
+      onChatStop: function(reasonID, reasonText) {
+        _cw.addChatError(reasonText);
+      },
+
+      /**
+       * Handler for sending a new line.
+       *
+       * @name onChatLine
+       * @type undefined
+       */
+      onChatLine: function(line) {
+        //alert(line.type);
+        switch (line.type) {
+          case '1': // operator
+          case '3': // url
+          case '4': // html
+            _cw.addChatText(line.by, line.text, 'operator');
+            break;
+          default: // everything else
+            _cw.addChatText(null, line.text, 'system');
+        }
+      },
+
+      /**
+       * Handler for chat errors.
+       *
+       * @name onChatError
+       * @type undefined
+       */
+      onChatError: function(errObj) {
+        _cw.addChatError(errObj.text, true);
+      }
+
+    });
+
+  })(jQuery);
+  
+  if ($('#chat_win').length) {
+    // instantiate
+    $('#chat_win').chatWindow();
+    _cw = $('#chat_win').data('cw');
+
+    // config
+    var lpc;
+    lpChatConfig = {
+      apiKey : '280e4c40d2524aee8895e299efc4359c', // 66a2b5d32
+      lpServer : 'dev.liveperson.net',
+      lpNumber : 'P89578626', // small business test account
+      onLoad : function() {
+        // init session
+        _cw.lpc = new lpChat();
+        // check operator availability
+        _cw.checkAvailability();
+      },
+      onLine : _cw.onChatLine,
+      onError : _cw.onChatError,
+      onAvailability: _cw.onChatAvailable,
+      onStop: _cw.onChatStop
+    };
+    lpChatConfig.lpAddScript = function(src, ignore) {var c = lpChatConfig;if(typeof(c.lpProtocol)=='undefined'){c.lpProtocol = (document.location.toString().indexOf("https:")==0) ? "https" : "http";}if (typeof(src) == 'undefined' || typeof(src) == 'object') {src = c.lpChatSrc ? c.lpChatSrc : '/hcp/html/lpChatAPI.js';};if (src.indexOf('http') != 0) {src = c.lpProtocol + "://" + c.lpServer + src + '?site=' + c.lpNumber;} else {if (src.indexOf('site=') < 0) {if (src.indexOf('?') < 0)src = src + '?'; else src = src + '&';src = src + 'site=' + c.lpNumber;}};var s = document.createElement('script');s.setAttribute('type', 'text/javascript');s.setAttribute('charset', 'iso-8859-1');s.setAttribute('src', src);document.getElementsByTagName('head').item(0).appendChild(s);}
+    if (window.attachEvent) window.attachEvent('onload', lpChatConfig.lpAddScript);
+      else window.addEventListener('load', lpChatConfig.lpAddScript, false);
+  }
+  
 
 	//===============================================
 	//	VOID LINKS (HREF="#")
@@ -916,29 +1175,6 @@ $(document).ready(function(){
   }
 */
 
-  //===============================================
-  //  LivePerson Chat
-  //===============================================
-
-  if ($('#chat_win').length) {
-    $('#btn_start_chat').click(function(e){
-      $('#chat_win').css({ top: 0 });
-    });
-    
-    var _rf = window.setTimeout(function(){
-    }, 4000);
-/*
-    var _rf = window.setTimeout(function(){
-      $('.btnChatCont a').removeAttr('target')
-        .unbind('click')
-        .click(function(e){
-          $('#lp_chat_window').attr('src', $(this).attr('href'));
-          e.preventDefault();
-        });
-    }, 4000);
-*/
-  }
-  
   //===============================================
   //  Form validation
   //===============================================

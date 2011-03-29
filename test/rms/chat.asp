@@ -102,7 +102,7 @@
         <div class="wrapper">
           <div class="hd">
             <h2>We Support Instant Gratification.</h2>
-            <a href="#" id="btn_start_chat" class="btn btnChat">Chat Now</a>
+            <a href="#" id="btn_start_chat" class="btn btnChat openChatWin">Chat Now</a>
             <!-- BEGIN LivePerson Button Code -->
             <!-- <div id="lpButDivID-1300847020557" class="btnChatCont"></div>
                   <script type="text/javascript" charset="UTF-8" src="https://server.iad.liveperson.net/hc/44448599/?cmd=mTagRepstate&site=44448599&buttonID=7&divID=lpButDivID-1300847020557&bt=3&c=1"></script> -->
@@ -117,9 +117,9 @@
           <!-- + chat window -->
           <div id="chat_win" class="clearfix">
             <div id="lp_thread">
-              <p class="system">You are now ready to chat.</p>
-              <p class="operator"><span class="who">Nathaniel:</span> Hello, how may I help you?</p>
-              <p class="user"><span class="who">SomeDude:</span> Hi, I'm having an issue with some RMS stuff. Do you need me to be more specific?</p>
+              <div class="system">You are now ready to chat.</div>
+              <div class="operator"><span class="who">Nathaniel:</span> Hello, how may I help you?</div>
+              <div class="user"><span class="who">SomeDude:</span> Hi, I'm having an issue with some RMS stuff. Do you need me to be more specific?</div>
             </div>
             <textarea id="lp_type"></textarea>
             <button id="lp_send" onclick="sendText();">Send</button>
