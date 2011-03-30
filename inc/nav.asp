@@ -36,15 +36,15 @@
       </ul>
     </li>
     <li>
-      <a href="/markets" class="pn" title="Markets"><span class="tl">Markets</span></a>
+      <a href="/nextgen" class="pn" title="Next Gen"><span class="tl">Next Gen</span></a>
     </li>
     <li>
-      <a href="/solutions" class="pn" title="Solutions"><span class="tl">Solutions</span></a>
+      <a href="#" class="pn" title="Solutions"><span class="tl">[??????]</span></a>
     </li>
     <li>
       <a href="/about" class="pn" title="About"><span class="tl">About</span></a>
     </li>
-    <li class="selected">
+    <li>
       <a href="/careers" class="pn" title="Careers"><span class="tl">Careers</span></a>
       <ul class="sn careers">
         <li class="clearfix">
