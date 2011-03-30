@@ -30,7 +30,7 @@
       <!-- + careers-jobs -->
       <div id="job_listings">
 
-        <!--#include virtual="/inc/content/careeers_jobs_list.htm" -->
+        <!--#include virtual="/inc/content/careers_jobs_list.htm" -->
         
         <div id="none_found">
           There are currently no open positions<span class="category"></span><span class="region"></span>.
