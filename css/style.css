@@ -2869,8 +2869,8 @@ textarea.error {
 }
 
 #contact #markers a {
-  width:                24px;
-  height:               24px;
+  width:                18px;
+  height:               18px;
   display:              block;
   background:           transparent url(../img/icons_markers.png) 0 0 no-repeat;
   position:             absolute;
@@ -2950,37 +2950,37 @@ textarea.error {
 #contact #markers .bermuda {
   left:                 307px;
   top:                  124px;
-  background-position:  0 -24px;
+  background-position:  0 -18px;
 }
 #contact #markers .london {
   left:                 458px;
   top:                  69px;
-  background-position:  0 -72px;
+  background-position:  0 -54px;
 }
 #contact #markers .paris {
   left:                 465px;
   top:                  79px;
-  background-position:  0 -96px;
+  background-position:  0 -72px;
 }
 #contact #markers .zurich {
   left:                 474px;
   top:                  76px;
-  background-position:  0 -120px;
+  background-position:  0 -90px;
 }
 #contact #markers .noida {
   left:                 617px;
   top:                  126px;
-  background-position:  0 -144px;
+  background-position:  0 -108px;
 }
 #contact #markers .beijing {
   left:                 682px;
   top:                  98px;
-  background-position:  0 -168px;
+  background-position:  0 -126px;
 }
 #contact #markers .tokyo {
   left:                 734px;
   top:                  108px;
-  background-position:  0 -192px;
+  background-position:  0 -144px;
 }
 
 #contact #map iframe {
