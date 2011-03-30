@@ -2875,7 +2875,6 @@ textarea.error {
   background:           transparent url(../img/icons_markers.png) 0 0 no-repeat;
   position:             absolute;
   z-index:              1;
-
   -moz-opacity:         0.80;
   -ms-filter:           "alpha(opacity=80)";
   filter:               alpha(opacity=80);
