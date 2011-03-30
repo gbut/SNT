@@ -7,7 +7,7 @@
 
     <div>
       <label for="jvCategory">Select your field:</label>
-      <!--#include virtual="/inc/content/careers_jobs_cats.htm" -->
+      <!--#include virtual="/inc/content/careers_jobs_category_select_list.htm" -->
     </div>
 
   </form>

@@ -44,7 +44,7 @@
     <li>
       <a href="/about" class="pn" title="About"><span class="tl">About</span></a>
     </li>
-    <li class="selected">
+    <li>
       <a href="/careers" class="pn" title="Careers"><span class="tl">Careers</span></a>
       <ul class="sn careers">
         <li class="clearfix">

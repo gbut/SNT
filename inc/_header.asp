@@ -27,7 +27,7 @@
         </ul>
         <fieldset>
           <label id="form_login_username_label" for="form_login_username">User Name</label>
-          <input type="text" name="username" id="form_login_username" value="" />
+          <input type="text" name="Login" id="form_login_username" value="" />
           
           <label id="form_login_password_label" for="form_login_password">Password</label>
           <a href="#" id="form_login_forgot_password">Forgot?</a>
@@ -36,8 +36,9 @@
           <input type="checkbox" name="remember" id="form_login_remember" value="1" />
           <label id="form_login_remember_label" for="form_login_remember">Remember me</label>
           
-          <!-- <button type="submit" name="login" class="btn btnSm" id="form_login_login" value="Log In">Log In</button> -->
-          <a href="#" class="btn btnSm" id="form_login_login">Log In</a>
+          <input type="hidden" value="Submit" name="Action.x" alt="Submit" />
+          <button type="submit" name="btn_login" class="btn btnSm" id="form_login_login" value="">Log In</button>
+          <!--<a href="#" class="btn btnSm" id="form_login_login">Log In</a>-->
         </fieldset>
       </form>
     </div>
