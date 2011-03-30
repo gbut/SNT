@@ -2994,13 +2994,11 @@ textarea.error {
   color:#c3151c;
 }
 #contact #markers a.highlight {
- /*background-position:   -24px 0;*/
- 
+ /*background-position:   -18px 0;*/ 
  -moz-opacity:          1.00;
  -ms-filter:            "alpha(opacity=100)";
  filter:                alpha(opacity=100);
  opacity:               1.00;
- 
  z-index:               10;
 }
 
