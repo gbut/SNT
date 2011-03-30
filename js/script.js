@@ -435,28 +435,47 @@ $(document).ready(function(){
       this.threadArea         = $('#lp_thread');
       this.typeArea           = $('#lp_type');
 //      this.btnSend            = $('#lp_send');
+      this.btnClose           = $('#btn_close_chat');
       this.btnStart           = $('.openChatWin');
       this.btnEnd             = $('#btn_end_chat');
       this.agentTyping        = $('#lp_agent_typing');
       this.btnEmail           = $('#btn_email_transcript');
       this.emailOverlay       = $('#lp_email_transcript');
-      this.emailAddress       = this.emailOverlay.find('input');
-      this.emailSend          = this.emailOverlay.find('button');
+      this.emailForm          = $('#lp_form_email');
+      // this.emailAddress       = this.emailOverlay.find('input');
+      // this.emailSend          = this.emailOverlay.find('button');
+      this.emailAddress       = this.emailOverlay.find('input[type=email]');
+      this.emailSend          = this.emailOverlay.find('input[type=submit]');
       this.emailCancel        = this.emailOverlay.find('a');
       
       // flags, measurements
       //this.agentName          = 'RMS';
       
       // attach behaviors
+      this.btnClose.bind('click', { obj: self }, self.hideWin);
       this.btnStart.each(function(){
         $(this).bind('click', { obj: self }, self.requestChat);
       });
 //      $(this.btnSend).bind('click', { obj: self }, self.sendText);
-      $(this.typeArea).bind('keypress', { obj: self }, self.sendText);
-      $(this.btnEnd).bind('click', { obj: self }, self.hideWin);
-      $(this.btnEmail).bind('click', { obj: self }, self.toggleEmailTranscript);
-      $(this.emailCancel).bind('click', { obj: self }, self.toggleEmailTranscript);
-      $(this.emailSend).bind('click', { obj: self }, self.emailTranscript);
+      this.typeArea.bind('keypress', { obj: self }, self.sendText);
+      this.btnEnd.bind('click', { obj: self }, function(){ self.endChat(); });
+      this.btnEmail.bind('click', { obj: self }, self.toggleEmailTranscript);
+      this.emailCancel.bind('click', { obj: self }, self.toggleEmailTranscript);
+//      this.emailSend.bind('click', { obj: self }, self.emailTranscript);
+      this.emailSend.bind('click', { obj: self }, function(){ self.emailForm.submit(); });
+      
+      // email form validation
+      this.emailForm.validate({
+        messages: {
+          email: {
+            email: "Please enter a valid email address."
+          }
+        },
+        debug:true,
+        submitHandler: function(f) {
+          self.emailTranscript();
+        }
+      });
       
       // load session
       this.setup();
@@ -481,18 +500,34 @@ $(document).ready(function(){
       },
 
       /**
+       * Matches current chat state against an array of possible states.
+       *
+       * @name inChatState
+       * @type undefined
+       */
+      inChatState: function(lpcObj, states) {
+        var s = states || [];
+        var current = lpcObj.getState().id;
+        for (var i=0; i<s.length; i++) {
+          if (s[i]==current) return true;
+        }
+        return false;
+      },
+
+      /**
        * Shows the chat window and loads the application.
        *
        * @name showWin
        * @type undefined
        */
       showWin: function() {
+        this.emailOverlay.hide();
         this.win.css({ top: this.options.topVisible });
         this.btnStart.css({ top: this.options.topHidden });
       },
 
       /**
-       * Hides the chat window and ends the chat session.
+       * Hides the chat window, and ends the chat session if it still exists.
        *
        * @name hideWin
        * @type undefined
@@ -501,21 +536,49 @@ $(document).ready(function(){
         var o = e.data.obj; //the instantiated $.chatWindow object
         
         // define a callback
+        var st = null;
         var _hideWin = function(){
           o.win.css({ top: o.options.topHidden });
           o.btnStart.css({ top: o.options.topVisible });
           o.threadArea.empty();
           o.typeArea.val('');
           o.agentTyping.hide();
-          window.clearTimeout(st);
+          o.emailAddress.empty();
+          o.emailOverlay.hide();
+          if (st) {
+            window.clearTimeout(st);
+            st = null;
+          }
+        }
+
+        if (o.inChatState(o.lpc, [1,2,4,7])) {
+          // if session active: end chat, notify, delay window hide
+          o.endChat();
+          var st = window.setTimeout(function(){ _hideWin(); }, 3000);
+        } else {
+          // else: window hide
+          _hideWin();
         }
         
-        // alert the user, then end session
-        o.lpc.endChat();
-        o.addChatText(null, 'Ending chat session...', 'system');
-        var st = window.setTimeout(function(){ _hideWin(); }, 3000);
-        
         e.preventDefault();
+      },
+
+      /**
+       * Ends the chat session.
+       *
+       * @name endChat
+       * @type undefined
+       */
+      endChat: function() {
+        // notify if chat session not active
+        if (!this.inChatState(this.lpc, [1,2,4,7])) {
+          this.addChatText(null, 'Chat session is not active.', 'system');
+          return false;
+        }
+        
+        // else, end session and alert user
+        this.lpc.endChat();
+        this.addChatText(null, 'Ending chat session...', 'system');
       },
 
       /**
@@ -619,11 +682,8 @@ $(document).ready(function(){
        * @name emailTranscript
        * @type undefined
        */
-      emailTranscript: function(e) {
-        var o = e.data.obj; //the instantiated $.chatWindow object
-        // validate
-        if (o.emailAddress.val() == '') return alert('Please enter an email address.');
-        o.lpc.requestTranscriptEmail(o.emailAddress.val());
+      emailTranscript: function() {
+        this.lpc.requestTranscriptEmail(this.emailAddress.val());
       },
 
       /**

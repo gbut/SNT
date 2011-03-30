@@ -1310,7 +1310,7 @@ aside section.pie_first-child.slvzr-last-child {
   margin:               15px 0 0 150px;
 }
 
-#presenter a.close,
+a.close,
 #presenterNav ul li a .imgCont .play {
   text-indent:          -9999px;
   width:                32px;
@@ -1321,8 +1321,8 @@ aside section.pie_first-child.slvzr-last-child {
   background:           transparent url(../img/icons_video.png) 0 0 no-repeat;
   overflow:             hidden;
 }
-#presenter a.close:hover,
-#presenter a.close:active {
+a.close:hover,
+a.close:active {
   background-position:  0 -32px;
 }
 
@@ -3186,6 +3186,12 @@ textarea.error {
   height:               358px;
 }
 */
+
+#chat_win a.close {
+  top:                  -16px;
+  left:                 auto;
+  right:                -16px;
+}
 
 /* / Chat */
 
