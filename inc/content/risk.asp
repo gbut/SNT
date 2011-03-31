@@ -12,7 +12,7 @@
       
       <div class="sectionHd">
         <h3>Risk Forecasting <em>and Modeling</em></h3>
-        <p class="columnize-2">As the pioneers of catastrophe risk modeling, RMS leads the market and sets the standard for quantifying and understanding risk around the planet. Our leading-edge risk models cover natural catastrophes such as earthquakes and hurricanes, potential terrorist strikes, and financial risk associated with changes in longevity and the loss of human life.</p>
+        <p>As the pioneers of catastrophe risk modeling, RMS leads the market and sets the standard for quantifying and understanding risk around the planet. Our leading-edge risk models cover natural catastrophes such as earthquakes and hurricanes, potential terrorist strikes, and financial risk associated with changes in longevity and the loss of human life.</p>
       </div>
       
       <div class="sectionCont">
