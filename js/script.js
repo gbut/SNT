@@ -1348,16 +1348,6 @@ $(document).ready(function(){
   });
   
   //===============================================
-  //  Autocolumn: newspaper-style columns for IE
-  //===============================================
-
-/* causing error in IE8
-  if ($.browser.msie) {
-    $('.columnize-2').columnize({ columns: 2 });
-  }
-*/
-
-  //===============================================
   //  Form validation
   //===============================================
 
