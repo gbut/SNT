@@ -447,18 +447,24 @@ $(document).ready(function(){
       this.emailAddress       = this.emailOverlay.find('input[type=email]');
       this.emailSend          = this.emailOverlay.find('input[type=submit]');
       this.emailCancel        = this.emailOverlay.find('a');
+      this.btnPopup           = $('#btn_launch_popup');
+      this.instant            = $('#hd_instant');
       
       // flags, measurements
       //this.agentName          = 'RMS';
+      this.inPopup            = this.win.closest('#body_popup').length;
       
       // attach behaviors
-      this.btnClose.bind('click', { obj: self }, self.hideWin);
-      this.btnStart.each(function(){
-        $(this).bind('click', { obj: self }, self.requestChat);
-      });
+      if (!this.inPopup) {
+        this.btnClose.bind('click', { obj: self }, self.hideWin);
+        this.btnPopup.bind('click', { obj: self }, self.launchPopup);
+        this.btnStart.each(function(){
+          $(this).bind('click', { obj: self }, self.requestChat);
+        });
+      }
+      this.btnEnd.bind('click', { obj: self }, function(){ self.endChat(); });
 //      $(this.btnSend).bind('click', { obj: self }, self.sendText);
       this.typeArea.bind('keypress', { obj: self }, self.sendText);
-      this.btnEnd.bind('click', { obj: self }, function(){ self.endChat(); });
       this.btnEmail.bind('click', { obj: self }, self.toggleEmailTranscript);
       this.emailCancel.bind('click', { obj: self }, self.toggleEmailTranscript);
 //      this.emailSend.bind('click', { obj: self }, self.emailTranscript);
@@ -497,6 +503,14 @@ $(document).ready(function(){
       setup: function() {
         // attach object to chat win so we have access to it on LP script load
         this.win.data('cw', this);
+
+        // if user closes popup, chat persists in main window; make sure to end it
+        if (this.inPopup) {
+          var self = window.opener._cw;
+          var _endChat = function(){ self.endChat(); };
+          if (window.attachEvent) window.attachEvent('onunload', _endChat);
+            else window.addEventListener('unload', _endChat, false);
+        }
       },
 
       /**
@@ -577,8 +591,14 @@ $(document).ready(function(){
         }
         
         // else, end session and alert user
+        
         this.lpc.endChat();
         this.addChatText(null, 'Ending chat session...', 'system');
+        
+        // if in popup, close window
+        if (this.inPopup) {
+          window.setTimeout(function(){ window.close(); }, 3000);
+        }
       },
 
       /**
@@ -687,6 +707,19 @@ $(document).ready(function(){
       },
 
       /**
+       * Handler for when a chat session is initiated (different from onStart, which is when an agent accepts).
+       *
+       * @name onChatInit
+       * @type undefined
+       */
+      onChatInit: function() {
+        if (!_cw.inPopup) {
+          // save session key in case user launches popup
+          $.cookie('chatsessionkey', _cw.lpc.sessionkey);
+        }
+      },
+
+      /**
        * Handler for checking for available operators.
        *
        * @name onChatAvailable
@@ -694,11 +727,16 @@ $(document).ready(function(){
        */
       onChatAvailable: function(availObj) {
         if (availObj.availability == true) {
-          // initiate chat
-          _cw.btnStart.css({ top: _cw.options.topVisible });
-          _cw.requestChat();
+          if (!_cw.inPopup) {
+            _cw.btnStart.css({ top: _cw.options.topVisible });
+          } else {
+            // resume session started in parent window
+            _cw.lpc.resumeChat($.cookie('chatsessionkey'));
+          }
         } else {
-          
+          if (_cw.instant.length) {
+            _cw.instant.append($('<img src="/img/chat_scribble.png" />'));
+          }
         }
       },
 
@@ -719,8 +757,10 @@ $(document).ready(function(){
        * @type undefined
        */
       onChatLine: function(line) {
-        //alert(line.type);
         switch (line.type) {
+          case '0': // user
+            _cw.addChatText(line.by, line.text, 'user');
+            break;
           case '1': // operator
           case '3': // url
           case '4': // html
@@ -750,6 +790,21 @@ $(document).ready(function(){
        */
       onChatError: function(errObj) {
         _cw.addChatError(errObj.text, true);
+      },
+
+      /**
+       * Launches the current chat in a new window.
+       *
+       * @name launchPopup
+       * @type undefined
+       */
+      launchPopup: function(e) {
+        var o = e.data.obj; //the instantiated $.chatWindow object
+//        var features = "menubar=no,location=no,resizable=no,scrollbars=no,status=yes";
+        var features = "width=587,height=450,resizable=yes,status=yes";
+        var windowObjectReference = window.open('/careers/chat/standalone.asp', 'rms_popup', features);
+        o.win.css({ top: o.options.topHidden });
+        e.preventDefault();
       }
 
     });
@@ -767,12 +822,15 @@ $(document).ready(function(){
       apiKey : '280e4c40d2524aee8895e299efc4359c', // 66a2b5d32
       lpServer : 'dev.liveperson.net',
       lpNumber : 'P89578626', // small business test account
+      sessVar : 'SV!',
+      skillUDE : 'skill',
       onLoad : function() {
         // init session
         _cw.lpc = new lpChat();
         // check operator availability
         _cw.checkAvailability();
       },
+      onInit : _cw.onChatInit,
       onLine : _cw.onChatLine,
       onError : _cw.onChatError,
       onAvailability : _cw.onChatAvailable,
