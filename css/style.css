@@ -3042,6 +3042,9 @@ textarea.error {
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
+#stLframe {
+  height: 830px !important;
+}
 
 /* / Share */
 
