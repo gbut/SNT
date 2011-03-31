@@ -5,10 +5,16 @@
 <!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <title></title>
+    <title>[page title from backend]</title>
     <meta name="description" content="" />
     <meta name="author" content="" />
     
+    <!-- Open Graph properties for ShareThis -->
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="http://www.rms.com/Images/translogo.png" /> <!-- ** to do: update path ** -->
+    <meta property="og:description" content="Check out this Open Position at RMS!" />
+    <meta property="og:site_name" content="RMS" />
+        
     <!--#include virtual="/inc/__html-head.asp" -->
   
 </head>
