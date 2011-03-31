@@ -1,5 +1,5 @@
     <!-- + chat window -->
-    <div id="chat_win" style="">
+    <div id="chat_win" style="top:0;">
       <div id="chat_win_hd" class="clearfix">
         <a href="#" id="btn_email_transcript">email chat transcript</a>
         <a href="/careers/chat/standalone.asp" id="btn_launch_popup">open chat in new window</a>

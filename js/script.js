@@ -32,6 +32,18 @@ function inspect(obj) {
   alert(str);
 }
 
+/*
+  jQuery doesn't yet support input[type=email], which has UI benefits for iOS users
+  create capability here
+  note that for input[type=email] elements, $(obj).attr('type') returns 'text'
+*/
+$(function () {
+  $.extend($.expr[':'], {
+    email: function (obj) {
+      return obj.getAttribute('type') == 'email';
+    }
+  });
+});
 
 $(document).ready(function(){
   

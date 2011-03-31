@@ -3289,6 +3289,14 @@ textarea.error {
   float:                left;
 }
 
+#chat_win #lp_email_transcript label.error {
+  color:                #c3151c;
+  width:                250px;
+  position:             absolute;
+  top:                  8px;
+  right:                164px;
+}
+
 #chat_win #lp_email {
   width:                244px;
   margin-right:         6px;
