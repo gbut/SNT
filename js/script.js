@@ -434,24 +434,23 @@ $(document).ready(function(){
       this.win                = $(e);
       this.threadArea         = $('#lp_thread');
       this.typeArea           = $('#lp_type');
-//      this.btnSend            = $('#lp_send');
       this.btnClose           = $('#btn_close_chat');
       this.btnStart           = $('.openChatWin');
       this.btnEnd             = $('#btn_end_chat');
       this.agentTyping        = $('#lp_agent_typing');
+      this.agentNameCont      = $('#lp_agent_name');
       this.btnEmail           = $('#btn_email_transcript');
       this.emailOverlay       = $('#lp_email_transcript');
       this.emailForm          = $('#lp_form_email');
-      // this.emailAddress       = this.emailOverlay.find('input');
-      // this.emailSend          = this.emailOverlay.find('button');
-      this.emailAddress       = this.emailOverlay.find('input[type=email]');
-      this.emailSend          = this.emailOverlay.find('input[type=submit]');
-      this.emailCancel        = this.emailOverlay.find('a');
+      this.emailAddress       = $('#lp_email');
+      this.emailSend          = $('#lp_email_send');
+      this.emailCancel        = $('#lp_email_cancel');
+      this.emailSuccess       = $('#lp_success');
+      this.emailSuccessAddr   = $('#lp_success_email');
       this.btnPopup           = $('#btn_launch_popup');
       this.instant            = $('#hd_instant');
       
       // flags, measurements
-      //this.agentName          = 'RMS';
       this.inPopup            = this.win.closest('#body_popup').length;
       
       // attach behaviors
@@ -463,11 +462,9 @@ $(document).ready(function(){
         });
       }
       this.btnEnd.bind('click', { obj: self }, function(){ self.endChat(); });
-//      $(this.btnSend).bind('click', { obj: self }, self.sendText);
       this.typeArea.bind('keypress', { obj: self }, self.sendText);
-      this.btnEmail.bind('click', { obj: self }, self.toggleEmailTranscript);
-      this.emailCancel.bind('click', { obj: self }, self.toggleEmailTranscript);
-//      this.emailSend.bind('click', { obj: self }, self.emailTranscript);
+      this.btnEmail.bind('click', { obj: self }, self.openEmailTranscript);
+      this.emailCancel.bind('click', { obj: self }, self.closeEmailTranscript);
       this.emailSend.bind('click', { obj: self }, function(){ self.emailForm.submit(); });
       
       // email form validation
@@ -507,9 +504,12 @@ $(document).ready(function(){
         // if user closes popup, chat persists in main window; make sure to end it
         if (this.inPopup) {
           var self = window.opener._cw;
-          var _endChat = function(){ self.endChat(); };
+          var _endChat = function(){ self.endChat(true); };
           if (window.attachEvent) window.attachEvent('onunload', _endChat);
             else window.addEventListener('unload', _endChat, false);
+            
+          // update agent name
+          this.agentNameCont.html($.cookie('chatagentname'));
         }
       },
 
@@ -535,7 +535,6 @@ $(document).ready(function(){
        * @type undefined
        */
       showWin: function() {
-        this.emailOverlay.hide();
         this.win.css({ top: this.options.topVisible });
         this.btnStart.css({ top: this.options.topHidden });
       },
@@ -556,9 +555,9 @@ $(document).ready(function(){
           o.btnStart.css({ top: o.options.topVisible });
           o.threadArea.empty();
           o.typeArea.val('');
-          o.agentTyping.hide();
+          o.agentTyping.css({ visibility: 'hidden' });
           o.emailAddress.empty();
-          o.emailOverlay.hide();
+          o.emailOverlay.removeClass('visible');
           if (st) {
             window.clearTimeout(st);
             st = null;
@@ -583,21 +582,44 @@ $(document).ready(function(){
        * @name endChat
        * @type undefined
        */
-      endChat: function() {
+      endChat: function(resetMainWin) {
+        var rmw = resetMainWin || false;
+
+        // define reset callback
+        var st;
+        var self = this;
+        var _resetWin = function(){
+          self.win.css({ top: self.options.topHidden });
+          self.btnStart.css({ top: self.options.topVisible });
+          self.threadArea.empty();
+          self.typeArea.val('');
+          self.agentTyping.css({ visibility: 'hidden' });
+          self.emailAddress.empty();
+          self.emailOverlay.removeClass('visible');
+          self.checkAvailability();
+          window.clearTimeout(st);
+        }
+
         // notify if chat session not active
         if (!this.inChatState(this.lpc, [1,2,4,7])) {
           this.addChatText(null, 'Chat session is not active.', 'system');
+          
+          // popup closing; before we exit, reset main win
+          if (rmw) st = window.setTimeout(function(){ _resetWin(); }, 3000);
+
           return false;
         }
         
         // else, end session and alert user
-        
         this.lpc.endChat();
         this.addChatText(null, 'Ending chat session...', 'system');
         
         // if in popup, close window
+        // if in main win, reset screen
         if (this.inPopup) {
-          window.setTimeout(function(){ window.close(); }, 3000);
+          st = window.setTimeout(function(){ window.close(); }, 3000);
+        } else {
+          st = window.setTimeout(function(){ _resetWin(); }, 3000);
         }
       },
 
@@ -669,30 +691,31 @@ $(document).ready(function(){
         e.preventDefault();
         return true;
       },
-/* the version below is used with a SEND button */
-/*
-      sendText: function(e) {
-        var o = e.data.obj; //the instantiated $.chatWindow object
-        var t = o.typeArea.val();
-        if (t != ''){
-          o.lpc.addLine(t.replace(/\n/gi, ' *** ')); // textarea line breaks don't get sent; replace here with some other identifiable string for agent
-          o.addChatText(o.lpc.getVisitorName(), t, 'user');
-          o.typeArea.val('');
-        }
-        return true;
-      },
-*/
 
       /**
-       * Opens/dismisses dialog for emailing the chat transcript.
+       * Opens dialog for emailing the chat transcript.
        *
-       * @name toggleEmailTranscript
+       * @name openEmailTranscript
        * @type undefined
        */
-      toggleEmailTranscript: function(e) {
+      openEmailTranscript: function(e) {
         var o = e.data.obj; //the instantiated $.chatWindow object
-        if (o.emailOverlay.is(':visible')) o.emailOverlay.hide();
-          else o.emailOverlay.show();
+        if (o.emailOverlay.hasClass('visible')) return false;
+        o.emailOverlay.addClass('visible');
+        o.emailAddress.focus();
+        e.preventDefault();
+      },
+
+      /**
+       * Dismisses dialog for emailing the chat transcript.
+       *
+       * @name closeEmailTranscript
+       * @type undefined
+       */
+      closeEmailTranscript: function(e) {
+        var o = e.data.obj; //the instantiated $.chatWindow object
+        o.emailOverlay.removeClass('visible');
+        o.emailAddress.val('');
         e.preventDefault();
       },
 
@@ -703,20 +726,22 @@ $(document).ready(function(){
        * @type undefined
        */
       emailTranscript: function() {
+        // email
         this.lpc.requestTranscriptEmail(this.emailAddress.val());
-      },
-
-      /**
-       * Handler for when a chat session is initiated (different from onStart, which is when an agent accepts).
-       *
-       * @name onChatInit
-       * @type undefined
-       */
-      onChatInit: function() {
-        if (!_cw.inPopup) {
-          // save session key in case user launches popup
-          $.cookie('chatsessionkey', _cw.lpc.sessionkey);
-        }
+        // show success msg
+        this.emailForm.hide();
+        this.emailSuccessAddr.html(this.emailAddress.val());
+        this.emailSuccess.show();
+        // hide and reset
+        var self = this;
+        var _reset = function(){
+          self.emailCancel.triggerHandler('click');
+          self.emailSuccess.hide();
+          self.emailSuccessAddr.html('your email address');
+          self.emailForm.show();
+          window.clearTimeout(st);
+        };
+        var st = window.setTimeout(function(){ _reset(); }, 3000);
       },
 
       /**
@@ -737,6 +762,34 @@ $(document).ready(function(){
           if (_cw.instant.length) {
             _cw.instant.append($('<img src="/img/chat_scribble.png" />'));
           }
+        }
+      },
+
+      /**
+       * Handler for when a chat session is initiated (different from onStart, which is when an agent accepts).
+       *
+       * @name onChatInit
+       * @type undefined
+       */
+      onChatInit: function() {
+        if (!_cw.inPopup) {
+          // save session key in case user launches popup
+          $.cookie('chatsessionkey', _cw.lpc.sessionkey);
+        }
+      },
+
+      /**
+       * Handler for when an agent accepts a chat request.
+       *
+       * @name onChatStart
+       * @type undefined
+       */
+      onChatStart: function() {
+        if (!_cw.inPopup) {
+          // save agent name
+          var nm = _cw.lpc.getAgentName();
+          $.cookie('chatagentname', nm);
+          _cw.agentNameCont.html(nm);
         }
       },
 
@@ -778,8 +831,7 @@ $(document).ready(function(){
        * @type undefined
        */
       onChatAgentTyping: function(isTyping) {
-        if (isTyping) _cw.agentTyping.show();
-          else _cw.agentTyping.hide();
+        _cw.agentTyping.css({ visibility: (isTyping ? 'visible' : 'hidden') });
       },
 
       /**
@@ -800,9 +852,8 @@ $(document).ready(function(){
        */
       launchPopup: function(e) {
         var o = e.data.obj; //the instantiated $.chatWindow object
-//        var features = "menubar=no,location=no,resizable=no,scrollbars=no,status=yes";
-        var features = "width=587,height=450,resizable=yes,status=yes";
-        var windowObjectReference = window.open('/careers/chat/standalone.asp', 'rms_popup', features);
+        var features = "width=587,height=513,resizable=yes,status=yes";
+        var windowObjectReference = window.open($(this).attr('href'), 'rms_popup', features);
         o.win.css({ top: o.options.topHidden });
         e.preventDefault();
       }
@@ -831,6 +882,7 @@ $(document).ready(function(){
         _cw.checkAvailability();
       },
       onInit : _cw.onChatInit,
+      onStart : _cw.onChatStart,
       onLine : _cw.onChatLine,
       onError : _cw.onChatError,
       onAvailability : _cw.onChatAvailable,

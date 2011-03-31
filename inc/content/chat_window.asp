@@ -1,20 +1,22 @@
     <!-- + chat window -->
     <div id="chat_win" style="">
+      <div id="chat_win_hd" class="clearfix">
+        <a href="#" id="btn_email_transcript">email chat transcript</a>
+        <a href="/careers/chat/standalone.asp" id="btn_launch_popup">open chat in new window</a>
+        <a href="#" id="btn_close_chat">Close</a>
+      </div>
       <div id="lp_thread"></div>
       <textarea id="lp_type"></textarea>
-      <!-- <button id="lp_send">Send</button> -->
+      <div id="lp_agent_typing"><span id="lp_agent_name">RMS</span> is typing</div>
       <a href="#" id="btn_end_chat" class="btn btnEndChat">End Chat</a>
-      <div id="lp_agent_typing" style="width:20px;height:20px;position:absolute;top:276px;right:20px;background:blue;overflow:hidden;display:none;"></div>
-      <a href="#" id="btn_close_chat" class="close">Close</a>
-      <a href="#" id="btn_email_transcript" class="" style="position:absolute;top:6px;right:70px;">Email Transcript</a>
-      <a href="#" id="btn_launch_popup" class="" style="position:absolute;top:6px;left:50px;">Launch in new window</a>
-      <div id="lp_email_transcript" style="width:400px;height:50px;position:absolute;top:76px;left:20px;background:red;display:none;">
+      <div id="lp_email_transcript">
         <form id="lp_form_email" name="lp_form_email" method="post" action="">
+          <label for="lp_email">email to send transcript:</label>
           <input type="email" id="lp_email" name="email" class="required email" value="" />
-          <!-- <button>Send</button> -->
-          <input type="submit" value="Send" />
-          <a href="#">Cancel</a>
+          <a href="#" id="lp_email_send">Send</a>
+          <a href="#" id="lp_email_cancel">Cancel</a>
         </form>
+        <p id="lp_success">A transcript of this chat will be sent to <span id="lp_success_email">your email address</span>.</p>
       </div>
     </div>
     <!-- / chat window -->
