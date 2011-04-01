@@ -74,7 +74,6 @@
     stLight.options({
       onhover:    'false',
       headerTitle:'Share this Job Listing',
-      offsetTop:  '600',
       theme:      '2',
       publisher:  'e1cf7204-5d7c-4fd1-9261-f09df76aaf86'
     });

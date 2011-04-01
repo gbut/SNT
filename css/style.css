@@ -2653,16 +2653,13 @@ display:none;
 
 input.error,
 textarea.error {
-  -moz-box-shadow:      inset 0 0 5px 1px #c3151c; 
-  -webkit-box-shadow:   inset 0 0 5px 1px #c3151c; 
-  box-shadow:           inset 0 0 5px 1px #c3151c;
-  behavior:             url(/js/libs/PIE/PIE.htc);
+  background-color:     #f2e3e3
 }
 
 #job_apply label[generated],
 #contact  label[generated] {
   line-height:          240%;
-  color:                #c3151c;
+  color:                #6f0d24;
   text-align:           right;
   width:                250px;
   height:               33px;
@@ -3042,6 +3039,7 @@ textarea.error {
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
+/* fix for when captcha is displayed and user reveals 'more services' */
 #stLframe {
   height: 830px !important;
 }
