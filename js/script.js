@@ -1345,6 +1345,7 @@ $(document).ready(function(){
 
   $('#riskTabs').tabs({
     //fx: { opacity:'toggle', duration:400 }
+    selected: 2
   });
   
   $('#legalTabs').tabs({

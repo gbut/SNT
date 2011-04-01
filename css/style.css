@@ -247,6 +247,10 @@ em {
   color:                #c3151c;
 }
 
+cite {
+  font-style:           italic;
+}
+
 p {
   margin-bottom:        10px;
 }
@@ -1971,6 +1975,8 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #risk section {
   margin-bottom:        10px;
+}
+#risk #catastrophe section {
   background-color:     #eee;
 }
 #risk section.iWorldMap {
@@ -1988,13 +1994,13 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   background:#fff;
 }
 
-#risk section.caseStudies h4 {
+#risk section h3 {
   color:                #000;
   text-transform:       uppercase;
   font-size:            131%;
   padding:              17px 14px 8px;
 }
-#risk section.caseStudies h4 .sep {
+#risk section h3 .sep {
   color:                #b3b3b3;
 }
 
@@ -2100,6 +2106,17 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #risk .ui-tabs .ui-tabs-panel {
   padding-bottom:       0;
+}
+
+#risk .col3,
+#risk .col3double {
+  width:                304px;
+  margin:               0 4px 5px 5px;
+  float:                left;
+  display:              inline;
+}
+#risk .col3double {
+  width:                617px;
 }
 
 

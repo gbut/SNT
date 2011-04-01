@@ -2,8 +2,9 @@
 <div id="risk">
 
   <div class="hd">
-    <h2>Risk Forecasting <em>and Modeling</em></h2>
-    <p>As the pioneers of catastrophe risk modeling, RMS leads the market and sets the standard for quantifying and understanding risk around the planet. Our leading-edge risk models cover natural catastrophes such as earthquakes and hurricanes, potential terrorist strikes, and financial risk associated with changes in longevity and the loss of human life.</p>
+    <h2>Risk <em>Modeling</em></h2>
+    <h3>A Global Approach to Understanding Risk</h3>
+    <p>As the pioneers of catastrophe risk modeling, RMS leads the market and sets the standard for quantifying risk around the world. Our leading-edge risk models help people understand the potential impact of natural catastrophes such as earthquakes and hurricanes, human threats such as potential terrorist attacks, and financial risks associated with changes in life expectancy and sudden loss of life.</p>
   </div>
   
   <div class="sectionCont">
@@ -11,7 +12,7 @@
     <section class="iWorldMap clearfix">
 
       <!-- + raphael -->
-      <div id="svgmap">
+      <div id="svgmap" style="height:480px;">
 
       </div>
       <!-- / raphael -->
@@ -50,7 +51,7 @@
       <div id="catastrophe">
       
         <section class="caseStudies clearfix">
-          <h4>Chile Earthquake <span class="sep">//</span> <em>27 February 2010</em></h4>
+          <h3>Chile Earthquake <span class="sep">//</span> <em>27 February 2010</em></h3>
           <div class="lt">
           
             <div id="vidCont">
@@ -118,11 +119,90 @@
     
       <!-- + TERRORISM -->
       <div id="terrorism" class="ui-tabs-hide">
+
+        <section class="clearfix">
+          <div class="col3double">
+            <p><strong>Terrorism has blighted human experience for centuries. Seemingly as random and unpredictable as natural disasters,</strong> terrorist attacks defy understanding. What can be done to prepare for a catastrophic terrorist act? What can we do to better understand how and where they might occur, and what sort of impact they might have?</p>
+          </div>
+          <div class="col3">
+            <div style="background:green;height:217px;">img 1</div>
+            <p>
+              <strong>Vivamus agittis lacus vel augue.</strong><br />
+              Laoreet rutrum meitas vfaucibus dolor auctor. Aenean lacinia bibendumnulla sed consectetur.
+            </p>
+          </div>
+        </section>
+
+        <section class="clearfix">
+          <h3>Terrorism Models</h3>
+          <div class="col3">
+            <div style="background:green;height:217px;">img 1</div>
+            <p>
+              <strong>A new, systematic approach to understanding terrorism</strong><br />
+              RMS mathematician Gordon Woo saw a way to begin answering these questions. The means&mdash;whether bomb, biological weapon, chemical weapon, or other mode of attack&mdash;would tend to be the most readily available and accessible. Those probabilities could be modeled by conventional means. The targets would be the most visible with the highest psychological value. Again, a quantifiable aspect of the problem. The final variable was human nature itself. The strategic decision to commit a terrorist act would be the consequence and culmination of a series of other strategic decisions. No amount of historical data could account for that; there was no way to quantify capricious human impulse. Or was there?
+            </p>
+          </div>
+          <div class="col3">
+            <div style="background:red;height:217px;">img 2</div>
+            <p>
+              <strong>Game theory and the decisions terrorists make</strong><br />
+              After the terrorist attacks of 9/11, Dr. Woo had an idea. Why not use mathematical game theory, made famous in the film <cite>A Beautiful Mind</cite>, to quantify and understand the probability of certain decisions? Ten years later, RMS terrorism risk models based on game theory and other methodologies are used to help anticipate major terrorist attacks and their effects around the globe.
+            </p>
+          </div>
+          <div class="col3">
+            <div style="background:orange;height:217px;">img 3</div>
+            <p>
+              <strong>Created in partnership with the world's terrorism experts</strong><br />
+              To build the most accurate and advanced model of probable terrorist strikes possible, RMS partnered with the leading think tanks and research institutions around the globe, including the RAND Center for Terrorism Risk Management Policy, Jane's Information Group, the Centre for the Study of Terrorism and Political Violence at the University of St. Andrews in Scotland, the S. Rajaratnam School of International Studies in Singapore, and dozens of leading terrorism scholars, consultants, and advisors.
+            </p>
+            <p>Only through a better understanding of modern terrorist threats using the latest scientific applications can we hope to prepare for and possibly prevent the worst outcomes. Continuously improved and refined RMS terrorism risk models are helping businesses and governments do exactly that.</p>
+          </div>
+        </section>
+
       </div>
       <!-- / TERRORISM -->
     
       <!-- + LONGEVITY -->
       <div id="longevity" class="ui-tabs-hide">
+
+        <section class="clearfix">
+          <div class="col3double">
+            <p><strong>Life expectancy, the impact of lifestyle choices, and the toll that catastrophic events can take in terms of human lives lost can all have a dramatic impact on business as well as governments.</strong> From disaster response planning to pensions, insurance, and government policy, being prepared for the future takes careful financial and logistical planning and preparation. It's essential to gain the best possible understanding of how long people will live, what factors drive longevity, and what happens when catastrophe strikes.</p>
+          </div>
+          <div class="col3">
+            <div style="background:green;height:217px;">img 1</div>
+            <p>
+              <strong>Vivamus agittis lacus vel augue.</strong><br />
+              Laoreet rutrum meitas vfaucibus dolor auctor. Aenean lacinia bibendumnulla sed consectetur.
+            </p>
+          </div>
+        </section>
+
+        <section class="clearfix">
+          <h3>Longevity Models</h3>
+          <div class="col3">
+            <div style="background:green;height:217px;">img 1</div>
+            <p>
+              <strong>Industry-shaping models for longevity and health</strong><br />
+              RMS longevity and health models help a wide range of industries and government agencies maintain the appropriate financial infrastructure and societal response mechanisms for today's probable injury or death scenarios. Based on a wide variety of scientific drivers and inputs, our models take into account infectious diseases, natural catastrophes, and terrorist attacks as well as individual lifestyle choices that can affect longevity and even how medical and scientific breakthroughs will extend life in the future.
+            </p>
+          </div>
+          <div class="col3">
+            <div style="background:red;height:217px;">img 2</div>
+            <p>
+              <strong>Superior analytics from our specialized team</strong><br />
+              A specialized team of experienced modelers, medical specialists and analysts, biological mathematicians, and health statisticians, together with experts in a variety of other fields, collaborate to ensure RMS life and health models lead the world in innovative analytics. We take into account the latest epidemiological studies, clinical trial data, and medical models to provide state-of-the-art knowledge and insight. Our models include changes in lifestyle and resulting risk factors such as smoking, diet, obesity, and general attitudes to health, together with improvements in medical care, drug development, and treatments.
+            </p>
+          </div>
+          <div class="col3">
+            <div style="background:orange;height:217px;">img 3</div>
+            <p>
+              <strong>Projecting the impact of breakthrough medical technologies</strong><br />
+              To quantify probabilities related to breakthroughs in medical science, RMS catalogs current medical research and investment in the biosciences, tracks thousands of drugs currently in the pipeline for FDA approval, and projects social changes in lifestyle risk factors and healthcare treatment patterns. The resulting model provides a timeline estimate for probable improvements in lifespan due to advances in medical technologies.
+            </p>
+          </div>
+        </section>
+
       </div>
       <!-- / LONGEVITY -->
 
