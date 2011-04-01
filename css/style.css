@@ -210,6 +210,7 @@ a {
 
 input[type=text],
 input[type=password],
+input[type=email],
 textarea {
   font:                 100%/120% Tahoma,Arial,sans-serif;
   width:                135px;
@@ -228,7 +229,9 @@ textarea {
 .ie7 input[type=text],
 .ie8 input[type=text],
 .ie7 input[type=password],
-.ie8 input[type=password] {
+.ie8 input[type=password],
+.ie7 input[type=email],
+.ie8 input[type=email] {
   line-height:          200%;
 }
 
@@ -242,6 +245,10 @@ fieldset:last-child {
 em {
   font-style:           normal;
   color:                #c3151c;
+}
+
+cite {
+  font-style:           italic;
 }
 
 p {
@@ -1121,6 +1128,19 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
+#t06 .hd {
+  padding:              35px 26px 23px;
+}
+
+#t06 .hd h2 {
+  font:                 600 219%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.03em;
+  margin-bottom:        8px;
+}
+
+#t06 .hd p {
+  font-size:            116%;
+}
 
 /* / MAIN */
 
@@ -1422,6 +1442,8 @@ a.close:active {
 /* / Breadcrumb */
 
 /* / General Tabs */
+
+.ui-tabs-hide { display: none !important; } /* prevent FOUC: http://jqueryui.com/demos/tabs/#...prevent_a_FOUC_.28Flash_of_Unstyled_Content.29_before_tabs_are_initialized */ 
 
 #main ul.tabs {
   padding:              0;
@@ -1831,7 +1853,8 @@ aside .callout em {
 
 /* jQueryUI Tabs overrides */
 aside .ui-widget,
-#risk #vidCont.ui-widget {
+#risk #vidCont.ui-widget,
+#risk .ui-widget {
   font-size:            100%;
 }
 aside .ui-widget-content,
@@ -1851,7 +1874,9 @@ aside .ui-tabs,
   padding:              0;
 }
 aside .ui-tabs .ui-tabs-panel,
-#risk #vidCont.ui-tabs .ui-tabs-panel {
+#risk #vidCont.ui-tabs .ui-tabs-panel,
+#risk .ui-tabs .ui-tabs-panel {
+  font-size:            100%;
   padding:              0 0 13px;
 }
 aside .ui-tabs ul.ui-tabs-nav,
@@ -1864,7 +1889,7 @@ aside .ui-tabs ul.ui-tabs-nav,
   cursor:               pointer;
   position:             absolute;
   left:                 0;
-  bottom:               -12px;
+  bottom:               -2px;
 }
 aside .ui-tabs ul.ui-tabs-nav li,
 #risk #vidCont.ui-tabs ul.ui-tabs-nav li {
@@ -1928,7 +1953,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #riskTabs ul.tabs {
   margin-bottom:        22px;
   position:             relative;
-  left:                 24px;
+  left:                 11px;
 }
 #riskTabs ul.tabs li {
   margin-right:         1px;
@@ -1936,32 +1961,6 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 #riskTabs ul.tabs li a {
   width:                280px;
-}
-
-#risk .sectionHd {
-  padding:              0 10px;
-}
-#risk #catastrophe .sectionHd {
-  padding:              0 27px;
-}
-
-#risk .sectionHd h3 {
-  margin-bottom:        18px;
-}
-#risk #catastrophe .sectionHd h3 {
-  margin-bottom:        7px;
-}
-
-#risk .sectionHd p {
-  font-size:            107.1%;
-  line-height:          146%;
-  margin-bottom:        26px;
-	-moz-column-count:    2; 
-	-webkit-column-count: 2; 
-	column-count:         2; 
-	-moz-column-gap:      30px;
-	-webkit-column-gap:   30px;
-	column-gap:           30px;
 }
 
 #risk .sectionCont {
@@ -1976,6 +1975,8 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #risk section {
   margin-bottom:        10px;
+}
+#risk #catastrophe section {
   background-color:     #eee;
 }
 #risk section.iWorldMap {
@@ -1984,6 +1985,23 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 #risk section:last-child {
   margin-bottom:        0;
+}
+
+#risk_map_nav {
+  position:             absolute;
+  bottom:               10px;
+  left:                 10px;
+  background:#fff;
+}
+
+#risk section h3 {
+  color:                #000;
+  text-transform:       uppercase;
+  font-size:            131%;
+  padding:              17px 14px 8px;
+}
+#risk section h3 .sep {
+  color:                #b3b3b3;
 }
 
 #risk section.caseStudies .lt {
@@ -2072,6 +2090,33 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 #risk section.caseStudiesNav ul li a .imgCont.vid3 {
   background-position:  0 -74px;
+}
+
+#risk section.caseStudies .rt dl {
+  color:                #4e4e4e;
+  line-height:          116%;
+  padding:              10px 13px;
+}
+#risk section.caseStudies .rt dl dt {
+  font-weight:          bold;
+}
+#risk section.caseStudies .rt dl dd {
+  margin-bottom:        8px;
+}
+
+#risk .ui-tabs .ui-tabs-panel {
+  padding-bottom:       0;
+}
+
+#risk .col3,
+#risk .col3double {
+  width:                304px;
+  margin:               0 4px 5px 5px;
+  float:                left;
+  display:              inline;
+}
+#risk .col3double {
+  width:                617px;
 }
 
 
@@ -3113,11 +3158,21 @@ textarea.error {
   top:                  -10000px;
 }
 
+#chat_win #lp_thread .error,
+#chat_win #lp_agent_typing,
+#chat_win #btn_email_transcript,
+#chat_win #btn_launch_popup,
+#chat_win #lp_email_send,
+#chat_win #lp_email_cancel,
+#chat_win #btn_close_chat {
+  background:           transparent url(../img/icons_chat.png) 0 0 no-repeat;
+}
+
 #chat_win {
   width:                495px;
-  height:               358px;
+  height:               404px;
   margin:               0 auto;
-  padding:              46px;
+  padding:              0 46px 46px;
   background:           #fff;
   border:               4px solid #8d8d8c;
   position:             relative;
@@ -3132,10 +3187,41 @@ textarea.error {
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
+#chat_win_hd {
+  font-family:          "Lucida Grande",Tahoma,Arial,sans-serif;
+  height:               27px;
+  margin-bottom:        7px;
+  padding:              11px 0 0;
+  border-bottom:        1px solid #cecece;
+  position:             relative;
+}
+
+#chat_win_hd #btn_email_transcript {
+  color:                #757575;
+  min-height:           16px;
+  height:               auto !important;
+  height:               16px;
+  margin-right:         13px;
+  padding-left:         21px;
+  background-position:  -99px -186px;
+  float:                left;
+  display:              inline;
+}
+
+#chat_win_hd #btn_launch_popup {
+  color:                #757575;
+  min-height:           16px;
+  height:               auto !important;
+  height:               16px;
+  padding-left:         19px;
+  background-position:  -150px -134px;
+  float:                left;
+}
+
 #chat_win #lp_thread {
   font-family:          "Lucida Grande",Tahoma,Arial,sans-serif;
 /*  width:                495px;*/
-  height:               230px;
+  height:               210px;
   margin-bottom:        10px;
   padding:              10px;
   background:           #f8f8f9;
@@ -3163,26 +3249,33 @@ textarea.error {
   color:                #5f1d1d;
   margin-bottom:        10px;
   padding:              8px 60px 8px 120px;
-  background:           #f2e3e3 url("../img/icons_chat.png") 80px 7px no-repeat;
+  background-color:     #f2e3e3;
+  background-position:  80px -275px;
   border:               1px solid #f00;
 }
 
 #chat_win #lp_type {
   line-height:          116%;
-  width:                488px; /*398px;*/
-  height:               62px;
+  width:                488px;
+  height:               59px;
+  margin-bottom:        7px;
   padding-right:        0;
   background:           #f8f8f9;
-/*  float:                left;*/
   position:             relative;
   overflow:             auto;
 }
 
-/*
-#chat_win #lp_send {
-  float:                right;
+#chat_win #lp_agent_typing {
+  color:                #253b54;
+  font:                 italic 100%/100% "Lucida Grande",Tahoma,Arial,sans-serif;
+  min-height:           12px;
+  height:               auto !important;
+  height:               12px;
+  padding:              4px 0 0 35px;
+  background-position:  -50px -234px;
+  position:             relative;
+  visibility:           hidden;
 }
-*/
 
 #chat_win #btn_end_chat {
   position:             absolute;
@@ -3190,17 +3283,104 @@ textarea.error {
   left:                 228px;
 }
 
-/*
-#lp_chat_window {
-  width:                495px;
-  height:               358px;
+#chat_win #btn_close_chat {
+  text-indent:          -9999px;
+  width:                28px;
+  height:               28px;
+  display:              block;
+  background-position:  -341px -26px;
+  position:             absolute;
+  top:                  5px;
+  right:                -36px;
+  overflow:             hidden;
 }
-*/
+#chat_win #btn_close_chat:hover,
+#chat_win #btn_close_chat:active {
+  background-position:  -341px -63px;
+}
 
-#chat_win a.close {
-  top:                  -16px;
-  left:                 auto;
-  right:                -16px;
+#chat_win #lp_email_transcript {
+  font-family:          "Lucida Grande",Tahoma,Arial,sans-serif;
+  width:                587px;
+  height:               33px;
+  padding:              8px 0 9px;
+  background:           #fff;
+  border:               4px solid #8d8d8c;
+  position:             absolute;
+  top:                  -10000px;
+  left:                 -4px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:   5px;
+  border-radius:        5px;
+     -moz-box-shadow:   2px 2px 9px rgba(0,0,0,0.9); 
+  -webkit-box-shadow:   2px 2px 9px rgba(0,0,0,0.9); 
+          box-shadow:   2px 2px 9px rgba(0,0,0,0.9);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+#chat_win #lp_email_transcript.visible {
+  top:                  -67px;
+}
+
+#chat_win #lp_email_transcript label {
+  color:                #757575;
+  text-align:           right;
+  width:                158px;
+  padding:              8px 4px 0 4px;
+  float:                left;
+}
+
+#chat_win #lp_email_transcript label.error {
+  color:                #c3151c;
+  width:                250px;
+  position:             absolute;
+  top:                  8px;
+  right:                164px;
+}
+
+#chat_win #lp_email {
+  width:                244px;
+  margin-right:         6px;
+  padding:              6px 8px 7px;
+  background:           #f6f6f7;
+  float:                left;
+  display:              inline;
+}
+
+#chat_win #lp_email_send {
+  text-indent:          -9999px;
+  width:                62px;
+  height:               37px;
+  margin-right:         2px;
+  background-position:  -200px -26px;
+  float:                left;
+  display:              inline;
+  overflow:             hidden;
+}
+#chat_win #lp_email_send:hover,
+#chat_win #lp_email_send:active {
+  background-position:  -200px -63px;
+}
+
+#chat_win #lp_email_cancel {
+  text-indent:          -9999px;
+  width:                79px;
+  height:               37px;
+  margin-right:         2px;
+  background-position:  -262px -26px;
+  float:                left;
+  display:              inline;
+  overflow:             hidden;
+}
+#chat_win #lp_email_cancel:hover,
+#chat_win #lp_email_cancel:active {
+  background-position:  -262px -63px;
+}
+
+#chat_win #lp_email_transcript #lp_success {
+  color:                #757575;
+  margin:               0;
+  padding:              8px 20px 0;
+  display:              none;
 }
 
 /* / Chat */
@@ -3208,15 +3388,11 @@ textarea.error {
 /* + Legal */
 
 #legal {
-  padding-top:          35px;
 }
 
-#legal h2 {
-/*  font:                 230.8%/100% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
-  font:                 600 249%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
-  letter-spacing:       0.03em;
-  margin-bottom:        48px;
-  text-indent:          26px;
+#legal .hd h2 {
+  font-size:            249%;
+  margin-bottom:        25px;
 }
 
 #legalTabs {
@@ -3281,9 +3457,9 @@ body#jobvite {
   overflow-x:           visible;
 }
 
-#body_popup #chat_win {
+#body_popup #chat_win,
+#body_popup #chat_win #lp_email_transcript {
   border:               0;
-  top:                  0;
   left:                 0;
   -webkit-border-radius:0;
   -moz-border-radius:   0;
@@ -3292,9 +3468,16 @@ body#jobvite {
   -webkit-box-shadow:   none; 
           box-shadow:   none;
 }
+#body_popup #chat_win {
+  padding-top:          63px;
+  top:                  0;
+}
+#body_popup #chat_win #lp_email_transcript.visible {
+  top:                  8px;
+}
 
 #body_popup #chat_win #btn_launch_popup,
-#body_popup #chat_win a.close {
+#body_popup #chat_win #btn_close_chat {
   display:              none;
 }
 

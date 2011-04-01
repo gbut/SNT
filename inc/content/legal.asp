@@ -1,6 +1,8 @@
 <!-- + legal -->
 <div id="legal">
-  <h2>Legal <em>Information</em></h2>
+  <div class="hd">
+    <h2>Legal <em>Information</em></h2>
+  </div>
 
   <div id="legalTabs">
     <ul class="tabs">
@@ -17,7 +19,7 @@
       <p>Minim sudo neque consequat duis nisl feugiat fere. Delenit abluo opes, olim conventio ymo interdico, duis ut imputo, lenis esse lobortis wisi. Suscipit ex capio ex foras fatua. Pneum iriure typicus odio gemino te. Euismod, loquor eu accumsan abbas aliquip in quadrum venio. Sit melior indoles abbas ullamcorper lenis vindico valetudo illum pala augue ne paratus iriure saepius. Valetudo secundum paulatim commoveo obruo quis velit odio. Exputo velit meus praesent, utinam ideo quae facilisi, imputo.</p>
     </div>
     
-    <div id="terms">
+    <div id="terms" class="ui-tabs-hide">
       <p>Minim sudo neque consequat duis nisl feugiat fere. Delenit abluo opes, olim conventio ymo interdico, duis ut imputo, lenis esse lobortis wisi. Suscipit ex capio ex foras fatua. Pneum iriure typicus odio gemino te. Euismod, loquor eu accumsan abbas aliquip in quadrum venio. Sit melior indoles abbas ullamcorper lenis vindico valetudo illum pala augue ne paratus iriure saepius. Valetudo secundum paulatim commoveo obruo quis velit odio. Exputo velit meus praesent, utinam ideo quae facilisi, imputo.</p>
       <p>Ille refoveo, nulla suscipere modo fere jus augue ut tamen aliquip decet suscipit te vel. Nullus luctus adsum transverbero augue inhibeo vicis typicus mauris, saluto, quis. Ingenium molior molior lucidus cogo scisco modo hendrerit humo dignissim occuro vulpes nobis nulla humo. Esse suscipere defui valetudo wisi lobortis elit aliquip, consequat consequat. Caecus, quadrum veniam defui, iriure, scisco quia mauris vulputate autem vel turpis.</p>
       <p>Secundum turpis lenis accumsan paratus immitto os consequat. Venio eros odio, ne ratis dignissim eum hendrerit vero opto hos, jumentum virtus. Exerci obruo venio eu appellatio ex usitas. Tincidunt veniam, ludus letalis nutus obruo. Mos loquor, ut vulputate ideo ratis, tation typicus probo zelus iriure, mos odio. Nulla lucidus regula, consequat vero, foras augue inhibeo at lucidus facilisi interdico. Duis aliquip quia eum sudo tego vel. Ullamcorper abluo cogo valetudo hos sudo consectetuer at dignissim, euismod qui. Duis refero venio cogo enim dignissim multo veniam quis et in, iusto. Vel, paratus capto ullamcorper, patria mostiet. suscipere saluto et dolus exerci, voco saepius aliquip metuo.</p>
