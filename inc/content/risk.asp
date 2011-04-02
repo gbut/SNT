@@ -79,7 +79,9 @@
                 </ul>
 
                 <!-- + Media 1 -->
-                <div id="chile-1" class="clearfix" style="width:660px;height:360px;background-color:green;overflow:hidden;"></div>
+                <div id="chile-1" class="clearfix" style="width:660px;height:360px;background-color:green;overflow:hidden;">
+                  <div class="vidTitle"><span>Bridge Collapse Video</span><span class="bg"></span></div>
+                </div>
                 <!-- / Media 1 -->
 
                 <!-- + Media 2 -->

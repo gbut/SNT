@@ -2064,6 +2064,37 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   border-radius:        0;
 }
 
+#risk .vidCont .vidTitle {
+  color:                #fff;
+  font-size:            86%;
+  text-align:           right;
+  text-transform:       uppercase;
+  width:                660px;
+  height:               32px;
+  position:             absolute;
+  top:                  328px;
+  left:                 0;
+}
+#risk .vidCont .vidTitle span {
+  padding-right:        40px;
+  position:             relative;
+  top:                  5px;
+  left:                 0;
+  z-index:              10;
+}
+#risk .vidCont .vidTitle span.bg {
+  width:                660px;
+  height:               32px;
+  padding:              0;
+  background-color:     #000;
+  position:             absolute;
+  top:                  0;
+  left:                 0;
+  z-index:              1;
+  overflow:             hidden;
+  opacity:              0.6;
+}
+
 #risk ul#caseStudiesNav {
   width:                100%;
   margin:               0;
