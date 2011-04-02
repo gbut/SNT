@@ -45,7 +45,7 @@
         </div>
 
         <div id="show_all" class="hide">
-          <a href="#" class="show_all">Show all</a>
+          <a href="#" class="show_all"><em>&gt;</em> Show all</a>
         </div>
 
       </div>

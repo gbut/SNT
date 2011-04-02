@@ -10,11 +10,11 @@
       <fieldset>
         <div class="field">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" />
+          <input type="text" id="name" name="name" class="required" />
         </div>
         <div class="field">
           <label for="email">Email:</label>
-          <input type="text" id="email" name="email" />
+          <input type="text" id="email" name="email" class="required email"  />
         </div>
         <div class="field">
           <label for="tel">Telephone:</label>
@@ -22,9 +22,9 @@
         </div>
         <div class="field">
           <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
+          <textarea id="message" name="message" class="required"></textarea>
         </div>
-        <a href="#" name="submit" id="submit" class="btn btnLg btnSubmit" onclick="submit();">Send</a>
+        <button type="submit" class="btn btnLg btnSubmit">Send</button>
       </fieldset>
         
     </form>
