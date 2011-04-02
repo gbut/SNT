@@ -1416,6 +1416,19 @@ $(document).ready(function(){
   //  Form validation
   //===============================================
 
+  if ($('#contact_form').length) {
+
+    var validator = $("#contact_form").validate({
+      messages: {
+        email: {
+          email: "Please enter a valid email address."
+        }
+      },
+      debug:true
+    });
+
+  }
+
   if ($('#jvform').length) {
 
     // default value isn't a valid entry
@@ -1423,7 +1436,7 @@ $(document).ready(function(){
       return value != element.defaultValue;
     }, "");
     
-    var validator = $("form").validate({
+    var validator = $("#jvform").validate({
 // TBD
 //      invalidHandler: function(form, validator) {
 //        $(window.parent.document).scrollTo('0');

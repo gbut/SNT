@@ -2786,10 +2786,10 @@ textarea.error {
 #job_apply textarea,
 #contact textarea {
   color:                #606060;
-  width:                510px;
+  width:                518px;
   height:               95px;
   margin:               0 0 10px 121px;
-  padding:              10px;
+  padding:              10px 6px;
   display:              inline-block;
   vertical-align:       top;
 }
