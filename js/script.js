@@ -1224,10 +1224,17 @@ $(document).ready(function(){
     var r = Raphael('svgmap', 940, 477);
     var attr = {
       fill: "#333",
-      stroke: "#666",
+      stroke: "#f66",
       "stroke-width": 1,
       "stroke-linejoin": "round"
     };
+    var mouseoverAttr = {
+      fill: "#77443e"
+    };
+    var mouseoutAttr = {
+      fill: "#333"
+    };
+    
     var countries = {};
     countries['ca'] = r.path("M243,105c3,0,6,0,9,0c0.006,2.86,0.346,4.291,1,6" + 
 "    		c1.666-1.333,3.334-2.667,5-4c0-1.667,0-3.333,0-5c2,0,4,0,6,0c1.756,3.316,2.059,4.368,2,10c-0.807,0.395-2,2-2,2" + 
@@ -1279,6 +1286,15 @@ $(document).ready(function(){
 "    		c2.666,0,5.334,0,8,0c0.333-1.667,0.667-3.333,1-5c0.667-0.333,1.333-0.667,2-1c0-1.333,0-2.667,0-4c0.549-1.303,0.467,0.31,1-1" + 
 "    		c1.446-0.57,1.878-0.467,4-1c0-0.333,0-0.667,0-1c1.397-0.215-0.374,0.667,1,1c1.666,0,3.334,0,5,0" + 
 "    		C731.069,155.392,732.026,155.788,732,163z").attr(attr);
+
+    countries['cn'].translate(-400,0);
+
+    for (var c in countries) {
+      $(countries[c].node).hover(
+        function(){ this.raphael.animate(mouseoverAttr, 300); },
+        function(){ this.raphael.animate(mouseoutAttr, 500); }
+      );
+    }
   }
 
   if ($('#worldmap').length) {
@@ -1312,7 +1328,24 @@ $(document).ready(function(){
 
   $('#riskTabs').tabs({
     //fx: { opacity:'toggle', duration:400 }
-    selected: 2
+    //selected: 1
+    create: function(e, ui) {
+      $('#catastrophe').tabs({
+        selected: 0
+      });
+      $('.vidCont').tabs({
+        selected: 0,
+        create: function(e, ui) {
+          var nav = $(e.target).find('ul.nav');
+          if (!$(nav).children().length) {
+            $(e.target).next('h4').addClass('noMedia');
+            $(e.target).remove();
+          } else if ($(nav).children().length == 1) {
+            $(nav).remove();
+          }
+        }
+      });
+    }
   });
   
   $('#legalTabs').tabs({

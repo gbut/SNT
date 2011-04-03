@@ -1138,6 +1138,11 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
   margin-bottom:        8px;
 }
 
+#t06 .hd h3 {
+  font-size:            146.5%;
+  margin-bottom:        5px;
+}
+
 #t06 .hd p {
   font-size:            116%;
 }
@@ -1268,11 +1273,12 @@ aside section.pie_first-child.slvzr-last-child {
   width:                960px;
 }
 #t03 #banner h2 {
-  font:800 250%/150% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+/*  font:800 250%/150% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;*/
+  font:                 400 385%/140% "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Lucida Grande",Helvetica,sans-serif;
   color:                #fff;
   text-transform:       uppercase;
   position:             absolute;
-  padding:              70px 135px;
+  padding:              60px 135px 40px;
 }
 #t03 #banner h3 em {
  color:                 #c3151c;
@@ -1461,7 +1467,7 @@ a.close:active {
   margin:               0;
   padding:              1px;
   list-style:           none;
-  background:           #e5e5e5;
+  background:           #919191;
   border:               none;
   top:                  0;
   float:                left;
@@ -1469,6 +1475,9 @@ a.close:active {
      -moz-box-shadow:   3px 2px 3px rgba(151,151,151,0.7); 
   -webkit-box-shadow:   3px 2px 3px rgba(151,151,151,0.7); 
           box-shadow:   3px 2px 3px rgba(151,151,151,0.7);
+  -webkit-border-radius:0;
+  -moz-border-radius:   0;
+  border-radius:        0;
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 #main ul.tabs li.ui-tabs-selected {
@@ -1484,15 +1493,15 @@ a.close:active {
   text-align:           center;
   width:                365px;
   padding:              12px 10px 7px;
-  border:               1px solid #c6c5c5;
+  border:               1px solid #cfcfcf;
   background:           none;
   float:                none;
   display:              block;
   position:             relative;
-  background:           #f5f5f5;
-  background:           -moz-linear-gradient(top, #f5f5f5 0%, #d1d0d0 100%);
-  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#d1d0d0));
-  -pie-background:      linear-gradient(#f5f5f5, #d1d0d0);
+  background:           #f6f5f5;
+  background:           -moz-linear-gradient(top, #f6f5f5 0%, #d1d0d0 100%);
+  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f5f5), color-stop(100%,#d1d0d0));
+  -pie-background:      linear-gradient(#f6f5f5, #d1d0d0);
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 #main ul.tabs li.ui-tabs-selected a {
@@ -1507,6 +1516,7 @@ a.close:active {
   outline:              none;
 }
 
+/*
 #main ul.tabs li a .pointer {
   height:               8px;
   width:                5px;
@@ -1545,6 +1555,25 @@ a.close:active {
   left:                 -10px;
   top:                  -12px;
   display:              block;
+}
+*/
+#main ul.tabs li a .pointer {
+  width:                25px;
+  height:               19px;
+  position:             absolute;
+  left:                 50%;
+  bottom:               -19px;
+  display:              none;
+}
+#main ul.tabs li a .pointer .inner {
+  text-indent:          -9999px;
+  width:                25px;
+  height:               19px;
+  position:             relative;
+  left:                 -12px;
+  top:                  0;
+  display:              block;
+  background:           transparent url(../img/arrow_tabs.png) 0 0 no-repeat;
 }
 #main ul.tabs li.ui-tabs-selected a .pointer {
   display:              block;
@@ -1801,14 +1830,17 @@ aside .share .label {
 aside .share a.facebook,
 aside .share a.twitter,
 aside .ui-tabs ul.ui-tabs-nav li a,
-#risk #vidCont.ui-tabs ul.ui-tabs-nav li a,
+#risk .vidCont ul.ui-tabs-nav li a,
 #job_listings .footer a.submit {
   background:           transparent url(../img/icon_sprite.png) 0 0 no-repeat;
+}
+#risk .vidCont ul li {
+  float:                left;
 }
 aside .share a.facebook,
 aside .share a.twitter,
 aside .ui-tabs ul.ui-tabs-nav li a,
-#risk #vidCont.ui-tabs ul.ui-tabs-nav li a {
+#risk .vidCont ul.ui-tabs-nav li a {
   width:                33px;
   height:               30px;
   display:              block;
@@ -1855,34 +1887,35 @@ aside .callout em {
 
 /* jQueryUI Tabs overrides */
 aside .ui-widget,
-#risk #vidCont.ui-widget,
+#risk .vidCont.ui-widget,
 #risk .ui-widget {
   font-size:            100%;
 }
 aside .ui-widget-content,
-#risk #vidCont.ui-widget-content {
+#risk .vidCont.ui-widget-content {
   height:               535px;
   background:           none;
   border:               none;
 }
 aside .ui-widget-header,
-#risk #vidCont .ui-widget-header {
+#risk .vidCont .ui-widget-header {
   color:                #333;
   background:           none;
   border:               none;
 }
 aside .ui-tabs,
-#risk #vidCont.ui-tabs {
+#risk .vidCont.ui-tabs {
   padding:              0;
 }
 aside .ui-tabs .ui-tabs-panel,
-#risk #vidCont.ui-tabs .ui-tabs-panel,
+#risk .vidCont .ui-tabs-panel,
 #risk .ui-tabs .ui-tabs-panel {
   font-size:            100%;
   padding:              0 0 13px;
 }
 aside .ui-tabs ul.ui-tabs-nav,
-#risk #vidCont.ui-tabs ul.ui-tabs-nav {
+#risk .vidCont ul.ui-tabs-nav,
+#risk .vidCont ul.nav {
   text-align:           center;
   width:                100%;
   margin:               0;
@@ -1891,10 +1924,10 @@ aside .ui-tabs ul.ui-tabs-nav,
   cursor:               pointer;
   position:             absolute;
   left:                 0;
-  bottom:               -2px;
+  bottom:               12px;
 }
 aside .ui-tabs ul.ui-tabs-nav li,
-#risk #vidCont.ui-tabs ul.ui-tabs-nav li {
+#risk .vidCont.ui-tabs ul.ui-tabs-nav li {
   margin:               0;
   background:           none;
   border:               none;
@@ -1906,13 +1939,13 @@ aside .ui-tabs ul.ui-tabs-nav li,
 aside .ui-tabs ul.ui-tabs-nav li.ui-tabs-selected,
 aside .ui-tabs ul.ui-tabs-nav li.ui-state-active,
 aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover,
-#risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-tabs-selected,
-#risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-active,
-#risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-hover {
+#risk .vidCont.ui-tabs ul.ui-tabs-nav li.ui-tabs-selected,
+#risk .vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-active,
+#risk .vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-hover {
   padding:              0;
 }
 aside .ui-tabs ul.ui-tabs-nav li a,
-#risk #vidCont.ui-tabs ul.ui-tabs-nav li a {
+#risk .vidCont.ui-tabs ul.ui-tabs-nav li a {
   text-indent:          -9999px;
   height:               10px;
   width:                9px;
@@ -1927,9 +1960,9 @@ aside .ui-tabs ul.ui-tabs-nav li a,
 aside .ui-tabs ul.ui-tabs-nav li.ui-tabs-selected a,
 aside .ui-tabs ul.ui-tabs-nav li.ui-state-active a,
 aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
-#risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-tabs-selected a,
-#risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-active a,
-#risk #vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
+#risk .vidCont.ui-tabs ul.ui-tabs-nav li.ui-tabs-selected a,
+#risk .vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-active a,
+#risk .vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
   background-position:  -9px -60px;
 }
 
@@ -1975,6 +2008,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
+#risk #catastrophe {
+  padding-bottom:       88px;
+}
+
 #risk section {
   margin-bottom:        10px;
 }
@@ -1985,9 +2022,6 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   margin-bottom:        14px;
   background-color:     #f3f3f3;
 }
-#risk section:last-child {
-  margin-bottom:        0;
-}
 
 #risk_map_nav {
   position:             absolute;
@@ -1997,13 +2031,33 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 #risk section h3 {
-  color:                #000;
+  color:                #9a9a9a;
   text-transform:       uppercase;
-  font-size:            131%;
+  font-size:            123.1%;
   padding:              17px 14px 8px;
 }
 #risk section h3 .sep {
   color:                #b3b3b3;
+}
+
+#risk section.caseStudies {
+  font-size:            108%;
+  line-height:          143%;
+}
+
+#risk section.caseStudies h3 {
+  color:                #000;
+  font-size:            131%;
+  padding:              17px 14px 8px;
+}
+
+#risk section.caseStudies h4 {
+  color:                #333;
+  font:                 normal 171.1%/108% Helvetica,sans-serif;
+  margin-bottom:        5px;
+}
+#risk section.caseStudies h4.noMedia {
+  margin-top:           10px;
 }
 
 #risk section.caseStudies .lt {
@@ -2022,57 +2076,107 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   float:                left;
 }
 
-#risk #vidCont.ui-tabs {
+#risk .vidCont,
+#risk .vidCont.ui-widget-content {
   height:               360px;
-  padding-bottom:       20px;
+  padding-bottom:       34px;
   position:             relative;
 }
 
-#risk #vidCont.ui-tabs .ui-tabs-panel {
+#risk .vidCont .ui-tabs-panel {
   padding:              0;
   -webkit-border-radius:0;
   -moz-border-radius:   0;
   border-radius:        0;
 }
 
-#risk section.caseStudiesNav ul {
+#risk .vidCont .vidTitle {
+  color:                #fff;
+  font-size:            86%;
+  text-align:           right;
+  text-transform:       uppercase;
+  width:                660px;
+  height:               32px;
+  position:             absolute;
+  top:                  328px;
+  left:                 0;
+}
+#risk .vidCont .vidTitle span {
+  padding-right:        40px;
+  position:             relative;
+  top:                  5px;
+  left:                 0;
+  z-index:              10;
+}
+#risk .vidCont .vidTitle span.bg {
+  width:                660px;
+  height:               32px;
+  padding:              0;
+  background-color:     #000;
+  position:             absolute;
+  top:                  0;
+  left:                 0;
+  z-index:              1;
+  overflow:             hidden;
+  opacity:              0.6;
+}
+
+#risk ul#caseStudiesNav {
+  width:                100%;
   margin:               0;
   padding:              16px 0;
+  background:           #eee;
+  border:               none;
+  position:             absolute;
+  bottom:               0;
+  left:                 0;
+  -webkit-border-radius:0;
+  -moz-border-radius:   0;
+  border-radius:        0;
 }
 
-#risk section.caseStudiesNav ul li {
+#risk ul#caseStudiesNav li {
+  margin:               0;
   padding:              0 0 0 22px;
+  list-style:           none;
+  background:           none;
+  border:               none;
   display:              block;
   float:                left;
+  top:                  0;
 }
 
-#risk section.caseStudiesNav ul li a {
+#risk ul#caseStudiesNav li a {
   color:                #000;
   font-size:            116%;
   line-height:          108%;
   text-align:           left;
   width:                288px;
   height:               56px;
+  padding:              0;
+  background:           none;
+  float:                none;
   display:              block;
   overflow:             hidden;
+  position:             relative;
 }
 /*
-#risk section.caseStudiesNav ul li a:hover,
-#risk section.caseStudiesNav ul li a:active {
+#risk ul#caseStudiesNav li a:hover,
+#risk ul#caseStudiesNav li a:active {
   color:                #525252;
 }
 */
 
-#risk section.caseStudiesNav ul li a em {
+#risk ul#caseStudiesNav li a em {
   font-size:            112.9%;
 }
 
-#risk section.caseStudiesNav ul li a span {
+#risk ul#caseStudiesNav li a span {
   position:             relative;
   top:                  11px;
 }
 
-#risk section.caseStudiesNav ul li a .imgCont {
+#risk ul#caseStudiesNav li a .imgCont {
   text-indent:          -9999px;
   width:                89px;
   height:               52px;
@@ -2087,15 +2191,16 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   border-radius:        6px;
   behavior: url(/js/libs/PIE/PIE.htc);
 }
-#risk section.caseStudiesNav ul li a .imgCont.vid2 {
+#risk ul#caseStudiesNav li a .imgCont.cs2 {
   background-position:  0 -37px;
 }
-#risk section.caseStudiesNav ul li a .imgCont.vid3 {
+#risk ul#caseStudiesNav li a .imgCont.cs3 {
   background-position:  0 -74px;
 }
 
 #risk section.caseStudies .rt dl {
   color:                #4e4e4e;
+  font-size:            87%;
   line-height:          116%;
   padding:              10px 13px;
 }
@@ -2119,6 +2224,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 #risk .col3double {
   width:                617px;
+}
+
+#risk .col3double p {
+  padding-right:        10px;
 }
 
 

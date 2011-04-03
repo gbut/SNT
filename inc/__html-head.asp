@@ -11,6 +11,9 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
+<!-- TypeKit -->
+<script type="text/javascript" src="http://use.typekit.com/krr3wdn.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <!-- CSS : implied media="all" -->
 <link rel="stylesheet" href="/css/style.css?v=2" />
