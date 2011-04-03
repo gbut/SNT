@@ -61,7 +61,7 @@
               <li><a href="#" title="">Menu Option 3</a></li>
               <li><a href="#" title="">Menu Option 4</a></li>
             </ul>
-            <a href="#" class="btn btnSm cta">Open Positions</a>
+            <a href="/careers/jobs" class="btn btnSm cta">Open Positions</a>
           </div>
         </li>
       </ul>

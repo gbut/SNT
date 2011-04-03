@@ -1619,8 +1619,10 @@ a.close:active {
 }
 
 #job_search form select {
-  font-size:            16px;
+  font-size:            16px; /* ** to do: browser diffs */
   width:                300px;
+  height:               25px;
+  padding-top:          2px;
 }
 
 
@@ -2546,8 +2548,8 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   margin-top:           30px;
 }
 
-/* hot jobs */
-#job_listings h3:first-child {
+#job_listings h3:first-child,
+#job_listings h3.first {
   margin-top:           0;
 }
 #job_listings h3:first-child .category {

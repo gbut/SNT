@@ -1191,51 +1191,12 @@ $(document).ready(function(){
   });
 */
   //===============================================
-  //  Show/Hide Job Listings
+  //  Job Listings
   //===============================================
-
+  
   $(function(){
-  	$('#form_jvSearch select').change(function() {
-      
-  	  // initialize
-  	  none = 1;
-  	  $('#none_found').hide();
-  	  $('#none_found span').html('');
-  	  $('#job_listings article').removeClass('hide');
-  	  $('.show_all').not('#show_all .show_all').remove(); // remove previously inserted links, but not the source
-  	  
-  	  // get user value
-      category = $('#jvCategory').val();
-      
-  	  // hide all listings, then iterate and selectively show
-  	  $('#job_listings article').hide().each(function() {
-        thisCategory = $(this).prevAll('h3').eq(0).find('.category').text();
-        if (!category || (thisCategory == category)) {
-          $(this).show();
-          none = 0;
-        }
-      });
-      
-      // hide all category headers, then iterate and selectively show
-      $('#job_listings h3').hide().each(function() {
-        header = $(this);
-        $(this).nextUntil(':not(article)').each(function() {
-          if ($(this).is(':visible')) {
-            $(header).show();
-            return false;
-          }
-        });
-      });
-      
-      // if none found, show message
-      if (none) {
-        $('#none_found .category').html(' for '+category);
-        $('#none_found').show();
-      }
-
-      if (!category)
-        jobListingsTruncation();
-      
+  	$('#form_jvSearch select').change(function() {      
+      jobListingsFilter();
   	});
   	
   	// show all
@@ -1246,8 +1207,14 @@ $(document).ready(function(){
   });
   
   // on page load...
-  if ($('#form_jvSearch select').length) jobListingsTruncation();
-  
+  if ($('#form_jvSearch select').length) {
+    if (sessionStorage.jobCategory) {
+      $('#jvCategory').val(sessionStorage.jobCategory);
+      jobListingsFilter();
+    } else {
+      jobListingsTruncation();
+    }
+  }
 
   //===============================================
   //  canvas maps
@@ -1476,6 +1443,56 @@ function scrollToTop() {
  */
 function fadeDuration(dur) {
   return dur;
+}
+
+/**
+ * Handle job category filter
+ * max = 4
+ */
+function jobListingsFilter() {
+  
+   // initialize
+   none = 1;
+   $('#none_found').hide();
+   $('#none_found span').html('');
+   $('#job_listings article').removeClass('hide');
+   $('.show_all').not('#show_all .show_all').remove(); // remove previously inserted links, but not the source
+ 
+   // get user value
+   category = $('#jvCategory').val();
+   // set session var
+   sessionStorage.setItem('jobCategory',category);
+ 
+   // hide all listings, then iterate and selectively show
+   $('#job_listings article').hide().each(function() {
+     thisCategory = $(this).prevAll('h3').eq(0).find('.category').text();
+     if (!category || (thisCategory == category)) {
+       $(this).show();
+       none = 0;
+     }
+   });
+ 
+   // hide all category headers, then iterate and selectively show
+   $('#job_listings h3').hide().removeClass('first').each(function() {
+     header = $(this);
+     $(this).nextUntil(':not(article)').each(function() {
+       if ($(this).is(':visible')) {
+         $(header).addClass('first').show();
+         return false;
+       }
+     });
+   });
+   
+   // if none found, show message
+   if (none) {
+     $('#none_found .category').html(' for '+category);
+     $('#none_found').show();
+   }
+
+   if (!category)
+    $('#job_listings h3').removeClass('first')
+     jobListingsTruncation();
+
 }
 
 /**
