@@ -1273,11 +1273,19 @@ aside section.pie_first-child.slvzr-last-child {
   width:                960px;
 }
 #t03 #banner h2 {
-/*  font:800 250%/150% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;*/
-  font:                 400 385%/140% "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Lucida Grande",Helvetica,sans-serif;
   color:                #fff;
   text-transform:       uppercase;
   position:             absolute;
+  top:                  0;
+  left:                 0;
+}
+#t03 #banner h2,
+.wf-loading #t03 #banner h2 {
+  font:                 400 230%/235% "Lucida Grande",Helvetica,sans-serif;
+  padding:              54px 135px 40px;
+}
+.wf-active #t03 #banner h2 {
+  font:                 400 385%/140% "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Lucida Grande",Helvetica,sans-serif;
   padding:              60px 135px 40px;
 }
 #t03 #banner h3 em {
@@ -1888,11 +1896,13 @@ aside .callout em {
 /* jQueryUI Tabs overrides */
 aside .ui-widget,
 #risk .vidCont.ui-widget,
-#risk .ui-widget {
+#risk .ui-widget,
+#careers #passionCont.ui-widget {
   font-size:            100%;
 }
 aside .ui-widget-content,
-#risk .vidCont.ui-widget-content {
+#risk .vidCont.ui-widget-content,
+#careers #passionCont.ui-widget {
   height:               535px;
   background:           none;
   border:               none;
@@ -1903,17 +1913,23 @@ aside .ui-widget-header,
   background:           none;
   border:               none;
 }
+#careers #passionCont .ui-widget-header {
+  display:              none;
+}
 aside .ui-tabs,
-#risk .vidCont.ui-tabs {
+#risk .vidCont.ui-tabs,
+#careers #passionCont.ui-tabs {
   padding:              0;
 }
 aside .ui-tabs .ui-tabs-panel,
 #risk .vidCont .ui-tabs-panel,
-#risk .ui-tabs .ui-tabs-panel {
+#risk .ui-tabs .ui-tabs-panel,
+#careers #passionCont .ui-tabs-panel {
   font-size:            100%;
   padding:              0 0 13px;
 }
 aside .ui-tabs ul.ui-tabs-nav,
+aside ul.nav,
 #risk .vidCont ul.ui-tabs-nav,
 #risk .vidCont ul.nav {
   text-align:           center;
@@ -1924,7 +1940,7 @@ aside .ui-tabs ul.ui-tabs-nav,
   cursor:               pointer;
   position:             absolute;
   left:                 0;
-  bottom:               12px;
+  bottom:               -6px;
 }
 aside .ui-tabs ul.ui-tabs-nav li,
 #risk .vidCont.ui-tabs ul.ui-tabs-nav li {
@@ -2255,12 +2271,13 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #careers h4 {
   color:                #757474;
 /*  font:                 138.5%/140% "GothamHTFMedium",Tahoma,Arial,sans-serif;*/
-  font:                 600 146.5%/140% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  font:                 600 146.5%/116% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.03em;
+  margin-bottom:        4px;
 }
 
 #careers section .row {
-  margin-bottom:        24px;
+  margin-bottom:        8px;
   padding-top:          5px;
 }
 #careers section .row:last-child {
@@ -2281,11 +2298,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #careers section .col3 {
   color:                #999;
-  width:                301px;
+  width:                290px;
+  padding-right:        11px;
   float:                left;
-}
-#careers section .col3:last-child {
-  width:                302px;
 }
 
 #careers section .col3 p {
@@ -2293,7 +2308,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   padding-top:          1px;
 }
 
-#careers section .nobel h4 {
+#careers section .text h4 {
   color:                #8d8d8d;
   font-size:            171.4%;
 }
@@ -2301,6 +2316,14 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #careers section .graphic {
   margin:               0 25px;
   float:                left;
+}
+
+#careers #passionCont ul.nav {
+  display:              none;
+}
+
+#careers #passionCont.ui-widget {
+  height:               132px;
 }
 
 #careers .careersHomeIntro,
@@ -2334,7 +2357,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #careers .careersHomeIntro .lt h4 {
   color:                #8d8d8d;
-  font:                 normal 171.4%/146.5% Helvetica,sans-serif;
+  font:                 normal 171.4%/116% Helvetica,sans-serif;
   letter-spacing:       0;
   margin-bottom:        6px;
 }
@@ -2385,8 +2408,8 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #careers section .icon {
   text-indent:          -9999px;
   width:                72px;
-  height:               67px;
-  margin:0 15px;
+  height:               120px;/*67px;*/
+  margin:               0 15px;
   background:           #fff url(../img/icons_career.png) 0 0 no-repeat;
   float:                left;
 }

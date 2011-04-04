@@ -47,48 +47,87 @@
   </section>
 
   <section class="clearfix">
-    <h3><em>Achievements</em></h3>
-    <img src="/img/icon_nobel.jpg" class="graphic" alt="Nobel Laureates" />
-    <div class="nobel text">
-      <h4>Nobel Laureates. Yep, we have a couple of those people.</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    <h3><em>Passion</em></h3>
+    <div id="passionCont">
+      <ul class="nav">
+        <li><a href="#nobel">Two Nobel laureates and counting.</a></li>
+        <li><a href="#science-art">Science meets art.</a></li>
+        <li><a href="#real-world">Real world, real science.</a></li>
+        <li><a href="#educating">Educating the next generation.</a></li>
+        <li><a href="#game-theory">Changing the game on terrorism.</a></li>
+      </ul>
+      <div id="nobel">
+        <img src="/img/icon_nobel.jpg" class="graphic" alt="Nobel Laureates" />
+        <div class="text">
+          <h4>Two Nobel laureates and counting.</h4>
+          <p>Work with Nobel laureate researchers from the Intergovernmental Panel on Climate Change and others at the top of their fields across medical research, computer science, seismology, and mathematics.</p>
+        </div>
+      </div>
+      <div id="science-art" class="ui-tabs-hide">
+        <img src="/img/icon_nobel.jpg" class="graphic" alt="Nobel Laureates" />
+        <div class="text">
+          <h4>Science meets art.</h4>
+          <p>One of the world's leading modelers is also a harpist who composed the musical arrangement for the national anthem of Afghanistan's interim government.</p>
+        </div>
+      </div>
+      <div id="real-world" class="ui-tabs-hide">
+        <img src="/img/icon_nobel.jpg" class="graphic" alt="Nobel Laureates" />
+        <div class="text">
+          <h4>Real world, real science.</h4>
+          <p>From National Geographic specials to the Discovery Channel, we share our research about the effects of earthquakes and catastrophic weather.</p>
+        </div>
+      </div>
+      <div id="educating" class="ui-tabs-hide">
+        <img src="/img/icon_nobel.jpg" class="graphic" alt="Nobel Laureates" />
+        <div class="text">
+          <h4>Educating the next generation.</h4>
+          <p>One of the world's top authorities on climate also writes books for kids explaining geology, prehistory, earthquakes, and volcanoes.</p>
+        </div>
+      </div>
+      <div id="game-theory" class="ui-tabs-hide">
+        <img src="/img/icon_nobel.jpg" class="graphic" alt="Nobel Laureates" />
+        <div class="text">
+          <h4>Changing the game on terrorism.</h4>
+          <p>When an influential mathematician applied game theory to terrorism, he created an entirely new way to anticipate terrorists' next move.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="work clearfix">
-    <h3>Most Awesomest <em>Work</em></h3>
+    <h3><em>Craft</em></h3>
     <div class="row clearfix">
       <div class="col3">
         <div class="icon iconTools">[Tools]</div>
-        <h4>Lorem Magna</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h4>Thought Leadership</h4>
+        <p>Redefine how companies manage and understand catastrophic risk.</p>
       </div>
       <div class="col3">
         <div class="icon iconCup">[Cup]</div>
-        <h4>Lorem Magna</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h4>Planetary Solutions</h4>
+        <p>Quantify impacts with 50,000-year weather models, terrorism game theory, and human longevity models.</p>
       </div>
       <div class="col3">
         <div class="icon iconBooks">[Books]</div>
-        <h4>Lorem Magna</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h4>Supercomputer in the Cloud</h4>
+        <p>Build the first high-performance computing cloud platform running hyper-complex mathematical models.</p>
       </div>
     </div>
     <div class="row lastIconRow clearfix">
       <div class="col3">
         <div class="icon iconGlobe">[Globe]</div>
-        <h4>Lorem Magna</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h4>Petabytes of Data</h4>
+        <p>Crunch petabytes of data using leading-edge data manipulation and calculation algorithms.</p>
       </div>
       <div class="col3">
         <div class="icon iconChat">[Chat]</div>
-        <h4>Lorem Magna</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h4>Beyond Multidisciplinary</h4>
+        <p>Collaborate with leaders across diverse fields. Computer scientists, seismologists, civil engineers, mathematicians.</p>
       </div>
       <div class="col3">
         <div class="icon iconBolt">[Bolt]</div>
-        <h4>Lorem Magna</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h4>Global Influence</h4>
+        <p>Build models trusted as the global currency on catastrophic risk, impacting a multi-trillion-dollar global market.</p>
       </div>
     </div>
     <div class="row clearfix">
@@ -111,7 +150,7 @@
   </section>
 
   <section class="team clearfix">
-    <h3>The <em>Team</em></h3>
+    <h3><em>Us</em></h3>
     <div id="team">
       <div id="team_panel">
         <img src="/img/TEMP_photo_team.jpg" class="photo" alt="The RMS Team" />
@@ -133,14 +172,14 @@
     <div id="tooltip">
       <div class="body clearfix">
         <div class="primary">
-          <div class="imgCont fadeTransition"><img id="bioImg" src="/img/TEMP_photo_jli_alt.jpg" alt="Jane Li" /></div>
-          <div class="text fadeTransition">
+          <div class="imgCont"><img id="bioImg" src="/img/TEMP_photo_jli_alt.jpg" alt="Jane Li" /></div>
+          <div class="text">
             <h5 id="bioName">Jane Li</h5>
             <p id="bioPosition">Engineer</p>
             <p id="bioLocation">San Francisco</p>
           </div>
         </div>
-        <div id="bioContent" class="secondary fadeTransition">
+        <div id="bioContent" class="secondary">
           <h6>Lorem Dolores</h6>
           <p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>
           <h6>Gratisei Helios</h6>
@@ -155,17 +194,17 @@
     <div class="lt">
       <div class="icon iconGlobe">[Globe]</div>
       <div class="text">
-        <h4>See if we're right for you</h4>
-        <p>Picking an employer is a big decision, and we know we're not right for everyone. Play this fun game to find out.</p>
-        <a href="/careers/game" class="btn btnLgDark">Play the game</a>
+        <h4>A World of Opportunity</h4>
+        <p>Learn more about employment opportunities for you in nearly a dozen offices across the China, Europe, India, Japan, and the US.</p>
+        <a href="/careers/jobs" class="btn btnLgDark">View Jobs</a>
       </div>
     </div>
     <div class="rt">
       <div class="icon iconChat">[Chat]</div>
       <div class="text">
-        <h4>Chat with us right away</h4>
-        <p>Sometimes, a quick chat is all you need to know. We're available to chat online whenever you are.</p>
-        <a href="/careers/chat" class="btn btnLgDark">Start a chat</a>
+        <h4>We support instant gratification</h4>
+        <p>Finding your next great opportunity is a big decision. You've got questions, we've got honest answers.</p>
+        <a href="/careers/chat" class="btn btnLgDark">Start chat</a>
       </div>
     </div>
   </section>
