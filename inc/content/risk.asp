@@ -51,31 +51,31 @@
       <div id="catastrophe">
       
         <ul id="caseStudiesNav" class="clearfix">
-          <li><a href="#chile-earthquake">
-            <span class="imgCont cs1">Case Study #1</span>
-            <span><em>Safe Enough To Save</em><br />Chile Earthquake</span>
+          <li><a href="#haiti-earthquake">
+            <span class="imgCont cs1">Case Study #1: </span>
+            <span><em>Certifying Hospitals</em><br />Haiti Earthquake</span>
           </a></li>
           <li><a href="#hurricane-katrina">
-            <span class="imgCont cs2">Case Study #2</span>
+            <span class="imgCont cs2">Case Study #2: </span>
             <span><em>Super Catastrophe</em><br />Hurricane Katrina</span>
           </a></li>
           <li><a href="#hurricane-ike">
-            <span class="imgCont cs3">Case Study #3</span>
-            <span><em>Multi-Billion Mystery</em><br />Hurricane Ike</span>
+            <span class="imgCont cs3">Case Study #3: </span>
+            <span><em>$18 Billion Mystery</em><br />Hurricane Ike</span>
           </a></li>
         </ul>
 
         <!-- + Case Study #1 -->
-        <div id="chile-earthquake">
+        <div id="haiti-earthquake">
           <section class="caseStudies clearfix">
-            <h3>Chile Earthquake <span class="sep">//</span> <em>27 February 2010</em></h3>
+            <h3>Haiti Earthquake <span class="sep">//</span> <em>12 January 2010</em></h3>
             <div class="lt">
           
               <div class="vidCont">
                 <ul class="nav">
-                  <li><a href="#chile-1">media 1</a></li>
-                  <li><a href="#chile-2">media 2</a></li>
-                  <li><a href="#chile-3">media 3</a></li>
+                  <li><a href="#haiti-1">media 1</a></li>
+                  <li><a href="#haiti-2">media 2</a></li>
+                  <li><a href="#haiti-3">media 3</a></li>
                 </ul>
 
                 <!-- + Media 1 -->
@@ -93,10 +93,10 @@
                 <!-- / Media 3 -->
               </div>
           
-              <h4>Safe Enough To Save Lives Again</h4>
-              <p><strong>Curabitur quis viverra arcu. Cras tincidunt hendrerit diam nec laoreet. Nullam lectus eros, cursus tempus</strong> tempor vitae, blandit sed quam. Nullam mollis ligula nec sem fringilla vel molestie purus ultricies. Integer porta lacus nec turpis pretium elementum. Morbi in sapien purus, quis congue turpis. Duis quis lectus non arcu rutrum tincidunt. Nunc tristique, elit non sollicitudin luctus, est turpis interdum ipsum, vel tempus sapien purus vitae est.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in quam sem. Duis sagittis mauris eu nunc semper commodo. Suspendisse placerat pharetra ligula, non malesuada turpis iaculis sit amet. Suspendisse sodales aliquam libero, at egestas mauris sollicitudin id. Vestibulum quis sem dolor, ac ultrices lorem. Maecenas interdum laoreet dui. Aenean a elit vitae neque lacinia ornare. Etiam sed arcu sagittis tellus feugiat ornare tincidunt quis libero. Morbi sit amet augue rutrum enim aliquet euismod vitae sed urna.</p>
-              <p>Donec porttitor leo quis sem eleifend ornare sit amet nec ante. Nullam volutpat fringilla dui, a dictum mi ultricies eget. Nam tincidunt lectus ut est viverra blandit. Maecenas luctus viverra magna, quis eleifend neque dapibus nec. Nam ligula odio, porta ac rhoncus vitae, convallis eu erat. Maecenas dapibus porttitor nisl, et rutrum nunc ultricies vitae. Praesent ut sapien a velit consequat gravida vel vel lorem. Sed at odio risus, id convallis lectus.</p>
+              <h4>Certifying Hospitals in Haiti</h4>
+              <p><strong>One of the most destructive earthquakes in modern history,</strong> the magnitude 7.0 earthquake that hit Haiti on January 12, 2010, killed or injured approximately 600,000 people and destroyed 300,000 homes. Lacking a national building code, walls were often constructed of heavy materials without reinforcement, resulting in collapsed or compromised buildings and devastating loss of life.</p>
+              <p>After the earthquake, RMS experts joined a cross-organizational team of geologists and structural engineers in Haiti to assess the damage and learn lessons about how buildings perform in earthquakes. This information would be critical for improving future building practices in Haiti and elsewhere as well as improving the catastrophe models driving global business decisions.</p>
+              <p>As the local government struggled to examine critical structures, particularly hospitals, they relied on the network of visiting research and aid workers to supplement their stretched resources. Alongside partner organizations, RMS structural engineers helped evaluate the safety of hospitals that survived the earthquake, contributing vital expertise to help reopen hospitals as quickly as possible.</p>
           
             </div>
             <div class="rt">
@@ -121,7 +121,7 @@
         <!-- + Case Study #2 -->
         <div id="hurricane-katrina" class="ui-tabs-hide">
           <section class="caseStudies clearfix">
-            <h3>Hurricane Katrina <span class="sep">//</span> <em>5 August 2005</em></h3>
+            <h3>Hurricane Katrina <span class="sep">//</span> <em>29 August 2005</em></h3>
             <div class="lt">
           
               <div class="vidCont">
@@ -134,10 +134,10 @@
                 <!-- / Media 1 -->
               </div>
           
-              <h4>Super Catastrophe</h4>
-              <p><strong>Donec porttitor leo quis sem eleifend ornare sit amet nec ante. Nullam volutpat fringilla dui, a dictum mi ultricies eget.</strong> Nam tincidunt lectus ut est viverra blandit. Maecenas luctus viverra magna, quis eleifend neque dapibus nec. Nam ligula odio, porta ac rhoncus vitae, convallis eu erat. Maecenas dapibus porttitor nisl, et rutrum nunc ultricies vitae. Praesent ut sapien a velit consequat gravida vel vel lorem. Sed at odio risus, id convallis lectus.</p>
-              <p>Curabitur quis viverra arcu. Cras tincidunt hendrerit diam nec laoreet. Nullam lectus eros, cursus tempus tempor vitae, blandit sed quam. Nullam mollis ligula nec sem fringilla vel molestie purus ultricies. Integer porta lacus nec turpis pretium elementum. Morbi in sapien purus, quis congue turpis. Duis quis lectus non arcu rutrum tincidunt. Nunc tristique, elit non sollicitudin luctus, est turpis interdum ipsum, vel tempus sapien purus vitae est.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in quam sem. Duis sagittis mauris eu nunc semper commodo. Suspendisse placerat pharetra ligula, non malesuada turpis iaculis sit amet. Suspendisse sodales aliquam libero, at egestas mauris sollicitudin id. Vestibulum quis sem dolor, ac ultrices lorem. Maecenas interdum laoreet dui. Aenean a elit vitae neque lacinia ornare. Etiam sed arcu sagittis tellus feugiat ornare tincidunt quis libero. Morbi sit amet augue rutrum enim aliquet euismod vitae sed urna.</p>
+              <h4>Understanding Super Catastrophes</h4>
+              <p><strong>Hurricane Katrina changed New Orleans forever, but it also changed the science of catastrophe modeling.</strong> Until Katrina, models considered the damage to expect if a major hurricane made landfall or if a major storm surge overtopped flood defenses. But the levees crumbling, that was another matter.</p>
+              <p>After floodwaters filled the city, the U.S. struggled to grasp the magnitude of the damage. RMS modelers went to work day and night to quantify what they saw, estimating at least $125 billion in losses. Media and government agencies turned to RMS for information, and officials at the top of the Bush administration contacted RMS advisors for help in understanding potential economic losses.</p>
+              <p>After witnessing the tragedy of New Orleans, RMS experts began to contextualize their work in terms of an entirely new concept, the super catastrophe or "super cat," in which one massive event triggers secondary events that can have an even greater destructive impact. Today, RMS considers the possibility of super cats in all of our major catastrophe models, providing a more comprehensive perspective on the potential implications of extreme events.</p>
           
             </div>
             <div class="rt">
@@ -173,10 +173,10 @@
                 <!-- / Media 1 -->
               </div>
           
-              <h4>$18 Billion Mystery</h4>
-              <p><strong>Curabitur quis viverra arcu. Cras tincidunt hendrerit diam nec laoreet. Nullam lectus eros, cursus tempus</strong> tempor vitae, blandit sed quam. Nullam mollis ligula nec sem fringilla vel molestie purus ultricies. Integer porta lacus nec turpis pretium elementum. Morbi in sapien purus, quis congue turpis. Duis quis lectus non arcu rutrum tincidunt. Nunc tristique, elit non sollicitudin luctus, est turpis interdum ipsum, vel tempus sapien purus vitae est.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in quam sem. Duis sagittis mauris eu nunc semper commodo. Suspendisse placerat pharetra ligula, non malesuada turpis iaculis sit amet. Suspendisse sodales aliquam libero, at egestas mauris sollicitudin id. Vestibulum quis sem dolor, ac ultrices lorem. Maecenas interdum laoreet dui. Aenean a elit vitae neque lacinia ornare. Etiam sed arcu sagittis tellus feugiat ornare tincidunt quis libero. Morbi sit amet augue rutrum enim aliquet euismod vitae sed urna.</p>
-              <p>Donec porttitor leo quis sem eleifend ornare sit amet nec ante. Nullam volutpat fringilla dui, a dictum mi ultricies eget. Nam tincidunt lectus ut est viverra blandit. Maecenas luctus viverra magna, quis eleifend neque dapibus nec. Nam ligula odio, porta ac rhoncus vitae, convallis eu erat. Maecenas dapibus porttitor nisl, et rutrum nunc ultricies vitae. Praesent ut sapien a velit consequat gravida vel vel lorem. Sed at odio risus, id convallis lectus.</p>
+              <h4>The $18 Billion Mystery</h4>
+              <p><strong>Forensic claims analysis is one way RMS learns more about major catastrophic events and their lessons for understanding risk.</strong> In studying $18 billion in recent U.S. hurricane claims data, our researchers noticed that damage to some types of buildings was greater than expected. Why didn't these buildings perform as well as they should have in relatively low winds?</p>
+              <p>Our structural engineers took a closer look at this unprecedented volume of claims. While building codes were sufficient to ensure buildings would withstand moderate hurricane winds, adherence to those codes was inconsistent in some regions, particularly for properties further away from the coast. In addition, our researchers found that some roofing materials deteriorated more rapidly than expected in certain atmospheric conditions, such as the high heat and humidity in the southeast.</p>
+              <p>These findings have implications not only for RMS clients, but for government and property owners as well. Armed with information from RMS, stakeholders can identify building shortcomings and promote improved building practices to ensure greater safety in the event of a major hurricane.</p>
           
             </div>
             <div class="rt">

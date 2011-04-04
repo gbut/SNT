@@ -33,16 +33,15 @@
 
   <section class="careersHomeIntro clearfix">
     <div class="lt">
-      <h4>Et mara paulatim ideo haero venio at ti</h4>
-      <h5>Dolore obruo wisi quis defui, quae. Cogo voco, adipiscing expuo adsum feugiat quidem, saluto adsum. Esse usitas iusto consequ.</h5>
-      <p>Esse usitas iusto consequat, capto adipiscing illum virtus mara tiote, appellatio reprobo luptatum regula adipiscing exputo adsum veritas amichite melia todoa meite paiti. Dolore obruo wisi quis defui, quae. Cogo voco, adipiscing exputo adsum feugiat quidem, asluto adsum.</p>
-      <p>Amichite melia todoa meite paiti. Dolore obruo wisi quis defui, quae. Cogo voco, adipiscing exputo adsum feugiat quidem, asluto adsum.</p>
+      <h4>Entrepreneurial opportunity. Market leader resources.</h4>
+      <h5>Model 50,000-year weather patterns. Build a supercomputer in the cloud. Collaborate on innovations with global impact.</h5>
+      <p>As the market leader in catastrophic risk modeling, RMS helps organizations understand and manage their risk exposure. We build highly sophisticated natural catastrophe risk models as well as models of terrorist acts, pandemic outbreaks, and human longevity. From applying mathematical game theory to terrorist behavior to European wind models, China flood models, and human longevity projections, we drive the science that influences trillions of investment dollars around the globe. Today, the more than 650 professionals at RMS are taking on the next generation of modeling and technology problems as we work toward transforming the industry through supercomputing in the cloud.</p>
     </div>
     <div class="rt">
       <span class="imgCont"><img src="/img/photo_hshah.jpg" alt="Hemant Shah, CEO" /></span>
       <blockquote>
-        <p><em>Et mara paulatim todei</em> ideo haero venio meti do dolor interdi vulput. Dueite drerito iti duis.</p>
-        <p class="attr">&mdash; <em>Hemant Shah</em>, CEO</p>
+        <p><em>RMS was founded to solve problems no one thought could be solved.</em> Then as now, we're leading the way.</p>
+        <p class="attr">&mdash; <em>Hemant Shah</em>, Founder and CEO</p>
       </blockquote>
     </div>
   </section>
