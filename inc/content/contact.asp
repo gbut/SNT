@@ -52,31 +52,20 @@
   <h3>RMS Around the <em>Globe</em></h3>
   <div id="map">
     <div id="markers">
-      <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&msid=205465167304100688727.00049f4007883870ffbdc&ll=37.583222,-122.085571&spn=0.422256,0.510864&z=11&iwloc=00049f40078b339b3b46d
-      " class="newark" title="Newark, CA"></a>
+      <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&z=11&iwloc=0004a01c2d71b5c5ffb77&msid=215741334485754504663.0004a01c1e2a3523be643" class="newark" title="Newark, CA"></a>
       <a href="#" class="peoria" title="Peoria, IL"></a>
       <a href="#" class="bloomington" title="Bloomington, MN"></a>
       <a href="#" class="hackensack" title="Hackensack, NJ"></a>
       <a href="#" class="bermuda" title="Bermuda"></a>
-      <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&msid=205465167304100688727.00049f4007883870ffbdc&ll=51.514832,-0.087118&spn=0.041449,0.063858&z=14&iwloc=00049f40436e0b4a301a0" class="london" title="London, UK"></a>
+      <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&ll=51.49592,-0.144196&spn=0.349254,0.530777&z=11&iwloc=0004a01c2d71b6108ef09&msid=215741334485754504663.0004a01c1e2a3523be643" class="london" title="London, UK"></a>
       <a href="#" class="paris" title="Paris, France"></a>
       <a href="#" class="zurich" title="Zürich, Switzerland"></a>
-      <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&msid=205465167304100688727.00049f4007883870ffbdc&ll=28.583542,77.313108&spn=0.058487,0.063858&z=14&iwloc=00049f4050e66d94f711f" class="noida" title="NOIDA, India"></a>
+      <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&ll=28.79775,77.195435&spn=0.491607,0.530777&z=11&iwloc=0004a01c2d71b6243d640&msid=215741334485754504663.0004a01c1e2a3523be643" class="noida" title="NOIDA, India"></a>
       <a href="#" class="beijing" title="Beijing, China"></a>
       <a href="#" class="tokyo" title="Tokyo, Japan"></a>
       
-      <!-- mercator
-      <script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=0&amp;up_proj=mercator&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script>
-      -->
-      <!-- mercator w/coulds
-      <script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=1&amp;up_proj=mercator&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script>
-      -->
-      <!-- mollweide
-      <script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=0&amp;up_proj=mollweide&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script>
-      -->
       <!-- mollweide w/clouds -->
       <script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=1&amp;up_proj=mollweide&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script>
-      <!-- -->
       
     </div>
     <div id="clocks">
@@ -124,7 +113,7 @@
       <div class="office">
         <h5>Corporate<br />
         Headquarters</h5>
-        <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&msid=205465167304100688727.00049f4007883870ffbdc&ll=37.583222,-122.085571&spn=0.422256,0.510864&z=11&iwloc=00049f40078b339b3b46d" class="newark">
+        <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&z=11&iwloc=0004a01c2d71b5c5ffb77&msid=215741334485754504663.0004a01c1e2a3523be643" class="newark">
           7575 Gateway Blvd.<br />
           Newark, CA 94560
           <div class="tel">
@@ -183,7 +172,7 @@
       <div class="office">
         <h5>European<br />
         Headquarters</h5>
-        <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&msid=205465167304100688727.00049f4007883870ffbdc&ll=51.514832,-0.087118&spn=0.041449,0.063858&z=14&iwloc=00049f40436e0b4a301a0" class="london">
+        <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&ll=51.49592,-0.144196&spn=0.349254,0.530777&z=11&iwloc=0004a01c2d71b6108ef09&msid=215741334485754504663.0004a01c1e2a3523be643" class="london">
           Peninsular House<br />
           30 Monument Street<br />
           London EC3R 8NB UK<br />
@@ -216,7 +205,7 @@
       </div>
       <div class="office">
         <h5>India</h5>
-        <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&msid=205465167304100688727.00049f4007883870ffbdc&ll=28.583542,77.313108&spn=0.058487,0.063858&z=14&iwloc=00049f4050e66d94f711f" class="noida">
+        <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&ll=28.79775,77.195435&spn=0.491607,0.530777&z=11&iwloc=0004a01c2d71b6243d640&msid=215741334485754504663.0004a01c1e2a3523be643" class="noida">
           A-7 Sector 16 <br />
           NOIDA 201 301 India
           <div class="tel">
