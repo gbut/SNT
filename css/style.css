@@ -2230,6 +2230,11 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   padding-right:        10px;
 }
 
+#risk h5 {
+  line-height:          123.1%;
+  margin-bottom:        4px;
+}
+
 
 /* / Risk */
 

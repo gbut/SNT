@@ -221,26 +221,19 @@
         <section class="clearfix">
           <h3>Terrorism Models</h3>
           <div class="col3">
-            <div style="background:green;height:217px;">img 1</div>
-            <p>
-              <strong>A new, systematic approach to understanding terrorism</strong><br />
-              RMS mathematician Gordon Woo saw a way to begin answering these questions. The means&mdash;whether bomb, biological weapon, chemical weapon, or other mode of attack&mdash;would tend to be the most readily available and accessible. Those probabilities could be modeled by conventional means. The targets would be the most visible with the highest psychological value. Again, a quantifiable aspect of the problem. The final variable was human nature itself. The strategic decision to commit a terrorist act would be the consequence and culmination of a series of other strategic decisions. No amount of historical data could account for that; there was no way to quantify capricious human impulse. Or was there?
-            </p>
+            <div style="background:green;height:217px;margin-bottom:5px;">img 1</div>
+            <h5>A new, systematic approach to understanding terrorism</h5>
+            <p>RMS mathematician Gordon Woo saw a way to begin answering these questions. The means&mdash;whether bomb, biological weapon, chemical weapon, or other mode of attack&mdash;would tend to be the most readily available and accessible. Those probabilities could be modeled by conventional means. The targets would be the most visible with the highest psychological value&mdash;again, a quantifiable aspect of the problem. The final variable was human nature itself. The strategic decision to commit a terrorist act would be the culmination of a series of other strategic decisions. No amount of historical data could account for that; there was no way to quantify capricious human impulse. Or was there?</p>
           </div>
           <div class="col3">
-            <div style="background:red;height:217px;">img 2</div>
-            <p>
-              <strong>Game theory and the decisions terrorists make</strong><br />
-              After the terrorist attacks of 9/11, Dr. Woo had an idea. Why not use mathematical game theory, made famous in the film <cite>A Beautiful Mind</cite>, to quantify and understand the probability of certain decisions? Ten years later, RMS terrorism risk models based on game theory and other methodologies are used to help anticipate major terrorist attacks and their effects around the globe.
-            </p>
+            <div style="background:red;height:217px;margin-bottom:5px;">img 2</div>
+            <h5>Game theory and the decisions terrorists make</h5>
+            <p>After the terrorist attacks of 9/11, Dr. Woo had an idea. Why not use mathematical game theory, made famous in the film <cite>A Beautiful Mind</cite>, to quantify and understand the probability of certain decisions? Ten years later, RMS terrorism risk models based on game theory and other methodologies are used to anticipate terrorist behavior and potential terrorist attacks and their effects around the globe.</p>
           </div>
           <div class="col3">
-            <div style="background:orange;height:217px;">img 3</div>
-            <p>
-              <strong>Created in partnership with the world's terrorism experts</strong><br />
-              To build the most accurate and advanced model of probable terrorist strikes possible, RMS partnered with the leading think tanks and research institutions around the globe, including the RAND Center for Terrorism Risk Management Policy, Jane's Information Group, the Centre for the Study of Terrorism and Political Violence at the University of St. Andrews in Scotland, the S. Rajaratnam School of International Studies in Singapore, and dozens of leading terrorism scholars, consultants, and advisors.
-            </p>
-            <p>Only through a better understanding of modern terrorist threats using the latest scientific applications can we hope to prepare for and possibly prevent the worst outcomes. Continuously improved and refined RMS terrorism risk models are helping businesses and governments do exactly that.</p>
+            <div style="background:orange;height:217px;margin-bottom:5px;">img 3</div>
+            <h5>Created in partnership with the world's terrorism experts</h5>
+            <p>To build the most accurate and advanced model of probable terrorist strikes possible, RMS partnered with the leading think tanks and research institutions around the globe, including the RAND Center for Terrorism Risk Management Policy, Jane's Information Group, the Centre for the Study of Terrorism and Political Violence at the University of St. Andrews in Scotland, the S. Rajaratnam School of International Studies in Singapore, and dozens of leading terrorism scholars, consultants, and advisors.</p>
           </div>
         </section>
 
@@ -266,25 +259,19 @@
         <section class="clearfix">
           <h3>Longevity Models</h3>
           <div class="col3">
-            <div style="background:green;height:217px;">img 1</div>
-            <p>
-              <strong>Industry-shaping models for longevity and health</strong><br />
-              RMS longevity and health models help a wide range of industries and government agencies maintain the appropriate financial infrastructure and societal response mechanisms for today's probable injury or death scenarios. Based on a wide variety of scientific drivers and inputs, our models take into account infectious diseases, natural catastrophes, and terrorist attacks as well as individual lifestyle choices that can affect longevity and even how medical and scientific breakthroughs will extend life in the future.
-            </p>
+            <div style="background:green;height:217px;margin-bottom:5px;">img 1</div>
+            <h5>Industry-shaping models for longevity and health</h5>
+            <p>RMS longevity and mortality models help a wide range of industries and government agencies maintain the appropriate financial infrastructure and societal response mechanisms for today's probable injury, illness, or death scenarios. Based on a wide variety of scientific drivers and inputs, our models take into account infectious diseases, natural catastrophes, and terrorist attacks as well as individual lifestyle choices and medical and scientific breakthroughs that can affect current or future longevity trends.</p>
           </div>
           <div class="col3">
-            <div style="background:red;height:217px;">img 2</div>
-            <p>
-              <strong>Superior analytics from our specialized team</strong><br />
-              A specialized team of experienced modelers, medical specialists and analysts, biological mathematicians, and health statisticians, together with experts in a variety of other fields, collaborate to ensure RMS life and health models lead the world in innovative analytics. We take into account the latest epidemiological studies, clinical trial data, and medical models to provide state-of-the-art knowledge and insight. Our models include changes in lifestyle and resulting risk factors such as smoking, diet, obesity, and general attitudes to health, together with improvements in medical care, drug development, and treatments.
-            </p>
+            <div style="background:red;height:217px;margin-bottom:5px;">img 2</div>
+            <h5>Superior analytics from our specialized team</h5>
+            <p>A specialized team of experienced modelers, medical specialists and analysts, biological mathematicians, and health statisticians, together with experts in a variety of other fields, collaborate to ensure RMS life and health models lead the world in innovative analytics. We take into account the latest epidemiological studies, clinical trial data, and medical models to provide state-of-the-art knowledge and insight. Our models include changes in lifestyle and resulting risk factors such as smoking, diet, obesity, and general attitudes to health, together with improvements in medical care, drug development, and treatments.</p>
           </div>
           <div class="col3">
-            <div style="background:orange;height:217px;">img 3</div>
-            <p>
-              <strong>Projecting the impact of breakthrough medical technologies</strong><br />
-              To quantify probabilities related to breakthroughs in medical science, RMS catalogs current medical research and investment in the biosciences, tracks thousands of drugs currently in the pipeline for FDA approval, and projects social changes in lifestyle risk factors and healthcare treatment patterns. The resulting model provides a timeline estimate for probable improvements in lifespan due to advances in medical technologies.
-            </p>
+            <div style="background:orange;height:217px;margin-bottom:5px;">img 3</div>
+            <h5>Projecting the impact of breakthrough medical technologies</h5>
+            <p>To quantify probabilities related to breakthroughs in medical science, RMS catalogs current medical research and investment in the biosciences, tracks thousands of drugs currently in the pipeline for FDA approval, and projects social changes in lifestyle risk factors and healthcare treatment patterns. The resulting model provides a timeline estimate for probable improvements in lifespan due to advances in medical technologies.</p>
           </div>
         </section>
 
