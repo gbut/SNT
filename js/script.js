@@ -1410,6 +1410,9 @@ $(document).ready(function(){
         CoolClock.findAndCreateClocks(); // update clock
       }
     );
+    $(this).click(
+      
+    );    
   });
   
   //===============================================
