@@ -3181,6 +3181,55 @@ textarea.error {
   right:125px;
 }
 
+#contact #popup {
+  width:500px;
+  height:170px;
+  padding:0 10px;
+  border:1px solid #000;
+  background:#ccc;
+  position:absolute;
+  top:150px;
+  left:215px;
+  -moz-opacity:         0;
+  -ms-filter:           "alpha(opacity=0)";
+  filter:               alpha(opacity=0);
+  opacity:0;
+  -webkit-border-radius:10px;
+  -moz-border-radius:   10px;
+  border-radius:        10px;
+}
+
+#contact #popup .icon,
+#contact #popup .details,
+#contact #popup .link,
+#contact #popup .map {
+  border:1px solid #eee;
+  float:left;
+  margin:10px 8px 10px 0;
+  padding:2px;
+}
+#contact #popup .icon {
+  width:64px;
+  height:64px;
+}
+#contact #popup .details {
+  width:165px;
+  height:140px;
+}
+#contact #popup a {
+  display:block;
+}
+#contact #popup .map {
+  width:140px;
+  height:140px;
+  margin-right:0;
+}
+#contact #popup .close {
+  position:absolute;
+  right:0;
+  left:auto;
+}
+
 /* / Form pages: Job Apply & Contact */
 
 /* + Share */

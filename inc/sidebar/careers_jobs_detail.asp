@@ -7,7 +7,7 @@
     <a href="#" class="st_sharethis_custom btn btnLg">Share with a friend</a>
 <!--
     <a href="http://rest.sharethis.com/share/sharer.php?destination=linkedin&url=http%3A%2F%2Fsharethis.com&
-    title=ShareThis&publisher=e1cf7204-5d7c-4fd1-9261-f09df76aaf86&access_key=[*** NEED KEY***]">TEST</a>
+    title=ShareThis&publisher=39c6375d-95de-4f6f-9413-f8e748bff7f3&access_key=[*** NEED KEY***]">TEST</a>
 -->
     <!-- ShareThis Button END -->
 

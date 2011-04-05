@@ -1410,9 +1410,21 @@ $(document).ready(function(){
         CoolClock.findAndCreateClocks(); // update clock
       }
     );
-    $(this).click(
-      
-    );    
+    $(this).click(function() {
+        str = $(this).attr('class');  // get the class string
+        loc = loc.split(' ')[0];      // parse for location (first class)
+        $('#popup .icon').removeClass().addClass('icon '+loc);  // get/set icon
+        $('#popup .details').html($('.office a.'+loc).html());  // get/set details
+        $('#popup .link').attr('href','http://bit.ly/rms-'+loc);    // get/set link [use customm url shortener?]
+        $('#popup .map').removeClass().addClass('map '+loc);    // get/set map
+        $('#popup .close').click(function() {
+            $('#popup').fadeTo(1000, 0.0, 'easeOutExpo');  
+          }
+        ); // set close button
+        $('#popup').fadeTo(1000, 0.9, 'easeOutExpo');
+        
+      }
+    );
   });
   
   //===============================================

@@ -52,15 +52,15 @@
   <h3>RMS Around the <em>Globe</em></h3>
   <div id="map">
     <div id="markers">
-      <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&z=11&iwloc=0004a01c2d71b5c5ffb77&msid=215741334485754504663.0004a01c1e2a3523be643" class="newark" title="Newark, CA"></a>
+      <a href="#" class="newark" title="Newark, CA"></a>
       <a href="#" class="peoria" title="Peoria, IL"></a>
       <a href="#" class="bloomington" title="Bloomington, MN"></a>
       <a href="#" class="hackensack" title="Hackensack, NJ"></a>
       <a href="#" class="bermuda" title="Bermuda"></a>
-      <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&ll=51.49592,-0.144196&spn=0.349254,0.530777&z=11&iwloc=0004a01c2d71b6108ef09&msid=215741334485754504663.0004a01c1e2a3523be643" class="london" title="London, UK"></a>
+      <a href="#" class="london" title="London, UK"></a>
       <a href="#" class="paris" title="Paris, France"></a>
       <a href="#" class="zurich" title="Zürich, Switzerland"></a>
-      <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&ll=28.79775,77.195435&spn=0.491607,0.530777&z=11&iwloc=0004a01c2d71b6243d640&msid=215741334485754504663.0004a01c1e2a3523be643" class="noida" title="NOIDA, India"></a>
+      <a href="#" class="noida" title="NOIDA, India"></a>
       <a href="#" class="beijing" title="Beijing, China"></a>
       <a href="#" class="tokyo" title="Tokyo, Japan"></a>
       
@@ -107,13 +107,21 @@
       </a>
     </div>
     <div class="mask"></div>
+    <div id="popup">
+      <div class="icon"></div>
+      <div class="details"></div>
+      <a href="#" title="Go to Google Maps" class="link">Google Map »</a>
+      <div class="map"></div>
+      <a href="#" title="Close" class="close">X</a>
+    </div>
   </div>
+
   <div id="offices" class="clearfix">
   
       <div class="office">
         <h5>Corporate<br />
         Headquarters</h5>
-        <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&z=11&iwloc=0004a01c2d71b5c5ffb77&msid=215741334485754504663.0004a01c1e2a3523be643" class="newark">
+        <a href="#" class="newark">
           7575 Gateway Blvd.<br />
           Newark, CA 94560
           <div class="tel">
@@ -172,7 +180,7 @@
       <div class="office">
         <h5>European<br />
         Headquarters</h5>
-        <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&ll=51.49592,-0.144196&spn=0.349254,0.530777&z=11&iwloc=0004a01c2d71b6108ef09&msid=215741334485754504663.0004a01c1e2a3523be643" class="london">
+        <a href="#" class="london">
           Peninsular House<br />
           30 Monument Street<br />
           London EC3R 8NB UK<br />
@@ -205,7 +213,7 @@
       </div>
       <div class="office">
         <h5>India</h5>
-        <a href="http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&ll=28.79775,77.195435&spn=0.491607,0.530777&z=11&iwloc=0004a01c2d71b6243d640&msid=215741334485754504663.0004a01c1e2a3523be643" class="noida">
+        <a href="#" class="noida">
           A-7 Sector 16 <br />
           NOIDA 201 301 India
           <div class="tel">
@@ -237,6 +245,6 @@
       </div>
   
   </div>
-
+  
 </div>
 <!-- / contact -->

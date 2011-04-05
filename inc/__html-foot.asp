@@ -75,7 +75,8 @@
       onhover:    'false',
       headerTitle:'Share this Job Listing',
       theme:      '2',
-      publisher:  'e1cf7204-5d7c-4fd1-9261-f09df76aaf86'
+      publisher:  '39c6375d-95de-4f6f-9413-f8e748bff7f3',
+      tracking:   'google'
     });
     
   </script>
