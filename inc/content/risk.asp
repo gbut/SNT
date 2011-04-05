@@ -40,6 +40,10 @@
 
     </section>
 
+  </div>
+  
+  <div class="sectionCont">
+
     <div id="riskTabs">
       <ul class="tabs">
         <li><a href="#catastrophe">Natural Catastrophe<span class="pointer"><span class="inner">*</span></span></a></li>
@@ -50,159 +54,168 @@
       <!-- + NAT CAT -->
       <div id="catastrophe">
       
-        <ul id="caseStudiesNav" class="clearfix">
-          <li><a href="#haiti-earthquake">
-            <span class="imgCont cs1">Case Study #1: </span>
-            <span><em>Certifying Hospitals</em><br />Haiti Earthquake</span>
-          </a></li>
-          <li><a href="#hurricane-katrina">
-            <span class="imgCont cs2">Case Study #2: </span>
-            <span><em>Super Catastrophe</em><br />Hurricane Katrina</span>
-          </a></li>
-          <li><a href="#hurricane-ike">
-            <span class="imgCont cs3">Case Study #3: </span>
-            <span><em>$18 Billion Mystery</em><br />Hurricane Ike</span>
-          </a></li>
-        </ul>
+        <h3 class="panelIntro">Natural Catastrophe <em>Modeling</em></h3>
+        <p class="panelIntro">Our natural catastrophe risk models help people, governments, and businesses better understand the potential impact of a wide variety of catastrophic events. We are continuously discovering new data and information to improve and expand our models, enabling risk holders to be better prepared and to make better decisions about managing risk.</p>
+        
+        <div id="catastropheCont">
+        
+          <ul id="caseStudiesNav" class="clearfix">
+            <li><a href="#haiti-earthquake">
+              <span class="imgCont cs1">Case Study #1: </span>
+              <span><em>Certifying Hospitals</em><br />Haiti Earthquake</span>
+            </a></li>
+            <li><a href="#hurricane-katrina">
+              <span class="imgCont cs2">Case Study #2: </span>
+              <span><em>Super Catastrophe</em><br />Hurricane Katrina</span>
+            </a></li>
+            <li><a href="#hurricane-ike">
+              <span class="imgCont cs3">Case Study #3: </span>
+              <span><em>$18 Billion Mystery</em><br />Hurricane Ike</span>
+            </a></li>
+          </ul>
 
-        <!-- + Case Study #1 -->
-        <div id="haiti-earthquake">
-          <section class="caseStudies clearfix">
-            <h3>Haiti Earthquake <span class="sep">//</span> <em>12 January 2010</em></h3>
-            <div class="lt">
+          <!-- + Case Study #1 -->
+          <div id="haiti-earthquake">
+            <section class="caseStudies clearfix">
+              <h3>Haiti Earthquake <span class="sep">//</span> <em>12 January 2010</em></h3>
+              <div class="lt">
           
-              <div class="vidCont">
-                <ul class="nav">
-                  <li><a href="#haiti-1">media 1</a></li>
-                  <li><a href="#haiti-2">media 2</a></li>
-                  <li><a href="#haiti-3">media 3</a></li>
-                </ul>
+                <div class="vidCont">
+                  <ul class="nav">
+                    <li><a href="#haiti-1">media 1</a></li>
+                    <li><a href="#haiti-2">media 2</a></li>
+                    <li><a href="#haiti-3">media 3</a></li>
+                  </ul>
 
-                <!-- + Media 1 -->
-                <div id="chile-1" class="clearfix" style="width:660px;height:360px;background-color:green;overflow:hidden;">
-                  <div class="vidTitle"><span>Bridge Collapse Video</span><span class="bg"></span></div>
+                  <!-- + Media 1 -->
+                  <div id="chile-1" class="clearfix" style="width:660px;height:360px;background-color:green;overflow:hidden;">
+                    <div class="vidTitle"><span>Bridge Collapse Video</span><span class="bg"></span></div>
+                  </div>
+                  <!-- / Media 1 -->
+
+                  <!-- + Media 2 -->
+                  <div id="chile-2" class="clearfix ui-tabs-hide" style="width:660px;height:360px;background-color:red;overflow:hidden;"></div>
+                  <!-- / Media 2 -->
+
+                  <!-- + Media 3 -->
+                  <div id="chile-3" class="clearfix ui-tabs-hide" style="width:660px;height:360px;background-color:blue;overflow:hidden;"></div>
+                  <!-- / Media 3 -->
                 </div>
-                <!-- / Media 1 -->
-
-                <!-- + Media 2 -->
-                <div id="chile-2" class="clearfix ui-tabs-hide" style="width:660px;height:360px;background-color:red;overflow:hidden;"></div>
-                <!-- / Media 2 -->
-
-                <!-- + Media 3 -->
-                <div id="chile-3" class="clearfix ui-tabs-hide" style="width:660px;height:360px;background-color:blue;overflow:hidden;"></div>
-                <!-- / Media 3 -->
+          
+                <h4>Certifying Hospitals in Haiti</h4>
+                <p><strong>One of the most destructive earthquakes in modern history,</strong> the magnitude 7.0 earthquake that hit Haiti on January 12, 2010, killed or injured approximately 600,000 people and destroyed 300,000 homes. Lacking a national building code, walls were often constructed of heavy materials without reinforcement, resulting in collapsed or compromised buildings and devastating loss of life.</p>
+                <p>After the earthquake, RMS experts joined a cross-organizational team of geologists and structural engineers in Haiti to assess the damage and learn lessons about how buildings perform in earthquakes. This information would be critical for improving future building practices in Haiti and elsewhere as well as improving the catastrophe models driving global business decisions.</p>
+                <p>As the local government struggled to examine critical structures, particularly hospitals, they relied on the network of visiting research and aid workers to supplement their stretched resources. Alongside partner organizations, RMS structural engineers helped evaluate the safety of hospitals that survived the earthquake, contributing vital expertise to help reopen hospitals as quickly as possible.</p>
+          
               </div>
+              <div class="rt">
           
-              <h4>Certifying Hospitals in Haiti</h4>
-              <p><strong>One of the most destructive earthquakes in modern history,</strong> the magnitude 7.0 earthquake that hit Haiti on January 12, 2010, killed or injured approximately 600,000 people and destroyed 300,000 homes. Lacking a national building code, walls were often constructed of heavy materials without reinforcement, resulting in collapsed or compromised buildings and devastating loss of life.</p>
-              <p>After the earthquake, RMS experts joined a cross-organizational team of geologists and structural engineers in Haiti to assess the damage and learn lessons about how buildings perform in earthquakes. This information would be critical for improving future building practices in Haiti and elsewhere as well as improving the catastrophe models driving global business decisions.</p>
-              <p>As the local government struggled to examine critical structures, particularly hospitals, they relied on the network of visiting research and aid workers to supplement their stretched resources. Alongside partner organizations, RMS structural engineers helped evaluate the safety of hospitals that survived the earthquake, contributing vital expertise to help reopen hospitals as quickly as possible.</p>
+                <div style="height:360px;background-color:orange;margin-bottom:10px;">[map]</div>
+                <dl>
+                  <dt>Magnitude:</dt><dd>8.8 Mw</dd>
+                  <dt>Depth:</dt><dd>35 kilometres (22 mi)</dd>
+                  <dt>Epicenter location:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
+                  <dt>Coordinates:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
+                  <dt>Countries or regions affected:</dt><dd>Chile, Maule Region, Biobío Region</dd>
+                  <dt>Peak ground acceleration:</dt><dd>0.65 g</dd>
+                  <dt>Tsunami:</dt><dd>Widespread warnings for most of the Pacific coasts.</dd>
+                  <dt>Casualties:</dt><dd>521 identified fatalities, 56 missing.</dd>
+                </dl>
           
-            </div>
-            <div class="rt">
-          
-              <div style="height:360px;background-color:orange;margin-bottom:10px;">[map]</div>
-              <dl>
-                <dt>Magnitude:</dt><dd>8.8 Mw</dd>
-                <dt>Depth:</dt><dd>35 kilometres (22 mi)</dd>
-                <dt>Epicenter location:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
-                <dt>Coordinates:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
-                <dt>Countries or regions affected:</dt><dd>Chile, Maule Region, Biobío Region</dd>
-                <dt>Peak ground acceleration:</dt><dd>0.65 g</dd>
-                <dt>Tsunami:</dt><dd>Widespread warnings for most of the Pacific coasts.</dd>
-                <dt>Casualties:</dt><dd>521 identified fatalities, 56 missing.</dd>
-              </dl>
-          
-            </div>
-          </section>
-        </div>
-        <!-- / Case Study #1 -->
-
-        <!-- + Case Study #2 -->
-        <div id="hurricane-katrina" class="ui-tabs-hide">
-          <section class="caseStudies clearfix">
-            <h3>Hurricane Katrina <span class="sep">//</span> <em>29 August 2005</em></h3>
-            <div class="lt">
-          
-              <div class="vidCont">
-                <ul class="nav">
-                  <li><a href="#katrina-1">media 1</a></li>
-                </ul>
-
-                <!-- + Media 1 -->
-                <div id="katrina-1" class="clearfix" style="width:660px;height:360px;background-color:green;overflow:hidden;"></div>
-                <!-- / Media 1 -->
               </div>
-          
-              <h4>Understanding Super Catastrophes</h4>
-              <p><strong>Hurricane Katrina changed New Orleans forever, but it also changed the science of catastrophe modeling.</strong> Until Katrina, models considered the damage to expect if a major hurricane made landfall or if a major storm surge overtopped flood defenses. But the levees crumbling, that was another matter.</p>
-              <p>After floodwaters filled the city, the U.S. struggled to grasp the magnitude of the damage. RMS modelers went to work day and night to quantify what they saw, estimating at least $125 billion in losses. Media and government agencies turned to RMS for information, and officials at the top of the Bush administration contacted RMS advisors for help in understanding potential economic losses.</p>
-              <p>After witnessing the tragedy of New Orleans, RMS experts began to contextualize their work in terms of an entirely new concept, the super catastrophe or "super cat," in which one massive event triggers secondary events that can have an even greater destructive impact. Today, RMS considers the possibility of super cats in all of our major catastrophe models, providing a more comprehensive perspective on the potential implications of extreme events.</p>
-          
-            </div>
-            <div class="rt">
-          
-              <div style="height:360px;background-color:orange;margin-bottom:10px;">[map]</div>
-              <dl>
-                <dt>Coordinates:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
-                <dt>Countries or regions affected:</dt><dd>Chile, Maule Region, Biobío Region</dd>
-                <dt>Peak ground acceleration:</dt><dd>0.65 g</dd>
-                <dt>Magnitude:</dt><dd>8.8 Mw</dd>
-                <dt>Depth:</dt><dd>35 kilometres (22 mi)</dd>
-                <dt>Epicenter location:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
-                <dt>Tsunami:</dt><dd>Widespread warnings for most of the Pacific coasts.</dd>
-                <dt>Casualties:</dt><dd>521 identified fatalities, 56 missing.</dd>
-              </dl>
-          
-            </div>
-          </section>
-        </div>
-        <!-- / Case Study #2 -->
+            </section>
+          </div>
+          <!-- / Case Study #1 -->
 
-        <!-- + Case Study #3 -->
-        <div id="hurricane-ike" class="ui-tabs-hide">
-          <section class="caseStudies clearfix">
-            <h3>Hurricane Ike <span class="sep">//</span> <em>2 September 2008</em></h3>
-            <div class="lt">
+          <!-- + Case Study #2 -->
+          <div id="hurricane-katrina" class="ui-tabs-hide">
+            <section class="caseStudies clearfix">
+              <h3>Hurricane Katrina <span class="sep">//</span> <em>29 August 2005</em></h3>
+              <div class="lt">
           
-              <div class="vidCont">
-                <ul class="nav">
-                </ul>
+                <div class="vidCont">
+                  <ul class="nav">
+                    <li><a href="#katrina-1">media 1</a></li>
+                  </ul>
 
-                <!-- + Media 1 -->
-                <!-- / Media 1 -->
+                  <!-- + Media 1 -->
+                  <div id="katrina-1" class="clearfix" style="width:660px;height:360px;background-color:green;overflow:hidden;"></div>
+                  <!-- / Media 1 -->
+                </div>
+          
+                <h4>Understanding Super Catastrophes</h4>
+                <p><strong>Hurricane Katrina changed New Orleans forever, but it also changed the science of catastrophe modeling.</strong> Until Katrina, models considered the damage to expect if a major hurricane made landfall or if a major storm surge overtopped flood defenses. But the levees crumbling, that was another matter.</p>
+                <p>After floodwaters filled the city, the U.S. struggled to grasp the magnitude of the damage. RMS modelers went to work day and night to quantify what they saw, estimating at least $125 billion in losses. Media and government agencies turned to RMS for information, and officials at the top of the Bush administration contacted RMS advisors for help in understanding potential economic losses.</p>
+                <p>After witnessing the tragedy of New Orleans, RMS experts began to contextualize their work in terms of an entirely new concept, the super catastrophe or "super cat," in which one massive event triggers secondary events that can have an even greater destructive impact. Today, RMS considers the possibility of super cats in all of our major catastrophe models, providing a more comprehensive perspective on the potential implications of extreme events.</p>
+          
               </div>
+              <div class="rt">
           
-              <h4>The $18 Billion Mystery</h4>
-              <p><strong>Forensic claims analysis is one way RMS learns more about major catastrophic events and their lessons for understanding risk.</strong> In studying $18 billion in recent U.S. hurricane claims data, our researchers noticed that damage to some types of buildings was greater than expected. Why didn't these buildings perform as well as they should have in relatively low winds?</p>
-              <p>Our structural engineers took a closer look at this unprecedented volume of claims. While building codes were sufficient to ensure buildings would withstand moderate hurricane winds, adherence to those codes was inconsistent in some regions, particularly for properties further away from the coast. In addition, our researchers found that some roofing materials deteriorated more rapidly than expected in certain atmospheric conditions, such as the high heat and humidity in the southeast.</p>
-              <p>These findings have implications not only for RMS clients, but for government and property owners as well. Armed with information from RMS, stakeholders can identify building shortcomings and promote improved building practices to ensure greater safety in the event of a major hurricane.</p>
+                <div style="height:360px;background-color:orange;margin-bottom:10px;">[map]</div>
+                <dl>
+                  <dt>Coordinates:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
+                  <dt>Countries or regions affected:</dt><dd>Chile, Maule Region, Biobío Region</dd>
+                  <dt>Peak ground acceleration:</dt><dd>0.65 g</dd>
+                  <dt>Magnitude:</dt><dd>8.8 Mw</dd>
+                  <dt>Depth:</dt><dd>35 kilometres (22 mi)</dd>
+                  <dt>Epicenter location:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
+                  <dt>Tsunami:</dt><dd>Widespread warnings for most of the Pacific coasts.</dd>
+                  <dt>Casualties:</dt><dd>521 identified fatalities, 56 missing.</dd>
+                </dl>
           
-            </div>
-            <div class="rt">
+              </div>
+            </section>
+          </div>
+          <!-- / Case Study #2 -->
+
+          <!-- + Case Study #3 -->
+          <div id="hurricane-ike" class="ui-tabs-hide">
+            <section class="caseStudies clearfix">
+              <h3>Hurricane Ike <span class="sep">//</span> <em>2 September 2008</em></h3>
+              <div class="lt">
           
-              <div style="height:360px;background-color:orange;margin-bottom:10px;">[map]</div>
-              <dl>
-                <dt>Tsunami:</dt><dd>Widespread warnings for most of the Pacific coasts.</dd>
-                <dt>Casualties:</dt><dd>521 identified fatalities, 56 missing.</dd>
-                <dt>Magnitude:</dt><dd>8.8 Mw</dd>
-                <dt>Depth:</dt><dd>35 kilometres (22 mi)</dd>
-                <dt>Epicenter location:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
-                <dt>Coordinates:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
-                <dt>Countries or regions affected:</dt><dd>Chile, Maule Region, Biobío Region</dd>
-                <dt>Peak ground acceleration:</dt><dd>0.65 g</dd>
-              </dl>
+                <div class="vidCont">
+                  <ul class="nav">
+                  </ul>
+
+                  <!-- + Media 1 -->
+                  <!-- / Media 1 -->
+                </div>
           
-            </div>
-          </section>
+                <h4>The $18 Billion Mystery</h4>
+                <p><strong>Forensic claims analysis is one way RMS learns more about major catastrophic events and their lessons for understanding risk.</strong> In studying $18 billion in recent U.S. hurricane claims data, our researchers noticed that damage to some types of buildings was greater than expected. Why didn't these buildings perform as well as they should have in relatively low winds?</p>
+                <p>Our structural engineers took a closer look at this unprecedented volume of claims. While building codes were sufficient to ensure buildings would withstand moderate hurricane winds, adherence to those codes was inconsistent in some regions, particularly for properties further away from the coast. In addition, our researchers found that some roofing materials deteriorated more rapidly than expected in certain atmospheric conditions, such as the high heat and humidity in the southeast.</p>
+                <p>These findings have implications not only for RMS clients, but for government and property owners as well. Armed with information from RMS, stakeholders can identify building shortcomings and promote improved building practices to ensure greater safety in the event of a major hurricane.</p>
+          
+              </div>
+              <div class="rt">
+          
+                <div style="height:360px;background-color:orange;margin-bottom:10px;">[map]</div>
+                <dl>
+                  <dt>Tsunami:</dt><dd>Widespread warnings for most of the Pacific coasts.</dd>
+                  <dt>Casualties:</dt><dd>521 identified fatalities, 56 missing.</dd>
+                  <dt>Magnitude:</dt><dd>8.8 Mw</dd>
+                  <dt>Depth:</dt><dd>35 kilometres (22 mi)</dd>
+                  <dt>Epicenter location:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
+                  <dt>Coordinates:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
+                  <dt>Countries or regions affected:</dt><dd>Chile, Maule Region, Biobío Region</dd>
+                  <dt>Peak ground acceleration:</dt><dd>0.65 g</dd>
+                </dl>
+          
+              </div>
+            </section>
+          </div>
+          <!-- / Case Study #3 -->
+
         </div>
-        <!-- / Case Study #3 -->
 
       </div>
       <!-- / NAT CAT -->
     
       <!-- + TERRORISM -->
       <div id="terrorism" class="ui-tabs-hide">
+
+        <h3 class="panelIntro">Terrorism <em>Modeling</em></h3>
 
         <section class="clearfix">
           <div class="col3double">
@@ -242,6 +255,8 @@
     
       <!-- + LONGEVITY -->
       <div id="longevity" class="ui-tabs-hide">
+
+        <h3 class="panelIntro">Longevity &amp; Mortality <em>Modeling</em></h3>
 
         <section class="clearfix">
           <div class="col3double">

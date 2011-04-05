@@ -1330,7 +1330,7 @@ $(document).ready(function(){
     //fx: { opacity:'toggle', duration:400 }
     //selected: 1
     create: function(e, ui) {
-      $('#catastrophe').tabs({
+      $('#catastropheCont').tabs({
         selected: 0
       });
       $('.vidCont').tabs({

@@ -1897,15 +1897,20 @@ aside .callout em {
 aside .ui-widget,
 #risk .vidCont.ui-widget,
 #risk .ui-widget,
+#risk #catastropheCont.ui-widget,
 #careers #passionCont.ui-widget {
   font-size:            100%;
 }
 aside .ui-widget-content,
 #risk .vidCont.ui-widget-content,
-#careers #passionCont.ui-widget {
+#risk #catastropheCont.ui-widget-content,
+#careers #passionCont.ui-widget-content {
   height:               535px;
   background:           none;
   border:               none;
+}
+#risk #catastropheCont.ui-widget-content {
+  height:               auto;
 }
 aside .ui-widget-header,
 #risk .vidCont .ui-widget-header {
@@ -1918,6 +1923,7 @@ aside .ui-widget-header,
 }
 aside .ui-tabs,
 #risk .vidCont.ui-tabs,
+#risk #catastropheCont.ui-tabs,
 #careers #passionCont.ui-tabs {
   padding:              0;
 }
@@ -1941,6 +1947,10 @@ aside ul.nav,
   position:             absolute;
   left:                 0;
   bottom:               -6px;
+}
+#risk .vidCont ul.ui-tabs-nav,
+#risk .vidCont ul.nav {
+  bottom:               8px;
 }
 aside .ui-tabs ul.ui-tabs-nav li,
 #risk .vidCont.ui-tabs ul.ui-tabs-nav li {
@@ -1992,7 +2002,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #riskTabs {
   font-size:            100%;
-  padding:              31px 0 0;
+  padding:              9px 0 0;
   background:           none;
   border:               none;
   position:             relative;
@@ -2002,8 +2012,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 #riskTabs ul.tabs {
-  margin-bottom:        22px;
+  margin-bottom:        33px;
   position:             relative;
+  top:                  0;
   left:                 11px;
 }
 #riskTabs ul.tabs li {
@@ -2016,6 +2027,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #risk .sectionCont {
   width:                940px;
+  margin-bottom:        20px;
   padding:              10px;
   background:           #fff;
   -webkit-border-radius:4px;
@@ -2025,7 +2037,12 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 #risk #catastrophe {
+}
+
+#risk #catastropheCont,
+#risk #catastropheCont.ui-tabs {
   padding-bottom:       88px;
+  position:             relative;
 }
 
 #risk section {
@@ -2035,7 +2052,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   background-color:     #eee;
 }
 #risk section.iWorldMap {
-  margin-bottom:        14px;
+  margin-bottom:        0;
   background-color:     #f3f3f3;
 }
 
@@ -2233,17 +2250,28 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #risk .col3,
 #risk .col3double {
-  width:                304px;
-  margin:               0 4px 5px 5px;
+  width:                298px;
+  margin:               0 10px 5px 5px;
   float:                left;
   display:              inline;
 }
 #risk .col3double {
-  width:                617px;
+  width:                611px;
 }
 
 #risk .col3double p {
-  padding-right:        10px;
+  padding:              0 10px;
+}
+
+#risk .panelIntro {
+  padding:              0 14px;
+}
+#risk h3.panelIntro {
+  margin-bottom:        15px;
+}
+#risk p.panelIntro {
+  position:             relative;
+  top:                  -6px;
 }
 
 #risk h5 {
