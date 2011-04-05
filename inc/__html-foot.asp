@@ -52,7 +52,7 @@
   
   <!-- canvas maps -->
   <script type="text/javascript" src="/js/libs/raphael-min.js"></script>
-  <script type="text/javascript" src="/js/libs/maps/worldmap.js"></script>
+  <script type="text/javascript" src="/js/mylibs/countries.js"></script>
   
   <!--[if lt IE 7 ]>
     <script src="/js/libs/dd_belatedpng.js"></script>

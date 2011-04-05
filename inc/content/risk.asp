@@ -2,9 +2,9 @@
 <div id="risk">
 
   <div class="hd">
-    <h2>Risk <em>Modeling</em></h2>
-    <h3>A Global Approach to Understanding Risk</h3>
-    <p>As the pioneers of catastrophe risk modeling, RMS leads the market and sets the standard for quantifying risk around the world. Our leading-edge risk models help people understand the potential impact of natural catastrophes such as earthquakes and hurricanes, human threats such as potential terrorist attacks, and financial risks associated with changes in life expectancy and sudden loss of life.</p>
+    <h2>Educating the World <em>About Risk</em></h2>
+    <!-- <h3>A Global Approach to Understanding Risk</h3> -->
+    <p>As a pioneer of catastrophe risk modeling, RMS leads the market and sets the standard for quantifying risk around the world. Our leading-edge risk models help people understand the potential physical and financial impacts of natural catastrophes such as earthquakes and hurricanes, human threats such as potential terrorist attacks, and risks associated with changes in life expectancy and sudden loss of life.</p>
   </div>
   
   <div class="sectionCont">
@@ -17,10 +17,6 @@
       </div>
       <!-- / raphael -->
 
-      <!-- + worldmap.js -->
-      <!-- <canvas id="worldmap" width="940" height="477"></canvas> -->
-      <!-- / worldmap.js -->
-      
       <!-- + map nav -->
       <div id="risk_map_nav">
         <h4>Natural Catastrophe Risk Models</h4>
@@ -171,7 +167,7 @@
           <!-- + Case Study #3 -->
           <div id="hurricane-ike" class="ui-tabs-hide">
             <section class="caseStudies clearfix">
-              <h3>Hurricane Ike <span class="sep">//</span> <em>2 September 2008</em></h3>
+              <h3>Hurricane Ike <span class="sep">//</span> <em>13 September 2008</em></h3>
               <div class="lt">
           
                 <div class="vidCont">
