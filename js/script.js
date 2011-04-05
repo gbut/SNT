@@ -1330,7 +1330,7 @@ $(document).ready(function(){
     //fx: { opacity:'toggle', duration:400 }
     //selected: 1
     create: function(e, ui) {
-      $('#catastrophe').tabs({
+      $('#catastropheCont').tabs({
         selected: 0
       });
       $('.vidCont').tabs({
@@ -1352,7 +1352,12 @@ $(document).ready(function(){
     fx: { opacity:'toggle', duration:400 }
   });
   
-  $('#vidCont').tabs();
+  $('#passionCont').tabs({
+    fx: { opacity:'toggle', duration:400 },
+    create: function(e, ui) {
+      $(e.target).tabs('rotate', 5000);
+    }
+  });
   
   //===============================================
   //  Form field behaviors

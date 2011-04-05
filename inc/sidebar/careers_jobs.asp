@@ -34,7 +34,7 @@
       <!-- / Quote 1 -->
 
       <!-- + Quote 2 -->
-      <div id="quote2" class="clearfix">
+      <div id="quote2" class="ui-tabs-hide clearfix">
         <div class="quote">
           &quot;Qui venit pronostis in potentiam espiritu.&quot;
           <div class="author">
@@ -56,7 +56,7 @@
       <!-- / Quote 2 -->
 
       <!-- + Quote 3 -->
-      <div id="quote3" class="clearfix">
+      <div id="quote3" class="ui-tabs-hide clearfix">
         <div class="quote">
           &quot;Domina deus et patri hosanna in excelsis.&quot;
           <div class="author">
@@ -78,7 +78,7 @@
       <!-- / Quote 3 -->
 
       <!-- + Quote 4 -->
-      <div id="quote4" class="clearfix">
+      <div id="quote4" class="ui-tabs-hide clearfix">
         <div class="quote">
           &quot;Lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet.&quot;
           <div class="author">
