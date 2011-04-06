@@ -52,6 +52,7 @@
   
   <!-- canvas maps -->
   <script type="text/javascript" src="/js/libs/raphael-min.js"></script>
+  <script type="text/javascript" src="/js/libs/raphael-svg-import.js"></script>
   <script type="text/javascript" src="/js/mylibs/countries.js"></script>
   
   <!--[if lt IE 7 ]>

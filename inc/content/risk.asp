@@ -12,13 +12,13 @@
     <section class="iWorldMap clearfix">
 
       <!-- + raphael -->
-      <div id="svgmap" style="height:480px;">
+      <div id="svgmap" style="height:500px;">
 
       </div>
       <!-- / raphael -->
 
       <!-- + map nav -->
-      <div id="risk_map_nav">
+      <div id="risk_map_nav" style="display:none;">
         <h4>Natural Catastrophe Risk Models</h4>
         <ul>
           <li><a href="#" id="model_cyclone">Cyclone</a></li>
