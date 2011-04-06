@@ -3233,7 +3233,7 @@ textarea.error {
 }
 
 #contact #popup {
-  width:500px;
+  width:556px;
   height:170px;
   padding:0 10px;
   border:1px solid #000;
@@ -3253,10 +3253,10 @@ textarea.error {
 #contact #popup .icon,
 #contact #popup .details,
 #contact #popup .link,
-#contact #popup .map {
+#contact #popup .mapviewer {
   border:1px solid #eee;
   float:left;
-  margin:10px 8px 10px 0;
+  margin:5px 8px 5px 0;
   padding:2px;
 }
 #contact #popup .icon {
@@ -3267,18 +3267,36 @@ textarea.error {
   width:165px;
   height:140px;
 }
-#contact #popup a {
+#contact #popup a.link {
   display:block;
 }
-#contact #popup .map {
-  width:140px;
-  height:140px;
+#contact #popup .mapviewer {
+  width:196px;
+  height:156px;
   margin-right:0;
+  overflow:hidden;
 }
 #contact #popup .close {
   position:absolute;
   right:0;
   left:auto;
+}
+
+#mapviewers {
+  display:              none;
+}
+
+#contact #map iframe#mapviewer {
+  position:relative;
+  top:0;
+}
+
+.mapviewer .maplinks {
+  font-size:85%;
+  line-height:85%;
+  width:190px;
+  text-align:center;
+  margin:0 auto;
 }
 
 /* / Form pages: Job Apply & Contact */

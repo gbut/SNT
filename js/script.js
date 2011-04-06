@@ -1509,7 +1509,7 @@ $(document).ready(function(){
         $('#popup .icon').removeClass().addClass('icon '+loc);  // get/set icon
         $('#popup .details').html($('.office a.'+loc).html());  // get/set details
         $('#popup .link').attr('href','http://bit.ly/rms_'+loc);    // get/set link [use customm url shortener?]
-        $('#popup .map').removeClass().addClass('map '+loc);    // get/set map
+        $('#popup .mapviewer').html($('#mapviewers .'+loc).html());    // get/set map
         $('#popup .close').click(function() {
             $('#popup').fadeTo(1000, 0.0, 'easeOutExpo');  
           }
