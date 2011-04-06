@@ -1531,7 +1531,7 @@ $(document).ready(function(){
         loc = loc.split(' ')[0];      // parse for location (first class)
         $('#popup .icon').removeClass().addClass('icon '+loc);  // get/set icon
         $('#popup .details').html($('.office a.'+loc).html());  // get/set details
-        $('#popup .link').attr('href','http://bit.ly/rms-'+loc);    // get/set link [use customm url shortener?]
+        $('#popup .link').attr('href','http://bit.ly/rms_'+loc);    // get/set link [use customm url shortener?]
         $('#popup .map').removeClass().addClass('map '+loc);    // get/set map
         $('#popup .close').click(function() {
             $('#popup').fadeTo(1000, 0.0, 'easeOutExpo');  
@@ -1555,13 +1555,13 @@ $(document).ready(function(){
           email: "Please enter a valid email address."
         }
       },
-      debug:true
+      debug:false
     });
 
   }
 
   if ($('#jvform').length) {
-
+    
     // default value isn't a valid entry
     jQuery.validator.addMethod("defaultInvalid", function(value, element) {
       return value != element.defaultValue;
@@ -1578,7 +1578,7 @@ $(document).ready(function(){
           email: "Please enter a valid email address."
         }
       },
-      debug:true
+      debug:false
     });
 
   }
