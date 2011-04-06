@@ -16,15 +16,15 @@
       <ul>
         <li><a href="http://player.vimeo.com/video/20233712?title=0&amp;byline=0&amp;portrait=0">
           <span class="imgCont vid1">Video #1<span class="play"></span></span>
-          <span>Lorem ipsum dolor suspendisse imper</span>
+          <span>Meet RMS</span>
         </a></li>
         <li><a href="http://player.vimeo.com/video/20233712?title=0&amp;byline=0&amp;portrait=0">
           <span class="imgCont vid2">Video #2<span class="play"></span></span>
-          <span>Lorem ipsum dolor suspendisse imper</span>
+          <span>Engineering</span>
         </a></li>
         <li><a href="http://player.vimeo.com/video/20233712?title=0&amp;byline=0&amp;portrait=0">
           <span class="imgCont vid3">Video #3<span class="play"></span></span>
-          <span>Lorem ipsum dolor suspendisse imper</span>
+          <span>Modeling</span>
         </a></li>
       </ul>
       <a href="/careers/jobs" class="btn btnOpenPositions">Open Positions &raquo;</a>

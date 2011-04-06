@@ -922,13 +922,13 @@ $(document).ready(function(){
     
     var defaults = {
       mapW: 940,
-      mapH: 477,
+      mapH: 500,
       durOver: 300,
       durOut: 500,
       attr: {
         fill: "#a6a8ab",
         stroke: "#fff",
-        "stroke-width": 1,
+        "stroke-width": 0.3,
         "stroke-linejoin": "round"
       },
       mouseoverAttr: {
@@ -956,7 +956,9 @@ $(document).ready(function(){
       
       // data; dynamically created elements
       if (typeof countryData == 'undefined') return;
-      this.d                  = countryData;
+      this.d                  = countryData; // raw imported SVG coords
+//      this.d                  = cData;
+      this.groups             = {}; // will be populated with countries or groups of countries (hover on/off together)
       
       // setup
       this.setup();
@@ -979,33 +981,64 @@ $(document).ready(function(){
         this.r = Raphael(this.container.attr('id'), this.options.mapW, this.options.mapH);
         
         // build map and attach behaviors
-        var country;
-        var self = this;
+/*
+        this.r.importSVG(this.d);
+        return;
+*/
+        
+        var country, group;
+        var sets = {};
         for (var c in this.d) {
-          country = this.r.path(this.d[c]).attr(this.options.attr);
-          $(country.node).hover(
-            function(){ this.raphael.animate(self.options.mouseoverAttr, self.options.durOver); },
-            function(){ this.raphael.animate(self.options.mouseoutAttr, self.options.durOut); }
-          );
+          if (this.d[c].length == 1) {
+            country = this.r.path(this.d[c][0]).attr(this.options.attr);
+            this.groups[c] = this.applyHoverStates(country);
+          } else {
+            var s = this.r.set();
+            for (var i=0; i<this.d[c].length; i++) {
+              country = this.r.path(this.d[c][i]).attr(this.options.attr);
+              s.push(country);
+            }
+            sets[c] = s;
+          }
+        }
+        for (var st in sets) {
+          for (var j=0; j<sets[st].length; j++) {
+            this.applyHoverStates(sets[st][j], sets[st]);
+          }
+          this.groups[st] = sets[st];
         }
       },
 
       /**
-       * Hides the video overlay.
+       * Applies basic animations to country objects.
        *
-       * @name hideVideo
+       * @name applyHoverStates
        * @type undefined
        */
-      hideVideo: function(e) {
-        var o = e.data.obj; //the instantiated $.riskMap object
-		    o.vBg.css({ top:-10000 });
-		    o.iframe.attr({ src: '' });
-        o.heroImg.animate(
-          { top:0 },
-          o.options.dur,
-          'easeOutQuint'
-        );
-        e.preventDefault();
+      applyHoverStates: function(raphaelObj, objSet) {
+        var self = this;
+        var s = objSet || false;
+        if (s) {
+          $(raphaelObj.node).hover(
+            function(){
+              $.each(s, function(){
+                this.animate(self.options.mouseoverAttr, self.options.durOver);
+              });
+//              s.animate(self.options.mouseoverAttr, self.options.durOver);
+            },
+            function(){
+              $.each(s, function(){
+                this.animate(self.options.mouseoutAttr, self.options.durOut);
+              });
+//              s.animate(self.options.mouseoutAttr, self.options.durOut);
+            }
+          );
+        } else {
+          $(raphaelObj.node).hover(
+            function(){ this.raphael.animate(self.options.mouseoverAttr, self.options.durOver); },
+            function(){ this.raphael.animate(self.options.mouseoutAttr, self.options.durOut); }
+          );
+        }
       }
 
     });
