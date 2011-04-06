@@ -983,7 +983,6 @@ $(document).ready(function(){
         // build map and attach behaviors
 /*
         this.r.importSVG(this.d);
-        
         return;
 */
         
@@ -1006,6 +1005,7 @@ $(document).ready(function(){
           for (var j=0; j<sets[st].length; j++) {
             this.applyHoverStates(sets[st][j], sets[st]);
           }
+          this.groups[st] = sets[st];
         }
       },
 
@@ -1020,8 +1020,18 @@ $(document).ready(function(){
         var s = objSet || false;
         if (s) {
           $(raphaelObj.node).hover(
-            function(){ s.animate(self.options.mouseoverAttr, self.options.durOver); },
-            function(){ s.animate(self.options.mouseoutAttr, self.options.durOut); }
+            function(){
+              $.each(s, function(){
+                this.animate(self.options.mouseoverAttr, self.options.durOver);
+              });
+//              s.animate(self.options.mouseoverAttr, self.options.durOver);
+            },
+            function(){
+              $.each(s, function(){
+                this.animate(self.options.mouseoutAttr, self.options.durOut);
+              });
+//              s.animate(self.options.mouseoutAttr, self.options.durOut);
+            }
           );
         } else {
           $(raphaelObj.node).hover(

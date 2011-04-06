@@ -2614,6 +2614,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
+/*
 #careers #tooltip .pointer {
   border-color:         transparent transparent #bababa;
   border-style:         solid;
@@ -2625,7 +2626,6 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   top:                  -30px;
   overflow:             visible;
 }
-
 #careers #tooltip .pointer .inner {
   border-color:         transparent transparent #e8e8e8;
   border-style:         solid;
@@ -2636,6 +2636,24 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   left:                 -8px;
   top:                  -8px;
   overflow:             hidden;
+}
+*/
+#careers #tooltip .pointer {
+  width:                22px;
+  height:               15px;
+  position:             absolute;
+  left:                 303px;
+  top:                  -15px;
+  overflow:             visible;
+}
+#careers #tooltip .pointer .inner {
+  width:                22px;
+  height:               15px;
+  position:             relative;
+  left:                 -8px;
+  top:                  0;
+  overflow:             hidden;
+  background:           transparent url(../img/arrow_team_widget.png) 0 0 no-repeat;
 }
 
 #careers #tooltip .primary {
