@@ -1996,6 +1996,17 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 /* + Risk */
 
+.sectionCont {
+  width:                940px;
+  margin-bottom:        20px;
+  padding:              10px;
+  background:           #fff;
+  -webkit-border-radius:4px;
+  -moz-border-radius:   4px;
+  border-radius:        4px;
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+
 #risk {
   padding-bottom:       43px;
 }
@@ -2023,17 +2034,6 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 #riskTabs ul.tabs li a {
   width:                280px;
-}
-
-#risk .sectionCont {
-  width:                940px;
-  margin-bottom:        20px;
-  padding:              10px;
-  background:           #fff;
-  -webkit-border-radius:4px;
-  -moz-border-radius:   4px;
-  border-radius:        4px;
-  behavior: url(/js/libs/PIE/PIE.htc);
 }
 
 #risk #catastrophe {
@@ -3402,6 +3402,43 @@ textarea.error {
 }
 
 /* / Share */
+
+/* + About */
+
+#about section {
+  padding:              10px 6px 10px 13px;
+}
+
+#about section img.banner {
+  margin-bottom:        31px;
+}
+
+#about .headshot {
+  padding:              0 15px 0 13px;
+  float:                left;
+}
+
+#about .headshot img {
+  margin-bottom:        8px;
+}
+
+#about .headshot h5 {
+  text-align:           center;
+}
+
+#about .intro {
+  width:                700px;
+  float:                left;
+}
+
+#about .intro .dropcap {
+  color:                #c3151c;
+  font:                 bold 461.54%/75% Georgia,serif;
+  padding-right:        5px;
+  float:                left;
+}
+
+/* / About */
 
 /* + Follow */
 

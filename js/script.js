@@ -914,9 +914,9 @@ $(document).ready(function(){
 	//  Manages interactions related to Risk map
 	//===============================================
   (function($){
-    $.fn.riskMap = function(options) {
+    $.fn.riskMap = function(infobar, options) {
       return this.each(function() {
-        new $rm(this, options);
+        new $rm(this, infobar, options);
       });
     };
     
@@ -945,17 +945,19 @@ $(document).ready(function(){
      * @constructor
      * @name $.riskMap
      * @param Object e The element to create the riskMap for.
+     * @param String infobar The information bar associated with the map.
      * @param Hash o A set of key/value pairs to set as configuration properties.
      */
-    $.riskMap = function(e, o) {
+    $.riskMap = function(e, infobar, o) {
       this.options            = $.extend({}, defaults, o || {});
 
       // elements
       var self                = this;
       this.container          = $(e);
+      this.infobar            = $(infobar);
       
       // data; dynamically created elements
-      if (typeof countryData == 'undefined') return;
+      if (typeof countryCoords == 'undefined' || typeof countryData == 'undefined') return;
       this.svgData            = countryCoords; // raw imported SVG coords
       this.countryData        = countryData; // data about each country
       this.groups             = {}; // will be populated with countries or groups of countries (hover on/off together)
@@ -1072,7 +1074,7 @@ $(document).ready(function(){
 
   })(jQuery);
   
-  if ($('#svgmap').length) $('#svgmap').riskMap();
+  if ($('#svgmap').length) $('#svgmap').riskMap('#mapinfo');
   
 
 	//===============================================
