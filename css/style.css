@@ -3167,11 +3167,12 @@ textarea.error {
   top:                  103px;
 }
 #contact #markers .bloomington {
-  left:                 258px;
+/*  left:                 258px;*/
+  left:                 249px;
   top:                  94px;
 }
 #contact #markers .hackensack {
-  left:                 301px;
+  left:                 296px;
   top:                  107px;
 }
 #contact #markers .bermuda {
@@ -3180,18 +3181,24 @@ textarea.error {
   background-position:  0 -18px;
 }
 #contact #markers .london {
-  left:                 458px;
-  top:                  69px;
+/*()  left:                 458px;
+  top:                  69px;*/
+  left:                 450px;
+  top:                  68px;
   background-position:  0 -54px;
 }
 #contact #markers .paris {
-  left:                 465px;
-  top:                  79px;
+/*  left:                 465px;
+  top:                  79px;*/
+  left:                 461px;
+  top:                  84px;
   background-position:  0 -72px;
 }
 #contact #markers .zurich {
-  left:                 474px;
-  top:                  76px;
+/*  left:                 474px;
+  top:                  76px;*/
+  left:                 478px;
+  top:                  77px;
   background-position:  0 -90px;
 }
 #contact #markers .noida {
@@ -3252,14 +3259,14 @@ textarea.error {
 }
 
 #contact #popup {
-  width:556px;
+  width:435px;
   height:170px;
   padding:0 10px;
   border:1px solid #000;
   background:#ccc;
   position:absolute;
   top:150px;
-  left:215px;
+  left:244px;
   -moz-opacity:         0;
   -ms-filter:           "alpha(opacity=0)";
   filter:               alpha(opacity=0);
@@ -3271,7 +3278,7 @@ textarea.error {
 
 #contact #popup .icon,
 #contact #popup .details,
-#contact #popup .link,
+/*#contact #popup .link,*/
 #contact #popup .mapviewer {
   border:1px solid #eee;
   float:left;
@@ -3279,16 +3286,19 @@ textarea.error {
   padding:2px;
 }
 #contact #popup .icon {
-  width:64px;
-  height:64px;
+  width:32px;
+  height:32px;
 }
 #contact #popup .details {
   width:165px;
   height:140px;
+  border:0;
 }
+/*
 #contact #popup a.link {
   display:block;
 }
+*/
 #contact #popup .mapviewer {
   width:196px;
   height:156px;
@@ -3297,8 +3307,9 @@ textarea.error {
 }
 #contact #popup .close {
   position:absolute;
-  right:0;
   left:auto;
+  right:-15px;
+  top:-15px;
 }
 
 #mapviewers {
@@ -3312,10 +3323,13 @@ textarea.error {
 
 .mapviewer .maplinks {
   font-size:85%;
-  line-height:85%;
   width:190px;
   text-align:center;
-  margin:0 auto;
+  margin:2px auto 0;
+}
+
+.mapviewer .maplinks a.largerMap {
+  margin-right:40px;
 }
 
 /* / Form pages: Job Apply & Contact */
