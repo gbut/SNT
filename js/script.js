@@ -1457,7 +1457,7 @@ $(document).ready(function(){
   });
   
   //===============================================
-  //  Contact page: rollovers for offices/markers/clocks
+  //  Contact page: map interactions
   //===============================================
 
   // class specifies both source and target  
@@ -1491,19 +1491,27 @@ $(document).ready(function(){
         CoolClock.findAndCreateClocks(); // update clock
       }
     );
+  });
+  
+  $('#contact #offices a, #contact #markers a').each(function(){
     $(this).click(function() {
+    
         str = $(this).attr('class');  // get the class string
         loc = loc.split(' ')[0];      // parse for location (first class)
-        $('#popup .icon').removeClass().addClass('icon '+loc);  // get/set icon
-        $('#popup .details').html($('.office a.'+loc).html());  // get/set details
-        $('#popup .link').attr('href','http://bit.ly/rms_map_'+loc);    // get/set link [use customm url shortener?]
-        $('#popup .mapviewer').html($('#mapviewers .'+loc).html());    // get/set map
+      
+        // fade out previous content - ** to do: IMPROVE (xfade, only fade necessary elements) **
+        $('#popup .icon, #popup .details, #popup .mapviewer').fadeTo(500, 0.0, 'easeOutExpo', function() {
+          $('#popup .icon').removeClass().addClass('icon '+loc);        // get/set icon
+          $('#popup .details').html($('.office a.'+loc).html());        // get/set details
+          $('#popup .mapviewer').html($('#mapviewers .'+loc).html());   // get/set map
+        });
+        $('#popup .icon, #popup .details, #popup .mapviewer').fadeTo(500, 1.0, 'easeOutExpo'); // fade in new content
         $('#popup .close').click(function() {
             $('#popup').fadeTo(1000, 0.0, 'easeOutExpo');  
           }
         ); // set close button
         $('#popup').fadeTo(1000, 0.9, 'easeOutExpo');
-        
+      
       }
     );
   });
