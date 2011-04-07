@@ -12,8 +12,33 @@
     <section class="iWorldMap clearfix">
 
       <!-- + raphael -->
-      <div id="mapinfo">a
-
+      <div id="mapinfo">
+        <ul class="clearfix">
+          <li><dl>
+            <dd>[flag orb]</dd>
+            <dt>[country name]</dt>
+          </dl></li>
+          <li><dl>
+            <dt>GDP</dt>
+            <dd>1.2 Billion</dd>
+          </dl></li>
+          <li><dl>
+            <dt>Economic Exposure</dt>
+            <dd>3.6 Billion</dd>
+          </dl></li>
+          <li><dl>
+            <dt>Population</dt>
+            <dd>2.4 Million</dd>
+          </dl></li>
+          <li><dl>
+            <dt>Life Expectancy</dt>
+            <dd>75-80</dd>
+          </dl></li>
+          <li><dl>
+            <dt>Landmass</dt>
+            <dd>3,300,171 sq. mi.</dd>
+          </dl></li>
+        </ul>
       </div>
       <div id="svgmap"></div>
       <!-- / raphael -->

@@ -2068,10 +2068,33 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   -webkit-border-radius:4px 4px 0 0;
   -moz-border-radius:   4px 4px 0 0;
   border-radius:        4px 4px 0 0;
-     -moz-box-shadow:   0 0 8px rgba(0,0,0,0.5); 
-  -webkit-box-shadow:   0 0 8px rgba(0,0,0,0.5); 
-          box-shadow:   0 0 8px rgba(0,0,0,0.5);
+     -moz-box-shadow:   0 3px 7px rgba(90,90,90,0.5); 
+  -webkit-box-shadow:   0 3px 7px rgba(90,90,90,0.5); 
+          box-shadow:   0 3px 7px rgba(90,90,90,0.5);
   behavior: url(/js/libs/PIE/PIE.htc);
+}
+
+#risk section.iWorldMap #mapinfo ul {
+  margin:               0;
+  padding:              23px 18px 0;
+  list-style:           none;
+}
+
+#risk section.iWorldMap #mapinfo ul li {
+  width:                130px;
+  padding:              0 12px;
+  float:                left;
+}
+
+#risk section.iWorldMap #mapinfo ul li dl dt {
+  color:                #3a3939;
+  text-align:           center;
+  text-transform:       uppercase;
+  font:                 bold 85%/100% Helvetica,sans-serif;
+}
+
+#risk section.iWorldMap #mapinfo ul li dl dd {
+  text-align:           center;
 }
 
 #risk section.iWorldMap #svgmap {
