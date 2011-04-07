@@ -1541,7 +1541,7 @@ $(document).ready(function(){
         loc = loc.split(' ')[0];      // parse for location (first class)
         $('#popup .icon').removeClass().addClass('icon '+loc);  // get/set icon
         $('#popup .details').html($('.office a.'+loc).html());  // get/set details
-        $('#popup .link').attr('href','http://bit.ly/rms_'+loc);    // get/set link [use customm url shortener?]
+        $('#popup .link').attr('href','http://bit.ly/rms_map_'+loc);    // get/set link [use customm url shortener?]
         $('#popup .mapviewer').html($('#mapviewers .'+loc).html());    // get/set map
         $('#popup .close').click(function() {
             $('#popup').fadeTo(1000, 0.0, 'easeOutExpo');  
