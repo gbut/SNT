@@ -1459,11 +1459,14 @@ $(document).ready(function(){
         CoolClock.findAndCreateClocks(); // update clock
       }
     );
+  });
+  
+  $('#contact #offices a, #contact #markers a').each(function(){
     $(this).click(function() {
-      
+    
         str = $(this).attr('class');  // get the class string
         loc = loc.split(' ')[0];      // parse for location (first class)
-        
+      
         // fade out previous content - ** to do: IMPROVE (xfade, only fade necessary elements) **
         $('#popup .icon, #popup .details, #popup .mapviewer').fadeTo(500, 0.0, 'easeOutExpo', function() {
           $('#popup .icon').removeClass().addClass('icon '+loc);        // get/set icon
@@ -1476,7 +1479,7 @@ $(document).ready(function(){
           }
         ); // set close button
         $('#popup').fadeTo(1000, 0.9, 'easeOutExpo');
-        
+      
       }
     );
   });
