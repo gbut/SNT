@@ -2053,8 +2053,30 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 #risk section.iWorldMap {
   margin-bottom:        0;
-  padding:              31px 0;
+  padding:              152px 0 31px;
 /*  background-color:     #f3f3f3;*/
+}
+
+#risk section.iWorldMap #mapinfo {
+  width:                960px;
+  height:               117px;
+  position:             absolute;
+  top:                  -10px;
+  left:                 -10px;
+  background:           #fff;
+  border-bottom:        1px solid #999;
+  -webkit-border-radius:4px 4px 0 0;
+  -moz-border-radius:   4px 4px 0 0;
+  border-radius:        4px 4px 0 0;
+     -moz-box-shadow:   0 0 8px rgba(0,0,0,0.5); 
+  -webkit-box-shadow:   0 0 8px rgba(0,0,0,0.5); 
+          box-shadow:   0 0 8px rgba(0,0,0,0.5);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+
+#risk section.iWorldMap #svgmap {
+  height:               500px;
+  position:             relative;
 }
 
 #risk_map_nav {

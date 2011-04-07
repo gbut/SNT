@@ -12,9 +12,10 @@
     <section class="iWorldMap clearfix">
 
       <!-- + raphael -->
-      <div id="svgmap" style="height:500px;">
+      <div id="mapinfo">a
 
       </div>
+      <div id="svgmap"></div>
       <!-- / raphael -->
 
       <!-- + map nav -->
