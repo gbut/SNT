@@ -3466,34 +3466,32 @@ textarea.error {
   margin-right:         0;
 }
 
-#about dt,
-#about dd {
-  font-size:            110%;
-  position:             relative;
-  z-index:              10;
-}
-
 #about dt {
+  font-size:            110%;
   font-weight:          bold;
   color:                #c3151c;
   margin-bottom:        4px;
 }
 
 #about dd {
+  font-size:            110%;
   color:                #565656;
+  position:             relative;
+  z-index:              1;
 }
 
-#about dl img {
+#about dd.img1 {
   width:                151px;
   height:               110px;
   position:             absolute;
   top:                  0;
   right:                0;
+  z-index:              0;
 }
 
 #about dd.loc,
 #about dd.bio,
-#about dl img:last-child {
+#about dd.img2 {
   display:              none;
 }
 
@@ -3511,8 +3509,8 @@ textarea.error {
   height:110px;
   width:110px;
   margin:10px;
-  background:#ccc;
   float:left;
+  overflow:hidden;
 }
 #about #bio div div {
   height:auto;
