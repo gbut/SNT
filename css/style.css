@@ -3428,6 +3428,8 @@ textarea.error {
 }
 
 #about .intro {
+  color:                #666;
+  font:                 108%/142.86% Helvetica,sans-serif;
   width:                700px;
   float:                left;
 }
