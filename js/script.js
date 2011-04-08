@@ -1565,18 +1565,55 @@ $(document).ready(function(){
   $('#about dl').each(function(){
     $(this).click(function() {
       
-      $('#bio').find('.image').html($(this).children('img').last());
-      $('#bio').find('.name').html($(this).children('dt').html());
-      $('#bio').find('.loc').html($(this).children('.loc').html());
-      $('#bio').find('.body').html($(this).children('.bio').html());
-
-      $(this).parent().after($('#bio'));
-      $('#bio').animate({
-          opacity: 1.0,
-          height: '130px'
+      if ($(this).parent().next().attr('id') != 'bio') { 
+        // exists in another position
+        
+        // get/set values
+        $('#bio').find('.image').html($(this).children('.img2').html());
+        $('#bio').find('.name').html($(this).children('dt').html());
+        $('#bio').find('.loc').html($(this).children('.loc').html());
+        $('#bio').find('.body').html($(this).children('.bio').html());
+        
+        obj = $(this);
+        
+        $('#bio').animate({
+          opacity: 0,
+          height: '0'
         }, 500, function() {
-          // Animation complete.
+        
+          obj.parent().after($('#bio'));
+          $('#bio').animate({
+            opacity: 1.0,
+            height: '130px'
+          }, 500, function() {
+            // Animation complete.
+          });
+
         });
+        
+      } else {
+        // exists in correct position
+        
+        obj = $(this);
+        
+        $('#bio div').animate({
+          opacity: 0
+        }, 500, function() {
+          
+          // get/set values
+          $('#bio').find('.image').html(obj.children('.img2').html());
+          $('#bio').find('.name').html(obj.children('dt').html());
+          $('#bio').find('.loc').html(obj.children('.loc').html());
+          $('#bio').find('.body').html(obj.children('.bio').html());
+          
+          
+        });
+        
+        $('#bio div').animate({
+          opacity: 1.0
+        }, 500);
+        
+      }
       
     });
   });

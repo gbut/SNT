@@ -29,8 +29,8 @@
           <dt>Hemant H. Shah</dt>
           <dd>President and Chief Executive Officer</dd>
           <dd class="loc">Newark, California</dd>
-          <img src="/img/photo_leader_01.jpg" />
-          <img src="/img/photo_leader_01.jpg" />
+          <dd class="img1"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="img2"><img src="/img/photo_leader_01.jpg" /></dd>
           <dd class="bio">
             <p>Hemant Shah is President and CEO of Risk Management Solutions. Since co-founding RMS in 1989, Hemant has become widely recognized within the global insurance industry as a proactive and influential leader. Based in California, he was named one of North America's "100 Most Powerful People in the Insurance Industry" (Insurance Newscast, 2005, 2006), one of "35 Rising Stars" (Business Insurance, 2002), a "Leader of the Future" (Global Reinsurance, 2000) and also listed as one of the industry's Top 40 Most Influential (Global Reinsurance, 2008).</p>
             <p>Hemant serves on the Board of Overseers of St. John's School of Risk Management and Actuarial Science (College of Insurance), is a Director of the RAND Center for the Study of Terrorism and Political Violence, a Director on the Board of RAND's Institute for Civil Justice, and a Director of the Singapore-based Institute for Defense and Strategic Studies. Hemant is a member of the Aspen Institute's prestigious Henry Crown Fellowship Program, which seeks to develop our next generation of community-spirited leaders, providing them with the tools necessary to meet the challenges of corporate and civic leadership in the 21st century. He received a BS in Civil Engineering and an MS in Engineering Management from Stanford University</p>
@@ -40,43 +40,17 @@
           <dt>Robert Bentley</dt>
           <dd>Chief Operating Officer</dd>
           <dd class="loc">Newark, California</dd>
-          <img src="/img/photo_leader_01.jpg" />
-          <img src="/img/photo_leader_01.jpg" />
-          <dd class="bio">Lorem ipsum defacto text</dd>
+          <dd class="img1"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="img2"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="bio">Velit aptent rusticus augue et abdo vel consequat secundum. Reprobo letalis nullus ad delenit validus, fatua exputo elit, modo enim vel paratus fatua ne. Velit hendrerit vulpes damnum natu humo jugis torqueo, pertineo tum similis exerci. Valde magna quae, loquor valetudo in at vel velit persto obruo vero. Vindico iusto utinam opes, feugiat autem ea paratus minim eu suscipit abbas suscipit. Bene, vel ratis decet refoveo molior enim loquor, illum duis ut. Refoveo ad consectetuer ymo iustum in modo ibidem commodo. Multo feugiat exerci ut pertineo scisco suscipit pecus, dignissim, minim iustum iriure.</dd>
         </dl>
         <dl>
           <dt>Robert Bentley</dt>
           <dd>Chief Operating Officer</dd>
           <dd class="loc">Newark, California</dd>
-          <img src="/img/photo_leader_01.jpg" />
-          <img src="/img/photo_leader_01.jpg" />
-          <dd class="bio">Lorem ipsum defacto text</dd>
-        </dl>
-      </div>
-      <div class="row clearfix">
-        <dl>
-          <dt>Robert Bentley</dt>
-          <dd>Chief Operating Officer</dd>
-          <dd class="loc">Newark, California</dd>
-          <img src="/img/photo_leader_01.jpg" />
-          <img src="/img/photo_leader_01.jpg" />
-          <dd class="bio">Lorem ipsum defacto text</dd>
-        </dl>
-        <dl>
-          <dt>Robert Bentley</dt>
-          <dd>Chief Operating Officer</dd>
-          <dd class="loc">Newark, California</dd>
-          <img src="/img/photo_leader_01.jpg" />
-          <img src="/img/photo_leader_01.jpg" />
-          <dd class="bio">Lorem ipsum defacto text</dd>
-        </dl>
-        <dl>
-          <dt>Robert Bentley</dt>
-          <dd>Chief Operating Officer</dd>
-          <dd class="loc">Newark, California</dd>
-          <img src="/img/photo_leader_01.jpg" />
-          <img src="/img/photo_leader_01.jpg /">
-          <dd class="bio">Lorem ipsum defacto text</dd>
+          <dd class="img1"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="img2"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="bio">Nulla amet dolore eros nulla consequat haero, illum, oppeto ea nisl. Ex, suscipit patria facilisi opes facilisi paulatim esse iusto venio euismod praesent. Iustum, luptatum velit blandit et torqueo natu quia, nostrud camur tristique quis ex. Refero valetudo nisl sit nisl ibidem epulae iriure.</dd>
         </dl>
       </div>
       <div class="row clearfix">
@@ -84,25 +58,26 @@
           <dt>Robert Bentley</dt>
           <dd>Chief Operating Officer</dd>
           <dd class="loc">Newark, California</dd>
-          <img src="/img/photo_leader_01.jpg" />
-          <img src="/img/photo_leader_01.jpg" />
-          <dd class="bio">Lorem ipsum defacto text</dd>
+          <dd class="img1"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="img2"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="bio">Bene occuro mauris in similis defui vero quod consequat quidem vicis autem transverbero. Sudo nutus oppeto minim delenit si blandit feugiat, in, sed utinam, et incassum te, gravis. Eligo loquor bene bis lobortis regula consectetuer, enim eum eros, utinam sit ne modo. Aptent abdo suscipit hendrerit duis, feugait vel velit, ideo nutus. Molior feugait dignissim et antehabeo sagaciter gemino. Abdo aptent molior qui, pertineo odio hendrerit te fatua, duis aliquam roto neque. </dd>
         </dl>
         <dl>
           <dt>Robert Bentley</dt>
           <dd>Chief Operating Officer</dd>
           <dd class="loc">Newark, California</dd>
-          <img src="/img/photo_leader_01.jpg" />
-          <img src="/img/photo_leader_01.jpg" />
-          <dd class="bio">Lorem ipsum defacto text</dd>
+          <dd class="img1"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="img2"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="bio">Feugait ne in letatio tincidunt imputo tamen venio. Vulputate epulae feugiat nutus quidne decet. Singularis exerci imputo caecus eros nulla exerci ex adsum vicis magna, sit. Indoles, feugait ut velit, ille ut utinam suscipere consectetuer tamen. Vero lobortis, indoles suscipere defui si incassum aliquam luptatum nobis. Refero, zelus interdico, rusticus bene veniam. </dd>
         </dl>
         <dl>
           <dt>Robert Bentley</dt>
           <dd>Chief Operating Officer</dd>
           <dd class="loc">Newark, California</dd>
-          <img src="/img/photo_leader_01.jpg" />
-          <img src="/img/photo_leader_01.jpg" />
-          <dd class="bio">Lorem ipsum defacto text</dd>
+          <dd class="img1"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="img2"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="bio">Zelus inhibeo illum vero tation neo, praemitto. Probo ad praemitto ut imputo, virtus ex ulciscor quis transverbero, dolore neo, lenis consequat. Abico, neque utrum delenit dolore quis nisl caecus refero iustum. Exputo, immitto saluto neo amet, nobis. 
+          </dd>
         </dl>
       </div>
       <div class="row clearfix">
@@ -110,9 +85,36 @@
           <dt>Robert Bentley</dt>
           <dd>Chief Operating Officer</dd>
           <dd class="loc">Newark, California</dd>
-          <img src="/img/photo_leader_01.jpg" />
-          <img src="/img/photo_leader_01.jpg" />
-          <dd class="bio">Lorem ipsum defacto text</dd>
+          <dd class="img1"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="img2"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="bio">Eros quidem augue augue si accumsan foras, praesent modo modo duis. Foras vicis, uxor esca haero melior qui diam quis. Populus et esca esse melior ideo pecus sudo tamen turpis consequat. Abbas, validus nimis ullamcorper damnum, nostrud amet secundum saepius vel opto. </dd>
+        </dl>
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <dd class="loc">Newark, California</dd>
+          <dd class="img1"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="img2"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="bio">Volutpat tego consequat et saluto indoles valetudo tristique. Diam, consequat ut typicus refoveo quod vel valetudo ludus valetudo odio, nullus, damnum. Laoreet quis valetudo capio inhibeo luptatum esca blandit, aliquip delenit duis feugiat lenis usitas haero. </dd>
+        </dl>
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <dd class="loc">Newark, California</dd>
+          <dd class="img1"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="img2"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="bio">Ex similis odio feugiat facilisi laoreet comis eum consequat secundum tristique nisl hendrerit. Acsi magna quidem verto immitto ad opes decet vicis abluo. Singularis, suscipit brevitas iriure wisi jus iriure lucidus validus multo secundum, vel fere praemitto duis. Vel, utrum eum, gilvus distineo nimis feugiat consequat mauris comis minim typicus. 
+          </dd>
+        </dl>
+      </div>
+      <div class="row clearfix">
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <dd class="loc">Newark, California</dd>
+          <dd class="img1"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="img2"><img src="/img/photo_leader_01.jpg" /></dd>
+          <dd class="bio">Feugiat autem ea paratus minim eu suscipit abbas suscipit. Bene, vel ratis decet refoveo molior enim loquor, illum duis ut. Refoveo ad consectetuer ymo iustum in modo ibidem commodo. Multo feugiat exerci ut pertineo scisco suscipit pecus, dignissim, minim iustum iriure.</dd>
         </dl>
       </div>
       
