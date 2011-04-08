@@ -3503,9 +3503,11 @@ textarea.error {
 }
 
 #about #bio {
-  height:0;
   margin-bottom:10px;
   background:#d8e4ea;
+}
+#about #bio.default {
+  height:0;
   -moz-opacity:         0;
   -ms-filter:           "alpha(opacity=0)";
   filter:               alpha(opacity=0);
@@ -3525,6 +3527,11 @@ textarea.error {
   margin:0;
   float:none;
 }
+
+#about #bio .name {
+  font-weight:bold;
+}
+
 
 #about #bio .body {
   width:634px;

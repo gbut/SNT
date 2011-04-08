@@ -117,7 +117,7 @@
         </dl>
       </div>
       
-      <div id="bio">
+      <div id="bio" class="default">
         <div class="image"></div>
         <div>
           <div class="name"></div>

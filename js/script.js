@@ -1575,59 +1575,82 @@ $(document).ready(function(){
   }
   
   //===============================================
-  //  Leadership bios
+  //  Leadership Bios
   //===============================================
   
-  $('#about dl').each(function(){
+  ht = '130px'; // bio display height
+  
+  $('#about dl').each(function() {
     $(this).click(function() {
       
-      if ($(this).parent().next().attr('id') != 'bio') { 
-        // exists in another position
-        
-        // get/set values
-        $('#bio').find('.image').html($(this).children('.img2').html());
-        $('#bio').find('.name').html($(this).children('dt').html());
-        $('#bio').find('.loc').html($(this).children('.loc').html());
-        $('#bio').find('.body').html($(this).children('.bio').html());
-        
-        obj = $(this);
-        
-        $('#bio').animate({
-          opacity: 0,
-          height: '0'
-        }, 500, function() {
-        
-          obj.parent().after($('#bio'));
-          $('#bio').animate({
-            opacity: 1.0,
-            height: '130px'
-          }, 500, function() {
-            // Animation complete.
-          });
+      if (!$('#bio').height()) {
+        // first click; no bio displayed yet
 
+        setBioDetails($(this));
+        
+        // position display
+        $(this).parent().after($('#bio'));
+        
+        // enable display
+        $('#bio').animate({
+          opacity: 1.0,
+          height: ht
+        }, 500, function() {
+          $(this).removeClass('default');
         });
-        
-      } else {
-        // exists in correct position
-        
+      
+      } else if ($(this).parent().next().attr('id') == 'bio') {
+        // exists in correct position        
+
         obj = $(this);
+        $('#bio').addClass('default');
         
+        // fade out old content      
         $('#bio div').animate({
           opacity: 0
-        }, 500, function() {
-          
+        }, 500, function() {          
           // get/set values
-          $('#bio').find('.image').html(obj.children('.img2').html());
-          $('#bio').find('.name').html(obj.children('dt').html());
-          $('#bio').find('.loc').html(obj.children('.loc').html());
-          $('#bio').find('.body').html(obj.children('.bio').html());
-          
-          
+          setBioDetails(obj);
+          obj.removeClass('default');
         });
         
+        // fade in new content
         $('#bio div').animate({
           opacity: 1.0
         }, 500);
+        
+      } else {
+        // exists in another position
+        
+        // fix height of animation rows to avoid movement of rows that follow
+          // ** to do: improve...
+          // need to detect whethe rup or down
+          // need to take into accoutn number of rows
+//        height = $('.row').outerHeight(true) + $('#bio').outerHeight(true);
+//        $(this).parent().prev().andSelf().wrapAll('<div style="height:'+height+'px" />');
+
+        obj = $(this);
+        
+        // clone display
+        $('#bio').addClass('original').clone().removeClass('original').addClass('default').attr('style','').insertAfter($(this).parent());
+
+        // fadeout and remove old display
+        $('#bio.original').animate({
+          opacity: 0,
+          height: '0'
+        }, 500, function() {
+          $(this).remove();
+        });
+
+        setBioDetails(obj);
+
+        // fade in new display
+        $('#bio.default').animate({
+          opacity: 1.0,
+          height: ht
+        }, 500, function() {
+          $(this).removeClass('default');
+        });
         
       }
       
@@ -1636,6 +1659,15 @@ $(document).ready(function(){
   
 });
 
+/**
+ * Functions for Leadership Bios
+ */
+function setBioDetails(obj) {
+  $('#bio.default').find('.image').html(obj.children('.img2').html());
+  $('#bio.default').find('.name').html(obj.children('dt').html());
+  $('#bio.default').find('.loc').html(obj.children('.loc').html());
+  $('#bio.default').find('.body').html(obj.children('.bio').html());
+}
 
 /**
  * Declare a global timer for enabling a sort of "onResizeEnd" event.
