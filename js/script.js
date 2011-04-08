@@ -1565,6 +1565,7 @@ $(document).ready(function(){
   $('#about dl').each(function(){
     $(this).click(function() {
       
+      $('#bio').find('.image').html($(this).children('img').last());
       $('#bio').find('.name').html($(this).children('dt').html());
       $('#bio').find('.loc').html($(this).children('.loc').html());
       $('#bio').find('.body').html($(this).children('.bio').html());
