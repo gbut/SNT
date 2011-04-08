@@ -16,27 +16,27 @@
         <ul class="clearfix">
           <li><dl>
             <dd>[flag orb]</dd>
-            <dt>[country name]</dt>
+            <dt id="map_country_name">[country name]</dt>
           </dl></li>
           <li><dl>
             <dt>GDP</dt>
-            <dd>1.2 Billion</dd>
+            <dd id="map_gdp">1.2 Billion</dd>
           </dl></li>
           <li><dl>
             <dt>Economic Exposure</dt>
-            <dd>3.6 Billion</dd>
+            <dd id="map_exposure">3.6 Billion</dd>
           </dl></li>
           <li><dl>
             <dt>Population</dt>
-            <dd>2.4 Million</dd>
+            <dd id="map_population">2.4 Million</dd>
           </dl></li>
           <li><dl>
             <dt>Life Expectancy</dt>
-            <dd>75-80</dd>
+            <dd id="map_lifeexp">75-80</dd>
           </dl></li>
           <li><dl>
             <dt>Landmass</dt>
-            <dd>3,300,171 sq. mi.</dd>
+            <dd id="map_landmass">3,300,171 sq. mi.</dd>
           </dl></li>
         </ul>
       </div>

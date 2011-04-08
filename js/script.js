@@ -954,7 +954,17 @@ $(document).ready(function(){
       // elements
       var self                = this;
       this.container          = $(e);
+      
       this.infobar            = $(infobar);
+      this.infoDisplay        = {
+        flag:         $('#map_flag'),
+        cname:        $('#map_country_name'),
+        gdp:          $('#map_gdp'),
+        exposure:     $('#map_exposure'),
+        population:   $('#map_population'),
+        lifeexp:      $('#map_lifeexp'),
+        landmass:     $('#map_landmass')
+      };
       
       // data; dynamically created elements
       if (typeof countryCoords == 'undefined' || typeof countryData == 'undefined') return;
