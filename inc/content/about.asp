@@ -84,7 +84,7 @@
           <dt>Robert Bentley</dt>
           <dd>Chief Operating Officer</dd>
           <dd class="loc">Newark, California</dd>
-          <img src="/img/photo_leader_01.jpg /">
+          <img src="/img/photo_leader_01.jpg" />
           <img src="/img/photo_leader_01.jpg" />
           <dd class="bio">Lorem ipsum defacto text</dd>
         </dl>
