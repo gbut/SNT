@@ -15,7 +15,7 @@
       <div id="mapinfo">
         <ul class="clearfix">
           <li><dl>
-            <dd>[flag orb]</dd>
+            <dd><img id="map_flag" src="" /></dd>
             <dt id="map_country_name">[country name]</dt>
           </dl></li>
           <li><dl>

@@ -967,11 +967,13 @@ $(document).ready(function(){
       };
       
       // data; dynamically created elements
-      if (typeof countryCoords == 'undefined' || typeof countryData == 'undefined') return;
-      this.svgData            = countryCoords; // raw imported SVG coords
-      this.countryData        = countryData; // data about each country
+      if (typeof countryData == 'undefined') return;
+      this.countryData        = countryData; // data about each country, including SVG coords
       this.groups             = {}; // will be populated with countries or groups of countries (hover on/off together)
       this.active             = null;
+      
+      // other vars
+      this.flagPath           = '/img/flags/70/';
       
       // setup
       this.setup();
@@ -996,15 +998,15 @@ $(document).ready(function(){
         // build map and attach behaviors
         var country, group;
         var sets = {};
-        for (var c in this.svgData) {
-          if (this.svgData[c].length == 1) {
-            country = this.r.path(this.svgData[c][0]).attr(this.options.attr);
+        for (var c in this.countryData) {
+          if (this.countryData[c].svg.length == 1) {
+            country = this.r.path(this.countryData[c].svg[0]).attr(this.options.attr);
             $(country.node).data('cc', c);
             this.groups[c] = [this.applyHoverStates(country)];
           } else {
             var s = this.r.set();
-            for (var i=0; i<this.svgData[c].length; i++) {
-              country = this.r.path(this.svgData[c][i]).attr(this.options.attr);
+            for (var i=0; i<this.countryData[c].svg.length; i++) {
+              country = this.r.path(this.countryData[c].svg[i]).attr(this.options.attr);
               $(country.node).data('cc', c);
               s.push(country);
             }
@@ -1078,6 +1080,10 @@ $(document).ready(function(){
         
         // fade previously active country, if any
         if (oldCC) $(this.groups[oldCC][0].node).triggerHandler('mouseleave');
+        
+        // update data in infobar
+        this.infoDisplay.flag.attr('src', this.flagPath + this.countryData[countryCode].flag);
+        this.infoDisplay.cname.html(this.countryData[countryCode].name);
       }
 
     });

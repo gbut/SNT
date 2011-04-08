@@ -2059,7 +2059,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #risk section.iWorldMap #mapinfo {
   width:                960px;
-  height:               117px;
+  height:               123px;
   position:             absolute;
   top:                  -10px;
   left:                 -10px;
@@ -2095,6 +2095,13 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #risk section.iWorldMap #mapinfo ul li dl dd {
   text-align:           center;
+}
+
+#risk section.iWorldMap #mapinfo ul li dl dd img {
+  margin:               0 auto 4px;
+  position:             relative;
+  top:                  -5px;
+  left:                 0;
 }
 
 #risk section.iWorldMap #svgmap {
