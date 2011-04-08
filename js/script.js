@@ -1557,7 +1557,20 @@ $(document).ready(function(){
     });
 
   }
-
+  
+  //===============================================
+  //  Leadership bios
+  //===============================================
+  
+  $('#about dl').each(function(){
+    $(this).click(function() {
+      bio = $(this).children('dd:last').html();
+      
+      alert(bio);
+      
+    });
+  });
+  
 });
 
 

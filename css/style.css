@@ -3406,7 +3406,8 @@ textarea.error {
 /* + About */
 
 #about section {
-  padding:              10px 6px 10px 13px;
+  /*padding:              10px 6px 10px 13px; ??? */
+  padding:              10px 13px;
 }
 
 #about section img.banner {
@@ -3436,6 +3437,60 @@ textarea.error {
   font:                 bold 461.54%/75% Georgia,serif;
   padding-right:        5px;
   float:                left;
+}
+
+#about h3 {
+  margin:               60px 0 20px;
+}
+
+#about .row {
+  margin-bottom:        6px;
+}
+#about .row:last-child {
+  margin-bottom:        0;
+}
+
+#about dl {
+  width:                278px;
+  height:               90px;
+  margin-right:         6px;
+  padding:              10px;
+  border:               1px solid #b9b9b9;
+  float:                left;
+  position:             relative;
+  cursor:               pointer;
+}
+#about dl:last-child {
+  margin-right:         0;
+}
+
+#about dt,
+#about dd {
+  font-size:            110%;
+  position:             relative;
+  z-index:              10;
+}
+
+#about dt {
+  font-weight:          bold;
+  color:                #c3151c;
+  margin-bottom:        4px;
+}
+
+#about dd {
+  color:                #565656;
+}
+
+#about dl img {
+  width:                151px;
+  height:               110px;
+  position:             absolute;
+  top:                  0;
+  right:                0;
+}
+
+#about dd:last-child {
+  display:              none;
 }
 
 /* / About */

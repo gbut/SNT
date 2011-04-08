@@ -21,11 +21,80 @@
           <img src="/img/sig_hshah.jpg" alt="Hemant H. Shah" />
         </div>
       </div>
+
+      <h3>Leadership Team</h3>
       
-      <p>
-      <a href="/about/info.asp">About | Information</a><br />
-      <a href="/about/news.asp">About | News Wire</a>
-      </p>
+      <div class="row clearfix">
+        <dl>
+          <dt>Hemant H. Shah</dt>
+          <dd>President and Chief Executive Officer</dd>
+          <img src="/img/photo_leader_01.jpg" />
+          <dd>
+            <p>Hemant Shah is President and CEO of Risk Management Solutions. Since co-founding RMS in 1989, Hemant has become widely recognized within the global insurance industry as a proactive and influential leader. Based in California, he was named one of North America's "100 Most Powerful People in the Insurance Industry" (Insurance Newscast, 2005, 2006), one of "35 Rising Stars" (Business Insurance, 2002), a "Leader of the Future" (Global Reinsurance, 2000) and also listed as one of the industry's Top 40 Most Influential (Global Reinsurance, 2008).</p>
+            <p>Hemant serves on the Board of Overseers of St. John's School of Risk Management and Actuarial Science (College of Insurance), is a Director of the RAND Center for the Study of Terrorism and Political Violence, a Director on the Board of RAND's Institute for Civil Justice, and a Director of the Singapore-based Institute for Defense and Strategic Studies. Hemant is a member of the Aspen Institute's prestigious Henry Crown Fellowship Program, which seeks to develop our next generation of community-spirited leaders, providing them with the tools necessary to meet the challenges of corporate and civic leadership in the 21st century. He received a BS in Civil Engineering and an MS in Engineering Management from Stanford University</p>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <img src="/img/photo_leader_01.jpg">
+          <dd>Lorem ipsum defacto text</dd>
+        </dl>
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <img src="/img/photo_leader_01.jpg">
+          <dd>Lorem ipsum defacto text</dd>
+        </dl>
+      </div>
+      <div class="row clearfix">
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <img src="/img/photo_leader_01.jpg">
+          <dd>Lorem ipsum defacto text</dd>
+        </dl>
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <img src="/img/photo_leader_01.jpg">
+          <dd>Lorem ipsum defacto text</dd>
+        </dl>
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <img src="/img/photo_leader_01.jpg">
+          <dd>Lorem ipsum defacto text</dd>
+        </dl>
+      </div>
+      <div class="row clearfix">
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <img src="/img/photo_leader_01.jpg">
+          <dd>Lorem ipsum defacto text</dd>
+        </dl>
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <img src="/img/photo_leader_01.jpg">
+          <dd>Lorem ipsum defacto text</dd>
+        </dl>
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <img src="/img/photo_leader_01.jpg">
+          <dd>Lorem ipsum defacto text</dd>
+        </dl>
+      </div>
+      <div class="row clearfix">
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <img src="/img/photo_leader_01.jpg">
+          <dd>Lorem ipsum defacto text</dd>
+        </dl>
+      </div>
       
     </section>
     
