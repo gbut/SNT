@@ -2394,17 +2394,38 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   font-size:            171.4%;
 }
 
-#careers section .graphic {
-  margin:               0 25px;
-  float:                left;
-}
-
 #careers #passionCont ul.nav {
   display:              none;
 }
 
 #careers #passionCont.ui-widget {
   height:               132px;
+}
+
+#careers #passionCont .passion {
+  min-height:           132px;
+  height:               auto !important;
+  height:               132px;
+  padding:              8px 0 5px 161px;
+  background:           #fff url(../img/icons_passions.png) 0 0 no-repeat;
+  position:             relative;
+  top:                  -8px;
+  left:                 0;
+}
+#careers #passionCont #nobel {
+  background-position:  0 -600px;
+}
+#careers #passionCont #science-art {
+  background-position:  -150px -450px;
+}
+#careers #passionCont #real-world {
+  background-position:  -300px -300px;
+}
+#careers #passionCont #educating {
+  background-position:  -450px -150px;
+}
+#careers #passionCont #game-theory {
+  background-position:  -600px 0;
 }
 
 #careers .careersHomeIntro,
@@ -2494,29 +2515,29 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   background:           #fff url(../img/icons_career.png) 0 0 no-repeat;
   float:                left;
 }
-#careers section .iconTools {
-  background-position:  0 -335px;
+#careers section .iconThought {
+  background-position:  0 -469px;
 }
-#careers section .iconCup {
-  background-position:  -72px -268px;
+#careers section .iconPlanetary {
+  background-position:  -72px -402px;
 }
-#careers section .iconBooks {
-  background-position:  -144px -201px;
+#careers section .iconCloud {
+  background-position:  -144px -335px;
 }
-#careers section .iconGlobe {
-  background-position:  -216px -134px;
+#careers section .iconData {
+  background-position:  -216px -268px;
+}
+#careers section .iconPeople {
+  background-position:  -288px -201px;
+}
+#careers section .iconGlobal {
+  background-position:  -360px -134px;
+}
+#careers section .iconWorld {
+  background-position:  -432px -67px;
 }
 #careers section .iconChat {
-  background-position:  -288px -67px;
-}
-#careers section .iconBolt {
-  background-position:  -360px 0;
-}
-#careers section.work .icon {
-  -moz-opacity:         0.44;
-  -ms-filter:           "alpha(opacity=44)";
-  filter:               alpha(opacity=44);
-  opacity:              0.44;
+  background-position:  -504px 0;
 }
 
 #careers section a.link {
