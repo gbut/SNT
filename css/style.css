@@ -2316,6 +2316,23 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   padding:              0 10px;
 }
 
+#risk .col3double .imgLt,
+#risk .col3double .imgRt {
+  margin-bottom:        24px;
+}
+#risk .col3double .imgLt img {
+  background:orange;
+  margin:               0 16px 10px 0;
+  float:                left;
+  display:              inline;
+}
+#risk .col3double .imgRt img {
+  background:orange;
+  margin:               0 0 10px 16px;
+  float:                right;
+  display:              inline;
+}
+
 #risk .panelIntro {
   padding:              0 14px;
 }
@@ -2332,6 +2349,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   margin-bottom:        4px;
 }
 
+#risk .col3 p.caption {
+  font-weight:          bold;
+  padding:              5px 5px 17px;
+}
 
 /* / Risk */
 
