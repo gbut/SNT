@@ -1564,9 +1564,18 @@ $(document).ready(function(){
   
   $('#about dl').each(function(){
     $(this).click(function() {
-      bio = $(this).children('dd:last').html();
       
-      alert(bio);
+      $('#bio').find('.name').html($(this).children('dt').html());
+      $('#bio').find('.loc').html($(this).children('.loc').html());
+      $('#bio').find('.body').html($(this).children('.bio').html());
+
+      $(this).parent().after($('#bio'));
+      $('#bio').animate({
+          opacity: 1.0,
+          height: '130px'
+        }, 500, function() {
+          // Animation complete.
+        });
       
     });
   });

@@ -3489,9 +3489,40 @@ textarea.error {
   right:                0;
 }
 
-#about dd:last-child {
+#about dd.loc,
+#about dd.bio,
+#about dl img:last-child {
   display:              none;
 }
+
+#about #bio {
+  height:0;
+  margin-bottom:10px;
+  background:#d8e4ea;
+  -moz-opacity:         0;
+  -ms-filter:           "alpha(opacity=0)";
+  filter:               alpha(opacity=0);
+  opacity:              0;
+}
+
+#about #bio div {
+  height:110px;
+  width:110px;
+  margin:10px;
+  background:#ccc;
+  float:left;
+}
+#about #bio div div {
+  height:auto;
+  width:100%;
+  margin:0;
+  float:none;
+}
+
+#about #bio .body {
+  width:634px;
+}
+
 
 /* / About */
 
