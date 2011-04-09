@@ -15,28 +15,28 @@
       <div id="mapinfo">
         <ul class="clearfix">
           <li><dl>
-            <dd>[flag orb]</dd>
-            <dt>[country name]</dt>
+            <dd><img id="map_flag" src="" /></dd>
+            <dt id="map_country_name">[country name]</dt>
           </dl></li>
           <li><dl>
             <dt>GDP</dt>
-            <dd>1.2 Billion</dd>
+            <dd id="map_gdp">1.2 Billion</dd>
           </dl></li>
           <li><dl>
             <dt>Economic Exposure</dt>
-            <dd>3.6 Billion</dd>
+            <dd id="map_exposure">3.6 Billion</dd>
           </dl></li>
           <li><dl>
             <dt>Population</dt>
-            <dd>2.4 Million</dd>
+            <dd id="map_population">2.4 Million</dd>
           </dl></li>
           <li><dl>
             <dt>Life Expectancy</dt>
-            <dd>75-80</dd>
+            <dd id="map_lifeexp">75-80</dd>
           </dl></li>
           <li><dl>
             <dt>Landmass</dt>
-            <dd>3,300,171 sq. mi.</dd>
+            <dd id="map_landmass">3,300,171 sq. mi.</dd>
           </dl></li>
         </ul>
       </div>
@@ -241,34 +241,35 @@
 
         <section class="clearfix">
           <div class="col3double">
-            <div style="background:orange;width:153px;height:260px;margin:0 19px 10px 15px;float:left;display:inline;">terrorism book</div>
-            <p><strong>Terrorism has blighted human experience for centuries. Seemingly as random and unpredictable as natural disasters,</strong> terrorist attacks defy understanding. What can be done to prepare for a catastrophic terrorist act? What can we do to better understand how and where they might occur, and what sort of impact they might have?</p>
-          </div>
-          <div class="col3">
-            <div style="background:green;height:217px;">img 1</div>
-            <p>
-              <strong>Vivamus agittis lacus vel augue.</strong><br />
-              Laoreet rutrum meitas vfaucibus dolor auctor. Aenean lacinia bibendumnulla sed consectetur.
+            <p class="imgRt clearfix">
+              <img src="" alt="" style="width:162px;height:108px;" />
+              <strong>Terrorism has blighted human experience for centuries. Seemingly as random and unpredictable as natural disasters,</strong> terrorist attacks defy understanding. What can be done to prepare for a catastrophic terrorist act? What can we do to better understand how and where they might occur, and what sort of impact they might have?
+            </p>
+            <p class="imgLt clearfix">
+              <img src="" alt="" style="width:178px;height:263px;" />
+              <strong>A new, systematic approach to understanding terrorism</strong><br />
+              RMS mathematician Gordon Woo saw a way to begin answering these questions. The means&mdash;whether bomb, biological weapon, chemical weapon, or other mode of attack&mdash;would tend to be the most readily available and accessible. Those probabilities could be modeled by conventional means. The targets would be the most visible with the highest psychological value&mdash;again, a quantifiable aspect of the problem. The final variable was human nature itself. The strategic decision to commit a terrorist act would be the culmination of a series of other strategic decisions. No amount of historical data could account for that; there was no way to quantify capricious human impulse. Or was there?
+            </p>
+            <p class="imgRt clearfix">
+              <img src="" alt="" style="width:176px;height:139px;" />
+              <strong>Game theory and the decisions terrorists make</strong><br />
+              After the terrorist attacks of 9/11, Dr. Woo had an idea. Why not use mathematical game theory, made famous in the film <cite>A Beautiful Mind</cite>, to quantify and understand the probability of certain decisions? Ten years later, RMS terrorism risk models based on game theory and other methodologies are used to anticipate terrorist behavior and potential terrorist attacks and their effects around the globe.
+            </p>
+            <p class="imgLt clearfix">
+              <img src="" alt="" style="width:214px;height:218px;" />
+              <strong>Created in partnership with the world's terrorism experts</strong><br />
+              To build the most accurate and advanced model of probable terrorist strikes possible, RMS partnered with the leading think tanks and research institutions around the globe, including the RAND Center for Terrorism Risk Management Policy, Jane's Information Group, the Centre for the Study of Terrorism and Political Violence at the University of St. Andrews in Scotland, the S. Rajaratnam School of International Studies in Singapore, and dozens of leading terrorism scholars, consultants, and advisors.
             </p>
           </div>
-        </section>
+          <div class="col3">
+            <img src="" alt="" style="background:green;width:298px;height:216px;" />
+            <p class="caption">Vivamus agittis lacus vel augue.</p>
 
-        <section class="clearfix">
-          <h3>Terrorism Models</h3>
-          <div class="col3">
-            <div style="background:green;height:217px;margin-bottom:5px;">img 1</div>
-            <h5>A new, systematic approach to understanding terrorism</h5>
-            <p>RMS mathematician Gordon Woo saw a way to begin answering these questions. The means&mdash;whether bomb, biological weapon, chemical weapon, or other mode of attack&mdash;would tend to be the most readily available and accessible. Those probabilities could be modeled by conventional means. The targets would be the most visible with the highest psychological value&mdash;again, a quantifiable aspect of the problem. The final variable was human nature itself. The strategic decision to commit a terrorist act would be the culmination of a series of other strategic decisions. No amount of historical data could account for that; there was no way to quantify capricious human impulse. Or was there?</p>
-          </div>
-          <div class="col3">
-            <div style="background:red;height:217px;margin-bottom:5px;">img 2</div>
-            <h5>Game theory and the decisions terrorists make</h5>
-            <p>After the terrorist attacks of 9/11, Dr. Woo had an idea. Why not use mathematical game theory, made famous in the film <cite>A Beautiful Mind</cite>, to quantify and understand the probability of certain decisions? Ten years later, RMS terrorism risk models based on game theory and other methodologies are used to anticipate terrorist behavior and potential terrorist attacks and their effects around the globe.</p>
-          </div>
-          <div class="col3">
-            <div style="background:orange;height:217px;margin-bottom:5px;">img 3</div>
-            <h5>Created in partnership with the world's terrorism experts</h5>
-            <p>To build the most accurate and advanced model of probable terrorist strikes possible, RMS partnered with the leading think tanks and research institutions around the globe, including the RAND Center for Terrorism Risk Management Policy, Jane's Information Group, the Centre for the Study of Terrorism and Political Violence at the University of St. Andrews in Scotland, the S. Rajaratnam School of International Studies in Singapore, and dozens of leading terrorism scholars, consultants, and advisors.</p>
+            <img src="" alt="" style="background:green;width:298px;height:216px;" />
+            <p class="caption">Vivamus agittis lacus vel augue.</p>
+
+            <img src="" alt="" style="background:green;width:298px;height:216px;" />
+            <p class="caption">Vivamus agittis lacus vel augue.</p>
           </div>
         </section>
 

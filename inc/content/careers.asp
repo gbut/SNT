@@ -56,40 +56,25 @@
         <li><a href="#educating">Educating the next generation.</a></li>
         <li><a href="#game-theory">Changing the game on terrorism.</a></li>
       </ul>
-      <div id="nobel">
-        <img src="/img/icon_nobel.jpg" class="graphic" alt="Nobel Laureates" />
-        <div class="text">
-          <h4>Two Nobel laureates and counting.</h4>
-          <p>Work with Nobel laureate researchers from the Intergovernmental Panel on Climate Change and others at the top of their fields across medical research, computer science, seismology, and mathematics.</p>
-        </div>
+      <div id="nobel" class="passion">
+        <h4>Two Nobel laureates and counting.</h4>
+        <p>Work with Nobel laureate researchers from the Intergovernmental Panel on Climate Change and others at the top of their fields across medical research, computer science, seismology, and mathematics.</p>
       </div>
-      <div id="science-art" class="ui-tabs-hide">
-        <img src="/img/icon_nobel.jpg" class="graphic" alt="Nobel Laureates" />
-        <div class="text">
-          <h4>Science meets art.</h4>
-          <p>One of the world's leading modelers is also a harpist who composed the musical arrangement for the national anthem of Afghanistan's interim government.</p>
-        </div>
+      <div id="science-art" class="passion ui-tabs-hide">
+        <h4>Science meets art.</h4>
+        <p>One of the world's leading modelers is also a harpist who composed the musical arrangement for the national anthem of Afghanistan's interim government.</p>
       </div>
-      <div id="real-world" class="ui-tabs-hide">
-        <img src="/img/icon_nobel.jpg" class="graphic" alt="Nobel Laureates" />
-        <div class="text">
-          <h4>Real world, real science.</h4>
-          <p>From National Geographic specials to the Discovery Channel, we share our research about the effects of earthquakes and catastrophic weather.</p>
-        </div>
+      <div id="real-world" class="passion ui-tabs-hide">
+        <h4>Real world, real science.</h4>
+        <p>From National Geographic specials to the Discovery Channel, we share our research about the effects of earthquakes and catastrophic weather.</p>
       </div>
-      <div id="educating" class="ui-tabs-hide">
-        <img src="/img/icon_nobel.jpg" class="graphic" alt="Nobel Laureates" />
-        <div class="text">
-          <h4>Educating the next generation.</h4>
-          <p>One of the world's top authorities on climate also writes books for kids explaining geology, prehistory, earthquakes, and volcanoes.</p>
-        </div>
+      <div id="educating" class="passion ui-tabs-hide">
+        <h4>Educating the next generation.</h4>
+        <p>One of the world's top authorities on climate also writes books for kids explaining geology, prehistory, earthquakes, and volcanoes.</p>
       </div>
-      <div id="game-theory" class="ui-tabs-hide">
-        <img src="/img/icon_nobel.jpg" class="graphic" alt="Nobel Laureates" />
-        <div class="text">
-          <h4>Changing the game on terrorism.</h4>
-          <p>When an influential mathematician applied game theory to terrorism, he created an entirely new way to anticipate terrorists' next move.</p>
-        </div>
+      <div id="game-theory" class="passion ui-tabs-hide">
+        <h4>Changing the game on terrorism.</h4>
+        <p>When an influential mathematician applied game theory to terrorism, he created an entirely new way to anticipate terrorists' next move.</p>
       </div>
     </div>
   </section>
@@ -98,34 +83,34 @@
     <h3><em>Craft</em></h3>
     <div class="row clearfix">
       <div class="col3">
-        <div class="icon iconTools">[Tools]</div>
+        <div class="icon iconThought">[Thought Leadership]</div>
         <h4>Thought Leadership</h4>
         <p>Redefine how companies manage and understand catastrophic risk.</p>
       </div>
       <div class="col3">
-        <div class="icon iconCup">[Cup]</div>
+        <div class="icon iconPlanetary">[Planetary Solutions]</div>
         <h4>Planetary Solutions</h4>
         <p>Quantify impacts with 50,000-year weather models, terrorism game theory, and human longevity models.</p>
       </div>
       <div class="col3">
-        <div class="icon iconBooks">[Books]</div>
+        <div class="icon iconCloud">[Supercomputer in the Cloud]</div>
         <h4>Supercomputer in the Cloud</h4>
         <p>Build the first high-performance computing cloud platform running hyper-complex mathematical models.</p>
       </div>
     </div>
     <div class="row lastIconRow clearfix">
       <div class="col3">
-        <div class="icon iconGlobe">[Globe]</div>
+        <div class="icon iconData">[Petabytes of Data]</div>
         <h4>Petabytes of Data</h4>
         <p>Crunch petabytes of data using leading-edge data manipulation and calculation algorithms.</p>
       </div>
       <div class="col3">
-        <div class="icon iconChat">[Chat]</div>
+        <div class="icon iconPeople">[Beyond Multidisciplinary]</div>
         <h4>Beyond Multidisciplinary</h4>
         <p>Collaborate with leaders across diverse fields. Computer scientists, seismologists, civil engineers, mathematicians.</p>
       </div>
       <div class="col3">
-        <div class="icon iconBolt">[Bolt]</div>
+        <div class="icon iconGlobal">[Global Influence]</div>
         <h4>Global Influence</h4>
         <p>Build models trusted as the global currency on catastrophic risk, impacting a multi-trillion-dollar global market.</p>
       </div>
@@ -192,7 +177,7 @@
 
   <section id="modules" class="clearfix">
     <div class="lt">
-      <div class="icon iconGlobe">[Globe]</div>
+      <div class="icon iconWorld">[A World of Opportunity]</div>
       <div class="text">
         <h4>A World of Opportunity</h4>
         <p>Learn more about employment opportunities for you in nearly a dozen offices across the China, Europe, India, Japan, and the US.</p>
