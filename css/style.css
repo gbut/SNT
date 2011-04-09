@@ -3540,11 +3540,16 @@ textarea.error {
 
 #about dd.loc,
 #about dd.bio,
+#about dd.img1 img,
 #about dd.img2 {
   display:              none;
 }
+#about dd.img1 img:first-child {
+  display:              block;
+}
 
 #about #bio {
+  line-height:          160%;
   background:           transparent url(../img/bg_leadership_bio.jpg) no-repeat 0 0;
   position:relative;
   top:-6px;
@@ -3567,8 +3572,8 @@ textarea.error {
 }
 #about #bio div {
   height:105px;
-  width:110px;
-  margin:25px 10px 10px;
+  width:120px;
+  margin:25px 12px 10px 0;
   float:left;
   overflow:hidden;
 }
@@ -3582,6 +3587,7 @@ textarea.error {
 #about #bio .image {
   width:130px;
   height:86px;
+  margin-left:20px;
   padding:6px;
   border:1px solid #d9d9d9;
   background:#fff;
@@ -3595,13 +3601,33 @@ textarea.error {
 }
 
 #about #bio .name {
+  font-size:110%;
   font-weight:bold;
 }
 
-#about #bio .body {
-  width:600px;
+#about #bio .loc {
+  font-size:110%;
 }
 
+#about #bio .body {
+  width:540px;
+}
+
+#about #bio .body section {
+  width:540px;
+  padding:               0;
+  float:left;
+}
+
+#about #bio .nav {
+  height: 26px;
+  width: 55px;
+  margin: 0;
+  float: none;
+  position:absolute;
+  bottom:0;
+  right:0;
+} 
 
 /* / About */
 
