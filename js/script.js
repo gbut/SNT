@@ -1588,11 +1588,11 @@ $(document).ready(function(){
       // set selected
       $(this).children('.img1').children().hide().end().children(':last-child').show();
       
-                  
       if (!$('#bio').height()) {
         // first click; no bio displayed yet
 
         setBioDetails($(this));
+        handlePages();
         
         // set the indicator
         if ($(this).is(':first-child')) {
@@ -1635,12 +1635,13 @@ $(document).ready(function(){
           }, 500);
         }
         
-        // fade out old content      
+        // fade out old content ** to do: improve, calling funcs 4 times
         $('#bio img, #bio .name, #bio .loc, #bio .body').animate({
           opacity: 0
         }, 400, function() {          
           // get/set values
           setBioDetails(obj);
+          handlePages();
           obj.removeClass('default');
         });
         
@@ -1682,6 +1683,7 @@ $(document).ready(function(){
         });
 
         setBioDetails(obj);
+        handlePages();
 
         // fade in new display
         $('#bio.default').animate({
@@ -1696,10 +1698,16 @@ $(document).ready(function(){
     });
   });
   
-  // body paging nav
+  // bio paging nav
   $('#bio .nav a').click(function() {
-//    $(this).parent().prev().children(':eq(0)').hide();
-//    $(this).parent().prev().children(':eq(1)').show();
+    if ($(this).is(':first-child')) {
+      d = '+=540px';
+    } else {
+      d = '-=540px';
+    }
+    $(this).parent().prev().children('.body').animate({
+        left: d
+      }, 500 );
   });
   
 });
@@ -1707,11 +1715,25 @@ $(document).ready(function(){
 /**
  * Functions for Leadership Bios
  */
+ 
 function setBioDetails(obj) {
   $('#bio.default').find('.image').html(obj.children('.img2').html());
   $('#bio.default').find('.name').html(obj.children('dt').html());
   $('#bio.default').find('.loc').html(obj.children('.loc').html());
   $('#bio.default').find('.body').html(obj.children('.bio').html());
+}
+
+function handlePages() {
+  // ** to do: handle prev/next disable on p count
+  p = $('#bio').find('.body').find('section').length; // get number of bio 'pages' (<sections>)
+  if (p>1) {
+    w = $('#bio').find('.body').width() * p;          // get width according to num of pages
+    $('#bio').find('.body').width(w);                 // set width
+    $('#bio').find('.nav').show();
+  } else {
+    $('#bio').find('.body').attr('style','');         // revert width to default
+    $('#bio').find('.nav').hide();
+  }  
 }
 
 /**

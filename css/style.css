@@ -3609,8 +3609,13 @@ textarea.error {
   font-size:110%;
 }
 
+#about #bio .bodyOuter {
+  width:540px;
+}
+
 #about #bio .body {
   width:540px;
+  position:relative;
 }
 
 #about #bio .body section {
@@ -3627,6 +3632,7 @@ textarea.error {
   position:absolute;
   bottom:0;
   right:0;
+  display:none;
 } 
 
 /* / About */

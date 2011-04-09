@@ -72,78 +72,13 @@
             <img src="/img/photo_leader_01color.jpg" />
           </dd>
           <dd class="img2"><img src="/img/photo_leader_02casual.jpg" /></dd>
-          <dd class="bio">Nulla amet dolore eros nulla consequat haero, illum, oppeto ea nisl. Ex, suscipit patria facilisi opes facilisi paulatim esse iusto venio euismod praesent. Iustum, luptatum velit blandit et torqueo natu quia, nostrud camur tristique quis ex. Refero valetudo nisl sit nisl ibidem epulae iriure.</dd>
-        </dl>
-      </div>
-      <div class="row clearfix">
-        <dl>
-          <dt>Robert Bentley</dt>
-          <dd>Chief Operating Officer</dd>
-          <dd class="loc">Newark, California</dd>
-          <dd class="img1">
-            <img src="/img/photo_leader_01bw.jpg" />
-            <img src="/img/photo_leader_01color.jpg" />
-          </dd>
-          <dd class="img2"><img src="/img/photo_leader_01casual.jpg" /></dd>
-          <dd class="bio">Bene occuro mauris in similis defui vero quod consequat quidem vicis autem transverbero. Sudo nutus oppeto minim delenit si blandit feugiat, in, sed utinam, et incassum te, gravis. Eligo loquor bene bis lobortis regula consectetuer, enim eum eros, utinam sit ne modo. Aptent abdo suscipit hendrerit duis, feugait vel velit, ideo nutus. Molior feugait dignissim et antehabeo sagaciter gemino. Abdo aptent molior qui, pertineo odio hendrerit te fatua, duis aliquam roto neque. </dd>
-        </dl>
-        <dl>
-          <dt>Robert Bentley</dt>
-          <dd>Chief Operating Officer</dd>
-          <dd class="loc">Newark, California</dd>
-          <dd class="img1">
-            <img src="/img/photo_leader_01bw.jpg" />
-            <img src="/img/photo_leader_01color.jpg" />
-          </dd>
-          <dd class="img2"><img src="/img/photo_leader_02casual.jpg" /></dd>
-          <dd class="bio">Feugait ne in letatio tincidunt imputo tamen venio. Vulputate epulae feugiat nutus quidne decet. Singularis exerci imputo caecus eros nulla exerci ex adsum vicis magna, sit. Indoles, feugait ut velit, ille ut utinam suscipere consectetuer tamen. Vero lobortis, indoles suscipere defui si incassum aliquam luptatum nobis. Refero, zelus interdico, rusticus bene veniam. </dd>
-        </dl>
-        <dl>
-          <dt>Robert Bentley</dt>
-          <dd>Chief Operating Officer</dd>
-          <dd class="loc">Newark, California</dd>
-          <dd class="img1">
-            <img src="/img/photo_leader_01bw.jpg" />
-            <img src="/img/photo_leader_01color.jpg" />
-          </dd>
-          <dd class="img2"><img src="/img/photo_leader_01casual.jpg" /></dd>
-          <dd class="bio">Zelus inhibeo illum vero tation neo, praemitto. Probo ad praemitto ut imputo, virtus ex ulciscor quis transverbero, dolore neo, lenis consequat. Abico, neque utrum delenit dolore quis nisl caecus refero iustum. Exputo, immitto saluto neo amet, nobis. 
-          </dd>
-        </dl>
-      </div>
-      <div class="row clearfix">
-        <dl>
-          <dt>Robert Bentley</dt>
-          <dd>Chief Operating Officer</dd>
-          <dd class="loc">Newark, California</dd>
-          <dd class="img1">
-            <img src="/img/photo_leader_01bw.jpg" />
-            <img src="/img/photo_leader_01color.jpg" />
-          </dd>
-          <dd class="img2"><img src="/img/photo_leader_02casual.jpg" /></dd>
-          <dd class="bio">Eros quidem augue augue si accumsan foras, praesent modo modo duis. Foras vicis, uxor esca haero melior qui diam quis. Populus et esca esse melior ideo pecus sudo tamen turpis consequat. Abbas, validus nimis ullamcorper damnum, nostrud amet secundum saepius vel opto. </dd>
-        </dl>
-        <dl>
-          <dt>Robert Bentley</dt>
-          <dd>Chief Operating Officer</dd>
-          <dd class="loc">Newark, California</dd>
-          <dd class="img1">
-            <img src="/img/photo_leader_01bw.jpg" />
-            <img src="/img/photo_leader_01color.jpg" />
-          </dd>
-          <dd class="img2"><img src="/img/photo_leader_01casual.jpg" /></dd>
-          <dd class="bio">Volutpat tego consequat et saluto indoles valetudo tristique. Diam, consequat ut typicus refoveo quod vel valetudo ludus valetudo odio, nullus, damnum. Laoreet quis valetudo capio inhibeo luptatum esca blandit, aliquip delenit duis feugiat lenis usitas haero. </dd>
-        </dl>
-        <dl>
-          <dt>Robert Bentley</dt>
-          <dd>Chief Operating Officer</dd>
-          <dd class="loc">Newark, California</dd>
-          <dd class="img1">
-            <img src="/img/photo_leader_01bw.jpg" />
-            <img src="/img/photo_leader_01color.jpg" />
-          </dd>
-          <dd class="img2"><img src="/img/photo_leader_02casual.jpg" /></dd>
-          <dd class="bio">Ex similis odio feugiat facilisi laoreet comis eum consequat secundum tristique nisl hendrerit. Acsi magna quidem verto immitto ad opes decet vicis abluo. Singularis, suscipit brevitas iriure wisi jus iriure lucidus validus multo secundum, vel fere praemitto duis. Vel, utrum eum, gilvus distineo nimis feugiat consequat mauris comis minim typicus. 
+          <dd class="bio">
+            <section>
+              Nulla amet dolore eros nulla consequat haero, illum, oppeto ea nisl. Ex, suscipit patria facilisi opes facilisi paulatim esse iusto venio euismod praesent. Iustum, luptatum velit blandit et torqueo natu quia, nostrud camur tristique quis ex. Refero valetudo nisl sit nisl ibidem epulae iriure.
+            </section>
+            <section>
+              Iustum, luptatum velit blandit et torqueo natu quia, nostrud camur tristique quis ex. Refero valetudo nisl sit nisl ibidem epulae iriure. Nulla amet dolore eros nulla consequat haero, illum, oppeto ea nisl. Ex, suscipit patria facilisi opes facilisi paulatim esse iusto venio euismod praesent.
+            </section>
           </dd>
         </dl>
       </div>
@@ -157,7 +92,107 @@
             <img src="/img/photo_leader_01color.jpg" />
           </dd>
           <dd class="img2"><img src="/img/photo_leader_01casual.jpg" /></dd>
-          <dd class="bio">Feugiat autem ea paratus minim eu suscipit abbas suscipit. Bene, vel ratis decet refoveo molior enim loquor, illum duis ut. Refoveo ad consectetuer ymo iustum in modo ibidem commodo. Multo feugiat exerci ut pertineo scisco suscipit pecus, dignissim, minim iustum iriure.</dd>
+          <dd class="bio">
+            <section>
+              Velit hendrerit vulpes damnum natu humo jugis torqueo, pertineo tum similis exerci. Valde magna quae, loquor valetudo in at vel velit persto obruo vero.
+            </section>
+            <section>
+              Vindico iusto utinam opes, feugiat autem ea paratus minim eu suscipit abbas suscipit. Bene, vel ratis decet refoveo molior enim loquor, illum duis ut. Refoveo ad consectetuer ymo iustum in modo ibidem commodo. Multo feugiat exerci ut pertineo scisco suscipit pecus, dignissim, minim iustum iriure.
+            </section>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <dd class="loc">Newark, California</dd>
+          <dd class="img1">
+            <img src="/img/photo_leader_01bw.jpg" />
+            <img src="/img/photo_leader_01color.jpg" />
+          </dd>
+          <dd class="img2"><img src="/img/photo_leader_02casual.jpg" /></dd>
+          <dd class="bio">
+            <section>
+              Feugait ne in letatio tincidunt imputo tamen venio. Vulputate epulae feugiat nutus quidne decet. Singularis exerci imputo caecus eros nulla exerci ex adsum vicis magna, sit. Indoles, feugait ut velit, ille ut utinam suscipere consectetuer tamen. Vero lobortis, indoles suscipere defui si incassum aliquam luptatum nobis. Refero, zelus interdico, rusticus bene veniam.
+            </section>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <dd class="loc">Newark, California</dd>
+          <dd class="img1">
+            <img src="/img/photo_leader_01bw.jpg" />
+            <img src="/img/photo_leader_01color.jpg" />
+          </dd>
+          <dd class="img2"><img src="/img/photo_leader_01casual.jpg" /></dd>
+          <dd class="bio">
+            <section>
+              Zelus inhibeo illum vero tation neo, praemitto. Probo ad praemitto ut imputo, virtus ex ulciscor quis transverbero, dolore neo, lenis consequat. Abico, neque utrum delenit dolore quis nisl caecus refero iustum. Exputo, immitto saluto neo amet, nobis. 
+            </section>
+          </dd>
+        </dl>
+      </div>
+      <div class="row clearfix">
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <dd class="loc">Newark, California</dd>
+          <dd class="img1">
+            <img src="/img/photo_leader_01bw.jpg" />
+            <img src="/img/photo_leader_01color.jpg" />
+          </dd>
+          <dd class="img2"><img src="/img/photo_leader_02casual.jpg" /></dd>
+          <dd class="bio">
+            <section>
+              Eros quidem augue augue si accumsan foras, praesent modo modo duis. Foras vicis, uxor esca haero melior qui diam quis. Populus et esca esse melior ideo pecus sudo tamen turpis consequat. Abbas, validus nimis ullamcorper damnum, nostrud amet secundum saepius vel opto.
+            </section>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <dd class="loc">Newark, California</dd>
+          <dd class="img1">
+            <img src="/img/photo_leader_01bw.jpg" />
+            <img src="/img/photo_leader_01color.jpg" />
+          </dd>
+          <dd class="img2"><img src="/img/photo_leader_01casual.jpg" /></dd>
+          <dd class="bio">
+            <section>
+              Volutpat tego consequat et saluto indoles valetudo tristique. Diam, consequat ut typicus refoveo quod vel valetudo ludus valetudo odio, nullus, damnum. Laoreet quis valetudo capio inhibeo luptatum esca blandit, aliquip delenit duis feugiat lenis usitas haero.
+            </section>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <dd class="loc">Newark, California</dd>
+          <dd class="img1">
+            <img src="/img/photo_leader_01bw.jpg" />
+            <img src="/img/photo_leader_01color.jpg" />
+          </dd>
+          <dd class="img2"><img src="/img/photo_leader_02casual.jpg" /></dd>
+          <dd class="bio">
+            <section>
+              Ex similis odio feugiat facilisi laoreet comis eum consequat secundum tristique nisl hendrerit. Acsi magna quidem verto immitto ad opes decet vicis abluo. Singularis, suscipit brevitas iriure wisi jus iriure lucidus validus multo secundum, vel fere praemitto duis. Vel, utrum eum, gilvus distineo nimis feugiat consequat mauris comis minim typicus. 
+            </section>
+          </dd>
+        </dl>
+      </div>
+      <div class="row clearfix">
+        <dl>
+          <dt>Robert Bentley</dt>
+          <dd>Chief Operating Officer</dd>
+          <dd class="loc">Newark, California</dd>
+          <dd class="img1">
+            <img src="/img/photo_leader_01bw.jpg" />
+            <img src="/img/photo_leader_01color.jpg" />
+          </dd>
+          <dd class="img2"><img src="/img/photo_leader_01casual.jpg" /></dd>
+          <dd class="bio">
+            <section>
+              Feugiat autem ea paratus minim eu suscipit abbas suscipit. Bene, vel ratis decet refoveo molior enim loquor, illum duis ut. Refoveo ad consectetuer ymo iustum in modo ibidem commodo. Multo feugiat exerci ut pertineo scisco suscipit pecus, dignissim, minim iustum iriure.</dd>
+            </section>
         </dl>
       </div>
       
@@ -168,13 +203,13 @@
           <div class="name"></div>
           <div class="loc"></div>
         </div>
-        <div class="body"></div>
+        <div class="bodyOuter">
+          <div class="body"></div>
+        </div>
         <div class="nav">
-        <!--
           <a href="#"><<</a>
           &nbsp;&nbsp;
           <a href="#">>></a>
-        -->
         </div>
       </div>
       
