@@ -1582,6 +1582,10 @@ $(document).ready(function(){
   
   $('#about dl').each(function() {
     $(this).click(function() {
+      
+      // set selected
+      // ** to do: js sprite?
+      //$(this).children('.img1').children().attr('src','/img/photo_leader_01c.jpg');
             
       if (!$('#bio').height()) {
         // first click; no bio displayed yet
