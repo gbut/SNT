@@ -1562,15 +1562,24 @@ $(document).ready(function(){
   //  Leadership Bios
   //===============================================
   
-  ht = '130px'; // bio display height
+  ht = '140px'; // bio display height
   
   $('#about dl').each(function() {
     $(this).click(function() {
-      
+            
       if (!$('#bio').height()) {
         // first click; no bio displayed yet
 
         setBioDetails($(this));
+        
+        // set the indicator
+        if ($(this).is(':first-child')) {
+          $('.biotop').css('left','-614px');
+        } else if ($(this).is(':last-child')) {
+          $('.biotop').css('left','0');
+        } else {
+          $('.biotop').css('left','-307px');
+        }
         
         // position display
         $(this).parent().after($('#bio'));
@@ -1588,6 +1597,21 @@ $(document).ready(function(){
 
         obj = $(this);
         $('#bio').addClass('default');
+        
+        // animate the indicator
+        if ($(this).is(':first-child')) {
+          $('.biotop').animate({
+            left: '-614px'
+          }, 500);
+        } else if ($(this).is(':last-child')) {
+          $('.biotop').animate({
+            left: '0'
+          }, 500);
+        } else {
+          $('.biotop').animate({
+            left: '-307px'
+          }, 500);
+        }
         
         // fade out old content      
         $('#bio div').animate({
@@ -1614,6 +1638,15 @@ $(document).ready(function(){
 //        $(this).parent().prev().andSelf().wrapAll('<div style="height:'+height+'px" />');
 
         obj = $(this);
+        
+        // set the indicator
+        if ($(this).is(':first-child')) {
+          $('.biotop').css('left','-614px');
+        } else if ($(this).is(':last-child')) {
+          $('.biotop').css('left','0');
+        } else {
+          $('.biotop').css('left','-307px');
+        }
         
         // clone display
         $('#bio').addClass('original').clone().removeClass('original').addClass('default').attr('style','').insertAfter($(this).parent());

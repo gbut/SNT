@@ -3455,7 +3455,7 @@ textarea.error {
 #about dl {
   width:                278px;
   height:               90px;
-  margin-right:         6px;
+  margin-right:         7px;
   padding:              10px;
   border:               1px solid #b9b9b9;
   float:                left;
@@ -3481,7 +3481,7 @@ textarea.error {
 }
 
 #about dd.img1 {
-  width:                151px;
+  width:                150px;
   height:               110px;
   position:             absolute;
   top:                  0;
@@ -3496,8 +3496,10 @@ textarea.error {
 }
 
 #about #bio {
-  margin-bottom:10px;
-  background:#d8e4ea;
+  background:           transparent url(../img/bg_leadership_bio.jpg) no-repeat 0 0;
+  position:relative;
+  top:-6px;
+  overflow:hidden;
 }
 #about #bio.default {
   height:0;
@@ -3507,10 +3509,17 @@ textarea.error {
   opacity:              0;
 }
 
+#about #bio .biotop {
+  height:19px;
+  width:1528px;
+  background:           transparent url(../img/bg_leadership_bio_top.png) no-repeat 0 0;
+  position:absolute;
+  display:block;
+}
 #about #bio div {
-  height:110px;
+  height:105px;
   width:110px;
-  margin:10px;
+  margin:25px 10px 10px;
   float:left;
   overflow:hidden;
 }
@@ -3521,13 +3530,27 @@ textarea.error {
   float:none;
 }
 
+#about #bio .image {
+  width:130px;
+  height:86px;
+  padding:6px;
+  border:1px solid #d9d9d9;
+  background:#fff;
+  -webkit-border-radius:4px;
+  -moz-border-radius:   4px;
+  border-radius:        4px;
+     -moz-box-shadow:   0 3px 7px rgba(90,90,90,0.5); 
+  -webkit-box-shadow:   0 3px 7px rgba(90,90,90,0.5); 
+          box-shadow:   0 3px 7px rgba(90,90,90,0.5);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+
 #about #bio .name {
   font-weight:bold;
 }
 
-
 #about #bio .body {
-  width:634px;
+  width:600px;
 }
 
 
