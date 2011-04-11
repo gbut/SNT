@@ -290,6 +290,10 @@ section {
   -moz-border-radius:   4px;
   border-radius:        4px;
 }
+.ie8 .btn,
+.ie8 #bg_chat .btnChatCont a {
+  letter-spacing:       0.01em;
+}
 
 .btnSm {
   font-size:            77%;
@@ -743,6 +747,9 @@ header #login form h3 {
   padding-left:         75px;
   background:           transparent url(../img/logo_sm.png) 0 10px no-repeat;
 }
+.ie8 header #login form h3 {
+  letter-spacing:       0;
+}
 
 header #login form ul.benefits {
   width:                174px;
@@ -766,6 +773,9 @@ header #login form ul.benefits li h4 {
   font:                 600 123.1%/93% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.03em;
   padding-bottom:       4px;
+}
+.ie8 header #login form ul.benefits li h4 {
+  letter-spacing:       0;
 }
 
 header #login form ul.benefits li p {
@@ -895,6 +905,9 @@ header nav ul.sf-menu li a.pn {
   letter-spacing:       0.03em;
   padding:              3px 30px 2px;
 }
+.ie8 header nav ul.sf-menu li a.pn {
+  letter-spacing:       0;
+}
 header nav ul.sf-menu li:first-child a.pn {
   border-left:          none;
 }
@@ -1011,6 +1024,9 @@ header nav ul.sf-menu li ul li ul.snavItems li a h4 {
   letter-spacing:       0.03em;
   margin-bottom:        5px;
 }
+.ie8 header nav ul.sf-menu li ul li ul.snavItems li a h4 {
+  letter-spacing:       0;
+}
 header nav ul.sf-menu li ul li ul.snavItems li a p {
   color:                #202020;
   font-weight:          normal;
@@ -1043,6 +1059,9 @@ header nav ul.sf-menu li ul.sn.risk li .subnavRt h4 {
   text-align:           center;
   margin:               0 0 10px;
 }
+.ie8 header nav ul.sf-menu li ul.sn.risk li .subnavRt h4 {
+  letter-spacing:       0;
+}
 
 header nav ul.sf-menu li ul.sn.careers li h3 {
   color:                #28739c;
@@ -1053,6 +1072,9 @@ header nav ul.sf-menu li ul.sn.careers li h3 {
   margin-bottom:        19px;
   padding-bottom:       10px;
   border-bottom:        1px solid #c0c0c0;
+}
+.ie8 header nav ul.sf-menu li ul.sn.careers li h3 {
+  letter-spacing:       0;
 }
 header nav ul.sf-menu li ul.sn.careers li .subnavLt a.cta {
   color:                #1f1f1f;
@@ -1137,6 +1159,9 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
   letter-spacing:       0.03em;
   margin-bottom:        8px;
 }
+.ie8 #t06 .hd h2 {
+  letter-spacing:       0;
+}
 
 #t06 .hd h3 {
   font-size:            146.5%;
@@ -1199,6 +1224,9 @@ footer a {
   font:                 600 174%/97% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.03em;
   color:                #181818;
+}
+.ie8 #content h3 {
+  letter-spacing:       0;
 }
 
 /* / CONTENT */
@@ -1437,6 +1465,17 @@ a.close:active {
 #presenterNav ul li a:active .imgCont {
   border-color:         #262626;
 }
+.ie8 #presenterNav ul li a .imgCont {
+  width:                58px;
+  height:               36px;
+  background-position:  -1px 0;
+}
+.ie8 #presenterNav ul li a .imgCont.vid2 {
+  background-position:  -1px -37px;
+}
+.ie8 #presenterNav ul li a .imgCont.vid3 {
+  background-position:  -1px -74px;
+}
 
 #presenterNav ul li a .imgCont .play {
   width:                13px;
@@ -1511,6 +1550,9 @@ a.close:active {
   background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f5f5), color-stop(100%,#d1d0d0));
   -pie-background:      linear-gradient(#f6f5f5, #d1d0d0);
   behavior: url(/js/libs/PIE/PIE.htc);
+}
+.ie8 #main ul.tabs li a {
+  letter-spacing:       0;
 }
 #main ul.tabs li.ui-tabs-selected a {
   color:                #3a3a3a;
@@ -1691,6 +1733,11 @@ aside .quote .author .title {
   font:                 400 100%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.03em;
 }
+.ie8 aside .quote,
+.ie8 aside .author,
+.ie8 aside .author .title {
+  letter-spacing:       0;
+}
 
 aside #quoteTabs {
   padding-bottom:       20px;
@@ -1834,6 +1881,9 @@ aside .share .label {
   letter-spacing:       0.03em;
   color:                #5c5c5c;
   padding-top:          10px;
+}
+.ie8 aside .share .label {
+  letter-spacing:       0;
 }
 aside .share a.facebook,
 aside .share a.twitter,
@@ -2390,6 +2440,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   letter-spacing:       0.03em;
   margin-bottom:        4px;
 }
+.ie8 #careers h4 {
+  letter-spacing:       0;
+}
 
 #careers section .row {
   margin-bottom:        8px;
@@ -2523,6 +2576,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   letter-spacing:       0.03em;
   padding-left:         201px;
 }
+.ie8 #careers .careersHomeIntro .rt blockquote {
+  letter-spacing:       0;
+}
 #careers .careersHomeIntro .rt blockquote em {
   color:                #464747;
 }
@@ -2534,6 +2590,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 /*  font:                 70%/100% "GothamHTFBook",Tahoma,Arial,sans-serif;*/
   font:                 400 68%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.02em;
+}
+.ie8 #careers .careersHomeIntro .rt blockquote p.attr {
+  letter-spacing:       0;
 }
 #careers .careersHomeIntro .rt blockquote p.attr em {
   color:                #6e8394;
@@ -2892,6 +2951,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   border-radius:        4px 6px;
   behavior: url(/js/libs/PIE/PIE.htc);
 }
+.ie8 #job_listings .footer {
+  letter-spacing:       0;
+}
 
 #job_listings .footer .subtextOuter {
   float:                left;
@@ -2969,6 +3031,9 @@ display:none;
   color:                #13587e;
   margin-bottom:        15px;
 }
+.ie8 #job_detail h3 {
+  letter-spacing:       0;
+}
 
 #job_detail .subhead {
   font-size:            110%;
@@ -3028,6 +3093,9 @@ textarea.error {
   letter-spacing:       0.03em;
   margin-bottom:        10px;
 }
+.ie8 #job_apply h2 {
+  letter-spacing:       0;
+}
 #job_apply h2 em {
   color:                #13587e;
 }
@@ -3048,6 +3116,9 @@ textarea.error {
   font:                 600 176%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.03em;
   padding:              0 0 10px 20px;
+}
+.ie8 #job_apply legend {
+  letter-spacing:       0;
 }
 
 #job_apply legend em {
@@ -3713,6 +3784,9 @@ textarea.error {
   position:             relative;
   top:                  0;
   left:                 -10px;
+}
+.ie8 #bg_chat .hd h2 {
+  letter-spacing:       0.03em;
 }
 
 #bg_chat .hd .btnChat,
