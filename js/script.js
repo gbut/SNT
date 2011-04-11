@@ -1517,7 +1517,7 @@ $(document).ready(function(){
         str = $(this).attr('class');  // get the class string
         loc = loc.split(' ')[0];      // parse for location (first class)
       
-        // fade out previous content - ** to do: IMPROVE (xfade, only fade necessary elements) **
+        // fade out previous content - ** to do: IMPROVE (xfade, only fade necessary elements); limit func to run once only **
         $('#popup .icon, #popup .details, #popup .mapviewer').fadeTo(500, 0.0, 'easeOutExpo', function() {
           $('#popup .icon').removeClass().addClass('icon '+loc);        // get/set icon
           $('#popup .details').html($('.office a.'+loc).html());        // get/set details
@@ -1588,6 +1588,10 @@ $(document).ready(function(){
       // set selected
       $(this).children('.img1').children().hide().end().children(':last-child').show();
       
+      // reset bio nav
+      $('#bio .nav a:first-child').addClass('disable');
+      $('#bio .nav a:last-child').removeClass('disable');
+      
       if (!$('#bio').height()) {
         // first click; no bio displayed yet
 
@@ -1635,14 +1639,16 @@ $(document).ready(function(){
           }, 500);
         }
         
-        // fade out old content ** to do: improve, calling funcs 4 times
+        // fade out old content
         $('#bio img, #bio .name, #bio .loc, #bio .body').animate({
           opacity: 0
-        }, 400, function() {          
-          // get/set values
-          setBioDetails(obj);
-          handlePages();
-          obj.removeClass('default');
+        }, 400, function() {
+          if ($(this).attr('class') == 'body') {
+            // get/set values
+            setBioDetails(obj);
+            handlePages();
+            obj.removeClass('default');
+          }
         });
         
         // fade in new content
@@ -1660,8 +1666,6 @@ $(document).ready(function(){
 //        height = $('.row').outerHeight(true) + $('#bio').outerHeight(true);
 //        $(this).parent().prev().andSelf().wrapAll('<div style="height:'+height+'px" />');
 
-        obj = $(this);
-        
         // set the indicator
         if ($(this).is(':first-child')) {
           $('.biotop').css('left','-614px');
@@ -1682,7 +1686,7 @@ $(document).ready(function(){
           $(this).remove();
         });
 
-        setBioDetails(obj);
+        setBioDetails($(this));
         handlePages();
 
         // fade in new display
@@ -1699,15 +1703,24 @@ $(document).ready(function(){
   });
   
   // bio paging nav
-  $('#bio .nav a').click(function() {
-    if ($(this).is(':first-child')) {
-      d = '+=540px';
+  $('#bio .nav a').live('click', function() {
+    obj = $(this);
+    body = obj.parent().prev().children('.body');
+    w = $('#about #bio .bodyOuter').width();
+    $('#bio .nav a').removeClass('disable');
+    if (obj.is(':first-child')) {
+      d = '+='+w+'px';
     } else {
-      d = '-=540px';
+      d = '-='+w+'px';
     }
-    $(this).parent().prev().children('.body').animate({
+    body.animate({
         left: d
-      }, 500 );
+      }, 500, function() {
+        // disable nav element for first/last ** to do: disable click handler; default to prev disabled
+        if ((body.css('left') == '0px') || (body.css('left') == -body.width()+w+'px')) {
+          obj.addClass('disable');
+        }
+      });
   });
   
 });
@@ -1724,14 +1737,13 @@ function setBioDetails(obj) {
 }
 
 function handlePages() {
-  // ** to do: handle prev/next disable on p count
+  $('#bio').find('.body').attr('style','');           // revert width to default
   p = $('#bio').find('.body').find('section').length; // get number of bio 'pages' (<sections>)
   if (p>1) {
     w = $('#bio').find('.body').width() * p;          // get width according to num of pages
     $('#bio').find('.body').width(w);                 // set width
     $('#bio').find('.nav').show();
   } else {
-    $('#bio').find('.body').attr('style','');         // revert width to default
     $('#bio').find('.nav').hide();
   }  
 }

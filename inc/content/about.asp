@@ -207,9 +207,8 @@
           <div class="body"></div>
         </div>
         <div class="nav">
-          <a href="#"><<</a>
-          &nbsp;&nbsp;
-          <a href="#">>></a>
+          <a href="#"></a>
+          <a href="#"></a>
         </div>
       </div>
       

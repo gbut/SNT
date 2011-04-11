@@ -3625,15 +3625,35 @@ textarea.error {
 }
 
 #about #bio .nav {
-  height: 26px;
-  width: 55px;
-  margin: 0;
-  float: none;
-  position:absolute;
-  bottom:0;
-  right:0;
-  display:none;
-} 
+  height:               24px;
+  width:                60px;
+  margin:               0;
+  float:                none;
+  position:             absolute;
+  bottom:               6px;
+  right:                10px;
+  display:              none;
+}
+
+#about #bio .nav a {
+  width:                24px;
+  height:               24px;
+  margin-left:          6px;
+  display:              block;
+  float:                left;
+  background:           transparent url(../img/icon_bio_nav.png) 0 0 no-repeat;
+}
+#about #bio .nav a:last-child {
+  background-position:  -24px 0;
+}
+#about #bio .nav a:hover,
+#about #bio .nav a.disable { 
+  background-position:  0 -24px;
+}
+#about #bio .nav a:hover:last-child,
+#about #bio .nav a.disable:last-child {
+  background-position:  -24px -24px;
+}
 
 /* / About */
 
