@@ -1578,173 +1578,211 @@ $(document).ready(function(){
   //  Leadership Bios
   //===============================================
   
-  ht = '140px'; // bio display height
-  
-  $('#about dl').each(function() {
-    $(this).click(function() {
+  (function($){
+    $.fn.leaderBio = function(options) {
+      return this.each(function() {
+        new $lb(this, options);
+      });
+    };
 
-      // unset selected
-      $('dl').children('.img1').children().hide().end().children(':first-child').show();
-      // set selected
-      $(this).children('.img1').children().hide().end().children(':last-child').show();
+    var defaults = {
+      bioHt:      140
+    };
+
+    /**
+     * The leaderBio object.
+     *
+     * @constructor
+     * @name $.leaderBio
+     * @param Object e The element to create the leaderBio for.
+     * @param Hash o A set of key/value pairs to set as configuration properties.
+     */
+    $.leaderBio = function(e, o) {
+      this.options            = $.extend({}, defaults, o || {});
+
+      // elements
+      var self                = this;
+      this.container          = $(e);
       
-      if (!$('#bio').height()) {
-        // first click; no bio displayed yet
+      // attach behavior
+      this.container.find('dl').each(function() {
+        $(this).click(function() {
 
-        setBioDetails($(this));
-        handleBioPages();
-        
-        // set the indicator
-        if ($(this).is(':first-child')) {
-          $('.biotop').css('left','-614px');
-        } else if ($(this).is(':last-child')) {
-          $('.biotop').css('left','0');
-        } else {
-          $('.biotop').css('left','-307px');
-        }
-        
-        // position display
-        $(this).parent().after($('#bio'));
-        
-        // enable display
-        $('#bio').animate({
-          opacity: 1.0,
-          height: ht
-        }, 500, function() {
-          $(this).removeClass('default');
-        });
-      
-      } else if ($(this).parent().next().attr('id') == 'bio') {
-        // exists in correct position        
+          self.setBioSelected($(this));
 
-        obj = $(this);
-        $('#bio').addClass('default');
-        
-        // animate the indicator
-        if ($(this).is(':first-child')) {
-          $('.biotop').animate({
-            left: '-614px'
-          }, 500);
-        } else if ($(this).is(':last-child')) {
-          $('.biotop').animate({
-            left: '0'
-          }, 500);
-        } else {
-          $('.biotop').animate({
-            left: '-307px'
-          }, 500);
-        }
-        
-        // fade out old content
-        $('#bio img, #bio .name, #bio .loc, #bio .body').animate({
-          opacity: 0
-        }, 400, function() {
-          if ($(this).attr('class') == 'body') {
-            // get/set values
-            setBioDetails(obj);
-            handleBioPages();
-            obj.removeClass('default');
-          }
-        });
-        
-        // fade in new content
-        $('#bio img, #bio .name, #bio .loc, #bio .body').animate({
-          opacity: 1.0
-        }, 600, 'easeOutCubic');
-        
-      } else {
-        // exists in another position
-        
-        // fix height of animation rows to avoid movement of rows that follow
-          // ** to do: improve...
-          // need to detect whethe rup or down
-          // need to take into accoutn number of rows
-//        height = $('.row').outerHeight(true) + $('#bio').outerHeight(true);
-//        $(this).parent().prev().andSelf().wrapAll('<div style="height:'+height+'px" />');
+          if (!$('#bio').height()) {
+            // first click; no bio displayed yet
 
-        // set the indicator
-        if ($(this).is(':first-child')) {
-          $('.biotop').css('left','-614px');
-        } else if ($(this).is(':last-child')) {
-          $('.biotop').css('left','0');
-        } else {
-          $('.biotop').css('left','-307px');
-        }
-        
-        // clone display
-        $('#bio').addClass('original').clone().removeClass('original').addClass('default').attr('style','').insertAfter($(this).parent());
+            self.setBioDetails($(this));
+            self.handleBioPages();        
+            self.setBioIndicator($(this));
 
-        // fadeout and remove old display
-        $('#bio.original').animate({
-          opacity: 0,
-          height: '0'
-        }, 500, function() {
-          $(this).remove();
-        });
+            // position display
+            $(this).parent().after($('#bio'));
 
-        setBioDetails($(this));
-        handleBioPages();
+            // enable display
+            $('#bio').animate({
+              opacity: 1.0,
+              height: self.options.bioHt
+            }, 500, function() {
+              $(this).removeClass('default');
+            });
 
-        // fade in new display
-        $('#bio.default').animate({
-          opacity: 1.0,
-          height: ht
-        }, 500, function() {
-          $(this).removeClass('default');
-        });
-        
-      }
+          } else if ($(this).parent().next().attr('id') == 'bio') {
+            // exists in correct position
             
-    });
-  });
-  
-  // bio paging nav
-  $('#bio .nav a').live('click', function() {
-    if (!$(this).hasClass('disable')) {
-      obj = $(this);
-      body = obj.parent().prev().children('.body');
-      w = $('#about #bio .bodyOuter').width();
-      $('#bio .nav a').removeClass('disable');
-      if (obj.is(':first-child')) {
-        d = '+='+w+'px';
-      } else {
-        d = '-='+w+'px';
-      }
-      body.animate({
-          left: d
-        }, 500, function() {
-          // disable nav element for first/last ** to do: disable click handler; default to prev disabled
-          if ((body.css('left') == '0px') || (body.css('left') == -body.width()+w+'px')) {
-            obj.addClass('disable');
+            obj = $(this);
+            $('#bio').addClass('default');
+
+            self.setBioIndicator($(this),true);
+
+            // fade out old content
+            $('#bio img, #bio .name, #bio .loc, #bio .body').animate({
+              opacity: 0
+            }, 400, function() {
+              if ($(this).attr('class') == 'body') {
+                // get/set values
+                self.setBioDetails(obj);
+                self.handleBioPages();
+                obj.removeClass('default');
+              }
+            });
+
+            // fade in new content
+            $('#bio img, #bio .name, #bio .loc, #bio .body').animate({
+              opacity: 1.0
+            }, 600, 'easeOutCubic');
+
+          } else {
+            // exists in another position
+
+            // fix height of animation rows to avoid movement of rows that follow
+              // ** to do: improve...
+              // need to detect whethe rup or down
+              // need to take into accoutn number of rows
+    //        height = $('.row').outerHeight(true) + $('#bio').outerHeight(true);
+    //        $(this).parent().prev().andSelf().wrapAll('<div style="height:'+height+'px" />');
+
+            self.setBioIndicator($(this));
+
+            // clone display
+            $('#bio').addClass('original').clone().removeClass('original').addClass('default').attr('style','').insertAfter($(this).parent());
+
+            // fadeout and remove old display
+            $('#bio.original').animate({
+              opacity: 0,
+              height: '0'
+            }, 500, function() {
+              $(this).remove();
+            });
+
+            self.setBioDetails($(this));
+            self.handleBioPages();
+
+            // fade in new display
+            $('#bio.default').animate({
+              opacity: 1.0,
+              height: self.options.bioHt
+            }, 500, function() {
+              $(this).removeClass('default');
+            });
+
           }
+
         });
+        
+      });
+
+      // bio paging nav
+      $('#bio .nav a').live('click', function() {
+        if (!$(this).hasClass('disable')) {
+          obj = $(this);
+          body = obj.parent().prev().children('.body');
+          w = $('#about #bio .bodyOuter').width();
+          $('#bio .nav a').removeClass('disable');
+          if (obj.is(':first-child')) {
+            d = '+='+w+'px';
+          } else {
+            d = '-='+w+'px';
+          }
+          body.animate({
+              left: d
+            }, 500, function() {
+              // disable nav element for first/last ** to do: disable click handler; default to prev disabled
+              if ((body.css('left') == '0px') || (body.css('left') == -body.width()+w+'px')) {
+                obj.addClass('disable');
+              }
+            });
+        }
+      });
     }
-  });
+      
+    // Create shortcut for internal use
+    var $lb = $.leaderBio;
+    $lb.fn = $lb.prototype = {};
+    $lb.fn.extend = $lb.extend = $.extend;
+
+    $lb.fn.extend({
+
+      setBioSelected: function(obj) {
+        $('dl').children('.img1').children().hide().end().children(':first-child').show();
+        obj.children('.img1').children().hide().end().children(':last-child').show();
+      },
+
+      setBioIndicator: function(obj, animate) {
+        d = $('dl').outerWidth(true);
+        if (animate) {
+          if (obj.is(':first-child')) {
+            $('.biotop').animate({
+              left: '-'+d*2+'px'
+            }, 500);
+          } else if (obj.is(':last-child')) {
+            $('.biotop').animate({
+              left: '0'
+            }, 500);
+          } else {
+            $('.biotop').animate({
+              left: '-'+d+'px'
+            }, 500);
+          }
+        } else {
+          if (obj.is(':first-child')) {
+            $('.biotop').css('left','-'+d*2+'px');
+          } else if (obj.is(':last-child')) {
+            $('.biotop').css('left','0');
+          } else {
+            $('.biotop').css('left','-'+d+'px');
+          }
+        }  
+      },
+
+      setBioDetails: function(obj) {
+        $('#bio.default').find('.image').html(obj.children('.img2').html());
+        $('#bio.default').find('.name').html(obj.children('dt').html());
+        $('#bio.default').find('.loc').html(obj.children('.loc').html());
+        $('#bio.default').find('.body').html(obj.children('.bio').html());
+      },
+
+      handleBioPages: function() {
+        p = $('#bio.default').find('.body').find('section').length; // get number of bio 'pages' (<sections>)
+        $('#bio.default').find('.body').attr('style','');           // revert width to default
+        if (p>1) {
+          w = $('#bio.default').find('.body').width() * p;          // get width according to num of pages
+          $('#bio.default').find('.body').width(w);                 // set width
+          $('#bio.default').find('.nav').show();
+        } else {
+          $('#bio.default').find('.nav').hide();
+        }  
+      }
+    
+    });
+      
+  })(jQuery);
+
+  if ($('#about dl').length) $('#about').leaderBio();
   
 });
 
-/**
- * Functions for Leadership Bios
- */
- 
-function setBioDetails(obj) {
-  $('#bio.default').find('.image').html(obj.children('.img2').html());
-  $('#bio.default').find('.name').html(obj.children('dt').html());
-  $('#bio.default').find('.loc').html(obj.children('.loc').html());
-  $('#bio.default').find('.body').html(obj.children('.bio').html());
-}
-
-function handleBioPages() {
-  p = $('#bio.default').find('.body').find('section').length; // get number of bio 'pages' (<sections>)
-  $('#bio.default').find('.body').attr('style','');           // revert width to default
-  if (p>1) {
-    w = $('#bio.default').find('.body').width() * p;          // get width according to num of pages
-    $('#bio.default').find('.body').width(w);                 // set width
-    $('#bio.default').find('.nav').show();
-  } else {
-    $('#bio.default').find('.nav').hide();
-  }  
-}
 
 /**
  * Declare a global timer for enabling a sort of "onResizeEnd" event.
