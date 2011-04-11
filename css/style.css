@@ -3652,13 +3652,18 @@ textarea.error {
 #about #bio .nav a:last-child {
   background-position:  -24px 0;
 }
-#about #bio .nav a:hover,
-#about #bio .nav a.disable { 
+#about #bio .nav a:hover { 
   background-position:  0 -24px;
 }
-#about #bio .nav a:hover:last-child,
-#about #bio .nav a.disable:last-child {
+#about #bio .nav a:hover:last-child {
   background-position:  -24px -24px;
+}
+#about #bio .nav a.disable {
+  cursor:               default;
+  background-position:0 -48px;
+}
+#about #bio .nav a.disable:last-child {
+  background-position:-24px -48px;
 }
 
 /* / About */
