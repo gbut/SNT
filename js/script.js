@@ -1588,15 +1588,11 @@ $(document).ready(function(){
       // set selected
       $(this).children('.img1').children().hide().end().children(':last-child').show();
       
-      // reset bio nav
-      $('#bio .nav a:first-child').addClass('disable');
-      $('#bio .nav a:last-child').removeClass('disable');
-      
       if (!$('#bio').height()) {
         // first click; no bio displayed yet
 
         setBioDetails($(this));
-        handlePages();
+        handleBioPages();
         
         // set the indicator
         if ($(this).is(':first-child')) {
@@ -1646,7 +1642,7 @@ $(document).ready(function(){
           if ($(this).attr('class') == 'body') {
             // get/set values
             setBioDetails(obj);
-            handlePages();
+            handleBioPages();
             obj.removeClass('default');
           }
         });
@@ -1687,7 +1683,7 @@ $(document).ready(function(){
         });
 
         setBioDetails($(this));
-        handlePages();
+        handleBioPages();
 
         // fade in new display
         $('#bio.default').animate({
@@ -1698,29 +1694,31 @@ $(document).ready(function(){
         });
         
       }
-      
+            
     });
   });
   
   // bio paging nav
   $('#bio .nav a').live('click', function() {
-    obj = $(this);
-    body = obj.parent().prev().children('.body');
-    w = $('#about #bio .bodyOuter').width();
-    $('#bio .nav a').removeClass('disable');
-    if (obj.is(':first-child')) {
-      d = '+='+w+'px';
-    } else {
-      d = '-='+w+'px';
+    if (!$(this).hasClass('disable')) {
+      obj = $(this);
+      body = obj.parent().prev().children('.body');
+      w = $('#about #bio .bodyOuter').width();
+      $('#bio .nav a').removeClass('disable');
+      if (obj.is(':first-child')) {
+        d = '+='+w+'px';
+      } else {
+        d = '-='+w+'px';
+      }
+      body.animate({
+          left: d
+        }, 500, function() {
+          // disable nav element for first/last ** to do: disable click handler; default to prev disabled
+          if ((body.css('left') == '0px') || (body.css('left') == -body.width()+w+'px')) {
+            obj.addClass('disable');
+          }
+        });
     }
-    body.animate({
-        left: d
-      }, 500, function() {
-        // disable nav element for first/last ** to do: disable click handler; default to prev disabled
-        if ((body.css('left') == '0px') || (body.css('left') == -body.width()+w+'px')) {
-          obj.addClass('disable');
-        }
-      });
   });
   
 });
@@ -1736,15 +1734,15 @@ function setBioDetails(obj) {
   $('#bio.default').find('.body').html(obj.children('.bio').html());
 }
 
-function handlePages() {
-  $('#bio').find('.body').attr('style','');           // revert width to default
-  p = $('#bio').find('.body').find('section').length; // get number of bio 'pages' (<sections>)
+function handleBioPages() {
+  p = $('#bio.default').find('.body').find('section').length; // get number of bio 'pages' (<sections>)
+  $('#bio.default').find('.body').attr('style','');           // revert width to default
   if (p>1) {
-    w = $('#bio').find('.body').width() * p;          // get width according to num of pages
-    $('#bio').find('.body').width(w);                 // set width
-    $('#bio').find('.nav').show();
+    w = $('#bio.default').find('.body').width() * p;          // get width according to num of pages
+    $('#bio.default').find('.body').width(w);                 // set width
+    $('#bio.default').find('.nav').show();
   } else {
-    $('#bio').find('.nav').hide();
+    $('#bio.default').find('.nav').hide();
   }  
 }
 
