@@ -2182,6 +2182,13 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   position:             relative;
 }
 
+#risk .vidCont iframe {
+  width:                640px;
+  height:               352px;
+  margin:               4px 0 0 10px;
+  position:             relative;
+}
+
 #risk .vidCont .vidTitle {
   color:                #fff;
   font-size:            86%;
