@@ -3593,6 +3593,20 @@ textarea.error {
   margin:               60px 0 20px;
 }
 
+#about .intro h3 {
+  margin:               0 0 10px;
+}
+
+#about .intro h4 {
+  font-style:           italic;
+  margin-bottom:        10px;
+}
+
+#about .intro .sig {
+  position:             relative;
+  left:                 -10px;
+}
+
 #about .row {
   margin-bottom:        6px;
 }
