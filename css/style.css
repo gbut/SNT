@@ -3646,7 +3646,7 @@ textarea.error {
   overflow:hidden;
 }
 #about #bio.default {
-  height:0;
+  height:               0;
   -moz-opacity:         0;
   -ms-filter:           "alpha(opacity=0)";
   filter:               alpha(opacity=0);

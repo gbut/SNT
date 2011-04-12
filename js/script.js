@@ -1614,7 +1614,6 @@ $(document).ready(function(){
             // first click; no bio displayed yet
 
             self.setBioDetails($(this));
-            self.handleBioPages();        
             self.setBioIndicator($(this));
 
             // position display
@@ -1643,7 +1642,6 @@ $(document).ready(function(){
               if ($(this).attr('class') == 'body') {
                 // get/set values
                 self.setBioDetails(obj);
-                self.handleBioPages();
                 obj.removeClass('default');
               }
             });
@@ -1666,8 +1664,9 @@ $(document).ready(function(){
             self.setBioIndicator($(this));
 
             // clone display
+            $('#bio').find('.nav').hide();
             $('#bio').addClass('original').clone().removeClass('original').addClass('default').attr('style','').insertAfter($(this).parent());
-
+            
             // fadeout and remove old display
             $('#bio.original').animate({
               opacity: 0,
@@ -1677,7 +1676,6 @@ $(document).ready(function(){
             });
 
             self.setBioDetails($(this));
-            self.handleBioPages();
 
             // fade in new display
             $('#bio.default').animate({
@@ -1688,18 +1686,16 @@ $(document).ready(function(){
             });
 
           }
-
         });
-        
       });
 
       // bio paging nav
       $('#bio .nav a').live('click', function() {
         if (!$(this).hasClass('disable')) {
+          $('#bio .nav a').addClass('disable'); // disable clicking while animating
           obj = $(this);
           body = obj.parent().prev().children('.body');
           w = $('#about #bio .bodyOuter').width();
-          $('#bio .nav a').removeClass('disable');
           if (obj.is(':first-child')) {
             d = '+='+w+'px';
           } else {
@@ -1708,13 +1704,15 @@ $(document).ready(function(){
           body.animate({
               left: d
             }, 500, function() {
-              // disable nav element for first/last ** to do: disable click handler; default to prev disabled
+              $('#bio .nav a').removeClass('disable'); // reset links
+              // disable nav element for first/last              
               if ((body.css('left') == '0px') || (body.css('left') == -body.width()+w+'px')) {
                 obj.addClass('disable');
               }
             });
         }
       });
+      
     }
       
     // Create shortcut for internal use
@@ -1761,18 +1759,21 @@ $(document).ready(function(){
         $('#bio.default').find('.name').html(obj.children('dt').html());
         $('#bio.default').find('.loc').html(obj.children('.loc').html());
         $('#bio.default').find('.body').html(obj.children('.bio').html());
+        this.handleBioPages();
       },
 
       handleBioPages: function() {
-        p = $('#bio.default').find('.body').find('section').length; // get number of bio 'pages' (<sections>)
-        $('#bio.default').find('.body').attr('style','');           // revert width to default
+        p = $('#bio.default').find('.body').find('section').length;         // get number of bio 'pages' (<sections>)
+        alert(p);
+        $('#bio.default').find('.body').attr('style','');                   // revert width to default
         if (p>1) {
-          w = $('#bio.default').find('.body').width() * p;          // get width according to num of pages
-          $('#bio.default').find('.body').width(w);                 // set width
+          w = $('#bio.default').find('.body').width() * p;                  // get width according to num of pages
+          $('#bio.default').find('.body').width(w);                         // set width
+          $('#bio.default').find('.nav a:first-child').addClass('disable'); // set prev to disabled
           $('#bio.default').find('.nav').show();
         } else {
           $('#bio.default').find('.nav').hide();
-        }  
+        }
       }
     
     });
