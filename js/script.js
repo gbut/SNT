@@ -234,11 +234,11 @@ $(document).ready(function(){
           url: "/careers/get_employee_profiles.txt",
           context: this,
           success: function(data){
-            this.bios = $.parseJSON(data);
+            //this.bios = $.parseJSON(data);
           }
         });
       }
-
+return;
       // attach behaviors
       this.people.children().each(function(i){
         // determine leftPos of panel needed to center this image
@@ -348,7 +348,7 @@ $(document).ready(function(){
               easing: o.options.easing,
               queue: false
             }).animate({
-                opacity: 1,
+                opacity: 1
               },
               {
                 duration: o.options.fadeDur,
@@ -923,11 +923,11 @@ $(document).ready(function(){
     var defaults = {
       mapW: 940,
       mapH: 500,
-      durOver: 300,
-      durOut: 500,
+      durOver: 150,
+      durOut: 300,
       attr: {
         fill: "#a6a8ab",
-        stroke: "#fff",
+        stroke: "#f00",
         "stroke-width": 0.3,
         "stroke-linejoin": "round"
       },

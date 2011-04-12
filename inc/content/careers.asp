@@ -88,8 +88,8 @@
         <p>Redefine how companies manage and understand catastrophic risk.</p>
       </div>
       <div class="col3">
-        <div class="icon iconPlanetary">[Planetary Solutions]</div>
-        <h4>Planetary Solutions</h4>
+        <div class="icon iconPlanetary">[Earth Sciences]</div>
+        <h4>Earth Sciences</h4>
         <p>Quantify impacts with 50,000-year weather models, terrorism game theory, and human longevity models.</p>
       </div>
       <div class="col3">
