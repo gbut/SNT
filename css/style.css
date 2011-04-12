@@ -1621,6 +1621,9 @@ a.close:active {
   bottom:               -19px;
   display:              none;
 }
+.ie7 #main ul.tabs li a .pointer {
+  bottom:               -18px;
+}
 #main ul.tabs li a .pointer .inner {
   text-indent:          -9999px;
   width:                25px;
@@ -2013,10 +2016,15 @@ aside .ui-tabs ul.ui-tabs-nav li,
   margin:               0;
   background:           none;
   border:               none;
-  display:              inline;
+  display:              inline-block;
   top:                  0;
   float:                none;
   cursor:               pointer;
+}
+.ie7 aside .ui-tabs ul.ui-tabs-nav li,
+.ie7 #risk .vidCont.ui-tabs ul.ui-tabs-nav li {
+  zoom:                 1;
+  display:              inline;
 }
 aside .ui-tabs ul.ui-tabs-nav li.ui-tabs-selected,
 aside .ui-tabs ul.ui-tabs-nav li.ui-state-active,
@@ -2033,11 +2041,11 @@ aside .ui-tabs ul.ui-tabs-nav li a,
   width:                9px;
   margin:               0 5px;
   padding:              0;
-  display:              inline-block;
+  display:              block;
   background-position:  0 -60px;
   float:                none;
   cursor:               pointer;
-  overflow:hidden;
+  overflow:             hidden;
 }
 aside .ui-tabs ul.ui-tabs-nav li.ui-tabs-selected a,
 aside .ui-tabs ul.ui-tabs-nav li.ui-state-active a,
@@ -2163,6 +2171,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #risk section.iWorldMap #svgmap {
   height:               500px;
   position:             relative;
+  background:           #fff url(../img/spinner.gif) 454px 234px no-repeat;
 }
 
 #risk_map_nav {
@@ -3616,7 +3625,7 @@ textarea.error {
   font-size:            110%;
   color:                #565656;
   position:             relative;
-  z-index:              1;
+  z-index:              10;
 }
 
 #about dd.img1 {
@@ -3625,7 +3634,7 @@ textarea.error {
   position:             absolute;
   top:                  0;
   right:                0;
-  z-index:              0;
+  z-index:              1;
 }
 
 #about dd.loc,
