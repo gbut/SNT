@@ -927,7 +927,7 @@ return;
       durOut: 300,
       attr: {
         fill: "#a6a8ab",
-        stroke: "#f00",
+        stroke: "#ffffff",
         "stroke-width": 0.3,
         "stroke-linejoin": "round"
       },
@@ -994,6 +994,7 @@ return;
       setup: function() {
         // define Raphael object
         this.r = Raphael(this.container.attr('id'), this.options.mapW, this.options.mapH);
+        this.r.rect(0, 0, this.options.mapW, this.options.mapH).attr({ fill: '#fff', 'stroke-width': 0 });
         
         // build map and attach behaviors
         var country, group;
