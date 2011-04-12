@@ -1640,9 +1640,9 @@ $(document).ready(function(){
               opacity: 0
             }, 400, function() {
               if ($(this).attr('class') == 'body') {
-                // get/set values
+                 // get/set values
                 self.setBioDetails(obj);
-                obj.removeClass('default');
+                $('#bio').removeClass('default');
               }
             });
 
@@ -1763,8 +1763,7 @@ $(document).ready(function(){
       },
 
       handleBioPages: function() {
-        p = $('#bio.default').find('.body').find('section').length;         // get number of bio 'pages' (<sections>)
-        alert(p);
+        p = $('#bio.default').find('section').length;         // get number of bio 'pages' (<sections>)
         $('#bio.default').find('.body').attr('style','');                   // revert width to default
         if (p>1) {
           w = $('#bio.default').find('.body').width() * p;                  // get width according to num of pages
