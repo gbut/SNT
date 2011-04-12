@@ -234,11 +234,11 @@ $(document).ready(function(){
           url: "/careers/get_employee_profiles.txt",
           context: this,
           success: function(data){
-            //this.bios = $.parseJSON(data);
+            this.bios = $.parseJSON(data);
           }
         });
       }
-return;
+
       // attach behaviors
       this.people.children().each(function(i){
         // determine leftPos of panel needed to center this image

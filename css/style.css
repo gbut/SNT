@@ -2759,6 +2759,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 /*  background-position:  -719px 0;*/
 }
 
+.ie7 #careers #team_panel ul li a,
 .ie8 #careers #team_panel ul li a {
   background:           #fff;
   -moz-opacity:         0;
