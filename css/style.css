@@ -290,7 +290,9 @@ section {
   -moz-border-radius:   4px;
   border-radius:        4px;
 }
+.ie7 .btn,
 .ie8 .btn,
+.ie7 #bg_chat .btnChatCont a,
 .ie8 #bg_chat .btnChatCont a {
   letter-spacing:       0.01em;
 }
@@ -749,6 +751,7 @@ header #login form h3 {
   padding:              3px 0 2px 75px;
   background:           transparent url(../img/logo_sm.png) 0 10px no-repeat;
 }
+.ie7 header #login form h3,
 .ie8 header #login form h3 {
   letter-spacing:       0;
 }
@@ -776,6 +779,7 @@ header #login form ul.benefits li h4 {
   letter-spacing:       0.03em;
   padding-bottom:       4px;
 }
+.ie7 header #login form ul.benefits li h4,
 .ie8 header #login form ul.benefits li h4 {
   letter-spacing:       0;
 }
@@ -835,6 +839,8 @@ header #login form input[type=checkbox] {
   top:                  -1px;
   left:                 0;
 }
+.ie7 header #login form input[type=text],
+.ie7 header #login form input[type=password],
 .ie8 header #login form input[type=text],
 .ie8 header #login form input[type=password] {
   padding:              0 5px 6px;
@@ -911,6 +917,7 @@ header nav ul.sf-menu li a.pn {
   letter-spacing:       0.03em;
   padding:              3px 30px 2px;
 }
+.ie7 header nav ul.sf-menu li a.pn,
 .ie8 header nav ul.sf-menu li a.pn {
   letter-spacing:       0;
 }
@@ -1030,6 +1037,7 @@ header nav ul.sf-menu li ul li ul.snavItems li a h4 {
   letter-spacing:       0.03em;
   margin-bottom:        5px;
 }
+.ie7 header nav ul.sf-menu li ul li ul.snavItems li a h4,
 .ie8 header nav ul.sf-menu li ul li ul.snavItems li a h4 {
   letter-spacing:       0;
 }
@@ -1065,6 +1073,7 @@ header nav ul.sf-menu li ul.sn.risk li .subnavRt h4 {
   text-align:           center;
   margin:               0 0 10px;
 }
+.ie7 header nav ul.sf-menu li ul.sn.risk li .subnavRt h4,
 .ie8 header nav ul.sf-menu li ul.sn.risk li .subnavRt h4 {
   letter-spacing:       0;
 }
@@ -1079,6 +1088,7 @@ header nav ul.sf-menu li ul.sn.careers li h3 {
   padding-bottom:       10px;
   border-bottom:        1px solid #c0c0c0;
 }
+.ie7 header nav ul.sf-menu li ul.sn.careers li h3,
 .ie8 header nav ul.sf-menu li ul.sn.careers li h3 {
   letter-spacing:       0;
 }
@@ -1165,6 +1175,7 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
   letter-spacing:       0.03em;
   margin-bottom:        8px;
 }
+.ie7 #t06 .hd h2,
 .ie8 #t06 .hd h2 {
   letter-spacing:       0;
 }
@@ -1231,6 +1242,7 @@ footer a {
   letter-spacing:       0.03em;
   color:                #181818;
 }
+.ie7 #content h3,
 .ie8 #content h3 {
   letter-spacing:       0;
 }
@@ -1425,6 +1437,10 @@ a.close:active {
   padding:              0 5px;
   display:              inline-block;
 }
+.ie7 #presenterNav ul li {
+  zoom:                 1;
+  display:              inline;
+}
 
 #presenterNav ul li a {
   color:                #a1a1a1;
@@ -1557,6 +1573,7 @@ a.close:active {
   -pie-background:      linear-gradient(#f6f5f5, #d1d0d0);
   behavior: url(/js/libs/PIE/PIE.htc);
 }
+.ie7 #main ul.tabs li a,
 .ie8 #main ul.tabs li a {
   letter-spacing:       0;
 }
@@ -1638,11 +1655,13 @@ a.close:active {
   display:              block;
 }
 
+#main #legalTabs .panel,
 #main .ui-tabs-panel {
   color:                #686767;
   font:                 108%/167% Helvetica,sans-serif;
   padding:              0;
   background:           #fff;
+  position:             relative;
 }
 
 /* / General Tabs */
@@ -1742,6 +1761,9 @@ aside .quote .author .title {
   font:                 400 100%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.03em;
 }
+.ie7 aside .quote,
+.ie7 aside .author,
+.ie7 aside .author .title,
 .ie8 aside .quote,
 .ie8 aside .author,
 .ie8 aside .author .title {
@@ -1873,7 +1895,7 @@ aside .benefit2 h4 em {
 }
 
 aside .share {
-  width:                168px;
+  width:                172px;
   margin:               15px auto 0;
 }
 #t10 aside .share {
@@ -1891,6 +1913,7 @@ aside .share .label {
   color:                #5c5c5c;
   padding-top:          10px;
 }
+.ie7 aside .share .label,
 .ie8 aside .share .label {
   letter-spacing:       0;
 }
@@ -2455,6 +2478,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   letter-spacing:       0.03em;
   margin-bottom:        4px;
 }
+.ie7 #careers h4,
 .ie8 #careers h4 {
   letter-spacing:       0;
 }
@@ -2591,6 +2615,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   letter-spacing:       0.03em;
   padding-left:         201px;
 }
+.ie7 #careers .careersHomeIntro .rt blockquote,
 .ie8 #careers .careersHomeIntro .rt blockquote {
   letter-spacing:       0;
 }
@@ -2606,6 +2631,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   font:                 400 68%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   letter-spacing:       0.02em;
 }
+.ie7 #careers .careersHomeIntro .rt blockquote p.attr,
 .ie8 #careers .careersHomeIntro .rt blockquote p.attr {
   letter-spacing:       0;
 }
@@ -2966,8 +2992,14 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   border-radius:        4px 6px;
   behavior: url(/js/libs/PIE/PIE.htc);
 }
+.ie7 #job_listings .footer,
 .ie8 #job_listings .footer {
   letter-spacing:       0;
+}
+.ie7 #job_listings .footer { /* stubborn IE7 */
+  margin:               0 0 36px;
+  position:             relative;
+  top:                  36px;
 }
 
 #job_listings .footer .subtextOuter {
@@ -3046,6 +3078,7 @@ display:none;
   color:                #13587e;
   margin-bottom:        15px;
 }
+.ie7 #job_detail h3,
 .ie8 #job_detail h3 {
   letter-spacing:       0;
 }
@@ -3108,6 +3141,7 @@ textarea.error {
   letter-spacing:       0.03em;
   margin-bottom:        10px;
 }
+.ie7 #job_apply h2,
 .ie8 #job_apply h2 {
   letter-spacing:       0;
 }
@@ -3132,6 +3166,7 @@ textarea.error {
   letter-spacing:       0.03em;
   padding:              0 0 10px 20px;
 }
+.ie7 #job_apply legend,
 .ie8 #job_apply legend {
   letter-spacing:       0;
 }
@@ -3152,6 +3187,11 @@ textarea.error {
   height:               27px;
   margin:               0 10px 0 0;
   display:              inline-block;
+}
+.ie7 #job_apply label,
+.ie7 #contact label {
+  position:             relative;
+  top:                  8px;
 }
 
 #job_apply input,
@@ -3814,6 +3854,7 @@ textarea.error {
   top:                  0;
   left:                 -10px;
 }
+.ie7 #bg_chat .hd h2,
 .ie8 #bg_chat .hd h2 {
   letter-spacing:       0.03em;
 }
