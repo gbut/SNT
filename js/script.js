@@ -1653,14 +1653,7 @@ return;
 
           } else {
             // exists in another position
-
-            // fix height of animation rows to avoid movement of rows that follow
-              // ** to do: improve...
-              // need to detect whethe rup or down
-              // need to take into accoutn number of rows
-    //        height = $('.row').outerHeight(true) + $('#bio').outerHeight(true);
-    //        $(this).parent().prev().andSelf().wrapAll('<div style="height:'+height+'px" />');
-
+            
             self.setBioIndicator($(this));
 
             // clone display
