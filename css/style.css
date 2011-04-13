@@ -2144,14 +2144,26 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 /*  background-color:     #f3f3f3;*/
 }
 
+#risk section.iWorldMap #mapinfo_back_to_models {
+  position:             absolute;
+  top:                  -28px;
+  left:                 10px;
+  background:red;
+  display:              none;
+}
+
 #risk section.iWorldMap #mapinfo {
   width:                960px;
   height:               123px;
   position:             absolute;
   top:                  -10px;
   left:                 -10px;
-  background:           #fff;
   border-bottom:        1px solid #999;
+  overflow:             hidden;
+  background:           #ffffff;
+  background:           -moz-linear-gradient(top, #ffffff 0%, #d5d5d5 100%);
+  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d5d5d5));
+  -pie-background:      linear-gradient(#ffffff, #d5d5d5);
   -webkit-border-radius:4px 4px 0 0;
   -moz-border-radius:   4px 4px 0 0;
   border-radius:        4px 4px 0 0;
@@ -2161,30 +2173,78 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
-#risk section.iWorldMap #mapinfo ul {
+#risk section.iWorldMap #mapinfo_panels {
+  width:                960px;
+  height:               246px;
+  position:             relative;
+  top:                  0;
+  left:                 0;
+}
+
+#risk section.iWorldMap #mapinfo_panels .panel {
+  width:                960px;
+  height:               123px;
+  position:             relative;
+  overflow:             hidden;
+}
+
+#risk section.iWorldMap #mapinfo .globalModels {
+  padding:              6px 0;
+}
+
+#risk section.iWorldMap #mapinfo .globalModels .lt {
+  width:                450px;
+  height:               109px;
+  padding:              2px 0 0 34px;
+  border-right:         1px solid #b0b0b0;
+  float:                left;
+}
+#risk section.iWorldMap #mapinfo .globalModels .rt {
+  width:                447px;
+  padding:              2px 14px 0;
+  float:                left;
+}
+
+#risk section.iWorldMap #mapinfo .globalModels .lt ul {
+  width:                450px;
+  margin:               0;
+  list-style:           none;
+}
+
+#risk section.iWorldMap #mapinfo .globalModels .lt ul li {
+  width:                135px;
+  padding:              0 15px 5px 0;
+  float:                left;
+}
+
+#risk section.iWorldMap #mapinfo .globalModels #model_all {
+  font-weight:          bold;
+}
+
+#risk section.iWorldMap #mapinfo .countryInfo ul {
   margin:               0;
   padding:              23px 18px 0;
   list-style:           none;
 }
 
-#risk section.iWorldMap #mapinfo ul li {
+#risk section.iWorldMap #mapinfo .countryInfo ul li {
   width:                130px;
   padding:              0 12px;
   float:                left;
 }
 
-#risk section.iWorldMap #mapinfo ul li dl dt {
+#risk section.iWorldMap #mapinfo .countryInfo ul li dl dt {
   color:                #3a3939;
   text-align:           center;
   text-transform:       uppercase;
   font:                 bold 85%/100% Helvetica,sans-serif;
 }
 
-#risk section.iWorldMap #mapinfo ul li dl dd {
+#risk section.iWorldMap #mapinfo .countryInfo ul li dl dd {
   text-align:           center;
 }
 
-#risk section.iWorldMap #mapinfo ul li dl dd img {
+#risk section.iWorldMap #mapinfo .countryInfo ul li dl dd img {
   margin:               0 auto 4px;
   position:             relative;
   top:                  -5px;
@@ -2195,13 +2255,6 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   height:               500px;
   position:             relative;
   background:           #fff url(../img/spinner.gif) 454px 234px no-repeat;
-}
-
-#risk_map_nav {
-  position:             absolute;
-  bottom:               10px;
-  left:                 10px;
-  background:#fff;
 }
 
 #risk section h3 {

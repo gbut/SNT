@@ -12,53 +12,64 @@
     <section class="iWorldMap clearfix">
 
       <!-- + raphael -->
+      <a href="#" id="mapinfo_back_to_models">RMS Global Models</a>
       <div id="mapinfo">
-        <ul class="clearfix">
-          <li><dl>
-            <dd><img id="map_flag" src="" /></dd>
-            <dt id="map_country_name">[country name]</dt>
-          </dl></li>
-          <li><dl>
-            <dt>GDP</dt>
-            <dd id="map_gdp">1.2 Billion</dd>
-          </dl></li>
-          <li><dl>
-            <dt>Economic Exposure</dt>
-            <dd id="map_exposure">3.6 Billion</dd>
-          </dl></li>
-          <li><dl>
-            <dt>Population</dt>
-            <dd id="map_population">2.4 Million</dd>
-          </dl></li>
-          <li><dl>
-            <dt>Life Expectancy</dt>
-            <dd id="map_lifeexp">75-80</dd>
-          </dl></li>
-          <li><dl>
-            <dt>Landmass</dt>
-            <dd id="map_landmass">3,300,171 sq. mi.</dd>
-          </dl></li>
-        </ul>
+        <div id="mapinfo_panels">
+          <!-- + global models -->
+          <div class="panel globalModels clearfix">
+            <div class="lt">
+              <h4>RMS Global Models</h4>
+              <ul class="clearfix">
+                <li><a href="#" id="model_all">All Models</a></li>
+                <li><a href="#" id="model_earthquakes">Earthquakes</a></li>
+                <li><a href="#" id="model_cyclones">Tropical Cyclones</a></li>
+                <li><a href="#" id="model_scs">Severe Convective Storms</a></li>
+                <li><a href="#" id="model_windstorms">Windstorms</a></li>
+                <li><a href="#" id="model_winterstorms">Winter Storms</a></li>
+                <li><a href="#" id="model_fire">Fire</a></li>
+                <li><a href="#" id="model_stormsurge">Storm Surge</a></li>
+                <li><a href="#" id="model_floods">Floods</a></li>
+                <li><a href="#" id="model_terrorism">Terrorism</a></li>
+                <li><a href="#" id="model_disease">Infectious Disease</a></li>
+              </ul>
+            </div>
+            <div class="rt">
+              <h5 id="model_desc_hd">All Models: Duis auteum vel eum</h5>
+              <p id="model_desc_body">Lorem ipsum dolor sit amet consectetuer adipiscing nonummy elit. Lorem ipsum dolor sit amet consectetuer adipiscing nonummy elit.</p>
+            </div>
+          </div>
+          <!-- / global models -->
+
+          <!-- + country info -->
+          <div class="panel countryInfo">
+            <ul class="clearfix">
+              <li><dl>
+                <dd><img id="map_flag" src="" /></dd>
+                <dt id="map_country_name">[country name]</dt>
+              </dl></li>
+              <li><dl>
+                <dt>Economic Exposure</dt>
+                <dd id="map_exposure">3.6 Billion</dd>
+              </dl></li>
+              <li><dl>
+                <dt>Population</dt>
+                <dd id="map_population">2.4 Million</dd>
+              </dl></li>
+              <li><dl>
+                <dt>Life Expectancy</dt>
+                <dd id="map_lifeexp">75-80</dd>
+              </dl></li>
+              <li><dl>
+                <dt>Landmass</dt>
+                <dd id="map_landmass">3,300,171 sq. mi.</dd>
+              </dl></li>
+            </ul>
+          </div>
+          <!-- / country info -->
+        </div>
       </div>
       <div id="svgmap"></div>
       <!-- / raphael -->
-
-      <!-- + map nav -->
-      <div id="risk_map_nav" style="display:none;">
-        <h4>Natural Catastrophe Risk Models</h4>
-        <ul>
-          <li><a href="#" id="model_cyclone">Cyclone</a></li>
-          <li><a href="#" id="model_earthquake">Earthquake</a></li>
-          <li><a href="#" id="model_flood">Flood</a></li>
-          <li><a href="#" id="model_hurricane">Hurricane</a></li>
-          <li><a href="#" id="model_inlandriverflood">Inland River Flood</a></li>
-          <li><a href="#" id="model_severconvection">Sever Convection</a></li>
-          <li><a href="#" id="model_typhoon">Typhoon</a></li>
-          <li><a href="#" id="model_winterstorm">Winterstorm</a></li>
-          <li><a href="#" id="model_windstorm">Windstorm</a></li>
-        </ul>
-      </div>
-      <!-- / map nav -->
 
     </section>
 

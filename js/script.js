@@ -925,6 +925,7 @@ $(document).ready(function(){
       mapH: 500,
       durOver: 150,
       durOut: 300,
+      durPanels: 400,
       attr: {
         fill: "#88d0ee",
         stroke: "#ffffff",
@@ -959,12 +960,13 @@ $(document).ready(function(){
       this.infoDisplay        = {
         flag:         $('#map_flag'),
         cname:        $('#map_country_name'),
-        gdp:          $('#map_gdp'),
         exposure:     $('#map_exposure'),
         population:   $('#map_population'),
         lifeexp:      $('#map_lifeexp'),
         landmass:     $('#map_landmass')
       };
+      this.panels             = $('#mapinfo_panels');
+      this.backToModels       = $('#mapinfo_back_to_models');
       
       // data; dynamically created elements
       if (typeof countryData == 'undefined') return;
@@ -974,8 +976,12 @@ $(document).ready(function(){
       
       // other vars
       this.flagPath           = '/img/flags/70/';
+      this.panelH             = this.panels.find('.panel').eq(0).outerHeight();
       
-      // setup
+      // non-map behaviors
+      this.backToModels.click(function(e){ self.showPanel(0); });
+      
+      // map setup
       this.setup();
     };
 
@@ -1082,9 +1088,26 @@ $(document).ready(function(){
         // fade previously active country, if any
         if (oldCC) $(this.groups[oldCC][0].node).triggerHandler('mouseleave');
         
-        // update data in infobar
+        // update data in infobar and show country panel
         this.infoDisplay.flag.attr('src', this.flagPath + this.countryData[countryCode].flag);
         this.infoDisplay.cname.html(this.countryData[countryCode].name);
+        this.showPanel(1);
+      },
+
+      /**
+       * Shows a particular panel in the infobar.
+       *
+       * @name showPanel
+       * @type undefined
+       */
+      showPanel: function(panel) {
+        var p = panel || 0;
+        this.panels.animate({
+          top: -(p * this.panelH)
+        }, this.options.durPanels);
+        
+        if (p) this.backToModels.fadeIn(this.options.durPanels);
+          else this.backToModels.fadeOut(this.options.durPanels);
       }
 
     });
