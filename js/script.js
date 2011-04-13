@@ -1519,12 +1519,11 @@ return;
         loc = loc.split(' ')[0];      // parse for location (first class)
       
         // fade out previous content - ** to do: IMPROVE (xfade, only fade necessary elements); limit func to run once only **
-        $('#popup .icon, #popup .details, #popup .mapviewer').fadeTo(500, 0.0, 'easeOutExpo', function() {
-          $('#popup .icon').removeClass().addClass('icon '+loc);        // get/set icon
-          $('#popup .details').html($('.office a.'+loc).html());        // get/set details
+        $('#popup .details, #popup .mapviewer').fadeTo(500, 0.0, 'easeOutExpo', function() {
+          $('#popup .details').html('<div class="hd">'+$('.office a.'+loc).prev().html()+'</div>' + $('.office a.'+loc).html());        // get/set details
           $('#popup .mapviewer').html($('#mapviewers .'+loc).html());   // get/set map
         });
-        $('#popup .icon, #popup .details, #popup .mapviewer').fadeTo(500, 1.0, 'easeOutExpo'); // fade in new content
+        $('#popup .details, #popup .mapviewer').fadeTo(500, 1.0, 'easeOutExpo'); // fade in new content
         $('#popup .close').click(function() {
             $('#popup').fadeTo(1000, 0.0, 'easeOutExpo');
           }

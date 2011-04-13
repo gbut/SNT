@@ -108,11 +108,11 @@
     </div>
     <div class="mask"></div>
     <div id="popup">
-      <div class="icon"></div>
       <div class="details"></div>
-<!--      <a href="#" title="Go to Google Maps" class="link">Google Map »</a> -->
+      <div class="divider"></div>
       <div class="mapviewer"></div>
       <a href="#" title="Close" class="close">X</a>
+      <div class="mask"></div>
     </div>
   </div>
 
@@ -254,28 +254,114 @@
       <iframe id="mapviewer" Name="mapFrame" scrolling="no" width="196" height="141" frameborder="0" src="http://www.bing.com/maps/embed/?lvl=16&amp;cp=37.53999640444354~-122.06300714022763&amp;sty=h&amp;draggable=true&amp;v=2&amp;dir=0&amp;cid=34BDEBAF3189F2E4!117&amp;FORM=LMLTEW&amp;emid=440461e4-8ce2-1fea-0673-672c14af25fa&amp;w=196&amp;h=141"></iframe>
 -->
   
-      <a href="http://bit.ly/rms_map_newark"><img src="/img/temp_map_newark.jpg" width="196" height="141" /></a>
+      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
       
       <div class="maplinks">
-        <!--
-          <a class="largerMap" href="http://www.bing.com/maps/?mm_embed=map&amp;cp=37.53999640444354~-122.06300714022763&amp;lvl=16&amp;sty=h" target="_blank">View Larger Map</a>
-        -->
-        <a class="largerMap" href="http://bit.ly/rms_map_newark">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h">Get Directions</a>
+        <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h" title="Get Directions">Get Directions</a>
       </div>
       
     </div>
 
     <div class="peoria">
 
-      <iframe id="mapviewer" Name="mapFrame" scrolling="no" width="196" height="141" frameborder="0" src="http://www.bing.com/maps/embed/?lvl=16&amp;cp=37.53999640444354~-122.06300714022763&amp;sty=h&amp;draggable=true&amp;v=2&amp;dir=0&amp;cid=34BDEBAF3189F2E4!117&amp;FORM=LMLTEW&amp;emid=440461e4-8ce2-1fea-0673-672c14af25fa&amp;w=196&amp;h=141"></iframe>
-
+      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+    
       <div class="maplinks">
-        <!--
-          <a class="largerMap" href="http://www.bing.com/maps/?mm_embed=map&amp;cp=37.53999640444354~-122.06300714022763&amp;lvl=16&amp;sty=h" target="_blank">View Larger Map</a>
-        -->
-        <a class="largerMap" href="http://bit.ly/rms_map_newark">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h">Get Directions</a>
+        <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h" title="Get Directions">Get Directions</a>
+      </div>
+
+    </div>
+        
+    <div class="bloomington">
+
+      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+    
+      <div class="maplinks">
+        <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h" title="Get Directions">Get Directions</a>
+      </div>
+
+    </div>
+    
+    <div class="hackensack">
+
+      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+    
+      <div class="maplinks">
+        <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h" title="Get Directions">Get Directions</a>
+      </div>
+
+    </div>
+    <div class="bermuda">
+
+      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+    
+      <div class="maplinks">
+        <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h" title="Get Directions">Get Directions</a>
+      </div>
+
+    </div>
+    <div class="london">
+
+      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+    
+      <div class="maplinks">
+        <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h" title="Get Directions">Get Directions</a>
+      </div>
+
+    </div>
+    <div class="paris">
+
+      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+    
+      <div class="maplinks">
+        <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h" title="Get Directions">Get Directions</a>
+      </div>
+
+    </div>
+    <div class="zurich">
+
+      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+    
+      <div class="maplinks">
+        <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h" title="Get Directions">Get Directions</a>
+      </div>
+
+    </div>
+    <div class="noida">
+
+      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+    
+      <div class="maplinks">
+        <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h" title="Get Directions">Get Directions</a>
+      </div>
+
+    </div>
+    <div class="beijing">
+
+      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+    
+      <div class="maplinks">
+        <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h" title="Get Directions">Get Directions</a>
+      </div>
+
+    </div>
+    <div class="tokyo">
+
+      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+    
+      <div class="maplinks">
+        <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.53999640444354~-122.06300714022763&amp;rtp=~pos.37.53999640444354_-122.06300714022763_Your+location&amp;lvl=16&amp;sty=h" title="Get Directions">Get Directions</a>
       </div>
 
     </div>

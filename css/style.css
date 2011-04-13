@@ -3224,7 +3224,8 @@ textarea.error {
   float:                left;
 }
 
-#contact .office .tel {
+#contact .office .tel,
+#contact #popup .details .tel {
   margin-top:           4px;
 }
 
@@ -3416,10 +3417,13 @@ textarea.error {
 }
 
 #contact #offices .highlight,
-#contact #offices a.highlight,
-#contact #clocks a.highlight {
-  color:#c3151c;
+#contact #offices a.highlight {
+  color:                #205090;
 }
+#contact #clocks a.highlight {
+  color:                #70abfb;
+}
+
 #contact #markers a.highlight {
  /*background-position:   -18px 0;*/ 
  -moz-opacity:          1.00;
@@ -3452,57 +3456,77 @@ textarea.error {
 }
 
 #contact #popup {
-  width:435px;
-  height:170px;
-  padding:0 10px;
-  border:1px solid #000;
-  background:#ccc;
-  position:absolute;
-  top:150px;
-  left:244px;
-  -moz-opacity:         0;
+  width:                314px;
+  height:               153px;
+  position:             absolute;
+  top:                  161px;
+  left:                 323px;
+  -moz-opacity:         .0;
   -ms-filter:           "alpha(opacity=0)";
   filter:               alpha(opacity=0);
-  opacity:0;
-  -webkit-border-radius:10px;
-  -moz-border-radius:   10px;
-  border-radius:        10px;
+  opacity:              .0;
 }
 
-#contact #popup .icon,
-#contact #popup .details,
-/*#contact #popup .link,*/
-#contact #popup .mapviewer {
-  border:1px solid #eee;
-  float:left;
-  margin:5px 8px 5px 0;
-  padding:2px;
+#contact #popup .mask {
+  width:                294px;
+  height:               133px;
+  position:             absolute;
+  top:                  0;
+  border:               10px solid #fff;
+  background:           #666;
+  -moz-opacity:         .30;
+  -ms-filter:           "alpha(opacity=30)";
+  filter:               alpha(opacity=30);
+  opacity:              .30;
 }
-#contact #popup .icon {
-  width:32px;
-  height:32px;
+
+#contact #popup .details,
+#contact #popup .divider,
+#contact #popup .mapviewer {
+  font-size:            80%;
+  font-weight:          bold;
+  color:                #fff;
+  margin:               10px 0;
+  float:                left;
+  position:             relative;
+  z-index:              10;
 }
 #contact #popup .details {
-  width:165px;
-  height:140px;
-  border:0;
+  width:                104px;
+  height:               103px;
+  margin-left:          10px;
+  padding:              15px;
 }
-/*
-#contact #popup a.link {
-  display:block;
+#contact #popup .divider {
+  width:                2px;
+  height:               114px;
+  margin:               22px 0 17px;
+  background:           transparent url(../img/bg_divider.png) 0 0 repeat-y;
 }
-*/
 #contact #popup .mapviewer {
-  width:196px;
-  height:156px;
-  margin-right:0;
-  overflow:hidden;
+  width:                128px;
+  height:               93px;
+  margin-right:         10px;
+  padding:              15px 15px 25px 15px;
 }
+
+#contact #popup .details .hd {
+  color:                #d95048;
+  text-transform:       uppercase;
+  margin-bottom:        8px;
+}
+
+#contact #popup .mapviewer img {
+  width:                128px;
+  height:               93px;
+}
+
 #contact #popup .close {
-  position:absolute;
-  left:auto;
-  right:-15px;
-  top:-15px;
+  position:             absolute;
+  left:                 auto;
+  right:                -15px;
+  top:                  -15px;
+  z-index:              10;
 }
 
 #mapviewers {
@@ -3510,19 +3534,21 @@ textarea.error {
 }
 
 #contact #map iframe#mapviewer {
-  position:relative;
-  top:0;
+  position:             relative;
+  top:                  0;
 }
 
 .mapviewer .maplinks {
-  font-size:85%;
-  width:190px;
-  text-align:center;
-  margin:2px auto 0;
+  text-align:           center;
+  margin:               6px auto 0;
+}
+
+.mapviewer .maplinks a {
+  color:                #70abfb;
 }
 
 .mapviewer .maplinks a.largerMap {
-  margin-right:40px;
+  margin-right:         8px;
 }
 
 /* / Form pages: Job Apply & Contact */
