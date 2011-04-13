@@ -2822,6 +2822,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
           box-shadow:   5px 5px 6px rgba(0,0,0,0.5);
   behavior: url(/js/libs/PIE/PIE.htc);
 }
+.ie7 #careers #tooltip .body { /* border-radius + css3PIE = no border in ie7... at least here */
+  border-radius:        0;
+}
 
 /*
 #careers #tooltip .pointer {

@@ -926,16 +926,16 @@ $(document).ready(function(){
       durOver: 150,
       durOut: 300,
       attr: {
-        fill: "#a6a8ab",
+        fill: "#88d0ee",
         stroke: "#ffffff",
         "stroke-width": 0.3,
         "stroke-linejoin": "round"
       },
       mouseoverAttr: {
-        fill: "#77443e"
+        fill: "#81c5e3"
       },
       mouseoutAttr: {
-        fill: "#a6a8ab"
+        fill: "#88d0ee"
       }
     };
     
