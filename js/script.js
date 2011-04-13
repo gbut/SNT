@@ -971,7 +971,7 @@ $(document).ready(function(){
       // data; dynamically created elements
       if (typeof countryData == 'undefined') return;
       this.countryData        = countryData; // data about each country, including SVG coords
-      this.groups             = {}; // will be populated with countries or groups of countries (hover on/off together)
+//      this.groups             = {}; // will be populated with countries or groups of countries (hover on/off together)
       this.active             = null;
       
       // other vars
@@ -1003,28 +1003,11 @@ $(document).ready(function(){
         this.r.rect(0, 0, this.options.mapW, this.options.mapH).attr({ fill: '#fff', 'stroke-width': 0 });
         
         // build map and attach behaviors
-        var country, group;
-        var sets = {};
+        var country;
         for (var c in this.countryData) {
-          if (this.countryData[c].svg.length == 1) {
-            country = this.r.path(this.countryData[c].svg[0]).attr(this.options.attr);
-            $(country.node).data('cc', c);
-            this.groups[c] = [this.applyHoverStates(country)];
-          } else {
-            var s = this.r.set();
-            for (var i=0; i<this.countryData[c].svg.length; i++) {
-              country = this.r.path(this.countryData[c].svg[i]).attr(this.options.attr);
-              $(country.node).data('cc', c);
-              s.push(country);
-            }
-            sets[c] = s;
-          }
-        }
-        for (var st in sets) {
-          for (var j=0; j<sets[st].length; j++) {
-            this.applyHoverStates(sets[st][j], sets[st]);
-          }
-          this.groups[st] = sets[st];
+          country = this.r.path(this.countryData[c].svg).attr(this.options.attr);
+          $(country.node).data('cc', c);
+          this.applyHoverStates(country);
         }
       },
 
@@ -1034,44 +1017,22 @@ $(document).ready(function(){
        * @name applyHoverStates
        * @type undefined
        */
-      applyHoverStates: function(raphaelObj, objSet) {
+      applyHoverStates: function(raphaelObj) {
         var self = this;
-        var s = objSet || false;
         var cc = $(raphaelObj.node).data('cc');
-        if (s) {
-          $(raphaelObj.node).hover(
-            function(){
-              if (self.active == cc) return;
-              $.each(s, function(){
-                this.animate(self.options.mouseoverAttr, self.options.durOver);
-              });
-            },
-            function(){
-              if (self.active == cc) return;
-              $.each(s, function(){
-                this.animate(self.options.mouseoutAttr, self.options.durOut);
-              });
-            }
-          ).click(function(e){
+        $(raphaelObj.node).hover(
+          function(){
             if (self.active == cc) return;
-            self.selectCountry(cc);
-          });
-        } else {
-          $(raphaelObj.node).hover(
-            function(){
-              if (self.active == cc) return;
-              this.raphael.animate(self.options.mouseoverAttr, self.options.durOver);
-            },
-            function(){
-              if (self.active == cc) return;
-              this.raphael.animate(self.options.mouseoutAttr, self.options.durOut);
-            }
-          ).click(function(e){
+            this.raphael.animate(self.options.mouseoverAttr, self.options.durOver);
+          },
+          function(){
             if (self.active == cc) return;
-            self.selectCountry(cc);
-          });
-        }
-        return raphaelObj;
+            this.raphael.animate(self.options.mouseoutAttr, self.options.durOut);
+          }
+        ).click(function(e){
+          if (self.active == cc) return;
+          self.selectCountry(cc);
+        });
       },
 
       /**

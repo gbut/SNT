@@ -2201,8 +2201,20 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 #risk section.iWorldMap #mapinfo .globalModels .rt {
   width:                447px;
-  padding:              2px 14px 0;
+  padding:              4px 14px 0;
   float:                left;
+}
+
+#risk section.iWorldMap #mapinfo .globalModels .lt h4,
+.wf-loading #risk section.iWorldMap #mapinfo .globalModels .lt h4 {
+  color:                #3a3939;
+  font:                 600 108%/112% "Lucida Grande",Helvetica,sans-serif;
+  text-transform:       uppercase;
+  margin-bottom:        7px;
+}
+.wf-active #risk section.iWorldMap #mapinfo .globalModels .lt h4 {
+  color:                #3a3939;
+  font:                 600 123.1%/100% "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Lucida Grande",Helvetica,sans-serif;
 }
 
 #risk section.iWorldMap #mapinfo .globalModels .lt ul {
