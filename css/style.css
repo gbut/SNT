@@ -2503,9 +2503,17 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   margin-bottom:        4px;
 }
 
+#risk .col3 img {
+  margin-bottom:        5px;
+}
+
 #risk .col3 p.caption {
   font-weight:          bold;
-  padding:              5px 5px 17px;
+  line-height:          116%;
+  padding:              4px 5px 17px;
+}
+#risk #longevity .col3 p.caption {
+  padding-bottom:       0;
 }
 
 /* / Risk */

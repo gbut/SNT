@@ -1446,7 +1446,7 @@ $(document).ready(function(){
 
   $('#riskTabs').tabs({
     //fx: { opacity:'toggle', duration:400 }
-    //selected: 1
+    //selected: 2,
     create: function(e, ui) {
       $('#catastropheCont').tabs({
         selected: 0

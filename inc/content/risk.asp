@@ -357,13 +357,11 @@
         <section class="clearfix">
           <div class="col3double">
             <p><strong>Life expectancy, the impact of lifestyle choices, and the toll that catastrophic events can take in terms of human lives lost can all have a dramatic impact on business as well as governments.</strong> From disaster response planning to pensions, insurance, and government policy, being prepared for the future takes careful financial and logistical planning and preparation. It's essential to gain the best possible understanding of how long people will live, what factors drive longevity, and what happens when catastrophe strikes.</p>
+            <p><cite>[Right: In the influenza pandemic of 1918, large numbers of people were treated in temporary wards. A future pandemic could similarly overwhelm healthcare providers, insurers, and local and federal governments.]</cite></p>
           </div>
           <div class="col3">
-            <div style="background:green;height:217px;">img 1</div>
-            <p>
-              <strong>Vivamus agittis lacus vel augue.</strong><br />
-              Laoreet rutrum meitas vfaucibus dolor auctor. Aenean lacinia bibendumnulla sed consectetur.
-            </p>
+            <img src="/img/risk/longevity-pandemic.jpg" alt="Influenza Pandemic of 1918" />
+            <!-- <p class="caption">In the influenza pandemic of 1918, large numbers of people were treated in temporary wards. A future pandemic could similarly overwhelm healthcare providers, insurers, and local and federal governments.</p> -->
           </div>
         </section>
 
@@ -375,12 +373,12 @@
             <p>RMS longevity and mortality models help a wide range of industries and government agencies maintain the appropriate financial infrastructure and societal response mechanisms for today's probable injury, illness, or death scenarios. Based on a wide variety of scientific drivers and inputs, our models take into account infectious diseases, natural catastrophes, and terrorist attacks as well as individual lifestyle choices and medical and scientific breakthroughs that can affect current or future longevity trends.</p>
           </div>
           <div class="col3">
-            <div style="background:red;height:217px;margin-bottom:5px;">img 2</div>
+            <img src="/img/risk/longevity-timeline.jpg" alt="Chart: Mortality Improvement Over Time" />
             <h5>Superior analytics from our specialized team</h5>
             <p>A specialized team of experienced modelers, medical specialists and analysts, biological mathematicians, and health statisticians, together with experts in a variety of other fields, collaborate to ensure RMS life and health models lead the world in innovative analytics. We take into account the latest epidemiological studies, clinical trial data, and medical models to provide state-of-the-art knowledge and insight. Our models include changes in lifestyle and resulting risk factors such as smoking, diet, obesity, and general attitudes to health, together with improvements in medical care, drug development, and treatments.</p>
           </div>
           <div class="col3">
-            <div style="background:orange;height:217px;margin-bottom:5px;">img 3</div>
+            <img src="/img/risk/longevity-drug-development.gif" alt="Chart: Drug Development by the US FDA" />
             <h5>Projecting the impact of breakthrough medical technologies</h5>
             <p>To quantify probabilities related to breakthroughs in medical science, RMS catalogs current medical research and investment in the biosciences, tracks thousands of drugs currently in the pipeline for FDA approval, and projects social changes in lifestyle risk factors and healthcare treatment patterns. The resulting model provides a timeline estimate for probable improvements in lifespan due to advances in medical technologies.</p>
           </div>
