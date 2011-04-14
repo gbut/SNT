@@ -19,22 +19,22 @@
           <div class="panel globalModels clearfix">
             <div class="lt">
               <h4>RMS Global Models</h4>
-              <ul class="clearfix">
-                <li><a href="#" id="model_all">All Models</a></li>
-                <li><a href="#" id="model_earthquakes">Earthquakes</a></li>
-                <li><a href="#" id="model_cyclones">Tropical Cyclones</a></li>
-                <li><a href="#" id="model_scs">Severe Convective Storms</a></li>
-                <li><a href="#" id="model_windstorms">Windstorms</a></li>
-                <li><a href="#" id="model_winterstorms">Winter Storms</a></li>
-                <li><a href="#" id="model_fire">Fire</a></li>
-                <li><a href="#" id="model_stormsurge">Storm Surge</a></li>
-                <li><a href="#" id="model_floods">Floods</a></li>
-                <li><a href="#" id="model_terrorism">Terrorism</a></li>
-                <li><a href="#" id="model_disease">Infectious Disease</a></li>
+              <ul id="model_list" class="clearfix">
+                <li><a href="#" data-peril="all" id="model_all">All Models</a></li>
+                <li><a href="#" data-peril="earthquakes">Earthquakes</a></li>
+                <li><a href="#" data-peril="cyclones">Tropical Cyclones</a></li>
+                <li><a href="#" data-peril="scs">Severe Convective Storms</a></li>
+                <li><a href="#" data-peril="windstorms">Windstorms</a></li>
+                <li><a href="#" data-peril="winterstorms">Winter Storms</a></li>
+                <li><a href="#" data-peril="fire">Fire</a></li>
+                <li><a href="#" data-peril="stormsurge">Storm Surge</a></li>
+                <li><a href="#" data-peril="floods">Floods</a></li>
+                <li><a href="#" data-peril="terrorism">Terrorism</a></li>
+                <li><a href="#" data-peril="disease">Infectious Disease</a></li>
               </ul>
             </div>
-            <div class="rt">
-              <h5 id="model_desc_hd">All Models: Duis auteum vel eum</h5>
+            <div id="model_info" class="rt">
+              <h5 id="model_desc_hd">All Models</h5>
               <p id="model_desc_body">Lorem ipsum dolor sit amet consectetuer adipiscing nonummy elit. Lorem ipsum dolor sit amet consectetuer adipiscing nonummy elit.</p>
             </div>
           </div>
