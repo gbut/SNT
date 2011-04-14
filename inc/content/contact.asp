@@ -254,7 +254,7 @@
       <iframe id="mapviewer" Name="mapFrame" scrolling="no" width="196" height="141" frameborder="0" src="http://www.bing.com/maps/embed/?lvl=16&amp;cp=37.53999640444354~-122.06300714022763&amp;sty=h&amp;draggable=true&amp;v=2&amp;dir=0&amp;cid=34BDEBAF3189F2E4!117&amp;FORM=LMLTEW&amp;emid=440461e4-8ce2-1fea-0673-672c14af25fa&amp;w=196&amp;h=141"></iframe>
 -->
   
-      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+      <a href="http://bit.ly/rms_map_newark" class="map" title="View Map"></a>
       
       <div class="maplinks">
         <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
@@ -265,7 +265,7 @@
 
     <div class="peoria">
 
-      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+      <a href="http://bit.ly/rms_map_newark" class="map" title="View Map"></a>
     
       <div class="maplinks">
         <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
@@ -276,7 +276,7 @@
         
     <div class="bloomington">
 
-      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+      <a href="http://bit.ly/rms_map_newark" class="map" title="View Map"></a>
     
       <div class="maplinks">
         <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
@@ -287,7 +287,7 @@
     
     <div class="hackensack">
 
-      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+      <a href="http://bit.ly/rms_map_newark" class="map" title="View Map"></a>
     
       <div class="maplinks">
         <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
@@ -297,7 +297,7 @@
     </div>
     <div class="bermuda">
 
-      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+      <a href="http://bit.ly/rms_map_newark" class="map" title="View Map"></a>
     
       <div class="maplinks">
         <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
@@ -307,7 +307,7 @@
     </div>
     <div class="london">
 
-      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+      <a href="http://bit.ly/rms_map_newark" class="map" title="View Map"></a>
     
       <div class="maplinks">
         <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
@@ -317,7 +317,7 @@
     </div>
     <div class="paris">
 
-      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+      <a href="http://bit.ly/rms_map_newark" class="map" title="View Map"></a>
     
       <div class="maplinks">
         <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
@@ -327,7 +327,7 @@
     </div>
     <div class="zurich">
 
-      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+      <a href="http://bit.ly/rms_map_newark" class="map" title="View Map"></a>
     
       <div class="maplinks">
         <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
@@ -337,7 +337,7 @@
     </div>
     <div class="noida">
 
-      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+      <a href="http://bit.ly/rms_map_newark" class="map" title="View Map"></a>
     
       <div class="maplinks">
         <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
@@ -347,7 +347,7 @@
     </div>
     <div class="beijing">
 
-      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+      <a href="http://bit.ly/rms_map_newark" class="map" title="View Map"></a>
     
       <div class="maplinks">
         <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>
@@ -357,7 +357,7 @@
     </div>
     <div class="tokyo">
 
-      <a href="http://bit.ly/rms_map_newark" title="View Map"><img src="/img/photo_office_newark.jpg" /></a>
+      <a href="http://bit.ly/rms_map_newark" class="map" title="View Map"></a>
     
       <div class="maplinks">
         <a class="largerMap" href="http://bit.ly/rms_map_newark" title="View Map">View Map</a>

@@ -3591,6 +3591,7 @@ textarea.error {
   background-position:  0 -144px;
 }
 
+/* used??? */
 #contact #map iframe {
   position:absolute;
   top:-17px;
@@ -3703,10 +3704,21 @@ textarea.error {
   margin-bottom:        8px;
 }
 
+
 #contact #popup .mapviewer img {
   width:                128px;
   height:               93px;
 }
+
+#contact #mapviewers .map,
+#contact #popup .mapviewer .map {
+  width:                128px;
+  height:               93px;
+  display:              block;
+/*  background:           transparent url(../img/maps_office_thumb.jpg) 0 0 no-repeat;*/
+}
+
+
 
 #contact #popup .close {
   position:             absolute;
