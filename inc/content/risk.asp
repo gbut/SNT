@@ -43,25 +43,40 @@
           <!-- + country info -->
           <div class="panel countryInfo">
             <ul class="clearfix">
-              <li><dl>
-                <dd><img id="map_flag" src="" /></dd>
-                <dt id="map_country_name">[country name]</dt>
+              <li class="map_flag"><img id="map_flag" src="" /></li>
+              <li class="map_country"><dl>
+                <dt>Country</dt>
+                <dd>
+                  <span class="amt" id="map_country_name"></span>
+                </dd>
               </dl></li>
               <li><dl>
                 <dt>Economic Exposure</dt>
-                <dd id="map_exposure">3.6 Billion</dd>
+                <dd>
+                  <span class="amt" id="map_exposure"></span>
+                  <span class="rank">Rank: <span id="map_exposure_rank" class="rankNum"></span></span>
+                </dd>
               </dl></li>
               <li><dl>
                 <dt>Population</dt>
-                <dd id="map_population">2.4 Million</dd>
+                <dd>
+                  <span class="amt" id="map_population"></span>
+                  <span class="rank">Rank: <span id="map_population_rank" class="rankNum"></span></span>
+                </dd>
               </dl></li>
               <li><dl>
                 <dt>Life Expectancy</dt>
-                <dd id="map_lifeexp">75-80</dd>
+                <dd>
+                  <span class="amt" id="map_lifeexp"></span>
+                  <span class="rank">Rank: <span id="map_lifeexp_rank" class="rankNum"></span></span>
+                </dd>
               </dl></li>
               <li><dl>
-                <dt>Landmass</dt>
-                <dd id="map_landmass">3,300,171 sq. mi.</dd>
+                <dt>Landmass (sq.mi.)</dt>
+                <dd>
+                  <span class="amt" id="map_landmass"></span>
+                  <span class="rank">Rank: <span id="map_landmass_rank" class="rankNum"></span></span>
+                </dd>
               </dl></li>
             </ul>
           </div>

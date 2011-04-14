@@ -958,12 +958,16 @@ $(document).ready(function(){
       
       this.infobar            = $(infobar);
       this.infoDisplay        = {
-        flag:         $('#map_flag'),
-        cname:        $('#map_country_name'),
-        exposure:     $('#map_exposure'),
-        population:   $('#map_population'),
-        lifeexp:      $('#map_lifeexp'),
-        landmass:     $('#map_landmass')
+        flag:           $('#map_flag'),
+        cname:          $('#map_country_name'),
+        exposure:       $('#map_exposure'),
+        exposureRank:   $('#map_exposure_rank'),
+        population:     $('#map_population'),
+        populationRank: $('#map_population_rank'),
+        lifeexp:        $('#map_lifeexp'),
+        lifeexpRank:    $('#map_lifeexp_rank'),
+        landmass:       $('#map_landmass'),
+        landmassRank:   $('#map_landmass_rank')
       };
       this.panels             = $('#mapinfo_panels');
       this.backToModels       = $('#mapinfo_back_to_models');
@@ -971,7 +975,7 @@ $(document).ready(function(){
       // data; dynamically created elements
       if (typeof countryData == 'undefined') return;
       this.countryData        = countryData; // data about each country, including SVG coords
-//      this.groups             = {}; // will be populated with countries or groups of countries (hover on/off together)
+      this.countries          = {}; // will be populated with countries in setup()
       this.active             = null;
       
       // other vars
@@ -1008,6 +1012,7 @@ $(document).ready(function(){
           country = this.r.path(this.countryData[c].svg).attr(this.options.attr);
           $(country.node).data('cc', c);
           this.applyHoverStates(country);
+          this.countries[c] = country;
         }
       },
 
@@ -1052,6 +1057,15 @@ $(document).ready(function(){
         // update data in infobar and show country panel
         this.infoDisplay.flag.attr('src', this.flagPath + this.countryData[countryCode].flag);
         this.infoDisplay.cname.html(this.countryData[countryCode].name);
+        this.infoDisplay.exposure.html(this.countryData[countryCode].facts.exposure[0]);
+        this.infoDisplay.exposureRank.html(this.countryData[countryCode].facts.exposure[1]);
+        this.infoDisplay.population.html(this.countryData[countryCode].facts.population[0]);
+        this.infoDisplay.populationRank.html(this.countryData[countryCode].facts.population[1]);
+        this.infoDisplay.lifeexp.html(this.countryData[countryCode].facts.lifeexp[0]);
+        this.infoDisplay.lifeexpRank.html(this.countryData[countryCode].facts.lifeexp[1]);
+        this.infoDisplay.landmass.html(this.countryData[countryCode].facts.landmass[0]);
+        this.infoDisplay.landmassRank.html(this.countryData[countryCode].facts.landmass[1]);
+
         this.showPanel(1);
       },
 
@@ -1067,8 +1081,16 @@ $(document).ready(function(){
           top: -(p * this.panelH)
         }, this.options.durPanels);
         
-        if (p) this.backToModels.fadeIn(this.options.durPanels);
-          else this.backToModels.fadeOut(this.options.durPanels);
+        this.backToModels.animate({
+          top: (p ? -33 : 0)
+        }, this.options.durPanels);
+        
+        // if on default panel, no country should be selected
+        if (!p) {
+          var active = this.active;
+          this.active = null;
+          $(this.countries[active].node).triggerHandler('mouseleave');
+        }
       }
 
     });

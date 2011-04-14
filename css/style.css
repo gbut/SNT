@@ -2145,11 +2145,23 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 #risk section.iWorldMap #mapinfo_back_to_models {
+  font-size:            85%;
+  padding:              5px 17px;
   position:             absolute;
-  top:                  -28px;
-  left:                 10px;
-  background:red;
-  display:              none;
+  top:                  0;/*-33px;*/
+  left:                 15px;
+  z-index:              5;
+  background:           #ffffff;
+  background:           -moz-linear-gradient(top, #ffffff 0%, #d5d5d5 100%);
+  background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d5d5d5));
+  -pie-background:      linear-gradient(#ffffff, #d5d5d5);
+  -webkit-border-radius:4px 4px 0 0;
+  -moz-border-radius:   4px 4px 0 0;
+  border-radius:        4px 4px 0 0;
+     -moz-box-shadow:   0 3px 7px rgba(90,90,90,0.5); 
+  -webkit-box-shadow:   0 3px 7px rgba(90,90,90,0.5); 
+          box-shadow:   0 3px 7px rgba(90,90,90,0.5);
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 
 #risk section.iWorldMap #mapinfo {
@@ -2160,6 +2172,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   left:                 -10px;
   border-bottom:        1px solid #999;
   overflow:             hidden;
+  z-index:              100;
   background:           #ffffff;
   background:           -moz-linear-gradient(top, #ffffff 0%, #d5d5d5 100%);
   background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d5d5d5));
@@ -2213,7 +2226,6 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   margin-bottom:        7px;
 }
 .wf-active #risk section.iWorldMap #mapinfo .globalModels .lt h4 {
-  color:                #3a3939;
   font:                 600 123.1%/100% "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Lucida Grande",Helvetica,sans-serif;
 }
 
@@ -2233,34 +2245,85 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   font-weight:          bold;
 }
 
+#risk section.iWorldMap #mapinfo .countryInfo {
+  padding:              15px 0 11px;
+}
+
 #risk section.iWorldMap #mapinfo .countryInfo ul {
   margin:               0;
-  padding:              23px 18px 0;
   list-style:           none;
 }
 
 #risk section.iWorldMap #mapinfo .countryInfo ul li {
-  width:                130px;
-  padding:              0 12px;
+  width:                140px;
+  height:               97px;
+  padding:              0 5px;
+  border-left:          1px solid #aaa;
   float:                left;
 }
+#risk section.iWorldMap #mapinfo .countryInfo ul li.map_flag {
+  width:                100px;
+  padding-left:         10px;
+  border-left:          none;
+}
+#risk section.iWorldMap #mapinfo .countryInfo ul li.map_country {
+  width:                221px;
+  border-left:          none;
+}
 
-#risk section.iWorldMap #mapinfo .countryInfo ul li dl dt {
-  color:                #3a3939;
-  text-align:           center;
+#risk section.iWorldMap #mapinfo .countryInfo ul li.map_flag img {
+  margin:               0 auto;
+}
+
+#risk section.iWorldMap #mapinfo .countryInfo ul li dl {
+  padding-top:          4px;
+}
+
+#risk section.iWorldMap #mapinfo .countryInfo ul li dl dt,
+.wf-loading #risk section.iWorldMap #mapinfo .countryInfo ul li dl dt {
+  color:                #666;
   text-transform:       uppercase;
   font:                 bold 85%/100% Helvetica,sans-serif;
+  padding-bottom:       7px;
+}
+.wf-active #risk section.iWorldMap #mapinfo .countryInfo ul li dl dt {
+  font:                 600 123.1%/100% "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Lucida Grande",Helvetica,sans-serif;
+}
+#risk section.iWorldMap #mapinfo .countryInfo ul li.map_country dl dt {
+  padding-bottom:       2px;
 }
 
-#risk section.iWorldMap #mapinfo .countryInfo ul li dl dd {
-  text-align:           center;
+#risk section.iWorldMap #mapinfo .countryInfo ul li dl dd .amt,
+.wf-loading #risk section.iWorldMap #mapinfo .countryInfo ul li dl dd .amt {
+  color:                #1560b2;
+  font:                 bold 176.1%/108% Helvetica,sans-serif;
+  padding-bottom:       6px;
+  display:              block;
+}
+.wf-active #risk section.iWorldMap #mapinfo .countryInfo ul li dl dd .amt {
+  font:                 600 255%/108% "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Lucida Grande",Helvetica,sans-serif;
+}
+#risk section.iWorldMap #mapinfo .countryInfo ul li.map_country dl dd .amt,
+.wf-loading #risk section.iWorldMap #mapinfo .countryInfo ul li.map_country dl dd .amt {
+  font-size:            109.3%;
+}
+.wf-active #risk section.iWorldMap #mapinfo .countryInfo ul li.map_country dl dd .amt {
+  font-size:            158.3%;
 }
 
-#risk section.iWorldMap #mapinfo .countryInfo ul li dl dd img {
-  margin:               0 auto 4px;
-  position:             relative;
-  top:                  -5px;
-  left:                 0;
+#risk section.iWorldMap #mapinfo .countryInfo ul li dl dd .rank,
+.wf-loading #risk section.iWorldMap #mapinfo .countryInfo ul li dl dd .rank {
+  color:                #666;
+  text-transform:       uppercase;
+  font:                 bold 109.3%/108% Helvetica,sans-serif;
+  display:              block;
+}
+.wf-active #risk section.iWorldMap #mapinfo .countryInfo ul li dl dd .rank {
+  font:                 600 158.3%/108% "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Lucida Grande",Helvetica,sans-serif;
+}
+
+#risk section.iWorldMap #mapinfo .countryInfo ul li dl dd .rankNum {
+  color:                #3a3939;
 }
 
 #risk section.iWorldMap #svgmap {
@@ -2750,7 +2813,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #careers section a.link {
   font-weight:          bold;
   text-transform:       uppercase;
-  margin-left:          103px;
+  margin-left:          703px;
   display:              block;
 }
 

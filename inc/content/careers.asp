@@ -116,21 +116,7 @@
       </div>
     </div>
     <div class="row clearfix">
-      <div class="col3">
-        <a href="#" title="Learn more" class="link">
-          Technology <em>&raquo;</em>
-        </a>
-      </div>
-      <div class="col3">
-        <a href="#" title="Learn more" class="link">
-          Sales &amp; Marketing <em>&raquo;</em>
-        </a>
-      </div>
-      <div class="col3">
-        <a href="#" title="Learn more" class="link">
-          Lorem ipsum <em>&raquo;</em>
-        </a>
-      </div>
+      <a href="/craft" title="Our Craft" class="link">Our Craft <em>&raquo;</em></a>
     </div>    
   </section>
 
