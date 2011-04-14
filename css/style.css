@@ -3243,7 +3243,7 @@ display:none;
 
 /* / Job Detail */
 
-/* + Forms pages Job Apply & Contact */
+/* + Forms pages: Job Apply & Contact */
 
 /* + error handling */
 
@@ -3723,8 +3723,6 @@ textarea.error {
 /*  background:           transparent url(../img/maps_office_thumb.jpg) 0 0 no-repeat;*/
 }
 
-
-
 #contact #popup .close {
   position:             absolute;
   left:                 auto;
@@ -3756,6 +3754,101 @@ textarea.error {
 }
 
 /* / Form pages: Job Apply & Contact */
+
+/* + Craft */
+
+#craft {
+  background:#00042a;
+}
+
+#craft .inner {
+  width:                960px;
+  height:               610px;
+  margin:               0 auto;
+  padding-top:          42px;
+  position:             relative;
+}
+
+#craft section {
+  width:                525px;
+  float:                left;
+}
+
+#craft section h2 {
+  font-size:200%; /* need typekit */
+  color:                #fff;
+  margin-bottom:        20px;
+}
+
+#craft section p {
+  font-size:            120%;
+  line-height:          150%;
+  color:                #acd5fc;
+  padding-right:        35px;
+}
+
+#craft aside {
+  width:                410px;
+  margin:               0 0 0 25px;
+  float:                left;
+}
+
+#craft aside section {
+  font-size:            110%;
+  line-height:          140%;
+  width:                380px;
+  height:               137px;
+  margin-bottom:        12px;
+  padding:              14px;
+  border:               2px solid #01276f;
+  background-color:     #eee;
+  position:             relative;
+  -webkit-border-radius:4px;
+  -moz-border-radius:   4px;
+  border-radius:        4px;
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+
+/* temp */
+#craft aside section {
+ margin-top:0;
+ -webkit-box-shadow:0;
+ box-shadow:0 0 0 0; 
+}
+
+#craft aside section img {
+  width:                179px;
+  height:               135px;
+  border:               1px solid #2c2c2c;  
+  float:                left;
+}
+
+#craft aside section div {
+  width:                181px;
+  margin:               20px 0 0 18px;
+  float:                left;
+}
+
+#craft aside section h3 {
+  font-size:            110%;
+  display:              inline;
+}
+
+#craft aside section a {
+  color:                #c3151c;
+  text-transform:       uppercase;
+  display:              block;
+  position:             absolute;
+  bottom:               30px;
+}
+
+#craft aside a.btn {
+  position:             absolute;
+  bottom:               25px;
+  right:                -2px;
+}
+
+/* / Craft */
 
 /* + Share */
 
