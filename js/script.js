@@ -1061,19 +1061,22 @@ $(document).ready(function(){
        * @name applyHoverStates
        * @type undefined
        */
-      applyHoverStates: function(raphaelObj) {
+      applyHoverStates: function(raphaelObj, activePeril) {
         var self = this;
         var cc = $(raphaelObj.node).data('cc');
-        $(raphaelObj.node).hover(
+        var ap = activePeril || false;
+        $(raphaelObj.node).unbind('hover').hover(
           function(){
             if (self.active == cc) return;
-            this.raphael.animate(self.options.mouseoverAttr, self.options.durOver);
+            var attr = ap ? self.options.mouseoverAttrPeril : self.options.mouseoverAttr;
+            this.raphael.animate(attr, self.options.durOver);
           },
           function(){
             if (self.active == cc) return;
-            this.raphael.animate(self.options.mouseoutAttr, self.options.durOut);
+            var attr = ap ? self.options.mouseoutAttrPeril : self.options.mouseoutAttr;
+            this.raphael.animate(attr, self.options.durOut);
           }
-        ).click(function(e){
+        ).unbind('click').click(function(e){
           if (self.active == cc) return;
           self.selectCountry(cc);
         });
@@ -1150,7 +1153,16 @@ $(document).ready(function(){
         });
 
         // update map
-        o.perils[peril].set.animate(o.options.mouseoutAttrPeril, o.options.durOver);
+        $.each(o.perils[o.activePeril].set, function(){
+          this.attr(o.options.mouseoutAttr);
+          o.applyHoverStates(this);
+        });
+        $.each(o.perils[peril].set, function(){
+          this.animate(o.options.mouseoutAttrPeril, o.options.durOver);
+          o.applyHoverStates(this, true);
+        });
+
+        o.activePeril = peril;
       }
 
     });
