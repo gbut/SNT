@@ -1555,50 +1555,106 @@ $(document).ready(function(){
         locArray = loc.split(' ');    // convert to array
         jQuery.each(locArray, function() {  // for each location set highlights
           $('.'+this).addClass('highlight').prevAll('h5:first').addClass('highlight');
+          $('.'+this).tipsy("show");
           clock = $('.'+this).find('canvas'); // find clock based on last (any) location
         });
         clock.attr('class', function(i,klass) {
           return klass.replace('normal','highlight').replace('noSeconds',''); // change skin and enable second hand as highlight for clock
         });
-        CoolClock.findAndCreateClocks(); // update clock
+        CoolClock.findAndCreateClocks(); // update clocks
       },
       function(){
         loc = $(this).attr('class');  // get the location string
         locArray = loc.split(' ');    // convert to array
         jQuery.each(locArray, function() {  // for each location remove highlights
           $('.'+this).removeClass('highlight').prevAll('h5:first').removeClass('highlight');
+          // ** to do: test for selected - also on hover?
+            $('.'+this+':not(.selected)').tipsy("hide"); // remove tool tip
           if (this != 'highlight')
             clock = $('.'+this).find('canvas'); // find clock based on last (any) location [omit class=highlight]
         });
         clock.attr('class', function(i,klass) {
-          return klass.replace('highlight','normal').replace('::',':noSeconds:'); // change skin and disable second hand
+          if ($(this).attr('class').indexOf('selected') == -1)
+            return klass.replace('highlight','normal').replace('::',':noSeconds:'); // change skin and disable second hand
         });
-        CoolClock.findAndCreateClocks(); // update clock
+        CoolClock.findAndCreateClocks(); // update clocks
       }
     );
   });
   
   $('#contact #offices a, #contact #markers a').each(function(){
     $(this).click(function() {
+        if ($(this).attr('class').indexOf('selected') == -1) {
     
-        str = $(this).attr('class');  // get the class string
-        loc = loc.split(' ')[0];      // parse for location (first class)
+          str = $(this).attr('class');  // get the class string
+          loc = str.split(' ')[0];      // parse for location (first class)
+        
+          // reset selected state
+          $('.selected').removeClass('selected');
+          jQuery.each($('#markers a'), function() {
+            $(this).tipsy("hide")
+          });
+          $('canvas').attr('class', function(i,klass) {
+            return klass.replace('selected','normal').replace('::',':noSeconds:'); // change skin and disable second hand
+          });
+          // set selected state
+          $('.'+loc).addClass('selected').prevAll('h5:first').addClass('selected');
+          $('#markers a.'+loc).tipsy("show");
+          $('.'+loc).find('canvas').attr('class', function(i,klass) {
+            return klass.replace(/(normal|highlight)/,'selected').replace('noSeconds',''); // change skin and enable second hand as highlight for clock
+          });
+          CoolClock.findAndCreateClocks(); // update clocks
       
-        // fade out previous content - ** to do: IMPROVE (xfade, only fade necessary elements); limit func to run once only **
-        $('#popup .details, #popup .mapviewer').fadeTo(500, 0.0, 'easeOutExpo', function() {
-          $('#popup .details').html('<div class="hd">'+$('.office a.'+loc).prev().html()+'</div>' + $('.office a.'+loc).html());        // get/set details
-          $('#popup .mapviewer').html($('#mapviewers .'+loc).html());   // get/set map
-        });
-        $('#popup .details, #popup .mapviewer').fadeTo(500, 1.0, 'easeOutExpo'); // fade in new content
-        $('#popup .close').click(function() {
-            $('#popup').fadeTo(1000, 0.0, 'easeOutExpo');
-          }
-        ); // set close button
-        $('#popup').fadeTo(1000, 0.9, 'easeOutExpo');
+          // get content
+          hd = $('.office a.'+loc).prev().html();
+          details = $('.office a.'+loc).html();
+          mapviewer = $('#mapviewers .'+loc).html();
+          // fade out previous content
+          $('#popup .details, #popup .mapviewer').fadeTo(400, 0.0, 'easeOutExpo', function() {
+            if ($(this).attr('class') == 'mapviewer') {
+              $('#popup .details').html('<div class="hd">'+hd+'</div>' + details);  // get/set details
+              $('#popup .mapviewer').html(mapviewer);   // get/set map
+            }
+          });
+          $('#popup .details, #popup .mapviewer').fadeTo(400, 1.0, 'easeOutExpo'); // fade in new content
+           // set close button
+          $('#popup .close').click(function() {
+              $('#popup').fadeTo(1000, 0.0, 'easeOutExpo');
+              // reset selected state
+              $('.selected').removeClass('selected');
+              jQuery.each($('#markers a'), function() {
+                $(this).tipsy("hide")
+              });
+              $('canvas').attr('class', function(i,klass) {
+                return klass.replace('selected','normal').replace('::',':noSeconds:'); // change skin and disable second hand
+              });
+              CoolClock.findAndCreateClocks(); // update clocks
+            }
+          );
+          $('#popup').fadeTo(1000, 1.0, 'easeOutExpo');
+        
+        }
       
       }
     );
   });
+  
+  // map marker tool tips
+  if ($('#markers a').length) {
+    $('#map #markers a').tipsy({
+        delayIn: 0,      // delay before showing tooltip (ms)
+        delayOut: 0,     // delay before hiding tooltip (ms)
+        fade: true,      // fade tooltips in/out?
+        fallback: '',    // fallback text to use when no tooltip text
+        gravity: 'e',    // gravity
+        html: false,     // is tooltip content HTML?
+        live: false,     // use live event support?
+        offset: 2,       // pixel offset of tooltip from element
+        opacity: 0.8,    // opacity of tooltip
+        title: 'title',  // attribute/callback containing tooltip text
+        trigger: 'hover' // how tooltip is triggered - hover | focus | manual
+    });
+  }
   
   //===============================================
   //  Form validation
