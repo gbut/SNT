@@ -34,8 +34,8 @@
               </ul>
             </div>
             <div id="model_info" class="rt">
-              <h5 id="model_desc_hd">All Models</h5>
-              <p id="model_desc_body">Lorem ipsum dolor sit amet consectetuer adipiscing nonummy elit. Lorem ipsum dolor sit amet consectetuer adipiscing nonummy elit.</p>
+              <h5 id="model_desc_hd"></h5>
+              <p id="model_desc_body"></p>
             </div>
           </div>
           <!-- / global models -->

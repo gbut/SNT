@@ -933,16 +933,19 @@ $(document).ready(function(){
         "stroke-linejoin": "round"
       },
       mouseoverAttr: {
-        fill: "#81c5e3"
+        fill: "#76b5cf"
       },
       mouseoutAttr: {
         fill: "#88d0ee"
       },
       mouseoverAttrPeril: {
-        fill: "#3095c7"
+        fill: "#2982a9"
       },
       mouseoutAttrPeril: {
         fill: "#339ed3"
+      },
+      sel: {
+        fill: "#3572b6"
       }
     };
     
@@ -978,6 +981,7 @@ $(document).ready(function(){
       this.panels             = $('#mapinfo_panels');
       this.backToModels       = $('#mapinfo_back_to_models');
       this.modelLinks         = $('#model_list').find('a');
+      this.modelLinkAll       = $('#model_all');
       this.modelInfo          = $('#model_info');
       this.modelDescHd        = $('#model_desc_hd');
       this.modelDescBody      = $('#model_desc_body');
@@ -1053,6 +1057,9 @@ $(document).ready(function(){
             this.perils[this.countryData[c].perils[i]].set.push(country);
           }
         }
+        
+        // All Models = default
+        this.modelLinkAll.triggerHandler('click');
       },
 
       /**
@@ -1095,6 +1102,9 @@ $(document).ready(function(){
         
         // fade previously active country, if any
         if (oldCC) $(this.countries[oldCC].node).triggerHandler('mouseleave');
+        
+        // change fill color of newly selected country
+        this.countries[countryCode].attr(this.options.sel);
         
         // update data in infobar and show country panel
         this.infoDisplay.flag.attr('src', this.flagPath + this.countryData[countryCode].flag);
@@ -1153,6 +1163,7 @@ $(document).ready(function(){
         });
 
         // update map
+/*
         $.each(o.perils[o.activePeril].set, function(){
           this.attr(o.options.mouseoutAttr);
           o.applyHoverStates(this);
@@ -1161,6 +1172,25 @@ $(document).ready(function(){
           this.animate(o.options.mouseoutAttrPeril, o.options.durOver);
           o.applyHoverStates(this, true);
         });
+*/
+        var fadeUp = function(){
+          var obj = o;
+          var p = peril;
+          $.each(obj.perils[p].set, function(){
+            this.animate(obj.options.mouseoutAttrPeril, obj.options.durOver);
+            obj.applyHoverStates(this, true);
+          });
+        };
+        if (peril != 'all') {
+          $.each(o.perils[o.activePeril].set, function(){
+            var obj = o;
+            var p = peril;
+            this.animate(o.options.mouseoutAttr, o.options.durOver, fadeUp);
+            o.applyHoverStates(this);
+          });
+        } else {
+          fadeUp();
+        }
 
         o.activePeril = peril;
       }
