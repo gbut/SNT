@@ -1566,9 +1566,11 @@ $(document).ready(function(){
         loc = $(this).attr('class');  // get the location string
         locArray = loc.split(' ');    // convert to array
         jQuery.each(locArray, function() {  // for each location set highlights
-          $('.'+this).addClass('highlight').prevAll('h5:first').addClass('highlight');
-          $('.'+this).tipsy("show");
-          clock = $('.'+this).find('canvas'); // find clock based on last (any) location
+          if ($('.'+this).length) {
+            $('.'+this).addClass('highlight').prevAll('h5:first').addClass('highlight');
+            $('#markers a.'+this+':not(.selected)').tipsy("show");
+            clock = $('.'+this).find('canvas'); // find clock based on last (any) location
+          }
         });
         clock.attr('class', function(i,klass) {
           return klass.replace('normal','highlight').replace('noSeconds',''); // change skin and enable second hand as highlight for clock
@@ -1579,11 +1581,11 @@ $(document).ready(function(){
         loc = $(this).attr('class');  // get the location string
         locArray = loc.split(' ');    // convert to array
         jQuery.each(locArray, function() {  // for each location remove highlights
-          $('.'+this).removeClass('highlight').prevAll('h5:first').removeClass('highlight');
-          // ** to do: test for selected - also on hover?
-            $('.'+this+':not(.selected)').tipsy("hide"); // remove tool tip
-          if (this != 'highlight')
+          if ($('.'+this).length) {
+            $('.'+this).removeClass('highlight').prevAll('h5:first').removeClass('highlight');
+            $('#markers a.'+this+':not(.selected)').tipsy("hide"); // remove tool tip
             clock = $('.'+this).find('canvas'); // find clock based on last (any) location [omit class=highlight]
+          }
         });
         clock.attr('class', function(i,klass) {
           if ($(this).attr('class').indexOf('selected') == -1)
@@ -1604,14 +1606,16 @@ $(document).ready(function(){
           // reset selected state
           $('.selected').removeClass('selected');
           jQuery.each($('#markers a'), function() {
-            $(this).tipsy("hide")
+            if (!$(this).hasClass(loc)) {
+              $(this).tipsy("hide");
+            }
           });
           $('canvas').attr('class', function(i,klass) {
             return klass.replace('selected','normal').replace('::',':noSeconds:'); // change skin and disable second hand
           });
           // set selected state
           $('.'+loc).addClass('selected').prevAll('h5:first').addClass('selected');
-          $('#markers a.'+loc).tipsy("show");
+          //$('#markers a.'+loc).tipsy("show"); // have to hover in order to click so this isn't necessary
           $('.'+loc).find('canvas').attr('class', function(i,klass) {
             return klass.replace(/(normal|highlight)/,'selected').replace('noSeconds',''); // change skin and enable second hand as highlight for clock
           });
