@@ -21,16 +21,16 @@
               <h4>RMS Global Models</h4>
               <ul id="model_list" class="clearfix">
                 <li><a href="#" data-peril="all" id="model_all">All Models</a></li>
-                <li><a href="#" data-peril="earthquakes">Earthquakes</a></li>
-                <li><a href="#" data-peril="cyclones">Tropical Cyclones</a></li>
-                <li><a href="#" data-peril="scs">Severe Convective Storms</a></li>
-                <li><a href="#" data-peril="windstorms">Windstorms</a></li>
-                <li><a href="#" data-peril="winterstorms">Winter Storms</a></li>
-                <li><a href="#" data-peril="fire">Fire</a></li>
-                <li><a href="#" data-peril="stormsurge">Storm Surge</a></li>
-                <li><a href="#" data-peril="floods">Floods</a></li>
-                <li><a href="#" data-peril="terrorism">Terrorism</a></li>
-                <li><a href="#" data-peril="disease">Infectious Disease</a></li>
+                <li><a href="#" data-peril="earthquakes" id="model_earthquakes">Earthquakes</a></li>
+                <li><a href="#" data-peril="cyclones id="model_all"">Tropical Cyclones</a></li>
+                <li><a href="#" data-peril="scs" id="model_scs">Severe Convective Storms</a></li>
+                <li><a href="#" data-peril="windstorms" id="model_windstorms">Windstorms</a></li>
+                <li><a href="#" data-peril="winterstorms" id="model_winterstorms">Winter Storms</a></li>
+                <li><a href="#" data-peril="fire" id="model_fire">Fire</a></li>
+                <li><a href="#" data-peril="stormsurge" id="model_stormsurge">Storm Surge</a></li>
+                <li><a href="#" data-peril="floods" id="model_floods">Floods</a></li>
+                <li><a href="#" data-peril="terrorism" id="model_terrorism">Terrorism</a></li>
+                <li><a href="#" data-peril="disease" id="model_disease">Infectious Disease</a></li>
               </ul>
             </div>
             <div id="model_info" class="rt">

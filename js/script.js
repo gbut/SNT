@@ -1100,12 +1100,6 @@ $(document).ready(function(){
         var oldCC = this.active;
         this.active = countryCode;
         
-        // fade previously active country, if any
-        if (oldCC) $(this.countries[oldCC].node).triggerHandler('mouseleave');
-        
-        // change fill color of newly selected country
-        this.countries[countryCode].attr(this.options.sel);
-        
         // update data in infobar and show country panel
         this.infoDisplay.flag.attr('src', this.flagPath + this.countryData[countryCode].flag);
         this.infoDisplay.cname.html(this.countryData[countryCode].name);
@@ -1119,6 +1113,12 @@ $(document).ready(function(){
         this.infoDisplay.landmassRank.html(this.countryData[countryCode].facts.landmass[1]);
 
         this.showPanel(1);
+        
+        // fade previously active country, if any
+        if (oldCC) $(this.countries[oldCC].node).triggerHandler('mouseleave');
+        
+        // change fill color of newly selected country
+        this.countries[countryCode].attr(this.options.sel);
       },
 
       /**
@@ -1137,10 +1137,20 @@ $(document).ready(function(){
           top: (p ? -33 : 0)
         }, this.options.durPanels);
         
-        // if on default panel, no country should be selected
-        if (!p) {
+        // if switching to country panel, no peril sets should be highlighted
+        if (p) {
+          var o = this;
+          $.each(this.perils[this.activePeril].set, function(){
+            if ($(this.node).data('cc') != o.active) this.animate(o.options.mouseoutAttr, o.options.durOver);
+            o.applyHoverStates(this);
+          });
+
+        // else if returning to default panel, no country should be selected
+        // re-highlight active peril set
+        } else {
           var active = this.active;
           this.active = null;
+          $('#model_' + this.activePeril).triggerHandler('click');
           $(this.countries[active].node).triggerHandler('mouseleave');
         }
       },
