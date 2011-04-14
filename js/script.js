@@ -937,6 +937,12 @@ $(document).ready(function(){
       },
       mouseoutAttr: {
         fill: "#88d0ee"
+      },
+      mouseoverAttrPeril: {
+        fill: "#3095c7"
+      },
+      mouseoutAttrPeril: {
+        fill: "#339ed3"
       }
     };
     
@@ -995,6 +1001,7 @@ $(document).ready(function(){
         "terrorism" :     { hd:"Terrorism", copy:"The terrorism landscape is dynamic and complex. By using game theory to understand the motivations of terrorist organizations, and simulating the impacts of chemical, biological, radiological, and nuclear (CBRN) attacks, models can replicate target selection and potential loss, and assess the efficacy of counter-terrorism measures." },
         "disease" :       { hd:"Infectious Disease", copy:"Infectious diseases are the leading cause of death worldwide. Influenza pandemics pose a major threat in today's highly mobile society, as the 2009 H1N1 pandemic demonstrated. By modeling the dynamics of viral infectiousness and spread, and the impacts of vaccination and mitigation, this threat can be anticipated and understood." }
       };
+      this.activePeril        = 'all';
       
       // other vars
       this.flagPath           = '/img/flags/70/';
@@ -1028,6 +1035,11 @@ $(document).ready(function(){
         this.r = Raphael(this.container.attr('id'), this.options.mapW, this.options.mapH);
         this.r.rect(0, 0, this.options.mapW, this.options.mapH).attr({ fill: '#fff', 'stroke-width': 0 });
         
+        // organize peril sets
+        for (var p in this.perils) {
+          this.perils[p].set = this.r.set();
+        }
+
         // build map and attach behaviors
         var country;
         for (var c in this.countryData) {
@@ -1035,6 +1047,11 @@ $(document).ready(function(){
           $(country.node).data('cc', c);
           this.applyHoverStates(country);
           this.countries[c] = country;
+          
+          // add to peril sets
+          for (var i=0; i<this.countryData[c].perils.length; i++) {
+            this.perils[this.countryData[c].perils[i]].set.push(country);
+          }
         }
       },
 
@@ -1124,12 +1141,16 @@ $(document).ready(function(){
       filterPeril: function(e) {
         var o = e.data.obj; //the instantiated $.riskMap object
         var peril = $(this).data('peril');
+
+        // update infobar
         o.modelInfo.fadeOut(o.options.durOver, function(){
-            o.modelDescHd.html(o.perils[peril].hd);
-            o.modelDescBody.html(o.perils[peril].copy);
-            $(this).fadeIn(o.options.durOut);
-          }
-        );
+          o.modelDescHd.html(o.perils[peril].hd);
+          o.modelDescBody.html(o.perils[peril].copy);
+          $(this).fadeIn(o.options.durOut);
+        });
+
+        // update map
+        o.perils[peril].set.animate(o.options.mouseoutAttrPeril, o.options.durOver);
       }
 
     });
