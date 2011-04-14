@@ -60,7 +60,7 @@
       <a href="#" class="london" title="London, UK"></a>
       <a href="#" class="paris" title="Paris, France"></a>
       <a href="#" class="zurich" title="Zürich, Switzerland"></a>
-      <a href="#" class="noida" title="NOIDA, India"></a>
+      <a href="#" class="noida" title="Noida, India"></a>
       <a href="#" class="beijing" title="Beijing, China"></a>
       <a href="#" class="tokyo" title="Tokyo, Japan"></a>
       
