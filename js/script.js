@@ -958,28 +958,54 @@ $(document).ready(function(){
       
       this.infobar            = $(infobar);
       this.infoDisplay        = {
-        flag:         $('#map_flag'),
-        cname:        $('#map_country_name'),
-        exposure:     $('#map_exposure'),
-        population:   $('#map_population'),
-        lifeexp:      $('#map_lifeexp'),
-        landmass:     $('#map_landmass')
+        flag:           $('#map_flag'),
+        cname:          $('#map_country_name'),
+        exposure:       $('#map_exposure'),
+        exposureRank:   $('#map_exposure_rank'),
+        population:     $('#map_population'),
+        populationRank: $('#map_population_rank'),
+        lifeexp:        $('#map_lifeexp'),
+        lifeexpRank:    $('#map_lifeexp_rank'),
+        landmass:       $('#map_landmass'),
+        landmassRank:   $('#map_landmass_rank')
       };
       this.panels             = $('#mapinfo_panels');
       this.backToModels       = $('#mapinfo_back_to_models');
+      this.modelLinks         = $('#model_list').find('a');
+      this.modelInfo          = $('#model_info');
+      this.modelDescHd        = $('#model_desc_hd');
+      this.modelDescBody      = $('#model_desc_body');
       
       // data; dynamically created elements
       if (typeof countryData == 'undefined') return;
       this.countryData        = countryData; // data about each country, including SVG coords
-      this.groups             = {}; // will be populated with countries or groups of countries (hover on/off together)
+      this.countries          = {}; // will be populated with countries in setup()
       this.active             = null;
+      
+      this.perils             = {
+        "all" :           { hd:"All Models", copy:"Lorem ipsum dolor sit amet consectetuer adipiscing nonummy elit. Lorem ipsum dolor sit amet consectetuer adipiscing nonummy elit." },
+        "earthquakes" :   { hd:"Earthquakes", copy:"Along the Pacific Ocean's \"Ring of Fire,\" volcanoes rise and earthquakes strike with such intensity they ring the Earth like a bell. Of the 10 most severe earthquakes since 1900, 9 have struck here. But earthquakes don't kill, buildings do. Earthquake mitigation can have a significant impact on saving lives and reducing damage." },
+        "cyclones" :      { hd:"Tropical Cyclones", copy:"What's the difference between hurricanes, typhoons, and cyclones? Location. All are <strong>tropical cyclones</strong> with winds 74 mph or greater. But, while <strong>hurricanes</strong> make landfall in the Americas, <strong>typhoons</strong> strike China and Japan, and <strong>severe tropical cyclones</strong> hit Australia. Among all catastrophe events, U.S. hurricanes are the greatest source of insured loss worldwide." },
+        "scs" :           { hd:"Severe Convective Storms", copy:"Severe convective storm risk from damaging thunderstorms, hailstorms, tornadoes, and straight-line winds can occur anytime, and nearly anywhere. In the U.S., the breadth and high frequency of such events produces insured losses on par with hurricanes and over three times higher than earthquakes." },
+        "windstorms" :    { hd:"Windstorms", copy:"In Northern Europe, extra-tropical systems known as windstorms generate hurricane-force winds, causing losses that can accumulate to extraordinary levels in any given year. Strongest in the winter months, these frequent, swift-moving and broad-reaching systems can cluster together in space and time, and gain strength as they move over land." },
+        "winterstorms" :  { hd:"Winter Storms", copy:"Winter storms are extra-tropical systems that bring damaging snow, ice, freezing temperatures, and hurricane-force winds to the U.S. and Canada. Alberta Clippers, Nor'easters, and other strong systems are a key component of catastrophic risk in the Pacific Northwest, central and eastern Canada, the Great Lakes region, and the northeast U.S." },
+        "fire" :          { hd:"Fire", copy:"Catastrophic fire is a varied and widespread threat. Lightning strikes or human carelessness create conflagrations that sweep across the wildland-urban interface. Cities risk damage from electrical fire, arson, and earthquakes. In the 20th century, fires following the 1906 San Francisco and 1923 Tokyo earthquakes generated the greatest property loss, second only to war." },
+        "stormsurge" :    { hd:"Storm Surge", copy:"Strong winds can create storm surge events where waves rise to dangerous levels, battering offshore operations and drowning low-lying coastal regions. Sea defense failures can compound damage, as 2005's Hurricane Katrina dramatically illustrated. Despite measures to protect exposed coastlines, storm surge risk is escalating as coastal regions are increasingly developed." },
+        "floods" :        { hd:"Floods", copy:"From localized flash floods to major river inundations, inland flooding can damage properties and endanger populations. In Europe, flood risk continues to rise due to accelerated development in river floodplains. In other regions like China, typhoons can deluge the continent, triggering deadly landslides and causing rivers to swell to record heights." },
+        "terrorism" :     { hd:"Terrorism", copy:"The terrorism landscape is dynamic and complex. By using game theory to understand the motivations of terrorist organizations, and simulating the impacts of chemical, biological, radiological, and nuclear (CBRN) attacks, models can replicate target selection and potential loss, and assess the efficacy of counter-terrorism measures." },
+        "disease" :       { hd:"Infectious Disease", copy:"Infectious diseases are the leading cause of death worldwide. Influenza pandemics pose a major threat in today's highly mobile society, as the 2009 H1N1 pandemic demonstrated. By modeling the dynamics of viral infectiousness and spread, and the impacts of vaccination and mitigation, this threat can be anticipated and understood." }
+      };
       
       // other vars
       this.flagPath           = '/img/flags/70/';
       this.panelH             = this.panels.find('.panel').eq(0).outerHeight();
       
       // non-map behaviors
-      this.backToModels.click(function(e){ self.showPanel(0); });
+      this.backToModels.click(function(e){
+        self.showPanel(0);
+        e.preventDefault();
+      });
+      this.modelLinks.click({ obj: self }, self.filterPeril);
       
       // map setup
       this.setup();
@@ -1003,28 +1029,12 @@ $(document).ready(function(){
         this.r.rect(0, 0, this.options.mapW, this.options.mapH).attr({ fill: '#fff', 'stroke-width': 0 });
         
         // build map and attach behaviors
-        var country, group;
-        var sets = {};
+        var country;
         for (var c in this.countryData) {
-          if (this.countryData[c].svg.length == 1) {
-            country = this.r.path(this.countryData[c].svg[0]).attr(this.options.attr);
-            $(country.node).data('cc', c);
-            this.groups[c] = [this.applyHoverStates(country)];
-          } else {
-            var s = this.r.set();
-            for (var i=0; i<this.countryData[c].svg.length; i++) {
-              country = this.r.path(this.countryData[c].svg[i]).attr(this.options.attr);
-              $(country.node).data('cc', c);
-              s.push(country);
-            }
-            sets[c] = s;
-          }
-        }
-        for (var st in sets) {
-          for (var j=0; j<sets[st].length; j++) {
-            this.applyHoverStates(sets[st][j], sets[st]);
-          }
-          this.groups[st] = sets[st];
+          country = this.r.path(this.countryData[c].svg).attr(this.options.attr);
+          $(country.node).data('cc', c);
+          this.applyHoverStates(country);
+          this.countries[c] = country;
         }
       },
 
@@ -1034,44 +1044,22 @@ $(document).ready(function(){
        * @name applyHoverStates
        * @type undefined
        */
-      applyHoverStates: function(raphaelObj, objSet) {
+      applyHoverStates: function(raphaelObj) {
         var self = this;
-        var s = objSet || false;
         var cc = $(raphaelObj.node).data('cc');
-        if (s) {
-          $(raphaelObj.node).hover(
-            function(){
-              if (self.active == cc) return;
-              $.each(s, function(){
-                this.animate(self.options.mouseoverAttr, self.options.durOver);
-              });
-            },
-            function(){
-              if (self.active == cc) return;
-              $.each(s, function(){
-                this.animate(self.options.mouseoutAttr, self.options.durOut);
-              });
-            }
-          ).click(function(e){
+        $(raphaelObj.node).hover(
+          function(){
             if (self.active == cc) return;
-            self.selectCountry(cc);
-          });
-        } else {
-          $(raphaelObj.node).hover(
-            function(){
-              if (self.active == cc) return;
-              this.raphael.animate(self.options.mouseoverAttr, self.options.durOver);
-            },
-            function(){
-              if (self.active == cc) return;
-              this.raphael.animate(self.options.mouseoutAttr, self.options.durOut);
-            }
-          ).click(function(e){
+            this.raphael.animate(self.options.mouseoverAttr, self.options.durOver);
+          },
+          function(){
             if (self.active == cc) return;
-            self.selectCountry(cc);
-          });
-        }
-        return raphaelObj;
+            this.raphael.animate(self.options.mouseoutAttr, self.options.durOut);
+          }
+        ).click(function(e){
+          if (self.active == cc) return;
+          self.selectCountry(cc);
+        });
       },
 
       /**
@@ -1086,11 +1074,20 @@ $(document).ready(function(){
         this.active = countryCode;
         
         // fade previously active country, if any
-        if (oldCC) $(this.groups[oldCC][0].node).triggerHandler('mouseleave');
+        if (oldCC) $(this.countries[oldCC].node).triggerHandler('mouseleave');
         
         // update data in infobar and show country panel
         this.infoDisplay.flag.attr('src', this.flagPath + this.countryData[countryCode].flag);
         this.infoDisplay.cname.html(this.countryData[countryCode].name);
+        this.infoDisplay.exposure.html(this.countryData[countryCode].facts.exposure[0]);
+        this.infoDisplay.exposureRank.html(this.countryData[countryCode].facts.exposure[1]);
+        this.infoDisplay.population.html(this.countryData[countryCode].facts.population[0]);
+        this.infoDisplay.populationRank.html(this.countryData[countryCode].facts.population[1]);
+        this.infoDisplay.lifeexp.html(this.countryData[countryCode].facts.lifeexp[0]);
+        this.infoDisplay.lifeexpRank.html(this.countryData[countryCode].facts.lifeexp[1]);
+        this.infoDisplay.landmass.html(this.countryData[countryCode].facts.landmass[0]);
+        this.infoDisplay.landmassRank.html(this.countryData[countryCode].facts.landmass[1]);
+
         this.showPanel(1);
       },
 
@@ -1106,8 +1103,33 @@ $(document).ready(function(){
           top: -(p * this.panelH)
         }, this.options.durPanels);
         
-        if (p) this.backToModels.fadeIn(this.options.durPanels);
-          else this.backToModels.fadeOut(this.options.durPanels);
+        this.backToModels.animate({
+          top: (p ? -33 : 0)
+        }, this.options.durPanels);
+        
+        // if on default panel, no country should be selected
+        if (!p) {
+          var active = this.active;
+          this.active = null;
+          $(this.countries[active].node).triggerHandler('mouseleave');
+        }
+      },
+
+      /**
+       * Updates panel and map based on selected peril.
+       *
+       * @name filterPeril
+       * @type undefined
+       */
+      filterPeril: function(e) {
+        var o = e.data.obj; //the instantiated $.riskMap object
+        var peril = $(this).data('peril');
+        o.modelInfo.fadeOut(o.options.durOver, function(){
+            o.modelDescHd.html(o.perils[peril].hd);
+            o.modelDescBody.html(o.perils[peril].copy);
+            $(this).fadeIn(o.options.durOut);
+          }
+        );
       }
 
     });
@@ -1446,7 +1468,7 @@ $(document).ready(function(){
 
   $('#riskTabs').tabs({
     //fx: { opacity:'toggle', duration:400 }
-    //selected: 1
+    //selected: 2,
     create: function(e, ui) {
       $('#catastropheCont').tabs({
         selected: 0
