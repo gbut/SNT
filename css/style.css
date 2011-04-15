@@ -3857,6 +3857,14 @@ textarea.error {
  box-shadow:0 0 0 0; 
 }
 
+#craft aside .group {
+  position:             absolute;
+  display:              none;
+}
+#craft aside .group:first-child {
+  display:              block;
+}
+
 #craft aside section img {
   width:                179px;
   height:               135px;
