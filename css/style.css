@@ -3777,7 +3777,38 @@ textarea.error {
   width:                128px;
   height:               93px;
   display:              block;
-/*  background:           transparent url(../img/maps_office_thumb.jpg) 0 0 no-repeat;*/
+  background:           transparent url(../img/maps_office_thumb.gif) 0 0 no-repeat;
+}
+
+#contact #popup .mapviewer .peoria {
+  background-position:  0 -93px;
+}
+#contact #popup .mapviewer .bloomington {
+  background-position:  0 -186px;
+}
+#contact #popup .mapviewer .hackensack {
+  background-position:  0 -279px;
+}
+#contact #popup .mapviewer .bermuda {
+  background-position:  0 -372px;
+}
+#contact #popup .mapviewer .london {
+  background-position:  0 -465px;
+}
+#contact #popup .mapviewer .paris {
+  background-position:  0 -558px;
+}
+#contact #popup .mapviewer .zurich {
+  background-position:  0 -651px;
+}
+#contact #popup .mapviewer .noida {
+  background-position:  0 -744px;
+}
+#contact #popup .mapviewer .beijing {
+  background-position:  0 -837px;
+}
+#contact #popup .mapviewer .tokyo {
+  background-position:  0 -930px;
 }
 
 #contact #popup .close {
