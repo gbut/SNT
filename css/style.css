@@ -600,6 +600,35 @@ section {
   -pie-background:      #1c4c66 url(/img/btns_lt_apply.png) -84px -27px no-repeat;
 }
 
+.btnMore {
+  color:                #6b6b6b;
+  text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
+  padding:              12px 38px;
+  border-color:         #b8b8b7;
+  background:           #fefefe none;
+  background:           none, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
+  background:           none, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+  -pie-background:      none, linear-gradient(#fefefe, #d7d7d7);
+     -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+  -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+          box-shadow:   0 2px 4px rgba(151,151,151,0.5);
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+.btnMore:hover,
+.btnMore:active,
+.btnMore:visited {
+  color:                #6b6b6b;
+}
+.btnMore:hover {
+  background:           #fefefe none;
+  background:           none, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
+  background:           none, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
+  -pie-background:      none, linear-gradient(#fefefe, #a4a4a4);
+}
+.btnMore:active {
+  background:           #d7d7d7 none;
+  -pie-background:      #d7d7d7 none;
+}
 
 /* if larger buttons are in a narrow container, relax right padding and let them go full width */
 aside section .btnLg,
@@ -1197,6 +1226,7 @@ footer {
   font-size:            90%;
   color:                #838282;
   text-align:           center;
+  width:100%;
   padding:              20px 0;
   background:           #fff;
   border-top:           1px solid #b9b8b8;
@@ -1211,6 +1241,16 @@ footer .wrapper {
 
 footer a {
   color:                #414040;
+}
+
+#t01 + footer {
+  border:               0;
+  background:           #222;
+  position:             fixed;
+  bottom:               0;
+}
+#t01 + footer a {
+  color:                #fff;
 }
 
 /* / FOOTER */
@@ -3758,7 +3798,8 @@ textarea.error {
 /* + Craft */
 
 #craft {
-  background:#00042a;
+  height:810px; /* ** to do: make dynamic based on viewport */
+  background:           transparent url(../img/bg_craft.jpg) 0 100% no-repeat;
 }
 
 #craft .inner {
@@ -3800,7 +3841,7 @@ textarea.error {
   height:               137px;
   margin-bottom:        12px;
   padding:              14px;
-  border:               2px solid #01276f;
+  border:               2px solid #002870;
   background-color:     #eee;
   position:             relative;
   -webkit-border-radius:4px;
@@ -3838,13 +3879,15 @@ textarea.error {
   color:                #c3151c;
   text-transform:       uppercase;
   display:              block;
+  padding-right:        14px;
   position:             absolute;
   bottom:               30px;
+  background:           transparent url(../img/arrow_forward.png) 100% 50% no-repeat;
 }
 
 #craft aside a.btn {
   position:             absolute;
-  bottom:               25px;
+  bottom:               18px;
   right:                -2px;
 }
 

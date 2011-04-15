@@ -1,4 +1,4 @@
-<!-- + craft -->
+<!-- + careers_craft -->
 <div id="craft">
 
   <div class="inner">
@@ -14,37 +14,37 @@
     <aside>
   
       <section>
-        <img src="" />
+        <img src="/img/craft_01.jpg" />
         <div>
           <h3>The scale of things to come:</h3>
-          Birth of a powerful  new platform.
+          Birth of a powerful new platform.
           <a href="#" title="Read">Read</a>
         </div>
       </section>
 
       <section>
-        <img src="" />
+        <img src="/img/craft_02.jpg" />
         <div>
-          <h3>The scale of things to come:</h3>
-          Birth of a powerful  new platform.
+          <h3>Catastrophe fieldwork:</h3>
+          Improving risk models in the wake of disaster.
           <a href="#" title="Read">Read</a>
         </div>
       </section>
 
       <section>
-        <img src="" />
+        <img src="/img/craft_03.jpg" />
         <div>
-          <h3>The scale of things to come:</h3>
-          Birth of a powerful  new platform.
+          <h3>Lorem Ipsum Dolor:</h3>
+          Learning how to learn from recent disasters.
           <a href="#" title="Read">Read</a>
         </div>
       </section>
 
-      <a href="#" class="btn btnLg" onclick="">View More Stories</a>
+      <a href="#" class="btn btnMore" onclick="">View More Stories</a>
 
     </aside>
     
   </div>
     
 </div>
-<!-- / craft -->
+<!-- / careers_craft -->
