@@ -4,9 +4,12 @@
   <div class="inner">
 
     <section>
-  
-      <h2>The scale of things to come:</h2>
-      <h3>Birth of a powerful new platform.</h3>
+    
+      <div class="hd">
+        <h2>The scale of things to come:</h2>
+        <h3>Birth of a powerful new platform.</h3>
+        <h4>Jay Tang</h4>
+      </div>
     
       <p>As a software engineer, you’re usually saddled with legacy code that needs to be brought into the fold on every new initiative. You want to build something beautiful and streamline, but basically you’ve got to hook it up to the old sofas and beat up recliners you’ve collected over the years. It’s very rare to have the opportunity to start from scratch and have the freedom to build the most elegant, efficient solution possible. Most places have either ambition or resources, but you need both. You might be a startup with big dreams, but getting somebody to fund a major initiative out of the blue is tough. Or you might have the resources of an established company, but then you have an entire organization that’s deeply attached to the status quo.</p>
 

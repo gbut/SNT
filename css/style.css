@@ -3904,7 +3904,7 @@ textarea.error {
 /* + Craft Detail */
 
 #craftDetail {
-  height:1180px; /* ** to do: make dynamic based on viewport */
+  height:810px; /* ** to do: make dynamic based on viewport */
   background:           transparent url(../img/bg_craft_detail.jpg) 0 0 no-repeat;
 }
 
@@ -3921,6 +3921,13 @@ textarea.error {
   float:                left;
 }
 
+#craftDetail section .hd {
+  margin-bottom:        16px;
+  padding-bottom:       12px;
+  border-bottom:        1px solid #fff;
+  position:             relative;
+}
+
 #craftDetail section h2 {
   font-size:200%; /* need typekit */
   color:                #fff;
@@ -3931,16 +3938,22 @@ textarea.error {
   font-size:200%; /* need typekit */
   font-weight:          normal;
   color:                #fff;
-  margin-bottom:        20px;
 }
 
+#craftDetail section h4 {
+  font-size:            160%;
+  color:                #8bcfee;
+  position:             absolute;
+  top:                  6px;
+  right:                0;
+}
 
 #craftDetail section p {
-  font-size:            120%;
+  font-size:            110%;
   line-height:          150%;
-  color:                #e3e1e1;
-  padding-right:        35px;
+  color:                #fff;
 }
+
 
 /* / Craft Detail */
 
