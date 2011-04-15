@@ -1717,7 +1717,7 @@ $(document).ready(function(){
   //===============================================
   
   if ($('#craft').length) {
-    
+
     $('aside .group:first-child').addClass('visible');  // set default condition
     $('aside .btn').click(function() {
       vis = $(this).parent().children('.group.visible');
@@ -1729,7 +1729,7 @@ $(document).ready(function(){
       }
       next.fadeTo(500, 1.0).addClass('visible');
     });
-    
+
   }
   
   //===============================================
