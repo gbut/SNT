@@ -19,19 +19,25 @@
           <div class="panel globalModels clearfix">
             <div class="lt">
               <h4>RMS Global Models</h4>
-              <ul id="model_list" class="clearfix">
-                <li><a href="#" data-peril="all" id="model_all">All Models</a></li>
-                <li><a href="#" data-peril="earthquakes" id="model_earthquakes">Earthquakes</a></li>
-                <li><a href="#" data-peril="cyclones id="model_all"">Tropical Cyclones</a></li>
-                <li><a href="#" data-peril="scs" id="model_scs">Severe Convective Storms</a></li>
-                <li><a href="#" data-peril="windstorms" id="model_windstorms">Windstorms</a></li>
-                <li><a href="#" data-peril="winterstorms" id="model_winterstorms">Winter Storms</a></li>
-                <li><a href="#" data-peril="fire" id="model_fire">Fire</a></li>
-                <li><a href="#" data-peril="stormsurge" id="model_stormsurge">Storm Surge</a></li>
-                <li><a href="#" data-peril="floods" id="model_floods">Floods</a></li>
-                <li><a href="#" data-peril="terrorism" id="model_terrorism">Terrorism</a></li>
-                <li><a href="#" data-peril="disease" id="model_disease">Infectious Disease</a></li>
-              </ul>
+              <div id="model_list" class="clearfix">
+                <ul>
+                  <li><a href="#" data-peril="all" id="model_all">All Models</a></li>
+                  <li><a href="#" data-peril="earthquakes" id="model_earthquakes">Earthquakes</a></li>
+                  <li><a href="#" data-peril="cyclones" id="model_cyclones">Tropical Cyclones</a></li>
+                  <li><a href="#" data-peril="fire" id="model_fire">Fire</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#" data-peril="stormsurge" id="model_stormsurge">Storm Surge</a></li>
+                  <li><a href="#" data-peril="floods" id="model_floods">Floods</a></li>
+                  <li><a href="#" data-peril="winterstorms" id="model_winterstorms">Winter Storms</a></li>
+                  <li><a href="#" data-peril="windstorms" id="model_windstorms">Windstorms</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#" data-peril="scs" id="model_scs">Severe Convective Storms</a></li>
+                  <li><a href="#" data-peril="terrorism" id="model_terrorism">Terrorism</a></li>
+                  <li><a href="#" data-peril="disease" id="model_disease">Infectious Disease</a></li>
+                </ul>
+              </div>
             </div>
             <div id="model_info" class="rt">
               <h5 id="model_desc_hd"></h5>
@@ -110,7 +116,7 @@
           <ul id="caseStudiesNav" class="clearfix">
             <li><a href="#hurricane-ike">
               <span class="imgCont cs1">Case Study #1: </span>
-              <span><em>$18 Billion Mystery</em><br />Hurricane Ike</span>
+              <span><em>Building Performance</em><br />Hurricane Ike</span>
             </a></li>
             <li><a href="#haiti-earthquake">
               <span class="imgCont cs2">Case Study #2: </span>
@@ -125,7 +131,7 @@
           <!-- + Case Study #1 -->
           <div id="hurricane-ike" class="ui-tabs-hide">
             <section class="caseStudies clearfix">
-              <h3>Hurricane Ike <span class="sep">//</span> <em>13 September 2008</em></h3>
+              <h3>Hurricane Ike <span class="sep">//</span> <em>1-14 September 2008</em></h3>
               <div class="lt">
           
                 <div class="vidCont">
@@ -162,7 +168,7 @@
                   <!-- / Media 4 -->
                 </div>
           
-                <h4>The $18 Billion Mystery</h4>
+                <h4>Building Performance</h4>
                 <p><strong>Forensic claims analysis is one way RMS learns more about major catastrophic events and their lessons for understanding risk.</strong> In studying $18 billion in recent U.S. hurricane claims data, our researchers noticed that damage to some types of buildings was greater than expected. Why didn't these buildings perform as well as they should have in relatively low winds?</p>
                 <p>Our structural engineers took a closer look at this unprecedented volume of claims. While building codes were sufficient to ensure buildings would withstand moderate hurricane winds, adherence to those codes was inconsistent in some regions, particularly for properties further away from the coast. In addition, our researchers found that some roofing materials deteriorated more rapidly than expected in certain atmospheric conditions, such as the high heat and humidity in the southeast.</p>
                 <p>These findings have implications not only for RMS clients, but for government and property owners as well. Armed with information from RMS, stakeholders can identify building shortcomings and promote improved building practices to ensure greater safety in the event of a major hurricane.</p>
@@ -172,14 +178,13 @@
           
                 <div style="height:360px;background-color:orange;margin-bottom:10px;">[map]</div>
                 <dl>
-                  <dt>Tsunami:</dt><dd>Widespread warnings for most of the Pacific coasts.</dd>
-                  <dt>Casualties:</dt><dd>521 identified fatalities, 56 missing.</dd>
-                  <dt>Magnitude:</dt><dd>8.8 Mw</dd>
-                  <dt>Depth:</dt><dd>35 kilometres (22 mi)</dd>
-                  <dt>Epicenter location:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
-                  <dt>Coordinates:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
-                  <dt>Countries or regions affected:</dt><dd>Chile, Maule Region, Biobío Region</dd>
-                  <dt>Peak ground acceleration:</dt><dd>0.65 g</dd>
+                  <dt>Formed:</dt><dd>September 1, 2008</dd>
+                  <dt>Dissipated:</dt><dd>September 14, 2008</dd>
+                  <dt>Highest Wind:</dt><dd>145 mph (230 km/h)</dd>
+                  <dt>Lowest Pressure:</dt><dd>935 mbar (hPa; 27.61 inHg)</dd>
+                  <dt>Fatalities:</dt><dd>103 direct, 92 indirect</dd>
+                  <dt>Damage:</dt><dd>$37.6 billion (2008 USD)<br />$38.4 billion (2011 USD)</dd>
+                  <dt>Countries or regions affected:</dt><dd>Turks and Caicos, Bahamas, Haiti, Dominican Republic, Cuba, Florida Keys, Mississippi, Louisiana, Texas, Mississippi Valley, Ohio Valley, Great Lakes region, eastern Canada</dd>
                 </dl>
           
               </div>
@@ -237,14 +242,14 @@
           
                 <div style="height:360px;background-color:orange;margin-bottom:10px;">[map]</div>
                 <dl>
-                  <dt>Magnitude:</dt><dd>8.8 Mw</dd>
-                  <dt>Depth:</dt><dd>35 kilometres (22 mi)</dd>
+                  <dt>Magnitude:</dt><dd>7.0 M<sub>w</sub></dd>
+                  <dt>Depth:</dt><dd>13 kilometres (8.1 mi)</dd>
                   <dt>Epicenter location:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
-                  <dt>Coordinates:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
-                  <dt>Countries or regions affected:</dt><dd>Chile, Maule Region, Biobío Region</dd>
-                  <dt>Peak ground acceleration:</dt><dd>0.65 g</dd>
-                  <dt>Tsunami:</dt><dd>Widespread warnings for most of the Pacific coasts.</dd>
-                  <dt>Casualties:</dt><dd>521 identified fatalities, 56 missing.</dd>
+                  <dt>Coordinates:</dt><dd>18.457&deg;N 72.533&deg;W</dd>
+                  <dt>Countries or regions affected:</dt><dd>Haiti</dd>
+                  <dt>Peak ground acceleration:</dt><dd>0.5 g</dd>
+                  <dt>Tsunami:</dt><dd>Yes (localized)</dd>
+                  <dt>Casualties:</dt><dd>92,000 - 316,000 deaths</dd>
                 </dl>
           
               </div>
@@ -255,7 +260,7 @@
           <!-- + Case Study #3 -->
           <div id="hurricane-katrina" class="ui-tabs-hide">
             <section class="caseStudies clearfix">
-              <h3>Hurricane Katrina <span class="sep">//</span> <em>29 August 2005</em></h3>
+              <h3>Hurricane Katrina <span class="sep">//</span> <em>23-30 August 2005</em></h3>
               <div class="lt">
           
                 <div class="vidCont">
@@ -302,14 +307,13 @@
           
                 <div style="height:360px;background-color:orange;margin-bottom:10px;">[map]</div>
                 <dl>
-                  <dt>Coordinates:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
-                  <dt>Countries or regions affected:</dt><dd>Chile, Maule Region, Biobío Region</dd>
-                  <dt>Peak ground acceleration:</dt><dd>0.65 g</dd>
-                  <dt>Magnitude:</dt><dd>8.8 Mw</dd>
-                  <dt>Depth:</dt><dd>35 kilometres (22 mi)</dd>
-                  <dt>Epicenter location:</dt><dd>35.909&deg;S 72.733&deg;W</dd>
-                  <dt>Tsunami:</dt><dd>Widespread warnings for most of the Pacific coasts.</dd>
-                  <dt>Casualties:</dt><dd>521 identified fatalities, 56 missing.</dd>
+                  <dt>Formed:</dt><dd>August 23, 2005</dd>
+                  <dt>Dissipated:</dt><dd>August 30, 2005</dd>
+                  <dt>Highest Wind:</dt><dd>175 mph (280 km/h)</dd>
+                  <dt>Lowest Pressure:</dt><dd>902 mbar (hPa; 26.64 inHg)</dd>
+                  <dt>Fatalities:</dt><dd>1,836 confirmed</dd>
+                  <dt>Damage:</dt><dd>$81.2 billion (2005 USD)<br />$90.9 billion (2011 USD)</dd>
+                  <dt>Countries or regions affected:</dt><dd>Bahamas, South Florida, Cuba, Louisiana (especially Greater New Orleans), Mississippi, Alabama, Florida Panhandle, most of eastern North America</dd>
                 </dl>
           
               </div>

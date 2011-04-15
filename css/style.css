@@ -2270,15 +2270,14 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 #risk section.iWorldMap #mapinfo .globalModels .lt ul {
-  width:                450px;
+  width:                150px;
   margin:               0;
   list-style:           none;
+  float:                left;
 }
 
 #risk section.iWorldMap #mapinfo .globalModels .lt ul li {
-  width:                135px;
   padding:              0 15px 5px 0;
-  float:                left;
 }
 
 #risk section.iWorldMap #mapinfo .globalModels #model_all {
@@ -2541,7 +2540,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   width:                89px;
   height:               52px;
   margin-right:         6px;
-  background:           url(../img/vid_nav_careers_home.jpg) 0 0 no-repeat;
+  background:           url(../img/icons_natcat_nav.jpg) 0 0 no-repeat;
   border:               2px solid #898989;
   float:                left;
   display:              inline;
@@ -2552,10 +2551,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 #risk ul#caseStudiesNav li a .imgCont.cs2 {
-  background-position:  0 -37px;
+  background-position:  0 -52px;
 }
 #risk ul#caseStudiesNav li a .imgCont.cs3 {
-  background-position:  0 -74px;
+  background-position:  0 -104px;
 }
 
 #risk section.caseStudies .rt dl {
