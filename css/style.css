@@ -3901,6 +3901,49 @@ textarea.error {
 
 /* / Craft */
 
+/* + Craft Detail */
+
+#craftDetail {
+  height:1180px; /* ** to do: make dynamic based on viewport */
+  background:           transparent url(../img/bg_craft_detail.jpg) 0 0 no-repeat;
+}
+
+#craftDetail .inner {
+  width:                960px;
+  height:               610px;
+  margin:               0 auto;
+  padding-top:          42px;
+  position:             relative;
+}
+
+#craftDetail section {
+  width:                638px;
+  float:                left;
+}
+
+#craftDetail section h2 {
+  font-size:200%; /* need typekit */
+  color:                #fff;
+  margin-bottom:        5px;
+}
+
+#craftDetail section h3 {
+  font-size:200%; /* need typekit */
+  font-weight:          normal;
+  color:                #fff;
+  margin-bottom:        20px;
+}
+
+
+#craftDetail section p {
+  font-size:            120%;
+  line-height:          150%;
+  color:                #e3e1e1;
+  padding-right:        35px;
+}
+
+/* / Craft Detail */
+
 /* + Share */
 
 .st_sharethis_custom {
