@@ -116,7 +116,7 @@
       </div>
     </div>
     <div class="row clearfix">
-      <a href="/craft" title="Our Craft" class="link">Our Craft <em>&raquo;</em></a>
+      <a href="/careers/craft" title="Our Craft" class="link">Our Craft <em>&raquo;</em></a>
     </div>    
   </section>
 

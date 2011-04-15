@@ -1713,6 +1713,26 @@ $(document).ready(function(){
   }
   
   //===============================================
+  //  Craft page: index handling
+  //===============================================
+  
+  if ($('#craft').length) {
+    
+    $('aside .group:first-child').addClass('visible');  // set default condition
+    $('aside .btn').click(function() {
+      vis = $(this).parent().children('.group.visible');
+      vis.fadeTo(1000, 0).removeClass('visible');
+      if (vis.next('.group').length) {
+        next = vis.next('.group');
+      } else {
+        next = $('aside .group:first-child');
+      }
+      next.fadeTo(500, 1.0).addClass('visible');
+    });
+    
+  }
+  
+  //===============================================
   //  Form validation
   //===============================================
 

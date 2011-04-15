@@ -17,13 +17,13 @@
 
 <!--#include virtual="/inc/_header.asp" -->
 
-<div id="t01" class="contentOuter">
+<div id="t01">
   <!-- + main -->
   <div id="main" class="wrapper clearfix">
   
     <!-- + content -->
     <section id="content" class="clearfix">
-      <!--#include virtual="/inc/content/careers_science.asp" -->
+      <!--#include virtual="/inc/content/careers_craft.asp" -->
     </section>
     <!-- / content -->
       
