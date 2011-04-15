@@ -3816,7 +3816,7 @@ textarea.error {
 }
 
 #craft section h2 {
-  font-size:200%; /* need typekit */
+  font:                 600 219%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   color:                #fff;
   margin-bottom:        20px;
 }
@@ -3929,22 +3929,21 @@ textarea.error {
 }
 
 #craftDetail section h2 {
-  font-size:200%; /* need typekit */
+  font:                 600 219%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   color:                #fff;
   margin-bottom:        5px;
 }
 
 #craftDetail section h3 {
-  font-size:200%; /* need typekit */
-  font-weight:          normal;
+  font:                 400 219%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   color:                #fff;
 }
 
 #craftDetail section h4 {
-  font-size:            160%;
+  font:                 600 189%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   color:                #8bcfee;
   position:             absolute;
-  top:                  6px;
+  top:                  2px;
   right:                0;
 }
 
