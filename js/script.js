@@ -1708,7 +1708,7 @@ $(document).ready(function(){
         offset: 2,       // pixel offset of tooltip from element
         opacity: 0.8,    // opacity of tooltip
         title: 'title',  // attribute/callback containing tooltip text
-        trigger: 'hover' // how tooltip is triggered - hover | focus | manual
+        trigger: 'manual'// how tooltip is triggered - hover | focus | manual
     });
   }
   
@@ -1717,7 +1717,7 @@ $(document).ready(function(){
   //===============================================
   
   if ($('#craft').length) {
-
+    
     $('aside .group:first-child').addClass('visible');  // set default condition
     $('aside .btn').click(function() {
       vis = $(this).parent().children('.group.visible');
@@ -1728,6 +1728,26 @@ $(document).ready(function(){
         next = $('aside .group:first-child');
       }
       next.fadeTo(500, 1.0).addClass('visible');
+    });
+
+  }
+
+  //===============================================
+  //  Height handling for pages with fixed footer
+  //===============================================
+
+  if ($('footer').css('position') == 'fixed') {
+
+    obj = $('#content').children('div:first-child');
+    
+    // set initial height
+    setHeight(obj);
+
+    // change height on window resize
+    var resizeTimer;
+    $(window).resize(function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(setHeight(obj), 100);
     });
 
   }
@@ -2059,4 +2079,11 @@ function jobListingsTruncation() {
       $(this).nextUntil(':not(article)').filter(':visible:eq(3)').after($('#show_all').html());
     }
   });
+}
+
+/**
+ * Handle dynamic height for pages with fixed footer
+ */
+function setHeight(obj) {
+    obj.height($(window).height() - $('header').height() - $('footer').height());
 }

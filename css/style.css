@@ -1226,7 +1226,7 @@ footer {
   font-size:            90%;
   color:                #838282;
   text-align:           center;
-  width:100%;
+  width:                100%;
   padding:              20px 0;
   background:           #fff;
   border-top:           1px solid #b9b8b8;
@@ -3782,6 +3782,7 @@ textarea.error {
   height:               93px;
   display:              block;
   background:           transparent url(../img/maps_office_thumb.gif) 0 0 no-repeat;
+  cursor:               pointer;
 }
 
 #contact #popup .mapviewer .peoria {
@@ -3850,8 +3851,8 @@ textarea.error {
 /* + Craft */
 
 #craft {
-  height:810px; /* ** to do: make dynamic based on viewport */
-  background:           transparent url(../img/bg_craft.jpg) 0 100% no-repeat;
+  /* height:               810px;  set dynamic ht w/js */
+  background:           transparent url(../img/bg_craft.jpg) 0 0 no-repeat;
 }
 
 #craft .inner {
