@@ -1708,7 +1708,7 @@ $(document).ready(function(){
         offset: 2,       // pixel offset of tooltip from element
         opacity: 0.8,    // opacity of tooltip
         title: 'title',  // attribute/callback containing tooltip text
-        trigger: 'hover' // how tooltip is triggered - hover | focus | manual
+        trigger: 'manual'// how tooltip is triggered - hover | focus | manual
     });
   }
   

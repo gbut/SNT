@@ -52,17 +52,17 @@
   <h3>RMS Around the <em>Globe</em></h3>
   <div id="map">
     <div id="markers">
-      <a href="#" class="newark" title="Newark, CA"></a>
-      <a href="#" class="peoria" title="Peoria, IL"></a>
-      <a href="#" class="bloomington" title="Bloomington, MN"></a>
-      <a href="#" class="hackensack" title="Hackensack, NJ"></a>
+      <a href="#" class="newark" title="Corporate Headquarters"></a>
+      <a href="#" class="peoria" title="Chicago"></a>
+      <a href="#" class="bloomington" title="Bloomington"></a>
+      <a href="#" class="hackensack" title="East Coast U.S."></a>
       <a href="#" class="bermuda" title="Bermuda"></a>
-      <a href="#" class="london" title="London, UK"></a>
-      <a href="#" class="paris" title="Paris, France"></a>
-      <a href="#" class="zurich" title="Zürich, Switzerland"></a>
-      <a href="#" class="noida" title="Noida, India"></a>
-      <a href="#" class="beijing" title="Beijing, China"></a>
-      <a href="#" class="tokyo" title="Tokyo, Japan"></a>
+      <a href="#" class="london" title="European Headquarters"></a>
+      <a href="#" class="paris" title="France"></a>
+      <a href="#" class="zurich" title="Switzerland"></a>
+      <a href="#" class="noida" title="India"></a>
+      <a href="#" class="beijing" title="China"></a>
+      <a href="#" class="tokyo" title="Japan"></a>
       
       <!-- mollweide w/clouds -->
       <script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=1&amp;up_proj=mollweide&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script>
@@ -254,114 +254,114 @@
       <iframe id="mapviewer" Name="mapFrame" scrolling="no" width="196" height="141" frameborder="0" src="http://www.bing.com/maps/embed/?lvl=16&amp;cp=37.53999640444354~-122.06300714022763&amp;sty=h&amp;draggable=true&amp;v=2&amp;dir=0&amp;cid=34BDEBAF3189F2E4!117&amp;FORM=LMLTEW&amp;emid=440461e4-8ce2-1fea-0673-672c14af25fa&amp;w=196&amp;h=141"></iframe>
 -->
   
-      <a href="http://www.bing.com/maps/?v=2&cp=37.5406332613725~-122.063618685958&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map newark" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=37.5406332613725~-122.063618685958&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map newark" rel="external" title="View Map"></a>
       
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=37.5406332613725~-122.063618685958&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=37.5406332613725~-122.063618685958&lvl=13&dir=0&sty=r&rtp=adr.~pos.37.5406332613725_-122.063618685958__RMS%20Corporate%20Headquarters%20-%20Newark,%20CA__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=37.5406332613725~-122.063618685958&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=37.5406332613725~-122.063618685958&lvl=13&dir=0&sty=r&rtp=adr.~pos.37.5406332613725_-122.063618685958__RMS%20Corporate%20Headquarters%20-%20Newark,%20CA__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
       
     </div>
 
     <div class="peoria">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=40.686086~-89.5951709999999&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map peoria" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=40.686086~-89.5951709999999&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map peoria" rel="external" title="View Map"></a>
     
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=40.686086~-89.5951709999999&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=40.686086~-89.5951709999999&lvl=13&dir=0&sty=r&rtp=adr.~pos.40.686086_-89.5951709999999__RMS%20Midwest%20-%20Peoria,%20IL__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=40.686086~-89.5951709999999&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=40.686086~-89.5951709999999&lvl=13&dir=0&sty=r&rtp=adr.~pos.40.686086_-89.5951709999999__RMS%20Midwest%20-%20Peoria,%20IL__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
 
     </div>
         
     <div class="bloomington">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=44.860517~-93.226261&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map bloomington" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=44.860517~-93.226261&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map bloomington" rel="external" title="View Map"></a>
     
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=44.860517~-93.226261&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=44.860517~-93.226261&lvl=13&dir=0&sty=r&rtp=adr.~pos.44.860517_-93.226261__RMS%20Midwest%20-%20Bloomington,%20MN__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=44.860517~-93.226261&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=44.860517~-93.226261&lvl=13&dir=0&sty=r&rtp=adr.~pos.44.860517_-93.226261__RMS%20Midwest%20-%20Bloomington,%20MN__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
 
     </div>
     
     <div class="hackensack">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=40.9098319999999~-74.034073&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map hackensack" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=40.9098319999999~-74.034073&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map hackensack" rel="external" title="View Map"></a>
     
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=40.9098319999999~-74.034073&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=40.9098319999999~-74.034073&lvl=13&dir=0&sty=r&rtp=adr.~pos.40.9098319999999_-74.034073__RMS%20East%20Coast%20-%20Hackensack,%20NJ__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=40.9098319999999~-74.034073&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=40.9098319999999~-74.034073&lvl=13&dir=0&sty=r&rtp=adr.~pos.40.9098319999999_-74.034073__RMS%20East%20Coast%20-%20Hackensack,%20NJ__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
 
     </div>
     <div class="bermuda">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=32.2953993947233~-64.7834198176849&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map bermuda" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=32.2953993947233~-64.7834198176849&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map bermuda" rel="external" title="View Map"></a>
     
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=32.2953993947233~-64.7834198176849&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=32.2953993947233~-64.7834198176849&lvl=13&dir=0&sty=r&rtp=adr.~pos.32.2953993947233_-64.7834198176849__RMS%20Bermuda%20-%20Hamilton,%20Bermuda__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=32.2953993947233~-64.7834198176849&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=32.2953993947233~-64.7834198176849&lvl=13&dir=0&sty=r&rtp=adr.~pos.32.2953993947233_-64.7834198176849__RMS%20Bermuda%20-%20Hamilton,%20Bermuda__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
 
     </div>
     <div class="london">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=51.5095539999999~-0.0852590000000041&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map london" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=51.5095539999999~-0.0852590000000041&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map london" rel="external" title="View Map"></a>
     
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=51.5095539999999~-0.0852590000000041&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=51.5095539999999~-0.0852590000000041&lvl=13&dir=0&sty=r&rtp=adr.~pos.51.5095539999999_-0.0852590000000041__RMS%20European%20Headquarters%20-%20London,%20UK__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=51.5095539999999~-0.0852590000000041&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=51.5095539999999~-0.0852590000000041&lvl=13&dir=0&sty=r&rtp=adr.~pos.51.5095539999999_-0.0852590000000041__RMS%20European%20Headquarters%20-%20London,%20UK__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
 
     </div>
     <div class="paris">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=48.8372595845601~2.26068034403972&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map paris" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=48.8372595845601~2.26068034403972&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map paris" rel="external" title="View Map"></a>
     
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=48.8372595845601~2.26068034403972&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=48.8372595845601~2.26068034403972&lvl=13&dir=0&sty=r&rtp=adr.~pos.48.8372595845601_2.26068034403972__RMS%20France%20-%20Paris,%20France__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=48.8372595845601~2.26068034403972&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=48.8372595845601~2.26068034403972&lvl=13&dir=0&sty=r&rtp=adr.~pos.48.8372595845601_2.26068034403972__RMS%20France%20-%20Paris,%20France__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
 
     </div>
     <div class="zurich">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=47.3826273668334~8.54156392977207&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map zurich" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=47.3826273668334~8.54156392977207&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map zurich" rel="external" title="View Map"></a>
     
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=47.3826273668334~8.54156392977207&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=47.3826273668334~8.54156392977207&lvl=13&dir=0&sty=r&rtp=adr.~pos.47.3826273668334_8.54156392977207__RMS%20Zürich%20-%20Zürich,%20Switzerland%20__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=47.3826273668334~8.54156392977207&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=47.3826273668334~8.54156392977207&lvl=13&dir=0&sty=r&rtp=adr.~pos.47.3826273668334_8.54156392977207__RMS%20Zürich%20-%20Zürich,%20Switzerland%20__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
 
     </div>
     <div class="noida">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=28.5783998899622~77.3159140348437&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map noida" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=28.5783998899622~77.3159140348437&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map noida" rel="external" title="View Map"></a>
     
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=28.5783998899622~77.3159140348437&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=28.5783998899622~77.3159140348437&lvl=13&dir=0&sty=r&rtp=adr.~pos.28.5783998899622_77.3159140348437__RMS%20India%20-%20New%20Delhi,%20India__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=28.5783998899622~77.3159140348437&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=28.5783998899622~77.3159140348437&lvl=13&dir=0&sty=r&rtp=adr.~pos.28.5783998899622_77.3159140348437__RMS%20India%20-%20New%20Delhi,%20India__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
 
     </div>
     <div class="beijing">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=39.9265567213296~116.341968700289&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map beijing" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=39.9265567213296~116.341968700289&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map beijing" rel="external" title="View Map"></a>
     
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=39.9265567213296~116.341968700289&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=39.9265567213296~116.341968700289&lvl=13&dir=0&sty=r&rtp=adr.~pos.39.9265567213296_116.341968700289__RMS%20China%20-%20Beijing,%20China__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=39.9265567213296~116.341968700289&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=39.9265567213296~116.341968700289&lvl=13&dir=0&sty=r&rtp=adr.~pos.39.9265567213296_116.341968700289__RMS%20China%20-%20Beijing,%20China__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
 
     </div>
     <div class="tokyo">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=35.6499997526407~139.749999716877&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map tokyo" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=35.6499997526407~139.749999716877&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map tokyo" rel="external" title="View Map"></a>
     
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=35.6499997526407~139.749999716877&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=35.6499997526407~139.749999716877&lvl=13&dir=0&sty=r&rtp=adr.~pos.35.6499997526407_139.749999716877__RMS%20Japan%20-%20Tokyo,%20Japan__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=35.6499997526407~139.749999716877&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=35.6499997526407~139.749999716877&lvl=13&dir=0&sty=r&rtp=adr.~pos.35.6499997526407_139.749999716877__RMS%20Japan%20-%20Tokyo,%20Japan__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
 
     </div>
