@@ -2422,6 +2422,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   padding-right:        10px;
 }
 
+#risk section.caseStudies .rt img {
+  margin-bottom:        10px;
+}
+
 #risk .vidCont,
 #risk .vidCont.ui-widget-content {
   height:               360px;
@@ -2683,21 +2687,53 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 #nextgen #banner {
-  margin-bottom:        31px;
+  margin:               6px 0 31px;
   padding:              124px 15px 0;
   height:               146px;
 }
 
-#nextgen #banner h2,
-#nextgen #banner h3 {
-  color:                #fff;
-  font:                 normal 204%/108% Helvetica,sans-serif;
-  text-align:           center;
+#nextgen #banner img {
+  position:             absolute;
+  top:                  0;
+  left:                 15px;
+  z-index:              1;
 }
 
-#nextgen #banner h3 {
+#nextgen #banner h2,
+#nextgen #banner h3,
+.wf-loading #nextgen #banner h2,
+.wf-loading #nextgen #banner h3 {
+  color:                #fff;
+  font:                 400 197%/108% Helvetica,sans-serif;
+  letter-spacing:       0.03em;
+  text-align:           center;
+  padding:              3px 0 0;
+  position:             relative;
+  z-index:              10;
+}
+.wf-active #nextgen #banner h2,
+.wf-active #nextgen #banner h3 {
+  font:                 400 212%/108% "proxima-nova-1","proxima-nova-2",Helvetica,sans-serif;
+  padding:              0 0 1px;
+}
+
+#nextgen #banner h3,
+.wf-loading #nextgen #banner h3 {
+  font-size:            116%;
+  line-height:          119%;
+  padding:              0 145px;
+}
+.wf-active #nextgen #banner h3 {
   font-size:            123.1%;
-  padding:              0 135px;
+  line-height:          108%;
+  padding:              0 145px;
+}
+
+.ie7 #nextgen #banner h2,
+.ie8 #nextgen #banner h2,
+.ie7 #nextgen #banner h3,
+.ie8 #nextgen #banner h3 {
+  letter-spacing:       0;
 }
 
 /* / Next Gen */

@@ -176,7 +176,7 @@
               </div>
               <div class="rt">
           
-                <div style="height:360px;background-color:orange;margin-bottom:10px;">[map]</div>
+                <img src="/img/risk/ike-map.png" alt="" />
                 <dl>
                   <dt>Formed:</dt><dd>September 1, 2008</dd>
                   <dt>Dissipated:</dt><dd>September 14, 2008</dd>
@@ -240,7 +240,7 @@
               </div>
               <div class="rt">
           
-                <div style="height:360px;background-color:orange;margin-bottom:10px;">[map]</div>
+                <img src="/img/risk/haiti-map.png" alt="" />
                 <dl>
                   <dt>Magnitude:</dt><dd>7.0 M<sub>w</sub></dd>
                   <dt>Depth:</dt><dd>13 kilometres (8.1 mi)</dd>
@@ -305,7 +305,7 @@
               </div>
               <div class="rt">
           
-                <div style="height:360px;background-color:orange;margin-bottom:10px;">[map]</div>
+                <img src="/img/risk/supercat-map.png" alt="" />
                 <dl>
                   <dt>Formed:</dt><dd>August 23, 2005</dd>
                   <dt>Dissipated:</dt><dd>August 30, 2005</dd>
@@ -384,7 +384,7 @@
         <section class="clearfix">
           <h3>Longevity Models</h3>
           <div class="col3">
-            <div style="background:green;height:217px;margin-bottom:5px;">img 1</div>
+            <img src="/img/risk/longevity-liabilities-chart.jpg" alt="Chart: Annuities Liability Exceedance Probability" />
             <h5>Industry-shaping models for longevity and health</h5>
             <p>RMS longevity and mortality models help a wide range of industries and government agencies maintain the appropriate financial infrastructure and societal response mechanisms for today's probable injury, illness, or death scenarios. Based on a wide variety of scientific drivers and inputs, our models take into account infectious diseases, natural catastrophes, and terrorist attacks as well as individual lifestyle choices and medical and scientific breakthroughs that can affect current or future longevity trends.</p>
           </div>
