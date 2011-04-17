@@ -1,5 +1,7 @@
 <!-- + careers_craft_detail -->
-<div id="craftDetail">
+<div id="craftDetail" class="craft">
+
+  <img class="bg" src="/img/bg_craft_detail.jpg" />
 
   <div class="inner">
 

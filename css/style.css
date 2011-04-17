@@ -1437,7 +1437,7 @@ a.close,
   height:               32px;
   position:             absolute;
   top:                  -1px;
-  left:                 767px;
+  left:                 760px;
   background:           transparent url(../img/icons_controls.png) 0 0 no-repeat;
   overflow:             hidden;
 }
@@ -1445,7 +1445,6 @@ a.close:hover,
 a.close:active {
   background-position:  0 -32px;
 }
-
 
 #presenterNav {
 /*  text-align:           center;*/
@@ -3846,12 +3845,20 @@ textarea.error {
 
 /* + Craft */
 
-#craft {
-  /* height:               810px;  set dynamic ht w/js */
-  background:           transparent url(../img/bg_craft.jpg) 0 0 no-repeat;
+.craft {
+  position:             relative;
+  overflow:             hidden;
+  background:           #222;;
 }
 
-#craft .inner {
+.craft img.bg {
+  width:                100%;
+  position:             absolute;
+  top:                  0;
+  left:                 0;
+}
+
+.craft .inner {
   width:                960px;
   height:               610px;
   margin:               0 auto;
@@ -3859,15 +3866,42 @@ textarea.error {
   position:             relative;
 }
 
-#craft section {
+.craft section {
   width:                525px;
   float:                left;
 }
+#craftDetail section {
+  width:                638px;
+}
 
-#craft section h2 {
+#craftDetail section .hd {
+  margin-bottom:        16px;
+  padding-bottom:       12px;
+  border-bottom:        1px solid #fff;
+  position:             relative;
+}
+
+.craft section h2 {
   font:                 600 219%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   color:                #fff;
   margin-bottom:        20px;
+}
+
+#craftDetail section h2 {
+  margin-bottom:        5px;
+}
+
+#craftDetail section h3 {
+  font:                 400 219%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  color:                #fff;
+}
+
+#craftDetail section h4 {
+  font:                 600 189%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  color:                #8bcfee;
+  position:             absolute;
+  top:                  2px;
+  right:                0;
 }
 
 #craft section p {
@@ -3875,6 +3909,11 @@ textarea.error {
   line-height:          150%;
   color:                #acd5fc;
   padding-right:        35px;
+}
+#craftDetail section p {
+  font-size:            110%;
+  line-height:          150%;
+  color:                #fff;
 }
 
 #craft aside {
@@ -3946,64 +3985,10 @@ textarea.error {
   position:             absolute;
   bottom:               18px;
   right:                -2px;
+  display:              none;
 }
 
 /* / Craft */
-
-/* + Craft Detail */
-
-#craftDetail {
-  height:810px; /* ** to do: make dynamic based on viewport */
-  background:           transparent url(../img/bg_craft_detail.jpg) 0 0 no-repeat;
-}
-
-#craftDetail .inner {
-  width:                960px;
-  height:               610px;
-  margin:               0 auto;
-  padding-top:          42px;
-  position:             relative;
-}
-
-#craftDetail section {
-  width:                638px;
-  float:                left;
-}
-
-#craftDetail section .hd {
-  margin-bottom:        16px;
-  padding-bottom:       12px;
-  border-bottom:        1px solid #fff;
-  position:             relative;
-}
-
-#craftDetail section h2 {
-  font:                 600 219%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
-  color:                #fff;
-  margin-bottom:        5px;
-}
-
-#craftDetail section h3 {
-  font:                 400 219%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
-  color:                #fff;
-}
-
-#craftDetail section h4 {
-  font:                 600 189%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
-  color:                #8bcfee;
-  position:             absolute;
-  top:                  2px;
-  right:                0;
-}
-
-#craftDetail section p {
-  font-size:            110%;
-  line-height:          150%;
-  color:                #fff;
-}
-
-
-/* / Craft Detail */
 
 /* + Share */
 

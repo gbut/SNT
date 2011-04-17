@@ -1718,17 +1718,20 @@ $(document).ready(function(){
   
   if ($('#craft').length) {
     
-    $('aside .group:first-child').addClass('visible');  // set default condition
-    $('aside .btn').click(function() {
-      vis = $(this).parent().children('.group.visible');
-      vis.fadeTo(1000, 0).removeClass('visible');
-      if (vis.next('.group').length) {
-        next = vis.next('.group');
-      } else {
-        next = $('aside .group:first-child');
-      }
-      next.fadeTo(500, 1.0).addClass('visible');
-    });
+    if ($('aside .group').length > 1) {
+      $('aside .btn').show();
+      $('aside .group:first-child').addClass('visible');  // set default condition
+      $('aside .btn').click(function() {
+        vis = $(this).parent().children('.group.visible');
+        vis.fadeTo(1000, 0).removeClass('visible');
+        if (vis.next('.group').length) {
+          next = vis.next('.group');
+        } else {
+          next = $('aside .group:first-child');
+        }
+        next.fadeTo(500, 1.0).addClass('visible');
+      });
+    }
 
   }
 
@@ -1738,6 +1741,7 @@ $(document).ready(function(){
 
   if ($('footer').css('position') == 'fixed') {
 
+    // find object to size
     obj = $('#content').children('div:first-child');
     
     // set initial height

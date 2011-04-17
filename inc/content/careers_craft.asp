@@ -1,6 +1,8 @@
 <!-- + careers_craft -->
-<div id="craft">
+<div id="craft" class="craft">
 
+  <img class="bg" src="/img/bg_craft.jpg" />
+  
   <div class="inner">
 
     <section>
