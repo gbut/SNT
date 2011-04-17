@@ -8,13 +8,13 @@
         <img src="/img/hero_careers_home_rt.png" alt="We Were Always This Cool" />
       </div>
       <div id="vidOverlay">
-        <iframe src="" width="640" height="352" scrolling="no" frameborder="0" id="vidFrame"></iframe>
+        <iframe src="" width="626" height="356" scrolling="no" frameborder="0" id="vidFrame"></iframe>
         <a href="#" class="close">Close</a>
       </div>
     </div>
     <div id="presenterNav">
       <ul>
-        <li><a href="http://player.vimeo.com/video/22096871?title=0&amp;byline=0&amp;portrait=0">
+        <li><a href="http://player.vimeo.com/video/22250734?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
           <span class="imgCont vid1">Video #1<span class="play"></span></span>
           <span>Meet RMS</span>
         </a></li>
