@@ -1149,7 +1149,6 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
   border:               none;
 }
 
-
 /* / Global Nav */
 
 /* / HEADER */
@@ -1158,7 +1157,7 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
 
 .contentOuter {
   background:           #dbe4ea;
-  border-bottom:        20px solid #bdcfd9; /* formerly .subfooter */
+  border-bottom:        20px solid #bdcfd9;
 }
 
 #t02.contentOuter {
@@ -1166,14 +1165,9 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
 }
 
 #main {
-/*  width:                928px;*/
   width:                960px;
   position:             relative;
   z-index:              1;
-/*
-  margin-top:           15px;
-  padding:              0 40px 40px;
-*/
   padding:              15px 40px 40px;
 }
 
@@ -4022,7 +4016,7 @@ textarea.error {
   line-height:          140%;
   width:                380px;
   height:               137px;
-  margin-bottom:        12px;
+  margin:               0 0 12px;
   padding:              14px;
   border:               2px solid #002870;
   background-color:     #eee;
@@ -4030,14 +4024,10 @@ textarea.error {
   -webkit-border-radius:4px;
   -moz-border-radius:   4px;
   border-radius:        4px;
-  behavior: url(/js/libs/PIE/PIE.htc);
-}
-
-/* temp */
-#craft aside section {
- margin-top:0;
- -webkit-box-shadow:0;
- box-shadow:0 0 0 0; 
+  -moz-box-shadow:      0;
+  -webkit-box-shadow:   0;
+  box-shadow:           0;
+  behavior:             url(/js/libs/PIE/PIE.htc);
 }
 
 #craft aside .group {
