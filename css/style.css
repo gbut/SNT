@@ -2305,8 +2305,20 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   border-left:          none;
 }
 #risk section.iWorldMap #mapinfo .countryInfo ul li.map_country {
-  width:                221px;
+  width:                181px;
   border-left:          none;
+}
+#risk section.iWorldMap #mapinfo .countryInfo ul li.map_exposure {
+  width:                180px;
+}
+#risk section.iWorldMap #mapinfo .countryInfo ul li.map_exposure .lower {
+  text-transform:       lowercase;
+}
+#risk section.iWorldMap #mapinfo .countryInfo ul li.map_population {
+  width:                160px;
+}
+#risk section.iWorldMap #mapinfo .countryInfo ul li.map_lifeexp {
+  width:                120px;
 }
 
 #risk section.iWorldMap #mapinfo .countryInfo ul li.map_flag img {

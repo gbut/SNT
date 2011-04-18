@@ -56,28 +56,28 @@
                   <span class="amt" id="map_country_name"></span>
                 </dd>
               </dl></li>
-              <li><dl>
-                <dt>Economic Exposure</dt>
+              <li class="map_exposure"><dl>
+                <dt>Economic Exposure (USD <span class="lower">bn</span>)</dt>
                 <dd>
                   <span class="amt" id="map_exposure"></span>
-                  <span class="rank">Rank: <span id="map_exposure_rank" class="rankNum"></span></span>
+                  <span class="rank">Confidence: <span id="map_exposure_rank" class="rankNum"></span></span>
                 </dd>
               </dl></li>
-              <li><dl>
+              <li class="map_population"><dl>
                 <dt>Population</dt>
                 <dd>
                   <span class="amt" id="map_population"></span>
                   <span class="rank">Rank: <span id="map_population_rank" class="rankNum"></span></span>
                 </dd>
               </dl></li>
-              <li><dl>
+              <li class="map_lifeexp"><dl>
                 <dt>Life Expectancy</dt>
                 <dd>
                   <span class="amt" id="map_lifeexp"></span>
                   <span class="rank">Rank: <span id="map_lifeexp_rank" class="rankNum"></span></span>
                 </dd>
               </dl></li>
-              <li><dl>
+              <li class="map_landmass"><dl>
                 <dt>Landmass (sq.mi.)</dt>
                 <dd>
                   <span class="amt" id="map_landmass"></span>
