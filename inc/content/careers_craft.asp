@@ -21,7 +21,7 @@
           <div>
             <h3>The scale of things to come:</h3>
             Birth of a powerful new platform.
-            <a href="/careers/craft/craft.asp" title="Read">Read</a>
+            <a href="/careers/craft/craft.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
 
@@ -30,7 +30,7 @@
           <div>
             <h3>Catastrophe fieldwork:</h3>
             Improving risk models in the wake of disaster.
-            <a href="/careers/craft/craft.asp" title="Read">Read</a>
+            <a href="/careers/craft/craft.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
 
@@ -39,7 +39,7 @@
           <div>
             <h3>Lorem Ipsum Dolor:</h3>
             Learning how to learn from recent disasters.
-            <a href="/careers/craft/craft.asp" title="Read">Read</a>
+            <a href="/careers/craft/craft.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
       </div>
@@ -50,7 +50,7 @@
           <div>
             <h3>Lorem Ipsum Dolor:</h3>
             Eros patria accumsan wisi foras.
-            <a href="/careers/craft/craft.asp" title="Read">Read</a>
+            <a href="/careers/craft/craft.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
 
@@ -59,7 +59,7 @@
           <div>
             <h3>Ludus ut valetudo:</h3>
             Improving risk models in the wake of disaster.
-            <a href="/careers/craft/craft.asp" title="Read">Read</a>
+            <a href="/careers/craft/craft.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
 
@@ -68,7 +68,7 @@
           <div>
             <h3>Regula te, vero ut obruo:</h3>
             Learning how to learn from recent disasters.
-            <a href="/careers/craft/craft.asp" title="Read">Read</a>
+            <a href="/careers/craft/craft.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
       </div>
@@ -79,7 +79,7 @@
           <div>
             <h3>Gravis odio patria lobortis:</h3>
             Melior vulputate facilisi adsum.
-            <a href="/careers/craft/craft.asp" title="Read">Read</a>
+            <a href="/careers/craft/craft.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
 
@@ -88,7 +88,7 @@
           <div>
             <h3>Vero wisi cui defui:</h3>
             Nostrud ea ut sino cui ut.
-            <a href="/careers/craft/craft.asp" title="Read">Read</a>
+            <a href="/careers/craft/craft.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
 
@@ -97,7 +97,7 @@
           <div>
             <h3>Minim antehabeo in eros:</h3>
             lustum jugis amet letalis gemino.
-            <a href="/careers/craft/craft.asp" title="Read">Read</a>
+            <a href="/careers/craft/craft.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
       </div>
