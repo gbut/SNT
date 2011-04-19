@@ -3351,6 +3351,10 @@ display:none;
   float:                right;
 }
 
+#job_detail .jobid {
+  display:              none;
+}
+
 /* / Job Detail */
 
 /* + Forms pages: Job Apply & Contact */

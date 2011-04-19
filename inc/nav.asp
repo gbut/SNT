@@ -39,7 +39,7 @@
       <a href="/nextgen" class="pn" title="Next Gen"><span class="tl">Next Gen</span></a>
     </li>
     <li>
-      <a href="/craft" class="pn" title="Info Center"><span class="tl">Info Center</span></a>
+      <a href="/info" class="pn" title="Info"><span class="tl">Info</span></a>
     </li>
     <li>
       <a href="/about" class="pn" title="About"><span class="tl">About</span></a>

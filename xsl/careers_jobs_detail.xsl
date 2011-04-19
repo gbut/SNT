@@ -16,6 +16,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </xsl:if>
     <span class="reqid">Position: <xsl:value-of select="requisitionid" /></span>
   </div>
+  
+    
+  <div id="job_id" class="jobid">
+    <xsl:value-of select="id" disable-output-escaping="yes" />
+  </div>
+  
 
   <div class="description">
     <xsl:value-of select="description" disable-output-escaping="yes" />
