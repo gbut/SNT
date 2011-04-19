@@ -338,21 +338,21 @@
     name: "Guyana",
     svg: "m303.174988,297.174988l0,-2l2,-2l0,-1l-1,0l0,-1l2,-2l1,0l3,3l-1,1l0,2l1,-1l1,0l2,2l0,2l-1,1l-1,0l0,4l1,1l1,0l0,2l1,1l0,1l-1,0l-2,2l-1,0l-1,1l-1,0l-2,-2l0,-8l-1,0l0,-3l-1,0l-1,-1z",
     flag: "guyana.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['sr'] = {
     name: "Suriname",
     svg: "m321.174988,297.174988l0,1l-1,1l0,3l1,1l0,1l-1,1l0,2l-4,0l0,1l-2,0l0,-1l-1,-1l0,-2l-1,0l-1,-1l0,-4l1,0l1,-1l0,-2l2,0l1,1l1,-1l3,0l1,1z",
     flag: "suriname.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['gf'] = {
     name: "French Guiana",
     svg: "m320.174988,307.174988l0,-2l1,-1l0,-1l-1,-1l0,-3l1,-1l0,-1l1,0l1,1l1,0l2,2l0,1l1,1l-2,2l0,2l-2,2l-2,0l-1,-1z",
     flag: "french_guiana.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['bo'] = {
@@ -394,14 +394,14 @@
     name: "Paraguay",
     svg: "m311.174988,378.174988l0,5l4,0l2,2l0,4l3,0l0,5l-1,1l0,2l-3,3l-7,0l0,-1l1,-1l0,-2l2,-2l-3,-3l-2,0l-2,-2l-1,0l-6,-6l2,-2l0,-4l3,-3l6,0l1,1l0,2l1,1z",
     flag: "paraguay.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['uy'] = {
     name: "Uruguay",
     svg: "m322.174988,421.174988l-1,1l0,1l-2,2l-1,-1l-4,0l-1,-1l-2,0l-1,-1l0,-3l1,-1l0,-8l1,-1l2,0l2,2l0,1l1,-1l5,5l0,1l1,0l-1,1l0,3z",
     flag: "uruguay.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
 
@@ -534,7 +534,7 @@
     name: "American Samoa",
     svg: "m53.174999,302.174988l1,1l-1,0l0,-1zm5,6l0,1l1,0l0,-1l-1,0zm6.000004,19l1,-1l-1,0l0,1zm-2.000004,5l1,-1l-1,0l0,1zm-39,-4l1,0l-1,-1l0,1zm-3,0l0,1l1,-1l-1,0zm2,-5l1,-1l-1,0l0,1zm1,20l1,-1l-1,0l0,1zm-12.999999,13l1,-1l-1,0l0,1zm9.999999,1l0,-2l-1,1l1,1zm2,1l1,0l-1,-1l-1,0l1,1zm2,1l1,-1l-1,0l0,1zm-17.999999,0l0,-1l-1,0l1,1zm-5,5l1,-1l-1,0l0,1zm0,1l-1,-1l0,1l1,0zm0,1l0,1l1,0l0,-1l-1,0zm2,1l0,1l1,-1l-1,0zm0,2l0,1l1,-1l-1,0zm2,0l1,1l0,-1l-1,0zm-1,1l-1,1l1,0l0,-1zm-3,3l1,0l-1,-1l0,1zm3,1l1,0l-1,-1l0,1zm11.999999,-2l1,-1l-1,0l0,1zm10,1l1,1l0,-1l-1,0zm-12.999999,7l-1,-1l0,1l1,0zm1,0l-1,1l1,0l0,-1zm37.999999,1l1,-1l-1,0l0,1zm20.000004,-32l0,1l1,-1l-1,0zm1,18l1,-1l-1,0l0,1zm4,1l0,1l1,-1l-1,0zm2,2l0,-2l-1,1l1,1zm9,-6l0,1l1,-1l-1,0zm1,-1l1,1l0,-1l-1,0zm13,-22l0,1l1,-1l-1,0zm2,1l0,-1l-1,1l1,0zm-2,1l0,1l1,-1l-1,0zm2,1l1,1l0,-1l-1,0zm1,2l0,1l1,-1l-1,0zm-9,18l1,-1l-1,0l0,1zm-3,1l0,1l1,-1l-1,0zm7,4l1,1l0,-1l-1,0zm0,2l1,0l-1,-1l0,1zm11,0l0,1l1,-1l-1,0zm-5,8l1,-1l-1,0l0,1zm26,11l0,1l1,-1l-1,0zm-122.000003,66l1,0l-1,-1l-1,0l1,1zm0,2l1,-1l-1,0l0,1zm170.000003,-59l1,-1l-1,0l0,1z",
     flag: "samoa.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
 
@@ -543,42 +543,42 @@
     name: "New Caledonia",
     svg: "m865.174988,373.174988l-1,1l0,-1l1,0zm10,4l0,1l5,5l1,0l1,1l0,-1l-5,-5l-1,0l-1,-1zm9,8l0,-1l-1,1l1,0zm-2,-7l0,1l1,1l0,-1l-1,-1zm2,3l1,0l0,-1l-1,1zm-4,-2l1,-1l-1,0l0,1z",
     flag: "new_caledonia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['fj'] = {
     name: "Fiji",
     svg: "m908.174988,366.174988l1,1l-1,0l0,-1zm5,4l1,0l0,-1l-1,1zm0,-2l1,0l0,-1l-1,1zm-12,13l0,1l1,0l0,-1l-1,0zm6,-29l0,1l1,0l0,-1l-1,0zm4,21l-1,1l1,0l0,-1zm1,-4l-1,-1l-1,0l-2,2l1,0l1,1l2,-2zm0,-2l1,-1l1,0l1,-1l0,-1l-1,1l-1,0l-1,1l0,1zm3,-1l-1,1l1,0l0,-1z",
     flag: "fiji.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['vu'] = {
     name: "Vanuatu",
     svg: "m889.174988,377.174988l1,-1l0,1l-1,0zm-1,-3l0,1l1,0l-1,-1zm0,-2l-1,0l1,1l0,-1zm-3,-3l1,0l0,-1l-1,1zm0,-3l1,1l0,-1l-1,0zm1,-2l-1,0l0,1l1,-1zm-3,0l0,1l1,0l-1,-1zm2,-1l1,-1l-1,0l0,1zm-1,-1l1,-1l-1,0l0,1zm-2,-1l0,-1l-1,-1l0,3l1,1l1,-1l-1,-1zm1,-3l0,1l1,-1l-1,0zm0,-2l0,1l1,0l-1,-1zm-1.998962,-5l0.999023,-1l-0.999023,0l0,1zm-2.001038,-3l1.000977,-1l-1.000977,0l0,1z",
     flag: "vanuatu.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['sb'] = {
     name: "Solomon Islands",
     svg: "m866.174988,351.174988l-2,-2l1,0l1,1l0,1zm2,-5l2,2l0,-0.998993l-1,-1.001007l-1,0zm-2,-2l-1,-1l-2,0l1,1l1,0l1,1l0,-1zm3,0l0,-1l-1,1l1,0zm-3,-4l0,1l1,1l0,1l1,1l0,-1l0,-2l-1,0l-1,-1zm-5,-2l2,2l1,0l-3,-3l0,1zm2,3l1,0l0,-1l-1,1zm2,1l1,1l0,-1l-1,0zm-3,0l0,1l1,-1l-1,0zm-2,-1l-1,0l1,1l0,-1zm-1,0l0,-2l-1,0l0,1l1,1zm-1,0l-1,-1l0,1l1,0zm-1,-2l1,-1l-1,0l0,1zm-1,-1l-1,0l1,1l0,-1zm0,-3l0,1l1,1l1,0l-1,-1l0,-1l-1,0z",
     flag: "solomon_is.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['pg'] = {
     name: "Papua New Guinea",
     svg: "m849.174988,349.174988l1,0l-1,1l0,-1zm-1,0l-1,0l1,1l0,-1zm6,-13l-1,1l1,0l0,-1zm-1,-1l1,0l0,-1l-3,-3l0,1l1,1l0,1l1,1zm-3,-4l1,-1l-1,0l0,1zm-3,11l-1,0l0,1l1,-1zm-2,-19l1,1l0,-1l-1,0zm2,4l-2,-2l0,1l1,1l0,2l1,-1l0,-1zm-4,-4l-1,0l-1,-1l0,1l1,1l1,0l1,1l1,0l-2,-2zm-3,-1l-1,0l1,1l0,-1zm4,5l-1,0l0,3l-1,1l-2,0l-1,-1l0,1l-3.999023,0l0,1l0.999023,0l2.000977,2l1.999023,0l3,-3l1,0l0,-1l1,-1l0,-1l-1,-1zm-10,4l-1,0l1,1l0,-1zm5,-12l-1,-1l0,1l1,0zm-8,2l1,-1l-1,0l-1,1l1,0zm1,10l0,-1l-1,1l1,0zm-3,-3l-1,0l1,1l0,-1zm11,14l-1,0l1,1l0,-1zm1,2l0,-1l-1,1l1,0zm0,1l1,1l0,-1l-1,0zm1,-5l-1,0l1,1l0,-1zm-1,8l1,-1l-1,0l0,1zm-24,-5l4,0l1,-1l0,-1l-1,-1l-1,0l0,-1l2,0l1,-1l5,0l3,3l0,2l2,2l2,0l1,1l3,0l1,1l1,0l-2,-2l0,-1l-2,0l0,-2l-1,0l-2,-2l0,-1l-3,-3l0,-1l3,0l0,-1l-2,-2l-4,0l0,-2l-6,-6l-4,0l-2,-2l0,20l1,1zm5,-3l1,1l0,-1l-1,0z",
     flag: "papua_new_guinea.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['fm'] = {
     name: "Federated States of Micronesia",
     svg: "M844.175,292.175h-1v-1L844.175,292.175z M844.175,292.175v-1h-1L844.175,292.175z M886.175,291.175v1h1L886.175,291.175zM882.175,281.175v-1h-1L882.175,281.175z M892.175,292.175v1h1v-1H892.175z M894.175,293.175h1l-1-1V293.175z M889.175,297.175v-1h-1L889.175,297.175z M897.175,304.175v1h1L897.175,304.175z M897.175,308.175v1h1v-1H897.175z M897.175,310.175v1l1-1H897.175zM897.175,312.175h1l-1-1V312.175z M901.175,316.175v1h1v-1H901.175z M902.175,319.175v-1h-1L902.175,319.175z M888.175,317.175h1v-1L888.175,317.175z M883.175,316.175l-1-1v1H883.175z M860.175,294.175v-1l-1,1H860.175z M828.175,258.175h1l-1,1V258.175zM828.175,256.175v1l1-1H828.175z M828.175,263.175v1h1L828.175,263.175z M828.175,267.175v1h1L828.175,267.175z M828.175,269.175v-1h-1L828.175,269.175z M826.175,271.175h1v-1L826.175,271.175z M820.175,231.175h-1v1L820.175,231.175z M809.175,285.175l-1,1h1V285.175z M800.175,291.175l-1,1h1V291.175z M826.175,273.175v-1l-1,1H826.175z",
     flag: "micronesia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: ['earthquakes','all']
   }; // FSM; Marianas; lots of little islands
 
@@ -622,21 +622,21 @@
     name: "Laos",
     svg: "m726.174988,269.174988l0,-3l-2,-2l0,-4l-2,-2l-2,0l-1,1l-1,0l-1,-1l-2,2l0,-6l-1,0l-1,-1l0,-2l0,-1l1,-1l0,-1l1,0l1,1l0,-1l0,-2l0,-1l1,0l1,1l1,1l0,2l1,1l3,0l1,1l0,2l-1,1l-1,0l4,4l0,1l2,2l0,1l1,1l0,1l1,0l1,1l-1,1l1,1l0,3l-3,0l-1,1l-1,0l-1,-1l1,-1z",
     flag: "laos.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['kh'] = {
     name: "Cambodia",
     svg: "m718.174988,278.174988l1,0l0,1l-1,-1zm4,4c0,1 0,1 0,1l1,0l-1,-1zm6,-12l-1,1l-1,0l-1,-1l-5,0l-2,2l0,3l1,1l0,1l1,1l0,3l1,-1l0,1l0,1l1,0l1,0l1,0l1,-1l3,0l-1,-1l0,-1l1,-1l1,0l2,-2l0,-6l-3,0z",
     flag: "cambodia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['mm'] = {
     name: "Burma",
     svg: "m708.174988,284.174988l-1,0l0,-1l1,1zm-1,-4l0,1l1,0l-1,-1zm1,-2l0,1l1,-1l-1,0zm-2,-2l1,1l0,-1l-1,0zm3,7l0,-2l2,-2l0,-3l-1,-1l0,-4l-2,-2l0,-3l1,-1l0,-1l-1,-1l0,-2l-2,-2l0,-5l1,-1l2,0l2,-2l2,0l0,-1l1,-1l0,-1l-1,0l-1,-1l0,-1l-1,0l-1,0l0,-1l1,-1l0,-1l-1,0l-1,-1l0,-2l0,-1l-1,0l-1,1l-1,0l0,-2l0,-1l1,-1l1,-1l0,-1l1,-1l0,-1l0,-3l-2,-2l0,-1l-1,-1l-1,1l0,1l-1,1l0,1l-1,1l-2,0l-1,1l0,2l-1,1l0,1l-1,1l0,2l0,1l-1,1l-1,0l-1,1l0,2l0,2l-1,1l-1,1l0,1l-1,0l0,2l1,1l1,1l0,1l1,-1l1,1l0,1l0,1l1,1l0,1l1,1l0,2l0,3l-1,1l0,1l2,0l1,1l1,-1l1,-1l1,0l1,-1l0,-1l0,-1l1,1l1,1l0,5l1,1l0,3l1,1l0,2l1,1l0,1l0,1l0,2l-1,1l0,3l1,-1zm0,-7l-1,-1l0,1l0,1l1,-1zm-13,-19l0,-1l-1,0l1,1z",
     flag: "burma.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['vn'] = {
@@ -657,14 +657,14 @@
     name: "North Korea",
     svg: "m774.174988,186.175003l1,0l1,-1l2,-2l1,-1l0,-1l1,-1l1,1l1,0l1,1l1,-1l0,-1l1,0l1,-1l1,-1l1,-1l0,-1l1,1l1,1l-1,1l-1,1l0,3l-1,1l-1,1l-1,1l-1,0l-1,1l-1,0l0,1l0,1l1,1l1,1l0,1l-1,0l-1,1l-2,0l-1,1l-1,0l-1,0l-1,0l-1,-1l0,-1l1,-1l0,-1l1,-1l-1,-1l-1,0l-1,-1l0,-1z",
     flag: "north_korea.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['mn'] = {
     name: "Mongolia",
     svg: "m759.174988,158.175003l3,3l0,1l-1,1l-5,0l-4,4l-2,0l-2,2l-6,0l-1,1l0,2l1,1l-5,5l-8,0l-2,2l-8,0l-3,-3l-13,0l-2,-2l0,-2l-2,-2l-1,0l-2,-2l-6,0l-1,-1l0,-7l-3,-3l-2,0l-2,-2l0,-3l2,0l3,-3l2,0l2,-2l7,0l0,2l1,1l7,0l2,-2l-1,-1l0,-3l2,-2l3,0l2,2l3,0l1,1l0,3l1,1l4,0l1,-1l5,0l2,2l1,0l0,1l1,1l4,0l1,1l2,0l1,-1l3,0l3,-3l3,0l1,1l3,0l1,1l0,1l-4,4l0,1l1,1l4,0l1,-1l2,0z",
     flag: "mongolia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['in'] = {
@@ -678,77 +678,77 @@
     name: "Bangladesh",
     svg: "m692.174988,248.175003l-1,-1l0,-2l0,-1l0,-1l0,-1l1,-1l1,0l0,6l0,1l-1,0zm-2,-6l0,-2l1,-1l1,-1l0,-1l0,-1l-5,0l-1,-1l0,-2l-2,0l-1,-1l-1,0l0,2l1,1l1,0l0,1l-1,0l-1,1l0,1l1,1l0,2l1,1l0,4l1,1l1,0l1,-1l1,0l0,-2l1,-1l0,1l1,0l1,-1l-1,-1zm-1,2l0,2l1,-1l0,-1l-1,0z",
     flag: "bangladesh.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['bt'] = {
     name: "Bhutan",
     svg: "m685.174988,226.175003l4,0l2,2l0,1l1,1l0,1l-7,0l-2,-2l1,-1l0,-1l1,-1z",
     flag: "bhutan.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['np'] = {
     name: "Nepal",
     svg: "m666.174988,219.175003l2,2l1,0l5,5l2,0l1,1l5,0l0,6l-3,0l-2,-2l-3,0l-2,-2l-3,0l-2,-2l-3,0l-2,-2l0,-3l1,-1l0,-2l3,0z",
     flag: "nepal.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['lk'] = {
     name: "Sri Lanka",
     svg: "m661.174988,284.174988l1,0l0,1l-1,-1zm0,1l1,1l-1,1l0,2l-1,1l0,4l1,1l1,1l2,0l1,-1l1,-1l0,-4l-1,-1l0,-2l-1,-1l-1,-1l-1,0l-1,-1l0,1z",
     flag: "sri_lanka.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['pk'] = {
     name: "Pakistan",
     svg: "m615.174988,233.175003l2,-2l1,0l0,-1l1,-1l-2,0l0,-3l-4,-4l0,-1l2,0l1,1l5,0l1,-1l3,0l1,-1l0,-3l1,-1l2,0l1,-1l3,0l1,-1l0,-4l2,0l1,-1l-1,-1l0,-1l2,0l0,-1l1,-1l1,-1l0,-3l-1,-1l2,-2l2,0l1,-1l3,0l2,0l2,2l0,1l2,2l2,0l-3,3l-5,0l-1,1l0,4l2,2l1,0l0,1l-2,2l0,3l-3,3l0,2l-1,1l-1,0l-1,1l0,2l-2,0l-1,1l-1,-1l-1,0l-1,1l0,3l1,1l0,2l2,2l0,2l-1,1l-4,0l-1,1l-1,0l-2,0l0,-2l-1,-1l0,-1l-1,-1l-3,0l-1,1l-1,0l-1,-1l-1,1l-2,0l-1,0l-1,0l-1,0l0,-3z",
     flag: "pakistan.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['af'] = {
     name: "Afghanistan",
     svg: "m648.174988,195.175003l0,1l-1,1l-3,0l-1,1l-2,0l-2,2l1,1l0,3l-2,2l0,1l-2,0l0,1l1,1l-1,1l-2,0l0,4l-1,1l-3,0l-1,1l-2,0l-1,1l0,3l-1,1l-3,0l-1,1l-5,0l-1,-1l-2,0l0,-1l2,-2l0,-2l-1,0l-2,-2l0,-4l1,-1l-1,-1l0,-2l1,-1l0,-2l1,-1l2,0l1,1l1,-1l0,-2l3,0l1,-1l0,-2l1,-1l1,0l1,-1l2,0l1,1l2,0l1,1l1,0l1,-1l1,0l1,-1l1,0l1,-1l0,-1l1,-1l1,0l0,2l1,1l0,2l1,0l1,0l1,-1l1,-1l1,0l1,1l1,0l1,-1z",
     flag: "afghanistan.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['kz'] = {
     name: "Kazakhstan",
     svg: "m586.174988,169.175003l-1,1l0,-1l1,0zm2,2l-1,0l-1,-1l0,1l0,1l1,0l1,1l0,1l1,1l0,1l1,1l1,0l1,1l-1,1l0,2l1,-1l0,-1l1,-1l2,0l4,4l1,0l0,-12l1,-1l2,-2l4,0l1,1l1,1l1,0l2,2l1,0l1,1l0,1l1,1l7,0l2,0l1,1l0,1l1,1l0,3l1,1l1,1l1,1l2,0l1,1l0,-1l1,-1l1,-1l1,-1l1,0l1,-1l1,0l1,-1l0,-1l1,0l3,0l1,1l1,-1l0,-1l1,-1l1,0l1,1l1,1l1,0l1,-1l4,0l1,1l2,0l2,0l1,1l1,1l0,-2l1,-1l0,-2l-1,-1l0,-3l-1,-1l1,-1l6,0l0,-1l-1,-1l0,-1l2,-2l0,-2l2,0l1,1l2,0l2,-2l0,-3l1,-1l1,0l2,-2l-2,-2l-3,0l-1,-1l0,-1l-2,0l0,-2l-1,-1l-2,0l-1,1l-3,0l-1,-1l0,-1l-2,0l0,1l-1,1l0,-2l-2,-2l0,-2l-7,-7l1,0l0,-1l-2,0l-3,3l-2,0l-1,1l-1,-1l1,-1l0,-1l-2,0l-1,1l0,-1l-3,0l0,-3l-1,-1l-2,0l-1,-1l-3,0l-3,3l-4,0l-1,1l-2,0l-1,1l-7,0l0,3l1,1l0,1l-2,0l0,2l-1,0l-1,1l0,1l1,1l2,0l0,3l-4,0l-1,1l-2,-2l-6,0l-1,1l-2,0l-1,-1l0,2l-1,-1l0,-1l-2,-2l-3,0l-1,-1l-1,1l-1,-1l-2,0l-4,4l0,3l-1,0l-2,-2l-2,2l0,7l1,1l2,0l2,2l0,1l-1,1l1,1l1,0l1,0l1,-1l1,-1l1,0l1,-1l1,0l1,1l1,0l2,0l0,1l0,2l-1,1l0,1l1,1l-4,0l-1,1l0,1l1,1l-1,0z",
     flag: "kazakhstan.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['tm'] = {
     name: "Turkmenistan",
     svg: "m595.174988,196.175003l0,-6l-1,-1l-1,0l0,-1l1,0l0,-1l-1,-1l-1,1l0,-3l1,-1l1,1l2,0l1,-1l-1,-1l-1,-1l0,-1l-1,-1l-1,0l0,1l-1,1l0,1l-1,-1l1,-1l0,-1l1,-1l2,0l2,2l2,2l2,0l2,0l0,-2l1,-1l1,0l1,-1l0,-1l1,0l1,1l1,0l2,2l0,2l1,1l3,0l1,1l0,2l1,1l2,2l1,1l2,0l3,3l2,0l0,2l-2,0l-1,1l-1,0l-1,1l0,2l-1,1l-3,0l0,2l-1,1l-1,-1l-2,0l-1,-1l0,-3l-2,0l-3,-3l-2,0l0,-1l-2,0l-1,-1l-4,0l-3,3l-1,0zm-2,-5l0,-1l-1,0l1,1z",
     flag: "turkmenistan.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['uz'] = {
     name: "Uzbekistan",
     svg: "m603.174988,182.175003l-3,0l0,-12l3,-3l4,0l2,2l1,0l2,2l1,0l1,1l0,1l1,1l9,0l1,1l0,1l1,1l0,3l3,3l2,0l1,1l0,-1l3,-3l1,0l1,-1l1,0l1,0l-1,1l-1,0l-1,1l1,1l1,0l1,1l1,-1l1,0l1,1l1,1l-1,1l-1,0l-1,1l-1,0l-1,0l-1,-1l1,-1l-1,-1l-1,1l-1,0l-1,0l0,1l-1,1l0,1l-1,1l-1,0l-1,0l-1,1l1,1l1,0l0,2l1,1l-1,1l-1,1l0,1l-2,0l-1,-1l0,-2l-2,0l-3,-3l-2,0l-4,-4l0,-2l-1,-1l-3,0l-1,-1l0,-2l-2,-2l-1,0l-1,-1l-1,0l0,1l-1,1l-1,0l-1,1l0,2z",
     flag: "uzbekistan.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['tj'] = {
     name: "Tajikistan",
     svg: "m638.174988,187.175003l-1,0l-1,-1l-1,0l-1,1l0,1l4,0l1,0l1,1l1,0l3,0l1,-1l0,2l1,1l1,0l1,1l0,3l-1,1l-1,0l-1,-1l-1,0l-2,2l-2,0l0,-2l-1,-1l0,-2l-1,0l-1,1l0,1l-1,1l-1,0l-1,1l-1,0l-1,1l-1,0l-1,-1l0,-1l2,-2l-1,-1l0,-2l-1,0l-1,-1l1,-1l2,0l1,-1l0,-1l1,-1l0,-1l2,0l1,-1l1,1l-1,1l1,1l0,1z",
     flag: "tajikistan.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['kg'] = {
     name: "Kyrgyzstan",
     svg: "m634.174988,187.175003l1,-1l1,0l1,1l1,0l0,-1l2,0l1,-1l1,0l1,-1l-2,-2l-1,0l-1,1l-1,-1l-1,0l-1,-1l1,-1l1,0l1,-1l-1,0l1,-1l0,-1l4,0l1,1l1,-1l0,-1l1,-1l1,0l2,2l1,0l1,-1l4,0l1,1l4,0l2,2l-2,2l-2,0l-2,2l-2,0l-2,2l-4,0l-4,4l-4,0l-1,-1l-5,0l0,-1z",
     flag: "kyrgyzstan.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['id'] = {
@@ -769,7 +769,7 @@
     name: "Maldives",
     svg: "M641.175,306.175v2h-1v-2H641.175z",
     flag: "maldives.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
 
@@ -790,7 +790,7 @@
     name: "Greenland",
     svg: "m280.174988,32.174999l-1,-1l-5,0l-1,-1l0,-2l1,-1l4,0l1,-1l3,0l1,-1l4,0l4,0l1,-1l0,-2l1,-1l1,-1l-6,0l-1,-1l0,-1l1,-1l3,0l2,-1.999999l1,-1l2,0l5,0l1,-1l0,-2l2,-2l2,0l1,1l1,1l3,0l1,1l2,0l-1,-1l-1,-1l-3,0l-1,-1l0,-1l3,0l6,0l-1,-1l5,0l1,1l0,3l2,-2l-1,-1l1,0l3,0l2,2l2,0l1,-1l-1,0l-1,-1l-1,-1l6,0l1,1l2,0l2,2l4,0l1,1l0,-3l1,-1l-1,-1l-1,-1l-1,0l-2,0l-1,-1l3,0l1,-1l9,0l1,-1l4,0l2,2l1,0l1,-1l-1,0l-1,-1l1,-1l9,0l1,-1l10,0l1,1l8,0l1,1l-12,0l-1,1l7,0l10,0l1,1l1,1l6,0l0,1l-1,1l-1,0l-1,1l-3,0l-13,0l-1,1l11,0l2,2l1,0l1,-1l1,-1l6,0l0,1l0,1l-1,1l-1,1l-1,0l-1,1l-1,1l2,0l1,-1l1,0l1,-1l1,-1l1,0l3,0l5,0l2,-2l6,0l1,1l4,0l1,1l0,1l-2,0l-1,1l-3,0l-2,1.999999l-3,0l-1,1l0,1l-1,1l-8,0l-1,1l1,1l1,1l0,1l1,0l0,1l-1,1l-1,1l-2,0l-1,1l-1,1l0,2l-1,1l2,0l3,0l1,1l-3,0l1,1l1,1l4,0l0,1l-1,1l-3,0l-3,0l-1,1l-1,0l-1,-1l-1,1l1,0l2,2l3,0l1,1l1,1l0,3l-4,0l0,1l0,1l1,-1l1,0l1,1l1,1l0,2l-3,0l-3,0l-1,-1l-1,1l1,1l4,0l0,2l-1,0l-1,1l-4,0l-1,-1l-1,0l-1,-1l-1,1l-2,0l-1,1l5,0l1,1l2,0l1,1l0,3l-3,0l-3,-3l-1,0l0,1l1,1l2,2l1,0l1,1l2,0l0,1l-1,1l2,0l0,5.000004l-2,0l-2,0l-1,-1l0,-1l-2,-2.000004l-1,-1l-2,0l0,1l-1,1.000004l-5,0l0,1l-1,1l-1,0l1,1l4,0l-1,1l2,0l1,-1l1,0l2,0l1,1l2,0l3,0l-1,1l-1,1l-2,0l-1,1l-1,1l-2,2l-2,0l-1,1l-4,0l-1,1l-3,0l-1,1l-4,0l-1,-1l0,2l-1,1l-1,0l-1,1l0,2l-1,1l-2,2l-2,0l-1,1l-1,1l-2,0l-1,1l-2,0l1,-1l0,-1l1,-1l-1,0l-1,1l0,1l-1,1l-2,0l0,1l-1,1l-1,0l-1,1l1,1l0,1l-1,1l0,3l-4,4l0,5l-1,1l0,2l-1,1l0,2l-1,1l-2,0l-1,-1l-1,0l-1,-1l0,-1l-1,0l-1,-1l-1,0l-3,0l-2,-2l-1,0l-2,-2l0,-1l0,-1l-2,-2l-1,-1l0,-2l-1,-1l-1,-1l0,-2l-1,0l0,-1l-1,-1l0,-3l-1,0l-1,-1l0,-2l-1,0l0,-2l1,-1l-1,0l-1,-1l0,-1l2,-2l-2,0l2,-2l5,0l-1,-1l-4,0l0,-2l2,0l1,1l3,0l-1,-1l0,-2l1,-1l1,-1l0,-1l-3,0l-1,-1l-2,0l-1,-1l-2,0l-1,-1l0,-1l5,0l1,1l1,0l1,1l1,0l-1,-1l0,-2l-1,-1.000004l-1,0l-2,0l-1,-1l2,0l1,-1l-3,0l0,-1l-1,0l0,1l-1,1l-5,0l0,-2l1,-1l0,-1l0,-1l1,0l1,-1l0,-1l-2,0l0,-1l1,-1l-2,0l-1,-1l1,-1l0,-1l-1,-1l-1,0l0,-1l1,-1l-2,0l-2,-2l-1,-1l-1,-1l1,-1l-1,-1l-2,0l-1,-1l-3,0l-1,-1l-4,0l-9,0l-1,1l-4,0l-1,-1l-1,-1l0,-1l-1,-1l-3,0l-1,-1l1,-1l5,0l1,-1l5,0l1,-1l-10,0zm-7,2l3,0l1,-1l-3,0l-1,1zm70,-28.000999l-2,0l-3,0l0,1l1,0l1,1l2,0l1,1l1,0l0,-2l-1,-1zm70,15l1,-1l-3,0l-1,1l3,0zm-4,7.000999l0,2l1,0l0,-2l-1,0zm3,3l0,1l1,0l0,-1l-1,0zm-2,8l1,1l0,-3l-1,0l0,2zm0,4l0,2l4,0l-1,-1l-1,-1l-2,0zm-89,20l0,1.000004l1,0l0,-1.000004l-1,0zm5,2.000004l1,0l-1,-1l-1,0l1,1zm-7,2l0,1l0,1l0,1l1,1l1,0l1,1l1,0l1,-1l2,0l0,-1l-1,-1l-1,0l-1,-1l-1,0l-1,-1l-2,0zm9,2l0,2l1,-1l0,-1l-1,0zm35,19l1,0l0,-1l-1,1zm25,-23l-1,1l1,0l3,0l1,1l0,-1l1,0l1,-1l0,-1l-1,0l-1,0l-3,0l-1,0l0,1zm20,-57.000003l0,1l1,1l2,0l-1,-1l-1,-1l-1,0z",
     flag: "greenland.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
 
@@ -832,7 +832,7 @@
     name: "Finland",
     svg: "m534.174988,80.175003l-2,2l0,2l3,3l0,1l-1,0l0,4l2,2l0,1l-1,1l0,1l3,3l-9,9l-1,1l-2,0l-2,0l-1,1l-2,0l-1,1l-2,0l-1,0l-1,-1l0,0l-1,1l0,-1l0,-1l-1,0l-1,-1l-1,0l0,-2l1,-1l0,-1l-1,-1l0,-1l0,-2l0,-1l1,-1l0,-1l1,0l3,-3l1,0l1,-1l1,-1l1,-1l1,-1l0,-2l-1,-1l-1,-1l-1,0l0,-1l-1,-1l0,-1l1,-1l0,-1l-1,-1l0,-3l-2,-2l-2,0l-3,-3l1,-1l1,0l2,2l2,0l1,1l1,-1l1,1l2,0l2,-2l0,-3l1,-1l2,0l1,-1l1,0l2,2l1,0l0,1l-1,1l0,5l2,0l1,1l0,2zm-26,30l0,1l1,0l0,-1l-1,0zm3,1l-1,0l0,1l1,-1zm-4,-1l0,1l1,0l-1,-1zm6,2l0,-1l-1,0l1,1zm-1,-3l0,1l1,0l-1,-1zm1,0l-1,0l1,1l0,-1zm0,1l1,1l0,-1l-1,0zm0,2l1,-1l-1,0l0,1zm0,0l0,-1l-1,0l1,1zm-3,-1l0,1l1,-1l-1,0zm-1,-1l0,1l1,0l-1,-1zm-1,1l1,0l0,-1l-1,0l0,1zm1,1l0,-1l-1,0l1,1zm8,1l0,-1l-1,0l1,1zm-3,-2l1,0l0,-1l-1,0l0,1zm7,-21l-1,1l1,0l0,-1zm-9,9l0,-1l-1,0l1,1z",
     flag: "finland.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['es'] = {
@@ -846,7 +846,7 @@
     name: "Latvia",
     svg: "m512.174988,124.175003l1,-1l0,-1l1,-1l2,0l1,1l0,1l1,1l1,0l1,-1l0,-1l0,-2l3,0l1,1l1,0l1,1l2,0l1,1l0,3l1,1l-1,0l-1,1l-1,1l-2,0l-2,-2l-1,0l-1,-1l-8,0l-1,1l0,-3z",
     flag: "latvia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ie'] = {
@@ -874,21 +874,21 @@
     name: "Ukraine",
     svg: "m515.174988,157.175003l0,-3l1,0l0,-2l3,-3l0,-2l-1,-1l0,-1l1,0l1,-1l7,0l1,1l3,0l1,-1l1,1l2,0l1,1l0,-3l4,0l1,-1l3,0l2,2l-1,0l0,2l2,0l1,1l0,2l2,0l1,1l1,-1l1,0l2,2l1,-1l2,2l2,0l0,2l-1,0l0,5l-2,0l-2,2l-1,1l-2,0l-1,1l-2,0l-1,1l-1,1l0,2l3,0l1,1l-1,1l-2,0l-1,0l-1,1l-1,1l-2,0l0,-1l0,-1l0,-1l-2,0l0,-1l1,-1l2,0l-1,-1l-3,0l-1,0l-1,-1l1,0l1,-1l-1,0l-1,0l-1,0l-1,1l-2,2l-1,1l-1,1l-1,0l-1,0l0,-1l1,-1l0,-1l1,-1l1,0l1,0l0,-1l-1,-1l0,-1l-1,-1l0,-1l-1,-1l-1,-1l-1,0l-3,0l-1,1l-2,0l-1,1l-1,0l-1,-1l-1,0l-3,0l-1,-1z",
     flag: "ukraine.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['lt'] = {
     name: "Lithuania",
     svg: "m512.174988,127.175003l1,-1l8,0l1,1l1,0l2,2l0,1l1,1l-1,0l-1,1l-1,1l0,1l1,1l-1,0l-1,0l-1,1l-3,0l-1,-1l-1,-1l0,-2l-1,-1l-3,0l0,-2l0,-2z",
     flag: "lithuania.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['by'] = {
     name: "Belarus",
     svg: "m521.174988,136.175003l1,-1l2,0l-1,-1l0,-1l1,-1l1,-1l1,0l-1,-1l0,-1l2,0l2,-2l1,0l1,1l2,0l0,1l1,-1l1,0l2,2l0,4l4,4l-1,1l-1,0l-1,-1l-1,1l1,1l0,3l-2,0l0,3l-1,-1l-2,0l-1,-1l-1,1l-3,0l-1,-1l-7,0l-1,1l-1,0l0,-1l0,-2l-1,0l1,-1l1,0l0,-2l-1,-1l0,-2l3,0z",
     flag: "belarus.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['at'] = {
@@ -909,7 +909,7 @@
     name: "Croatia",
     svg: "m506.174988,165.175003l0,1l0,1l1,1l-1,1l-1,0l-1,0l-1,-1l-2,0l-1,0l-1,1l-1,-1l0,1l0,1l1,1l1,1l0,1l2,2l2,2l-1,0l-1,-1l0,0l-1,-1l-1,0l0,-1l-2,0l-1,-1l0,-1l-1,-1l0,-2l-1,-1l0,0l-1,0l0,2l-1,-1l0,-2l1,0l1,-1l1,1l1,0l1,-1l0,-1l2,-2l3,3l2,0l1,-1zm-12,5l1,0l0,-1l-1,1z",
     flag: "croatia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['fr'] = {
@@ -972,7 +972,7 @@
     name: "Bosnia and Herzegovina",
     svg: "m503.174988,176.175003l-3,-3l0,-1l-2,-2l0,-2l1,1l1,-1l3,0l1,1l2,0l1,0l0,1l-1,1l1,1l1,0l-1,1l1,1l-1,0l-1,1l-1,1l0,1l-1,0l-1,-1z",
     flag: "bos_herz.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['gb'] = {
@@ -986,7 +986,7 @@
     name: "Estonia",
     svg: "m520.174988,120.175003l0,-1l-1,0l-1,-1l0,-2l1,-1l1,-1l2,0l1,-1l1,0l1,1l4,0l0,1l-1,1l0,6l-1,0l-1,0l-1,-1l-1,0l-1,-1l-2,0l-1,0zm-4,-4l-1,0l0,1l1,0l0,-1zm-1,3l1,0l1,-1l-1,-1l-1,1l-2,0l1,1l0,1l1,-1zm2,-1l1,-1l-1,0l0,1z",
     flag: "estonia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['dk'] = {
@@ -1000,14 +1000,14 @@
     name: "Montenegro",
     svg: "m507.174988,174.175003l0,1l1,0l1,1l1,1l-1,0l0,1l-1,0l0,-1l-1,1l0,1l0,1l-3,-3l3,-3z",
     flag: "montenegro.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['rs'] = {
     name: "Serbia",
     svg: "m510.174988,166.175003l1,1l1,1l0,1l1,1l1,1l1,-1l0,1l1,1l-1,1l0,1l1,1l0,1l-1,1l0,1l-1,0l-1,1l0,-2l-1,-1l-1,-1l-1,1l0,1l-2,-2l-1,0l0,-1l1,0l-1,-1l1,-1l-1,0l-1,-1l1,-1l0,-1l-1,0l1,-1l-1,-1l0,-2l4,0l0,1z",
     flag: "serbia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ro'] = {
@@ -1021,7 +1021,7 @@
     name: "Republic of Moldova",
     svg: "m526.174988,157.175003l4,0l2,2l0,1l1,1l0,1l1,1l0,1l-2,0l-1,1l0,1l-1,1l-1,-1l0,-4l-1,-1l0,-1l-1,-1l0,-1l-1,-1z",
     flag: "moldova.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['bg'] = {
@@ -1035,21 +1035,21 @@
     name: "Kosovo",
     svg: "m509.174988,178.175003l0,-1l1,0l0,-1l1,-1l2,2l0,2l-1,0l-1,0l0,1l-1,0l0,-1l-1,-1z",
     flag: "kosovo.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['mk'] = {
     name: "Macedonia",
     svg: "m511.174988,183.175003l-1,-1l0,-2l1,0l0,-1l2,0l1,-1l1,0l0,1l1,1l0,2l-1,0l-1,1l-1,0l-1,1l-1,0l0,-1z",
     flag: "macedonia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['al'] = {
     name: "Albania",
     svg: "m507.174988,178.175003l1,-1l0,1l1,0l1,1l0,2l0,1l1,1l0,2l-1,1l0,1l-1,1l0,-1l-1,-1l-1,-1l0,-3l1,-1l-1,-1l0,-2z",
     flag: "albania.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['gr'] = {
@@ -1063,7 +1063,7 @@
     name: "Iceland",
     svg: "m407.174988,97.175003l-1,-1l-1,0l-1,-1l-1,1l-2,0l-1,-1l0,-1l1,1l1,0l0,-1l0,-1l-1,-1l-2,0l-1,0l-1,-1l2,0l1,0l2,0l1,-1l-1,0l-1,0l1,-1l1,0l-1,-1l-1,1l-1,-1l-1,0l-1,1l-1,0l-1,-1l1,0l0,-1l1,0l0,-1l1,0l1,1l1,0l0,-1l-1,0l0,-1l-1,0l1,-1l1,0l1,1l1,0l1,1l0,1l-1,1l1,1l1,-1l1,0l1,-1l-1,-1l1,0l1,1l1,-1l1,0l1,0l1,1l0,-1l1,0l1,0l1,0l1,0l0,-1l0,-1l1,0l1,1l1,0l2,0l-1,1l0,1l1,0l1,1l1,1l0,1l0,1l-1,1l-2,2l-2,0l-1,1l-1,0l-1,1l-1,0l-2,2l-2,0l-1,-1l-2,0z",
     flag: "iceland.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['pt'] = {
@@ -1079,280 +1079,280 @@
     name: "Morocco",
     svg: "m443.174988,201.175003l2,0l2,2l6,0l0,6l2,2l0,2l-4,0l-8,8l-3,0l-4,4l0,5l-5,0l-4,4l0,2l-5,5l0,5l-2,2l-5,0l0,-3l2,-2l0,-3l3,-3l0,-3l4,-4l0,-2l1,-1l2,0l6,-6l0,-7l10,-10l0,-3z",
     flag: "morocco.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['eh'] = {
     name: "Western Sahara",
     svg: "m436.174988,230.175003l0,3.002991l-7,0l-0.997986,0.999008l0,6.998001l-3.001007,3.000992l-0.001007,3.999008l-1,1l-8,0l-1,-1l5,0l2,-1.972l0,-5.028l5,-5l0.014008,-2l3.992981,-3.992996l4.993011,0",
     flag: "west_sahara.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['sn'] = {
     name: "Senegal",
     svg: "m414.174988,269.174988l2,-2l0,-2l2,-2l4,0l1,1l0,1l4,4l0,2l1,1l0,2l1,1l0,1l-4,0l-1,-1l-5,0l-1,1l-2,0l-1,-1l1,-1l2,0l1,-1l2,0l1,1l1,-1l-1,0l-1,-1l-5,0l0,-1l-2,-2z",
     flag: "senegal.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['gn'] = {
     name: "Guinea",
     svg: "m429.174988,277.174988l4,0l1,-1l1,0l1,1l0,2l1,1l0,2l1,1l-1,1l0,1l1,1l0,3l-1,1l0,1l-1,0l-1,1l-1,-1l0,-2l-1,-1l-2,0l0,-2l-2,-2l-3,0l0,1l-1,1l-5,-5l0,-1l2,-2l1,0l0,-3l1,0l1,1l4,0l0,1z",
     flag: "guinea.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['lr'] = {
     name: "Liberia",
     svg: "m434.174988,291.174988l1,1l1,-1l1,0l0,4l1,0l1,1l0,5l-1,0l-3,-3l-1,0l-5,-5l2,-2l0,-1l1,-1l0,-1l1,0l1,1l0,2z",
     flag: "liberia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ci'] = {
     name: "Cote D'Ivoire",
     svg: "m438.174988,283.174988l3,0l0,-1l1,0l0,1l1,0l1,-1l3,3l1,-1l2,0l1,1l0,7l-1,1l0,3l1,1l0,2l-1,-1l-6,0l-1,1l-1,0l-2,2l-1,0l0,-5l-1,-1l-1,0l0,-5l1,-1l0,-3l-1,-1l0,-1l1,-1z",
     flag: "ivory_coast.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['gh'] = {
     name: "Ghana",
     svg: "m451.174988,281.174988l5,0l1,-1l1,0l0,2l1,1l0,5l1,0l0,6l1,1l-2,2l-2,0l-2,2l-2,0l0,1l-1,-1l-1,0l0,-2l-1,-1l0,-3l1,-1l0,-11z",
     flag: "ghana.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['bf'] = {
     name: "Burkina Faso",
     svg: "m444.174988,282.174988l0,-2l1,-1l0,-2l1,0l1,-1l0,-2l1,-1l1,1l1,-1l0,-1l1,0l2,-2l2,0l0,-1l1,-1l2,0l1,1l0,3l3,3l1,0l1,1l-1,1l1,1l-1,1l-2,0l-1,1l-3,0l-1,1l-5,0l0,4l-1,-1l-2,0l-1,1l-3,-3z",
     flag: "burkina_faso.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['tg'] = {
     name: "Togo",
     svg: "m460.174988,294.174988l0,-6l-1,0l0,-5l-1,-1l0,-2l2,0c0,0 0,2 0,2.001007s1,0.998993 1,0.998993l0,2l1,1l0,9l-1,0l-1,-1z",
     flag: "togo.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['bj'] = {
     name: "Benin",
     svg: "m464.174988,276.174988l1,0l2,2l0,2l1,1l0,1l-1,1l0,1l-2,2l0,9l-3,0l0,-9l-1,-1l0,-2l-1,-0.998993l0,-2.001007l1,-1l2,0l1,-1l-1,-1l1,-1z",
     flag: "benin.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ml'] = {
     name: "Mali",
     svg: "m444.174988,255.175003l-2,-2l0,-16l2,0l4,0l13,13l1,1l1,0l2,2l1,0l0,2l3,0l0,9.999008l-2,2l-5,0l-1,1l-5,0l-1,1l0,1l-2,0l-2,2l-1,0l0,1l-1,1l-1,-1l-1,1l0,2l-1,1l-1,0l0,2l-1,1l0,2l-1,1l-1,0l0,-1l-1,0l0,1l-3,0l-1,-1l0,-2l-1,-1l0,-2l-1,-1l-1,0l-1,1l-4,0l0,-2l-1,-1l0,-2l-1,-1l0,-2l1,-1l0,-2l2,2l1,-1l3,0l1,-1l9,0l0,-10.999008z",
     flag: "mali.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['cv'] = {
     name: "Cape Verde",
     svg: "m395.174988,261.174988l0,1l-1,0l0,-1l1,0zm0,2l-1,0l0,1l1,-1zm2,1l0,-1l-1,0l1,1zm2,-1l1,0l0,-1l-1,1zm1,1l0,1l1,0l-1,-1zm-1,3l0,1l1,-1l-1,0zm-1,1l0,-1l-1,0l1,1zm-2,0l-1,0l1,1l0,-1z",
     flag: "cape_verde.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['gw'] = {
     name: "Guinea-Bissau",
     svg: "m419.174988,280.174988l0,-1l-3,-3l2,0l1,-1l4,0l0,3l-1,0l-2,2l0,1l-1,-1zm-2,1l0,-1l-1,0l1,1zm0,-2l1,0l-1,-1l0,1z",
     flag: "guinea_bissau.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['gm'] = {
     name: "The Gambia",
     svg: "m416.174988,272.174988l5,0l1,1l1,0l-1,1l-1,-1l-2,0l-1,1l-2,0l1,-1l-1,-1z",
     flag: "gambia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['sl'] = {
     name: "Sierra Leone",
     svg: "m428.174988,292.174988l-1,0l0,-1l-2,-2l0,-3l1,-1l0,-1l3,0l2,2l0,2l1,0l0,1l-1,1l0,1l-2,2l-1,-1zm-2,0l0,-1l-1,0l1,1z",
     flag: "sierra_leone.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['mr'] = {
     name: "Mauritania",
     svg: "m436.174988,229.175003l8,8l-2,0l0,16l2,2l0,10.999985l-9,0l-1,1l-3,0l-1,1l-2,-2l0,2l-1,1l-4,-4l0,-1l-1,-1l-4,0l-2,2l0,-3l1,-1l0,-5l-1,-0.998993l0,-1l1,-1l0,-2l-2,-2l0,-1l1,1l8,0l1,-1l0,-4l3,-3l0,-7l1,-1l7,0l0,-4.000992zm-21,25l1,-1l-1,0l0,1z",
     flag: "mauritania.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ne'] = {
     name: "Niger",
     svg: "m469.174988,255.175995l3,0l6,-6.001007l2,0l8,-8l1,1l2,0l2,2l1,0l1,-1l1,0l0,4l2,2l0,14l-6,6l0,3l-2,2l-1,0l-1,-1l-4,0l-2,2l-2,0l-2,-2l-1,1l-2,0l-2,-2l-4,0l-1,1l0,2l-1,1l0,2l-2,-1.998993l-1,0l-1,-1l-1,0l-3,-3l0,-3.001007l-1,-0.998993l3,0l1,-1l5,0l2,-2l0,-10z",
     flag: "niger.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['td'] = {
     name: "Chad",
     svg: "m496.174988,243.175003l1,0l1,-1l2,0l19,12l0,11.999985l-3,0l0,3l-1,0l0,2l-1,1l0,3l1,1l0,3l1,1l0,1l-2,0l-3,3l0,1l-2,2l-3,0l1,1l-2,2l-3,0l-1,1l-1,-1l-1,1l-2,0l0,-3l-3,-3l0,-1l3,0l0,-2l-1,-1l0,-5l-4,-4l0,-3l6,-6l0,-13.999985l-2,-2l0,-4z",
     flag: "chad.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ng'] = {
     name: "Nigeria",
     svg: "m465.174988,286.174988l2,-2l0,-1l1,-1l0,-1l-1,-1l0,-4l1,-1l0,-2l1,-1l4,0l2,2l2,0l1,-1l2,2l2,0l2,-2l4,0l1,1l1,0l2,-2l2,2l0,2l1,1l0,2l-3,3l0,3l-1,0l0,2l-3,3l0,3l-2,2l0,-1l-1,-1l-1,0l-4,4l0,2l-1,0l0,1l-3,0l-1,1l-1,0l-2,-2l0,-2l-1,0l-2,-2l-4,0l0,-9z",
     flag: "nigeria.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['st'] = {
     name: "Sao Tome and Principe",
     svg: "m477.174988,310.174988l1,-1l0,1l-1,0zm-1,3l-1,1l1,0l1,-1l-1,0z",
     flag: "sao_tome_principe.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['cm'] = {
     name: "Cameroon",
     svg: "m494.174988,274.174988l0,2l1,1l0,2l-3,3l0,3l-1,0l0,2l-3,3l0,3l-2,2l0,-1l-1,-1l-1,0l-4,4l0,3l2,2l1,0l0,5l9,0l0,1l4,0l1,1l2,0l0,-4l-3,-3l0,-2l-1,-1l0,-6l2,-2l0,-3l-3,-3l0,-1l3,0l0,-2l-1,-1l0,-5l-2,-2z",
     flag: "cameroon.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ga'] = {
     name: "Gabon",
     svg: "m486.174988,326.174988l-3,-3l0,-2l-1,-1l0,-2l-1,0l-1,-1l2,-2l0,-1l1,0l-1,-1l0,-2l5,0l0,-4l5,0l0,3l3,0l0,3l-2,2l2,0l0,5l-2,2l0,-1l-5,0l0,4l-1,1l-1,0z",
     flag: "gabon.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['gq'] = {
     name: "Equatorial Guinea",
     svg: "m481.174988,303.174988l0,1l-1,1l-1,0l1,-1l0,-1l1,0zm6,8l0,-4l-4,0l0,3l-1,1l5,0z",
     flag: "equatorial_guinea.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['cf'] = {
     name: "Central African Republic",
     svg: "m499.174988,305.174988l-3,-3l0,-2l-1,-1l0,-6l2,-2l2,0l1,-1l1,1l1,-1l3,0l2,-2l-1,-1l3,0l2,-2l0,-1l3,-3l2,0l2,2l0,4l2,2l1,0l1,1l0,1l3,3l0,1l2,2l0,2l-3,0l-1,-1l-1,1l-2,0l-1,1l-3,0l-1,1l-4,0l-2,-2l-2,0l-2,2l0,2l-5,0l0,3l-1,1l0,-2z",
     flag: "central_african.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['cg'] = {
     name: "Congo",
     svg: "m487.174988,326.174988l1,-1l0,-4l5,0l0,1l2,-2l0,-5l-2,0l2,-2l0,-3l-3,0l0,-2l4,0l1,1l2,0l0,-2l1,-1l0,-3l5,0l0,3l-1,1l0,3l-1,1l0,5l-2,2l0,1l-2,2l0,4l-4,4l0,-1l-2,0l-1,1l-1,-1l-1,0l-1,1l-1,0l0,-1l-2,-2l1,0z",
     flag: "congo.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ao'] = {
     name: "Angola",
     svg: "M489.175,332.175v-2l-1-1h1l1-1h1v1l-1,1v2H489.175z M491.175,332.175h9v4l3,3h4v-3h3v1h4v11h5v6h-5v12l3,3h-11l-1-1h-12l-1-1h-4v-5l2-2v-5l3-3v-5l-1-1v-3l-1-1l1-1v-3l-2-2v-3L491.175,332.175z",
     flag: "angola.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['cd'] = {
     name: "Democratic Republic of the Congo",
     svg: "m490.174988,333.174988l-1,-1l1,0l0,-2l1,-1l0,-1l1,1l1,-1l2,0l0,1l4,-4l0,-4l2,-2l0,-1l2,-2l0,-5l1,-1l0,-3l1,-1l0,-5l2,-2l2,0l2,2l4,0l1,-1l3,0l1,-1l2,0l1,-1l1,1l3,0l2,2l3,0l1,-1l3,3l0,4l1,1l0,1l-3,3l0,3l-1,1l0,3l-2,2l0,1l1,1l0,7l1,1l0,3l2,2l0,2l1,1l-1,1l-4,0l0,2l-1,1l1,1l0,4l-1,1l0,1l2,2l2,0l0,4l-2,0l-1,-1l0,-1l-4,-4l-1,1l-2,0l-2,-2l-2,0l-1,-1l-5,0l0,-11l-4,0l0,-1l-3,0l0,3l-4,0l-3,-3l0,-4l-9,0l-1,1z",
     flag: "congo_dr.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['na'] = {
     name: "Namibia",
     svg: "m488.174988,371.174988l0,-4l4,0l1,1l12,0l1,1l11,0l1,-1l3,0l1,1l-1,1l-2,0l-1,1l-1,-1l-6,0l0,13l-2,0l0,20l-2,2l-3,0l-3,-3l0,1l-1,1l-3,-3l0,-3l-1,-1l0,-6l-1,-1l0,-7l-3,-3l0,-3l-2,-2l0,-2l-2,-2z",
     flag: "namibia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['dz'] = {
     name: "Algeria",
     svg: "m453.174988,203.175003l2,0l2,-2l1,0l3,-3l4,0l1,-1l4,0l1,1l2,0l1,-1l6,0l-1,1l0,7l-2,2l0,2l4,4l0,4l1,1l0,2l0,1l1,1l0,10l-1,0l0,3l3,3l1,0l2,2l0,1l-8,8l-2,0l-6,6l-6,0l0,-1.999008l-1,0l-2,-2l-1,0l-14,-14l-4,0l-8,-8l0,-4l4,-4l3,0l8,-8l4,0l0,-2l-2,-2l0,-6.000992z",
     flag: "algeria.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['tn'] = {
     name: "Tunisia",
     svg: "m487.174988,204.175003l0,1l-1,0l1,-1zm-3,14l0,-3l3,-3l0,-2l-2,-2l-2,0l0,-2l1,-1l1,0l1,-1l0,-2l-2,-2l2,-2l0,-1l-1,1l-1,0l0,-2l-3,0l-2,2l0,7l-2,2l0,2l4,4l0,4l1,1l0,2l2,-2zm2,-11l0,1l-1,-1l1,0z",
     flag: "tunisia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ly'] = {
     name: "Libya",
     svg: "m500.174988,242.175003l-2,0l-1,1l-2,0l-1,1l-1,0l-2,-2l-2,0l-1,-1l0,-1l-2,-2l-1,0l-3,-3l0,-3l1,0l0,-10l-1,-1l0,-1l2,-2l0,-3l3,-3l0,-2l1,0l1,1l4,0l1,1l3,0l0,2l3,3l3,0l2,2l2,0l2,-2l0,-3l3,-3l4,0l1,1l0,1l1,0l1,1l2,0l1,1l-1,1l0,4l1,1l0,25l0,6.000992l-3,0l0,1.999008l-19,-12z",
     flag: "libya.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['eg'] = {
     name: "Egypt",
     svg: "m522.174988,246.175003l0,-25l-1,-1l0,-4l1,-1l5,0l2,2l2,0l1,1l3,-3l3,0l2,2l5,0l1,1l0,6l-1,1l0,2l-3,-3l0,-1l-1,-1l0,-2l-1,1l0,3l3,3l0,1l1,1l0,3l2,2l0,2l2,2l0,5l3,3l-13,0l0,-1l-1,1l-15,0z",
     flag: "egypt.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['sd'] = {
     name: "Sudan",
     svg: "m554.174988,261.174988l-2,0l0,3l-1,1l0,10l-2,0l-2,2l0,4l-2,0l0,7l-2,0l-1,1l0,2l2,0l2,2l0,3l2,2l-5,5l-7,0l-3,-3l-1,1l-3,0l-2,-2l0,-2l-2,-2l0,-1l-3,-3l0,-1l-1,-1l-1,0l-2,-2l0,-4l-2,-2l0,-1l-1,-1l0,-3l-1,-1l0,-3l1,-1l0,-2l1,0l0,-3l3,0l0,-13.998993l3,0l0,-6.001007l15,0l1,-1l0,1l13,0l0,1l2,2l0,7l3,3l-2,2z",
     flag: "sudan.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['er'] = {
     name: "Eritrea",
     svg: "m557.174988,260.174988l0,3l1,1l0,3l2,0l2,2l1,1l0,1l4,4l-1,1l-6,-6l-4,0l-1,-1l-1,1l-3,0l0,-5l1,-1l0,-3l2,0l2,-2l1,1zm2,6l1,0l-1,-1l0,1zm2,1l0,-1l-1,1l1,0z",
     flag: "eritrea.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['et'] = {
     name: "Ethiopia",
     svg: "m546.174988,296.174988l0,-3l-2,-2l-2,0l0,-2l1,-1l2,0l0,-7l2,0l0,-4l2,-2l2,0l0,-5l3,0l1,-1l1,1l4,0l6,6l-2,2l0,2l3,0l0,3l1,1l0,2l2,0l3,3l3,0l1,1l3,0l-3,3l0,1l-5,5l-3,0l-2,2l-2,0l-1,1l-2,0l0,-1l-1,0l-3,3l-3,0l-3,-3l-2,0l-1,-1l0,-2l-1,0l-2,-2z",
     flag: "ethiopia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ug'] = {
     name: "Uganda",
     svg: "m533.174988,316.174988l1,-1l0,-3l3,-3l0,-1l-1,-1l0,-4l7,0l2,-2l0,3l2,2l0,4l-3,3l0,4l-8,0l-2,2l-1,0l0,-3z",
     flag: "uganda.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ke'] = {
     name: "Kenya",
     svg: "m564.174988,302.174988l-1,1l0,1l-1,1l0,12l2,2l-1,1l-1,0l0,2l-2,0l0,2l-1,1l0,2l-1,1l-1,0l-3,-3l0,-1l-10,-7l0,-4l3,-3l0,-4l-2,-2l0,-3l3,-3l1,0l0,2l1,1l2,0l3,3l3,0l3,-3l1,0l0,1l2,0z",
     flag: "kenya.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['zm'] = {
     name: "Zambia",
     svg: "m521.174988,368.174988l-3,0l-1,1l-3,-3l0,-12l5,0l0,-6l1,1l2,0l2,2l2,0l1,-1l4,4l0,1l1,1l2,0l0,-4l-2,0l-2,-2l0,-1l1,-1l0,-4l-1,-1l1,-1l0,-2l4,0l1,-1l3,3l1,0l3,3l0,8l-1,0l0,2l-1,1l1,1l0,1l-2,0l-1,1l-2,0l-2,2l0,2l-3,0l-1,1l0,1l-5,5l-2,0l-1,-1l-1,0l-1,-1z",
     flag: "zambia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['zw'] = {
     name: "Zimbabwe",
     svg: "m535.174988,364.174988l3,0l1,1l2,0l1,1l0,6l-1,1l0,2l1,1l-2,2l0,3l-2,2l-5,0l-1,-1l-2,0l-1,-1l0,-2l-5,-5l0,-2l-2,-2l0,-1l1,0l1,1l2,0l5,-5l0,-1l1,-1l3,0l0,1z",
     flag: "zimbabwe.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['bw'] = {
     name: "Botswana",
     svg: "m509.174988,383.174988l2,0l0,-13l6,0l1,1l1,-1l2,0l1,-1l0,1l2,2l0,2l5,5l0,2l1,1l2,0l1,1l-1,1l-2,0l-3,3l0,2l-2,2l-1,0l-1,1l0,2l-1,1l-2,0l-2,-2l-2,0l0,2l-3,3l-2,0l0,-4l-2,-2l0,-9z",
     flag: "botswana.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['za'] = {
@@ -1366,84 +1366,84 @@
     name: "Swaziland",
     svg: "m539.174988,395.174988l0,3l0,2l-1,0l-2,-2l0,-2l1,-1l2,0z",
     flag: "swaziland.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['mz'] = {
     name: "Mozambique",
     svg: "m539.174988,398.174988l0,-9l-1,-1l0,-5l2,-2l0,-3l2,-2l-1,-1l0,-2l1,-1l0,-6l-1,-1l-2,0l-1,-1l-3,0l0,-3l2,-2l2,0l1,-1l2,0l1,1l3,0l0,2l-1,1l0,2l2,2l0,1l1,0l0,-3l1,0l0,-5l-2,-2l0,-1l-2,-2l0,-2l1,-1l0,-1l8,0l0,-1l3,0l1,-1l1,0l2,-2l0,13l1,0l-1,1l0,2l-1,1l0,1l-3,3l-2,0l-8,8l-1,0l0,3l1,1l0,2l1,1l0,7l-3,3l-2,0l-2,2l0,4l-2,0z",
     flag: "mozambique.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['tz'] = {
     name: "Tanzania",
     svg: "m535.174988,336.174988l-2,-2l0,-3l-1,-1l0,-2l2,0l1,-1l0,-1l1,-1l0,-2l-1,0l0,-1l1,0l0,-3l-1,-1l1,-1l8,0l10,7l0,1l3,3l1,0l-1,1l0,5l1,1l0,7l1,1l0,2l1,1l1,0l-2,2l-1,0l-1,1l-3,0l0,1l-7,0l-1,-1l0,-4l-1,-1l-3,0l-2,-2l-1,0l-4,-4l0,-2zm25,3l-1,-1l0,1l1,0zm-1,-6l-1,-1l0,1l1,1l0,-1zm0,-2l0,-1l-1,1l1,0z",
     flag: "tanzania.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['rw'] = {
     name: "Rwanda",
     svg: "m531.174988,322.174988l0,-1l2,-2l1,0l1,-1l1,1l0,3l-2,0l0,1l-2,0l-1,-1z",
     flag: "rwanda.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['bi'] = {
     name: "Burundi",
     svg: "m532.174988,323.174988l2,0l0,-1l1,0l0,1l1,0l0,2l-1,1l0,1l-1,1l-2,0l0,-5z",
     flag: "burundi.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['mw'] = {
     name: "Malawi",
     svg: "m546.174988,350.174988l0,1l-1,1l0,2l2,2l0,1l2,2l0,5l-1,0l0,3l-1,0l0,-1l-2,-2l0,-2l1,-1l0,-2l-3,0l-1,-1l0,-1l-1,-1l1,-1l0,-2l1,0l0,-8l-1,-1l3,0l1,1l0,4l1,1l-1,0z",
     flag: "malawi.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['km'] = {
     name: "Comoros",
     svg: "m568.174988,349.174988l1,1l0,1l-1,-1l0,-1zm1,3l0,1l1,-1l-1,0zm3,0l-1,-1l0,1l1,0zm0,1l0,1l1,-1l-1,0z",
     flag: "comoros.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['mu'] = {
     name: "Mauritius",
     svg: "m598.174988,379.174988l1,1l1,0l-1,-1l-1,0zm7,-2l0,-1l-1,1l0,1l1,-1z",
     flag: "mauritius.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['mg'] = {
     name: "Madagascar",
     svg: "m580.174988,355.174988l1,0l0,-1l-1,1zm-9,10l0,2l-1,1l0,3l1,1l0,5l-1,1l0,2l-2,2l0,3l1,1l0,4l3,3l0,1l1,0l1,-1l1,0l1,-1l1,0l1,-1l0,-2l1,-1l0,-3l1,-1l0,-3l1,-1l0,-3l1,-1l0,-3l2,-2l0,-5l1,0l0,-2l-1,-1l0,-1l1,0l1,1l0,-3l-1,-1l0,-5l-2,-2l-1,1l0,2l-2,2l0,3l-2,0l0,2l-1,-1l-1,1l0,1l-2,0l-1,1l-1,0l-1,1z",
     flag: "madagascar.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['dj'] = {
     name: "Djibouti",
     svg: "m567.174988,275.174988l1,1l0,1l-2,2l2,0l-1,1l-3,0l0,-2l3,-3z",
     flag: "djibouti.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['so'] = {
     name: "Somalia",
     svg: "m582.174988,280.174988l1,0l1,-1l2,0l1,-1l1,0l0,4l-1,1l0,3l-1,1l0,1l-2,2l0,3l-2,2l0,3l-3,3l0,2l-4,4l-1,0l-5,5l-4,4l0,2l-1,1l-2,-2l0,-12l1,-1l0,-1l2,-2l2,0l2,-2l3,0l5,-5l0,-1l3,-3l-3,0l-1,-1l-3,0l-3,-3l-2,0l0,-2l-1,-1l0,-3l1,-1l3,3l2,0l1,-1l3,0l1,-1l4,0zm7,3l0,-1l-1,1l1,0z",
     flag: "somalia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ls'] = {
     name: "Lesotho",
     svg: "m531.174988,404.174988l2,2l0,1l-2,2l-1,0l0,1l-2,0l-1,-1l0,-2l3,-3l1,0z",
     flag: "lesotho.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
 
@@ -1452,42 +1452,42 @@
     name: "Yemen",
     svg: "m594.174988,276.174988l1,1l1,-1l0,-1l-1,1l-1,0zm-26,-6l-1,-1l0,-5l1,-1l0,-2l1,-1l0,1l7,0l1,1l2,0l0,-2l3,-3l2,0l1,-1l5,0l0,1l1,1l0,2l1,1l0,1l1,1l-1,0l-1,1l0,1l-2,2l-2,0l-2,2l-2,0l-3,3l-3,0l-1,1l-3,0l-2,2l-2,0l-1,-1l0,-4zm-1,1l-1,0l1,1l0,-1z",
     flag: "yemen.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['om'] = {
     name: "Oman",
     svg: "m590.174988,256.174988l1,-1l2,0l2,-2l3,0l0,-4l1,-1l0,-3l-1,-1l0,-2l1,-1l0,-1l1,0l0,-3l1,0l1,1l0,1l2,2l3,0l1,1l0,1l1,1l1,0l0,1l-1,1l0,2l-3,3l0,-1l-1,1l0,5l-2,0l-1,1l0,1l-1,1l-2,0l-1,1l0,2l-1,0l-1,-1l-2,2l-1,0l-1,-1l0,-1l-1,-1l0,-2l-1,-1l0,-1zm18,-3.999985l0,-1l-1,1l1,0z",
     flag: "oman.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ae'] = {
     name: "United Arab Emirates",
     svg: "m592.174988,238.175003l0,1l-1,0l1,-1zm8,-5l1,1l0,-2l-1,1zm-11,6l1,1l1,0l1,-1l4,0l1,-1l0,-1l3,-3l0,-1l1,1l0,3l-1,0l0,3l-1,0l0,1l-1,1l0,2l-6,0l-3,-3l0,-2zm4,-1.001007l1,0l0,-1l-1,1z",
     flag: "uae.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['sa'] = {
     name: "Saudi Arabia",
     svg: "m565.174988,263.174988l-1,-1l1,0l0,1zm23,-26.000992l1,0l0,-3l-1,-1l0,1l-1,1l0,1l1,1zm-1,-4l-1,0l0,1l1,-1zm-8,-7.998993l0,-1l-1,-1l-6,0l-7,-7l-2,0l-3,-3l-2,0l-2,2l-4,0l0,1l1,1l1,0l0,3l-1,0l-3,3l-3,0l0,2l-1,1l4,4l0,2l2,2l0,1l1,1l0,2l3,3l0,1l1,1l0,4l1,1l0,2l4,4l0,1l1,0.999985l0,2l3,3l0,1l1,1l0,1l1,-1l0,-2l1,-1l0,1l7,0l1,1l2,0l0,-2l3,-3l2,0l1,-1l5,0l1,-0.999985l2,0l2,-2l3,0l0,-4l1,-1l0,-3l-1,-1l-6,0l-3,-3l0,-2l-3,-3l0,-1l-1,-1l0,-3l-3,-3l0,-2l-1,-1l-2,0z",
     flag: "saudi_arabia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['kw'] = {
     name: "Kuwait",
     svg: "m580.174988,221.175003l-1,1l1,0l0,2l1,1l-2,0l0,-1l-1,-1l-1,0l0,-2l1,-1l2,0l0,1zm1,0l0,1l1,0l-1,-1z",
     flag: "kuwait.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['jo'] = {
     name: "Jordan",
     svg: "m547.174988,223.175003l0,-4l1,-1l0,-5l1,-1l1,0l1,1l3,-3l1,0l1,-1l1,0l0,3l1,1l-2,2l-4,0l0,1l1,1l1,0l0,3l-1,0l-3,3l-3,0z",
     flag: "jordan.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['il'] = {
@@ -1501,56 +1501,56 @@
     name: "Occupied Palestinian Territory",
     svg: "m548.174988,216.175003l-1,0l0,-4l2,0l-1,1l0,3z",
     flag: "palestinian.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['lb'] = {
     name: "Lebanon",
     svg: "m551.174988,206.175003l0,1l-1,0l0,1l-2,2l-1,0l1,-1l0,-2l2,-2l1,1z",
     flag: "lebanon.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['sy'] = {
     name: "Syria",
     svg: "m556.174988,209.175003l-1,1l-1,0l-3,3l-1,-1l-1,0l0,-3l1,-1l0,-1l1,0l0,-1l-1,-1l0,-1l-1,-1l0,-2l2,-2l0,-1l3,0l1,-1l1,1l4,0l2,-2l3,0l0,1l-2,2l0,6l-2,2l-2,0l-2,2l-1,0z",
     flag: "syria.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['iq'] = {
     name: "Iraq",
     svg: "m581.174988,220.175003l-3,0l-1,1l0,2l-5,0l-7,-7l-2,0l-3,-3l-2,0l-1,-1l0,-3l2,-2l2,0l2,-2l0,-6l3,-3l4,0l1,1l1,0l0,2l2,2l1,0l0,2l-1,1l0,4l5,5l0,1l0,3l1,0l0,2l1,0l0,1z",
     flag: "iraq.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['cy'] = {
     name: "Cyprus",
     svg: "m541.174988,203.175003l2,0l1,1l-1,0l-1,1l-1,0l-1,-1l1,-1zm3,-1l-2,0l-1,1l2,0l1,1l1,-1l-1,-1z",
     flag: "cyprus.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ir'] = {
     name: "Iran",
     svg: "m600.174988,230.175003l1,0l-1,1l-1,0l1,-1zm0,2l0,-1l-1,1l1,0zm-28,-35l0,-2l-1,0l-1,-1l0,-5l1,-1l1,0l2,2l1,0l2,0l2,-2l1,0l1,1l0,3l1,0l0,2l1,1l2,0l3,3l5,0l1,-1l1,1l0,-2l1,0l3,-3l4,0l1,1l2,0l0,1l2,0l3,3l2,0l0,3l1,1l-1,1l0,2l-1,1l0,2l1,1l-1,1l0,4l2,2l1,0l0,2l-2,2l0,2l4,4l0,1l0,2l2,0l-1,1l0,1l-1,0l-2,2l0,3l-2,0l-1,-1l-4,0l-1,-1l-3,0l-1,-1l0,-3l-1,-1l-1,0l-2,2l-1,0l-1,1l-1,-1l-1,0l-2,-2l-1,0l-2,-2l-1,0l-1,-1l0,-2l-1,-1l0,-1l-2,-2l-1,0l-1,-1l-1,0l-1,1l0,-1l-1,0l0,-2l-1,0l0,-4l-5,-5l0,-4l1,-1l0,-2l-1,0l-2,-2l0,-2z",
     flag: "iran.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['az'] = {
     name: "Azerbaijan",
     svg: "M575.175,190.175h-1l-2-2v-1l1,1h1l1,1V190.175z M581.175,192.175v-3l-1-1h-1l-2,2h-1v-2l-2-2v-2l-2-2h2l1,1h1v-1l-1-1l1-1l2,2h2l1-1v-1l2,2v1l2,2l-2,2v2l-1,1v2H581.175z",
     flag: "azerbaijan.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['ge'] = {
     name: "Georgia",
     svg: "m564.174988,178.175003l-2,-2l-1,0l-1,-1l1,-1l1,1l4,0l2,2l5,0l3,3l-1,1l1,1l0,1l-1,0l-1,-1l-4,0l-1,1l-2,-2l-3,0l0,-3z",
     flag: "georgia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
   countryData['tr'] = {
@@ -1564,7 +1564,7 @@
     name: "Armenia",
     svg: "m575.174988,190.175003l0,-1l-1,-1l-1,0l-2,-2l-1,0l-1,0l0,-3l1,-1l2,0l2,2l0,2l2,2l0,2l-1,0z",
     flag: "armenia.png",
-    facts: { exposure:["-","-"], population:["-","-"], lifeexp:["-","-"], landmass:["-","-"] },
+    facts: null,
     perils: []
   };
 

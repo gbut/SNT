@@ -1048,8 +1048,9 @@ $(document).ready(function(){
         var country;
         for (var c in this.countryData) {
           country = this.r.path(this.countryData[c].svg).attr(this.options.attr);
+          if (!this.countryData[c].facts) continue; // no facts, no interaction
           $(country.node).data('cc', c);
-          this.applyHoverStates(country);
+          //this.applyHoverStates(country);
           this.countries[c] = country;
           
           // add to peril sets
@@ -1072,19 +1073,21 @@ $(document).ready(function(){
         var self = this;
         var cc = $(raphaelObj.node).data('cc');
         var ap = activePeril || false;
+        
         $(raphaelObj.node).unbind('hover').hover(
           function(){
             if (self.active == cc) return;
-            var attr = ap ? self.options.mouseoverAttrPeril : self.options.mouseoverAttr;
-            this.raphael.animate(attr, self.options.durOver);
+            if (ap) this.raphael.animate(self.options.mouseoverAttrPeril, self.options.durOver);
+              else this.raphael.stop();
           },
           function(){
             if (self.active == cc) return;
-            var attr = ap ? self.options.mouseoutAttrPeril : self.options.mouseoutAttr;
-            this.raphael.animate(attr, self.options.durOut);
+            if (ap) this.raphael.animate(self.options.mouseoutAttrPeril, self.options.durOut);
+              else this.raphael.stop();
           }
         ).unbind('click').click(function(e){
           if (self.active == cc) return;
+          if (!ap) return;
           self.selectCountry(cc);
         });
       },
@@ -1137,17 +1140,9 @@ $(document).ready(function(){
           top: (p ? -33 : 0)
         }, this.options.durPanels);
         
-        // if switching to country panel, no peril sets should be highlighted
-        if (p) {
-          var o = this;
-          $.each(this.perils[this.activePeril].set, function(){
-            if ($(this.node).data('cc') != o.active) this.animate(o.options.mouseoutAttr, o.options.durOver);
-            o.applyHoverStates(this);
-          });
-
-        // else if returning to default panel, no country should be selected
+        // if returning to default panel, no country should be selected
         // re-highlight active peril set
-        } else {
+        if (!p) {
           var active = this.active;
           this.active = null;
           $('#model_' + this.activePeril).triggerHandler('click');
@@ -1173,17 +1168,8 @@ $(document).ready(function(){
         });
 
         // update map
-/*
-        $.each(o.perils[o.activePeril].set, function(){
-          this.attr(o.options.mouseoutAttr);
-          o.applyHoverStates(this);
-        });
-        $.each(o.perils[peril].set, function(){
-          this.animate(o.options.mouseoutAttrPeril, o.options.durOver);
-          o.applyHoverStates(this, true);
-        });
-*/
         var fadeUp = function(){
+          console.log('fadeUp');
           var obj = o;
           var p = peril;
           $.each(obj.perils[p].set, function(){
@@ -1191,16 +1177,13 @@ $(document).ready(function(){
             obj.applyHoverStates(this, true);
           });
         };
-        if (peril != 'all') {
-          $.each(o.perils[o.activePeril].set, function(){
-            var obj = o;
-            var p = peril;
-            this.animate(o.options.mouseoutAttr, o.options.durOver, fadeUp);
-            o.applyHoverStates(this);
-          });
-        } else {
-          fadeUp();
-        }
+        $.each(o.perils[o.activePeril].set, function(){
+          var obj = o;
+          var p = peril;
+          this.animate(o.options.mouseoutAttr, o.options.durOver);
+          o.applyHoverStates(this);
+        });
+        fadeUp();
 
         o.activePeril = peril;
       }
