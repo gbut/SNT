@@ -2,7 +2,7 @@
 <nav>
   <ul class="sf-menu clearfix">
     <li>
-      <a href="/risk" class="pn" title="Risk"><span class="tl">Risk</span></a>
+      <a href="/risk" class="pn" title="Models"><span class="tl">Models</span></a>
       <ul class="sn risk">
         <li class="clearfix">
           <div class="subnavLt">
