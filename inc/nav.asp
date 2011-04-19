@@ -1,7 +1,7 @@
 <!-- + nav -->
 <nav>
   <ul class="sf-menu clearfix">
-    <li>
+    <li class="hasSn">
       <a href="/risk" class="pn" title="Models"><span class="tl">Models</span></a>
       <ul class="sn risk">
         <li class="clearfix">
@@ -30,7 +30,7 @@
           <div class="subnavRt">
             <h4>Provider of<br />the Year 2010</h4>
             <img src="/img/gnav/risk_provider_2010.jpg" class="gnavImg" alt="Provider of the Year 2010" />
-            <a href="#" class="btn btnSm cta">Latest News</a>
+            <a href="#" class="btn btnSm-gnav cta">Latest News</a>
           </div>
         </li>
       </ul>
@@ -44,7 +44,7 @@
     <li>
       <a href="/about" class="pn" title="About"><span class="tl">About</span></a>
     </li>
-    <li>
+    <li class="hasSn">
       <a href="/careers" class="pn" title="Careers"><span class="tl">Careers</span></a>
       <ul class="sn careers">
         <li class="clearfix">
@@ -61,7 +61,7 @@
               <li><a href="#" title="">Menu Option 3</a></li>
               <li><a href="#" title="">Menu Option 4</a></li>
             </ul>
-            <a href="/careers/jobs" class="btn btnSm cta">Open Positions</a>
+            <a href="/careers/jobs" class="btn btnSm-gnav cta">Open Positions</a>
           </div>
         </li>
       </ul>

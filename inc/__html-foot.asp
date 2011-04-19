@@ -26,10 +26,12 @@
             var p = $(this).position();
             var w = Math.round(p.left) + 494; // horiz submenu position plus submenu width
             var fudge = 2;
-            if (w > navW) $(this).find('ul.sn').css('left', (navW - w + fudge));
+            var lt = (w > navW) ? (navW - w + fudge) : 0;
+            var tp = $(this).closest('.ie7').length ? 31 : 29;
+            $(this).find('ul.sn').css({'top':tp, 'left':lt});
           });
         };
-        window.setTimeout(function(){moveSubnavs.call(self);}, 300); // @font-face must render first, else navW value is off
+        window.setTimeout(function(){moveSubnavs.call(self);}, 300); // custom fonts must render first, else navW value is off
       }
     }); 
   </script>

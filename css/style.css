@@ -297,27 +297,35 @@ section {
   letter-spacing:       0.01em;
 }
 
-.btnSm {
+.btnSm,
+.btnSm-gnav {
   font-size:            77%;
   padding:              7px 20px 6px 10px;
   background:           #699ab5 url(../img/btns_rt.png) 100% -101px no-repeat;
   background:           url(../img/btns_rt.png) 100% -101px no-repeat, -moz-linear-gradient(top, #699ab5 0%, #2a749d 100%);
   background:           url(../img/btns_rt.png) 100% -101px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#699ab5), color-stop(100%,#2a749d));
   -pie-background:      url(/img/btns_rt.png) 100% -101px no-repeat, linear-gradient(#699ab5, #2a749d);
+}
+.btnSm {
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 .btnSm:hover,
 .btnSm:active,
-.btnSm:visited {
+.btnSm:visited,
+.btnSm-gnav:hover,
+.btnSm-gnav:active,
+.btnSm-gnav:visited {
   color:                #fff;
 }
-.btnSm:hover {
+.btnSm:hover,
+.btnSm-gnav:hover {
   background:           #58839a url(../img/btns_rt.png) 100% -101px no-repeat;
   background:           url(../img/btns_rt.png) 100% -101px no-repeat, -moz-linear-gradient(top, #58839a 0%, #215a79 100%);
   background:           url(../img/btns_rt.png) 100% -101px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58839a), color-stop(100%,#215a79));
   -pie-background:      url(/img/btns_rt.png) 100% -101px no-repeat, linear-gradient(#58839a, #215a79);
 }
-.btnSm:active {
+.btnSm:active,
+.btnSm-gnav:active {
   background:           #1c4c66 url(../img/btns_rt.png) 100% -101px no-repeat;
   -pie-background:      #1c4c66 url(/img/btns_rt.png) 100% -101px no-repeat;
 }
@@ -972,7 +980,7 @@ header nav ul.sf-menu li a.pn:hover,
 header nav ul.sf-menu li a.pn:active {
   color:                #0f0f0f; /* #bd081b */
 }
-header nav ul.sf-menu li.sfHover a.pn {
+header nav ul.sf-menu li.sfHover.hasSn a.pn {
   background:           #eee url(../img/bg_gnav_hover.png) top left repeat-x;
   padding-bottom:       30px;
 }
@@ -987,10 +995,9 @@ header nav ul.sf-menu li ul.sn {
   border-width:         0 1px 1px;
   padding:              16px;
   position:             absolute;
-  top:                  29px;
+  top:                  -10000px;
   left:                 0;
   z-index:              1;
-  display:              none;
   background:           #eee url(../img/bg_snav_ul.png) top left repeat-x;
   -webkit-border-radius:0 0 5px 5px;
   -moz-border-radius:   0 0 5px 5px;
@@ -998,7 +1005,7 @@ header nav ul.sf-menu li ul.sn {
      -moz-box-shadow:   2px 3px 6px -3px #9c8f85; 
   -webkit-box-shadow:   2px 3px 6px -3px #9c8f85; 
           box-shadow:   2px 3px 6px -3px #9c8f85;
-  behavior: url(/js/libs/PIE/PIE.htc);
+/*  behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 header nav ul.sf-menu li ul li {
@@ -1573,7 +1580,7 @@ a.close:active {
   border:               none;
   top:                  0;
   float:                left;
-  z-index:              1;
+  z-index:              10;
      -moz-box-shadow:   3px 2px 3px rgba(151,151,151,0.7); 
   -webkit-box-shadow:   3px 2px 3px rgba(151,151,151,0.7); 
           box-shadow:   3px 2px 3px rgba(151,151,151,0.7);
@@ -1596,7 +1603,6 @@ a.close:active {
   width:                365px;
   padding:              12px 10px 7px;
   border:               1px solid #cfcfcf;
-  background:           none;
   float:                none;
   display:              block;
   position:             relative;
@@ -1622,47 +1628,6 @@ a.close:active {
   outline:              none;
 }
 
-/*
-#main ul.tabs li a .pointer {
-  height:               8px;
-  width:                5px;
-  position:             absolute;
-  left:                 50%;
-  bottom:               -8px;
-  display:              none;
-  clip:                 rect(0px 14px 16px -10px);
-  -webkit-border-radius:0 0 5px 0;
-  -moz-border-radius:   0 0 5px 0;
-  border-radius:        0 0 5px 0;
-     -moz-box-shadow:   1px 1px 11px rgba(0,0,0,0.9); 
-  -webkit-box-shadow:   1px 1px 11px rgba(0,0,0,0.9); 
-          box-shadow:   1px 1px 11px rgba(0,0,0,0.9);
-  behavior: url(/js/libs/PIE/PIE.htc);
-}
-#main ul.tabs li a .pointer .outer {
-  border-color:         #e5e5e5 transparent transparent transparent;
-  border-style:         solid;
-  border-width:         10px;
-  height:               0;
-  width:                0;
-  position:             relative;
-  left:                 -10px;
-  top:                  2px;
-  display:              block;
-}
-#main ul.tabs li a .pointer .inner {
-  text-indent:          -9999px;
-  border-color:         #bdbcbc transparent transparent transparent;
-  border-style:         solid;
-  border-width:         10px;
-  height:               0;
-  width:                0;
-  position:             relative;
-  left:                 -10px;
-  top:                  -12px;
-  display:              block;
-}
-*/
 #main ul.tabs li a .pointer {
   width:                25px;
   height:               19px;
@@ -1670,9 +1635,6 @@ a.close:active {
   left:                 50%;
   bottom:               -19px;
   display:              none;
-}
-.ie7 #main ul.tabs li a .pointer {
-  bottom:               -18px;
 }
 #main ul.tabs li a .pointer .inner {
   text-indent:          -9999px;
@@ -2558,6 +2520,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   -moz-border-radius:   6px;
   border-radius:        6px;
   behavior: url(/js/libs/PIE/PIE.htc);
+}
+.ie8 #risk ul#caseStudiesNav li a .imgCont {
+  width:                88px;
 }
 #risk ul#caseStudiesNav li a .imgCont.cs2 {
   background-position:  0 -52px;
