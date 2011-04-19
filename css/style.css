@@ -4014,13 +4014,12 @@ textarea.error {
 #craft aside section {
   font-size:            110%;
   line-height:          140%;
-  width:                380px;
+  width:                378px;
   height:               137px;
   margin:               0 0 12px;
   padding:              14px;
   border:               2px solid #002870;
   background-color:     #eee;
-  position:             relative;
   -webkit-border-radius:4px;
   -moz-border-radius:   4px;
   border-radius:        4px;
@@ -4031,6 +4030,7 @@ textarea.error {
 }
 
 #craft aside .group {
+  width:                410px;
   position:             absolute;
   display:              none;
 }
@@ -4046,9 +4046,10 @@ textarea.error {
 }
 
 #craft aside section div {
-  width:                181px;
+  width:                179px;
   margin:               20px 0 0 18px;
   float:                left;
+  position:             relative;
 }
 
 #craft aside section h3 {
@@ -4062,7 +4063,8 @@ textarea.error {
   display:              block;
 /*  padding-right:        14px;*/
   position:             absolute;
-  bottom:               30px;
+  left:                 0;
+  top:                  80px;
 /*  background:           transparent url(../img/arrow_forward.png) 100% 50% no-repeat;*/
 }
 #craft aside section a em {
@@ -4072,7 +4074,7 @@ textarea.error {
 #craft aside a.btn {
   position:             absolute;
   bottom:               18px;
-  right:                -2px;
+  right:                0;
   display:              none;
 }
 
