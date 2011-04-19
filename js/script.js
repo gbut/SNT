@@ -1748,10 +1748,8 @@ $(document).ready(function(){
     setHeight(obj);
 
     // change height on window resize
-    var resizeTimer;
     $(window).resize(function() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(setHeight(obj), 100);
+      window.setTimeout(function(){ setHeight(obj); }, 100);
     });
 
   }
