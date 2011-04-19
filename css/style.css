@@ -669,6 +669,10 @@ header {
           box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
   behavior: url(/js/libs/PIE/PIE.htc);
 }
+.ie7 header { /* compensate for dropshadow */
+  left:                 -2px;
+  top:                  -2px;
+}
 
 header .wrapper {
   width:                960px;
@@ -776,6 +780,9 @@ header #login form {
 header #login.open form {
 /*  display:              block;*/
   top:                  25px;
+}
+.ie7 header #login.open form {
+  top:                  26px;
 }
 
 header #login form h3 {
@@ -2116,6 +2123,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 #riskTabs ul.tabs li a {
   width:                280px;
+}
+.ie7 #riskTabs ul.tabs li a .pointer {
+  bottom:               -18px;
 }
 
 #risk #catastrophe {
