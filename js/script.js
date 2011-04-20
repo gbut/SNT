@@ -884,9 +884,9 @@ $(document).ready(function(){
     // config
     var lpc;
     lpChatConfig = {
-      apiKey : '280e4c40d2524aee8895e299efc4359c', // 66a2b5d32
+      apiKey : '280e4c40d2524aee8895e299efc4359c', // test application key. RMS=6958c0768228458b9e5dc12c39f28486 ; Andy=280e4c40d2524aee8895e299efc4359c
       lpServer : 'dev.liveperson.net',
-      lpNumber : 'P89578626', // small business test account
+      lpNumber : 'P89578626', // small business test account. RMS=P16777301 ; Andy=P89578626
       sessVar : 'SV!',
       skillUDE : 'skill',
       onLoad : function() {
@@ -1553,6 +1553,10 @@ $(document).ready(function(){
   
   $('#legalTabs').tabs({
     fx: { opacity:'toggle', duration:400 },
+    create: function(e, ui) {
+      $('.tab_privacy').click(function(e){ $('#tab_privacy').triggerHandler('click'); e.preventDefault(); });
+      $('.tab_terms').click(function(e){ $('#tab_terms').triggerHandler('click'); e.preventDefault(); });
+    },
     show: ieShowFix
   });
   

@@ -2082,6 +2082,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   background-position:  -9px -60px;
 }
 
+#main .ui-widget-content a {
+  color:                #28739c;
+}
+
 /* / Sidebar */
 
 /* + Risk */
@@ -4707,6 +4711,33 @@ textarea.error {
   -moz-border-radius:   5px;
   border-radius:        5px;
   behavior: url(/js/libs/PIE/PIE.htc);
+}
+
+#main #legalTabs .panel {
+  font:                 100%/138.5% Helvetica,sans-serif;
+}
+
+#main #legalTabs .panel h3 {
+  padding:              0 0 12px;
+}
+
+#main #legalTabs .panel h4 {
+  color:                #404041;
+  font-size:            116%;
+  padding:              12px 0 5px;
+}
+
+#main #legalTabs .panel ul,
+#main #legalTabs .panel ol {
+  margin-bottom:        12px;
+}
+
+#main #legalTabs .panel ul li,
+#main #legalTabs .panel ol li {
+  margin-bottom:        3px;
+}
+#main #legalTabs .panel ol li {
+  list-style-type:      lower-roman;
 }
 
 /* / Legal */
