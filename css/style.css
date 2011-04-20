@@ -4084,6 +4084,88 @@ textarea.error {
 
 /* / Craft */
 
+/* + Info */
+
+#info #banner img {
+  width:                940px;
+  height:               196px;
+  margin-bottom:        18px;
+}
+
+#info section {
+  width:                226px;
+  height:               400px;
+  padding-right:        5px;
+  border-right:         1px solid #e7e7e7;
+  margin-right:         6px;
+  float:                left;
+}
+#info section:last-child {
+  padding-right:        0;
+  border-right:         0;
+  margin-right:         0;
+}
+
+#info section.top {
+  color:                #777;
+  width:                100%;
+  height:               auto;
+  padding-right:        0;
+  border-bottom:        2px solid #eee;
+  border-right:         0;
+  margin-bottom:        25px;
+}
+
+#info section.top dt {
+  width:                120px;
+  margin:               0 12px 0 15px;
+  float:                left;
+}
+
+#info section.top dd {
+  line-height:          160%;
+  width:                183px;
+  margin:               0 12px 15px 0;
+  float:                left;
+}
+
+#info section.top dd:last-child {
+  width:                583px;
+  margin-right:         0;
+}
+
+
+#info section h3 {
+  font:                 600 120%/120% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  color:                #666;
+  text-transform:       uppercase;
+  padding-bottom:       15px;
+  border-bottom:        1px solid #e7e7e7;
+  margin-bottom:        20px;
+}
+
+#info section.top h3 {
+  font:                 600 174%/97% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  padding:              0 0 10px 15px;
+  border-bottom:        2px solid #eee;
+  margin-bottom:        10px;
+}
+
+#info section a {
+  margin-bottom:        10px;
+  display:              block;
+}
+
+#info section.top a {
+  display:              inline;
+}
+
+#info section:last-child a {
+  margin-bottom:        0;
+}
+
+/* / Info */
+
 /* + Share */
 
 .st_sharethis_custom {
