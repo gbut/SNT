@@ -1141,6 +1141,7 @@ header nav ul.sf-menu li ul.sn.careers li .subnavLt a.cta {
   text-transform:       uppercase;
   padding-right:        13px;
   background:           transparent url(../img/arrow_snav_item.png) 100% 2px no-repeat;
+  display:              inline; /* IE needs to be reminded of this */
 }
 header nav ul.sf-menu li ul.sn.careers li img.gnavImg {
   margin-bottom:        17px;
