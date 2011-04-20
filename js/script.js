@@ -1522,6 +1522,12 @@ $(document).ready(function(){
   //  Other tabs
   //===============================================
 
+  var ieShowFix = function(e, ui) {
+    // annoying: css3PIE'd anchor tags need to be re-PIE'd to get correct bg treatment for new state
+    $(ui.tab).css('behavior','url(/js/libs/PIE/PIE.htc)');
+    $(ui.tab).parent().siblings().find('a').css('behavior','url(/js/libs/PIE/PIE.htc)');
+  };
+
   $('#riskTabs').tabs({
     //fx: { opacity:'toggle', duration:400 }
     //selected: 1,
@@ -1541,11 +1547,13 @@ $(document).ready(function(){
           }
         }
       });
-    }
+    },
+    show: ieShowFix
   });
   
   $('#legalTabs').tabs({
-    fx: { opacity:'toggle', duration:400 }
+    fx: { opacity:'toggle', duration:400 },
+    show: ieShowFix
   });
   
   $('#passionCont').tabs({

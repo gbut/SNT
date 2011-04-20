@@ -29,8 +29,8 @@
           <label id="form_login_username_label" for="form_login_username">User Name</label>
           <input type="text" name="Login" id="form_login_username" value="" />
           
-          <label id="form_login_password_label" for="form_login_password">Password</label>
           <a href="#" id="form_login_forgot_password">Forgot?</a>
+          <label id="form_login_password_label" for="form_login_password">Password</label>
           <input type="password" name="password" id="form_login_password" value="" />
           
           <input type="checkbox" name="remember" id="form_login_remember" value="1" />
@@ -38,7 +38,6 @@
           
           <input type="hidden" value="Submit" name="Action.x" alt="Submit" />
           <button type="submit" name="btn_login" class="btn btnSm" id="form_login_login" value="">Log In</button>
-          <!--<a href="#" class="btn btnSm" id="form_login_login">Log In</a>-->
         </fieldset>
       </form>
     </div>
