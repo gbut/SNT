@@ -14,20 +14,20 @@
       <!-- + Quote 1 -->
       <div id="quote1" class="clearfix">
         <div class="quote">
-          &quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.&quot;
+          &quot;<span class="q">Quote 0: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>&quot;
           <div class="author">
-            &mdash; Joel Kedd, <span class="title">Engineer</span>
+            &mdash; <span class="a">Author 0</span>, <span class="title"><span class="t">Title 0</span></span>
           </div>
         </div>
-        <div id="photo2">
-          <img src="/img/photo_employee_01.png" alt="Employee Photo" title="Employee Photo">
-          <img src="/img/photo_employee_02.png" alt="Employee Photo" title="Employee Photo">
+        <div class="photo2">
+          <img src="/img/staff/employee_01_up.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/staff/employee_02_dn.png" alt="Employee Photo" title="Employee Photo">
         </div>
         <div class="benefit">
-          <h4>Benefit #9</h4>
-          Work in Five Time Zones IN ONE DAY.
+          <h4>Benefit #<span class="n">1</span></h4>
+          <span class="b">Get Free Peanuts in the CAFETERIA.</span>
           <div class="subtext">
-            Not too shabby
+            <span class="s">Not too shabby</span>
           </div>
         </div>
       </div>
@@ -36,20 +36,20 @@
       <!-- + Quote 2 -->
       <div id="quote2" class="ui-tabs-hide clearfix">
         <div class="quote">
-          &quot;Qui venit pronostis in potentiam espiritu.&quot;
+          &quot;<span class="q">Quote 0: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>&quot;
           <div class="author">
-            &mdash; Someone else, <span class="title">Engineer</span>
+            &mdash; <span class="a">Author 0</span>, <span class="title"><span class="t">Title 0</span></span>
           </div>
         </div>
-        <div id="photo2">
-          <img src="/img/photo_employee_01.png" alt="Employee Photo" title="Employee Photo">
-          <img src="/img/photo_employee_02.png" alt="Employee Photo" title="Employee Photo">
+        <div class="photo2">
+          <img src="/img/staff/employee_03_up.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/staff/employee_04_dn.png" alt="Employee Photo" title="Employee Photo">
         </div>
         <div class="benefit">
-          <h4>Benefit #4</h4>
-          Work Remotely Using A LAPTOP.
+          <h4>Benefit #<span class="n">2</span></h4>
+          <span class="b">Get Free Peanuts in the CAFETERIA.</span>
           <div class="subtext">
-            Not too shabby
+            <span class="s">Not too shabby</span>
           </div>
         </div>
       </div>
@@ -58,20 +58,20 @@
       <!-- + Quote 3 -->
       <div id="quote3" class="ui-tabs-hide clearfix">
         <div class="quote">
-          &quot;Domina deus et patri hosanna in excelsis.&quot;
+          &quot;<span class="q">Quote 0: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>&quot;
           <div class="author">
-            &mdash; Third Person, <span class="title">Finance</span>
+            &mdash; <span class="a">Author 0</span>, <span class="title"><span class="t">Title 0</span></span>
           </div>
         </div>
-        <div id="photo2">
-          <img src="/img/photo_employee_01.png" alt="Employee Photo" title="Employee Photo">
-          <img src="/img/photo_employee_02.png" alt="Employee Photo" title="Employee Photo">
+        <div class="photo2">
+          <img src="/img/staff/employee_05_up.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/staff/employee_06_dn.png" alt="Employee Photo" title="Employee Photo">
         </div>
         <div class="benefit">
-          <h4>Benefit #5</h4>
-          Work in Five Time Zones ALL DAY.
+          <h4>Benefit #<span class="n">10</span></h4>
+          <span class="b">Get Free Peanuts in the CAFETERIA.</span>
           <div class="subtext">
-            Sound good?
+            <span class="s">Not too shabby</span>
           </div>
         </div>
       </div>
@@ -80,20 +80,20 @@
       <!-- + Quote 4 -->
       <div id="quote4" class="ui-tabs-hide clearfix">
         <div class="quote">
-          &quot;Lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet.&quot;
+          &quot;<span class="q">Quote 0: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>&quot;
           <div class="author">
-            &mdash; Bill Gates, <span class="title">Engineer</span>
+            &mdash; <span class="a">Author 0</span>, <span class="title"><span class="t">Title 0</span></span>
           </div>
         </div>
-        <div id="photo2">
-          <img src="/img/photo_employee_01.png" alt="Employee Photo" title="Employee Photo">
-          <img src="/img/photo_employee_02.png" alt="Employee Photo" title="Employee Photo">
+        <div class="photo2">
+          <img src="/img/staff/employee_07_up.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/staff/employee_08_dn.png" alt="Employee Photo" title="Employee Photo">
         </div>
         <div class="benefit">
-          <h4>Benefit #19</h4>
-          Get Free Peanuts in the CAFETERIA.
+          <h4>Benefit #<span class="n">11</span></h4>
+          <span class="b">Get Free Peanuts in the CAFETERIA.</span>
           <div class="subtext">
-            Not too shabby
+            <span class="s">Not too shabby</span>
           </div>
         </div>
       </div>
@@ -104,3 +104,6 @@
   </section>
 </aside>
 <!-- / sidebar -->
+
+<!--#include virtual="/inc/content/source_quotes.htm" -->
+<!--#include virtual="/inc/content/source_benefits.htm" -->

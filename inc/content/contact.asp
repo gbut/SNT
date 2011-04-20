@@ -40,8 +40,8 @@
           <a href="#" title="Follow us on Twitter" class="twitter"></a>
         </div>
 
-        <div id="photo">
-          <img src="/img/photo_employee_03.png" alt="Employee Photo" title="Employee Photo">
+        <div class="photo">
+          <img src="/img/staff/employee_01_up.png" alt="Employee Photo" title="Employee Photo">
         </div>
         
       </section>

@@ -1347,6 +1347,12 @@ aside section.pie_first-child.slvzr-last-child {
   padding-bottom:       32px;
 }
 
+/* source for dynamic insertion */
+#quotes,
+#benefits {
+  display:              none;
+}
+
 /* / SIDEBAR */
 
 /* / *** AREAS *** */
@@ -1777,11 +1783,11 @@ aside #quoteTabs {
   padding-bottom:       20px;
 }
 
-aside #photo,
-aside #photo2 {
+aside .photo,
+aside .photo2 {
   position:             relative;
 }
-aside #photo2 {
+aside .photo2 {
   margin-bottom:        98px;
 }
 
@@ -1846,22 +1852,22 @@ aside #photo img {
   border-radius:        15px;
 }
 */
-aside #photo img,
-aside #photo2 img {
+aside .photo img,
+aside .photo2 img {
   width:                253px;
   height:               165px;
   margin-top:           10px;
   position:             relative;
   left:                 -13px;
 }
-#t10 aside #photo img {
+#t10 aside .photo img {
   margin-top:           20px;
 }
-aside #photo2 img {
+aside .photo2 img {
   left:                 -28px;
   z-index:              2;
 }
-aside #photo2 img:last-child {
+aside .photo2 img:last-child {
   position:             absolute;
   top:                  80px;
   left:                 0;
