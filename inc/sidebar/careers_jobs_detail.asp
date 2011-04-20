@@ -3,13 +3,7 @@
   <section>
     <a href="/careers/jobs/apply.asp?j=" class="btn btnLg btnApply">Apply for this Job</a>
 
-    <!-- ShareThis Button BEGIN -->
     <a href="#" class="st_sharethis_custom btn btnLg">Share with a friend</a>
-<!--
-    <a href="http://rest.sharethis.com/share/sharer.php?destination=linkedin&url=http%3A%2F%2Fsharethis.com&
-    title=ShareThis&publisher=39c6375d-95de-4f6f-9413-f8e748bff7f3&access_key=[*** NEED KEY***]">TEST</a>
--->
-    <!-- ShareThis Button END -->
 
     <div class="share clearfix">
       <div class="label">
@@ -19,14 +13,14 @@
       <a href="#" title="Follow us on Twitter" class="twitter"></a>
     </div>
 
-    <div id="photo">
-      <img src="/img/photo_employee_03.png" alt="Employee Photo" title="Employee Photo">
+    <div class="photo">
+      <img src="/img/staff/employee_01_up.png" alt="Employee Photo" title="Employee Photo">
     </div>  
   
     <div class="quote">
-      &quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.&quot;
+      &quot;<span class="q">Quote 0: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>&quot;
       <div class="author">
-        &mdash; Joel Kedd, <span class="title">Engineer</span>
+        &mdash; <span class="a">Author 0</span>, <span class="title"><span class="t">Title 0</span></span>
       </div>
     </div>
     
@@ -44,3 +38,5 @@
   </section>
 </aside>
 <!-- / sidebar -->
+
+<!--#include virtual="/inc/content/source_quotes.htm" -->

@@ -1985,6 +1985,50 @@ $(document).ready(function(){
 
   if ($('#about dl').length) $('#about').leaderBio();
   
+  //===============================================
+  //  Sidebar Content Haddling
+  //===============================================
+  
+  /**
+   * Quote, Photo (upward slant), Photo (downward slant), Benefit
+   */
+  
+  photo_up_total = 6;
+  photo_dn_total = 4;
+
+  // Quote
+  if ($('aside .quote').length) {
+    sel = $("#quotes div:random");
+    $('aside .quote .q').html(sel.find('.quote').html().trim());
+    $('aside .quote .a').html(sel.find('.author').html().trim());
+    $('aside .quote .t').html(sel.find('.title').html().trim());
+  }
+  
+  // Single photo
+  if ($('aside .photo').length) {
+    sel = Math.floor(Math.random()*photo_up_total)+1;
+    if (sel < 10) sel = '0'+sel;
+    $('aside .photo img').attr('src', '/img/staff/employee_'+sel+'_up.png');
+  }
+  
+  // Double photo
+  if ($('aside .photo2').length) {
+    sel = Math.floor(Math.random()*photo_up_total)+1;
+    if (sel < 10) sel = '0'+sel;
+    $('aside .photo2 img:first-child').attr('src', '/img/staff/employee_'+sel+'_up.png');
+    sel = Math.floor(Math.random()*photo_dn_total)+1;
+    if (sel < 10) sel = '0'+sel;
+    $('aside .photo2 img:last-child').attr('src', '/img/staff/employee_'+sel+'_dn.png');
+  }
+  
+  // Benefit
+  if ($('aside .benefit').length) {
+    sel = $("#benefits div:random");
+    $('aside .benefit .n').html(sel.find('.number').html().trim());
+    $('aside .benefit .b').html(sel.find('.benefit').html().trim());
+    $('aside .benefit .s').html(sel.find('.subtext').html().trim());
+  }  
+  
 });
 
 
@@ -2080,3 +2124,17 @@ function jobListingsTruncation() {
 function setHeight(obj) {
     obj.height($(window).height() - $('header').height() - $('footer').height());
 }
+
+/**
+ * Create 'random' fileter
+ */
+jQuery.jQueryRandom = 0;
+jQuery.extend(jQuery.expr[":"],
+{
+    random: function(a, i, m, r) {
+        if (i == 0) {
+            jQuery.jQueryRandom = Math.floor(Math.random() * r.length);
+        };
+        return i == jQuery.jQueryRandom;
+    }
+});
