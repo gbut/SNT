@@ -1513,7 +1513,7 @@ a.close:active {
 
 #presenterNav ul li a span {
   position:             relative;
-  top:                  6px;
+  top:                  14px; /* 6px if two lines */
 }
 
 #presenterNav ul li a .imgCont {
@@ -4973,27 +4973,11 @@ ul.index.global li a {
 
 @media all and (orientation:portrait) {
   /* Style adjustments for portrait mode goes here */
-  /* iPad only!  http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/ */
-  body {
-    width:                1040px;
-  }
-  header {
-    width:                1040px;
-    padding:              0;
-  }
 
 }
 
 @media all and (orientation:landscape) {
   /* Style adjustments for landscape mode goes here */
-  /* iPad only!  http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/ */
-  body {
-    width:                1040px;
-  }
-  header {
-    width:                1040px;
-    padding:              0;
-  }
 
 }
 
@@ -5052,6 +5036,59 @@ ul.index.global li a {
   }
 }
 
+/*
+  iPad:
+  http://thomasmaier.me/blog/2010/03/04/howto-css-for-the-ipad/
+  http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/
+*/
+@media only screen and (max-device-width: 1024px) {
+  body,
+  #loginOverlay {
+    width:                1040px;
+  }
+  header {
+    width:                1040px;
+    padding:              0;
+  }
+
+  #contact .btnSubmit {
+    text-indent:          27px; /* padding doesn't seem to work */
+  }
+
+  aside .share {
+    width:                175px;
+  }
+  
+  /* mobile safari bg img scaling bug: http://www.defusion.org.uk/archives/2010/02/19/shrinking-large-background-image-bug-in-iphone-safari/ */
+  aside .ui-tabs ul.ui-tabs-nav li a,
+  #risk .vidCont.ui-tabs ul.ui-tabs-nav li a,
+  aside .share a.twitter {
+    -webkit-background-size: 68px 105.1px;
+  }
+
+  aside .ui-tabs ul.ui-tabs-nav li a,
+  #risk .vidCont.ui-tabs ul.ui-tabs-nav li a {
+    background-position:  0 -62px;
+  }
+  aside .ui-tabs ul.ui-tabs-nav li.ui-tabs-selected a,
+  aside .ui-tabs ul.ui-tabs-nav li.ui-state-active a,
+  aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
+  #risk .vidCont.ui-tabs ul.ui-tabs-nav li.ui-tabs-selected a,
+  #risk .vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-active a,
+  #risk .vidCont.ui-tabs ul.ui-tabs-nav li.ui-state-hover a {
+    background-position:  -10px -62px;
+  }
+  aside .share a.twitter {
+    background-position:  0 -31px;
+  }
+}
+
+/* in iPad portrait mode, when page gets too short, can't pinch-zoom out enough to see full content width. force height here */
+@media only screen and (max-device-width: 1024px) and (orientation:portrait) {
+  body {
+    min-height:           1200px;
+  }
+}
 
 /**
  * Print styles.
