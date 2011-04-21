@@ -4973,11 +4973,27 @@ ul.index.global li a {
 
 @media all and (orientation:portrait) {
   /* Style adjustments for portrait mode goes here */
+  /* iPad only!  http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/ */
+  body {
+    width:                1040px;
+  }
+  header {
+    width:                1040px;
+    padding:              0;
+  }
 
 }
 
 @media all and (orientation:landscape) {
   /* Style adjustments for landscape mode goes here */
+  /* iPad only!  http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/ */
+  body {
+    width:                1040px;
+  }
+  header {
+    width:                1040px;
+    padding:              0;
+  }
 
 }
 
@@ -4987,7 +5003,7 @@ ul.index.global li a {
   header,
   .contentOuter,
   footer {
-    width:                1040px; /* force full width so bg is consistent; is this a good idea? */
+    width:                1040px; /* force full width so bg is consistent */
     padding:              0;
   }
   footer {
@@ -5016,6 +5032,12 @@ ul.index.global li a {
 
   aside .share {
     width:                175px;
+  }
+  
+  #about #bio .body section { /* prevent font from growing outside parent's bounds on animation */
+    font-size:            85%;
+    -webkit-text-size-adjust:none;
+    -ms-text-size-adjust:none;
   }
 
   /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
