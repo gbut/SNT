@@ -3946,6 +3946,19 @@ textarea.error {
   position:             relative;
 }
 
+#craftDetail .mask {
+  width:                718px;
+  height:               1000px;
+  position:             absolute;
+  left:                 -40px;
+  top:                  -42px;
+  background:           #000;
+  -moz-opacity:         .30;
+  -ms-filter:           "alpha(opacity=30)";
+  filter:               alpha(opacity=30);
+  opacity:              .30;
+}
+
 .craft section {
   width:                525px;
   float:                left;

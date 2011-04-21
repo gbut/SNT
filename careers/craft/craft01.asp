@@ -23,7 +23,7 @@
   
     <!-- + content -->
     <section id="content" class="clearfix">
-      <!--#include virtual="/inc/content/careers_craft_detail.asp" -->
+      <!--#include virtual="/inc/content/careers_craft_detail01.asp" -->
     </section>
     <!-- / content -->
       

@@ -4,6 +4,8 @@
   <img class="bg" src="/img/bg_craft_detail.jpg" />
 
   <div class="inner">
+  
+    <div class="mask"></div>
 
     <section>
     
