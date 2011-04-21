@@ -21,7 +21,7 @@
         </div>
         <div class="photo2">
           <img src="/img/staff/employee_01_up.png" alt="Employee Photo" title="Employee Photo">
-          <img src="/img/staff/employee_02_dn.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/staff/employee_01_dn.png" alt="Employee Photo" title="Employee Photo">
         </div>
         <div class="benefit">
           <h4>Benefit #<span class="n">1</span></h4>
@@ -42,8 +42,8 @@
           </div>
         </div>
         <div class="photo2">
-          <img src="/img/staff/employee_03_up.png" alt="Employee Photo" title="Employee Photo">
-          <img src="/img/staff/employee_04_dn.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/staff/employee_02_up.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/staff/employee_02_dn.png" alt="Employee Photo" title="Employee Photo">
         </div>
         <div class="benefit">
           <h4>Benefit #<span class="n">2</span></h4>
@@ -64,8 +64,8 @@
           </div>
         </div>
         <div class="photo2">
-          <img src="/img/staff/employee_05_up.png" alt="Employee Photo" title="Employee Photo">
-          <img src="/img/staff/employee_06_dn.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/staff/employee_03_up.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/staff/employee_03_dn.png" alt="Employee Photo" title="Employee Photo">
         </div>
         <div class="benefit">
           <h4>Benefit #<span class="n">10</span></h4>
@@ -86,8 +86,8 @@
           </div>
         </div>
         <div class="photo2">
-          <img src="/img/staff/employee_07_up.png" alt="Employee Photo" title="Employee Photo">
-          <img src="/img/staff/employee_08_dn.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/staff/employee_04_up.png" alt="Employee Photo" title="Employee Photo">
+          <img src="/img/staff/employee_04_dn.png" alt="Employee Photo" title="Employee Photo">
         </div>
         <div class="benefit">
           <h4>Benefit #<span class="n">11</span></h4>

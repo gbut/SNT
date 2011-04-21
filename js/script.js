@@ -2002,37 +2002,54 @@ $(document).ready(function(){
 
   // Quote
   if ($('aside .quote').length) {
-    sel = $("#quotes div:random");
-    $('aside .quote .q').html(sel.find('.quote').html().trim());
-    $('aside .quote .a').html(sel.find('.author').html().trim());
-    $('aside .quote .t').html(sel.find('.title').html().trim());
+    $('aside .quote').each(function() {
+      // can't get random of only or two items - fudge it
+      selq = ($('#quotes div[used!="used"]').length > 2) ? $('#quotes div[used!="used"]:random') : $('#quotes div[used!="used"]').first();
+      $(this).find('.q').html(selq.find('.quote').html().trim());
+      $(this).find('.a').html(selq.find('.author').html().trim());
+      $(this).find('.t').html(selq.find('.title').html().trim());      
+      selq.attr('used','used'); // flag as used
+    });
   }
-  
+
   // Single photo
+  // (no foreach here becuase single photo isn't used on Open Positions page, the only one with multiple sidebar panels)
   if ($('aside .photo').length) {
-    sel = Math.floor(Math.random()*photo_up_total)+1;
-    if (sel < 10) sel = '0'+sel;
-    $('aside .photo img').attr('src', '/img/staff/employee_'+sel+'_up.png');
+    selp = Math.floor(Math.random()*photo_up_total)+1;
+    if (selp < 10) selp = '0'+selp;
+    $('aside .photo img').attr('src', '/img/staff/employee_'+selp+'_up.png');
   }
   
   // Double photo
+  // instead of trying to get 4 random numbers without redundancy,
+  // instead we'll get a single random number and then use a sequence
   if ($('aside .photo2').length) {
-    sel = Math.floor(Math.random()*photo_up_total)+1;
-    if (sel < 10) sel = '0'+sel;
-    $('aside .photo2 img:first-child').attr('src', '/img/staff/employee_'+sel+'_up.png');
-    sel = Math.floor(Math.random()*photo_dn_total)+1;
-    if (sel < 10) sel = '0'+sel;
-    $('aside .photo2 img:last-child').attr('src', '/img/staff/employee_'+sel+'_dn.png');
+    selp1 = Math.floor(Math.random()*photo_up_total)+1;
+    selp2 = Math.floor(Math.random()*photo_dn_total)+1;
+    $('aside .photo2').each(function() {
+      if (selp1 < 10) selp1 = '0'+selp1;
+      $(this).find('img:first-child').attr('src', '/img/staff/employee_'+selp1+'_up.png');
+      selp1++;
+      if (selp1 > photo_up_total) selp1 = 1; // if end of sequence, reset
+      if (selp2 < 10) selp2 = '0'+selp2;
+      $(this).find('img:last-child').attr('src', '/img/staff/employee_'+selp2+'_dn.png');
+      selp2++;
+      if (selp2 > photo_dn_total) selp2 = 1; // if end of sequence, reset
+    });      
   }
-  
+
   // Benefit
   if ($('aside .benefit').length) {
-    sel = $("#benefits div:random");
-    $('aside .benefit .n').html(sel.find('.number').html().trim());
-    $('aside .benefit .b').html(sel.find('.benefit').html().trim());
-    $('aside .benefit .s').html(sel.find('.subtext').html().trim());
+    $('aside .benefit').each(function() {
+      // can't get random of only or two items - fudge it
+      selb = ($('#benefits div[used!="used"]').length > 2) ? $('#benefits div[used!="used"]:random') : $('#benefits div[used!="used"]').first();
+      $(this).find('.n').html(selb.find('.number').html().trim());
+      $(this).find('.b').html(selb.find('.benefit').html().trim());
+      $(this).find('.s').html(selb.find('.subtext').html().trim());
+      selb.attr('used','used'); // flag as used
+    });
   }  
-  
+
 });
 
 
