@@ -2147,7 +2147,7 @@ function setHeight(obj) {
 }
 
 /**
- * Create 'random' fileter
+ * Create 'random' filter
  */
 jQuery.jQueryRandom = 0;
 jQuery.extend(jQuery.expr[":"],

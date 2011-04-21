@@ -4080,8 +4080,7 @@ textarea.error {
 
 #info section {
   width:                226px;
-  height:               400px;
-  padding-right:        5px;
+  padding:              0 5px 20px 0;
   border-right:         1px solid #e7e7e7;
   margin-right:         6px;
   float:                left;

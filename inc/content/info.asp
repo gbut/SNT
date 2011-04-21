@@ -55,32 +55,119 @@
     <!-- + NEWS & ANNOUNCEMENTS -->
     
       April 12, 2011
-      <a href="#">RMS Releases Insured Loss Estimate for Tohoku Earthquake and Tsunami</a>
-  
+      <a href="#" title="View Press Release">RMS Releases Insured Loss Estimate for Tohoku Earthquake and Tsunami</a>
+
       April 6, 2011
-      <a href="#">Version 11.0 Market Adoption</a>
-    
-      February 28, 2011	
-      <a href="#">RMS Advances View of U.S. Hurricane Risk</a>
-    
-      February 1, 2011
-      <a href="#">RMS to Integrate Building Permit Data from BuildFax to Enhance its Solutions for Insurers and Reinsurers</a>
-    
-      January 25, 2011
-      <a href="#">Hemant Shah Named on List of Top 100 Most Powerful in the Insurance Industry</a>
-    <!--
-      January 24, 2011
-      <a href="#">Professor Haresh Shah will be awarded the 2011 Alfred E. Alquist Special Recognition Medal</a>
-    
+      <a href="#" title="View Press Release">Version 11.0 Market Adoption</a>
+
+      February 28, 2011
+      <a href="#" title="View Press Release">RMS Advances View of U.S. Hurricane Risk</a>
+
       January 21, 2011
-      <a href="#">RMS Response to Karen Clark Report on Near-term Hurricane Models</a>
-    
-      January 21, 2011
-      <a href="#">Neena Saith, Director, Catastrophe Response, Provides Commentary on the Recent Queensland, Australia Flooding</a>
-    
+      <a href="#" title="View Press Release">RMS Response to Karen Clark Report on Near-term Hurricane Models</a>
+
       January 5, 2011
-      <a href="#">RMS Models First Successful Longevity Bond</a>
-    -->
+      <a href="#" title="View Press Release">RMS Models First Successful Longevity Bond</a>
+
+      October 26, 2010
+      <a href="#" title="View Press Release">RMS Models Excess Mortality for New Catastrophe Bond Issuance</a>
+
+      September 9, 2010
+      <a href="#" title="View Press Release">RMS Awarded &quot;Service Provider of the Year&quot; in 2010 Worldwide Reinsurance Awards</a>
+
+      August 27, 2010
+      <a href="#" title="View Press Release">Five Years Later – How New Orleans Flood Risk Has Changed Since Hurricane Katrina</a>
+
+      August 5, 2010
+      <a href="#" title="View Press Release">RMS Develops First High Performance Computing Catastrophe Modeling Solution</a>
+
+      July 13, 2010
+      <a href="#" title="View Press Release">Success of Terrorist Plots in U.S. is Dependent on Size of Terrorist Network, Says RMS</a>
+
+      July 12, 2010
+      <a href="#" title="View Press Release">RMS Unveils New Approach To Quantifying Longevity Risk</a>
+
+      May 10, 2010
+      <a href="#" title="View Press Release">China Reinsurance (Group) Corporation Licenses RMS Catastrophe Models</a>
+
+      May 4, 2010
+      <a href="#" title="View Press Release">RMS' Portfolio Management Platform Licensed by Three New Clients</a>
+
+      April 21, 2010
+      <a href="#" title="View Press Release">Q-Re Selects RMS Catastrophe Modeling Software</a>
+
+      December 22, 2009
+      <a href="#" title="View Press Release">Ten Years After – How Windstorm Modeling has Matured since the 1999 European Storms</a>
+
+      December 17, 2009
+      <a href="#" title="View Press Release">RMS Provides Miu Platform for Falcon Private Bank Ltd. to Manage Insurance-Linked Securities</a>
+
+      November 24, 2009
+      <a href="#" title="View Press Release">RMS Performs Analysis for Catastrophe Bond Covering H1N1 Flu Pandemic</a>
+
+      August 18, 2009
+      <a href="#" title="View Press Release">Fermat Capital Selects RMS Miu Platform to Manage Insurance-Linked Securities</a>
+
+      August 6, 2009
+      <a href="#" title="View Press Release">RMS Unveils New Models for Evaluating Earthquake Risk in North America</a>
+
+      July 27, 2009
+      <a href="#" title="View Press Release">RMS Hurricane Model Re-Certified by Florida Commission</a>
+
+      May 19, 2009
+      <a href="#" title="View Press Release">RMS To Release Data Quality Toolkit, Enabling Companies To Target Data Improvements</a>
+
+      April 15, 2009
+      <a href="#" title="View Press Release">Florida Hurricane Risk Reduced By $1.50 Per Dollar Granted to Strengthen Homes</a>
+
+      March 23, 2009
+      <a href="#" title="View Press Release">RMS Appoints New Chief Technology Officer to Lead the Development of Its Next Generation Software</a>
+
+      March 12, 2009
+      <a href="#" title="View Press Release">RMS Expert Talks on Quantifying the Terrorist Threat Under the Obama Administration</a>
+
+      March 9, 2009
+      <a href="#" title="View Press Release">RMS Partners with Fireman's Fund Insurance Company on Study of Per Risk Fire Underwriting</a>
+
+      December 16, 2008	
+      <a href="#" title="View Press Release">Long-Term Collaboration between Munich Re and RMS to Extend Risk Research</a>
+
+      September 9, 2008	
+      <a href="#" title="View Press Release">Adaptation is Key to Managing Coastal Flood Risk</a>
+
+      August 14, 2008	
+      <a href="#" title="View Press Release">RMS Launches Unique Winterstorm Model and Severe Convective Storm Model for U.S. and Canada</a>
+
+      June 24, 2008	
+      <a href="#" title="View Press Release">One in Four British Homes at Flood Risk, Says RMS</a>
+
+      June 2, 2008	
+      <a href="#" title="View Press Release">RMS Releases First Parametric Industry Loss Index for U.S. Hurricane Risks</a>
+
+      October 12, 2007	
+      <a href="#" title="View Press Release">Climate Change Research Recognized as IPCC Wins Nobel Peace Prize</a>
+
+      April 10, 2007
+      <a href="#" title="View Press Release">RMS Performs Analysis for First Great Britain River Flood Securitization</a>
+
+      February 20, 2007
+      <a href="#" title="View Press Release">RMS Releases First Commercially Available Probabilistic Risk Model for Influenza Pandemic</a>
+
+      December 5, 2006
+      <a href="#" title="View Press Release">RMS Appoints Mary Lou Zoback as Vice President, Earthquake Risk Applications</a>
+
+      April 1, 2006
+      <a href="#" title="View Press Release">April 2006 - RMS Co-founder Haresh Shah Named One of the Top Seismic Engineers of the 20th Century</a>
+
+      September 19, 2005
+      <a href="#" title="View Press Release">RMS Combines Real-time Reconnaissance with Risk Models to Estimate Katrina Losses</a>
+
+      September 9, 2004
+      <a href="#" title="View Press Release">RMS Awarded &quot;Service Provider of the Year&quot; in 2004 Worldwide Reinsurance Awards</a>
+
+      June 1, 2004
+      <a href="#" title="View Press Release">Dr. Gordon Woo from RMS Named One of the 100 Most Influential People in Finance by Treasury & Risk Management Magazine</a>
+    
     <!-- / NEWS & ANNOUNCEMENTS -->
     
   </section>
