@@ -307,6 +307,7 @@ section {
   -pie-background:      url(/img/btns_rt.png) 100% -101px no-repeat, linear-gradient(#699ab5, #2a749d);
 }
 .btnSm {
+  padding:              4px 20px 4px 10px;
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 .btnSm:hover,
@@ -5024,6 +5025,12 @@ ul.index.global li a {
     -ms-text-size-adjust:none;
   }
 
+  /* mobile safari bg img scaling bug: http://www.defusion.org.uk/archives/2010/02/19/shrinking-large-background-image-bug-in-iphone-safari/ */
+  aside .share a.facebook {
+    -webkit-background-size: 68px 105.1px;
+    background-position:  0 0;
+  }
+
   /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
      j.mp/textsizeadjust 
   html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
@@ -5051,14 +5058,19 @@ ul.index.global li a {
     padding:              0;
   }
 
-  #contact .btnSubmit {
-    text-indent:          27px; /* padding doesn't seem to work */
-  }
-
   aside .share {
     width:                175px;
   }
   
+  /* <button> elements ignore padding */
+  #contact .btnSubmit {
+    text-indent:          27px;
+  }
+  header #login form #form_login_login {
+    width:                70px;
+    padding:              5px 20px 6px 10px;
+  }
+
   /* mobile safari bg img scaling bug: http://www.defusion.org.uk/archives/2010/02/19/shrinking-large-background-image-bug-in-iphone-safari/ */
   aside .ui-tabs ul.ui-tabs-nav li a,
   #risk .vidCont.ui-tabs ul.ui-tabs-nav li a,
