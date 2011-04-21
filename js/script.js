@@ -2050,6 +2050,14 @@ $(document).ready(function(){
     });
   }  
 
+  //===============================================
+  //  Job Detail - get/set job id for apply button
+  //===============================================
+
+  if ($('#job_detail #job_id').length) {
+    $('.btnApply').attr('href' , $('.btnApply').attr('href') + $('#job_id').html() );
+  }
+
 });
 
 

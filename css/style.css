@@ -3967,6 +3967,18 @@ textarea.error {
   margin-bottom:        20px;
 }
 
+#craftDetail .breadcrumb {
+  text-transform:       uppercase;
+  margin-bottom:        6px;
+}
+#craftDetail .breadcrumb a {
+  color:                #8bcfee;
+}
+#craftDetail .breadcrumb .sep {
+  font-size:            140%;
+  color:                #8bcfee;
+}
+
 #craftDetail section h2 {
   margin-bottom:        5px;
 }
