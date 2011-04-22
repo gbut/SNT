@@ -10,7 +10,7 @@
         Follow Us: 
       </div>
       <a href="http://www.facebook.com/pages/Risk-Management-Solutions/110270308995196" title="Follow us on Facebook" class="facebook"></a>
-      <a href="#" title="Follow us on Twitter" class="twitter"></a>
+      <a href="http://twitter.com/#!/RMS_news" title="Follow us on Twitter" class="twitter"></a>
     </div>
 
     <div class="photo">
