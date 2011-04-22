@@ -3,26 +3,31 @@
 
   <div class="top clearfix">
   
-    <form name="contact_form" method="post" action="#" id="contact_form">
+    <form name="contact_form" method="post" action="contact.asp" id="contact_form">
+      <input type="hidden" name="urlSendTo" value="contact.asp?sent=y" />
+      <input type="hidden" name="urlFromPath" value="contact.asp" />        
+      <input type="hidden" name="txtCompany" value="UNANSWERED" />        
+      <input type="hidden" name="txtFax" value="" />    
+      <input type="hidden" name="Action" value="Send" />
 
       <h3>Get In <em>Touch</em></h3>
 
       <fieldset>
         <div class="field">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" class="required" />
+          <input type="text" id="name" name="txtName" class="required" />
         </div>
         <div class="field">
           <label for="email">Email:</label>
-          <input type="text" id="email" name="email" class="required email"  />
+          <input type="text" id="email" name="txtEmail" class="required email"  />
         </div>
         <div class="field">
           <label for="tel">Telephone:</label>
-          <input type="text" id="tel" name="tel" />
+          <input type="text" id="tel" name="txtTel" />
         </div>
         <div class="field">
           <label for="message">Message:</label>
-          <textarea id="message" name="message" class="required"></textarea>
+          <textarea id="message" name="txtMessage" class="required"></textarea>
         </div>
         <button type="submit" class="btn btnLg btnSubmit">Send</button>
       </fieldset>
