@@ -193,6 +193,7 @@ a:hover { color: #28739c; }
    Content
    Sidebar
  Modules
+ Utility
  -----------------
  */
 
@@ -1253,7 +1254,6 @@ footer a {
   color:                #414040;
 }
 
-/*
 #t01 + footer {
   border:               0;
   background:           #222;
@@ -1263,7 +1263,7 @@ footer a {
 #t01 + footer a {
   color:                #fff;
 }
-*/
+
 
 /* / FOOTER */
 
@@ -4042,17 +4042,17 @@ textarea.error {
 
 .craft {
   position:             relative;
-  overflow:             hidden;
-  background:           #222;;
+/*  overflow:             hidden;
+  background:           #222;;*/
 }
-
+/*
 .craft img.bg {
   width:                100%;
   position:             absolute;
   top:                  0;
   left:                 0;
 }
-
+*/
 .craft .inner {
   width:                960px;
   height:               610px;
@@ -4900,7 +4900,13 @@ textarea.error {
 
 /* / *** MODULES *** */
 
-/* / *** JOBVITE *** */
+/* + *** UTILITY *** */
+
+
+
+/* / *** UTILITY *** */
+
+/* + *** JOBVITE *** */
 
 iframe#jobvite {
   width:                694px;
