@@ -4388,7 +4388,7 @@ textarea.error {
 }
 
 #about #bio .nav {
-  height:               24px;
+  height:               20px;
   width:                60px;
   margin:               0;
   float:                none;
@@ -4399,28 +4399,28 @@ textarea.error {
 }
 
 #about #bio .nav a {
-  width:                24px;
-  height:               24px;
+  width:                20px;
+  height:               20px;
   margin-left:          6px;
   display:              block;
   float:                left;
   background:           transparent url(../img/icon_bio_nav.png) 0 0 no-repeat;
 }
 #about #bio .nav a:last-child {
-  background-position:  -24px 0;
+  background-position:  -20px 0;
 }
 #about #bio .nav a:hover { 
-  background-position:  0 -24px;
+  background-position:  0 -20px;
 }
 #about #bio .nav a:hover:last-child {
-  background-position:  -24px -24px;
+  background-position:  -20px -20px;
 }
 #about #bio .nav a.disable {
   cursor:               default;
-  background-position:0 -48px;
+  background-position:0 -40px;
 }
 #about #bio .nav a.disable:last-child {
-  background-position:-24px -48px;
+  background-position:-20px -40px;
 }
 
 /* / About */

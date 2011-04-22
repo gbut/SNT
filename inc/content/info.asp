@@ -209,9 +209,7 @@
     
     <!-- + PUBLISHED RESEARCH -->
     
-      December 22, 2009
-      <a href="https://www.rms.com/Publications/1999_European_Storms_10_Year_Retrospective.asp">Ten Years After: How Windstorm Modeling has Matured since the 1999 European Storms</a>
-      
+
       
   
     <!-- / PUBLISHED RESEARCH -->
@@ -224,8 +222,7 @@
     
     <!-- + RMS PUBLICATIONS -->
     
-      <a href="http://www.rms.com/Publications/Research/Lohmann_Atmospheric_Uncertainty.pdf">&quot;The Effect of Large Scale Atmospheric Uncertainty on Streamflow Predictability&quot;</a>
-      Hou, D., Mitchell, K., Toth, Z., Lohmann, D., and Wei, H. (2008)
+
   
     <!-- / RMS PUBLICATIONS -->
   
