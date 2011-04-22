@@ -42,10 +42,10 @@
           <dd>President and<br />Chief Executive Officer</dd>
           <dd class="loc">Newark, California</dd>
           <dd class="img1">
-            <img src="/img/staff/leader_01bw.jpg" />
-            <img src="/img/staff/leader_01color.jpg" />
+            <img src="/img/staff/leader_shah_bw.jpg" />
+            <img src="/img/staff/leader_shah_c.jpg" />
           </dd>
-          <dd class="img2"><img src="/img/staff/leader_01casual.jpg" /></dd>
+          <dd class="img2"><img src="/img/staff/leader_shah_casual.jpg" /></dd>
           <dd class="bio">
             <section>
               Hemant Shah is President and CEO of Risk Management Solutions. Since co-founding RMS in 1989, Hemant has become widely recognized within the global insurance industry as a proactive and influential leader.
@@ -66,10 +66,10 @@
           <dd>Chief Operating Officer</dd>
           <dd class="loc">Hackensack, New Jersey</dd>
           <dd class="img1">
-            <img src="/img/staff/leader_01bw.jpg" />
-            <img src="/img/staff/leader_01color.jpg" />
+            <img src="/img/staff/leader_bentley_bw.jpg" />
+            <img src="/img/staff/leader_bentley_c.jpg" />
           </dd>
-          <dd class="img2"><img src="/img/staff/leader_01casual.jpg" /></dd>
+          <dd class="img2"><img src="/img/staff/leader_bentley_casual.jpg" /></dd>
           <dd class="bio">
             <section>
         Rob Bentley joined RMS as the COO in May 2007. In this role, Rob is responsible for all operational aspects of RMS and oversees RMS' execution of a multi-market, multi-business, and multi-platform strategy. Rob is a highly effective leader with an execution mindset and a track record of driving world class performance in the insurance and reinsurance markets.
@@ -87,10 +87,10 @@
           <dd>Chief Finance Officer</dd>
           <dd class="loc">Newark, California</dd>
           <dd class="img1">
-            <img src="/img/staff/leader_01bw.jpg" />
-            <img src="/img/staff/leader_01color.jpg" />
+            <img src="/img/staff/leader_robertson_bw.jpg" />
+            <img src="/img/staff/leader_robertson_c.jpg" />
           </dd>
-          <dd class="img2"><img src="/img/staff/leader_01casual.jpg" /></dd>
+          <dd class="img2"><img src="/img/staff/leader_robertson_casual.jpg" /></dd>
           <dd class="bio">
             <section>
               Steve Robertson is the CFO of RMS, and also holds the role of Executive Vice President of Enterprise Services. He joined RMS in 2001 after prior positions as CFO of COLO.com, a telecom infrastructure company, and CFO of InsWeb, an online insurance marketplace, where he managed the company's initial public offering (IPO).
@@ -107,10 +107,10 @@
           <dd>Chief Products Officer and<br />Group Executive,<br />Product Management</dd>
           <dd class="loc">Newark, California</dd>
           <dd class="img1">
-            <img src="/img/staff/leader_01bw.jpg" />
-            <img src="/img/staff/leader_01color.jpg" />
+            <img src="/img/staff/leader_vandermarck_bw.jpg" />
+            <img src="/img/staff/leader_vandermarck_c.jpg" />
           </dd>
-          <dd class="img2"><img src="/img/staff/leader_01casual.jpg" /></dd>
+          <dd class="img2"><img src="/img/staff/leader_vandermarck_casual.jpg" /></dd>
           <dd class="bio">
             <section>
               Paul Vandermarck is CPO and Group Executive, Product Management, at RMS. In this role, Paul has overall responsibility for the definition and execution of RMS' product strategy. Since joining RMS in 1992, he has played a central role both in the development of RMS' global catastrophe modeling capabilities as well as in advancing the state of practice for using modeling to manage catastrophe risk.
@@ -125,10 +125,10 @@
           <dd>Chief Research Officer</dd>
           <dd class="loc">London, UK</dd>
           <dd class="img1">
-            <img src="/img/staff/leader_01bw.jpg" />
-            <img src="/img/staff/leader_01color.jpg" />
+            <img src="/img/staff/leader_muirwood_bw.jpg" />
+            <img src="/img/staff/leader_muirwood_c.jpg" />
           </dd>
-          <dd class="img2"><img src="/img/staff/leader_01casual.jpg" /></dd>
+          <dd class="img2"><img src="/img/staff/leader_muirwood_casual.jpg" /></dd>
           <dd class="bio">
             <section>
               Robert Muir-Wood is CRO of Science and Technology Research at RMS. In this role, Robert heads the branch of RMS responsible for enhancing approaches to natural catastrophe modeling and developing models for new areas of risk such as liability.
@@ -149,10 +149,10 @@
           <dd>Chief Technology Officer</dd>
           <dd class="loc">Newark, California</dd>
           <dd class="img1">
-            <img src="/img/staff/leader_01bw.jpg" />
-            <img src="/img/staff/leader_01color.jpg" />
+            <img src="/img/staff/leader_stephan_bw.jpg" />
+            <img src="/img/staff/leader_stephan_c.jpg" />
           </dd>
-          <dd class="img2"><img src="/img/staff/leader_01casual.jpg" /></dd>
+          <dd class="img2"><img src="/img/staff/leader_stephan_casual.jpg" /></dd>
           <dd class="bio">
             <section>
               Philippe Stephan is the CTO of RMS. Prior to joining RMS in 2009, he was most recently Head of Business Development for Sophis, a leading market risk technology vendor. Prior to Sophis, Philippe directed product development as the CTO of San Francisco based Moody's KMV, the award winning credit risk analytics vendor.
@@ -169,10 +169,10 @@
           <dd>Managing Director,<br />RiskMarkets</dd>
           <dd class="loc">Hackensack, New Jersey</dd>
           <dd class="img1">
-            <img src="/img/staff/leader_01bw.jpg" />
-            <img src="/img/staff/leader_01color.jpg" />
+            <img src="/img/staff/leader_nakada_bw.jpg" />
+            <img src="/img/staff/leader_nakada_c.jpg" />
           </dd>
-          <dd class="img2"><img src="/img/staff/leader_01casual.jpg" /></dd>
+          <dd class="img2"><img src="/img/staff/leader_nakada_casual.jpg" /></dd>
           <dd class="bio">
             <section>
               Peter Nakada is Managing Director of the RMS RiskMarkets group. In this role, he leads the branch of RMS that provides management consulting and other bespoke services to insurers and reinsurers. He advises companies on innovative ways to transfer risk to the capital markets, such as catastrophe bonds, and offers consulting solutions for understanding new types of risk.
@@ -187,10 +187,10 @@
           <dd>Global Executive,<br />Client Development</dd>
           <dd class="loc">London, UK</dd>
           <dd class="img1">
-            <img src="/img/staff/leader_01bw.jpg" />
-            <img src="/img/staff/leader_01color.jpg" />
+            <img src="/img/staff/leader_grant_bw.jpg" />
+            <img src="/img/staff/leader_grant_c.jpg" />
           </dd>
-          <dd class="img2"><img src="/img/staff/leader_01casual.jpg" /></dd>
+          <dd class="img2"><img src="/img/staff/leader_grant_casual.jpg" /></dd>
           <dd class="bio">
             <section>
               Matthew Grant is Global Executive, Client Development. In this role, Matthew is responsible for RMS' worldwide relationship management, sales, professional services, and product support activities, as well as overseeing the development into new markets for RMS products and services.
@@ -205,10 +205,10 @@
           <dd>Senior Vice President,<br />Human Resources</dd>
           <dd class="loc">Newark, California</dd>
           <dd class="img1">
-            <img src="/img/staff/leader_01bw.jpg" />
-            <img src="/img/staff/leader_01color.jpg" />
+            <img src="/img/staff/leader_bianchi_bw.jpg" />
+            <img src="/img/staff/leader_bianchi_c.jpg" />
           </dd>
-          <dd class="img2"><img src="/img/staff/leader_01casual.jpg" /></dd>
+          <dd class="img2"><img src="/img/staff/leader_bianchi_casual.jpg" /></dd>
           <dd class="bio">
             <section>
               Paul Bianchi is SVP of Human Resources at RMS. Paul joined the company in January 2009, bringing over 20 years of high-technology, human capital executive leadership to RMS from innovative companies as PeopleSoft, NeXT Computer, Apple, ProBusiness Services, and Ask Jeeves. Most recently, Paul held the role of Principal at Strayer Consulting Group, a Bay Area-based organizational development consultancy.
@@ -231,10 +231,10 @@
           <dd>SVP, Model Development</dd>
           <dd class="loc">Newark, California</dd>
           <dd class="img1">
-            <img src="/img/staff/leader_01bw.jpg" />
-            <img src="/img/staff/leader_01color.jpg" />
+            <img src="/img/staff/leader_morrow_bw.jpg" />
+            <img src="/img/staff/leader_morrow_c.jpg" />
           </dd>
-          <dd class="img2"><img src="/img/staff/leader_01casual.jpg" /></dd>
+          <dd class="img2"><img src="/img/staff/leader_morrow_casual.jpg" /></dd>
           <dd class="bio">
             <section>
               Based in California, Guy leads the model development team responsible for the creation of catastrophe models at RMS. He has participated in and been project lead in the development of many RMS models. Prior to joining RMS in 1994, Guy was an associate at Degenkolb Engineering, a structural engineering firm in San Francisco, and a lieutenant in the Navy Civil Engineer Corps. His is a registered civil and structural engineer in the state of California.

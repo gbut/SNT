@@ -4209,6 +4209,8 @@ textarea.error {
 }
 
 #about section img.banner {
+  width:                915px;
+  height:               125px;
   margin-bottom:        31px;
 }
 
@@ -4253,6 +4255,8 @@ textarea.error {
 }
 
 #about .intro .sig {
+  width:                179px;
+  height:               57px;
   position:             relative;
   left:                 -10px;
 }
@@ -4266,7 +4270,7 @@ textarea.error {
 
 #about dl {
   width:                278px;
-  height:               90px;
+  height:               116px;
   margin-right:         7px;
   padding:              10px;
   border:               1px solid #b9b9b9;
@@ -4293,8 +4297,8 @@ textarea.error {
 }
 
 #about dd.img1 {
-  width:                150px;
-  height:               110px;
+  width:                163px;
+  height:               136px;
   position:             absolute;
   top:                  0;
   right:                0;
@@ -4362,18 +4366,22 @@ textarea.error {
           box-shadow:   0 3px 7px rgba(90,90,90,0.5);
   behavior: url(/js/libs/PIE/PIE.htc);
 }
+#about #bio .image img {
+  width:                130px;
+  height:               86px;  
+}
 
 #about #bio .name {
-  font-size:110%;
-  font-weight:bold;
+  font-size:            110%;
+  font-weight:          bold;
 }
 
 #about #bio .loc {
-  font-size:110%;
+  font-size:            110%;
 }
 
 #about #bio .bodyOuter {
-  width:540px;
+  width:                540px;
 }
 
 #about #bio .body {
