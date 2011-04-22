@@ -13,7 +13,7 @@
   
 </head>
 
-<body id="body">
+<body id="body" class="isHome">
 
 <!--#include virtual="/inc/_header.asp" -->
 
@@ -32,6 +32,9 @@
 </div>
 
 <!--#include virtual="/inc/_footer.asp" -->
+
+<div id="homeOverlayHeader"></div>
+<div id="homeOverlay"></div>
 
 <!--#include virtual="/inc/__html-foot.asp" -->
 

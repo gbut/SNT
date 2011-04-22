@@ -2206,6 +2206,32 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   background-color:     #1b2d4d;
 }
 
+#homeOverlay {
+  width:                100%;
+  height:               100%;
+  background:           #fff;
+  overflow:             hidden;
+  position:             fixed;
+  top:                  0;
+  left:                 0;
+  z-index:              10001;
+}
+
+#homeOverlayHeader {
+  width:                100%;
+  height:               91px;
+  background:           #0c0a12;
+  overflow:             hidden;
+  position:             fixed;
+  top:                  0;
+  left:                 0;
+  z-index:              10000;
+}
+
+.isHome footer {
+  display:              none;
+}
+
 /* + Home */
 
 /* + Risk */
