@@ -13,17 +13,21 @@
   
 </head>
 
+<<<<<<< HEAD
+<body id="body" class="isHome">
+=======
 <body id="body" class="t01">
+>>>>>>> 25245a3bfd7a009f63889ab881062c8f9d29266e
 
 <!--#include virtual="/inc/_header.asp" -->
 
-<div id="t01">
+<div id="t01" class="contentOuter">
   <!-- + main -->
   <div id="main" class="wrapper clearfix">
   
     <!-- + content -->
     <section id="content" class="clearfix">
-      <!--#include virtual="/inc/content/careers_craft.asp" -->
+      <!--#include virtual="/inc/content/home.asp" -->
     </section>
     <!-- / content -->
       
@@ -32,6 +36,9 @@
 </div>
 
 <!--#include virtual="/inc/_footer.asp" -->
+
+<div id="homeOverlayHeader"></div>
+<div id="homeOverlay"></div>
 
 <!--#include virtual="/inc/__html-foot.asp" -->
 

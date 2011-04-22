@@ -1254,13 +1254,13 @@ footer a {
   color:                #414040;
 }
 
-#t01 + footer {
+.t01 footer {
   border:               0;
   background:           #222;
   position:             fixed;
   bottom:               0;
 }
-#t01 + footer a {
+.t01 footer a {
   color:                #fff;
 }
 
