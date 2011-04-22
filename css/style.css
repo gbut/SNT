@@ -1253,6 +1253,7 @@ footer a {
   color:                #414040;
 }
 
+/*
 #t01 + footer {
   border:               0;
   background:           #222;
@@ -1262,6 +1263,7 @@ footer a {
 #t01 + footer a {
   color:                #fff;
 }
+*/
 
 /* / FOOTER */
 
@@ -2095,6 +2097,116 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 /* / Sidebar */
 
+/* + Home */
+
+#home {
+  min-height:           775px;
+  height:               auto !important;
+  height:               775px;
+  background:           #0c0a12 url(../img/TEMP_bg_home.jpg) top center no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#home .hd {
+  width:                960px;
+  margin:               0 auto;
+  padding:              80px 0 0;
+}
+
+#home .hd h2 {
+  color:                #fff;
+  font:                 normal 307.7%/100% Helvetica,sans-serif;
+  float:                right;
+  clear:                both;
+}
+
+#home .hd h3 {
+  color:                #9e9da1;
+  font:                 normal 215.4%/100% Helvetica,sans-serif;
+  padding-bottom:       8px;
+  float:                right;
+  clear:                both;
+}
+
+#home .hd a {
+  color:                #c3151c;
+  font:                 bold 108%/100% Helvetica,sans-serif;
+  text-transform:       uppercase;
+  float:                right;
+  clear:                both;
+}
+#home .hd a em {
+  color:                #fff;
+  font:                 bold 145%/100% Arial,sans-serif;
+}
+
+#home #ribbon {
+  width:                100%;
+  min-height:           124px;
+  height:               auto !important;
+  height:               124px;
+  position:             absolute;
+  top:                  70%;
+  left:                 0;
+  overflow:             hidden;
+}
+
+#home #ribbon #ribbon_bg {
+  width:                100%;
+  height:               1000px;
+  background:           #031146;
+  position:             absolute;
+  top:                  0;
+  left:                 0;
+  overflow:             hidden;
+  -moz-opacity:         0.7;
+  -ms-filter:           "alpha(opacity=70)";
+  filter:               alpha(opacity=70);
+  opacity:              0.7;
+  z-index:              1;
+}
+
+#home #ribbon ul {
+  color:                #d4d9e2;
+  width:                960px;
+  padding-top:          18px;
+  list-style:           outside none;
+  position:             relative;
+  z-index:              100;
+}
+
+#home #ribbon ul li {
+  width:                280px;
+  padding:              0 20px;
+  float:                left;
+}
+
+#home #ribbon ul li h4 {
+  color:                #fff;
+  font:                 normal 153.8%/108% Helvetica,sans-serif;
+}
+
+#home #ribbon ul li p {
+  font:                 normal 93%/167% "Lucida Grande",Helvetica,sans-serif;
+}
+
+#home #ribbon ul li p a {
+  color:                #d4d9e2;
+  font-size:            108%;
+  line-height:          153.9%;
+}
+#home #ribbon ul li p a em {
+  color:                #d4d9e2;
+  font:                 normal 131%/50% Arial,sans-serif;
+  padding:              1px 2px 3px;
+  display:              inline-block;
+  background-color:     #1b2d4d;
+}
+
+/* + Home */
+
 /* + Risk */
 
 .sectionCont {
@@ -2470,6 +2582,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   left:                 0;
   z-index:              1;
   overflow:             hidden;
+  -moz-opacity:         0.6;
+  -ms-filter:           "alpha(opacity=60)";
+  filter:               alpha(opacity=60);
   opacity:              0.6;
 }
 
@@ -5138,6 +5253,38 @@ ul.index.global li a {
     min-height:           1200px;
   }
 }
+
+/*
+  Scalable bg images: http://kimili.com/journal/the-flexible-scalable-background-image-redux
+
+  This next definition doesn't allow the background to get any smaller
+  than a predefined size (640x426px in this case). Change the values
+  here to match your background image size. The configuration in the
+  flexi-background javascript file should also match these values.
+*/
+@media only all and (max-width: 1200px) and (max-height: 775px) {
+  #home {
+    background-size: 1200px 775px;
+    -moz-background-size: 1200px 775px;
+    -webkit-background-size: 1200px 775px;
+  }
+}
+/*
+  The next 2 definitions are for support in iOS devices.
+  Since they don't recoginze the 'cover' keyword for background-size
+  we need to simulate it with percentages and orientation
+*/
+@media only screen and (orientation: portrait) and (device-width: 320px), (device-width: 768px) {
+  #home {
+    -webkit-background-size: auto 100%;
+  }
+}
+@media only screen and (orientation: landscape) and (device-width: 320px), (device-width: 768px) {
+  #home {
+    -webkit-background-size: 100% auto;
+  }
+}
+
 
 /**
  * Print styles.
