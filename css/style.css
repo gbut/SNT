@@ -2100,8 +2100,6 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 /* + Home */
 
 #home {
-  min-height:           775px;
-  height:               auto !important;
   height:               775px;
   background:           #0c0a12 url(../img/TEMP_bg_home.jpg) top center no-repeat;
   background-size: cover;
