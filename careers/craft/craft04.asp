@@ -1,5 +1,3 @@
-<!-- #include virtual="/inc/server/contact.asp"-->
-
 <!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
@@ -19,13 +17,13 @@
 
 <!--#include virtual="/inc/_header.asp" -->
 
-<div id="t10" class="contentOuter">
+<div id="t01">
   <!-- + main -->
   <div id="main" class="wrapper clearfix">
   
     <!-- + content -->
     <section id="content" class="clearfix">
-      <!--#include virtual="/inc/content/contact.asp" -->
+      <!--#include virtual="/inc/content/careers_craft_detail04.asp" -->
     </section>
     <!-- / content -->
       

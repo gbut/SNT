@@ -1,9 +1,11 @@
 <!-- + careers_craft_detail -->
 <div id="craftDetail" class="craft">
 
-  <img class="bg" src="/img/bg_craft_detail.jpg" />
+  <img class="bg" src="/img/bg_craft_detail01.jpg" />
 
   <div class="inner">
+  
+    <div class="mask"></div>
 
     <section>
     
