@@ -2101,7 +2101,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #home {
   min-height:           775px;
-  height:               auto !important;
+/*  height:               auto !important;*/
   height:               775px;
   background:           #0c0a12 url(../img/TEMP_bg_home.jpg) top center no-repeat;
   background-size: cover;
@@ -4043,7 +4043,7 @@ textarea.error {
 
 .craft {
   min-height:           775px;
-  height:               auto !important;
+/*  height:               auto !important;*/
   height:               775px;
   position:             relative;
   background-color:     #0c0a12;
