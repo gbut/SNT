@@ -4042,18 +4042,34 @@ textarea.error {
 /* + Craft */
 
 .craft {
+  min-height:           775px;
+  height:               auto !important;
+  height:               775px;
   position:             relative;
-/*  overflow:             hidden;
-  background:           #222;;*/
+  background-color:     #0c0a12;
+  background-position:  top center;
+  background-repeat:    no-repeat;
+  background-size:      cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
-/*
-.craft img.bg {
-  width:                100%;
-  position:             absolute;
-  top:                  0;
-  left:                 0;
+
+#craft {
+  background-image:     url(../img/bg_craft.jpg);
 }
-*/
+.craft01 {
+  background-image:     url(../img/bg_craft_detail01.jpg);
+}
+.craft02 {
+  background-image:     url(../img/bg_craft_detail02.jpg);
+}
+.craft03 {
+  background-image:     url(../img/bg_craft_detail03.jpg);
+}
+.craft04 {
+  background-image:     url(../img/bg_craft_detail04.jpg);
+}
+
 .craft .inner {
   width:                960px;
   height:               610px;

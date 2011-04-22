@@ -2107,11 +2107,16 @@ $(document).ready(function(){
   //===============================================
   
   /**
+   * This should really be server side - but if it's going to be client side,
+   * it should occur prior to document load 
+   */
+  
+  /**
    * Quote, Photo (upward slant), Photo (downward slant), Benefit
    */
   
-  photo_up_total = 6;
-  photo_dn_total = 4;
+  photo_up_total = 9;
+  photo_dn_total = 5;
 
   // Quote
   if ($('aside .quote').length) {
