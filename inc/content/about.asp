@@ -83,44 +83,6 @@
           </dd>
         </dl>
         <dl>
-          <dt>Stephen Robertson</dt>
-          <dd>Chief Finance Officer</dd>
-          <dd class="loc">Newark, California</dd>
-          <dd class="img1">
-            <img src="/img/staff/leader_robertson_bw.jpg" />
-            <img src="/img/staff/leader_robertson_c.jpg" />
-          </dd>
-          <dd class="img2"><img src="/img/staff/leader_robertson_casual.jpg" /></dd>
-          <dd class="bio">
-            <section>
-              Steve Robertson is the CFO of RMS, and also holds the role of Executive Vice President of Enterprise Services. He joined RMS in 2001 after prior positions as CFO of COLO.com, a telecom infrastructure company, and CFO of InsWeb, an online insurance marketplace, where he managed the company's initial public offering (IPO).
-            </section>
-            <section>              
-              Prior to InsWeb, Steve spent 12 years in the investment banking business, focusing primarily on capital raising, mergers and acquisitions in the global insurance and reinsurance industry at firms now part of Citicorp (Salomon Brothers/Smith Barney), Deutsche Bank (Alex. Brown) and Lehman Brothers. Steve holds an AB from Princeton University and an MBA from the Stanford Graduate School of Business.
-            </section>
-          </dd>
-        </dl>
-      </div>
-      <div class="row clearfix">
-        <dl>
-          <dt>Paul VanderMarck</dt>
-          <dd>Chief Products Officer and<br />Group Executive,<br />Product Management</dd>
-          <dd class="loc">Newark, California</dd>
-          <dd class="img1">
-            <img src="/img/staff/leader_vandermarck_bw.jpg" />
-            <img src="/img/staff/leader_vandermarck_c.jpg" />
-          </dd>
-          <dd class="img2"><img src="/img/staff/leader_vandermarck_casual.jpg" /></dd>
-          <dd class="bio">
-            <section>
-              Paul Vandermarck is CPO and Group Executive, Product Management, at RMS. In this role, Paul has overall responsibility for the definition and execution of RMS' product strategy. Since joining RMS in 1992, he has played a central role both in the development of RMS' global catastrophe modeling capabilities as well as in advancing the state of practice for using modeling to manage catastrophe risk.
-            </section>
-            <section>
-              In 2003, Paul was recognized by the Earthquake Engineering Research Institute for his contributions to the field of earthquake risk mitigation and management with the Shah Family Innovation Award. Paul holds a BS in civil engineering and an MS in structural and earthquake engineering, both from Stanford University.
-            </section>
-          </dd>
-        </dl>
-        <dl>
           <dt>Robert Muir-Wood</dt>
           <dd>Chief Research Officer</dd>
           <dd class="loc">London, UK</dd>
@@ -144,6 +106,26 @@
             </section>
           </dd>
         </dl>
+      </div>
+      <div class="row clearfix">
+        <dl>
+          <dt>Stephen Robertson</dt>
+          <dd>Chief Finance Officer</dd>
+          <dd class="loc">Newark, California</dd>
+          <dd class="img1">
+            <img src="/img/staff/leader_robertson_bw.jpg" />
+            <img src="/img/staff/leader_robertson_c.jpg" />
+          </dd>
+          <dd class="img2"><img src="/img/staff/leader_robertson_casual.jpg" /></dd>
+          <dd class="bio">
+            <section>
+              Steve Robertson is the CFO of RMS, and also holds the role of Executive Vice President of Enterprise Services. He joined RMS in 2001 after prior positions as CFO of COLO.com, a telecom infrastructure company, and CFO of InsWeb, an online insurance marketplace, where he managed the company's initial public offering (IPO).
+            </section>
+            <section>              
+              Prior to InsWeb, Steve spent 12 years in the investment banking business, focusing primarily on capital raising, mergers and acquisitions in the global insurance and reinsurance industry at firms now part of Citicorp (Salomon Brothers/Smith Barney), Deutsche Bank (Alex. Brown) and Lehman Brothers. Steve holds an AB from Princeton University and an MBA from the Stanford Graduate School of Business.
+            </section>
+          </dd>
+        </dl>
         <dl>
           <dt>Philippe Stephan</dt>
           <dd>Chief Technology Officer</dd>
@@ -163,88 +145,7 @@
           </dd>
         </dl>
       </div>
-      <div class="row clearfix">
-        <dl>
-          <dt>Peter Nakada</dt>
-          <dd>Managing Director,<br />RiskMarkets</dd>
-          <dd class="loc">Hackensack, New Jersey</dd>
-          <dd class="img1">
-            <img src="/img/staff/leader_nakada_bw.jpg" />
-            <img src="/img/staff/leader_nakada_c.jpg" />
-          </dd>
-          <dd class="img2"><img src="/img/staff/leader_nakada_casual.jpg" /></dd>
-          <dd class="bio">
-            <section>
-              Peter Nakada is Managing Director of the RMS RiskMarkets group. In this role, he leads the branch of RMS that provides management consulting and other bespoke services to insurers and reinsurers. He advises companies on innovative ways to transfer risk to the capital markets, such as catastrophe bonds, and offers consulting solutions for understanding new types of risk.
-            </section>
-            <section>
-              Prior to joining RMS, Peter was a co-founder of ERisk, a firm that provided risk and capital management software and consulting to the banking industry. Before that, he was a partner in Oliver, Wyman & Company's risk management practice. Peter has a BA in engineering sciences from Harvard College, an MS in engineering management from Stanford University, and is a Chartered Financial Analyst charterholder.
-            </section>
-          </dd>
-        </dl>
-        <dl>
-          <dt>Matthew Grant</dt>
-          <dd>Global Executive,<br />Client Development</dd>
-          <dd class="loc">London, UK</dd>
-          <dd class="img1">
-            <img src="/img/staff/leader_grant_bw.jpg" />
-            <img src="/img/staff/leader_grant_c.jpg" />
-          </dd>
-          <dd class="img2"><img src="/img/staff/leader_grant_casual.jpg" /></dd>
-          <dd class="bio">
-            <section>
-              Matthew Grant is Global Executive, Client Development. In this role, Matthew is responsible for RMS' worldwide relationship management, sales, professional services, and product support activities, as well as overseeing the development into new markets for RMS products and services.
-            </section>
-            <section>
-              He was previously in charge of RMS' international businesses, having founded the RMS European office in 1996, and has been a leading advocate for the use of catastrophe modeling and risk assessment within the insurance and reinsurance markets since 1992. Prior to joining RMS, Matthew was involved in risk assessment and emergency planning for the nuclear, chemical, and offshore industries. He has a degree in mechanical engineering.
-            </section>
-          </dd>
-        </dl>
-        <dl>
-          <dt>Paul Bianchi</dt>
-          <dd>Senior Vice President,<br />Human Resources</dd>
-          <dd class="loc">Newark, California</dd>
-          <dd class="img1">
-            <img src="/img/staff/leader_bianchi_bw.jpg" />
-            <img src="/img/staff/leader_bianchi_c.jpg" />
-          </dd>
-          <dd class="img2"><img src="/img/staff/leader_bianchi_casual.jpg" /></dd>
-          <dd class="bio">
-            <section>
-              Paul Bianchi is SVP of Human Resources at RMS. Paul joined the company in January 2009, bringing over 20 years of high-technology, human capital executive leadership to RMS from innovative companies as PeopleSoft, NeXT Computer, Apple, ProBusiness Services, and Ask Jeeves. Most recently, Paul held the role of Principal at Strayer Consulting Group, a Bay Area-based organizational development consultancy.
-            </section>
-            <section>              
-              There, he served clients in the technology, health care, and life sciences industries by delivering organizational development expertise and C-level advising services around M&A integration, executive coaching, leadership development, and succession planning.
-            </section>
-            <section>
-              In his role at RMS, Paul is responsible for all aspects of human capital strategies and operations, including talent acquisition and staffing; learning and development; rewards and benefits; employee communication and engagement; and human resources policies, processes, and operations.
-            </section>
-            <section>              
-              Paul holds a BS in Agricultural and Managerial Economics from the University of California, Davis, and an MS in Management from the University of Kent, Canterbury. He is a certified Senior Professional in Human Resources, has taught at San Jose State University, and has spoken on a variety of topics at software and human resources forums.
-            </section>
-          </dd>
-        </dl>
-      </div>
-      <div class="row clearfix">
-        <dl>
-          <dt>Guy Morrow</dt>
-          <dd>SVP, Model Development</dd>
-          <dd class="loc">Newark, California</dd>
-          <dd class="img1">
-            <img src="/img/staff/leader_morrow_bw.jpg" />
-            <img src="/img/staff/leader_morrow_c.jpg" />
-          </dd>
-          <dd class="img2"><img src="/img/staff/leader_morrow_casual.jpg" /></dd>
-          <dd class="bio">
-            <section>
-              Based in California, Guy leads the model development team responsible for the creation of catastrophe models at RMS. He has participated in and been project lead in the development of many RMS models. Prior to joining RMS in 1994, Guy was an associate at Degenkolb Engineering, a structural engineering firm in San Francisco, and a lieutenant in the Navy Civil Engineer Corps. His is a registered civil and structural engineer in the state of California.
-            </section>
-            <section>
-              Guy holds a BS in civil engineering from the University of Illinois and an MS in structural engineering from the University of California, Berkeley. He is a member of the Structural Engineers Association of California, American Association for Wind Engineering, Earthquake Engineering Research Institute, and American Society of Civil Engineers.
-            </section>
-          </dd>
-        </dl>
-      </div>
+
       
       <div id="bio" class="default">
         <span class="biotop"></span>

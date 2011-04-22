@@ -210,7 +210,6 @@
     <!-- + PUBLISHED RESEARCH -->
     
 
-      
   
     <!-- / PUBLISHED RESEARCH -->
   
@@ -222,6 +221,88 @@
     
     <!-- + RMS PUBLICATIONS -->
     
+    <h4>Company Brochure</h4>
+
+    	<a href="RMS_corporate_brochure.pdf" title="View PDF">From Science to Decisions</a>
+    	
+    <h4>Case Studies</h4>
+
+    	<a href="Kiln_Treaty_Manager_case_study.pdf" title="View PDF">RMS Treaty Manager Equips Kiln with the Tools to Report on Reinsurance Portfolio Risk in Near Real Time, Enhance Underwriter Decision-Making, and Optimize Capital Allocation</a>
+    	<a href="Leadenhall_Miu_Case.pdf" title="View PDF">RMS Miu Platform Allows Leadenhall Capital Partners to Apply Sophisticated Portfolio Management Practices and Achieve Significant Time and Cost Efficiencies</a>
+    	<a href="RMS_Westrope_Case_Study.pdf" title="View PDF">RiskBrowser&reg; Online for Wholesale Brokers Aids Westrope in Improved Risk Assessment and Customer Satisfaction</a>
+    	<a href="Firemans_Fund_Case_Study.pdf" title="View PDF">RMS ExposureRefine Service Confirms Fireman's Fund's Leadership in Pursuit of High-Quality Exposure Data</a>
+    	<a href="Brit_Insurance_Case_Study.pdf" title="View PDF">RMS Data Cleansing Service Helps Brit Insurance Reduce Uncertainty and Focus on Profitable Growth</a>
+    	
+    <h4>Software Solutions</h4>
+
+    	<a href="EnterpriseGridComputing_Brochure.pdf" title="View PDF">Enterprise Grid Computing (EGC)</a>
+    	<a href="RiskLink.pdf" title="View PDF">RiskLink&reg;</a>
+    	<a href="RiskBrowser.pdf" title="View PDF">RiskBrowser&reg;</a>
+    	
+    <h4>Consulting Services</h4>
+
+    	<a href="Analytical_Services.pdf" title="View PDF">Analytical Services</a>
+    	
+    <h4>Capital Markets</h4>
+
+    	<a href="Miu_Platform.pdf" title="View PDF">Miu Platform</a>
+    	<a href="Paradex_brochure.pdf" title="View PDF">Paradex</a>
+    	
+    <h4>Data Quality Solutions</h4>
+
+    	<a href="Data_Cleansing_Service.pdf" title="View PDF">Data Cleansing Service</a>
+    	<a href="Data_Quality_Toolkit_brochure.pdf" title="View PDF">Data Quality Toolkit</a>
+
+     <h4>Mortality and Injury Risk</h4>
+
+    	<a href="Excess_Mortality_Solutions_brochure.pdf" title="View PDF">Excess Mortality Solutions</a>
+    	<a href="Japan_EQ_Casualty_Model.pdf" title="View PDF">Japan Earthquake Casualty</a>
+    	<a href="Longevity_Risk_brochure.pdf" title="View PDF">Longevity Risk Model</a>
+    	<a href="Mortality_Analytics_data_sheet.pdf" title="View PDF">Mortality Analytics</a>
+    	
+    <h4>Infectious Disease Risk</h4>
+
+     	<a href="Influenza_Pandemic_Risk.pdf" title="View PDF">Managing Influenza Pandemic Risk</a>
+     	
+    <h4>Terrorism Risk</h4>
+
+    	<a href="RMS_Terrorism_Solutions.pdf" title="View PDF">Terrorism Solutions</a>
+    	
+    <h4>Client Training</h4>
+
+    	<a href="RMS_CCRA_Program.pdf" title="View PDF">Certified Catastrophe Risk Analyst (CCRA) Training Program</a>
+
+    <h4>Retrospective Reports</h4>
+
+    	<a href="1908_Messina_Earthquake.pdf" title="View PDF">The 1908 Messina Earthquake: 100-Year Retrospective</a>
+    	<a href="1938_Great_New_England_Hurricane.pdf" title="View PDF">The 1938 New England Hurricane: Looking to the Past to Understand Today's Risk</a>
+    	<a href="1868_Hayward_Earthquake_Retrospective.pdf" title="View PDF">The 1868 Hayward Earthquake: 140-Year Retrospective</a>
+    	<a href="1999_Oklahoma_Tornado_Outbreak.pdf" title="View PDF">The 1999 Oklahoma Tornado Outbreak: 10-Year Retrospective</a>
+    	<a href="1993_SuperStorm.pdf" title="View PDF">The 1993 Superstorm: 15-Year Retrospective</a>
+    	<a href="1998_Ice_Storm_Retrospective.pdf" title="View PDF">The 1998 Ice Storm: 10-Year Retrospective</a>
+    	<a href="1976Tangshan.pdf" title="View PDF">The 1976 Great Tangshan Earthquake: 30-Year Retrospective</a>
+    	
+    <h4>Reconnaissance Reports</h4>
+
+    	<a href="Haiti_Earthquake_FAQ.pdf" title="View PDF">RMS FAQ: 2010 Haiti Earthquake and Caribbean Earthquake Risk</a>
+    	<a href="2008_US_Severe_Convective_Storm.pdf" title="View PDF">The 2008 U.S. Severe Convective Storm Season</a>
+    	<a href="2008_Wenchuan_Earthquake.pdf" title="View PDF">The 2008 Wenchuan Earthquake: Risk Management Lessons and Implications</a>
+    	<a href="2007_US_Wildfire_Season.pdf" title="View PDF">The 2007 U.S. Wildfire Season: Lessons from Southern California</a>
+    	<a href="UK_Summer_2007_Floods.pdf" title="View PDF">U.K. Summer 2007 Floods</a>
+    	<a href="KatrinaReport_LessonsandImplications.pdf" title="View PDF">Hurricane Katrina: Lessons and Implications for Catastrophe Risk Management</a>
+    	<a href="IndianOceanTsunamiReport.pdf" title="View PDF">Managing Tsunami Risk in the Aftermath of the 2004 Indian Ocean Earthquake &amp; Tsunami</a>
+    	
+    <h4>Natural Hazard Special Reports</h4>
+
+    	<a href="2011TohokuReport_041111.pdf" title="View PDF">Estimating Insured Losses from the 2011 Tohoku, Japan Earthquake and Tsunami</a>
+    	<a href="LomaPrieta_20Years.pdf" title="View PDF">Catastrophe Modeling and California Earthquake Risk: A 20-Year Perspective</a>
+    	<a href="RMS%20Guide%202008.pdf" title="View PDF">A Guide to Catastrophe Modeling</a>
+    	
+    <h4>Emerging Risk Special Reports</h4>
+
+      <a href="2010_Macondo_Oil_Spill_Insurance_Implications.pdf" title="View PDF">The Macondo, Gulf of Mexico, Oil Spill: Insurance Implications</a>
+      <a href="H1N1_2009_SpecialReport.pdf" title="View PDF">Learning from the 2009 H1N1 Influenza Pandemic</a>
+      <a href="Seven_Years_of_Terrorism_Risk.pdf" title="View PDF">Terrorism Risk: 7-Year Retrospective, 7-Year Future Perspective</a>    
 
   
     <!-- / RMS PUBLICATIONS -->

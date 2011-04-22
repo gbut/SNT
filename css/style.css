@@ -4162,6 +4162,10 @@ textarea.error {
   margin-bottom:        10px;
 }
 
+#info section h4 {
+ margin-bottom:         10px;
+}
+
 #info section a {
   margin-bottom:        10px;
   display:              block;
@@ -4169,10 +4173,6 @@ textarea.error {
 
 #info section.top a {
   display:              inline;
-}
-
-#info section:last-child a {
-  margin-bottom:        0;
 }
 
 /* / Info */
@@ -4287,6 +4287,8 @@ textarea.error {
   font-weight:          bold;
   color:                #c3151c;
   margin-bottom:        4px;
+  position:             relative;
+  z-index:              10;
 }
 
 #about dd {
