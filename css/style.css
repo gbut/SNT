@@ -2154,7 +2154,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 #home #ribbon #ribbon_bg {
-  width:                100%;
+  width:                0;
   height:               1000px;
   background:           #031146;
   position:             absolute;
@@ -2181,6 +2181,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   width:                280px;
   padding:              0 20px;
   float:                left;
+  display:              none;
 }
 
 #home #ribbon ul li h4 {

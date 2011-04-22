@@ -924,6 +924,105 @@ $(document).ready(function(){
   
 
 	//===============================================
+	//	HOME PAGE
+	//  Manages home page animations
+	//===============================================
+  (function($){
+    $.fn.rmsHome = function(options) {
+      return this.each(function() {
+        new $rh(this, options);
+      });
+    };
+
+    var defaults = {
+      fadeDur:    300,
+      animDur:    650,
+      easing:     'easeOutQuint'
+    };
+
+    /**
+     * The rmsHome object.
+     *
+     * @constructor
+     * @name $.rmsHome
+     * @param Object e The element to create the rmsHome for.
+     * @param Hash o A set of key/value pairs to set as configuration properties.
+     */
+    $.rmsHome = function(e, o) {
+      this.options            = $.extend({}, defaults, o || {});
+
+      // elements
+      var self                = this;
+      this.container          = $(e);
+      this.ribbonBg           = $('#ribbon_bg');
+      this.entryList          = $('#ribbon').find('ul');
+      this.entries            = this.entryList.children();
+
+      // flags, measurements
+      this.t                  = null;
+/*
+      this.winW               = this.container.width();
+      this.photoW             = this.photo.width();
+      this.panelRange         = this.photoW - this.winW;
+      this.popupRange         = this.winW - this.popup.outerWidth();
+      this.popupLeft          = parseInt(this.popup.css('left'));
+      this.pointerLeft        = parseInt(this.pointer.css('left'));
+*/
+
+      // attach behaviors
+      this.t = window.setTimeout(function(){ self.setup(); }, 1000);
+      
+    };
+
+    // Create shortcut for internal use
+    var $rh = $.rmsHome;
+    $rh.fn = $rh.prototype = {};
+    $rh.fn.extend = $rh.extend = $.extend;
+
+    $rh.fn.extend({
+      /**
+       * Sets up all home page animations.
+       *
+       * @name setup
+       * @type undefined
+       */
+      setup: function() {
+        var self = this;
+        this.ribbonBg.animate({
+            width: '100%'
+          },
+          {
+            duration: this.options.animDur,
+            easing: this.options.easing,
+            complete: function(){ self.showEntries(); }
+          });
+      },
+
+      /**
+       * Fades up the site entry points inside the ribbon.
+       *
+       * @name showEntries
+       * @type undefined
+       */
+      showEntries: function() {
+        var self = this;
+        var t = 0;
+        var fadeUpEntry = function(){
+          if (t >= self.entries.length) window.clearInterval(i);
+          $(self.entries[t]).fadeIn(600);
+          t++;
+        };
+        var i = window.setInterval(function(){ fadeUpEntry(); }, 400);
+      }
+
+    });
+
+  })(jQuery);
+
+  if ($('#home').length) $('#home').rmsHome();
+
+
+	//===============================================
 	//	RISK MAP
 	//  Manages interactions related to Risk map
 	//===============================================
