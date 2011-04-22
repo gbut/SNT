@@ -295,11 +295,18 @@ $(document).ready(function(){
 /*
           },
           stop: function(e, ui){
-            console.log(ui.value);
+            $('#output').html('stop: ' + ui.value);
 */
           }
         });
       }
+      
+/*
+      // swipes
+      $('#team ul li a').swipe({
+        swipe: this.swipe
+      });
+*/
       
     };
 
@@ -309,6 +316,11 @@ $(document).ready(function(){
     $tp.fn.extend = $tp.extend = $.extend;
 
     $tp.fn.extend({
+/*
+      swipe: function(e, dir, dist){
+      },
+*/
+      
       /**
        * Handles selection of a team member.
        *
@@ -529,6 +541,7 @@ $(document).ready(function(){
 
       /**
        * Matches current chat state against an array of possible states.
+       * States outlined here: http://community.liveperson.com/docs/DOC-1045#_Toc250382064
        *
        * @name inChatState
        * @type undefined
@@ -855,6 +868,7 @@ $(document).ready(function(){
        * @type undefined
        */
       onChatError: function(errObj) {
+        if (errObj.id == 1) return; // temporary state; ignore
         _cw.addChatError(errObj.text, true);
       },
 

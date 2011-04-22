@@ -5084,6 +5084,9 @@ ul.index.global li a {
 */
 @media only screen and (max-device-width: 1024px) {
   body,
+  header,
+  .contentOuter,
+  footer,
   #loginOverlay {
     width:                1040px;
   }
