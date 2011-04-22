@@ -13,7 +13,11 @@
   
 </head>
 
-<body id="body" class="isHome t01">
+<<<<<<< HEAD
+<body id="body" class="isHome">
+=======
+<body id="body" class="t01">
+>>>>>>> 25245a3bfd7a009f63889ab881062c8f9d29266e
 
 <!--#include virtual="/inc/_header.asp" -->
 

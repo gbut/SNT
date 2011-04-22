@@ -957,20 +957,16 @@ $(document).ready(function(){
       this.ribbonBg           = $('#ribbon_bg');
       this.entryList          = $('#ribbon').find('ul');
       this.entries            = this.entryList.children();
+      
+      this.overlay            = $('#homeOverlay');
+      this.overlayTop         = $('#homeOverlayHeader');
+      this.footer             = $('footer');
 
       // flags, measurements
-      this.t                  = null;
-/*
-      this.winW               = this.container.width();
-      this.photoW             = this.photo.width();
-      this.panelRange         = this.photoW - this.winW;
-      this.popupRange         = this.winW - this.popup.outerWidth();
-      this.popupLeft          = parseInt(this.popup.css('left'));
-      this.pointerLeft        = parseInt(this.pointer.css('left'));
-*/
 
       // attach behaviors
-      this.t = window.setTimeout(function(){ self.setup(); }, 1000);
+      this.t1 = window.setTimeout(function(){ self.overlay.fadeOut(600); window.clearTimeout(self.t1); }, 1000);
+      this.t2 = window.setTimeout(function(){ self.setup(); }, 1600);
       
     };
 
@@ -996,6 +992,7 @@ $(document).ready(function(){
             easing: this.options.easing,
             complete: function(){ self.showEntries(); }
           });
+        window.clearTimeout(this.t2);
       },
 
       /**
@@ -1008,11 +1005,26 @@ $(document).ready(function(){
         var self = this;
         var t = 0;
         var fadeUpEntry = function(){
-          if (t >= self.entries.length) window.clearInterval(i);
+          if (t >= self.entries.length) {
+            window.clearInterval(i);
+            self.revealNav();
+            return;
+          }
           $(self.entries[t]).fadeIn(600);
           t++;
         };
         var i = window.setInterval(function(){ fadeUpEntry(); }, 400);
+      },
+
+      /**
+       * Reveals header and footer nav.
+       *
+       * @name revealNav
+       * @type undefined
+       */
+      revealNav: function() {
+        $(this.overlayTop).fadeOut(600);
+        $(this.footer).fadeIn(600);
       }
 
     });
