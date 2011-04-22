@@ -32,7 +32,7 @@
       Compile planetary models<br />
       Build badass platforms<br />
       Impact global market forces
-      <a href="#" title="Learn more">Learn more <em>&raquo;</em></a>
+      <a href="/careers/craft" title="Learn more">Learn more <em>&raquo;</em></a>
     </div>
     
   </section>

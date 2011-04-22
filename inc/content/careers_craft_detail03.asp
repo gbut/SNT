@@ -1,5 +1,5 @@
 <!-- + careers_craft_detail -->
-<div id="craftDetail" class="craft">
+<div id="craftDetail" class="craft craft03">
 
   <div class="inner">
   
