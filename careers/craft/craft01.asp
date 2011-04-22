@@ -13,11 +13,11 @@
   
 </head>
 
-<body id="body">
+<body id="body" class="t01">
 
 <!--#include virtual="/inc/_header.asp" -->
 
-<div id="t01" class="t01">
+<div id="t01">
   <!-- + main -->
   <div id="main" class="wrapper clearfix">
   
