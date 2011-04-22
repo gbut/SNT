@@ -2170,7 +2170,7 @@ function jobListingsTruncation() {
  * Handle dynamic height for pages with fixed footer
  */
 function setHeight(obj) {
-    obj.height($(window).height() - $('header').height() - $('footer').height());
+  obj.height($(window).height() - $('header').outerHeight(true) - $('footer').outerHeight(true));
 }
 
 /**
