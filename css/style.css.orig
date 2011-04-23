@@ -2101,12 +2101,11 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #home {
 <<<<<<< HEAD
-  height:               775px;
+/*  min-height:           775px;
+  height:               auto !important;*/
 =======
-  min-height:           800px;
-  height:               auto !important;
-  height:               800px;
->>>>>>> 6fe3ae2ff069a35f5569f9135415832a1a18685d
+>>>>>>> 2def7d0552d05e8ff18837bd2475755110d7e374
+  height:               775px;
   background:           #0c0a12 url(../img/TEMP_bg_home.jpg) top center no-repeat;
   background-size: cover;
   -moz-background-size: cover;
@@ -2223,7 +2222,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #homeOverlayHeader {
   width:                100%;
-  height:               91px;
+  height:               93px;
   background:           #0c0a12;
   overflow:             hidden;
   position:             fixed;
@@ -4072,9 +4071,9 @@ textarea.error {
 /* + Craft */
 
 .craft {
-  min-height:           800px;
+/*  min-height:           775px;
   height:               auto !important;*/
-  height:               800px;
+  height:               775px;
   position:             relative;
   background-color:     #0c0a12;
   background-position:  top center;

@@ -4066,9 +4066,9 @@ textarea.error {
 /* + Craft */
 
 .craft {
-  min-height:           800px;
+/*  min-height:           775px;
   height:               auto !important;*/
-  height:               800px;
+  height:               775px;
   position:             relative;
   background-color:     #0c0a12;
   background-position:  top center;
