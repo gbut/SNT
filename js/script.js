@@ -1859,6 +1859,7 @@ $(document).ready(function(){
   //  Height handling for pages with fixed footer
   //===============================================
 
+/*
   if ($('footer').css('position') == 'fixed') {
 
     // find object to size
@@ -1873,6 +1874,7 @@ $(document).ready(function(){
     });
 
   }
+*/
   
   //===============================================
   //  Form validation
