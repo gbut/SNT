@@ -956,17 +956,16 @@ $(document).ready(function(){
       this.container          = $(e);
       this.ribbonBg           = $('#ribbon_bg');
       this.entryList          = $('#ribbon').find('ul');
-      this.entries            = this.entryList.children();
+      //this.entries            = this.entryList.children();
       
-      this.overlay            = $('#homeOverlay');
+      //this.overlay            = $('#homeOverlay');
       this.overlayTop         = $('#homeOverlayHeader');
       this.footer             = $('footer');
 
       // flags, measurements
 
       // attach behaviors
-      this.t1 = window.setTimeout(function(){ self.overlay.fadeOut(600); window.clearTimeout(self.t1); }, 1000);
-      this.t2 = window.setTimeout(function(){ self.setup(); }, 1600);
+      this.t = window.setTimeout(function(){ self.setup(); }, 1000);
       
     };
 
@@ -992,7 +991,7 @@ $(document).ready(function(){
             easing: this.options.easing,
             complete: function(){ self.showEntries(); }
           });
-        window.clearTimeout(this.t2);
+        window.clearTimeout(this.t);
       },
 
       /**
@@ -1003,17 +1002,11 @@ $(document).ready(function(){
        */
       showEntries: function() {
         var self = this;
-        var t = 0;
-        var fadeUpEntry = function(){
-          if (t >= self.entries.length) {
-            window.clearInterval(i);
-            self.revealNav();
-            return;
-          }
-          $(self.entries[t]).fadeIn(600);
-          t++;
-        };
-        var i = window.setInterval(function(){ fadeUpEntry(); }, 400);
+        this.entryList.fadeIn(
+          this.options.animDur,
+          this.options.easing,
+          function(){ self.revealNav(); }
+        );
       },
 
       /**
