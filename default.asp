@@ -13,15 +13,28 @@
   
 </head>
 
-<body id="body">
+<body id="body" class="isHome t01">
 
-<div id="indexPage">
-  <h1 class="indexTitle">
-    RMS.com
-  </h1>
-  <!--#include virtual="/inc/___toc.asp" -->
-</div>
+<!--#include virtual="/inc/_header.asp" -->
+
+<div id="t01" class="contentOuter">
+  <!-- + main -->
+  <div id="main" class="wrapper clearfix">
   
+    <!-- + content -->
+    <section id="content" class="clearfix">
+      <!--#include virtual="/inc/content/home.asp" -->
+    </section>
+    <!-- / content -->
+      
+  </div>
+  <!-- / main -->
+</div>
+
+<!--#include virtual="/inc/_footer.asp" -->
+
+<div id="homeOverlayHeader"></div>
+
 <!--#include virtual="/inc/__html-foot.asp" -->
 
 </body>
