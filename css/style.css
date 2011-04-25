@@ -4512,33 +4512,32 @@ textarea.error {
 }
 
 #about #bio .biotop {
-  height:19px;
-  width:1528px;
+  height:               19px;
+  width:                1528px;
   background:           transparent url(../img/bg_leadership_bio_top.png) no-repeat 0 0;
-  position:absolute;
-  display:block;
+  position:             absolute;
+  display:              block;
 }
 #about #bio div {
-  height:105px;
-  width:120px;
-  margin:25px 12px 10px 0;
-  float:left;
-  overflow:hidden;
+  height:               105px;
+  width:                120px;
+  margin:               25px 12px 10px 0;
+  float:                left;
 }
 #about #bio div div {
-  height:auto;
-  width:100%;
-  margin:0;
-  float:none;
+  height:               auto;
+  width:                100%;
+  margin:               0;
+  float:                none;
 }
 
 #about #bio .image {
-  width:130px;
-  height:86px;
-  margin-left:20px;
-  padding:6px;
-  border:1px solid #d9d9d9;
-  background:#fff;
+  width:                130px;
+  height:               86px;
+  margin-left:          20px;
+  padding:              6px;
+  border:               1px solid #d9d9d9;
+  background:           #fff;
   -webkit-border-radius:4px;
   -moz-border-radius:   4px;
   border-radius:        4px;
@@ -4563,17 +4562,19 @@ textarea.error {
 
 #about #bio .bodyOuter {
   width:                540px;
+  position:             relative;
+  overflow:             hidden;
 }
 
 #about #bio .body {
-  width:540px;
-  position:relative;
+  width:                540px;
+  position:             relative;
 }
 
 #about #bio .body section {
-  width:540px;
-  padding:               0;
-  float:left;
+  width:                540px;
+  padding:              0;
+  float:                left;
 }
 
 #about #bio .nav {
@@ -4613,18 +4614,6 @@ textarea.error {
 }
 
 /* / About */
-
-/* + Follow */
-
-/* / Follow */
-
-/* + Testimonials */
-
-/* / Testimonials */
-
-/* + Plugs */
-
-/* / Plugs */
 
 /* + Chat */
 
