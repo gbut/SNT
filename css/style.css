@@ -4305,7 +4305,7 @@ textarea.error {
 }
 
 #info section.top dt {
-  width:                120px;
+  width:                140px;
   margin:               0 12px 0 15px;
   float:                left;
 }
@@ -4318,7 +4318,7 @@ textarea.error {
 }
 
 #info section.top dd:last-child {
-  width:                583px;
+  width:                563px;
   margin-right:         0;
 }
 
@@ -4348,6 +4348,7 @@ textarea.error {
   display:              block;
 }
 
+#info section.biblio a,
 #info section.top a {
   display:              inline;
 }

@@ -10,37 +10,44 @@
     <h3>Upcoming <em>Events</em></h3>
     
     <!-- + UPCOMING EVENTS -->
-    
+
     <dl>
       <dt>May 10-13, 2011</dt>
-      <dd><a href="http://guest.cvent.com/d/4dqg2w">2011 Client Conference</a></dd>
+      <dd><a href="http://guest.cvent.com/d/4dqg2w" rel="external">2011 Client Conference</a></dd>
       <dd>
-        <p>Please join us for the 2011 RMS Client Conference, Modeling in 3-D, from May 10 - 13, 2011 at the Fairmont Scottsdale Princess in Arizona. The conference will commence with a welcome reception on Tuesday, May 10, and sessions will begin on Wednesday, May 11 and conclude on mid-day Friday, May 13.</p>          
-        <p>The conference agenda features more than 50 technical sessions, covering topics including:
-        <ul>
-          <li>Major methodology updates and market implications of the v11.0 North Atlantic hurricane models, Europe windstorm and earthquake models, and other important v11.0 workflow and modeling updates</li>
-          <li>The RMS model and software roadmap, and an introduction to key technology and methodology updates that will form the basis of our next generation solutions</li>
-          <li>Solvency II, its implications for the global insurance industry, and RMS' response</li>
-          <li>Underwriting & data quality best practices</li>
-          <li>Hands-on practical sessions.</li>
-        </ul>
-        </p>
+        <p>The 2011 RMS Client Conference is being held May 10 - 13 at the Fairmont Scottsdale Princess in Arizona. Click here to view conference details: <a href="http://guest.cvent.com/d/4dqg2w" rel="external">http://guest.cvent.com/d/4dqg2w</a>.</p>
       </dd>
     </dl>
-      
+
     <dl>
       <dt>July 14, 2011</dt>
-      <dd>Managing Terrorism Risk:<br />10 Years on From 9/11</dd>
+      <dd>Managing Terrorism Risk: 10 Years on From 9/11</dd>
       <dd>
-        <p>RMS will host its annual terrorism risk seminar entitled "Managing Terrorism Risk: 10 Years on From 9/11" at the landmark Hudson Theatre at the Millennium Broadway Hotel on July 14, 2011 in New York City. The tenth anniversary of the tragic events of September 11 shall serve as a moment of reflection on the evolution of the threat of terrorism, its security, and how the insurance industry has been impacted. The complimentary half-day event brings together some of the world's leading terrorism experts to address, discuss and exchange views on a variety of issues related to terrorism risk.</p>
-        <p>Guest speakers for the event include:
-        <ul>
-          <li>The Honorable Dr Richard Falkenrath - Principal, Chertoff Group</li>
-          <li>Dr. Bruce Hoffman, Director of the Center for Peace at Georgetown University's Edmund A. Walsh School of Foreign Service</li>
-          <li>Dr. Rohan Gunaratna, Head of the International Centre for Political Violence & Terrorism Research at the S. Rajaratnam School of International Studies (RSIS) of Nanyang Technological University, Singapore</li>
-        </ul>
-        </p>
-        Registration for this event will open in late May. For further information, please contact <a href="mailto:komal.patel@rms.com">Komal Patel</a>.
+        <p>RMS will host its annual terrorism risk seminar at the Millennium Broadway Hotel on July 14, 2011 in New York City. Registration for this event will open in late May. For further information, please contact <a href="mailto:komal.patel@rms.com">Komal Patel</a>.</p>
+      </dd>
+    </dl>
+
+    <dl>
+      <dt>September 10-14, 2011</dt>
+      <dd><a href="http://www.rvs-monte-carlo.com/" rel="external">Rendezvous de Septembre</a></dd>
+      <dd>
+        <p>RMS senior executives will be attending the Rendezvous de Septembre. To arrange a meeting with our representatives, please contact <a href="mailto:sheriene.hancock@rms.com">Sheriene Hancock</a>.</p>
+      </dd>
+    </dl>
+
+    <dl>
+      <dt>October 22-25, 2011</dt>
+      <dd><a href="https://netforum.pci.org/eweb/DynamicPage.aspx?webcode=EventInfo&action=add&evt_key=da9c6f13-4908-4168-96ef-5a05ca47b67b&Paying=" rel="external">PCI Annual Meeting</a></dd>
+      <dd>
+        <p>RMS senior executives will be attending this event. To arrange a meeting with our representatives, please contact <a href="mailto:sheriene.hancock@rms.com">Sheriene Hancock</a>.</p>
+      </dd>
+    </dl>
+
+    <dl>
+      <dt>October 23-27, 2011</dt>
+      <dd><a href="http://www.badendirectory.com/" rel="external">Baden Baden Reinsurance Meetings</a></dd>
+      <dd>
+        <p>RMS senior executives will be attending this event. To arrange a meeting with our representatives, please contact <a href="mailto:sheriene.hancock@rms.com">Sheriene Hancock</a>.</p>
       </dd>
     </dl>
   
@@ -203,14 +210,47 @@
   
   </section>
 
-  <section>
+  <section class="biblio">
   
     <h3>Published <em>Research</em></h3>
     
     <!-- + PUBLISHED RESEARCH -->
     
+    <p>Colette, Leith, Daniel, Bellone, Nolan. (2010): &quot;Using Mesoscale Simulations to Train Statistical Models of Tropical Cyclone Intensity Over Land,&quot; <i>Monthly Weather Review</i> Vol. 138, No. 6.</p>
 
-  
+    <p>O’Hagan, T., B. Ward and K. Coughlin (2008): &quot;<b>How Many Katrinas? Predicting the Number of Hurricanes Striking the USA</b>&quot;, Significance</p>
+
+    <p>Coughlin, K., E. Bellone, T. Laepple, S. Jewson, K. Nzerem (2008): &quot;<b><a href="http://www.rms.com/Publications/Research/Coughlin08.pdf" rel="external">A Relationship Between all Atlantic Hurricanes and Those That Make Landfall in the U.S.</a></b>&quot;, Quarterly Journal of the Royal Meteorological Society</p>
+
+    <p>Jewson, S., E. Bellone, S. Khare, T. Laepple, M. Lonfat, K. Nzerem, A. O’Shay, J. Penzer, K. Coughlin (2008): &quot;<b><a href="http://www.rms.com/Publications/Research/Jewson.pdf" rel="external">5 Year Prediction of the Number of Hurricanes Which Make U.S. Landfall</a></b>&quot;, Hurricanes and Climate Change</p>
+
+    <p>Hall, T. and Jewson, S. (2008): &quot;<b><a href="http://arxiv.org/abs/0801.1013" rel="external">SST and North American Tropical Cyclone Landfall: A Statistical Modeling Study</a></b>&quot;</p>
+
+    <p>Khare, S.P., Bonazzi, A., West, N., Bellone, E., Jewson, S. (2007): &quot;<a href="http://www.rms.com/Publications/Research/resub%20khare%20wind%20(2).pdf" rel="external">On the Modelling of Over-Ocean Hurricane Surface Winds and their Uncertainty</a>&quot;, Quarterly Journal of the Royal Meteorological Society</p>
+
+    <p>Lonfat, M., A. Boissonnade, R. Muir-Wood (2007): &quot;<a href="http://www.rms.com/Publications/Research/Lonfat_2007.pdf" rel="external">Atlantic Basin, U.S. and Caribbean Landfall Rates Over the 2006-2010 Period: An Insurance Industry Perspective</a>&quot;, Tellus A, 59(4), 499-510.</p>
+
+    <p>Coughlin, K. (2007): &quot;<a href="http://arxiv.org/abs/0710.3229" rel="external">Using the QBO to Predict the Number of Hurricanes Hitting the U.S.</a>&quot;</p>
+
+    <p>Hall, T. and Jewson, S. (2007): &quot;<a href="http://arxiv.org/abs/0801.1013" rel="external">SST and North American Tropical Cyclone Landfall: A Statistical Modeling Study</a>&quot;</p>
+
+    <p>Hall, T. and Jewson, S. (2007): &quot;<a href="http://www.rms.com/Publications/Research/inpress_2007_Hall_Jewson.pdf" rel="external">Statistical Modeling of North American Tropical Cyclone Tracks</a>&quot;: Tellus.</p>
+
+    <p>Nzerem, K., Jewson, S. and Laepple, T. (2007): &quot;<a href="http://arxiv.org/abs/physics/0701176" rel="external">Predicting Land-Falling Hurricane Numbers From Sea Surface Temperature: A Theoretical Comparison of Direct and Indirect Approaches</a>&quot;</p>
+
+    <p>Laepple, T., Bellone, E., Jewson, S. and Nzerem, K. (2007): &quot;<a href="http://arxiv.org/abs/physics/0701175" rel="external">Correlations Between Hurricane Numbers and Sea Surface Temperature: Why Does the Correlation Disappear at Landfall?</a>&quot;</p>
+
+    <p>Binter, R., Jewson, S., and Khare, S. (2007): &quot;<a href="http://arxiv.org/abs/physics/0701173" rel="external">Statistical Modeling of the Relationship Between Main Development Region Sea Surface Temperature and Land-falling Atlantic Basin Hurricane Numbers</a>&quot;</p>
+
+    <p>Jewson, S. (2007): &quot;<a href="http://arxiv.org/abs/physics/0701167" rel="external">Predicting Hurricane Numbers from Sea Surface Temperature: Closed-Form Expressions for the Mean, Variance and Standard Error of the Number of Hurricanes</a>&quot;</p>
+
+    <p>Laepple, T., Jewson, S., Penzer, J., Bellone, E. and Nzerem, K. (2007): &quot;<a href="http://arxiv.org/abs/physics/0701166" rel="external">Predicting Landfalling Hurricane Numbers from Basin Hurricane Numbers: Basic Statistical Analysis</a>&quot;</p>
+
+    <p>Laepple, T. and Jewson, S. (2007): &quot;<a href="http://arxiv.org/abs/physics/0701165" rel="external">Five Year Ahead Prediction of Sea Surface Temperature in the Tropical Atlantic: A Comparison Between IPCC Climate Models and Simple Statistical Methods</a>&quot;</p>
+
+    <p>Laepple, T., Jewson, S., Meagher, J., O'Shay, A. and Penzer, J. (2007): &quot;<a href="http://arxiv.org/abs/physics/0701162" rel="external">Five Year Prediction of Sea Surface Temperature in the Tropical Atlantic: A Comparison of Simple Statistical Methods</a>&quot;</p>
+    
+
     <!-- / PUBLISHED RESEARCH -->
   
   </section>
