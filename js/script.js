@@ -2020,19 +2020,19 @@ $(document).ready(function(){
         if (!$(this).hasClass('disable')) {
           $('#bio .nav a').addClass('disable'); // disable clicking while animating
           obj = $(this);
-          body = obj.parent().prev().children('.body');
+          biobody = obj.parent().prev().children('.body');
           w = $('#about #bio .bodyOuter').width();
           if (obj.is(':first-child')) {
             d = '+='+w+'px';
           } else {
             d = '-='+w+'px';
           }
-          body.animate({
+          biobody.animate({
               left: d
             }, 500, function() {
               $('#bio .nav a').removeClass('disable'); // reset links
               // disable nav element for first/last              
-              if ((body.css('left') == '0px') || (body.css('left') == -body.width()+w+'px')) {
+              if ((biobody.css('left') == '0px') || (biobody.css('left') == -biobody.width()+w+'px')) {
                 obj.addClass('disable');
               }
             });
