@@ -2054,29 +2054,21 @@ $(document).ready(function(){
       },
 
       setBioIndicator: function(obj, animate) {
-        d = $('dl').outerWidth(true);
-        if (animate) {
-          if (obj.is(':first-child')) {
-            $('.biotop').animate({
-              left: '-'+d*2+'px'
-            }, 500);
-          } else if (obj.is(':last-child')) {
-            $('.biotop').animate({
-              left: '0'
-            }, 500);
-          } else {
-            $('.biotop').animate({
-              left: '-'+d+'px'
-            }, 500);
-          }
+        var d = $('dl').outerWidth(true);
+        var idx = obj.index();
+        if (idx == 0) {
+          d = -d*2+'px';
+        } else if (idx == 1) {
+          d = -d+'px';
         } else {
-          if (obj.is(':first-child')) {
-            $('.biotop').css('left','-'+d*2+'px');
-          } else if (obj.is(':last-child')) {
-            $('.biotop').css('left','0');
-          } else {
-            $('.biotop').css('left','-'+d+'px');
-          }
+          d = 0;
+        }
+        if (animate) {
+          $('.biotop').animate({
+            left: d
+          }, 500);  
+        } else {
+          $('.biotop').css('left',d);
         }  
       },
 
