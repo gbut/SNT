@@ -4305,6 +4305,7 @@ textarea.error {
 }
 
 #info section.top dt {
+  line-height:          160%;
   width:                140px;
   margin:               0 12px 0 15px;
   float:                left;
