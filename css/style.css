@@ -2180,13 +2180,13 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   list-style:           outside none;
   position:             relative;
   z-index:              100;
+  display:              none;
 }
 
 #home #ribbon ul li {
   width:                280px;
   padding:              0 20px;
   float:                left;
-  display:              none;
 }
 
 #home #ribbon ul li h4 {
@@ -2211,6 +2211,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   background-color:     #1b2d4d;
 }
 
+/*
 #homeOverlay {
   width:                100%;
   height:               100%;
@@ -2221,6 +2222,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   left:                 0;
   z-index:              10001;
 }
+*/
 
 #homeOverlayHeader {
   width:                100%;
@@ -2231,6 +2233,14 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   top:                  0;
   left:                 0;
   z-index:              10000;
+}
+
+.isHome {
+  background-color:     #0c0a12;
+}
+
+.isHome .contentOuter {
+  border:               none;
 }
 
 .isHome footer {

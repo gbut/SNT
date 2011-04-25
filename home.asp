@@ -34,7 +34,6 @@
 <!--#include virtual="/inc/_footer.asp" -->
 
 <div id="homeOverlayHeader"></div>
-<div id="homeOverlay"></div>
 
 <!--#include virtual="/inc/__html-foot.asp" -->
 
