@@ -2228,6 +2228,14 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   z-index:              10000;
 }
 
+.isHome {
+  background-color:     #0c0a12;
+}
+
+.isHome .contentOuter {
+  border:               none;
+}
+
 .isHome footer {
   display:              none;
 }
