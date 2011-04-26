@@ -1558,13 +1558,13 @@ a.close:active {
 .ie8 #presenterNav ul li a .imgCont {
   width:                58px;
   height:               36px;
-  background-position:  -1px 0;
+  background-position:  0 0;
 }
 .ie8 #presenterNav ul li a .imgCont.vid2 {
-  background-position:  -1px -37px;
+  background-position:  0 -37px;
 }
 .ie8 #presenterNav ul li a .imgCont.vid3 {
-  background-position:  -1px -74px;
+  background-position:  0 -74px;
 }
 
 #presenterNav ul li a .imgCont .play {
@@ -4649,8 +4649,10 @@ textarea.error {
 
 #bg_chat .hd .btnChat,
 #bg_chat .btnChatCont {
-  margin:               0 0 23px 294px;
+  margin:               0 0 23px;
   position:             relative;
+  top:                  0;
+  left:                 294px;
 }
 #bg_chat .btnChatCont {
   width:                500px;
@@ -4860,6 +4862,10 @@ textarea.error {
   background:           #f6f6f7;
   float:                left;
   display:              inline;
+  position:             relative;
+}
+.ie7 #chat_win #lp_email {
+  line-height:          120%;
 }
 
 #chat_win #lp_email_send {
