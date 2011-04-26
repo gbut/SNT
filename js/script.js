@@ -1755,7 +1755,7 @@ $(document).ready(function(){
     
           str = $(this).attr('class');  // get the class string
           loc = str.split(' ')[0];      // parse for location (first class)
-        
+          
           // reset selected state
           $('.selected').removeClass('selected');
           jQuery.each($('#markers a'), function() {
@@ -1788,7 +1788,11 @@ $(document).ready(function(){
           $('#popup .details, #popup .mapviewer').fadeTo(400, 1.0, 'easeOutExpo'); // fade in new content
            // set close button
           $('#popup .close').click(function() {
-              $('#popup').fadeTo(1000, 0.0, 'easeOutExpo');
+              if ($('html').is('.ie8, .ie7')) {
+                $('#popup').hide();
+              } else {
+                $('#popup').fadeTo(1000, 0.0, 'easeOutExpo');
+              }
               // reset selected state
               $('.selected').removeClass('selected');
               jQuery.each($('#markers a'), function() {
@@ -1801,7 +1805,6 @@ $(document).ready(function(){
             }
           );
           $('#popup').fadeTo(1000, 1.0, 'easeOutExpo');
-        
         }
       
       }

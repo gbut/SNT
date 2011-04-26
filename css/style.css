@@ -3955,6 +3955,7 @@ textarea.error {
   -ms-filter:           "alpha(opacity=0)";
   filter:               alpha(opacity=0);
   opacity:              .0;
+  display:              none;
 }
 
 #contact #popup .mask {
@@ -3968,13 +3969,13 @@ textarea.error {
   -ms-filter:           "alpha(opacity=60)";
   filter:               alpha(opacity=60);
   opacity:              .60;
+  z-index:              2;
 }
 
 #contact #popup .details,
 #contact #popup .divider,
 #contact #popup .mapviewer {
   font-size:            80%;
-  font-weight:          bold;
   color:                #fff;
   margin:               10px 0;
   float:                left;
@@ -3982,10 +3983,10 @@ textarea.error {
   z-index:              10;
 }
 #contact #popup .details {
-  width:                104px;
+  width:                114px;
   height:               103px;
   margin-left:          10px;
-  padding:              15px;
+  padding:              15px 10px;
 }
 #contact #popup .divider {
   width:                2px;
@@ -4079,7 +4080,7 @@ textarea.error {
 }
 
 .mapviewer .maplinks a.largerMap {
-  margin-right:         8px;
+  margin-right:         12px;
 }
 
 /* / Form pages: Job Apply & Contact */
