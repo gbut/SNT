@@ -4555,6 +4555,10 @@ textarea.error {
   font-size:            110%;
   font-weight:          bold;
 }
+.ie7 #about .bio .name,
+.ie8 #about .bio .name {
+  background-color:     #d6e3eb; /* opaque text aliasing fix */
+}
 
 #about .bio .loc {
   font-size:            110%;
