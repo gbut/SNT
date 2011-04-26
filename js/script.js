@@ -1992,9 +1992,6 @@ $(document).ready(function(){
             // clone display
             $('.bio').find('.nav').hide();
             $('.bio').addClass('original').clone().removeClass('original').addClass('default').attr('style','').insertAfter($(this).parent());
-
-//$('#bio').attr('id','biold').addClass('original').clone().attr('id','bio').removeClass('original').addClass('default').attr('style','').insertAfter($(this).parent());
-
             
             // fadeout and remove old display
             $('.bio.original').animate({
