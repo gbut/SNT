@@ -51,7 +51,7 @@
           <div class="subnavLt">
             <h3>Meet Us</h3>
             <img src="/img/gnav/careers_meet_us.jpg" class="gnavImg" alt="Meet Us" />
-            <a href="#" class="cta">See More Photos on Flickr</a>
+            <a href="http://www.flickr.com/photos/62162353@N04/" class="cta">See More Photos on Flickr</a>
           </div>
           <div class="subnavRt">
             <h3>Careers @ RMS</h3>

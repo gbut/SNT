@@ -1558,13 +1558,13 @@ a.close:active {
 .ie8 #presenterNav ul li a .imgCont {
   width:                58px;
   height:               36px;
-  background-position:  -1px 0;
+  background-position:  0 0;
 }
 .ie8 #presenterNav ul li a .imgCont.vid2 {
-  background-position:  -1px -37px;
+  background-position:  0 -37px;
 }
 .ie8 #presenterNav ul li a .imgCont.vid3 {
-  background-position:  -1px -74px;
+  background-position:  0 -74px;
 }
 
 #presenterNav ul li a .imgCont .play {
@@ -3125,9 +3125,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 #careers #team {
-  width:                904px;
+  width:                902px;
   height:               311px;
   margin-bottom:        20px;
+  border:               1px solid #dededf;
   position:             relative;
   overflow:             hidden;
 }
@@ -3138,11 +3139,6 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   position:             absolute;
   top:                  0;
   left:                 0;
-}
-
-#careers #team_panel img {
-  position:             relative;
-  z-index:              1;
 }
 
 #careers #team_panel ul {
@@ -3156,41 +3152,25 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #careers #team_panel ul li {
   list-style:           none;
   float:                left;
+  position:             relative;
+}
+
+#careers #team_panel ul li img.photo {
+  position:             relative;
+  z-index:              1;
 }
 
 #careers #team_panel ul li a {
   text-indent:          -9999px;
+  width:                110px; /* given exact width in js */
   height:               260px;
   display:              block;
   overflow:             hidden;
   outline:              none;
-/*
-  background:           url(../img/TEMP_photo_team_silhouette.jpg) 0 0 no-repeat;
-*/
-}
-#careers #team_panel ul li.p1 a,
-#careers #team_panel ul li.p6 a {
-  width:                193px;
-}
-#careers #team_panel ul li.p2 a,
-#careers #team_panel ul li.p7 a {
-  width:                182px;
-/*  background-position:  -193px 0;*/
-}
-#careers #team_panel ul li.p3 a,
-#careers #team_panel ul li.p8 a {
-  width:                175px;
-/*  background-position:  -375px 0;*/
-}
-#careers #team_panel ul li.p4 a,
-#careers #team_panel ul li.p9 a {
-  width:                169px;
-/*  background-position:  -550px 0;*/
-}
-#careers #team_panel ul li.p5 a,
-#careers #team_panel ul li.p10 a {
-  width:                185px;
-/*  background-position:  -719px 0;*/
+  position:             absolute;
+  top:                  0;
+  left:                 0;
+  z-index:              10;
 }
 
 .ie7 #careers #team_panel ul li a,
@@ -3217,7 +3197,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   width:                340px;
   height:               19px;
   margin-left:          -170px;
-  background:           #fff;
+  background:           #5270ae;
   border:               none;
   top:                  0;
   -webkit-border-radius:4px;
@@ -3227,7 +3207,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   -ms-filter:           "alpha(opacity=70)";
   filter:               alpha(opacity=70);
   opacity:              0.7;
-  -pie-background:rgba(255,255,255,0.7); /* necessary to render opacity properly */
+  -pie-background:rgba(82,112,174,0.7); /* necessary to render opacity properly */
   behavior: url(/js/libs/PIE/PIE.htc);
 }
 
@@ -3243,7 +3223,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #careers #tooltip .body {
   color:                #5270ae;
   width:                592px;
-  height:               128px;
+  height:               153px;
   padding:              12px 15px 10px;
   background-color:     #e8e8e8;
   border:               2px solid #bababa;
@@ -3304,7 +3284,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #careers #tooltip .primary {
   width:                296px;
-  height:               110px;
+  height:               135px;
   padding:              8px;
   background-color:     #d6dae1;
   border:               1px solid #d1d2d4;
@@ -3327,17 +3307,27 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 #careers #tooltip .primary .text h5 {
-  font-size:            142.8%;
-  margin-bottom:        3px;
+  font-size:            131%;
+  line-height:          108%;
+  margin-bottom:        4px;
 }
 
 #careers #tooltip .primary .text p {
-  font-weight:          bold;
+/*  font-weight:          bold;*/
   line-height:          116%;
   margin-bottom:        1px;
 }
 
+#careers #tooltip .primary .text #bioLocation {
+  color:                #666;
+  font-size:            85%;
+  font-weight:          bold;
+  text-transform:       uppercase;
+  padding-top:          9px;
+}
+
 #careers #tooltip .secondary {
+  font-size:            85%;
   line-height:          108%;
   width:                264px;
   padding:              9px 0 0 14px;
@@ -4660,8 +4650,10 @@ textarea.error {
 
 #bg_chat .hd .btnChat,
 #bg_chat .btnChatCont {
-  margin:               0 0 23px 294px;
+  margin:               0 0 23px;
   position:             relative;
+  top:                  0;
+  left:                 294px;
 }
 #bg_chat .btnChatCont {
   width:                500px;
@@ -4871,6 +4863,10 @@ textarea.error {
   background:           #f6f6f7;
   float:                left;
   display:              inline;
+  position:             relative;
+}
+.ie7 #chat_win #lp_email {
+  line-height:          120%;
 }
 
 #chat_win #lp_email_send {

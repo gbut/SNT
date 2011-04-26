@@ -186,7 +186,7 @@ $(document).ready(function(){
       this.container          = $(e);
       this.panel              = $('#team_panel');
       this.slider             = $('#team_slider');
-      this.photo              = this.panel.find('img.photo');
+//      this.photo              = this.panel.find('img.photo');
       this.people             = this.panel.find('ul');
       this.popup              = $('#tooltip');
       this.pointer            = this.popup.find('.pointer');
@@ -199,14 +199,20 @@ $(document).ready(function(){
       
       // flags, measurements
       this.winW               = this.container.width();
-      this.photoW             = this.photo.width();
-      this.panelRange         = this.photoW - this.winW;
+      this.montageW           = 0;
       this.popupRange         = this.winW - this.popup.outerWidth();
       this.popupLeft          = parseInt(this.popup.css('left'));
       this.pointerLeft        = parseInt(this.pointer.css('left'));
+
+      // fix width of hot areas
+      this.people.children().each(function(i){
+        var w = $(this).find('img').width();
+        $(this).find('a').css('width', w);
+        self.montageW += w;
+      });
+      this.panelRange         = this.montageW - this.winW;
       
       // restore popup position
-//      this.popup.css({opacity:0, bottom:-125});
       this.teamFade(this.popup, 0, 0);
       this.popup.css({bottom:-135});
       
@@ -269,7 +275,8 @@ $(document).ready(function(){
         $(this).data('positions', d);
         
         // add handler
-        $(this).find('a').bind('click', { obj: self, order: i }, self.selectPerson);
+        var li = $(this);
+        $(this).find('a').bind('click', { obj: self, order: (li.data('employee-position') - 1) }, self.selectPerson);
       });
       
       // instantiate slider
