@@ -4493,7 +4493,6 @@ textarea.error {
 
 #about .bio {
   line-height:          160%;
-  background:           transparent url(../img/bg_leadership_bio.jpg) no-repeat 0 0;
   position:relative;
   top:-6px;
   overflow:hidden;
@@ -4504,6 +4503,15 @@ textarea.error {
   -ms-filter:           "alpha(opacity=0)";
   filter:               alpha(opacity=0);
   opacity:              0;
+}
+.ie7 #about .bio .name,
+.ie8 #about .bio .name,
+#about .bio {
+  background:           transparent url(../img/bg_leadership_bio.jpg) no-repeat 0 0;
+}
+.ie7 #about .bio .name,
+.ie8 #about .bio .name { /* opaque text aliasing fix */
+  background-position:  0 -15px;
 }
 
 #about .bio .biotop {
@@ -4551,10 +4559,12 @@ textarea.error {
   font-size:            110%;
   font-weight:          bold;
 }
+/*
 .ie7 #about .bio .name,
 .ie8 #about .bio .name {
-  background-color:     #d6e3eb; /* opaque text aliasing fix */
+  background-color:     #d6e3eb; 
 }
+*/
 
 #about .bio .loc {
   font-size:            110%;
