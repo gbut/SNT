@@ -1,1 +1,202 @@
-[{"fullname":"Betsy Ross","position":"Senior' \"Linux\" System/\\`network Administrator","location":"California","img_src":"/img/TEMP_photo_jli_alt.jpg","biography":{"#cdata-section":"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>"}},{"fullname":"John Adams","position":"IT Director","location":"California","img_src":"/img/TEMP_photo_jli_alt.jpg","biography":{"#cdata-section":"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>"}},{"fullname":"Tim Lincecum","position":"Business Analyst","location":"California","img_src":"/img/TEMP_photo_jli_alt.jpg","biography":{"#cdata-section":"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>"}},{"fullname":"Diane Sawyer","position":"Marketing Analyst","location":"India","img_src":"/img/TEMP_photo_jli_alt.jpg","biography":{"#cdata-section":"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>"}},{"fullname":"Hunter S. Thompson","position":"Modeler Developer","location":"California","img_src":"/img/TEMP_photo_jli_alt.jpg","biography":{"#cdata-section":"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>"}},{"fullname":"Debbie Reynolds","position":"Salesperson","location":"New Jersey","img_src":"/img/TEMP_photo_jli_alt.jpg","biography":{"#cdata-section":"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>"}},{"fullname":"Seth MacFarlane","position":"Analyst","location":"London","img_src":"/img/TEMP_photo_jli_alt.jpg","biography":{"#cdata-section":"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>"}},{"fullname":"Jane Li","position":"Human Resources","location":"California","img_src":"/img/TEMP_photo_jli_alt.jpg","biography":{"#cdata-section":"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>"}},{"fullname":"Jeff Daniels","position":"Product Marketing","location":"London","img_src":"/img/TEMP_photo_jli_alt.jpg","biography":{"#cdata-section":"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>"}},{"fullname":"Nancy Reagan","position":"Project Manager","location":"California","img_src":"/img/TEMP_photo_jli_alt.jpg","biography":{"#cdata-section":"<h6>Lorem Dolores</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p><h6>Gratisei Helios</h6><p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>"}}]
+[
+{
+"fullname":"Vee Meharu",
+"position":"Director, Information Technology",
+"location":"Newark, CA",
+"img_src":"/img/team/alt/usa.jpg",
+"biography":{"#cdata-section":"<h6>If I could have only one meal for the rest of my life...</h6><p>Spicy Chicken Curry with Naan.</p><h6>Secret Talent...</h6><p>I am an accomplished DJ and have put on shows with many well known recording artists.</p>"}
+},
+
+{
+"fullname":"Alexis Phillips",
+"position":"Sr. Analyst",
+"location":"Hoboken, NJ",
+"img_src":"/img/team/alt/nj_alexis_phillips_alt.jpg",
+"biography":{"#cdata-section":"<h6>Interesting fact...</h6><p>I won a Kodak photography contest when I was 8.</p><h6>Secret Talent...</h6><p>I love karaoke (but that's not so secret).</p>"}
+},
+
+{
+"fullname":"Yvette Encarnacion",
+"position":"Director, Human Resources",
+"location":"Hoboken, NJ",
+"img_src":"/img/team/alt/usa.jpg",
+"biography":{"#cdata-section":"<h6>Unusual fact...</h6><p>Served in the US Army Reserves and was qualified as a sharp shooter.</p><h6>Greatest professional accomplishment...</h6><p>Becoming a mom and getting two graduate degrees from Columbia University.</p>"}
+},
+
+{
+"fullname":"Dag Lohmann",
+"position":"Sr. Director, Model Development",
+"location":"Newark",
+"img_src":"/img/team/alt/usa.jpg",
+"biography":{"#cdata-section":"<h6>Interesting facts...</h6><p>Reads math books every night and doesn’t get bored doing it.</p><p>Co-arranged the music for the Interim Afghan National Anthem.</p><p>Has three pet chickens (that his children named Speedy, Squeaky, and Red) that give him fresh eggs.</p>"}
+},
+
+{
+"fullname":"Emily Grover&shy;Kopec",
+"position":"Sr. Consultant",
+"location":"Hoboken, NJ",
+"img_src":"/img/team/alt/nj_emily_grover-kopec_alt.jpg",
+"biography":{"#cdata-section":"<h6>When I grew up I wanted to be...</h6><p>An astronaut.</p><h6>Interesting fact...</h6><p>I have backpacked the Presidential Range in the White Mountains.</p>"}
+},
+
+{
+"fullname":"Jenita Rabadia",
+"position":"Lead Technical Consultant",
+"location":"London, UK",
+"img_src":"/img/team/alt/uk.jpg",
+"biography":{"#cdata-section":"<h6>If I could have only one meal for the rest of my life...</h6><p>Ice cream.</p><h6>Favorite thing to do in London...</h6><p>Drink coffee by the River Thames, on the south side of the Millennium Bridge.</p>"}
+},
+
+{
+"fullname":"Rebecca Morris",
+"position":"Associate Product Manager",
+"location":"Newark, CA",
+"img_src":"/img/team/alt/newark_rebecca_morris_alt.jpg",
+"biography":{"#cdata-section":"<h6>Greatest professional accomplishment...</h6><p>Making a successful transition from a Risk Analyst role to a Product Management role.</p><h6>Favorite thing to do in the Bay Area...</h6><p>Everything! I recently moved to the Bay Area from Minnesota so there is so much to do and explore.</p>"}
+},
+
+{
+"fullname":"Thomas Sabbatelli",
+"position":"Sr. Account Associate",
+"location":"Hoboken, NJ",
+"img_src":"/img/team/alt/nj_thomas_sabbatelli_alt.jpg",
+"biography":{"#cdata-section":"<h6>Unusual fact...</h6><p>I was on the TV show \"Wheel of Fortune.\"</p><h6>Pet peeve...</h6><p>Chewing gum.</p>"}
+},
+
+{
+"fullname":"Margaret Keelan",
+"position":"Director, Human Resources",
+"location":"London, UK",
+"img_src":"/img/team/alt/uk.jpg",
+"biography":{"#cdata-section":"<h6>If I could have only one meal for the rest of my life...</h6><p>It would have to include asparagus.</p><h6>My first car was...</h6><p>A Ford Capri. It was gold and fast!</p>"}
+},
+
+{
+"fullname":"Brandon Katz",
+"position":"Sr. Flood Modeler",
+"location":"Newark, CA",
+"img_src":"/img/team/alt/newark_brandon_katz_alt.jpg",
+"biography":{"#cdata-section":"<h6>When I grew up I wanted to be...</h6><p>A Meteorologist in Alaska.</p><h6>If I could have only one meal for the rest of my life...</h6><p>Memphis style BBQ.</p>"}
+},
+
+{
+"fullname":"Veronique Bruggeman",
+"position":"Product Manager, Model Product Management",
+"location":"London, UK",
+"img_src":"/img/team/alt/london_veronique_bruggeman_alt.jpg",
+"biography":{"#cdata-section":"<h6>I want to travel to...</h6><p>Walking the Inca Trail in Peru.</p><h6>Favorite phrase...</h6><p>\"Where is the sun?\"</p>"}
+},
+
+{
+"fullname":"Tong Zhu",
+"position":"",
+"location":"Newark, CA",
+"img_src":"/img/team/alt/newark_tong_zhu_alt.jpg",
+"biography":{"#cdata-section":"<h6>Interesting fact...</h6><p>Code written 7 years ago is still deployed on 15,000 servers.</p><h6>Greatest professional accomplishment...</h6><p>Led a team to early versions of mobile mail for Yahoo!.</p>"}
+},
+
+{
+"fullname":"Ben Brookes",
+"position":"Director, RiskMarkets",
+"location":"London, UK",
+"img_src":"/img/team/alt/uk.jpg",
+"biography":{"#cdata-section":"<h6></h6><p>.</p><h6></h6><p>.</p>"}
+},
+
+{
+"fullname":"Nereida Lark",
+"position":"Sr. Project Manager",
+"location":"Newark, CA",
+"img_src":"/img/team/alt/newark_nereida_lark_alt.jpg",
+"biography":{"#cdata-section":"<h6>Greatest professional accomplishment...</h6><p>Receiving my Masters in CIS while working fulltime and raising two small children.</p><h6>Secret talent...</h6><p>Plumbing.</p>"}
+},
+
+{
+"fullname":"Toni Colville",
+"position":"Talent Acquisition Coordinator",
+"location":"London, UK",
+"img_src":"/img/team/alt/uk.jpg",
+"biography":{"#cdata-section":"<h6></h6><p>.</p><h6></h6><p>.</p>"}
+},
+
+{
+"fullname":"Rob Bentley",
+"position":"Chief Operating Officer",
+"location":"Hoboken, NJ",
+"img_src":"/img/team/alt/nj_rob_bentley_alt.jpg",
+"biography":{"#cdata-section":"<h6>Interesting fact...</h6><p>I spend over 26 weeks a year on the road.</p><h6>Pet peeve...</h6><p>Ambiguity.</p>"}
+},
+
+{
+"fullname":"Yvonne Cammorto",
+"position":"Administrative Assistant",
+"location":"Hoboken, NJ",
+"img_src":"/img/team/alt/nj_yvonne_cammorto_alt.jpg",
+"biography":{"#cdata-section":"<h6>Unusual fact...</h6><p>I was on the kids show \"Romper Room.\"</p><h6>When I grew up I wanted to be...</h6><p>Children's Advocacy Attorney.</p>"}
+},
+
+{
+"fullname":"Komal Patel",
+"position":"Marketing Communications Manager",
+"location":"Newark, CA",
+"img_src":"/img/team/alt/newark_komal_patel_alt.jpg",
+"biography":{"#cdata-section":"<h6>Unusual fact...</h6><p>Deathly afraid of spiders.</p><h6>When I grew up I wanted to be...</h6><p>A fashion designer.</p>"}
+},
+
+{
+"fullname":"Willie Smalls",
+"position":"Analyst",
+"location":"Hoboken, NJ",
+"img_src":"/img/team/alt/usa.jpg",
+"biography":{"#cdata-section":"<h6>Hobby...</h6><p>Fly fishing.</p><h6>Favorite thing to do in Hoboken area...</h6><p>Eat! Tons of great restaurants.</p>"}
+},
+
+{
+"fullname":"Chau Chavez",
+"position":"Assistant Controller",
+"location":"Newark, CA",
+"img_src":"/img/team/alt/usa.jpg",
+"biography":{"#cdata-section":"<h6>If I could have only one meal for the rest of my life...</h6><p>Dinner, since I value family time. The type of food is not as important.</p><h6>Favorite book...</h6><p>These days, I have to read International GAAP (International Financial Reporting Standards - IFRS).</p>"}
+},
+
+{
+"fullname":"Kevin Cei",
+"position":"Consultant",
+"location":"Hoboken, NJ",
+"img_src":"/img/team/alt/nj_kevin_cei_alt.jpg",
+"biography":{"#cdata-section":"<h6>When I grew up I wanted to be...</h6><p>A meteorologist.</p><h6>My first car was...</h6><p>White Geo Prism with my driver-side mirror duct taped on.</p>"}
+},
+
+{
+"fullname":"Vikram Patankar",
+"position":"Lead Software Engineer",
+"location":"Newark, CA",
+"img_src":"/img/team/alt/usa.jpg",
+"biography":{"#cdata-section":"<h6>Favorite thing to do in the Bay Area...</h6><p>Hiking, eating outside.</p><h6>Pet peeve...</h6><p>Having a messy desk.</p>"}
+},
+
+{
+"fullname":"Sheriene Hancock",
+"position":"Personal Assistant",
+"location":"London, UK",
+"img_src":"/img/team/alt/uk.jpg",
+"biography":{"#cdata-section":"<h6>Greatest professional accomplishment...</h6><p>Not sending any of my past, or present, bosses on the wrong flight or the wrong hotel!</p><h6>Favorite thing to do in London...</h6><p>Go running at dawn when the world is still sleeping. The sunrise is amazing.</p>"}
+},
+
+{
+"fullname":"Cassandra Brew",
+"position":"Executive Assistant",
+"location":"Newark, CA",
+"img_src":"/img/team/alt/newark_cassandra_brew_alt.jpg",
+"biography":{"#cdata-section":"<h6>Favorite thing to do in the Bay Area...</h6><p>Attending smooth jazz events and sailing around Tiburon.</p><h6>Hobby...</h6><p>Volunteering my time and talents to those who are less fortunate.</p>"}
+},
+
+{
+"fullname":"Arno Hilberts",
+"position":"Director, Model Development",
+"location":"London, UK",
+"img_src":"/img/team/alt/london_arno_hilberts_alt.jpg",
+"biography":{"#cdata-section":"<h6>Interesting fact...</h6><p>As a kid (11) was the Dutch whitewater canoeing champion.</p><h6>Hobby...</h6><p>Cycling, enjoying Belgian Trappist beers.</p>"}
+}
+
+]
