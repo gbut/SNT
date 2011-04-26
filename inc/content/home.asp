@@ -1,7 +1,7 @@
 <!-- + home -->
 <div id="home">
   <div class="hd">
-    <h2>We Like Upsetting the Status Quo</h2>
+    <h2>Lorem Ipsum Dolor Sit Amet Nonummy</h2>
     <h3>Inviting the Next Generation of Modeling Innovation</h3>
     <a href="/nextgen">Learn More <em>&raquo;</em></a>
   </div>
