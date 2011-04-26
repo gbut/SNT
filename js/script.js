@@ -1943,44 +1943,44 @@ $(document).ready(function(){
 
           self.setBioSelected($(this));
 
-          if (!$('#bio').height()) {
+          if (!$('.bio').height()) {
             // first click; no bio displayed yet
 
             self.setBioDetails($(this));
             self.setBioIndicator($(this));
 
             // position display
-            $(this).parent().after($('#bio'));
+            $(this).parent().after($('.bio'));
 
             // enable display
-            $('#bio').animate({
+            $('.bio').animate({
               opacity: 1.0,
               height: self.options.bioHt
             }, 500, function() {
               $(this).removeClass('default');
             });
 
-          } else if ($(this).parent().next().attr('id') == 'bio') {
+          } else if ($(this).parent().next().hasClass('bio')) {
             // exists in correct position
             
             obj = $(this);
-            $('#bio').addClass('default');
+            $('.bio').addClass('default');
 
             self.setBioIndicator($(this),true);
 
             // fade out old content
-            $('#bio img, #bio .name, #bio .loc, #bio .body').animate({
+            $('.bio img, .bio .name, .bio .loc, .bio .body').animate({
               opacity: 0
             }, 400, function() {
               if ($(this).attr('class') == 'body') {
                  // get/set values
                 self.setBioDetails(obj);
-                $('#bio').removeClass('default');
+                $('.bio').removeClass('default');
               }
             });
 
             // fade in new content
-            $('#bio img, #bio .name, #bio .loc, #bio .body').animate({
+            $('.bio img, .bio .name, .bio .loc, .bio .body').animate({
               opacity: 1.0
             }, 600, 'easeOutCubic');
 
@@ -1990,11 +1990,14 @@ $(document).ready(function(){
             self.setBioIndicator($(this));
 
             // clone display
-            $('#bio').find('.nav').hide();
-            $('#bio').addClass('original').clone().removeClass('original').addClass('default').attr('style','').insertAfter($(this).parent());
+            $('.bio').find('.nav').hide();
+            $('.bio').addClass('original').clone().removeClass('original').addClass('default').attr('style','').insertAfter($(this).parent());
+
+//$('#bio').attr('id','biold').addClass('original').clone().attr('id','bio').removeClass('original').addClass('default').attr('style','').insertAfter($(this).parent());
+
             
             // fadeout and remove old display
-            $('#bio.original').animate({
+            $('.bio.original').animate({
               opacity: 0,
               height: '0'
             }, 500, function() {
@@ -2004,7 +2007,7 @@ $(document).ready(function(){
             self.setBioDetails($(this));
 
             // fade in new display
-            $('#bio.default').animate({
+            $('.bio.default').animate({
               opacity: 1.0,
               height: self.options.bioHt
             }, 500, function() {
@@ -2016,12 +2019,12 @@ $(document).ready(function(){
       });
 
       // bio paging nav
-      $('#bio .nav a').live('click', function() {
+      $('.bio .nav a').live('click', function() {
         if (!$(this).hasClass('disable')) {
-          $('#bio .nav a').addClass('disable'); // disable clicking while animating
+          $('.bio .nav a').addClass('disable'); // disable clicking while animating
           obj = $(this);
           biobody = obj.parent().prev().children('.body');
-          w = $('#about #bio .bodyOuter').width();
+          w = $('#about .bio .bodyOuter').width();
           if (obj.is(':first-child')) {
             d = '+='+w+'px';
           } else {
@@ -2030,7 +2033,7 @@ $(document).ready(function(){
           biobody.animate({
               left: d
             }, 500, function() {
-              $('#bio .nav a').removeClass('disable'); // reset links
+              $('.bio .nav a').removeClass('disable'); // reset links
               // disable nav element for first/last              
               if ((biobody.css('left') == '0px') || (biobody.css('left') == -biobody.width()+w+'px')) {
                 obj.addClass('disable');
@@ -2073,23 +2076,23 @@ $(document).ready(function(){
       },
 
       setBioDetails: function(obj) {
-        $('#bio.default').find('.image').html(obj.children('.img2').html());
-        $('#bio.default').find('.name').html(obj.children('dt').html());
-        $('#bio.default').find('.loc').html(obj.children('.loc').html());
-        $('#bio.default').find('.body').html(obj.children('.bio').html());
+        $('.bio.default').find('.image').html(obj.children('.img2').html());
+        $('.bio.default').find('.name').html(obj.children('dt').html());
+        $('.bio.default').find('.loc').html(obj.children('.loc').html());
+        $('.bio.default').find('.body').html(obj.children('.biobody').html());
         this.handleBioPages();
       },
 
       handleBioPages: function() {
-        p = $('#bio.default').find('section').length;         // get number of bio 'pages' (<sections>)
-        $('#bio.default').find('.body').attr('style','');                   // revert width to default
+        p = $('.bio.default').find('section').length;                       // get number of bio 'pages' (<sections>)
+        $('.bio.default').find('.body').attr('style','');                   // revert width to default
         if (p>1) {
-          w = $('#bio.default').find('.body').width() * p;                  // get width according to num of pages
-          $('#bio.default').find('.body').width(w);                         // set width
-          $('#bio.default').find('.nav a:first-child').addClass('disable'); // set prev to disabled
-          $('#bio.default').find('.nav').show();
+          w = $('.bio.default').find('.body').width() * p;                  // get width according to num of pages
+          $('.bio.default').find('.body').width(w);                         // set width
+          $('.bio.default').find('.nav a:first-child').addClass('disable'); // set prev to disabled
+          $('.bio.default').find('.nav').show();
         } else {
-          $('#bio.default').find('.nav').hide();
+          $('.bio.default').find('.nav').hide();
         }
       }
     

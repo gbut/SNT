@@ -185,26 +185,7 @@
     
     <!-- + CAT UPDATES -->
   
-      April 14, 2011
-      <a href="#">Southeastern U.S. SCS Event</a>
-      
-      March 11, 2011
-      <a href="#">Tohoku, Japan Earthquake Mw 9.0</a>
-      	
-      April 11, 2011
-      <a href="#">Western Texas Wildfires</a>
-      
-      February 21, 2011
-      <a href="#">Lyttelton Earthquake, New Zealand, Mw 6.3</a>
-      
-      March 24, 2011
-      <a href="#">Myanmar Earthquake Mw 6.8</a>
-      
-      March 9, 2011
-      <a href="#">Japan Earthquake Mw 7.2</a>
-      
-      March 5, 2011
-      <a href="#">Louisiana Tornados</a>
+    [RSS Feed TK]
       
     <!-- / CAT UPDATES -->
   

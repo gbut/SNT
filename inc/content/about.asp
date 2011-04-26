@@ -46,7 +46,7 @@
             <img src="/img/staff/leader_shah_c.jpg" />
           </dd>
           <dd class="img2"><img src="/img/staff/leader_shah_casual.jpg" /></dd>
-          <dd class="bio">
+          <dd class="biobody">
             <section>
               Hemant Shah is President and CEO of Risk Management Solutions. Since co-founding RMS in 1989, Hemant has become widely recognized within the global insurance industry as a proactive and influential leader.
             </section>
@@ -70,7 +70,7 @@
             <img src="/img/staff/leader_bentley_c.jpg" />
           </dd>
           <dd class="img2"><img src="/img/staff/leader_bentley_casual.jpg" /></dd>
-          <dd class="bio">
+          <dd class="biobody">
             <section>
         Rob Bentley joined RMS as the COO in May 2007. In this role, Rob is responsible for all operational aspects of RMS and oversees RMS' execution of a multi-market, multi-business, and multi-platform strategy. Rob is a highly effective leader with an execution mindset and a track record of driving world class performance in the insurance and reinsurance markets.
             </section>
@@ -91,7 +91,7 @@
             <img src="/img/staff/leader_muirwood_c.jpg" />
           </dd>
           <dd class="img2"><img src="/img/staff/leader_muirwood_casual.jpg" /></dd>
-          <dd class="bio">
+          <dd class="biobody">
             <section>
               Robert Muir-Wood is CRO of Science and Technology Research at RMS. In this role, Robert heads the branch of RMS responsible for enhancing approaches to natural catastrophe modeling and developing models for new areas of risk such as liability.
             </section>
@@ -117,7 +117,7 @@
             <img src="/img/staff/leader_robertson_c.jpg" />
           </dd>
           <dd class="img2"><img src="/img/staff/leader_robertson_casual.jpg" /></dd>
-          <dd class="bio">
+          <dd class="biobody">
             <section>
               Steve Robertson is the CFO of RMS, and also holds the role of Executive Vice President of Enterprise Services. He joined RMS in 2001 after prior positions as CFO of COLO.com, a telecom infrastructure company, and CFO of InsWeb, an online insurance marketplace, where he managed the company's initial public offering (IPO).
             </section>
@@ -135,7 +135,7 @@
             <img src="/img/staff/leader_stephan_c.jpg" />
           </dd>
           <dd class="img2"><img src="/img/staff/leader_stephan_casual.jpg" /></dd>
-          <dd class="bio">
+          <dd class="biobody">
             <section>
               Philippe Stephan is the CTO of RMS. Prior to joining RMS in 2009, he was most recently Head of Business Development for Sophis, a leading market risk technology vendor. Prior to Sophis, Philippe directed product development as the CTO of San Francisco based Moody's KMV, the award winning credit risk analytics vendor.
             </section>
@@ -147,7 +147,7 @@
       </div>
 
       
-      <div id="bio" class="default">
+      <div class="bio default">
         <span class="biotop"></span>
         <div class="image"></div>
         <div>

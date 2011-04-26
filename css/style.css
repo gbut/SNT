@@ -4487,7 +4487,7 @@ textarea.error {
 }
 
 #about dd.loc,
-#about dd.bio,
+#about dd.biobody,
 #about dd.img1 img,
 #about dd.img2 {
   display:              none;
@@ -4496,14 +4496,14 @@ textarea.error {
   display:              block;
 }
 
-#about #bio {
+#about .bio {
   line-height:          160%;
   background:           transparent url(../img/bg_leadership_bio.jpg) no-repeat 0 0;
   position:relative;
   top:-6px;
   overflow:hidden;
 }
-#about #bio.default {
+#about .bio.default {
   height:               0;
   -moz-opacity:         0;
   -ms-filter:           "alpha(opacity=0)";
@@ -4511,27 +4511,27 @@ textarea.error {
   opacity:              0;
 }
 
-#about #bio .biotop {
+#about .bio .biotop {
   height:               19px;
   width:                1528px;
   background:           transparent url(../img/bg_leadership_bio_top.png) no-repeat 0 0;
   position:             absolute;
   display:              block;
 }
-#about #bio div {
+#about .bio div {
   height:               105px;
   width:                120px;
   margin:               25px 12px 10px 0;
   float:                left;
 }
-#about #bio div div {
+#about .bio div div {
   height:               auto;
   width:                100%;
   margin:               0;
   float:                none;
 }
 
-#about #bio .image {
+#about .bio .image {
   width:                130px;
   height:               86px;
   margin-left:          20px;
@@ -4546,38 +4546,38 @@ textarea.error {
           box-shadow:   0 3px 7px rgba(90,90,90,0.5);
   behavior: url(/js/libs/PIE/PIE.htc);
 }
-#about #bio .image img {
+#about .bio .image img {
   width:                130px;
   height:               86px;  
 }
 
-#about #bio .name {
+#about .bio .name {
   font-size:            110%;
   font-weight:          bold;
 }
 
-#about #bio .loc {
+#about .bio .loc {
   font-size:            110%;
 }
 
-#about #bio .bodyOuter {
+#about .bio .bodyOuter {
   width:                540px;
   position:             relative;
   overflow:             hidden;
 }
 
-#about #bio .body {
+#about .bio .body {
   width:                540px;
   position:             relative;
 }
 
-#about #bio .body section {
+#about .bio .body section {
   width:                540px;
   padding:              0;
   float:                left;
 }
 
-#about #bio .nav {
+#about .bio .nav {
   height:               20px;
   width:                60px;
   margin:               0;
@@ -4588,7 +4588,7 @@ textarea.error {
   display:              none;
 }
 
-#about #bio .nav a {
+#about .bio .nav a {
   width:                20px;
   height:               20px;
   margin-left:          6px;
@@ -4596,20 +4596,20 @@ textarea.error {
   float:                left;
   background:           transparent url(../img/icon_bio_nav.png) 0 0 no-repeat;
 }
-#about #bio .nav a:last-child {
+#about .bio .nav a:last-child {
   background-position:  -20px 0;
 }
-#about #bio .nav a:hover { 
+#about .bio .nav a:hover { 
   background-position:  0 -20px;
 }
-#about #bio .nav a:hover:last-child {
+#about .bio .nav a:hover:last-child {
   background-position:  -20px -20px;
 }
-#about #bio .nav a.disable {
+#about .bio .nav a.disable {
   cursor:               default;
   background-position:0 -40px;
 }
-#about #bio .nav a.disable:last-child {
+#about .bio .nav a.disable:last-child {
   background-position:-20px -40px;
 }
 
