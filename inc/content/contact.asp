@@ -255,10 +255,6 @@
   
     <div class="newark">
     
-<!--    
-      <iframe id="mapviewer" Name="mapFrame" scrolling="no" width="196" height="141" frameborder="0" src="http://www.bing.com/maps/embed/?lvl=16&amp;cp=37.53999640444354~-122.06300714022763&amp;sty=h&amp;draggable=true&amp;v=2&amp;dir=0&amp;cid=34BDEBAF3189F2E4!117&amp;FORM=LMLTEW&amp;emid=440461e4-8ce2-1fea-0673-672c14af25fa&amp;w=196&amp;h=141"></iframe>
--->
-  
       <a href="http://www.bing.com/maps/?v=2&cp=37.5406332613725~-122.063618685958&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map newark" rel="external" title="View Map"></a>
       
       <div class="maplinks">
@@ -352,21 +348,21 @@
     </div>
     <div class="beijing">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=39.9265567213296~116.341968700289&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map beijing" rel="external" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=39.9211729999285~116.35764889419&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map beijing" rel="external" title="View Map"></a>
     
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=39.9265567213296~116.341968700289&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=39.9265567213296~116.341968700289&lvl=13&dir=0&sty=r&rtp=adr.~pos.39.9265567213296_116.341968700289__RMS%20China%20-%20Beijing,%20China__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=39.9211729999285~116.35764889419&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=39.9211729999285~116.35764889419&lvl=13&dir=0&sty=r&rtp=adr.~pos.39.9211729999285_116.35764889419__RMS%20China%20-%20Beijing,%20China__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
 
     </div>
     <div class="tokyo">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=35.6499997526407~139.749999716877&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map tokyo" rel="external" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=35.6749361382118~139.737408&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map tokyo" rel="external" title="View Map"></a>
     
       <div class="maplinks">
-        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=35.6499997526407~139.749999716877&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
-        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=35.6499997526407~139.749999716877&lvl=13&dir=0&sty=r&rtp=adr.~pos.35.6499997526407_139.749999716877__RMS%20Japan%20-%20Tokyo,%20Japan__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
+        <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=35.6749361382118~139.737408&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
+        <a class="directions" href="http://www.bing.com/maps/?v=2&cp=35.6749361382118~139.737408&lvl=13&dir=0&sty=r&rtp=adr.~pos.35.6749361382118_139.737408__RMS%20Japan%20-%20Tokyo,%20Japan__a_&mode=D&rtop=0~0~0~&FORM=LMLTCC" rel="external" title="Get Directions">Get Directions</a>
       </div>
 
     </div>
