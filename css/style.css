@@ -205,6 +205,10 @@ body {
   padding-top:          77px; /* leave room for fixed header */
 }
 
+body.t01 {
+  background-color:     #222;
+}
+
 a {
   text-decoration:      none;
 }
@@ -4083,9 +4087,9 @@ textarea.error {
 /* + Craft */
 
 .craft {
-/*  min-height:           775px;
-  height:               auto !important;*/
-  height:               860px;
+  min-height:           700px;
+/*  height:               auto !important;*/
+  height:               700px;
   position:             relative;
   background-color:     #0c0a12;
   background-position:  top center;
@@ -4093,6 +4097,7 @@ textarea.error {
   background-size:      cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
+  overflow:             hidden;
 }
 
 #craft {

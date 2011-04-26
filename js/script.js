@@ -2267,7 +2267,9 @@ function jobListingsTruncation() {
  */
  
 function setHeight(obj) {
-  obj.height($(window).height() - $('header').outerHeight(true) - $('footer').outerHeight(true));
+  ht = $(window).height() - $('header').outerHeight(true) - $('footer').outerHeight(true);
+  if (ht > parseFloat(obj.css('min-height')))
+    obj.height(ht);
 }
 
 /**
@@ -2276,10 +2278,10 @@ function setHeight(obj) {
 jQuery.jQueryRandom = 0;
 jQuery.extend(jQuery.expr[":"],
 {
-    random: function(a, i, m, r) {
-        if (i == 0) {
-            jQuery.jQueryRandom = Math.floor(Math.random() * r.length);
-        };
-        return i == jQuery.jQueryRandom;
-    }
+  random: function(a, i, m, r) {
+    if (i == 0) {
+      jQuery.jQueryRandom = Math.floor(Math.random() * r.length);
+    };
+    return i == jQuery.jQueryRandom;
+  }
 });
