@@ -14,12 +14,12 @@
       <div class="hd">
         <h2>The scale of things to come:</h2>
         <h3>Birth of a powerful new platform.</h3>
-        <h4>Jay Tang</h4>
+        <h4></h4>
       </div>
       
       <p>As a software engineer, you’re often saddled with legacy code. You want to build something beautiful, but you’ve got to make it work with the cracked foundation and crooked building frame that have been glued together over the years. It’s very rare to have the opportunity to start from scratch and have the freedom to build an elegant, efficient solution; a project with zero technical debt.</p>
 
-      <p>Two years ago, we reached a point where our risk modelers were saying, “We don’t have to use simpler modeling techniques anymore. Let’s do it right.” The challenge with this new approach was the massive processing power and data storage capacity required to run deeply complex simulations based on petabytes of data. This was a technical puzzle few private companies had the ambition and the resources to undertake. But, as we thought about the problem further, the solution became undeniable: if this was going to happen, we needed to build our own platform, from scratch, to power the next generation of scientific modeling.</p>
+      <p>Two years ago, we reached a point where our risk modelers were saying, &quot;We don’t have to use simpler modeling techniques anymore. Let’s do it right.&quot; The challenge with this new approach was the massive processing power and data storage capacity required to run deeply complex simulations based on petabytes of data. This was a technical puzzle few private companies had the ambition and the resources to undertake. But, as we thought about the problem further, the solution became undeniable: if this was going to happen, we needed to build our own platform, from scratch, to power the next generation of scientific modeling.</p>
 
       <p>At first, we weren’t sure it could be done. Who had successfully built a platform that combined massive computational modeling and the manipulation of enormous data sets? NASA? The NSA? We knew a project like this would require innovation at all levels of the hardware and software stack. We knew it would require pushing our technology partners harder than they had been pushed before. We knew it would take big financial capital and talent commitments. And we knew it had to be done.</p>
 
