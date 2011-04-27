@@ -1704,7 +1704,7 @@ $(document).ready(function(){
   //===============================================
 
   // Handle prefilled notes
-  $('.prefilled').click(function() {
+  $('.prefilled').focus(function() {
     return this.value === this.defaultValue ? $(this).val('') : null;
   });
   $('.prefilled').blur(function() {
