@@ -185,7 +185,7 @@
     
     <!-- + CAT UPDATES -->
   
-    [RSS Feed TK]
+    <!--#include virtual="/inc/content/info_cat_update.htm" -->
       
     <!-- / CAT UPDATES -->
   

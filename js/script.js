@@ -25,6 +25,13 @@ switch(window.location.hostname)
 
 /* RMS code section. end */
 
+var debugc = 0;
+function debug(e) {
+  debugc++;
+  if (!$('#debug').length)
+    $('body').append('<div id="debug" style="position:fixed; top:0; z-index:1000; padding:10px 20px 10px 10px; background:#ddd; font-size:80%; height:400px; overflow:auto" />');
+  $('#debug').html($('#debug').html()+debugc+': '+e+'<br />');
+}
 
 function inspect(obj) {
   var str = '';
@@ -1704,7 +1711,7 @@ $(document).ready(function(){
   //===============================================
 
   // Handle prefilled notes
-  $('.prefilled').click(function() {
+  $('.prefilled').focus(function() {
     return this.value === this.defaultValue ? $(this).val('') : null;
   });
   $('.prefilled').blur(function() {
@@ -1730,8 +1737,8 @@ $(document).ready(function(){
   $('#contact #offices a, #contact #markers a, #contact #clocks a').each(function(){
     $(this).hover(
       function() {
-        loc = $(this).attr('class');  // get the location string
-        locArray = loc.split(' ');    // convert to array
+        loc = $(this).attr('class');        // get the location string
+        locArray = loc.split(' ');          // convert to array
         jQuery.each(locArray, function() {  // for each location set highlights
           if ($('.'+this).length) {
             $('.'+this).addClass('highlight').prevAll('h5:first').addClass('highlight');
@@ -1742,11 +1749,11 @@ $(document).ready(function(){
         clock.attr('class', function(i,klass) {
           return klass.replace('normal','highlight').replace('noSeconds',''); // change skin and enable second hand as highlight for clock
         });
-        CoolClock.findAndCreateClocks(); // update clocks
+        CoolClock.findAndCreateClocks();    // update clocks
       },
       function(){
-        loc = $(this).attr('class');  // get the location string
-        locArray = loc.split(' ');    // convert to array
+        loc = $(this).attr('class');        // get the location string
+        locArray = loc.split(' ');          // convert to array
         jQuery.each(locArray, function() {  // for each location remove highlights
           if ($('.'+this).length) {
             $('.'+this).removeClass('highlight').prevAll('h5:first').removeClass('highlight');
@@ -1758,72 +1765,74 @@ $(document).ready(function(){
           if ($(this).attr('class').indexOf('selected') == -1)
             return klass.replace('highlight','normal').replace('::',':noSeconds:'); // change skin and disable second hand
         });
-        CoolClock.findAndCreateClocks(); // update clocks
+        CoolClock.findAndCreateClocks();    // update clocks
       }
     );
   });
   
   $('#contact #offices a, #contact #markers a').each(function(){
     $(this).click(function() {
-        if ($(this).attr('class').indexOf('selected') == -1) {
+      if ($(this).attr('class').indexOf('selected') == -1) {
+
+        str = $(this).attr('class');  // get the class string
+        loc = str.split(' ')[0];      // parse for location (first class)
+        
+        // reset selected state
+        $('.selected').removeClass('selected');
+        jQuery.each($('#markers a'), function() {
+          if (!$(this).hasClass(loc)) {
+            $(this).tipsy("hide");
+          }
+        });
+        $('canvas').attr('class', function(i,klass) {
+          return klass.replace('selected','normal').replace('::',':noSeconds:'); // change skin and disable second hand
+        });
+        // set selected state
+        $('.'+loc).addClass('selected').prevAll('h5:first').addClass('selected');
+        //$('#markers a.'+loc).tipsy("show"); // have to hover in order to click so this isn't necessary
+        $('.'+loc).find('canvas').attr('class', function(i,klass) {
+          return klass.replace(/(normal|highlight)/,'selected').replace('noSeconds',''); // change skin and enable second hand as highlight for clock
+        });
+        CoolClock.findAndCreateClocks(); // update clocks
     
-          str = $(this).attr('class');  // get the class string
-          loc = str.split(' ')[0];      // parse for location (first class)
-          
-          // reset selected state
-          $('.selected').removeClass('selected');
-          jQuery.each($('#markers a'), function() {
-            if (!$(this).hasClass(loc)) {
-              $(this).tipsy("hide");
-            }
-          });
-          $('canvas').attr('class', function(i,klass) {
-            return klass.replace('selected','normal').replace('::',':noSeconds:'); // change skin and disable second hand
-          });
-          // set selected state
-          $('.'+loc).addClass('selected').prevAll('h5:first').addClass('selected');
-          //$('#markers a.'+loc).tipsy("show"); // have to hover in order to click so this isn't necessary
-          $('.'+loc).find('canvas').attr('class', function(i,klass) {
-            return klass.replace(/(normal|highlight)/,'selected').replace('noSeconds',''); // change skin and enable second hand as highlight for clock
-          });
-          CoolClock.findAndCreateClocks(); // update clocks
-      
-          // get content
-          hd = $('.office a.'+loc).prev().html();
-          details = $('.office a.'+loc).html();
-          mapviewer = $('#mapviewers .'+loc).html();
-          // fade out previous content
-          $('#popup .details, #popup .mapviewer').fadeTo(400, 0.0, 'easeOutExpo', function() {
-            if ($(this).attr('class') == 'mapviewer') {
-              $('#popup .details').html('<div class="hd">'+hd+'</div>' + details);  // get/set details
-              $('#popup .mapviewer').html(mapviewer);   // get/set map
-            }
-          });
-          $('#popup .details, #popup .mapviewer').fadeTo(400, 1.0, 'easeOutExpo'); // fade in new content
-           // set close button
-          $('#popup .close').click(function() {
-              if ($('html').is('.ie8, .ie7')) {
-                $('#popup').hide();
-              } else {
-                $('#popup').fadeTo(1000, 0.0, 'easeOutExpo');
-              }
-              // reset selected state
-              $('.selected').removeClass('selected');
-              jQuery.each($('#markers a'), function() {
-                $(this).tipsy("hide")
-              });
-              $('canvas').attr('class', function(i,klass) {
-                return klass.replace('selected','normal').replace('::',':noSeconds:'); // change skin and disable second hand
-              });
-              CoolClock.findAndCreateClocks(); // update clocks
-            }
-          );
-          $('#popup').fadeTo(1000, 1.0, 'easeOutExpo');
-        }
-      
+        // get content
+        hd = $('.office a.'+loc).prev().html();
+        details = $('.office a.'+loc).html();
+        mapviewer = $('#mapviewers .'+loc).html();
+        // fade out previous content and get new
+        $('#popup .details, #popup .mapviewer').fadeTo(400, 0.0, 'easeOutExpo', function() {
+          if ($(this).attr('class') == 'mapviewer') {
+            $('#popup .details').html('<div class="hd">'+hd+'</div>' + details);  // get/set details
+            $('#popup .mapviewer').html(mapviewer);   // get/set map
+          }
+        });
+        $('#popup .details, #popup .mapviewer').fadeTo(400, 1.0, 'easeOutExpo'); // fade in new content
+        $('#popup').show().fadeTo(400, 1.0);
       }
-    );
+      
+    });
   });
+  
+  // set close button
+  if ($('#popup .close').length) {
+    $('#popup .close').click(function() {
+        if ($('html').is('.ie8, .ie7')) {
+          $('#popup').hide();
+        } else {
+          $('#popup').fadeTo(1000, 0.0, 'easeOutExpo');
+        }
+        // reset selected state
+        $('.selected').removeClass('selected');
+        jQuery.each($('#markers a'), function() {
+          $(this).tipsy("hide")
+        });
+        $('canvas').attr('class', function(i,klass) {
+          return klass.replace('selected','normal').replace('::',':noSeconds:'); // change skin and disable second hand
+        });
+        CoolClock.findAndCreateClocks(); // update clocks
+      }
+    );  
+  }
   
   // map marker tool tips
   if ($('#markers a').length) {
