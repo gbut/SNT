@@ -3528,6 +3528,16 @@ display:none;
   display:              none;
 }
 
+#job_detail ol,
+#job_detail ul {
+  margin:               10px 0 10px 30px;
+}
+
+#job_detail ol li,
+#job_detail ul li {
+  margin-bottom:        10px;
+}
+
 /* / Job Detail */
 
 /* + Forms pages: Job Apply & Contact */
