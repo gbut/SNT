@@ -18,9 +18,9 @@
     </div>  
   
     <div class="quote">
-      &quot;<span class="q">Quote 0: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>&quot;
+      &quot;<span class="q">I enjoy working on real time events, due to the relevance of what is happening now to the global market.</span>&quot;
       <div class="author">
-        &mdash; <span class="a">Author 0</span>, <span class="title"><span class="t">Title 0</span></span>
+        &mdash; <span class="a">Margaret Joseph</span>, <span class="title"><span class="t">Catastrophe Response Analyst</span></span>
       </div>
     </div>
     
