@@ -14,7 +14,6 @@
       <div class="hd">
         <h2>The scale of things to come:</h2>
         <h3>Birth of a powerful new platform.</h3>
-        <h4></h4>
       </div>
       
       <p>As a software engineer, you’re often saddled with legacy code. You want to build something beautiful, but you’ve got to make it work with the cracked foundation and crooked building frame that have been glued together over the years. It’s very rare to have the opportunity to start from scratch and have the freedom to build an elegant, efficient solution; a project with zero technical debt.</p>

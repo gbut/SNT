@@ -4188,6 +4188,7 @@ textarea.error {
   color:                #fff;
 }
 
+/* author, no longer used
 #craftDetail section h4 {
   font:                 600 189%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   color:                #8bcfee;
@@ -4195,6 +4196,7 @@ textarea.error {
   top:                  2px;
   right:                0;
 }
+*/
 
 #craft section p {
   font-size:            120%;
