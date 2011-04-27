@@ -1993,9 +1993,15 @@ aside .callout a {
   bottom:               -36px;
   right:                0;
 }
+aside .callout a:hover {
+  color:                #38444c;
+}
 aside .callout em {
   font-size:            150%;
   color:                #c3151c;
+}
+aside .callout a:hover em {
+  color:                #b1312e;
 }
 
 /* jQueryUI Tabs overrides */
@@ -3114,10 +3120,16 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   margin-left:          703px;
   display:              block;
 }
+#careers section a:hover.link {
+  color:                #115573;
+}
 
 #careers section a.link em {
   font-size:            150%;
   color:                #c3151c;
+}
+#careers section a:hover.link em {
+  color:                #b1312e;
 }
 
 #careers section.team {
@@ -4263,17 +4275,21 @@ textarea.error {
 }
 
 #craft aside section a {
-  color:                #c3151c;
+  font-weight:          bold;
   text-transform:       uppercase;
   display:              block;
-/*  padding-right:        14px;*/
   position:             absolute;
   left:                 0;
   top:                  80px;
-/*  background:           transparent url(../img/arrow_forward.png) 100% 50% no-repeat;*/
+}
+#craft aside section a:hover {
+  color:                #115573;
 }
 #craft aside section a em {
   font-size:            120%; 
+}
+#craft aside section a:hover em {
+  color:                #b1312e;
 }
 
 #craft aside a.btn {
