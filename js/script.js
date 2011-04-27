@@ -655,6 +655,10 @@ $(document).ready(function(){
         this.lpc.endChat();
         this.addChatText(null, 'Ending chat session...', 'system');
         
+        // delete session key
+        $.cookie('chatsessionkey', null);
+        console.log('endChat: ' + $.cookie('chatsessionkey'));
+
         // if in popup, close window
         // if in main win, reset screen
         if (this.inPopup) {
@@ -792,12 +796,14 @@ $(document).ready(function(){
        * @type undefined
        */
       onChatAvailable: function(availObj) {
+        console.log('onChatAvailable');
         if (availObj.availability == true) {
           if (!_cw.inPopup) {
             _cw.btnStart.css({ top: _cw.options.topVisible });
           } else {
             // resume session started in parent window
             _cw.lpc.resumeChat($.cookie('chatsessionkey'));
+            console.log('onChatAvailable: ' + $.cookie('chatsessionkey'));
           }
         } else {
           if (_cw.instant.length) {
@@ -816,6 +822,7 @@ $(document).ready(function(){
         if (!_cw.inPopup) {
           // save session key in case user launches popup
           $.cookie('chatsessionkey', _cw.lpc.sessionkey);
+          console.log('onChatInit: ' + $.cookie('chatsessionkey'));
         }
       },
 
@@ -1695,7 +1702,7 @@ $(document).ready(function(){
   $('#passionCont').tabs({
     fx: { opacity:'toggle', duration:400 },
     create: function(e, ui) {
-      $(e.target).tabs('rotate', 5000);
+      $(e.target).tabs('rotate', 4000);
     }
   });
   
