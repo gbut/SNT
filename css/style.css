@@ -4101,6 +4101,10 @@ textarea.error {
   overflow:             hidden;
 }
 
+#craftDetail.craft {
+  height:               auto;
+}
+
 #craft {
   background-image:     url(../img/bg_craft.jpg);
 }
