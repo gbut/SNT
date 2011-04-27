@@ -17,27 +17,15 @@
         <h4></h4>
       </div>
     
-      <p>Delenit abico nisl ut eum, os turpis in delenit distineo validus reprobo. Iusto minim, lucidus molior consequat vicis pagus. Probo huic quia ut aliquip, wisi, eum, esse accumsan ea. Macto molior premo ex conventio vel, tamen vicis facilisis fere adipiscing amet letalis, illum torqueo.</p>
+      <p>Model development at RMS is more than just number crunching; it’s a blend of science and art that relies on each developer’s ability to think critically and creatively. Fieldwork provides real-world experience that enhances our judgment and intuition. That means better models, better understanding, and, ultimately, better preparation for when the next disaster strikes.</p>
 
-      <p>Eum ad, multo reprobo quis foras. Reprobo nunc vulputate sagaciter opto enim abluo molior nimis feugiat illum tristique ut, antehabeo eu. Nulla illum vulputate turpis tation jugis eu. Bene dignissim, ymo huic eros aliquip praemitto adsum utrum modo.</p>
+      <p>In the days and weeks following the earthquake that struck Haiti in January 2010, it was impossible to fully-understand the earthquake’s impacts. How severe was the damage compared to our expectations?  Which areas suffered the most damage?</p>
 
-      <p>Ne probo suscipere delenit humo genitus duis. Natu, caecus te hos veniam uxor. Causa adipiscing regula valde vel et, dolor, sed.</p>
+      <p>There were a lot of ways researchers could try to answer these questions. At RMS, we’d been evaluating new ways to use satellite imagery to estimate damage. Satellite images were helping us generally understand the global built environment, but could they reveal what was happening on the ground, and would it be enough to really impact our understanding of the event?</p>
 
-      <p>Tation pala at dolus quis eum, vicis proprius laoreet. Similis nullus mauris iriure ne ibidem scisco abbas saepius saluto bis bene valetudo ut. Wisi incassum antehabeo fere premo turpis occuro conventio, nulla. Abdo immitto ut suscipere et odio hendrerit humo singularis, in vel ludus feugait decet singularis.</p>
+      <p>Within days, RMS was in Haiti with a cross-organizational team of our own engineers and other external researchers. First we volunteered to do an open-source assessment of post-event satellite images to estimate the extent of the damage. Then we started walking through rubble, systematically going building to building in our bright yellow vests and hard hats. The damage at each site was methodically captured, from the state of the building as a whole, to the small piles of crumbled mortar and bent steel rods in the columns that once held the buildings up. We did this in several affected regions and then compared the results to our satellite-based conclusions. After returning to the U.S., we shared our findings at workshops and conferences with hopes of improving satellite-based assessments in the future.</p>
 
-      <p>Iusto wisi minim transverbero wisi plaga abluo vero sit caecus appellatio, valetudo luctus. Blandit nisl nobis scisco ut typicus iustum duis. Comis quae antehabeo consectetuer gravis turpis veniam hendrerit similis. Olim epulae dolor praesent, volutpat mos lenis neo distineo, ulciscor.</p>
-
-      <p>Ibidem ex luptatum nisl quae ex consequat vel refoveo bis quae consequat amet, te. Mauris magna magna venio ingenium, vel, eu, vel wisi in jumentum eu obruo. Distineo populus autem quis indoles augue occuro ullamcorper sino, sit ut minim conventio te.</p> 
-
-      <p>Aliquip nutus ullamcorper, patria et ea tum ad, te nobis nonummy, letatio abbas conventio. Uxor in sudo hendrerit causa antehabeo scisco dignissim ex appellatio, duis, accumsan.</p>
-
-      <p>Diam mara dolore augue, gilvus valde. Macto, in veniam euismod, sino rusticus utrum loquor magna nulla. Te, aliquip ullamcorper natu, metuo eu, suscipit nutus ut interdico, paratus. Occuro nulla ulciscor neo nostrud cogo vicis iriure et zelus autem nullus. Eum, eu os consectetuer nostrud eum rusticus.</p>
-
-      <p>Incassum duis adsum genitus at, distineo quod veniam et. Iusto enim, ex valetudo camur minim vero enim metuo augue fere sudo dignissim. Tum nobis paulatim ymo suscipere vero, tum ventosus immitto jugis adsum. Et lobortis utinam facilisi, singularis adipiscing letatio. Dolor tation commodo aptent hos, ideo iriure et. Ingenium, cui duis exputo tation acsi feugait jugis tum consectetuer multo paratus, causa refero.</p>
-
-      <p>Neque ibidem quibus, letalis aliquip te demoveo defui defui. Uxor mara iaceo ut proprius magna eros vereor, nimis, ea facilisi lucidus, et jumentum typicus. Et tincidunt, ut nullus fatua tristique imputo. Ut ingenium appellatio ex lobortis gravis hos gilvus, dignissim vel letatio eum validus ne conventio. Probo letalis eum premo molior nulla abigo. Nostrud, jus feugiat elit cogo hos ad multo et ingenium jumentum dolus. Saluto vel in, in ex laoreet magna euismod transverbero.</p>
-
-      <p>Dolor wisi, abbas commodo illum nibh utinam ex velit aliquip sudo. Ut aliquam odio usitas huic cogo blandit te, consequat, gilvus saepius quidem feugait. Ymo abbas ludus qui at, nobis, lobortis iaceo suscipit exerci vulputate ut. Ingenium turpis fere in vicis erat duis tation. Dolus iriure ad, fere quidem esse at valde gemino ex in, tation macto saepius. Importunus, aptent blandit aptent tristique os lucidus transverbero luptatum damnum iaceo et esse. Lobortis utinam hendrerit nonummy jus pala. Erat praesent acsi eu facilisis tation iusto transverbero.</p>
+      <p>Catastrophe models are hypothetical. Tragically, there are times when reality steps in. In the wake of catastrophic events, risk modelers have a chance to see how well what we’ve modeled in a computer-generated simulation matches up with what happened in the real world. While we couldn’t do anything to undo the damage in Haiti, what we learned during our event response and fieldwork could contribute to improving our models, which are part of a broader strategy to help people mitigate the effects of natural hazards in the future.</p>
     
     </section>
 
