@@ -13,7 +13,7 @@
   
 </head>
 
-<body id="body" class="t01a">
+<body id="craft02" class="t01a">
 
 <!--#include virtual="/inc/_header.asp" -->
 
