@@ -1,4 +1,4 @@
-<!-- #include virtual="/inc/server/contact.asp"-->
+<!--#include virtual="/inc/server/contact.asp" -->
 
 <!doctype html>
 
