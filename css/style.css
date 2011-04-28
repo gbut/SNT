@@ -1632,6 +1632,7 @@ a.close:active {
   list-style:           none;
   background:           #919191;
   border:               none;
+  position:             relative;
   top:                  0;
   float:                left;
   z-index:              10;
