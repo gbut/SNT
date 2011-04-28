@@ -955,8 +955,8 @@ $(document).ready(function(){
     };
 
     var defaults = {
-      fadeDur:    300,
-      animDur:    650,
+      fadeDur:    600,
+      animDur:    800,
       easing:     'easeOutQuint'
     };
 
@@ -971,21 +971,25 @@ $(document).ready(function(){
     $.rmsHome = function(e, o) {
       this.options            = $.extend({}, defaults, o || {});
 
+      // fade animations will be different for IE
+      this.specialFade        = $('html').is('.ie8, .ie7');
+      
       // elements
       var self                = this;
       this.container          = $(e);
-      this.ribbonBg           = $('#ribbon_bg');
-      this.entryList          = $('#ribbon').find('ul');
-      //this.entries            = this.entryList.children();
-      
-      //this.overlay            = $('#homeOverlay');
-      this.overlayTop         = $('#homeOverlayHeader');
+      this.ribbon             = $('#ribbon');
+      this.ribbonBgInner      = $('#ribbon_bg_inner');
+      this.ribbonList         = $('#ribbon .inner ul');
+      this.subhd              = $('#subhd');
+      this.subhdLine          = $('#subhd h3');
+      this.cta                = $('#subhd a');
+      this.ctaTextSpan        = $('#cta_text span');
+      this.ctaBgInner         = $('#cta_bg_inner');
+      this.header             = $('header');
       this.footer             = $('footer');
 
-      // flags, measurements
-
       // attach behaviors
-      this.t = window.setTimeout(function(){ self.setup(); }, 1000);
+      this.t = window.setTimeout(function(){ self.reveal(); }, 1500);
       
     };
 
@@ -996,48 +1000,41 @@ $(document).ready(function(){
 
     $rh.fn.extend({
       /**
-       * Sets up all home page animations.
+       * Fades in hidden page elements.
        *
-       * @name setup
+       * @name reveal
        * @type undefined
        */
-      setup: function() {
-        var self = this;
-        this.ribbonBg.animate({
-            width: '100%'
+      reveal: function() {
+        if (this.specialFade) {
+          $(this.subhdLine).fadeTo(this.options.fadeDur, 1);
+          $(this.ctaTextSpan).fadeTo(this.options.fadeDur, 1);
+          this.ctaBgInner.fadeTo(this.options.fadeDur, 0.3);
+          this.ribbon.css({ top:'70%' });
+          this.ribbonBgInner.fadeTo(this.options.fadeDur, 0.3);
+          $(this.ribbonList).fadeTo(this.options.fadeDur, 1);
+        } else {
+          $(this.subhdLine).fadeTo(this.options.fadeDur, 1);
+          this.ctaTextSpan.css({ opacity:1 });
+          this.cta.css({ right:0 }).fadeTo(this.options.fadeDur, 1);
+          this.ribbonList.css({ opacity:1 });
+          this.ribbon.css({ opacity:0, top:'70%' }).fadeTo(this.options.fadeDur, 1);
+        }
+        this.header.animate({
+            top: 0
           },
           {
             duration: this.options.animDur,
-            easing: this.options.easing,
-            complete: function(){ self.showEntries(); }
+            easing: this.options.easing
+          });
+        this.footer.animate({
+            bottom: 0
+          },
+          {
+            duration: this.options.animDur,
+            easing: this.options.easing
           });
         window.clearTimeout(this.t);
-      },
-
-      /**
-       * Fades up the site entry points inside the ribbon.
-       *
-       * @name showEntries
-       * @type undefined
-       */
-      showEntries: function() {
-        var self = this;
-        this.entryList.fadeIn(
-          this.options.animDur,
-          this.options.easing,
-          function(){ self.revealNav(); }
-        );
-      },
-
-      /**
-       * Reveals header and footer nav.
-       *
-       * @name revealNav
-       * @type undefined
-       */
-      revealNav: function() {
-        $(this.overlayTop).fadeOut(600);
-        $(this.footer).fadeIn(600);
       }
 
     });

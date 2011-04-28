@@ -1,13 +1,17 @@
 <!-- + home -->
-<div id="home">
-  <div class="hd">
-    <h2>Lorem Ipsum Dolor Sit Amet Nonummy</h2>
-    <h3>Inviting the Next Generation of Modeling Innovation</h3>
-    <a href="/nextgen">Learn More <em>&raquo;</em></a>
+<div class="hd">
+  <div class="inner clearfix">
+    <h2>Together, we will build the future.</h2>
+    <div id="subhd" class="clearfix">
+      <h3>Ushering in the next generation of risk modeling.</h3>
+      <a href="/nextgen"><span id="cta_text"><span>Learn More <em>&raquo;</em></span></span><span id="cta_bg"><span id="cta_bg_inner"></span></span></a>
+    </div>
   </div>
+</div>
   
-  <div id="ribbon">
-    <div id="ribbon_bg"></div>
+<div id="ribbon">
+  <div id="ribbon_bg"><div id="ribbon_bg_inner"></div></div>
+  <div class="inner">
     <ul class="wrapper clearfix">
       <li>
         <h4>Join a Team of Big Thinkers</h4>

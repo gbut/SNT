@@ -200,6 +200,10 @@ a:hover { color: #28739c; }
 
 /* + *** GLOBAL *** */
 
+html {
+  height:               100%;
+}
+
 body {
 /*  background:           #dbe4ea;*/
   padding-top:          77px; /* leave room for fixed header */
@@ -1266,6 +1270,7 @@ footer a {
   background:           #222;
   position:             fixed;
   bottom:               0;
+  left:                 0;
 }
 .t01 footer a {
   color:                #fff;
@@ -2114,70 +2119,170 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 /* + Home */
 
 #home {
-  height:               775px;
-  background:           #0c0a12 url(../img/TEMP_bg_home.jpg) top center no-repeat;
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+  position:relative;
+  width:100%;
+  margin:0 auto;
+/*
+  height:               943px;
+  background:           #0c0a12 url(../img/bg_home.jpg) top center no-repeat;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
+*/
 }
 
 #home .hd {
-  width:                960px;
-  margin:               0 auto;
-  padding:              80px 0 0;
+  width:                100%;
+  position:             absolute;
+  top:                  34%;
+  left:                 0;
 }
 
-#home .hd h2 {
+#home .hd .inner {
+  margin:               0 auto;
+  width:                960px;
+  padding:              80px 0 0;
+  position:             relative;
+}
+
+#home #subhd {
+  float:                right;
+  clear:                both;
+  position:relative;
+}
+
+#home .hd h2,
+#home .hd h3 {
   color:                #fff;
-  font:                 normal 307.7%/100% Helvetica,sans-serif;
+  font:                 normal 346.2%/100% Helvetica,sans-serif;
+  text-align:           right;
+  text-shadow:          2px 2px 2px rgba(0,0,0,0.3);
+  width:                100%;
+  padding-bottom:       2px;
+}
+#home .hd h2 {
   float:                right;
   clear:                both;
 }
 
 #home .hd h3 {
-  color:                #9e9da1;
-  font:                 normal 215.4%/100% Helvetica,sans-serif;
-  padding-bottom:       8px;
-  float:                right;
-  clear:                both;
+  font:                 normal 238.5%/100% Helvetica,sans-serif;
+  padding-bottom:       6px;
+  -moz-opacity:         0;
+  -ms-filter:           "alpha(opacity=0)";
+  filter:               alpha(opacity=0);
+  opacity:              0;
+}
+.ie7 #home .hd h3,
+.ie7 #home .hd a {
+  white-space:          nowrap;
 }
 
 #home .hd a {
-  color:                #c3151c;
-  font:                 bold 108%/100% Helvetica,sans-serif;
-  text-transform:       uppercase;
   float:                right;
   clear:                both;
+  position:             relative;
+  right:                -10000px;
+  overflow:             hidden;
+}
+.ie8 #home .hd a {
+  right:                0;
+}
+.ie7 #home .hd a {
+  width:                100px;
+  float:                none;
+  clear:                none;
+  position:             absolute;
+  bottom:               -28px;
+  right:                0;
 }
 #home .hd a em {
+  font:                 normal 145%/100% Arial,sans-serif;
+}
+#home .hd a #cta_text {
   color:                #fff;
-  font:                 bold 145%/100% Arial,sans-serif;
+  font:                 bold 93%/100% Helvetica,sans-serif;
+  text-transform:       uppercase;
+  padding:              3px 6px 6px 7px;
+  display:              block;
+  position:             relative;
+  overflow:             hidden;
+  cursor:               pointer;
+}
+
+#home .hd a #cta_text span {
+  display:              block;
+  -moz-opacity:         0;
+  -ms-filter:           "alpha(opacity=0)";
+  filter:               alpha(opacity=0);
+  opacity:              0;
+}
+.ie7 #home .hd a #cta_text span {
+  zoom:                 1;
 }
 
 #home #ribbon {
   width:                100%;
-  min-height:           124px;
-  height:               auto !important;
-  height:               124px;
   position:             absolute;
-  top:                  70%;
+  top:                  -1000px;/*70%*/
   left:                 0;
   overflow:             hidden;
 }
 
+#home #ribbon .inner {
+  width:                100%;
+  min-height:           124px;
+  height:               auto !important;
+  height:               124px;
+  position:             relative;
+  overflow:             hidden;
+}
+
+#home .hd a #cta_text,
+#home #ribbon .inner {
+  background:           transparent url(../img/bg_ribbon.png) 0 0 repeat;
+}
+.ie7 #home .hd a #cta_text,
+.ie8 #home .hd a #cta_text,
+.ie7 #home #ribbon .inner,
+.ie8 #home #ribbon .inner {
+  background:           none;
+  position:             relative;
+  z-index:              100;
+}
+
+#home .hd a #cta_bg,
 #home #ribbon #ribbon_bg {
-  width:                0;
+  width:                100%;
   height:               1000px;
-  background:           #031146;
   position:             absolute;
   top:                  0;
   left:                 0;
   overflow:             hidden;
-  -moz-opacity:         0.7;
-  -ms-filter:           "alpha(opacity=70)";
-  filter:               alpha(opacity=70);
-  opacity:              0.7;
   z-index:              1;
+  display:              none;
+}
+.ie7 #home .hd a #cta_bg,
+.ie8 #home .hd a #cta_bg,
+.ie7 #home #ribbon #ribbon_bg,
+.ie8 #home #ribbon #ribbon_bg {
+  display:              block;
+}
+
+#home .hd a #cta_bg_inner,
+#home #ribbon #ribbon_bg #ribbon_bg_inner {
+  width:                100%;
+  height:               1000px;
+  background:           #000;
+  display:              block;
+  overflow:             hidden;
+  -moz-opacity:         0;
+  -ms-filter:           "alpha(opacity=0)";
+  filter:               alpha(opacity=0);
+  opacity:              0;
 }
 
 #home #ribbon ul {
@@ -2185,9 +2290,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   width:                960px;
   padding-top:          18px;
   list-style:           outside none;
-  position:             relative;
-  z-index:              100;
-  display:              none;
+  -moz-opacity:         0;
+  -ms-filter:           "alpha(opacity=0)";
+  filter:               alpha(opacity=0);
+  opacity:              0;
 }
 
 #home #ribbon ul li {
@@ -2215,26 +2321,17 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   font:                 normal 131%/50% Arial,sans-serif;
   padding:              1px 2px 3px;
   display:              inline-block;
-  background-color:     #1b2d4d;
+  background-color:     #212121;
 }
-
-/*
-#homeOverlay {
-  width:                100%;
-  height:               100%;
-  background:           #fff;
-  overflow:             hidden;
-  position:             fixed;
-  top:                  0;
-  left:                 0;
-  z-index:              10001;
+.ie7 #home #ribbon ul li p a em {
+  cursor:               pointer;
+  margin-bottom:        -2px;
 }
-*/
 
 #homeOverlayHeader {
   width:                100%;
-  height:               93px;
-  background:           #0c0a12;
+  height:               77px;
+  background:           #222;
   overflow:             hidden;
   position:             fixed;
   top:                  0;
@@ -2242,16 +2339,32 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   z-index:              10000;
 }
 
-.isHome {
-  background-color:     #0c0a12;
+body.isHome {
+  height:               100%;
+  padding:              0;
+  background:           #0c0a12 url(../img/bg_home.jpg) top center no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
-.isHome .contentOuter {
+body.isHome .contentOuter {
+  background:           none;
   border:               none;
+	position:relative; /* needed for footer positioning*/
+	margin:0 auto; /* center, not in IE5 */
+	width:100%;
+	min-height:100%;
+	height:auto !important;
+	height:100%;
 }
 
-.isHome footer {
-  display:              none;
+body.isHome header {
+  top:                  -82px;
+}
+
+body.isHome footer {
+  bottom:               -56px;
 }
 
 /* + Home */
@@ -5094,6 +5207,34 @@ body#jobvite {
 
 /* / *** TOOL TIPS *** */
 
+
+/* + *** Flexi-background plugin *** */
+
+img#expando {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  -ms-interpolation-mode: bicubic;
+}
+ 
+.wide img#expando,
+.tall img#expando {
+  display: block;
+}
+ 
+.wide img#expando {
+  height: auto;
+  width: 100%;
+}
+ 
+.tall img#expando {
+  height: 100%;
+  width: auto;
+}
+
+/* / *** Flexi-background plugin *** */
+
+
 /* TEMP */
 
 .indexTitle {
@@ -5366,11 +5507,11 @@ ul.index.global li a {
   here to match your background image size. The configuration in the
   flexi-background javascript file should also match these values.
 */
-@media only all and (max-width: 1200px) and (max-height: 775px) {
+@media only all and (max-width: 1248px) and (max-height: 733px) {
   #home {
-    background-size: 1200px 775px;
-    -moz-background-size: 1200px 775px;
-    -webkit-background-size: 1200px 775px;
+    background-size: 1248px 733px;
+    -moz-background-size: 1248px 733px;
+    -webkit-background-size: 1248px 733px;
   }
 }
 /*

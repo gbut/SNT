@@ -17,23 +17,11 @@
 
 <!--#include virtual="/inc/_header.asp" -->
 
-<div id="t01" class="contentOuter">
-  <!-- + main -->
-  <div id="main" class="wrapper clearfix">
-  
-    <!-- + content -->
-    <section id="content" class="clearfix">
-      <!--#include virtual="/inc/content/home.asp" -->
-    </section>
-    <!-- / content -->
-      
-  </div>
-  <!-- / main -->
+<div id="home" class="contentOuter">
+  <!--#include virtual="/inc/content/home.asp" -->
 </div>
 
 <!--#include virtual="/inc/_footer.asp" -->
-
-<div id="homeOverlayHeader"></div>
 
 <!--#include virtual="/inc/__html-foot.asp" -->
 
