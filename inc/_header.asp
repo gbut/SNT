@@ -13,16 +13,20 @@
         <h3>Private Client Area</h3>
         <ul class="benefits">
           <li>
-            <h4>Benefit One.</h4>
-            <p>Lorem ipsum dolor consectet.</p>
+            <h4>Benefit One:</h4>
+            <p>Extensive resources on RMS Models and Tools.</p>
           </li>
           <li>
-            <h4>Benefit Two.</h4>
-            <p>Vivamus ante mi, venenatis quis.</p>
+            <h4>Benefit Two:</h4>
+            <p>Comprehensive Catastrophe Updates.</p>
           </li>
           <li>
-            <h4>Benefit Three.</h4>
-            <p>Integer elementum leo sed erat.</p>
+            <h4>Benefit Three:</h4>
+            <p>Capital Markets Indices.</p>
+          </li>
+          <li>
+            <h4>Benefit Four:</h4>
+            <p>ILS Portfolio Management.</p>
           </li>
         </ul>
         <fieldset>

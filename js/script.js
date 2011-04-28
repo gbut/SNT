@@ -226,7 +226,8 @@ $(document).ready(function(){
       /*
       rms_todo: remove gbl_env and non-rms code (else)
       */
-      if (gbl_env == "rms")
+//      if (gbl_env == "rms") // TODO: de-integrating until ticket #89 is fixed
+      if (false)
       {
         $.ajax({
           type: "POST",
