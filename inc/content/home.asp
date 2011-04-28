@@ -1,9 +1,9 @@
 <!-- + home -->
 <div id="home">
-  <div class="hd">
-    <h2>Lorem Ipsum Dolor Sit Amet Nonummy</h2>
-    <h3>Inviting the Next Generation of Modeling Innovation</h3>
-    <a href="/nextgen">Learn More <em>&raquo;</em></a>
+  <div class="hd clearfix">
+    <h2>Together, we will build the future.</h2>
+    <h3>Ushering in the next generation of risk modeling.</h3>
+    <a href="/nextgen"><span>Learn More </span><span class="arrows">&raquo;</span><em></em></a>
   </div>
   
   <div id="ribbon">

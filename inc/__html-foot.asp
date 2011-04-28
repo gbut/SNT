@@ -48,11 +48,12 @@
   <script type="text/javascript" src="/js/libs/coolclock/moreskins.js"></script>
   
   <!-- jquery plugins -->
+  <script type="text/javascript" src="/js/libs/flexi-background-jquery.js"></script>
   <script type="text/javascript" src="/js/libs/jquery.cookie.js"></script>
   <script type="text/javascript" src="/js/libs/jquery-validation/jquery.validate.js"></script>
   <script type="text/javascript" src="/js/libs/jquery-scrollto/jquery.scrollto-min.js"></script>
   <script type="text/javascript" src="/js/libs/tipsy/jquery.tipsy.js"></script>
-  <script type="text/javascript" src="/js/libs/jquery.touchSwipe-1.2.2.js"></script>
+  <!-- <script type="text/javascript" src="/js/libs/jquery.touchSwipe-1.2.2.js"></script> -->
   
   <!-- canvas maps -->
   <script type="text/javascript" src="/js/libs/raphael-min.js"></script>

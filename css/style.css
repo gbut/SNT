@@ -200,6 +200,10 @@ a:hover { color: #28739c; }
 
 /* + *** GLOBAL *** */
 
+html {
+  height:               100%;
+}
+
 body {
 /*  background:           #dbe4ea;*/
   padding-top:          77px; /* leave room for fixed header */
@@ -2120,44 +2124,78 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 /* + Home */
 
 #home {
-  height:               775px;
-  background:           #0c0a12 url(../img/TEMP_bg_home.jpg) top center no-repeat;
+/*
+  min-height:600px;
+  height:auto !important;
+  height:600px;
+*/
+/*
+  height:               943px;
+  background:           #0c0a12 url(../img/bg_home.jpg) top center no-repeat;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
+*/
 }
 
 #home .hd {
-  width:                960px;
   margin:               0 auto;
+  width:                960px;
   padding:              80px 0 0;
+  position:             relative;
+  top:                  34%;
+  left:                 0;
 }
 
-#home .hd h2 {
+#home .hd h2,
+#home .hd h3 {
   color:                #fff;
-  font:                 normal 307.7%/100% Helvetica,sans-serif;
+  font:                 normal 346.2%/100% Helvetica,sans-serif;
+  text-shadow:          2px 2px 2px rgba(0,0,0,0.3);
+  padding-bottom:       2px;
   float:                right;
   clear:                both;
+  position:             relative;
 }
 
 #home .hd h3 {
-  color:                #9e9da1;
-  font:                 normal 215.4%/100% Helvetica,sans-serif;
-  padding-bottom:       8px;
-  float:                right;
-  clear:                both;
+  font:                 normal 238.5%/100% Helvetica,sans-serif;
+  padding-bottom:       6px;
+}
+.ie7 #home .hd h3 {
+  white-space:          nowrap;
 }
 
 #home .hd a {
-  color:                #c3151c;
-  font:                 bold 108%/100% Helvetica,sans-serif;
+  color:                #fff;
+  font:                 bold 93%/100% Helvetica,sans-serif;
   text-transform:       uppercase;
+  padding:              3px 6px 6px 7px;
   float:                right;
   clear:                both;
+  position:             relative;
+  overflow:             hidden;
+}
+#home .hd a span {
+  position:             relative;
+  z-index:              10;
+}
+#home .hd a span.arrows {
+  font:                 normal 145%/100% Arial,sans-serif;
 }
 #home .hd a em {
-  color:                #fff;
-  font:                 bold 145%/100% Arial,sans-serif;
+  width:                1000px;
+  height:               1000px;
+  background:           #000;
+  position:             absolute;
+  top:                  0;
+  right:                0;
+  -moz-opacity:         0.2;
+  -ms-filter:           "alpha(opacity=20)";
+  filter:               alpha(opacity=20);
+  opacity:              0.2;
+  z-index:              1;
+  overflow:             hidden;
 }
 
 #home #ribbon {
@@ -2174,15 +2212,15 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #home #ribbon #ribbon_bg {
   width:                0;
   height:               1000px;
-  background:           #031146;
+  background:           #000;
   position:             absolute;
   top:                  0;
   left:                 0;
   overflow:             hidden;
-  -moz-opacity:         0.7;
-  -ms-filter:           "alpha(opacity=70)";
-  filter:               alpha(opacity=70);
-  opacity:              0.7;
+  -moz-opacity:         0.3;
+  -ms-filter:           "alpha(opacity=30)";
+  filter:               alpha(opacity=30);
+  opacity:              0.3;
   z-index:              1;
 }
 
@@ -2221,26 +2259,13 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   font:                 normal 131%/50% Arial,sans-serif;
   padding:              1px 2px 3px;
   display:              inline-block;
-  background-color:     #1b2d4d;
+  background-color:     #212121;
 }
-
-/*
-#homeOverlay {
-  width:                100%;
-  height:               100%;
-  background:           #fff;
-  overflow:             hidden;
-  position:             fixed;
-  top:                  0;
-  left:                 0;
-  z-index:              10001;
-}
-*/
 
 #homeOverlayHeader {
   width:                100%;
-  height:               93px;
-  background:           #0c0a12;
+  height:               77px;
+  background:           #222;
   overflow:             hidden;
   position:             fixed;
   top:                  0;
@@ -2248,15 +2273,27 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   z-index:              10000;
 }
 
-.isHome {
-  background-color:     #0c0a12;
+body.isHome {
+  height:               100%;
+  padding:              0;
+  background:           #0c0a12 url(../img/bg_home.jpg) top center no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
-.isHome .contentOuter {
+body.isHome .contentOuter {
   border:               none;
+	position:relative; /* needed for footer positioning*/
+	margin:0 auto; /* center, not in IE5 */
+	width:100%;
+  background:           red;
+	height:auto !important; /* real browsers */
+	height:100%; /* IE6: treaded as min-height*/
+	min-height:100%; /* real browsers */
 }
 
-.isHome footer {
+body.isHome footer {
   display:              none;
 }
 
@@ -5101,6 +5138,34 @@ body#jobvite {
 
 /* / *** TOOL TIPS *** */
 
+
+/* + *** Flexi-background plugin *** */
+
+img#expando {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  -ms-interpolation-mode: bicubic;
+}
+ 
+.wide img#expando,
+.tall img#expando {
+  display: block;
+}
+ 
+.wide img#expando {
+  height: auto;
+  width: 100%;
+}
+ 
+.tall img#expando {
+  height: 100%;
+  width: auto;
+}
+
+/* / *** Flexi-background plugin *** */
+
+
 /* TEMP */
 
 .indexTitle {
@@ -5373,11 +5438,11 @@ ul.index.global li a {
   here to match your background image size. The configuration in the
   flexi-background javascript file should also match these values.
 */
-@media only all and (max-width: 1200px) and (max-height: 775px) {
+@media only all and (max-width: 1248px) and (max-height: 943px) {
   #home {
-    background-size: 1200px 775px;
-    -moz-background-size: 1200px 775px;
-    -webkit-background-size: 1200px 775px;
+    background-size: 1248px 943px;
+    -moz-background-size: 1248px 943px;
+    -webkit-background-size: 1248px 943px;
   }
 }
 /*
