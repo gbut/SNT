@@ -5508,11 +5508,11 @@ ul.index.global li a {
   here to match your background image size. The configuration in the
   flexi-background javascript file should also match these values.
 */
-@media only all and (max-width: 1248px) and (max-height: 943px) {
+@media only all and (max-width: 1248px) and (max-height: 733px) {
   #home {
-    background-size: 1248px 943px;
-    -moz-background-size: 1248px 943px;
-    -webkit-background-size: 1248px 943px;
+    background-size: 1248px 733px;
+    -moz-background-size: 1248px 733px;
+    -webkit-background-size: 1248px 733px;
   }
 }
 /*
