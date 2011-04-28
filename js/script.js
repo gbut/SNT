@@ -2152,12 +2152,12 @@ $(document).ready(function(){
     $.getJSON('/inc/content/source_quotes.json', function(data) {
       $('aside .quote').each(function() {
         selq = Math.floor(Math.random()*data.length);
-        item = data[selq];
+        itm = data[selq];
         data.splice(selq,1); // remove used item from array
         // set values in display
-        $(this).find('.q').html(item.quote);
-        $(this).find('.a').html(item.author);
-        $(this).find('.t').html(item.title);      
+        $(this).find('.q').html(itm.quote);
+        $(this).find('.a').html(itm.author);
+        $(this).find('.t').html(itm.title);      
       });
     });  
   }
@@ -2194,12 +2194,12 @@ $(document).ready(function(){
     $.getJSON('/inc/content/source_benefits.json', function(data) {
       $('aside .benefit').each(function() {
         selb = Math.floor(Math.random()*data.length);
-        item = data[selb];
+        itm = data[selb];
         data.splice(selb,1); // remove used item from array
         // set values in display
-        $(this).find('.n').html(item.number);
-        $(this).find('.b').html(item.benefit);
-        $(this).find('.s').html(item.subtext);      
+        $(this).find('.n').html(itm.number);
+        $(this).find('.b').html(itm.benefit);
+        $(this).find('.s').html(itm.subtext);      
       });
     });  
   }
