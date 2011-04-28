@@ -171,8 +171,7 @@
       <div class="office">
         <h5>Bermuda</h5>
         <a href="#" class="bermuda">
-          Purvis House,<br />
-          1st Floor<br />
+          Purvis House, 1st Floor<br />
           29 Victoria Street<br />
           Hamilton HM 10<br />
           Bermuda
@@ -222,8 +221,8 @@
           A-7 Sector 16 <br />
           NOIDA 201 301 India
           <div class="tel">
-            Tel: 91 120 251 1102, 251 2101<br />
-            Fax: 91 120 251 1109, 251 0963
+            Tel: 91 120 251 1102<br />
+            Fax: 91 120 251 1109
           </div>
         </a>
         <h5>China</h5>
