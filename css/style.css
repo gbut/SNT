@@ -941,6 +941,9 @@ header #login form #form_login_login {
 .ie7 header #login form #form_login_login {
   padding:              7px 20px 1px 10px;
 }
+.ie8 header #login form #form_login_login {
+  padding:              7px 20px 3px 10px;
+}
 
 /* / Client Login */
 

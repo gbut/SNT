@@ -1358,17 +1358,27 @@ $(document).ready(function(){
   //	CLIENT LOGIN
   //===============================================
   $(function(){
-  	$('<div id="loginOverlay"></div>').prependTo($('#body')).click(function(e){
-  	  $('#btnClientLogin').triggerHandler('click');
-  	});
+/*
+    $('<div id="loginOverlay"></div>').prependTo($('#body')).click(function(e){
+      $('#btnClientLogin').triggerHandler('click');
+    });
+*/
+    var exitLogin = function(e){
+			var clicked = $(e.target);
+			if ((clicked.attr('id')=='login') || clicked.closest('#login').length) return true;
+      $('#btnClientLogin').triggerHandler('click');
+    };
+		$('body').prepend($('<div id="loginOverlay"></div>'));
   	$('#btnClientLogin').click(function(e){
   	  if ($('#login').hasClass('open')) {
     	  $('#loginOverlay').animate({opacity:0}, 150, function(){ $(this).hide(); });
     	  $('#login').removeClass('open');
+    	  $('body').unbind('click', exitLogin);
   	  } else {
     	  $('#loginOverlay').show().animate({opacity:0.72}, 150);
     	  $('#login').addClass('open');
     	  $('#form_login input[type=text]').eq(0).focus();
+    	  $('body').bind('click', exitLogin);
   	  }
   	});
   });
