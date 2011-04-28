@@ -41,13 +41,13 @@
           </div>
         </section>
       </div>
-      
+
       <div class="group">
         <section>
           <img src="/img/craft/craft_04.jpg" />
           <div>
-            <h3>Lorem Ipsum Dolor:</h3>
-            Eros patria accumsan wisi foras.
+            <h3>The art of modeling:</h3>
+            Uniting advances in computing power with scientific expertise.
             <a href="/careers/craft/craft04.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
