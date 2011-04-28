@@ -1632,15 +1632,16 @@ $(document).ready(function(){
   });
   
   // on page load...
-  if ($('#form_jvSearch select').length) {
-    if (sessionStorage.jobCategory) {
-      $('#jvCategory').val(sessionStorage.jobCategory);
-      jobListingsFilter();
-    } else {
-      jobListingsTruncation();
+  if (Modernizr.sessionstorage) {
+    if ($('#form_jvSearch select').length) {
+      if (sessionStorage.jobCategory) {
+        $('#jvCategory').val(sessionStorage.jobCategory);
+        jobListingsFilter();
+      } else {
+        jobListingsTruncation();
+      }
     }
   }
-
 
   //===============================================
   //  Sidebar rotation
@@ -2247,8 +2248,9 @@ function jobListingsFilter() {
    // get user value
    category = $('#jvCategory').val();
    // set session var
-   sessionStorage.setItem('jobCategory',category);
- 
+   if (Modernizr.sessionstorage) {
+     sessionStorage.setItem('jobCategory',category);
+   }
    // hide all listings, then iterate and selectively show
    $('#job_listings article').hide().each(function() {
      thisCategory = $(this).prevAll('h3').eq(0).find('.category').text();
