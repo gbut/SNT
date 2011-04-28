@@ -2143,18 +2143,22 @@ $(document).ready(function(){
 
   // Quote
   if ($('aside .quote').length) {
-    $('aside .quote').each(function() {
-      // can't get random of only or two items - fudge it
-      selq = ($('#quotes div[used!="used"]').length > 2) ? $('#quotes div[used!="used"]:random') : $('#quotes div[used!="used"]').first();
-      $(this).find('.q').html(selq.find('.quote').html().trim());
-      $(this).find('.a').html(selq.find('.author').html().trim());
-      $(this).find('.t').html(selq.find('.title').html().trim());      
-      selq.attr('used','used'); // flag as used
-    });
+    // pull in JSON data
+    $.getJSON('/inc/content/source_quotes.json', function(data) {
+      $('aside .quote').each(function() {
+        selq = Math.floor(Math.random()*data.length);
+        item = data[selq];
+        data.splice(selq,1); // remove used item from array
+        // set values in display
+        $(this).find('.q').html(item.quote);
+        $(this).find('.a').html(item.author);
+        $(this).find('.t').html(item.title);      
+      });
+    });  
   }
 
   // Single photo
-  // (no foreach here becuase single photo isn't used on Open Positions page, the only one with multiple sidebar panels)
+  // (no foreach here because single photo isn't used on Open Positions page, the only one with multiple sidebar panels)
   if ($('aside .photo').length) {
     selp = Math.floor(Math.random()*photo_up_total)+1;
     if (selp < 10) selp = '0'+selp;
@@ -2181,16 +2185,20 @@ $(document).ready(function(){
 
   // Benefit
   if ($('aside .benefit').length) {
-    $('aside .benefit').each(function() {
-      // can't get random of only or two items - fudge it
-      selb = ($('#benefits div[used!="used"]').length > 2) ? $('#benefits div[used!="used"]:random') : $('#benefits div[used!="used"]').first();
-      $(this).find('.n').html(selb.find('.number').html().trim());
-      $(this).find('.b').html(selb.find('.benefit').html().trim());
-      $(this).find('.s').html(selb.find('.subtext').html().trim());
-      selb.attr('used','used'); // flag as used
-    });
-  }  
-
+    // pull in JSON data
+    $.getJSON('/inc/content/source_benefits.json', function(data) {
+      $('aside .benefit').each(function() {
+        selb = Math.floor(Math.random()*data.length);
+        item = data[selb];
+        data.splice(selb,1); // remove used item from array
+        // set values in display
+        $(this).find('.n').html(item.number);
+        $(this).find('.b').html(item.benefit);
+        $(this).find('.s').html(item.subtext);      
+      });
+    });  
+  }
+  
   //===============================================
   //  Job Detail - get/set job id for apply button
   //===============================================
@@ -2298,16 +2306,3 @@ function setHeight(obj) {
     obj.height(ht);
 }
 
-/**
- * Create 'random' filter
- */
-jQuery.jQueryRandom = 0;
-jQuery.extend(jQuery.expr[":"],
-{
-  random: function(a, i, m, r) {
-    if (i == 0) {
-      jQuery.jQueryRandom = Math.floor(Math.random() * r.length);
-    };
-    return i == jQuery.jQueryRandom;
-  }
-});

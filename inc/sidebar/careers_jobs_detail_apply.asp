@@ -17,5 +17,3 @@
   </section>
 </aside>
 <!-- / sidebar -->
-
-<!--#include virtual="/inc/content/source_benefits.htm" -->

@@ -104,6 +104,3 @@
   </section>
 </aside>
 <!-- / sidebar -->
-
-<!--#include virtual="/inc/content/source_quotes.htm" -->
-<!--#include virtual="/inc/content/source_benefits.htm" -->
