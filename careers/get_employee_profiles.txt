@@ -25,9 +25,9 @@
 
 {
 "fullname":"Dag Lohmann",
-"position":"Sr. Director, Model Development",
+"position":"VP, Model Development",
 "location":"Newark",
-"img_src":"/img/team/alt/usa.jpg",
+"img_src":"/img/team/alt/newark_dag_lohmann_alt.jpg",
 "biography":{"#cdata-section":"<h6>Interesting facts...</h6><p>Reads math books every night and doesn’t get bored doing it.</p><p>Co-arranged the music for the Interim Afghan National Anthem.</p><p>Has three pet chickens (that his children named Speedy, Squeaky, and Red) that give him fresh eggs.</p>"}
 },
 
@@ -89,7 +89,7 @@
 
 {
 "fullname":"Tong Zhu",
-"position":"",
+"position":"Director, Platform Services",
 "location":"Newark, CA",
 "img_src":"/img/team/alt/newark_tong_zhu_alt.jpg",
 "biography":{"#cdata-section":"<h6>Interesting fact...</h6><p>Code written 7 years ago is still deployed on 15,000 servers.</p><h6>Greatest professional accomplishment...</h6><p>Led a team to early versions of mobile mail for Yahoo!.</p>"}
@@ -97,7 +97,7 @@
 
 {
 "fullname":"Ben Brookes",
-"position":"Director, RiskMarkets",
+"position":"Director, Risk Markets",
 "location":"London, UK",
 "img_src":"/img/team/alt/uk.jpg",
 "biography":{"#cdata-section":"<h6></h6><p>.</p><h6></h6><p>.</p>"}
@@ -155,7 +155,7 @@
 "fullname":"Chau Chavez",
 "position":"Assistant Controller",
 "location":"Newark, CA",
-"img_src":"/img/team/alt/usa.jpg",
+"img_src":"/img/team/alt/newark_chau_chavez_alt.jpg",
 "biography":{"#cdata-section":"<h6>If I could have only one meal for the rest of my life...</h6><p>Dinner, since I value family time. The type of food is not as important.</p><h6>Favorite book...</h6><p>These days, I have to read International GAAP (International Financial Reporting Standards - IFRS).</p>"}
 },
 
