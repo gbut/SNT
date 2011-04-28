@@ -53,7 +53,6 @@ $(function () {
   });
 });
 
-
 $(document).ready(function(){
   
 	//===============================================
@@ -2126,18 +2125,26 @@ $(document).ready(function(){
   if ($('#about dl').length) $('#about').leaderBio();
   
   //===============================================
-  //  Sidebar Content Haddling
+  //  Job Detail - get/set job id for apply button
   //===============================================
+
+  if ($('#job_detail #job_id').length) {
+    $('.btnApply').attr('href' , $('.btnApply').attr('href') + $('#job_id').html() );
+  }
   
+  //===============================================
+  //  Sidebar Content Handling
+  //===============================================
+
   /**
    * This should really be server side - but if it's going to be client side,
    * it should occur prior to document load 
    */
-  
+
   /**
    * Quote, Photo (upward slant), Photo (downward slant), Benefit
    */
-  
+
   photo_up_total = 9;
   photo_dn_total = 5;
 
@@ -2164,7 +2171,7 @@ $(document).ready(function(){
     if (selp < 10) selp = '0'+selp;
     $('aside .photo img').attr('src', '/img/staff/employee_'+selp+'_up.png');
   }
-  
+
   // Double photo
   // instead of trying to get 4 random numbers without redundancy,
   // instead we'll get a single random number and then use a sequence
@@ -2197,14 +2204,6 @@ $(document).ready(function(){
         $(this).find('.s').html(item.subtext);      
       });
     });  
-  }
-  
-  //===============================================
-  //  Job Detail - get/set job id for apply button
-  //===============================================
-
-  if ($('#job_detail #job_id').length) {
-    $('.btnApply').attr('href' , $('.btnApply').attr('href') + $('#job_id').html() );
   }
 
 });
@@ -2305,4 +2304,3 @@ function setHeight(obj) {
   if (ht > parseFloat(obj.css('min-height')))
     obj.height(ht);
 }
-
