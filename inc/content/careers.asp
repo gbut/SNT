@@ -157,19 +157,14 @@
     <div id="tooltip">
       <div class="body clearfix">
         <div class="primary">
-          <div class="imgCont"><img id="bioImg" src="/img/TEMP_photo_jli_alt.jpg" alt="Jane Li" /></div>
+          <div class="imgCont"><img id="bioImg" src="/img/team/alt/usa.jpg" alt="" /></div>
           <div class="text">
-            <h5 id="bioName">Jane Li</h5>
-            <p id="bioPosition">Engineer</p>
-            <p id="bioLocation">San Francisco</p>
+            <h5 id="bioName"></h5>
+            <p id="bioPosition"></p>
+            <p id="bioLocation"></p>
           </div>
         </div>
-        <div id="bioContent" class="secondary">
-          <h6>Lorem Dolores</h6>
-          <p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>
-          <h6>Gratisei Helios</h6>
-          <p>Adsum, et qui vereor validus quae praesent pecus vero erat meus abdo.</p>
-        </div>
+        <div id="bioContent" class="secondary"></div>
         <div class="pointer"><div class="inner"></div></div>
       </div>
     </div>

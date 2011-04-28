@@ -214,6 +214,7 @@ $(document).ready(function(){
       this.people.children().each(function(i){
         var w = $(this).find('img').width();
         $(this).find('a').css('width', w);
+        console.log(w);
         self.montageW += w;
       });
       this.panelRange         = this.montageW - this.winW;
@@ -437,8 +438,6 @@ $(document).ready(function(){
     });
 
   })(jQuery);
-
-  if ($('#team').length) $('#team').teamPhoto();
 
 
 	//===============================================
@@ -2207,6 +2206,14 @@ $(document).ready(function(){
   }
 
 });
+
+
+/**
+ * Team montage only works when all images are loaded (webkit).
+ */
+$(window).load(
+  function() { if ($('#team').length) $('#team').teamPhoto(); }
+);
 
 
 /**
