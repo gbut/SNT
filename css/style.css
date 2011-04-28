@@ -2181,6 +2181,16 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   white-space:          nowrap;
 }
 
+.ie7 #home .hd h2 span,
+.ie7 #home .hd h3 span,
+.ie8 #home .hd h2 span,
+.ie8 #home .hd h3 span {
+  display:              block;
+  width:                100%;
+  padding-bottom:       2px;
+  filter:               glow(color=#414141,strength=1);
+}
+
 #home .hd a {
   float:                right;
   clear:                both;

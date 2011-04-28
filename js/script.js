@@ -980,6 +980,7 @@ $(document).ready(function(){
       this.ribbon             = $('#ribbon');
       this.ribbonBgInner      = $('#ribbon_bg_inner');
       this.ribbonList         = $('#ribbon .inner ul');
+      this.hdLine             = $('.hd h2');
       this.subhd              = $('#subhd');
       this.subhdLine          = $('#subhd h3');
       this.cta                = $('#subhd a');
