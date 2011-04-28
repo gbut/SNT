@@ -1270,6 +1270,7 @@ footer a {
   background:           #222;
   position:             fixed;
   bottom:               0;
+  left:                 0;
 }
 .t01 footer a {
   color:                #fff;
@@ -2118,11 +2119,12 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 /* + Home */
 
 #home {
-/*
-  min-height:600px;
+  min-height:100%;
   height:auto !important;
-  height:600px;
-*/
+  height:100%;
+  position:relative;
+  width:100%;
+  margin:0 auto;
 /*
   height:               943px;
   background:           #0c0a12 url(../img/bg_home.jpg) top center no-repeat;
@@ -2133,89 +2135,154 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 }
 
 #home .hd {
+  width:                100%;
+  position:             absolute;
+  top:                  34%;
+  left:                 0;
+}
+
+#home .hd .inner {
   margin:               0 auto;
   width:                960px;
   padding:              80px 0 0;
   position:             relative;
-  top:                  34%;
-  left:                 0;
+}
+
+#home #subhd {
+  float:                right;
+  clear:                both;
+  position:relative;
 }
 
 #home .hd h2,
 #home .hd h3 {
   color:                #fff;
   font:                 normal 346.2%/100% Helvetica,sans-serif;
+  text-align:           right;
   text-shadow:          2px 2px 2px rgba(0,0,0,0.3);
+  width:                100%;
   padding-bottom:       2px;
+}
+#home .hd h2 {
   float:                right;
   clear:                both;
-  position:             relative;
 }
 
 #home .hd h3 {
   font:                 normal 238.5%/100% Helvetica,sans-serif;
   padding-bottom:       6px;
+  -moz-opacity:         0;
+  -ms-filter:           "alpha(opacity=0)";
+  filter:               alpha(opacity=0);
+  opacity:              0;
 }
-.ie7 #home .hd h3 {
+.ie7 #home .hd h3,
+.ie7 #home .hd a {
   white-space:          nowrap;
 }
 
 #home .hd a {
+  float:                right;
+  clear:                both;
+  position:             relative;
+  right:                -10000px;
+  overflow:             hidden;
+}
+.ie8 #home .hd a {
+  right:                0;
+}
+.ie7 #home .hd a {
+  width:                100px;
+  float:                none;
+  clear:                none;
+  position:             absolute;
+  bottom:               -28px;
+  right:                0;
+}
+#home .hd a em {
+  font:                 normal 145%/100% Arial,sans-serif;
+}
+#home .hd a #cta_text {
   color:                #fff;
   font:                 bold 93%/100% Helvetica,sans-serif;
   text-transform:       uppercase;
   padding:              3px 6px 6px 7px;
-  float:                right;
-  clear:                both;
+  display:              block;
   position:             relative;
   overflow:             hidden;
+  cursor:               pointer;
 }
-#home .hd a span {
-  position:             relative;
-  z-index:              10;
+
+#home .hd a #cta_text span {
+  display:              block;
+  -moz-opacity:         0;
+  -ms-filter:           "alpha(opacity=0)";
+  filter:               alpha(opacity=0);
+  opacity:              0;
 }
-#home .hd a span.arrows {
-  font:                 normal 145%/100% Arial,sans-serif;
-}
-#home .hd a em {
-  width:                1000px;
-  height:               1000px;
-  background:           #000;
-  position:             absolute;
-  top:                  0;
-  right:                0;
-  -moz-opacity:         0.2;
-  -ms-filter:           "alpha(opacity=20)";
-  filter:               alpha(opacity=20);
-  opacity:              0.2;
-  z-index:              1;
-  overflow:             hidden;
+.ie7 #home .hd a #cta_text span {
+  zoom:                 1;
 }
 
 #home #ribbon {
   width:                100%;
-  min-height:           124px;
-  height:               auto !important;
-  height:               124px;
   position:             absolute;
-  top:                  70%;
+  top:                  -1000px;/*70%*/
   left:                 0;
   overflow:             hidden;
 }
 
+#home #ribbon .inner {
+  width:                100%;
+  min-height:           124px;
+  height:               auto !important;
+  height:               124px;
+  position:             relative;
+  overflow:             hidden;
+}
+
+#home .hd a #cta_text,
+#home #ribbon .inner {
+  background:           transparent url(../img/bg_ribbon.png) 0 0 repeat;
+}
+.ie7 #home .hd a #cta_text,
+.ie8 #home .hd a #cta_text,
+.ie7 #home #ribbon .inner,
+.ie8 #home #ribbon .inner {
+  background:           none;
+  position:             relative;
+  z-index:              100;
+}
+
+#home .hd a #cta_bg,
 #home #ribbon #ribbon_bg {
-  width:                0;
+  width:                100%;
   height:               1000px;
-  background:           #000;
   position:             absolute;
   top:                  0;
   left:                 0;
   overflow:             hidden;
-  -moz-opacity:         0.3;
-  -ms-filter:           "alpha(opacity=30)";
-  filter:               alpha(opacity=30);
-  opacity:              0.3;
   z-index:              1;
+  display:              none;
+}
+.ie7 #home .hd a #cta_bg,
+.ie8 #home .hd a #cta_bg,
+.ie7 #home #ribbon #ribbon_bg,
+.ie8 #home #ribbon #ribbon_bg {
+  display:              block;
+}
+
+#home .hd a #cta_bg_inner,
+#home #ribbon #ribbon_bg #ribbon_bg_inner {
+  width:                100%;
+  height:               1000px;
+  background:           #000;
+  display:              block;
+  overflow:             hidden;
+  -moz-opacity:         0;
+  -ms-filter:           "alpha(opacity=0)";
+  filter:               alpha(opacity=0);
+  opacity:              0;
 }
 
 #home #ribbon ul {
@@ -2223,9 +2290,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   width:                960px;
   padding-top:          18px;
   list-style:           outside none;
-  position:             relative;
-  z-index:              100;
-  display:              none;
+  -moz-opacity:         0;
+  -ms-filter:           "alpha(opacity=0)";
+  filter:               alpha(opacity=0);
+  opacity:              0;
 }
 
 #home #ribbon ul li {
@@ -2255,6 +2323,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   display:              inline-block;
   background-color:     #212121;
 }
+.ie7 #home #ribbon ul li p a em {
+  cursor:               pointer;
+  margin-bottom:        -2px;
+}
 
 #homeOverlayHeader {
   width:                100%;
@@ -2277,18 +2349,22 @@ body.isHome {
 }
 
 body.isHome .contentOuter {
+  background:           none;
   border:               none;
 	position:relative; /* needed for footer positioning*/
 	margin:0 auto; /* center, not in IE5 */
 	width:100%;
-  background:           red;
-	height:auto !important; /* real browsers */
-	height:100%; /* IE6: treaded as min-height*/
-	min-height:100%; /* real browsers */
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+}
+
+body.isHome header {
+  top:                  -82px;
 }
 
 body.isHome footer {
-  display:              none;
+  bottom:               -56px;
 }
 
 /* + Home */
