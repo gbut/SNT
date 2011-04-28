@@ -8,21 +8,21 @@
           <div class="subnavLt">
             <ul class="snavItems">
               <li>
-                <a href="#" class="clearfix" title="">
-                  <h4>Solutions</h4>
-                  <p>Lorem ipsum dolor consectet adipiscing</p>
+                <a href="/risk" class="clearfix" title="Models: Overview">
+                  <h4>Overview</h4>
+                  <p>Learn about the science and impact of our industry-leading models</p>
                 </a>
               </li>
               <li>
-                <a href="#" class="clearfix" title="">
-                  <h4>Risk Outlook</h4>
-                  <p>Lorem ipsum dolor consectet adipiscing</p>
+                <a href="/careers/craft" class="clearfix" title="Models: Craft">
+                  <h4>The Craft of RMS</h4>
+                  <p>The sciences and technology behind our models</p>
                 </a>
               </li>
               <li>
-                <a href="#" class="clearfix" title="">
-                  <h4>Advisors</h4>
-                  <p>Lorem ipsum dolor consectet adipiscing</p>
+                <a href="/info" class="clearfix" title="Models: Catastrophe Updates">
+                  <h4>Catastrophe Updates</h4>
+                  <p>The latest news on natural catastrophes across the globe</p>
                 </a>
               </li>
             </ul>
@@ -39,13 +39,10 @@
       <a href="/nextgen" class="pn" title="Next Gen"><span class="tl">Next Gen</span></a>
     </li>
     <li>
-      <a href="/info" class="pn" title="Info"><span class="tl">Info</span></a>
-    </li>
-    <li>
-      <a href="/about" class="pn" title="About"><span class="tl">About</span></a>
+      <a href="/info" class="pn" title="News"><span class="tl">News</span></a>
     </li>
     <li class="hasSn">
-      <a href="/careers" class="pn" title="Careers"><span class="tl">Careers</span></a>
+      <a href="/about" class="pn" title="About"><span class="tl">About</span></a>
       <ul class="sn careers">
         <li class="clearfix">
           <div class="subnavLt">
@@ -54,12 +51,31 @@
             <a href="http://www.flickr.com/photos/62162353@N04/" class="cta">See More Photos on Flickr</a>
           </div>
           <div class="subnavRt">
+            <h3>About RMS</h3>
+            <ul class="snavItems">
+              <li><a href="/about" title="About: Our Story">Our Story</a></li>
+              <li><a href="/contact.asp#offices" title="About: Offices">Offices</a></li>
+              <li><a href="/contact.asp" title="About: Contact">Contact</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class="hasSn">
+      <a href="/careers" class="pn" title="Careers"><span class="tl">Careers</span></a>
+      <ul class="sn careers">
+        <li class="clearfix">
+          <div class="subnavLt">
+            <h3>Meet Us</h3>
+            <img src="/img/gnav/careers_meet_us.jpg" class="gnavImg" alt="Meet Us" />
+            <a href="http://www.flickr.com/photos/62162353@N04/" class="cta">Meet more of us at Flickr</a>
+          </div>
+          <div class="subnavRt">
             <h3>Careers @ RMS</h3>
             <ul class="snavItems">
-              <li><a href="#" title="">Menu Option 1</a></li>
-              <li><a href="#" title="">Menu Option 2</a></li>
-              <li><a href="#" title="">Menu Option 3</a></li>
-              <li><a href="#" title="">Menu Option 4</a></li>
+              <li><a href="/careers" title="Careers: Working at RMS">Working at RMS</a></li>
+              <li><a href="/careers/craft" title="Careers: The Craft of RMS">The Craft of RMS</a></li>
+              <li><a href="/careers/chat" title="Careers: Chat with Us">Chat with Us</a></li>
             </ul>
             <a href="/careers/jobs" class="btn btnSm-gnav cta">Open Positions</a>
           </div>
