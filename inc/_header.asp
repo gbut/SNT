@@ -8,7 +8,7 @@
 
     <!-- + login -->
     <div id="login">
-      <a href="#" id="btnClientLogin" title="Client Login">Client Login</a>
+      <a href="/ClientResources/Default.asp" id="btnClientLogin" title="Client Login">Client Login</a>
       <form id="form_login" method="post" action="" class="clearfix">
         <h3>Private Client Area</h3>
         <ul class="benefits">

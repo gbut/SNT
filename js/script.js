@@ -1365,7 +1365,7 @@ $(document).ready(function(){
 */
     var exitLogin = function(e){
 			var clicked = $(e.target);
-			if ((clicked.attr('id')=='login') || clicked.closest('#login').length) return true;
+			if ((clicked.attr('id')=='btnClientLoginHome') || (clicked.attr('id')=='login') || clicked.closest('#login').length) return true;
       $('#btnClientLogin').triggerHandler('click');
     };
 		$('body').prepend($('<div id="loginOverlay"></div>'));
@@ -1380,7 +1380,15 @@ $(document).ready(function(){
     	  $('#form_login input[type=text]').eq(0).focus();
     	  $('body').bind('click', exitLogin);
   	  }
+  	  e.preventDefault();
   	});
+  	// client login button at bottom of home page
+  	if ($('#btnClientLoginHome').length) {
+  	  $('#btnClientLoginHome').click(function(e){
+    	  e.preventDefault();
+        $('#btnClientLogin').triggerHandler('click');
+  	  });
+  	}
   });
 
 /*

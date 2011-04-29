@@ -23,7 +23,7 @@
       </li>
       <li>
         <h4>Understanding Version 11.0</h4>
-        <p>RMS is actively working to help clients manage implementation of the new v11.0 models into their business. <a href="#">Client login <em>&raquo;</em></a></p>
+        <p>RMS is actively working to help clients manage implementation of the new v11.0 models into their business. <a href="/ClientResources/Default.asp" id="btnClientLoginHome">Client login <em>&raquo;</em></a></p>
       </li>
     </ul>
   </div>
