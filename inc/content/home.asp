@@ -15,11 +15,11 @@
     <ul class="wrapper clearfix">
       <li>
         <h4>Our Work Speaks for Itself</h4>
-        <p>For over 20 years, RMS has worked to educate the world about risk and provide critical solutions to financial institutions. <a href="#">Read our story <em>&raquo;</em></a></p>
+        <p>For over 20 years, RMS has worked to educate the world about risk and provide critical solutions to financial institutions. <a href="/careers/craft">Read our story <em>&raquo;</em></a></p>
       </li>
       <li>
         <h4>Join a Team of Big Thinkers</h4>
-        <p>We are looking for talented people who are driven to find innovative scientific and technology solutions for managing risk. <a href="#">Learn more <em>&raquo;</em></a></p>
+        <p>We are looking for talented people who are driven to find innovative scientific and technology solutions for managing risk. <a href="/careers">Learn more <em>&raquo;</em></a></p>
       </li>
       <li>
         <h4>Understanding Version 11.0</h4>
