@@ -2353,6 +2353,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   color:                #d4d9e2;
   font-size:            108%;
   line-height:          153.9%;
+  white-space:          nowrap;
 }
 #home #ribbon ul li p a em {
   color:                #d4d9e2;
