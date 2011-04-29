@@ -46,16 +46,13 @@
       <ul class="sn careers">
         <li class="clearfix">
           <div class="subnavLt">
-            <h3>Meet Us</h3>
-            <img src="/img/gnav/careers_meet_us.jpg" class="gnavImg" alt="Meet Us" />
-            <a href="http://www.flickr.com/photos/62162353@N04/" class="cta">See More Photos on Flickr</a>
+            <img src="/img/gnav/about_lobby.jpg" class="gnavImg" alt="About RMS" />
           </div>
           <div class="subnavRt">
             <h3>About RMS</h3>
             <ul class="snavItems">
               <li><a href="/about" title="About: Our Story">Our Story</a></li>
-              <li><a href="/contact.asp#offices" title="About: Offices">Offices</a></li>
-              <li><a href="/contact.asp" title="About: Contact">Contact</a></li>
+              <li><a href="/contact.asp" title="About: Offices & Contact">Offices &amp; Contact</a></li>
             </ul>
           </div>
         </li>
