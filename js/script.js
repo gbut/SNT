@@ -1975,6 +1975,7 @@ $(document).ready(function(){
       this.container.find('dl').each(function() {
         $(this).click(function() {
 
+          $('.bio .nav a').removeClass('disable'); // reset links
           self.setBioSelected($(this));
 
           if (!$('.bio').height()) {
