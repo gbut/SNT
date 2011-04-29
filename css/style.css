@@ -3896,6 +3896,10 @@ textarea.error {
   left:                 12px;
   z-index:              2;
 }
+.ie7 #contact #clocks,
+.ie8 #contact #clocks {
+ display:               none;
+}
 
 #contact #clocks a {
   font-size:            85%;
@@ -3924,6 +3928,10 @@ textarea.error {
   -ms-filter:           "alpha(opacity=65)";
   filter:               alpha(opacity=65);
   opacity:              0.65;
+}
+.ie7 #map .mask,
+.ie8 #map .mask {
+  display:              none;
 }
 
 #contact #markers {
