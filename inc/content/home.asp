@@ -14,16 +14,16 @@
   <div class="inner">
     <ul class="wrapper clearfix">
       <li>
-        <h4>Join a Team of Big Thinkers</h4>
-        <p>Exputo odio commodo tego quis, ex validus nobis. Quidne proprius lenis capiolest mite ullamcorper quia illum refoveo. <a href="#">More <em>&raquo;</em></a></p>
-      </li>
-      <li>
         <h4>Our Work Speaks for Itself</h4>
-        <p>Exputo odio commodo tego quis, ex validus nobis. Quidne proprius lenis capiolest mite ullamcorper quia illum refoveo. <a href="#">More <em>&raquo;</em></a></p>
+        <p>For over 20 years, RMS has worked to educate the world about risk and provide critical solutions to financial institutions. <a href="/careers/craft">Read our story <em>&raquo;</em></a></p>
       </li>
       <li>
-        <h4>Begin today. Start tomorrow.</h4>
-        <p>Exputo odio commodo tego quis, ex validus nobis. Quidne proprius lenis capiolest mite ullamcorper quia illum refoveo. <a href="#">More <em>&raquo;</em></a></p>
+        <h4>Join a Team of Big Thinkers</h4>
+        <p>We are looking for talented people who are driven to find innovative scientific and technology solutions for managing risk. <a href="/careers">Learn more <em>&raquo;</em></a></p>
+      </li>
+      <li>
+        <h4>Understanding Version 11.0</h4>
+        <p>RMS is actively working to help clients manage implementation of the new v11.0 models into their business. <a href="#">Client login <em>&raquo;</em></a></p>
       </li>
     </ul>
   </div>

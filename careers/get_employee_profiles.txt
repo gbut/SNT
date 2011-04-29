@@ -1,6 +1,6 @@
 [
 {
-"fullname":"Vee Meharu",
+"fullname":"Vee",
 "position":"Director, Information Technology",
 "location":"Newark, CA",
 "img_src":"/img/team/alt/usa.jpg",
@@ -8,7 +8,7 @@
 },
 
 {
-"fullname":"Alexis Phillips",
+"fullname":"Alexis",
 "position":"Sr. Analyst",
 "location":"Hoboken, NJ",
 "img_src":"/img/team/alt/nj_alexis_phillips_alt.jpg",
@@ -16,7 +16,7 @@
 },
 
 {
-"fullname":"Yvette Encarnacion",
+"fullname":"Yvette",
 "position":"Director, Human Resources",
 "location":"Hoboken, NJ",
 "img_src":"/img/team/alt/usa.jpg",
@@ -24,7 +24,7 @@
 },
 
 {
-"fullname":"Dag Lohmann",
+"fullname":"Dag",
 "position":"VP, Model Development",
 "location":"Newark",
 "img_src":"/img/team/alt/newark_dag_lohmann_alt.jpg",
@@ -32,7 +32,7 @@
 },
 
 {
-"fullname":"Emily Grover&shy;Kopec",
+"fullname":"Emily",
 "position":"Sr. Consultant",
 "location":"Hoboken, NJ",
 "img_src":"/img/team/alt/nj_emily_grover-kopec_alt.jpg",
@@ -40,7 +40,7 @@
 },
 
 {
-"fullname":"Jenita Rabadia",
+"fullname":"Jenita",
 "position":"Lead Technical Consultant",
 "location":"London, UK",
 "img_src":"/img/team/alt/uk.jpg",
@@ -48,7 +48,7 @@
 },
 
 {
-"fullname":"Rebecca Morris",
+"fullname":"Rebecca",
 "position":"Associate Product Manager",
 "location":"Newark, CA",
 "img_src":"/img/team/alt/newark_rebecca_morris_alt.jpg",
@@ -56,7 +56,7 @@
 },
 
 {
-"fullname":"Thomas Sabbatelli",
+"fullname":"Thomas",
 "position":"Sr. Account Associate",
 "location":"Hoboken, NJ",
 "img_src":"/img/team/alt/nj_thomas_sabbatelli_alt.jpg",
@@ -64,7 +64,7 @@
 },
 
 {
-"fullname":"Margaret Keelan",
+"fullname":"Margaret",
 "position":"Director, Human Resources",
 "location":"London, UK",
 "img_src":"/img/team/alt/uk.jpg",
@@ -72,7 +72,7 @@
 },
 
 {
-"fullname":"Brandon Katz",
+"fullname":"Brandon",
 "position":"Sr. Flood Modeler",
 "location":"Newark, CA",
 "img_src":"/img/team/alt/newark_brandon_katz_alt.jpg",
@@ -80,7 +80,7 @@
 },
 
 {
-"fullname":"Veronique Bruggeman",
+"fullname":"Veronique",
 "position":"Product Manager, Model Product Management",
 "location":"London, UK",
 "img_src":"/img/team/alt/london_veronique_bruggeman_alt.jpg",
@@ -88,7 +88,7 @@
 },
 
 {
-"fullname":"Tong Zhu",
+"fullname":"Tong",
 "position":"Director, Platform Services",
 "location":"Newark, CA",
 "img_src":"/img/team/alt/newark_tong_zhu_alt.jpg",
@@ -96,7 +96,7 @@
 },
 
 {
-"fullname":"Ben Brookes",
+"fullname":"Ben",
 "position":"Director, Risk Markets",
 "location":"London, UK",
 "img_src":"/img/team/alt/uk.jpg",
@@ -104,7 +104,7 @@
 },
 
 {
-"fullname":"Nereida Lark",
+"fullname":"Nereida",
 "position":"Sr. Project Manager",
 "location":"Newark, CA",
 "img_src":"/img/team/alt/newark_nereida_lark_alt.jpg",
@@ -112,7 +112,7 @@
 },
 
 {
-"fullname":"Toni Colville",
+"fullname":"Toni",
 "position":"Talent Acquisition Coordinator",
 "location":"London, UK",
 "img_src":"/img/team/alt/uk.jpg",
@@ -120,7 +120,7 @@
 },
 
 {
-"fullname":"Rob Bentley",
+"fullname":"Rob",
 "position":"Chief Operating Officer",
 "location":"Hoboken, NJ",
 "img_src":"/img/team/alt/nj_rob_bentley_alt.jpg",
@@ -128,7 +128,7 @@
 },
 
 {
-"fullname":"Yvonne Cammorto",
+"fullname":"Yvonne",
 "position":"Administrative Assistant",
 "location":"Hoboken, NJ",
 "img_src":"/img/team/alt/nj_yvonne_cammorto_alt.jpg",
@@ -136,7 +136,7 @@
 },
 
 {
-"fullname":"Komal Patel",
+"fullname":"Komal",
 "position":"Marketing Communications Manager",
 "location":"Newark, CA",
 "img_src":"/img/team/alt/newark_komal_patel_alt.jpg",
@@ -144,7 +144,7 @@
 },
 
 {
-"fullname":"Willie Smalls",
+"fullname":"Willie",
 "position":"Analyst",
 "location":"Hoboken, NJ",
 "img_src":"/img/team/alt/usa.jpg",
@@ -152,7 +152,7 @@
 },
 
 {
-"fullname":"Chau Chavez",
+"fullname":"Chau",
 "position":"Assistant Controller",
 "location":"Newark, CA",
 "img_src":"/img/team/alt/newark_chau_chavez_alt.jpg",
@@ -160,7 +160,7 @@
 },
 
 {
-"fullname":"Kevin Cei",
+"fullname":"Kevin",
 "position":"Consultant",
 "location":"Hoboken, NJ",
 "img_src":"/img/team/alt/nj_kevin_cei_alt.jpg",
@@ -168,7 +168,7 @@
 },
 
 {
-"fullname":"Vikram Patankar",
+"fullname":"Vikram",
 "position":"Lead Software Engineer",
 "location":"Newark, CA",
 "img_src":"/img/team/alt/usa.jpg",
@@ -176,7 +176,7 @@
 },
 
 {
-"fullname":"Sheriene Hancock",
+"fullname":"Sheriene",
 "position":"Personal Assistant",
 "location":"London, UK",
 "img_src":"/img/team/alt/uk.jpg",
@@ -184,7 +184,7 @@
 },
 
 {
-"fullname":"Cassandra Brew",
+"fullname":"Cassandra",
 "position":"Executive Assistant",
 "location":"Newark, CA",
 "img_src":"/img/team/alt/newark_cassandra_brew_alt.jpg",
@@ -192,7 +192,7 @@
 },
 
 {
-"fullname":"Arno Hilberts",
+"fullname":"Arno",
 "position":"Director, Model Development",
 "location":"London, UK",
 "img_src":"/img/team/alt/london_arno_hilberts_alt.jpg",
