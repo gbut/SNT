@@ -117,7 +117,7 @@
       <div class="divider"></div>
       <div class="mapviewer"></div>
       <a href="#" title="Close" class="close">X</a>
-      <div class="mask"></div>
+      <div class="frame"></div>
     </div>
   </div>
 

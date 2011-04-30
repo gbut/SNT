@@ -1955,7 +1955,7 @@ $(document).ready(function(){
     var defaults = {
       bioHt:      140
     };
-
+    
     /**
      * The leaderBio object.
      *
