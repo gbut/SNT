@@ -1933,6 +1933,7 @@ aside .benefit .subtext {
   line-height:          90%;
   color:                #586976;
   text-transform:       uppercase;
+  margin-top:           4px;
 }
 aside .benefit2 {
   font:                 normal 135%/150% Arial, Helvetica, sans-serif;
