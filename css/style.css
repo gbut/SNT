@@ -3832,6 +3832,7 @@ textarea.error {
 
 #contact #map {
   height:               422px;
+  margin-bottom:        10px;
   position:             relative;
   background:           #000;
 }
@@ -3840,7 +3841,6 @@ textarea.error {
   margin:               0 auto;
 }
 #contact #offices {
-  margin:               10px 0 0;
   padding:              0 5px 10px;
   border:               1px solid #b2b2b2;
   background:           #fff;
@@ -3943,54 +3943,6 @@ textarea.error {
   opacity:              0.80;
 }
 
-/* mercator
-** need to adjust following change to full width map  - left +24? **
-#contact #markers .newark {
-  left:                 120px;
-  top:                  140px;
-}
-#contact #markers .peoria {
-  left:                 200px;
-  top:                  137px;
-}
-#contact #markers .bloomington {
-  left:                 190px;
-  top:                  130px;
-}
-#contact #markers .hackensack {
-  left:                 235px;
-  top:                  135px;
-}
-#contact #markers .bermuda {
-  left:                 248px;
-  top:                  160px;
-}
-#contact #markers .london {
-  left:                 424px;
-  top:                  97px;
-}
-#contact #markers .paris {
-  left:                 432px;
-  top:                  114px;
-}
-#contact #markers .zurich {
-  left:                 450px;
-  top:                  110px;
-}
-#contact #markers .noida {
-  left:                 622px;
-  top:                  167px;
-}
-#contact #markers .beijing {
-  left:                 720px;
-  top:                  135px;
-}
-#contact #markers .tokyo {
-  left:                 780px;
-  top:                  145px;
-}
-*/
-
 /* mollweide */
 #contact #markers .newark {
   left:                 217px;
@@ -4001,7 +3953,6 @@ textarea.error {
   top:                  103px;
 }
 #contact #markers .bloomington {
-/*  left:                 258px;*/
   left:                 249px;
   top:                  94px;
 }
@@ -4015,22 +3966,16 @@ textarea.error {
   background-position:  0 -18px;
 }
 #contact #markers .london {
-/*()  left:                 458px;
-  top:                  69px;*/
   left:                 450px;
   top:                  68px;
   background-position:  0 -54px;
 }
 #contact #markers .paris {
-/*  left:                 465px;
-  top:                  79px;*/
   left:                 461px;
   top:                  84px;
   background-position:  0 -72px;
 }
 #contact #markers .zurich {
-/*  left:                 474px;
-  top:                  76px;*/
   left:                 478px;
   top:                  77px;
   background-position:  0 -90px;
@@ -4116,11 +4061,12 @@ textarea.error {
   display:              none;
 }
 
-#contact #popup .mask {
+#contact #popup .frame {
   width:                294px;
   height:               133px;
   position:             absolute;
   top:                  0;
+  left:                 0;
   border:               10px solid #fff;
   background:           #000;
   -moz-opacity:         .60;
@@ -4217,6 +4163,11 @@ textarea.error {
   top:                  -16px;
   z-index:              10;
 }
+/* button being cut off in ie7 for some inexplicable reason - position it within the container */
+.ie7 #contact #popup .close {
+  right:                -4px;
+  top:                  -4px;
+}
 
 #mapviewers {
   display:              none;
@@ -4238,6 +4189,9 @@ textarea.error {
 
 .mapviewer .maplinks a.largerMap {
   margin-right:         12px;
+}
+.ie7 .mapviewer .maplinks a.largerMap {
+  margin-right:         8px;
 }
 
 /* / Form pages: Job Apply & Contact */

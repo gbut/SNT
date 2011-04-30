@@ -2,13 +2,13 @@
 <nav>
   <ul class="sf-menu clearfix">
     <li class="hasSn">
-      <a href="/risk" class="pn" title="Models"><span class="tl">Models</span></a>
+      <a href="/models" class="pn" title="Models"><span class="tl">Models</span></a>
       <ul class="sn risk">
         <li class="clearfix">
           <div class="subnavLt">
             <ul class="snavItems">
               <li>
-                <a href="/risk" class="clearfix" title="Models: Overview">
+                <a href="/models" class="clearfix" title="Models: Overview">
                   <h4>Overview</h4>
                   <p>Learn about the science and impact of our industry-leading models</p>
                 </a>
@@ -20,7 +20,7 @@
                 </a>
               </li>
               <li>
-                <a href="/info" class="clearfix" title="Models: Catastrophe Updates">
+                <a href="/news" class="clearfix" title="Models: Catastrophe Updates">
                   <h4>Catastrophe Updates</h4>
                   <p>The latest news on natural catastrophes across the globe</p>
                 </a>
@@ -39,7 +39,7 @@
       <a href="/nextgen" class="pn" title="Next Gen"><span class="tl">Next Gen</span></a>
     </li>
     <li>
-      <a href="/info" class="pn" title="News"><span class="tl">News</span></a>
+      <a href="/news" class="pn" title="News"><span class="tl">News</span></a>
     </li>
     <li class="hasSn">
       <a href="/about" class="pn" title="About"><span class="tl">About</span></a>

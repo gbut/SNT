@@ -144,26 +144,26 @@
 
                   <!-- + Media 1 -->
                   <div id="ike-1" class="clearfix">
-                    <img src="/img/risk/ike-1.jpg" alt="" />
+                    <img src="/img/models/ike-1.jpg" alt="" />
                     <!-- <div class="vidTitle"><span>[video title]</span><span class="bg"></span></div> --><!-- << INCLUDE FOR VIDEOS ONLY -->
                   </div>
                   <!-- / Media 1 -->
 
                   <!-- + Media 2 -->
                   <div id="ike-2" class="clearfix ui-tabs-hide">
-                    <img src="/img/risk/ike-2.jpg" alt="" />
+                    <img src="/img/models/ike-2.jpg" alt="" />
                   </div>
                   <!-- / Media 2 -->
 
                   <!-- + Media 3 -->
                   <div id="ike-3" class="clearfix ui-tabs-hide">
-                    <img src="/img/risk/ike-3.jpg" alt="" />
+                    <img src="/img/models/ike-3.jpg" alt="" />
                   </div>
                   <!-- / Media 3 -->
 
                   <!-- + Media 4 -->
                   <div id="ike-4" class="clearfix ui-tabs-hide">
-                    <img src="/img/risk/ike-4.jpg" alt="" />
+                    <img src="/img/models/ike-4.jpg" alt="" />
                   </div>
                   <!-- / Media 4 -->
                 </div>
@@ -176,7 +176,7 @@
               </div>
               <div class="rt">
           
-                <img src="/img/risk/ike-map.png" alt="" />
+                <img src="/img/models/ike-map.png" alt="" />
                 <dl>
                   <dt>Formed:</dt><dd>September 1, 2008</dd>
                   <dt>Dissipated:</dt><dd>September 14, 2008</dd>
@@ -208,26 +208,26 @@
 
                   <!-- + Media 1 -->
                   <div id="haiti-1" class="clearfix">
-                    <img src="/img/risk/haiti-1.jpg" alt="" />
+                    <img src="/img/models/haiti-1.jpg" alt="" />
                     <!-- <div class="vidTitle"><span>[video title]</span><span class="bg"></span></div> --><!-- << INCLUDE FOR VIDEOS ONLY -->
                   </div>
                   <!-- / Media 1 -->
 
                   <!-- + Media 2 -->
                   <div id="haiti-2" class="clearfix ui-tabs-hide">
-                    <img src="/img/risk/haiti-2.jpg" alt="" />
+                    <img src="/img/models/haiti-2.jpg" alt="" />
                   </div>
                   <!-- / Media 2 -->
 
                   <!-- + Media 3 -->
                   <div id="haiti-3" class="clearfix ui-tabs-hide">
-                    <img src="/img/risk/haiti-3.jpg" alt="" />
+                    <img src="/img/models/haiti-3.jpg" alt="" />
                   </div>
                   <!-- / Media 3 -->
 
                   <!-- + Media 4 -->
                   <div id="haiti-4" class="clearfix ui-tabs-hide">
-                    <img src="/img/risk/haiti-4.jpg" alt="" />
+                    <img src="/img/models/haiti-4.jpg" alt="" />
                   </div>
                   <!-- / Media 4 -->
                 </div>
@@ -240,7 +240,7 @@
               </div>
               <div class="rt">
           
-                <img src="/img/risk/haiti-map.png" alt="" />
+                <img src="/img/models/haiti-map.png" alt="" />
                 <dl>
                   <dt>Magnitude:</dt><dd>7.0 M<sub>w</sub></dd>
                   <dt>Depth:</dt><dd>13 kilometres (8.1 mi)</dd>
@@ -273,26 +273,26 @@
 
                   <!-- + Media 1 -->
                   <div id="supercat-1" class="clearfix">
-                    <img src="/img/risk/supercat-1.jpg" alt="" />
+                    <img src="/img/models/supercat-1.jpg" alt="" />
                     <!-- <div class="vidTitle"><span>[video title]</span><span class="bg"></span></div> --><!-- << INCLUDE FOR VIDEOS ONLY -->
                   </div>
                   <!-- / Media 1 -->
 
                   <!-- + Media 2 -->
                   <div id="supercat-2" class="clearfix ui-tabs-hide">
-                    <img src="/img/risk/supercat-2.jpg" alt="" />
+                    <img src="/img/models/supercat-2.jpg" alt="" />
                   </div>
                   <!-- / Media 2 -->
 
                   <!-- + Media 3 -->
                   <div id="supercat-3" class="clearfix ui-tabs-hide">
-                    <img src="/img/risk/supercat-3.jpg" alt="" />
+                    <img src="/img/models/supercat-3.jpg" alt="" />
                   </div>
                   <!-- / Media 3 -->
 
                   <!-- + Media 4 -->
                   <div id="supercat-4" class="clearfix ui-tabs-hide">
-                    <img src="/img/risk/supercat-4.jpg" alt="" />
+                    <img src="/img/models/supercat-4.jpg" alt="" />
                   </div>
                   <!-- / Media 4 -->
                 </div>
@@ -305,7 +305,7 @@
               </div>
               <div class="rt">
           
-                <img src="/img/risk/supercat-map.png" alt="" />
+                <img src="/img/models/supercat-map.png" alt="" />
                 <dl>
                   <dt>Formed:</dt><dd>August 23, 2005</dd>
                   <dt>Dissipated:</dt><dd>August 30, 2005</dd>
@@ -351,13 +351,13 @@
             </p>
           </div>
           <div class="col3">
-            <img src="/img/risk/terrorism-networks.gif" alt="" />
+            <img src="/img/models/terrorism-networks.gif" alt="" />
             <p class="caption">Vivamus agittis lacus vel augue.</p>
 
-            <img src="/img/risk/terrorism-domestic-threats.gif" alt="" />
+            <img src="/img/models/terrorism-domestic-threats.gif" alt="" />
             <p class="caption">Vivamus agittis lacus vel augue.</p>
 
-            <img src="/img/risk/terrorism-manhattan.jpg" alt="" />
+            <img src="/img/models/terrorism-manhattan.jpg" alt="" />
             <p class="caption">Vivamus agittis lacus vel augue.</p>
           </div>
         </section>
@@ -376,7 +376,7 @@
             <p><cite>[Right: In the influenza pandemic of 1918, large numbers of people were treated in temporary wards. A future pandemic could similarly overwhelm healthcare providers, insurers, and local and federal governments.]</cite></p>
           </div>
           <div class="col3">
-            <img src="/img/risk/longevity-pandemic.jpg" alt="Influenza Pandemic of 1918" />
+            <img src="/img/models/longevity-pandemic.jpg" alt="Influenza Pandemic of 1918" />
             <!-- <p class="caption">In the influenza pandemic of 1918, large numbers of people were treated in temporary wards. A future pandemic could similarly overwhelm healthcare providers, insurers, and local and federal governments.</p> -->
           </div>
         </section>
@@ -384,17 +384,17 @@
         <section class="clearfix">
           <h3>Longevity Models</h3>
           <div class="col3">
-            <img src="/img/risk/longevity-liabilities-chart.jpg" alt="Chart: Annuities Liability Exceedance Probability" />
+            <img src="/img/models/longevity-liabilities-chart.jpg" alt="Chart: Annuities Liability Exceedance Probability" />
             <h5>Industry-shaping models for longevity and health</h5>
             <p>RMS longevity and mortality models help a wide range of industries and government agencies maintain the appropriate financial infrastructure and societal response mechanisms for today's probable injury, illness, or death scenarios. Based on a wide variety of scientific drivers and inputs, our models take into account infectious diseases, natural catastrophes, and terrorist attacks as well as individual lifestyle choices and medical and scientific breakthroughs that can affect current or future longevity trends.</p>
           </div>
           <div class="col3">
-            <img src="/img/risk/longevity-timeline.jpg" alt="Chart: Mortality Improvement Over Time" />
+            <img src="/img/models/longevity-timeline.jpg" alt="Chart: Mortality Improvement Over Time" />
             <h5>Superior analytics from our specialized team</h5>
             <p>A specialized team of experienced modelers, medical specialists and analysts, biological mathematicians, and health statisticians, together with experts in a variety of other fields, collaborate to ensure RMS life and health models lead the world in innovative analytics. We take into account the latest epidemiological studies, clinical trial data, and medical models to provide state-of-the-art knowledge and insight. Our models include changes in lifestyle and resulting risk factors such as smoking, diet, obesity, and general attitudes to health, together with improvements in medical care, drug development, and treatments.</p>
           </div>
           <div class="col3">
-            <img src="/img/risk/longevity-drug-development.gif" alt="Chart: Drug Development by the US FDA" />
+            <img src="/img/models/longevity-drug-development.gif" alt="Chart: Drug Development by the US FDA" />
             <h5>Projecting the impact of breakthrough medical technologies</h5>
             <p>To quantify probabilities related to breakthroughs in medical science, RMS catalogs current medical research and investment in the biosciences, tracks thousands of drugs currently in the pipeline for FDA approval, and projects social changes in lifestyle risk factors and healthcare treatment patterns. The resulting model provides a timeline estimate for probable improvements in lifespan due to advances in medical technologies.</p>
           </div>
