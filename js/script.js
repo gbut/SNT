@@ -1364,22 +1364,25 @@ $(document).ready(function(){
     });
 */
     var exitLogin = function(e){
+      //alert('body clicked');
 			var clicked = $(e.target);
 			if ((clicked.attr('id')=='btnClientLoginHome') || (clicked.attr('id')=='login') || clicked.closest('#login').length) return true;
       $('#btnClientLogin').triggerHandler('click');
+  	  e.stopPropagation();
     };
 		$('body').prepend($('<div id="loginOverlay"></div>'));
   	$('#btnClientLogin').click(function(e){
   	  if ($('#login').hasClass('open')) {
     	  $('#loginOverlay').animate({opacity:0}, 150, function(){ $(this).hide(); });
     	  $('#login').removeClass('open');
-    	  $('body').unbind('click', exitLogin);
+    	  $('body, #loginOverlay').unbind('click', exitLogin);
   	  } else {
     	  $('#loginOverlay').show().animate({opacity:0.72}, 150);
     	  $('#login').addClass('open');
     	  $('#form_login input[type=text]').eq(0).focus();
-    	  $('body').bind('click', exitLogin);
+    	  $('body, #loginOverlay').bind('click', exitLogin);
   	  }
+  	  e.stopPropagation();
   	  e.preventDefault();
   	});
   	// client login button at bottom of home page
