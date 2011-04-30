@@ -26,7 +26,7 @@ License:
 	*/
 	var bgImageSize = {
 		width	: 1248,
-		height	: 943,
+		height	: 733,
 		bg  : $('#home')
 	};
 	
