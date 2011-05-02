@@ -52,7 +52,7 @@
             <h3>About RMS</h3>
             <ul class="snavItems">
               <li><a href="/about" title="About: Our Story">Our Story</a></li>
-              <li><a href="/contact.asp" title="About: Offices & Contact">Offices &amp; Contact</a></li>
+              <li><a href="/about/contact.asp" title="About: Offices & Contact">Offices &amp; Contact</a></li>
             </ul>
           </div>
         </li>
