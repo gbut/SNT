@@ -1984,10 +1984,19 @@ $(document).ready(function(){
       
       // attach behavior
       this.container.find('dl').each(function() {
+        $(this).hover(
+          function() {
+            self.setBioSelected($(this));
+          },
+          function() {
+            self.unsetBioSelected($(this));
+          }
+        );
+        
         $(this).click(function() {
 
           $('.bio .nav a').removeClass('disable'); // reset links
-          self.setBioSelected($(this));
+          //self.setBioSelected($(this));
 
           if (!$('.bio').height()) {
             // first click; no bio displayed yet
@@ -2095,8 +2104,13 @@ $(document).ready(function(){
     $lb.fn.extend({
 
       setBioSelected: function(obj) {
-        $('dl').children('.img1').children().hide().end().children(':first-child').show();
+//        $('dl').children('.img1').children().hide().end().children(':first-child').show();
         obj.children('.img1').children().hide().end().children(':last-child').show();
+      },
+
+      unsetBioSelected: function(obj) {
+//        $('dl').children('.img1').children().hide().end().children(':first-child').show();
+        obj.children('.img1').children().hide().end().children(':first-child').show();
       },
 
       setBioIndicator: function(obj, animate) {
