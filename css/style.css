@@ -684,6 +684,13 @@ aside section .btnApply {
 aside section .btnApply {
   padding-right:        19px;
 }
+aside section.chat {
+  padding:              16px;
+}
+aside section.chat .btn {
+  display:              block;
+  margin:               0 auto;
+}
 
 /* / Buttons */
 
@@ -1762,7 +1769,13 @@ a.close:active {
   display:              block;
 }
 
-/* keyword search */
+#job_search .btn {
+  position:             absolute;
+  right:                49px;
+  top:                  14px;
+}
+
+/* keyword search
 #job_search form input{
   width:                290px;
   -webkit-border-radius:2px;
@@ -1780,6 +1793,7 @@ a.close:active {
   margin:               0 0 7px;
   float:                none;
 }
+*/
 
 #job_search form select {
   font-size:            16px; /* ** to do: browser diffs */

@@ -37,7 +37,7 @@
     
   </section>
   
-  <section>
+  <section class="chat">
     <a href="/careers/chat" class="btn btnLgDark">Chat with us</a>
   </section>
   
