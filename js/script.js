@@ -1913,6 +1913,15 @@ $(document).ready(function(){
   }
   
   //===============================================
+  //  Height handling for template t01a (Craft detail)
+  //===============================================
+
+  if ($('body').hasClass('t01a')) {
+    $('body').height($('#content').outerHeight(true) + $('footer').outerHeight(true));
+    $('#craftDetail .mask').height($('#content').outerHeight(true));
+  }
+  
+  //===============================================
   //  Form validation
   //===============================================
 
