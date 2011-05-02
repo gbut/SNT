@@ -1364,7 +1364,6 @@ $(document).ready(function(){
     });
 */
     var exitLogin = function(e){
-      //alert('body clicked');
 			var clicked = $(e.target);
 			if ((clicked.attr('id')=='btnClientLoginHome') || (clicked.attr('id')=='login') || clicked.closest('#login').length) return true;
       $('#btnClientLogin').triggerHandler('click');

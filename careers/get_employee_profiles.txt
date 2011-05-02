@@ -3,7 +3,7 @@
 "fullname":"Vee",
 "position":"Director, Information Technology",
 "location":"Newark, CA",
-"img_src":"/img/team/alt/usa.jpg",
+"img_src":"/img/team/alt/newark_vee_meharu_alt.jpg",
 "biography":{"#cdata-section":"<h6>If I could have only one meal for the rest of my life...</h6><p>Spicy Chicken Curry with Naan.</p><h6>Secret Talent...</h6><p>I am an accomplished DJ and have put on shows with many well known recording artists.</p>"}
 },
 
