@@ -220,6 +220,9 @@ body.t01a {
   -moz-background-size: cover;
   -webkit-background-size: cover;
 }
+body.t01a {
+  margin-top:           77px;
+}
 
 a {
   text-decoration:      none;
@@ -4222,6 +4225,7 @@ textarea.error {
 
 #craftDetail.craft {
   height:               auto;
+  margin-top:           0;
 }
 
 body#craftIndex {
@@ -4254,15 +4258,14 @@ body#craft04 {
 
 #craftDetail .mask {
   width:                718px;
-  height:               840px;
   position:             absolute;
   left:                 -40px;
-  top:                  -42px;
+  top:                  0;
   background:           #000;
-  -moz-opacity:         .30;
-  -ms-filter:           "alpha(opacity=30)";
-  filter:               alpha(opacity=30);
-  opacity:              .30;
+  -moz-opacity:         .60;
+  -ms-filter:           "alpha(opacity=60)";
+  filter:               alpha(opacity=60);
+  opacity:              .60;
 }
 
 .craft section {
@@ -4271,6 +4274,7 @@ body#craft04 {
 }
 #craftDetail section {
   width:                638px;
+  padding-bottom:       30px;
 }
 
 #craftDetail section .hd {
