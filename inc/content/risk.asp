@@ -3,7 +3,6 @@
 
   <div class="hd">
     <h2>Educating the World <em>About Risk</em></h2>
-    <!-- <h3>A Global Approach to Understanding Risk</h3> -->
     <p>As a pioneer of catastrophe risk modeling, RMS leads the market and sets the standard for quantifying risk around the world. Our leading-edge risk models help people understand the potential physical and financial impacts of natural catastrophes such as earthquakes and hurricanes, human threats such as potential terrorist attacks, and risks associated with changes in life expectancy and sudden loss of life.</p>
   </div>
   

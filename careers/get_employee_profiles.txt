@@ -100,7 +100,7 @@
 "position":"Director, Risk Markets",
 "location":"London, UK",
 "img_src":"/img/team/alt/uk.jpg",
-"biography":{"#cdata-section":"<h6></h6><p>.</p><h6></h6><p>.</p>"}
+"biography":{"#cdata-section":"<h6>Favorite phrase...</h6><p>\"If at first you don't succeed, remove all evidence you ever tried...\"</p><h6>Interesting fact...</h6><p>Can ride a unicycle.</p>"}
 },
 
 {
@@ -116,7 +116,7 @@
 "position":"Talent Acquisition Coordinator",
 "location":"London, UK",
 "img_src":"/img/team/alt/uk.jpg",
-"biography":{"#cdata-section":"<h6></h6><p>.</p><h6></h6><p>.</p>"}
+"biography":{"#cdata-section":"<h6>My first car was...</h6><p>Battery powered Barbie Jeep when I was 6&mdash;I don't drive so it's as close as I got to owning a car.</p><h6>Pet peeve...</h6><p>People who stand at the bottom of escalators whilst deciding which way they want to go.</p>"}
 },
 
 {
