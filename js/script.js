@@ -214,7 +214,6 @@ $(document).ready(function(){
       this.people.children().each(function(i){
         var w = $(this).find('img').width();
         $(this).find('a').css('width', w);
-        console.log(w);
         self.montageW += w;
       });
       this.panelRange         = this.montageW - this.winW;
@@ -1309,7 +1308,6 @@ $(document).ready(function(){
 
         // update map
         var fadeUp = function(){
-          console.log('fadeUp');
           var obj = o;
           var p = peril;
           $.each(obj.perils[p].set, function(){
@@ -1698,6 +1696,7 @@ $(document).ready(function(){
       });
       $('.vidCont').tabs({
         selected: 0,
+        fx: { opacity:'toggle', duration:400 },
         create: function(e, ui) {
           var nav = $(e.target).find('ul.nav');
           if (!$(nav).children().length) {
@@ -1706,6 +1705,7 @@ $(document).ready(function(){
           } else if ($(nav).children().length == 1) {
             $(nav).remove();
           }
+          $(e.target).tabs('rotate', 5000);
         }
       });
     },

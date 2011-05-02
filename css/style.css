@@ -2899,13 +2899,11 @@ body.isHome footer {
   margin-bottom:        24px;
 }
 #risk .col3double .imgLt img {
-  background:orange;
   margin:               0 16px 10px 0;
   float:                left;
   display:              inline;
 }
 #risk .col3double .imgRt img {
-  background:orange;
   margin:               0 0 10px 16px;
   float:                right;
   display:              inline;
@@ -2945,7 +2943,7 @@ body.isHome footer {
 /* + Next Gen */
 
 #nextgen section {
-  margin-bottom:        12px;
+  margin-bottom:        24px;
   padding:              0 20px;
 }
 
