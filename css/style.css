@@ -2212,6 +2212,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #home .hd h2 {
   float:                right;
   clear:                both;
+  display:              none;
 }
 
 #home .hd h3 {

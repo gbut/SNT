@@ -988,7 +988,8 @@ $(document).ready(function(){
       this.header             = $('header');
       this.footer             = $('footer');
 
-      // attach behaviors
+      // show headline; attach behaviors
+      this.hdLine.fadeIn(200);
       this.t = window.setTimeout(function(){ self.reveal(); }, 1500);
       
     };
@@ -1040,8 +1041,6 @@ $(document).ready(function(){
     });
 
   })(jQuery);
-
-  if ($('#home').length) $('#home').rmsHome();
 
 
 	//===============================================
@@ -2257,11 +2256,12 @@ $(document).ready(function(){
 
 
 /**
- * Team montage only works when all images are loaded (webkit).
+ * Webkit requires all images be loaded before the following animations begin.
  */
-$(window).load(
-  function() { if ($('#team').length) $('#team').teamPhoto(); }
-);
+$(window).load(function(){
+  if ($('#home').length) $('#home').rmsHome();
+  if ($('#team').length) $('#team').teamPhoto();
+});
 
 
 /**
