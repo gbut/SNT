@@ -336,7 +336,7 @@
               <strong>Terrorism has blighted human experience for centuries. Seemingly as random and unpredictable as natural disasters,</strong> terrorist attacks defy understanding. What can be done to prepare for a catastrophic terrorist act? What can we do to better understand how and where they might occur, and what sort of impact they might have?
             </p>
             <p class="imgLt clearfix">
-              <img src="/img/photo_gwoo.jpg" alt="" />
+              <img src="/img/models/terrorism-gwoo-cover.jpg" alt="Gordon Woo" />
               <strong>A new, systematic approach to understanding terrorism</strong><br />
               RMS mathematician Gordon Woo saw a way to begin answering these questions. The means&mdash;whether bomb, biological weapon, chemical weapon, or other mode of attack&mdash;would tend to be the most readily available and accessible. Those probabilities could be modeled by conventional means. The targets would be the most visible with the highest psychological value&mdash;again, a quantifiable aspect of the problem. The final variable was human nature itself. The strategic decision to commit a terrorist act would be the culmination of a series of other strategic decisions. No amount of historical data could account for that; there was no way to quantify capricious human impulse. Or was there?
             </p>
@@ -350,14 +350,14 @@
             </p>
           </div>
           <div class="col3">
-            <img src="/img/models/terrorism-networks.gif" alt="" />
-            <p class="caption">Vivamus agittis lacus vel augue.</p>
+            <img src="/img/models/terrorism-networks.jpg" alt="Terrorism networks" />
+            <p class="caption">Some terrorist networks operate as independent cells that are geographically spread but swarm in for coordinated attacks.</p>
 
-            <img src="/img/models/terrorism-domestic-threats.gif" alt="" />
-            <p class="caption">Vivamus agittis lacus vel augue.</p>
+            <img src="/img/models/terrorism-domestic-threats.gif" alt="Domestic terrorism threats" />
+            <p class="caption">RMS quantifies risk across a spectrum of terrorism attacks, from both domestic and foreign terrorist groups.</p>
 
-            <img src="/img/models/terrorism-manhattan.jpg" alt="" />
-            <p class="caption">Vivamus agittis lacus vel augue.</p>
+            <img src="/img/models/terrorism-manhattan.jpg" alt="Truck bomb simulation" />
+            <p class="caption">Truck bomb simulation in the financial district of Manhattan</p>
           </div>
         </section>
 
