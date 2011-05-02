@@ -2191,8 +2191,8 @@ $(document).ready(function(){
    * Quote, Photo (upward slant), Photo (downward slant), Benefit
    */
 
-  photo_up_total = 9;
-  photo_dn_total = 5;
+  photo_up_total = 10;
+  photo_dn_total = 10;
 
   // Quote
   if ($('aside .quote').length) {
