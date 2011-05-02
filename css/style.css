@@ -3704,7 +3704,7 @@ textarea.error {
 }
 
 #job_apply label[generated],
-#contact  label[generated] {
+#contact label[generated] {
   line-height:          240%;
   color:                #6f0d24;
   text-align:           right;
@@ -3809,7 +3809,7 @@ textarea.error {
   vertical-align:       top;
 }
 #contact textarea {
-  height:               30px;
+  height:               64px;
   margin:               0;
 }
 
@@ -3832,6 +3832,23 @@ textarea.error {
 
 #contact h3 {
   padding:              0 0 15px 0;
+}
+
+#contact aside section {
+  padding-bottom:       10px;
+}
+#contact aside .support {
+  margin-bottom:        15px;
+}
+#contact aside h4 {
+  margin-bottom:        2px;
+}
+#contact aside .support h4,
+#contact aside .support p {
+  margin-bottom:        5px;
+}
+#contact aside .share {
+  margin-top:           15px;
 }
 
 #contact #map {
