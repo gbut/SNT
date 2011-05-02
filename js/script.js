@@ -1063,7 +1063,7 @@ $(document).ready(function(){
       durOut: 300,
       durPanels: 400,
       attr: {
-        fill: "#88d0ee",
+        fill: "#dddddd",// "#88d0ee",
         stroke: "#ffffff",
         "stroke-width": 0.3,
         "stroke-linejoin": "round"
@@ -1295,6 +1295,10 @@ $(document).ready(function(){
       filterPeril: function(e) {
         var o = e.data.obj; //the instantiated $.riskMap object
         var peril = $(this).data('peril');
+        
+        // update model list
+        o.modelLinks.removeClass('sel');
+        $(this).addClass('sel');
 
         // update infobar
         o.modelInfo.fadeOut(o.options.durOver, function(){

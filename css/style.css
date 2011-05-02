@@ -2563,7 +2563,7 @@ body.isHome footer {
   padding:              0 15px 5px 0;
 }
 
-#risk section.iWorldMap #mapinfo .globalModels #model_all {
+#risk section.iWorldMap #mapinfo .globalModels .lt ul li a.sel {
   font-weight:          bold;
 }
 
