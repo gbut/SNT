@@ -36,7 +36,28 @@
   
     <aside clear="clearfix">
       <section>
-      
+
+        <div class="support">
+          <h4>Product Support</h4>
+
+          <p>U.S., Canada, Bermuda, and Latin America:<br />
+          +1.877.767.6266 or 1.877.767.0266</p>
+
+          <p>Other Regions:<br />
+          +44.20.7444.7777</p>
+
+          <p><a href="mailto:support@rms.com" title="Send email">support@rms.com</a></p>
+        </div>
+
+        <h4>PR &amp; Media</h4>
+        
+        <p>+44.20.7444.7600<br />
+        <a href="mailto:rms.pressoffice@rms.com" title="Send email">rms.pressoffice@rms.com</a>
+
+        <h4>Sales Enquiries</h4>
+        
+        <p><a href="mailto:sales@rms.com" title="Send email">sales@rms.com</a></p>
+
         <div class="share clearfix">
           <div class="label">
             Follow Us: 
@@ -45,9 +66,11 @@
           <a href="http://twitter.com/#!/RMS_news" title="Follow us on Twitter" class="twitter"></a>
         </div>
 
+<!--
         <div class="photo">
           <img src="/img/staff/employee_01_up.png" alt="Employee Photo" title="Employee Photo">
         </div>
+-->
         
       </section>
     </aside>
