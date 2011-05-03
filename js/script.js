@@ -2192,7 +2192,7 @@ $(document).ready(function(){
    */
 
   photo_up_total = 10;
-  photo_dn_total = 10;
+  photo_dn_total = 7;
 
   // Quote
   if ($('aside .quote').length) {
