@@ -5,7 +5,7 @@
     <div id="presenter">
       <div class="hero clearfix">
         <img src="/img/hero_careers_home_lt.jpg" alt="RMS" />
-        <img src="/img/hero_careers_home_rt.png" alt="We Were Always This Cool" />
+        <img src="/img/hero_careers_home_rt.png" class="headlineImg" alt="We Were Always This Cool" />
       </div>
       <div id="vidOverlay">
         <iframe src="" width="626" height="356" scrolling="no" frameborder="0" id="vidFrame"></iframe>
@@ -16,15 +16,19 @@
       <ul>
         <li><a href="http://player.vimeo.com/video/22250734?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
           <span class="imgCont vid1">Video #1<span class="play"></span></span>
-          <span>Meet RMS</span>
+          <span>About RMS</span>
+        </a></li>
+        <li><a href="http://player.vimeo.com/video/22097580?title=0&amp;byline=0&amp;portrait=0">
+          <span class="imgCont vid3">Video #3<span class="play"></span></span>
+          <span>Modeling</span>
         </a></li>
         <li><a href="http://player.vimeo.com/video/22097512?title=0&amp;byline=0&amp;portrait=0">
           <span class="imgCont vid2">Video #2<span class="play"></span></span>
           <span>Engineering</span>
         </a></li>
         <li><a href="http://player.vimeo.com/video/22097580?title=0&amp;byline=0&amp;portrait=0">
-          <span class="imgCont vid3">Video #3<span class="play"></span></span>
-          <span>Modeling</span>
+          <span class="imgCont vid4">Video #4<span class="play"></span></span>
+          <span class="multiline">Client Development</span>
         </a></li>
       </ul>
       <a href="/careers/jobs" class="btn btnOpenPositions">Open Positions &raquo;</a>

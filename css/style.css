@@ -1458,30 +1458,46 @@ aside section.pie_first-child.slvzr-last-child {
   margin-right:         9px;
 }
 
+#presenterCont {
+  margin-bottom:        31px;
+}
+#risk #presenterCont {
+  width:                940px;
+  padding:              10px;
+  background:           #fff;
+  -webkit-border-radius:4px;
+  -moz-border-radius:   4px;
+  border-radius:        4px;
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+
 #presenter {
-  height:               390px;
+  height:               279px;
   overflow:             hidden;
   position:             relative;
 }
+#careers #presenter {
+  height:               390px;
+}
 
 #presenter .hero {
+  height:               279px;
   position:             relative;
   z-index:              1;
 }
+#careers #presenter .hero {
+  height:               390px;
+}
+
 #presenter .hero img {
-  position:             relative;
-  float:                left;
+  position:             absolute;
+  top:                  0;
+  left:                 0;
   z-index:              1;
 }
-/*
-#presenter .hero .btn {
-  color:                #b00e13;
-  position:             absolute;
-  right:                17px;
-  bottom:               18px;
-  z-index:              10;
+#presenter .hero img.headlineImg {
+  left:                 716px;
 }
-*/
 
 #presenter #vidOverlay {
   width:                100%;
@@ -1554,7 +1570,7 @@ a.close:active {
   font-size:            85%;
   line-height:          125%;
   text-align:           left;
-  width:                165px;
+  width:                145px;
   height:               41px;
   display:              block;
   overflow:             hidden;
@@ -1563,10 +1579,16 @@ a.close:active {
 #presenterNav ul li a:active {
   color:                #525252;
 }
+#nextgen #presenterNav ul li a {
+  width:                165px;
+}
 
 #presenterNav ul li a span {
   position:             relative;
-  top:                  14px; /* 6px if two lines */
+  top:                  14px;
+}
+#presenterNav ul li a span.multiline {
+  top:                  6px;
 }
 
 #presenterNav ul li a .imgCont {
@@ -2430,7 +2452,7 @@ body.isHome footer {
 }
 
 #risk {
-  padding-bottom:       43px;
+  padding:              10px 0 43px;
 }
 
 #riskTabs {
@@ -3000,21 +3022,24 @@ body.isHome footer {
   padding:              1px 0 7px;
 }
 
+#risk #banner,
 #nextgen #banner {
-  margin:               6px 0 31px;
-  padding:              124px 15px 0;
+  margin:               0;
+  padding:              64px 330px 0 40px;
+  height:               206px;
+  z-index:              20;
+}
+#nextgen #banner {
   height:               146px;
+  padding:              124px 15px 0;
 }
 
-#nextgen #banner img {
-  position:             absolute;
-  top:                  0;
-  left:                 15px;
-  z-index:              1;
-}
-
+#risk #banner h2,
+#risk #banner h3,
 #nextgen #banner h2,
 #nextgen #banner h3,
+.wf-loading #risk #banner h2,
+.wf-loading #risk #banner h3,
 .wf-loading #nextgen #banner h2,
 .wf-loading #nextgen #banner h3 {
   color:                #fff;
@@ -3025,24 +3050,46 @@ body.isHome footer {
   position:             relative;
   z-index:              10;
 }
+.wf-active #risk #banner h2,
+.wf-active #risk #banner h3,
 .wf-active #nextgen #banner h2,
 .wf-active #nextgen #banner h3 {
   font:                 400 212%/108% "proxima-nova-1","proxima-nova-2",Helvetica,sans-serif;
   padding:              0 0 1px;
 }
+#risk #banner h2,
+#risk #banner h3,
+.wf-loading #risk #banner h2,
+.wf-loading #risk #banner h3,
+.wf-active #risk #banner h2,
+.wf-active #risk #banner h3 {
+  text-align:           left;
+}
 
+#risk #banner h3,
 #nextgen #banner h3,
+.wf-loading #risk #banner h3,
 .wf-loading #nextgen #banner h3 {
   font-size:            116%;
   line-height:          119%;
   padding:              0 145px;
 }
+.wf-active #risk #banner h3,
 .wf-active #nextgen #banner h3 {
   font-size:            123.1%;
   line-height:          108%;
   padding:              0 145px;
 }
+#risk #banner h3,
+.wf-loading #risk #banner h3,
+.wf-active #risk #banner h3 {
+  padding:              0;
+}
 
+.ie7 #risk #banner h2,
+.ie8 #risk #banner h2,
+.ie7 #risk #banner h3,
+.ie8 #risk #banner h3,
 .ie7 #nextgen #banner h2,
 .ie8 #nextgen #banner h2,
 .ie7 #nextgen #banner h3,
@@ -3151,8 +3198,11 @@ body.isHome footer {
 
 #careers .careersHomeIntro,
 #careers #modules {
-  padding:              31px 13px 26px;
+  padding:              0 13px 26px;
   position:             relative;
+}
+#careers .careersHomeIntro {
+  border-top:           none;
 }
 #careers #modules {
   padding-top:          23px;
@@ -4856,7 +4906,7 @@ body#craft04 {
   left:                 -4px;
 }
 
-.openChatWin {
+#bg_chat .hd .openChatWin {
   top:                  -10000px;
 }
 

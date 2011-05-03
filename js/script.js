@@ -57,7 +57,7 @@ $(document).ready(function(){
   
 	//===============================================
 	//	VIDEO PRESENTER
-	//  Manages interactions related to hero video (Careers)
+	//  Manages interactions related to hero video
 	//===============================================
   (function($){
     $.fn.videoPresenter = function(options) {
@@ -93,6 +93,7 @@ $(document).ready(function(){
       
       // flags, measurements
       this.heroH              = this.heroImg.height();
+      this.vidH               = 390;
       
       // attach behaviors
       this.nav.children().each(function(){
@@ -121,11 +122,23 @@ $(document).ready(function(){
 		      o.vBg.css({ top:0 });
 		      o.iframe.attr({ src: src });
 		    };
+        $.each([o.win, o.heroImg], function(){
+          $(this).animate(
+            { height:o.vidH },
+            {
+              duration: o.options.dur,
+              easing: 'easeOutQuint'
+            }
+          );
+        });
         o.heroImg.animate(
           { top:-o.heroH },
-          o.options.dur,
-          'easeOutQuint',
-          onComplete
+          {
+            duration: o.options.dur,
+            easing: 'easeOutQuint',
+            complete: onComplete,
+            queue: false
+          }
         );
         e.preventDefault();
       },
@@ -140,10 +153,22 @@ $(document).ready(function(){
         var o = e.data.obj; //the instantiated $.videoPresenter object
 		    o.vBg.css({ top:-10000 });
 		    o.iframe.attr({ src: '' });
+        $.each([o.win, o.heroImg], function(){
+          $(this).animate(
+            { height:o.heroH },
+            {
+              duration: o.options.dur,
+              easing: 'easeOutQuint'
+            }
+          );
+        });
         o.heroImg.animate(
           { top:0 },
-          o.options.dur,
-          'easeOutQuint'
+          {
+            duration: o.options.dur,
+            easing: 'easeOutQuint',
+            queue: false
+          }
         );
         e.preventDefault();
       }
@@ -192,7 +217,6 @@ $(document).ready(function(){
       this.container          = $(e);
       this.panel              = $('#team_panel');
       this.slider             = $('#team_slider');
-//      this.photo              = this.panel.find('img.photo');
       this.people             = this.panel.find('ul');
       this.popup              = $('#tooltip');
       this.pointer            = this.popup.find('.pointer');
@@ -226,8 +250,7 @@ $(document).ready(function(){
       /*
       rms_todo: remove gbl_env and non-rms code (else)
       */
-//      if (gbl_env == "rms") // TODO: de-integrating until ticket #89 is fixed
-      if (false)
+      if (gbl_env == "rms")
       {
         $.ajax({
           type: "POST",
@@ -314,6 +337,15 @@ $(document).ready(function(){
           }
         });
       }
+      
+      // any click outside the popup will hide the popup
+      var hideTeamPopup = function(e){
+  			var clicked = $(e.target);
+  			if ((clicked.attr('id')=='tooltip') || clicked.closest('#tooltip').length) return true;
+        self.teamFade(self.popup, self.options.fadeDur, 0);
+    	  //e.stopPropagation();
+      };
+  	  $('body').bind('click', hideTeamPopup);
       
 /*
       // swipes
@@ -402,6 +434,7 @@ $(document).ready(function(){
           });
         
         e.preventDefault();
+        e.stopPropagation();
       },
 
       /**
