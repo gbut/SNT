@@ -186,7 +186,7 @@
     <div class="rt">
       <div class="icon iconChat">[Chat]</div>
       <div class="text">
-        <h4>We support instant gratification</h4>
+        <h4>Instant Gratification</h4>
         <p>Finding your next great opportunity is a big decision. You've got questions, we've got honest answers.</p>
         <a href="/careers/chat" class="btn btnLgDark">Chat with us</a>
       </div>

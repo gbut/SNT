@@ -949,10 +949,15 @@ $(document).ready(function(){
 
     // config
     var lpc;
+    /*
+    rms_todo: remove gbl_env and non-rms code (else)
+    */
+    var _lpServer = (gbl_env == "rms") ? 'server.iad.liveperson.net' : 'dev.liveperson.net';
+    var _lpNumber = (gbl_env == "rms") ? '44448599' : 'P16777301';
     lpChatConfig = {
-      apiKey : '280e4c40d2524aee8895e299efc4359c', // test application key. RMS=6958c0768228458b9e5dc12c39f28486 ; Andy=280e4c40d2524aee8895e299efc4359c
-      lpServer : 'dev.liveperson.net',
-      lpNumber : 'P89578626', // small business test account. RMS=P16777301 ; Andy=P89578626
+      apiKey : '6958c0768228458b9e5dc12c39f28486', // application key.
+      lpServer : _lpServer, // server. test=dev.liveperson.net ; live=server.iad.liveperson.net
+      lpNumber : _lpNumber, // account number. Production account=44448599 ; Small business test account=P16777301
       sessVar : 'SV!',
       skillUDE : 'skill',
       onLoad : function() {
