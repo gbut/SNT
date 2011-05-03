@@ -2621,6 +2621,10 @@ body.isHome footer {
 .wf-active #risk section.iWorldMap #mapinfo .globalModels .lt h4 {
   font:                 600 123.1%/100% "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Lucida Grande",Helvetica,sans-serif;
 }
+/* this one just looks bad in IE7 */
+.ie7.wf-active #risk section.iWorldMap #mapinfo .globalModels .lt h4 {
+  font:                 600 108%/112% "Lucida Grande",Helvetica,sans-serif;
+}
 
 #risk section.iWorldMap #mapinfo .globalModels .lt ul {
   width:                150px;
