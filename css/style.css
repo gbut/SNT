@@ -4889,7 +4889,7 @@ body#craft04 {
   left:                 -4px;
 }
 
-.openChatWin {
+#bg_chat .hd .openChatWin {
   top:                  -10000px;
 }
 
