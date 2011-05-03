@@ -1580,7 +1580,7 @@ a.close:active {
   color:                #525252;
 }
 #nextgen #presenterNav ul li a {
-  width:                165px;
+  width:                160px;
 }
 
 #presenterNav ul li a span {
@@ -1596,7 +1596,7 @@ a.close:active {
   width:                59px;
   height:               37px;
   margin-right:         6px;
-  background:           url(../img/vid_nav_careers_home.jpg) 0 0 no-repeat;
+  background:           url(../img/icons_vid_nav.jpg) 0 0 no-repeat;
   border:               2px solid #555;
   float:                left;
   display:              inline;
@@ -1606,12 +1606,6 @@ a.close:active {
   border-radius:        4px;
   behavior: url(/js/libs/PIE/PIE.htc);
 }
-#presenterNav ul li a .imgCont.vid2 {
-  background-position:  0 -37px;
-}
-#presenterNav ul li a .imgCont.vid3 {
-  background-position:  0 -74px;
-}
 #presenterNav ul li a:hover .imgCont,
 #presenterNav ul li a:active .imgCont {
   border-color:         #262626;
@@ -1619,13 +1613,28 @@ a.close:active {
 .ie8 #presenterNav ul li a .imgCont {
   width:                58px;
   height:               36px;
+}
+
+#careers #presenterNav ul li a .imgCont.vid1 {
   background-position:  0 0;
 }
-.ie8 #presenterNav ul li a .imgCont.vid2 {
+#careers #presenterNav ul li a .imgCont.vid2 {
   background-position:  0 -37px;
 }
-.ie8 #presenterNav ul li a .imgCont.vid3 {
+#careers #presenterNav ul li a .imgCont.vid3 {
   background-position:  0 -74px;
+}
+#careers #presenterNav ul li a .imgCont.vid4 {
+  background-position:  0 -111px;
+}
+#risk #presenterNav ul li a .imgCont.vid1 {
+  background-position:  0 -148px;
+}
+#risk #presenterNav ul li a .imgCont.vid2 {
+  background-position:  0 -185px;
+}
+#nextgen #presenterNav ul li a .imgCont.vid1 {
+  background-position:  0 -222px;
 }
 
 #presenterNav ul li a .imgCont .play {

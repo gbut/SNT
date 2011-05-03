@@ -16,11 +16,11 @@
       <ul>
         <li><a href="http://player.vimeo.com/video/22250734?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
           <span class="imgCont vid1">Video #1<span class="play"></span></span>
-          <span>About RMS</span>
+          <span>Meet RMS</span>
         </a></li>
         <li><a href="http://player.vimeo.com/video/22097580?title=0&amp;byline=0&amp;portrait=0">
           <span class="imgCont vid3">Video #3<span class="play"></span></span>
-          <span>Modeling</span>
+          <span>Our Impact</span>
         </a></li>
         <li><a href="http://player.vimeo.com/video/22097512?title=0&amp;byline=0&amp;portrait=0">
           <span class="imgCont vid2">Video #2<span class="play"></span></span>

@@ -22,7 +22,7 @@
           <span class="multiline">Model Development</span>
         </a></li>
         <li><a href="http://player.vimeo.com/video/23183385?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
-          <span class="imgCont vid3">Video #3<span class="play"></span></span>
+          <span class="imgCont vid2">Video #2<span class="play"></span></span>
           <span class="multiline">European Wind Model</span>
         </a></li>
       </ul>
