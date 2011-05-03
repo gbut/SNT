@@ -217,7 +217,6 @@ $(document).ready(function(){
       this.container          = $(e);
       this.panel              = $('#team_panel');
       this.slider             = $('#team_slider');
-//      this.photo              = this.panel.find('img.photo');
       this.people             = this.panel.find('ul');
       this.popup              = $('#tooltip');
       this.pointer            = this.popup.find('.pointer');
@@ -251,8 +250,7 @@ $(document).ready(function(){
       /*
       rms_todo: remove gbl_env and non-rms code (else)
       */
-//      if (gbl_env == "rms") // TODO: de-integrating until ticket #89 is fixed
-      if (false)
+      if (gbl_env == "rms")
       {
         $.ajax({
           type: "POST",
@@ -339,6 +337,15 @@ $(document).ready(function(){
           }
         });
       }
+      
+      // any click outside the popup will hide the popup
+      var hideTeamPopup = function(e){
+  			var clicked = $(e.target);
+  			if ((clicked.attr('id')=='tooltip') || clicked.closest('#tooltip').length) return true;
+        self.teamFade(self.popup, self.options.fadeDur, 0);
+    	  //e.stopPropagation();
+      };
+  	  $('body').bind('click', hideTeamPopup);
       
 /*
       // swipes
@@ -427,6 +434,7 @@ $(document).ready(function(){
           });
         
         e.preventDefault();
+        e.stopPropagation();
       },
 
       /**
