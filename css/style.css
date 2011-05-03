@@ -1587,6 +1587,7 @@ a.close:active {
 #presenterNav ul li a span {
   position:             relative;
   top:                  14px;
+  left:                 0;
 }
 #presenterNav ul li a span.multiline {
   top:                  6px;
@@ -1611,10 +1612,6 @@ a.close:active {
 #presenterNav ul li a:active .imgCont {
   border-color:         #262626;
 }
-.ie8 #presenterNav ul li a .imgCont {
-  width:                58px;
-  height:               36px;
-}
 
 #careers #presenterNav ul li a .imgCont.vid1 {
   background-position:  0 0;
@@ -1636,6 +1633,32 @@ a.close:active {
 }
 #nextgen #presenterNav ul li a .imgCont.vid1 {
   background-position:  0 -222px;
+}
+
+/* IE8 showing a 1px gap on left side */
+.ie8 #presenterNav ul li a .imgCont {
+  width:                58px;
+}
+.ie8 #careers #presenterNav ul li a .imgCont.vid1 {
+  background-position:  -1px 0;
+}
+.ie8 #careers #presenterNav ul li a .imgCont.vid2 {
+  background-position:  -1px -37px;
+}
+.ie8 #careers #presenterNav ul li a .imgCont.vid3 {
+  background-position:  -1px -74px;
+}
+.ie8 #careers #presenterNav ul li a .imgCont.vid4 {
+  background-position:  -1px -111px;
+}
+.ie8 #risk #presenterNav ul li a .imgCont.vid1 {
+  background-position:  -1px -148px;
+}
+.ie8 #risk #presenterNav ul li a .imgCont.vid2 {
+  background-position:  -1px -185px;
+}
+.ie8 #nextgen #presenterNav ul li a .imgCont.vid1 {
+  background-position:  -1px -222px;
 }
 
 #presenterNav ul li a .imgCont .play {
@@ -2215,7 +2238,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #home .hd {
   width:                100%;
   position:             absolute;
-  top:                  34%;
+  top:                  30%;
   left:                 0;
 }
 

@@ -1,9 +1,9 @@
 <!-- + home -->
 <div class="hd">
   <div class="inner clearfix">
-    <h2><span>Together, we will build the future.</span></h2>
+    <h2><span>Our arrival is within reach.</span></h2>
     <div id="subhd" class="clearfix">
-      <h3><span>Ushering in the next generation of risk modeling.</span></h3>
+      <h3><span>Together, our journey has brought us to the<br />next generation of risk modeling.</span></h3>
       <a href="/nextgen"><span id="cta_text"><span>Learn More <em>&raquo;</em></span></span><span id="cta_bg"><span id="cta_bg_inner"></span></span></a>
     </div>
   </div>
