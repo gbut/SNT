@@ -1,11 +1,41 @@
 <!-- + risk -->
 <div id="risk">
 
+<!--
   <div class="hd">
     <h2>Educating the World <em>About Risk</em></h2>
     <p>As a pioneer of catastrophe risk modeling, RMS leads the market and sets the standard for quantifying risk around the world. Our leading-edge risk models help people understand the potential physical and financial impacts of natural catastrophes such as earthquakes and hurricanes, human threats such as potential terrorist attacks, and risks associated with changes in life expectancy and sudden loss of life.</p>
   </div>
+-->
   
+  <div id="presenterCont">
+    <div id="presenter">
+      <div class="hero clearfix">
+        <img src="/img/banner_nextgen.jpg" alt="RMS - Models" />
+        <div id="banner">
+          <h2>Educating the World <em>About Risk</em></h2>
+          <h3>As a pioneer of catastrophe risk modeling, RMS leads the market and sets the standard for quantifying risk around the world. Our leading-edge risk models help people understand the potential physical and financial impacts of natural catastrophes such as earthquakes and hurricanes, human threats such as potential terrorist attacks, and risks associated with changes in life expectancy and sudden loss of life.</h3>
+        </div>
+      </div>
+      <div id="vidOverlay">
+        <iframe src="" width="626" height="356" scrolling="no" frameborder="0" id="vidFrame"></iframe>
+        <a href="#" class="close">Close</a>
+      </div>
+    </div>
+    <div id="presenterNav">
+      <ul>
+        <li><a href="http://player.vimeo.com/video/22250734?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
+          <span class="imgCont vid1">Video #1<span class="play"></span></span>
+          <span class="multiline">Model Development</span>
+        </a></li>
+        <li><a href="http://player.vimeo.com/video/23183385?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
+          <span class="imgCont vid3">Video #3<span class="play"></span></span>
+          <span class="multiline">European Wind Model</span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+
   <div class="sectionCont">
   
     <section class="iWorldMap clearfix">

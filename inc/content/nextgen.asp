@@ -1,8 +1,30 @@
 <!-- + markets -->
 <div id="nextgen">
 
-  <!--#include virtual="/inc/banner/nextgen.asp" -->
-  
+  <div id="presenterCont">
+    <div id="presenter">
+      <div class="hero clearfix">
+        <img src="/img/banner_nextgen.jpg" alt="RMS - Next Gen Risk Modeling" />
+        <div id="banner">
+          <h2>Inviting the <strong>Next Generation</strong> of Modeling Innovation</h2>
+          <h3>It's time for the risk management industry to have an efficient, secure, and scalable platform capable of supporting the next generation of risk management solutions.</h3>
+        </div>
+      </div>
+      <div id="vidOverlay">
+        <iframe src="" width="626" height="356" scrolling="no" frameborder="0" id="vidFrame"></iframe>
+        <a href="#" class="close">Close</a>
+      </div>
+    </div>
+    <div id="presenterNav">
+      <ul>
+        <li><a href="http://player.vimeo.com/video/22250734?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
+          <span class="imgCont vid1">Video #1<span class="play"></span></span>
+          <span>Next Gen Video</span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+
   <section class="imgRt hasHd clearfix">
     <div class="imgCont"><img src="/img/nextgen/opportunity1.jpg" alt="" /></div>
     <h3>The <em>Opportunity</em></h3>

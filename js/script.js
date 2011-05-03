@@ -57,7 +57,7 @@ $(document).ready(function(){
   
 	//===============================================
 	//	VIDEO PRESENTER
-	//  Manages interactions related to hero video (Careers)
+	//  Manages interactions related to hero video
 	//===============================================
   (function($){
     $.fn.videoPresenter = function(options) {
@@ -93,6 +93,7 @@ $(document).ready(function(){
       
       // flags, measurements
       this.heroH              = this.heroImg.height();
+      this.vidH               = 390;
       
       // attach behaviors
       this.nav.children().each(function(){
@@ -121,11 +122,23 @@ $(document).ready(function(){
 		      o.vBg.css({ top:0 });
 		      o.iframe.attr({ src: src });
 		    };
+        $.each([o.win, o.heroImg], function(){
+          $(this).animate(
+            { height:o.vidH },
+            {
+              duration: o.options.dur,
+              easing: 'easeOutQuint'
+            }
+          );
+        });
         o.heroImg.animate(
           { top:-o.heroH },
-          o.options.dur,
-          'easeOutQuint',
-          onComplete
+          {
+            duration: o.options.dur,
+            easing: 'easeOutQuint',
+            complete: onComplete,
+            queue: false
+          }
         );
         e.preventDefault();
       },
@@ -140,10 +153,22 @@ $(document).ready(function(){
         var o = e.data.obj; //the instantiated $.videoPresenter object
 		    o.vBg.css({ top:-10000 });
 		    o.iframe.attr({ src: '' });
+        $.each([o.win, o.heroImg], function(){
+          $(this).animate(
+            { height:o.heroH },
+            {
+              duration: o.options.dur,
+              easing: 'easeOutQuint'
+            }
+          );
+        });
         o.heroImg.animate(
           { top:0 },
-          o.options.dur,
-          'easeOutQuint'
+          {
+            duration: o.options.dur,
+            easing: 'easeOutQuint',
+            queue: false
+          }
         );
         e.preventDefault();
       }
