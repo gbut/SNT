@@ -1559,6 +1559,7 @@ a.close:active {
 #presenterNav ul li {
   padding:              0 5px;
   display:              inline-block;
+  vertical-align:       top;
 }
 .ie7 #presenterNav ul li {
   zoom:                 1;
