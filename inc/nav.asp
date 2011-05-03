@@ -30,7 +30,7 @@
           <div class="subnavRt">
             <h4>Provider of<br />the Year 2010</h4>
             <img src="/img/gnav/wra_award.png" class="gnavImg" alt="Worldwide Reinsurance Award 2010" />
-            <a href="#" class="btn btnSm-gnav cta">Latest News</a>
+            <a href="/news" class="btn btnSm-gnav cta">Latest News</a>
           </div>
         </li>
       </ul>
