@@ -3025,9 +3025,13 @@ body.isHome footer {
 #risk #banner,
 #nextgen #banner {
   margin:               0;
-  padding:              124px 15px 0;
-  height:               146px;
+  padding:              64px 330px 0 40px;
+  height:               206px;
   z-index:              20;
+}
+#nextgen #banner {
+  height:               146px;
+  padding:              124px 15px 0;
 }
 
 #risk #banner h2,
@@ -3053,6 +3057,14 @@ body.isHome footer {
   font:                 400 212%/108% "proxima-nova-1","proxima-nova-2",Helvetica,sans-serif;
   padding:              0 0 1px;
 }
+#risk #banner h2,
+#risk #banner h3,
+.wf-loading #risk #banner h2,
+.wf-loading #risk #banner h3,
+.wf-active #risk #banner h2,
+.wf-active #risk #banner h3 {
+  text-align:           left;
+}
 
 #risk #banner h3,
 #nextgen #banner h3,
@@ -3067,6 +3079,11 @@ body.isHome footer {
   font-size:            123.1%;
   line-height:          108%;
   padding:              0 145px;
+}
+#risk #banner h3,
+.wf-loading #risk #banner h3,
+.wf-active #risk #banner h3 {
+  padding:              0;
 }
 
 .ie7 #risk #banner h2,

@@ -1,20 +1,13 @@
 <!-- + risk -->
 <div id="risk">
 
-<!--
-  <div class="hd">
-    <h2>Educating the World <em>About Risk</em></h2>
-    <p>As a pioneer of catastrophe risk modeling, RMS leads the market and sets the standard for quantifying risk around the world. Our leading-edge risk models help people understand the potential physical and financial impacts of natural catastrophes such as earthquakes and hurricanes, human threats such as potential terrorist attacks, and risks associated with changes in life expectancy and sudden loss of life.</p>
-  </div>
--->
-  
   <div id="presenterCont">
     <div id="presenter">
       <div class="hero clearfix">
-        <img src="/img/banner_nextgen.jpg" alt="RMS - Models" />
+        <img src="/img/banner_models.jpg" alt="RMS - Models" />
         <div id="banner">
-          <h2>Educating the World <em>About Risk</em></h2>
-          <h3>As a pioneer of catastrophe risk modeling, RMS leads the market and sets the standard for quantifying risk around the world. Our leading-edge risk models help people understand the potential physical and financial impacts of natural catastrophes such as earthquakes and hurricanes, human threats such as potential terrorist attacks, and risks associated with changes in life expectancy and sudden loss of life.</h3>
+          <h2>Educating the World <strong>About Risk</strong></h2>
+          <h3>As a pioneer of catastrophic risk modeling, RMS leads the market and sets the standard for quantifying risk. Our science educates people on the physical and financial implications of natural catastrophes, terrorism, and the risks associated with changes in life expectancy.</h3>
         </div>
       </div>
       <div id="vidOverlay">
