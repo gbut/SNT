@@ -55,7 +55,7 @@
   </section>
 
   <section class="imgRt clearfix">
-    <div class="imgCont"><img src="/img/nextgen/benefits3.jpg" alt="" /></div>
+    <div class="imgCont"><img src="/img/nextgen/cloud1.jpg" alt="" /></div>
     <h4>Supercomputing in the cloud</h4>
     <p>We realize that no single technology, even one as significant as cloud-based computing, offers a silver bullet. Some may not be able to take advantage of the cloud and for those who cannot, RMS will explore alternatives. For those that are, RMS is committed to delivering a solution with the scale and capacity to help businesses realize the potentially profound benefits of this new paradigm for computing. From more nimble releases from us to more cost-effective solutions for you, across an ecosystem of capability, the benefits of the RMS platform delivered in the cloud will be evident across the market.</p>
   </section>
