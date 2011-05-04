@@ -4006,10 +4006,6 @@ textarea.error {
   left:                 12px;
   z-index:              2;
 }
-.ie7 #contact #clocks,
-.ie8 #contact #clocks {
- display:               none;
-}
 
 #contact #clocks a {
   font-size:            85%;

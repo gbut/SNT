@@ -65,12 +65,6 @@
           <a href="http://www.facebook.com/pages/Risk-Management-Solutions/110270308995196" rel="external" title="Follow us on Facebook" class="facebook"></a>
           <a href="http://twitter.com/#!/RMS_news" rel="external" title="Follow us on Twitter" class="twitter"></a>
         </div>
-
-<!--
-        <div class="photo">
-          <img src="/img/staff/employee_01_up.png" alt="Employee Photo" title="Employee Photo">
-        </div>
--->
         
       </section>
     </aside>
@@ -96,6 +90,8 @@
       <script src="http://www.gmodules.com/ig/ifr?url=http://static.die.net/earth/gadget.xml&amp;up_clouds=1&amp;up_proj=mollweide&amp;synd=open&amp;w=912&amp;h=506&amp;output=js"></script>
       
     </div>
+    
+  <![if !IE]>
     <div id="clocks">
       <a href="#" class="newark">
         <canvas id="tz01" class="CoolClock:normal:30:noSeconds:-7.0"></canvas>
@@ -135,6 +131,7 @@
       </a>
     </div>
     <div class="mask"></div>
+  <![endif]>
     <div id="popup">
       <div class="details"></div>
       <div class="divider"></div>
