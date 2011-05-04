@@ -1298,8 +1298,13 @@ footer .wrapper {
   padding:              0 40px;
 }
 
-footer a {
+footer a:link,
+footer a:visited {
   color:                #414040;
+}
+footer a:hover,
+footer a:active {
+  color:                #28739c;
 }
 
 .t01 footer {
