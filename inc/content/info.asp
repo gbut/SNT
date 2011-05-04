@@ -183,7 +183,7 @@
     
         </section>
 
-      </td><td valign="top">
+      </td><td class="div"></div><td valign="top">
 
         <section>
   
@@ -197,7 +197,7 @@
   
         </section>
 
-      </td><td valign="top">
+      </td><td class="div"></div><td valign="top">
 
         <section class="biblio">
   
@@ -243,7 +243,7 @@
   
         </section>
 
-      </td><td valign="top">
+      </td><td class="div"></div><td valign="top">
 
         <section>
   

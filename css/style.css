@@ -4540,11 +4540,18 @@ body#craft04 {
 
 #info td {
   padding:              0 6px 10px;
-  border-right:         1px solid #e7e7e7;
+/*  border-right:         1px solid #e7e7e7;*/
 }
+#info td.div {
+ width:                 0;
+ padding:               0 1px 0 0;
+ background:            #e7e7e7;
+}
+/*
 #info td:last-child {
   border-right:         0;
 }
+*/
 
 #info section {
   width:                224px;
@@ -4579,7 +4586,7 @@ body#craft04 {
 
 
 #info section h3 {
-  font:                 600 120%/120% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  font:                 600 115%/120% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
   color:                #666;
   text-transform:       uppercase;
   padding-bottom:       15px;
