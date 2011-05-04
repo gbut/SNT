@@ -4533,26 +4533,28 @@ body#craft04 {
   margin-bottom:        18px;
 }
 
-#info section {
-  width:                226px;
-  padding:              0 5px 20px 0;
-  border-right:         1px solid #e7e7e7;
-  margin-right:         6px;
-  float:                left;
+#info table {
+  padding:              0;
+  margin:               0;
 }
-#info section:last-child {
-  padding-right:        0;
+
+#info td {
+  padding:              0 6px 10px;
+  border-right:         1px solid #e7e7e7;
+}
+#info td:last-child {
   border-right:         0;
-  margin-right:         0;
+}
+
+#info section {
+  width:                224px;
 }
 
 #info section.top {
   color:                #777;
   width:                100%;
   height:               auto;
-  padding-right:        0;
   border-bottom:        2px solid #eee;
-  border-right:         0;
   margin-bottom:        25px;
 }
 
