@@ -8,17 +8,17 @@
         <img src="/img/hero_careers_home_rt.png" class="headlineImg" alt="We Were Always This Cool" />
       </div>
       <div id="vidOverlay">
-        <iframe src="" width="626" height="356" scrolling="no" frameborder="0" id="vidFrame"></iframe>
+        <iframe src="" width="626" height="352" scrolling="no" frameborder="0" id="vidFrame"></iframe>
         <a href="#" class="close">Close</a>
       </div>
     </div>
     <div id="presenterNav">
       <ul>
-        <li><a href="http://player.vimeo.com/video/22250734?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
+        <li><a href="http://player.vimeo.com/video/23236447?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
           <span class="imgCont vid1">Video #1<span class="play"></span></span>
           <span>Meet RMS</span>
         </a></li>
-        <li><a href="http://player.vimeo.com/video/22097580?title=0&amp;byline=0&amp;portrait=0">
+        <li><a href="http://player.vimeo.com/video/23235136?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
           <span class="imgCont vid3">Video #3<span class="play"></span></span>
           <span>Our Impact</span>
         </a></li>
@@ -26,7 +26,7 @@
           <span class="imgCont vid2">Video #2<span class="play"></span></span>
           <span>Engineering</span>
         </a></li>
-        <li><a href="http://player.vimeo.com/video/22097580?title=0&amp;byline=0&amp;portrait=0">
+        <li><a href="http://player.vimeo.com/video/23234338?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
           <span class="imgCont vid4">Video #4<span class="play"></span></span>
           <span class="multiline">Client Development</span>
         </a></li>
@@ -129,31 +129,31 @@
     <div id="team">
       <div id="team_panel">
         <ul class="clearfix">
-          <li data-employee-position="1"><a href="#" title="Vee Meharu">Vee Meharu</a><img src="/img/team/newark_vee_meharu.jpg" class="photo" alt="Vee Meharu" /></li>
-          <li data-employee-position="2"><a href="#" title="Alexis Phillips">Alexis Phillips</a><img src="/img/team/nj_alexis_phillips.jpg" class="photo" alt="Alexis Phillips" /></li>
-          <li data-employee-position="3"><a href="#" title="Yvette Encarnacion">Yvette Encarnacion</a><img src="/img/team/nj_yvette_encarnacion.jpg" class="photo" alt="Yvette Encarnacion" /></li>
-          <li data-employee-position="4"><a href="#" title="Dag Lohmann">Dag Lohmann</a><img src="/img/team/newark_dag_lohmann.jpg" class="photo" alt="Dag Lohmann" /></li>
-          <li data-employee-position="5"><a href="#" title="Emily Grover-Kopec">Emily Grover-Kopec</a><img src="/img/team/nj_emily_grover-kopec.jpg" class="photo" alt="Emily Grover-Kopec" /></li>
-          <li data-employee-position="6"><a href="#" title="Jenita Rabadia">Jenita Rabadia</a><img src="/img/team/london_jenita_rabadia.jpg" class="photo" alt="Jenita Rabadia" /></li>
-          <li data-employee-position="7"><a href="#" title="Rebecca Morris">Rebecca Morris</a><img src="/img/team/newark_rebecca_morris.jpg" class="photo" alt="Rebecca Morris" /></li>
-          <li data-employee-position="8"><a href="#" title="Thomas Sabbatelli">Thomas Sabbatelli</a><img src="/img/team/nj_thomas_sabbatelli.jpg" class="photo" alt="Thomas Sabbatelli" /></li>
-          <li data-employee-position="9"><a href="#" title="Margaret Keelan">Margaret Keelan</a><img src="/img/team/london_margaret_keelan.jpg" class="photo" alt="Margaret Keelan" /></li>
-          <li data-employee-position="10"><a href="#" title="Brandon Katz">Brandon Katz</a><img src="/img/team/newark_brandon_katz.jpg" class="photo" alt="Brandon Katz" /></li>
-          <li data-employee-position="11"><a href="#" title="Veronique Bruggeman">Veronique Bruggeman</a><img src="/img/team/london_veronique_bruggeman.jpg" class="photo" alt="Veronique Bruggeman" /></li>
-          <li data-employee-position="12"><a href="#" title="Tong Zhu">Tong Zhu</a><img src="/img/team/newark_tong_zhu.jpg" class="photo" alt="Tong Zhu" /></li>
-          <li data-employee-position="13"><a href="#" title="Ben Brookes">Ben Brookes</a><img src="/img/team/london_ben_brookes.jpg" class="photo" alt="Ben Brookes" /></li>
-          <li data-employee-position="14"><a href="#" title="Nereida Lark">Nereida Lark</a><img src="/img/team/newark_nereida_lark.jpg" class="photo" alt="Nereida Lark" /></li>
-          <li data-employee-position="15"><a href="#" title="Toni Colville">Toni Colville</a><img src="/img/team/london_toni_colville.jpg" class="photo" alt="Toni Colville" /></li>
-          <li data-employee-position="16"><a href="#" title="Rob Bentley">Rob Bentley</a><img src="/img/team/nj_rob_bentley.jpg" class="photo" alt="Rob Bentley" /></li>
-          <li data-employee-position="17"><a href="#" title="Yvonne Cammorto">Yvonne Cammorto</a><img src="/img/team/nj_yvonne_cammorto.jpg" class="photo" alt="Yvonne Cammorto" /></li>
-          <li data-employee-position="18"><a href="#" title="Komal Patel">Komal Patel</a><img src="/img/team/newark_komal_patel.jpg" class="photo" alt="Komal Patel" /></li>
-          <li data-employee-position="19"><a href="#" title="Willie Smalls">Willie Smalls</a><img src="/img/team/nj_willie_smalls.jpg" class="photo" alt="Willie Smalls" /></li>
-          <li data-employee-position="20"><a href="#" title="Chau Chavez">Chau Chavez</a><img src="/img/team/newark_chau_chavez.jpg" class="photo" alt="Chau Chavez" /></li>
-          <li data-employee-position="21"><a href="#" title="Kevin Cei">Kevin Cei</a><img src="/img/team/nj_kevin_cei.jpg" class="photo" alt="Kevin Cei" /></li>
-          <li data-employee-position="22"><a href="#" title="Vikram Patankar">Vikram Patankar</a><img src="/img/team/newark_vikram_patankar.jpg" class="photo" alt="Vikram Patankar" /></li>
-          <li data-employee-position="23"><a href="#" title="Sheriene Hancock">Sheriene Hancock</a><img src="/img/team/london_sheriene_hancock.jpg" class="photo" alt="Sheriene Hancock" /></li>
-          <li data-employee-position="24"><a href="#" title="Cassandra Brew">Cassandra Brew</a><img src="/img/team/newark_cassandra_brew.jpg" class="photo" alt="Cassandra Brew" /></li>
-          <li data-employee-position="25"><a href="#" title="Arno Hilberts">Arno Hilberts</a><img src="/img/team/london_arno_hilberts.jpg" class="photo" alt="Arno Hilberts" /></li>
+          <li data-employee-position="1"><a href="#" title="Vee">Vee</a><img src="/img/team/newark_vee_meharu.jpg" class="photo" alt="Vee" /></li>
+          <li data-employee-position="2"><a href="#" title="Alexis">Alexis</a><img src="/img/team/nj_alexis_phillips.jpg" class="photo" alt="Alexis" /></li>
+          <li data-employee-position="3"><a href="#" title="Yvette">Yvette</a><img src="/img/team/nj_yvette_encarnacion.jpg" class="photo" alt="Yvette" /></li>
+          <li data-employee-position="4"><a href="#" title="Dag">Dag</a><img src="/img/team/newark_dag_lohmann.jpg" class="photo" alt="Dag" /></li>
+          <li data-employee-position="5"><a href="#" title="Emily">Emily</a><img src="/img/team/nj_emily_grover-kopec.jpg" class="photo" alt="Emily" /></li>
+          <li data-employee-position="6"><a href="#" title="Jenita">Jenita</a><img src="/img/team/london_jenita_rabadia.jpg" class="photo" alt="Jenita" /></li>
+          <li data-employee-position="7"><a href="#" title="Rebecca">Rebecca</a><img src="/img/team/newark_rebecca_morris.jpg" class="photo" alt="Rebecca" /></li>
+          <li data-employee-position="8"><a href="#" title="Thomas">Thomas</a><img src="/img/team/nj_thomas_sabbatelli.jpg" class="photo" alt="Thomas" /></li>
+          <li data-employee-position="9"><a href="#" title="Margaret">Margaret</a><img src="/img/team/london_margaret_keelan.jpg" class="photo" alt="Margaret" /></li>
+          <li data-employee-position="10"><a href="#" title="Brandon">Brandon</a><img src="/img/team/newark_brandon_katz.jpg" class="photo" alt="Brandon" /></li>
+          <li data-employee-position="11"><a href="#" title="Veronique">Veronique</a><img src="/img/team/london_veronique_bruggeman.jpg" class="photo" alt="Veronique" /></li>
+          <li data-employee-position="12"><a href="#" title="Tong">Tong</a><img src="/img/team/newark_tong_zhu.jpg" class="photo" alt="Tong" /></li>
+          <li data-employee-position="13"><a href="#" title="Ben">Ben</a><img src="/img/team/london_ben_brookes.jpg" class="photo" alt="Ben" /></li>
+          <li data-employee-position="14"><a href="#" title="Nereida">Nereida</a><img src="/img/team/newark_nereida_lark.jpg" class="photo" alt="Nereida" /></li>
+          <li data-employee-position="15"><a href="#" title="Toni">Toni</a><img src="/img/team/london_toni_colville.jpg" class="photo" alt="Toni" /></li>
+          <li data-employee-position="16"><a href="#" title="Rob">Rob</a><img src="/img/team/nj_rob_bentley.jpg" class="photo" alt="Rob" /></li>
+          <li data-employee-position="17"><a href="#" title="Yvonne">Yvonne</a><img src="/img/team/nj_yvonne_cammorto.jpg" class="photo" alt="Yvonne" /></li>
+          <li data-employee-position="18"><a href="#" title="Komal">Komal</a><img src="/img/team/newark_komal_patel.jpg" class="photo" alt="Komal" /></li>
+          <li data-employee-position="19"><a href="#" title="Willie">Willie</a><img src="/img/team/nj_willie_smalls.jpg" class="photo" alt="Willie" /></li>
+          <li data-employee-position="20"><a href="#" title="Chau">Chau</a><img src="/img/team/newark_chau_chavez.jpg" class="photo" alt="Chau" /></li>
+          <li data-employee-position="21"><a href="#" title="Kevin">Kevin</a><img src="/img/team/nj_kevin_cei.jpg" class="photo" alt="Kevin" /></li>
+          <li data-employee-position="22"><a href="#" title="Vikram">Vikram</a><img src="/img/team/newark_vikram_patankar.jpg" class="photo" alt="Vikram" /></li>
+          <li data-employee-position="23"><a href="#" title="Sheriene">Sheriene</a><img src="/img/team/london_sheriene_hancock.jpg" class="photo" alt="Sheriene" /></li>
+          <li data-employee-position="24"><a href="#" title="Cassandra">Cassandra</a><img src="/img/team/newark_cassandra_brew.jpg" class="photo" alt="Cassandra" /></li>
+          <li data-employee-position="25"><a href="#" title="Arno">Arno</a><img src="/img/team/london_arno_hilberts.jpg" class="photo" alt="Arno" /></li>
         </ul>
       </div>
       <div id="team_slider"></div>
