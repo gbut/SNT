@@ -1742,14 +1742,12 @@ $(document).ready(function(){
   //  Sidebar rotation
   //===============================================
 
-  // TODO: uncomment create fn for production
   $('#quoteTabs').tabs({
-    fx: { opacity:'toggle', duration:400 }// ,
-    //     create: function(e, ui) {
-    //       $(e.target).tabs('rotate', 5000);
-    //     }
+    fx: { opacity:'toggle', duration:400 } ,
+      create: function(e, ui) {
+        $(e.target).tabs('rotate', 5000);
+      }
   });
-
 
   //===============================================
   //  Other tabs
