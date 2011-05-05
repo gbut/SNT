@@ -1093,6 +1093,9 @@ header nav ul.sf-menu li ul.sn li img.gnavImg {
   margin:               0 auto 5px;
   display:              block;
 }
+header nav ul.sf-menu li ul.sn.risk li img.gnavImg {
+  margin-bottom:        15px;
+}
 
 header nav ul.sf-menu li ul li ul.snavItems {
   text-align:           left;
@@ -4957,6 +4960,12 @@ body#craft04 {
   position:             absolute;
   top:                  12px;
   left:                 -4px;
+}
+.ie7 #bg_chat #hd_instant {
+  zoom:                 1;
+}
+.ie7 #bg_chat #hd_instant img {
+  top:                  10px;
 }
 
 #bg_chat .hd .openChatWin {
