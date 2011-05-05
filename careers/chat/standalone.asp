@@ -19,5 +19,7 @@
 
   <!--#include virtual="/inc/__html-foot.asp" -->
 
+  <!--#include virtual="/inc/___ga.asp" -->
+
 </body>
 </html>

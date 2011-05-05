@@ -38,5 +38,13 @@
 
 <!--#include virtual="/inc/__html-foot.asp" -->
 
+<!-- analog clock for contact page -->
+<script type="text/javascript" src="/js/libs/coolclock/excanvas.js"></script>
+<script type="text/javascript" src="/js/libs/coolclock/coolclock.js"></script>
+<script type="text/javascript" src="/js/libs/coolclock/moreskins.js"></script>
+<script type="text/javascript" src="/js/libs/tipsy/jquery.tipsy.js"></script>
+
+<!--#include virtual="/inc/___ga.asp" -->
+
 </body>
 </html>

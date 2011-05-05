@@ -35,5 +35,12 @@
 
 <!--#include virtual="/inc/__html-foot.asp" -->
 
+<!-- canvas maps -->
+<script type="text/javascript" src="/js/libs/raphael-min.js"></script>
+<script type="text/javascript" src="/js/libs/raphael-svg-import.js"></script>
+<script type="text/javascript" src="/js/libs/countries.js"></script>
+
+<!--#include virtual="/inc/___ga.asp" -->
+
 </body>
 </html>

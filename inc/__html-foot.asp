@@ -37,38 +37,17 @@
   </script>
   
   <!-- scripts concatenated and minified via ant build script -->
-  <script src="/js/plugins.js"></script>
   <script src="/js/script.js"></script>
   <!-- end concatenated and minified scripts-->
 
-  <!-- analog clock for contact page -->
-  <script type="text/javascript" src="/js/libs/coolclock/excanvas.js"></script>
-  <script type="text/javascript" src="/js/libs/coolclock/coolclock.js"></script>
-  <script type="text/javascript" src="/js/libs/coolclock/moreskins.js"></script>
-  
   <!-- jquery plugins -->
   <script type="text/javascript" src="/js/libs/flexi-background-jquery.js"></script>
   <script type="text/javascript" src="/js/libs/jquery.cookie.js"></script>
   <script type="text/javascript" src="/js/libs/jquery-validation/jquery.validate.js"></script>
   <script type="text/javascript" src="/js/libs/jquery-scrollto/jquery.scrollto-min.js"></script>
-  <script type="text/javascript" src="/js/libs/tipsy/jquery.tipsy.js"></script>
-  <script type="text/javascript" src="/js/libs/jquery.touchSwipe-1.2.4.js"></script><!--  -->
-  
-  <!-- canvas maps -->
-  <script type="text/javascript" src="/js/libs/raphael-min.js"></script>
-  <script type="text/javascript" src="/js/libs/raphael-svg-import.js"></script>
-  <script type="text/javascript" src="/js/libs/countries.js"></script>
+  <script type="text/javascript" src="/js/libs/jquery.touchSwipe-1.2.4.js"></script>
   
   <!--[if lt IE 7 ]>
     <script src="/js/libs/dd_belatedpng.js"></script>
     <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
   <![endif]-->
-
-  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
-  <script>
-    var _gaq=[["_setAccount","UA-22492098-1"],["_trackPageview"]];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-    s.parentNode.insertBefore(g,s)}(document,"script"));
-  </script>
-  
