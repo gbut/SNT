@@ -92,13 +92,13 @@
         <p>Redefine how companies manage and understand catastrophic risk.</p>
       </div>
       <div class="col3">
-        <div class="icon iconPlanetary">[Earth Sciences]</div>
-        <h4>Earth Sciences</h4>
+        <div class="icon iconPlanetary">[Risk Sciences]</div>
+        <h4>Risk Sciences</h4>
         <p>Quantify impacts with 50,000-year weather models, terrorism game theory, and human longevity models.</p>
       </div>
       <div class="col3">
-        <div class="icon iconCloud">[Supercomputer in the Cloud]</div>
-        <h4>Supercomputer in the Cloud</h4>
+        <div class="icon iconCloud">[Supercomputing in the Cloud]</div>
+        <h4>Supercomputing in the Cloud</h4>
         <p>Build the first high-performance computing cloud platform running hyper-complex mathematical models.</p>
       </div>
     </div>
