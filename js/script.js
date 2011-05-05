@@ -1390,6 +1390,7 @@ $(document).ready(function(){
 	//	VOID LINKS (HREF="#")
 	//===============================================
 
+/*
 	$(function(){
 		$('body a').click(function(e){
 			var clicked = $(e.target);
@@ -1397,6 +1398,13 @@ $(document).ready(function(){
 			if ((typeof clicked) != 'undefined' && $(clicked).attr('href') == '#') e.preventDefault();
 		});
 	});
+*/
+	$(function(){
+  	$('body').click(function(e){
+  		var clicked = $(e.target);
+  		if (clicked.attr('href')=='#' || clicked.closest('a[href="#"]').length) { e.preventDefault(); }
+  	});
+  });
 
 	//===============================================
 	//	EXTERNAL LINKS
@@ -2434,6 +2442,7 @@ function setHeight(obj) {
 
 function setHeightNonfixed() {
   
+  // need to determine which is taller, content area or window
   htContent = $('#t01').height() + $('footer').outerHeight(true) + parseFloat($('#craftDetail .inner').css('padding-top'));
   htWindow = $(window).height() - $('header').outerHeight(true);
 
@@ -2453,7 +2462,8 @@ function setHeightNonfixed() {
 }
 
 function setHeightNonfixedResize() {
-  
+
+  // need to determine which is taller, content area or window  
   htContent = $('#t01').height() + parseFloat($('#craftDetail .inner').css('padding-top'));
   htWindow = $(window).height() - $('header').outerHeight(true);
 
