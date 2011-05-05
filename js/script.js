@@ -331,6 +331,7 @@ $(document).ready(function(){
       } else {
         this.slider.slider({
           max: this.panelRange,
+/*
           create: function(e, ui){
             self.handle = $(self.slider.find('a.ui-slider-handle'));
             // hover effect on scrollbar
@@ -342,6 +343,7 @@ $(document).ready(function(){
           start: function(e, ui){
             self.teamFade(self.popup, self.options.fadeDur, 0);
           },
+*/
           slide: function(e, ui){
             self.panel.css('left',-ui.value);
 /*
@@ -369,9 +371,11 @@ $(document).ready(function(){
   	  $('body').bind('click', hideTeamPopup);
       
       // swipes
+/*
       $('#team ul li a').swipe({
         swipe: function(){ self.swipe.apply(self, arguments); }
       });
+*/
       
     };
 
@@ -395,7 +399,7 @@ $(document).ready(function(){
         // set slider programmatically
         $(this.slider).slider('value', _d);
         // animate panel
-/**/
+/*
         this.panel.animate({
             left: -_d
           },
@@ -403,15 +407,13 @@ $(document).ready(function(){
             duration: this.options.animDur,
             easing: this.options.easing
           });
-
-/*
-        this.panel.css({
-          '-webkit-transition-property' : 'left',
-          '-webkit-transition-duration' : this.options.animDur,
-          '-webkit-transition-property' : 'left',
-          '-webkit-transition-property' : 'left'
-        });
 */
+/**/
+        this.panel.css({
+          '-webkit-transition' : 'left ' + this.options.animDur + 'ms cubic-bezier(0, 0, 0.38, 1.0)',
+          'left' : -_d
+        });
+
         
         e.preventDefault();
         e.stopPropagation();
