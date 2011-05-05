@@ -11,14 +11,6 @@
     
     <!--#include virtual="/inc/__html-head.asp" -->
     
-    <script type="text/javascript">
-    var bgImageSize = {
-  		width	: 1200,
-  		height	: 1400,
-  		bg  : document.getElementById('craftDetail')
-  	};
-    </script>
-  
 </head>
 
 <body id="craft03" class="t01a">

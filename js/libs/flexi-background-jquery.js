@@ -24,13 +24,22 @@ License:
 		CONFIGURATION:
 		Define the size of our background image
 	*/
-	/* moved to head to be page specific
+	// Home and Craft
 	var bgImageSize = {
 		width	: 1248,
 		height	: 733,
 		bg  : $('#home')
 	};
-	*/
+	// Craft (override)
+	if ($('#craft').length) bgImageSize.bg = $('#craft');
+	// Craft Detail
+	if ($('#craftDetail').length) {
+	  bgImageSize = {
+  		width	: 1200,
+  		height	: 1400,
+  		bg  : $('#craftDetail')
+	  };
+	}
 	
 	/*	END CONFIGURATION */
 	
