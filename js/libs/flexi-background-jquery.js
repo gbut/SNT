@@ -24,11 +24,13 @@ License:
 		CONFIGURATION:
 		Define the size of our background image
 	*/
+	/* moved to head to be page specific
 	var bgImageSize = {
 		width	: 1248,
 		height	: 733,
 		bg  : $('#home')
 	};
+	*/
 	
 	/*	END CONFIGURATION */
 	

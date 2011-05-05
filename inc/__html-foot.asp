@@ -35,7 +35,6 @@
       }
     }); 
   </script>
-
   
   <!-- scripts concatenated and minified via ant build script -->
   <script src="/js/plugins.js"></script>
