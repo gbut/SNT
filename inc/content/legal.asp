@@ -152,7 +152,7 @@
       <p>If you have an inquiry regarding this website, including a report of any behavior in connection with this website that violates these Terms of use or applicable laws, please contact us at <a href="mailto:info@rms.com">info@rms.com</a>. You may also contact us via mail at:</p>
       <p>Risk Management Solutions, Inc.<br />
       Attn: General Counsel<br />
-      7015 Gateway Blvd.<br />
+      7575 Gateway Blvd.<br />
       Newark, CA 94560
       </p>
     </div>
