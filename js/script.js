@@ -1918,7 +1918,7 @@ $(document).ready(function(){
   if ($('#craft').length) {
     
     if ($('aside .group').length > 1) {
-      $('aside .btn').show();
+      $('aside .btn').removeClass('omit'); // bug using .show() in IE7
       $('aside .group:first-child').addClass('visible');  // set default condition
       $('aside .btn').click(function() {
         vis = $(this).parent().children('.group.visible');

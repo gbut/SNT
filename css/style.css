@@ -4493,7 +4493,7 @@ body#craft04 {
 
 #craft aside section div {
   width:                179px;
-  margin:               20px 0 0 18px;
+  margin:               10px 0 0 18px;
   float:                left;
   position:             relative;
 }
@@ -4509,7 +4509,7 @@ body#craft04 {
   display:              block;
   position:             absolute;
   left:                 0;
-  top:                  80px;
+  top:                  90px;
 }
 #craft aside section a:hover {
   color:                #115573;
@@ -4525,7 +4525,9 @@ body#craft04 {
   position:             absolute;
   bottom:               18px;
   right:                0;
-  display:              none;
+}
+#craft aside a.btn.omit {
+  bottom:               1000px;
 }
 
 /* / Craft */
