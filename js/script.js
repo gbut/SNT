@@ -1406,22 +1406,21 @@ $(document).ready(function(){
 	//	VOID LINKS (HREF="#")
 	//===============================================
 
-/*
   $(function(){
-    $('body a').click(function(e){
+    $('body').click(function(e){
       var clicked = $(e.target);
-//      if ((clicked.get(0).tagName.toLowerCase() != 'a') && (clicked.parents('a').length)) clicked = clicked.parents('a').get(0);
+      if ((clicked.get(0).tagName.toLowerCase() != 'a') && (clicked.parents('a').length)) clicked = clicked.parents('a').get(0);
       if ((typeof clicked) != 'undefined' && $(clicked).attr('href') == '#') e.preventDefault();
     });
   });
-*/
+
+/*
   $(function(){
     $('body').click(function(e){
       var clicked = $(e.target);
       if (clicked.attr('href')=='#' || clicked.closest('a[href="#"]').length) { e.stopPropagation(); e.preventDefault(); }
     });
   });
-/*
 */
 
 	//===============================================
@@ -1979,7 +1978,7 @@ $(document).ready(function(){
   //===============================================
   //  Height handling for pages with fixed footer
   //===============================================
-
+/* superseded by fullbleed scripts
   if ($('footer').css('position') == 'fixed') {
 
     // find object to size
@@ -1994,9 +1993,9 @@ $(document).ready(function(){
     });
 
   }
-  
+*/
   //===============================================
-  //  Height handling for template t01a (Craft detail)~~~
+  //  Height handling for template t01a (Craft detail)
   //===============================================
 
   if ($('body').hasClass('t01a')) {
@@ -2442,12 +2441,13 @@ function jobListingsTruncation() {
 /**
  * Handle dynamic height for pages with fixed footer
  */
- 
+/* superseded by scripts for fullbleed 
 function setHeight(obj) {
   ht = $(window).height() - $('header').outerHeight(true) - $('footer').outerHeight(true);
   if (ht > parseFloat(obj.css('min-height')))
     obj.height(ht);
 }
+*/
 
 /**
  * Handle dynamic height for pages without fixed footer
