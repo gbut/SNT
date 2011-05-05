@@ -1389,10 +1389,11 @@ $(document).ready(function(){
 	//===============================================
 	//	VOID LINKS (HREF="#")
 	//===============================================
+
 	$(function(){
-		$('body').click(function(e){
+		$('body a').click(function(e){
 			var clicked = $(e.target);
-			if ((clicked.get(0).tagName.toLowerCase() != 'a') && (clicked.parents('a').length)) clicked = clicked.parents('a').get(0);
+//			if ((clicked.get(0).tagName.toLowerCase() != 'a') && (clicked.parents('a').length)) clicked = clicked.parents('a').get(0);
 			if ((typeof clicked) != 'undefined' && $(clicked).attr('href') == '#') e.preventDefault();
 		});
 	});
@@ -1933,17 +1934,22 @@ $(document).ready(function(){
   if ($('#craft').length) {
     
     if ($('aside .group').length > 1) {
-      $('aside .btn').show();
+      $('aside .btn').removeClass('omit'); // bug using .show() in IE7
       $('aside .group:first-child').addClass('visible');  // set default condition
       $('aside .btn').click(function() {
         vis = $(this).parent().children('.group.visible');
-        vis.fadeTo(1000, 0).removeClass('visible');
         if (vis.next('.group').length) {
           next = vis.next('.group');
         } else {
           next = $('aside .group:first-child');
+        }        
+        if ($('html').is('.ie8')) {
+          vis.removeClass('visible').hide();
+          next.show().addClass('visible');  
+        } else {
+          vis.removeClass('visible').fadeOut(1000);
+          next.fadeIn(500).addClass('visible');
         }
-        next.fadeTo(500, 1.0).addClass('visible');
       });
     }
 

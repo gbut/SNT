@@ -53,7 +53,7 @@
         </section>
       </div>
       
-      <a href="#" class="btn btnMore">View More Stories</a>
+      <a href="#" class="btn btnMore omit">View More Stories</a>
 
     </aside>
     
