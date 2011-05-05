@@ -54,19 +54,19 @@
     <h3><em>Passion</em></h3>
     <div id="passionCont">
       <ul class="nav">
-        <li><a href="#nobel">Two Nobel laureates and counting.</a></li>
+        <li><a href="#nobel">One Nobel Peace Prize and counting.</a></li>
         <li><a href="#science-art">Science meets art.</a></li>
         <li><a href="#real-world">Real world, real science.</a></li>
         <li><a href="#educating">Educating the next generation.</a></li>
         <li><a href="#game-theory">Changing the game on terrorism.</a></li>
       </ul>
       <div id="nobel" class="passion">
-        <h4>Two Nobel laureates and counting.</h4>
-        <p>Work with Nobel laureate researchers from the Intergovernmental Panel on Climate Change and others at the top of their fields across medical research, computer science, seismology, and mathematics.</p>
+        <h4>One Nobel Peace Prize and counting.</h4>
+        <p>Work with researchers from the Nobel-winning Intergovernmental Panel on Climate Change and others at the top of their fields across medical research, computer science, climatology, seismology, structural engineering, and mathematics.</p>
       </div>
       <div id="science-art" class="passion ui-tabs-hide">
         <h4>Science meets art.</h4>
-        <p>One of the world's leading modelers is also a harpist who composed the musical arrangement for the national anthem of Afghanistan's interim government.</p>
+        <p>One of RMS' leading modelers is a harpist who also composed the musical arrangement for the interim national anthem of Afghanistan.</p>
       </div>
       <div id="real-world" class="passion ui-tabs-hide">
         <h4>Real world, real science.</h4>
@@ -74,7 +74,7 @@
       </div>
       <div id="educating" class="passion ui-tabs-hide">
         <h4>Educating the next generation.</h4>
-        <p>One of the world's top authorities on climate also writes books for kids explaining geology, prehistory, earthquakes, and volcanoes.</p>
+        <p>One of the world's top authorities on risk also writes books for kids explaining geology, prehistory, earthquakes, and volcanoes.</p>
       </div>
       <div id="game-theory" class="passion ui-tabs-hide">
         <h4>Changing the game on terrorism.</h4>

@@ -395,6 +395,7 @@ $(document).ready(function(){
         // set slider programmatically
         $(this.slider).slider('value', _d);
         // animate panel
+/**/
         this.panel.animate({
             left: -_d
           },
@@ -402,6 +403,15 @@ $(document).ready(function(){
             duration: this.options.animDur,
             easing: this.options.easing
           });
+
+/*
+        this.panel.css({
+          '-webkit-transition-property' : 'left',
+          '-webkit-transition-duration' : this.options.animDur,
+          '-webkit-transition-property' : 'left',
+          '-webkit-transition-property' : 'left'
+        });
+*/
         
         e.preventDefault();
         e.stopPropagation();
