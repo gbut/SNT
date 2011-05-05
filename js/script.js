@@ -2203,24 +2203,20 @@ $(document).ready(function(){
       });
       
       // any click outside the bio div will close it
-/*
       var closeLeaderBio = function(e){
         if (!$('.bio').height()) return true; // bio not open
       	var clicked = $(e.target);
       	// limit clicks to outside of leadership bio areas
-      	if ((clicked.attr('class')=='row') || clicked.closest('.row').length) return true;
+      	if ((clicked.tagName=='dl') || clicked.closest('dl').length) return true;
       	if ((clicked.attr('class')=='bio') || clicked.closest('.bio').length) return true;
-        //self.teamFade(self.popup, self.options.fadeDur, 0);
-        // fadeout and remove old display
+        // fadeout and reset to default condition
         $('.bio').animate({
           opacity: 0,
           height: '0'
-        }, 500, function() {
-          $(this).remove();
-        });
+        }, 500).addClass('default');
       };
       $('body').bind('click', closeLeaderBio);
-*/      
+
     }
       
     // Create shortcut for internal use

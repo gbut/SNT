@@ -15,7 +15,7 @@
 
       <p>When you visit the RMS website, you may choose to provide us with some specific information about yourself, such as your name, your e-mail address or your telephone number. In addition, RMS may receive some general information regarding your use of the website, such as your browser information or your Internet Protocol (IP) address. This Privacy Policy describes the types of information that RMS receives from you when you visit our website, what we do with it, how we protect it, and how you can contact us if you have a question or concern about your information.</p>
       <p>If you are an RMS client, you may have access to software or functions in restricted areas of our website that permit you to input information regarding your clients or insureds. This Privacy Policy does not apply to such information, as the treatment of such information is governed by your (or your employer's) agreement with RMS permitting you to use the applicable software or functions. In addition to the terms of any agreement, it is your responsibility to ensure that you have the authority to input such information and that you are doing so in accordance with your (or your employer's) agreement with RMS and any applicable laws and regulations, including privacy and data protection laws and regulations.</p>
-      <p>Your use of this website is also subject to the <a href="#" class="tab_terms">Terms of Use</a> and other <a href="#" class="tab_privacy">Legal</a> terms and conditions.</p>
+      <p>Your use of this website is also subject to the <a href="#" class="tab_terms">Terms of Use</a> and other Legal terms and conditions.</p>
 
       <h4>1. What types of information does RMS receive when you visit our website?</h4>
 
@@ -72,7 +72,7 @@
 
       <h4>7. Will this Privacy Policy change?</h4>
 
-      <p>This Privacy Policy was last updated on May 29, 2008. RMS reserves the right to modify, amend, add to, replace or remove this Privacy Policy at any time. You are advised to check the Privacy, <a href="#" class="tab_terms">Terms of Use</a> and <a href="#" class="tab_privacy">Legal</a> links for updates whenever you visit the RMS website.</p>
+      <p>This Privacy Policy was last updated on May 29, 2008. RMS reserves the right to modify, amend, add to, replace or remove this Privacy Policy at any time. You are advised to check the Privacy, <a href="#" class="tab_terms">Terms of Use</a> and Legal links for updates whenever you visit the RMS website.</p>
     </div>
     
     <div id="terms" class="panel ui-tabs-hide clearfix">
@@ -152,7 +152,7 @@
       <p>If you have an inquiry regarding this website, including a report of any behavior in connection with this website that violates these Terms of use or applicable laws, please contact us at <a href="mailto:info@rms.com">info@rms.com</a>. You may also contact us via mail at:</p>
       <p>Risk Management Solutions, Inc.<br />
       Attn: General Counsel<br />
-      7015 Gateway Blvd.<br />
+      7575 Gateway Blvd.<br />
       Newark, CA 94560
       </p>
     </div>
