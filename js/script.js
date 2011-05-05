@@ -406,10 +406,8 @@ $(document).ready(function(){
 
 /*
         this.panel.css({
-          '-webkit-transition-property' : 'left',
-          '-webkit-transition-duration' : this.options.animDur,
-          '-webkit-transition-property' : 'left',
-          '-webkit-transition-property' : 'left'
+          '-webkit-transition' : 'left ' + this.options.animDur + 'ms cubic-bezier(0, 0, 0.38, 1.0)',
+          'left' : -_d
         });
 */
         
