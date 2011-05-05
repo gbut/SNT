@@ -1390,13 +1390,21 @@ $(document).ready(function(){
 	//	VOID LINKS (HREF="#")
 	//===============================================
 
-	$(function(){
-		$('body a').click(function(e){
-			var clicked = $(e.target);
-//			if ((clicked.get(0).tagName.toLowerCase() != 'a') && (clicked.parents('a').length)) clicked = clicked.parents('a').get(0);
-			if ((typeof clicked) != 'undefined' && $(clicked).attr('href') == '#') e.preventDefault();
-		});
-	});
+/*
+  $(function(){
+    $('body a').click(function(e){
+      var clicked = $(e.target);
+//      if ((clicked.get(0).tagName.toLowerCase() != 'a') && (clicked.parents('a').length)) clicked = clicked.parents('a').get(0);
+      if ((typeof clicked) != 'undefined' && $(clicked).attr('href') == '#') e.preventDefault();
+    });
+  });
+*/
+  $(function(){
+  	$('body').click(function(e){
+  		var clicked = $(e.target);
+  		if (clicked.attr('href')=='#' || clicked.closest('a[href="#"]').length) { e.stopPropagation(); e.preventDefault(); }
+  	});
+  });
 
 	//===============================================
 	//	EXTERNAL LINKS
@@ -1414,11 +1422,6 @@ $(document).ready(function(){
   //	CLIENT LOGIN
   //===============================================
   $(function(){
-/*
-    $('<div id="loginOverlay"></div>').prependTo($('#body')).click(function(e){
-      $('#btnClientLogin').triggerHandler('click');
-    });
-*/
     var exitLogin = function(e){
 			var clicked = $(e.target);
 			if ((clicked.attr('id')=='btnClientLoginHome') || (clicked.attr('id')=='login') || clicked.closest('#login').length) return true;
