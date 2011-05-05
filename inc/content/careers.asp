@@ -14,19 +14,19 @@
     </div>
     <div id="presenterNav">
       <ul>
-        <li><a href="http://player.vimeo.com/video/23236447?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
+        <li><a href="http://player.vimeo.com/video/23236447?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce&amp;autoplay=1">
           <span class="imgCont vid1">Video #1<span class="play"></span></span>
           <span>Meet RMS</span>
         </a></li>
-        <li><a href="http://player.vimeo.com/video/23235136?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
+        <li><a href="http://player.vimeo.com/video/23235136?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce&amp;autoplay=1">
           <span class="imgCont vid3">Video #3<span class="play"></span></span>
           <span>Our Impact</span>
         </a></li>
-        <li><a href="http://player.vimeo.com/video/23236157?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
+        <li><a href="http://player.vimeo.com/video/23236157?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce&amp;autoplay=1">
           <span class="imgCont vid2">Video #2<span class="play"></span></span>
           <span>Engineering</span>
         </a></li>
-        <li><a href="http://player.vimeo.com/video/23234338?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce">
+        <li><a href="http://player.vimeo.com/video/23234338?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce&amp;autoplay=1">
           <span class="imgCont vid4">Video #4<span class="play"></span></span>
           <span class="multiline">Client Development</span>
         </a></li>
