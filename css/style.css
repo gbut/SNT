@@ -1320,6 +1320,7 @@ footer a:active {
 .t01a footer {
   border:               0;
   background:           #222;
+  display:              none;
 }
 .t01a footer a {
   color:                #fff;
@@ -4320,7 +4321,7 @@ textarea.error {
 
 /* + Craft */
 
-.craft {
+#craft {
 /*  min-height:           700px;
   height:               auto !important;
   height:               700px;
@@ -4339,12 +4340,14 @@ textarea.error {
   position:             relative;
   width:                100%;
   margin:               82px auto 54px;
+/*  margin:               0 auto;*/
 }
-
+/*
 #craftDetail.craft {
   height:               auto;
   margin-top:           0;
 }
+*/
 
 body#craftIndex {
   background-image:     url(../img/bg_craft.jpg);
@@ -4392,7 +4395,7 @@ body#craft04 {
 }
 #craftDetail section {
   width:                638px;
-  padding-bottom:       30px;
+/*  padding-bottom:       30px;*/
 }
 
 #craftDetail section .hd {

@@ -10,6 +10,14 @@
     <meta name="author" content="" />
     
     <!--#include virtual="/inc/__html-head.asp" -->
+    
+	  <script type="text/javascript">
+    var bgImageSize = {
+  		width	: 1248,
+  		height	: 733,
+  		bg  : document.getElementById('home')
+  	};
+    </script>
   
 </head>
 
