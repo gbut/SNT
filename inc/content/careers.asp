@@ -125,6 +125,7 @@
   </section>
 
   <section class="team clearfix">
+    <div id="output" style="color:red;float:right;"></div>
     <h3><em>Us</em></h3>
     <div id="team">
       <div id="team_panel">

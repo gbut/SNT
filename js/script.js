@@ -324,15 +324,20 @@ $(document).ready(function(){
             );
           },
           start: function(e, ui){
-//            self.popup.fadeTo(self.options.fadeDur, 0);
             self.teamFade(self.popup, self.options.fadeDur, 0);
           },
           slide: function(e, ui){
             self.panel.css('left',-ui.value);
 /*
           },
+          change: function(e, ui){
+            // this is triggered on programmatic value change as well as stop()
+            $('#output').html(ui.value);
+            //$('#output').html('change: ' + e.originalEvent);
+          },
           stop: function(e, ui){
-            $('#output').html('stop: ' + ui.value);
+            //$('#output').html('stop: ' + ui.value);
+            return alert($(self.slider).slider('option','value'));
 */
           }
         });
@@ -347,12 +352,10 @@ $(document).ready(function(){
       };
   	  $('body').bind('click', hideTeamPopup);
       
-/*
       // swipes
       $('#team ul li a').swipe({
-        swipe: this.swipe
+        swipe: function(){ self.swipe.apply(self, arguments); }
       });
-*/
       
     };
 
@@ -362,10 +365,31 @@ $(document).ready(function(){
     $tp.fn.extend = $tp.extend = $.extend;
 
     $tp.fn.extend({
-/*
       swipe: function(e, dir, dist){
+        this.teamFade(this.popup, this.options.fadeDur, 0);
+
+        var avg = 350; // arbitrarily, a swipe distance of 350 will move the montage 350px. Weaker swipes move it less; stronger ones more.
+        var _c = dist/avg;
+        var _d = 0;
+        var _s = $(this.slider).slider('option','value');
+        if (dir == 'left') _d = Math.min((_s + (dist * _c)), this.panelRange);
+          else _d = Math.max((_s - (dist * _c)), 0);
+        if (!_d) return;
+        
+        // set slider programmatically
+        $(this.slider).slider('value', _d);
+        // animate panel
+        this.panel.animate({
+            left: -_d
+          },
+          {
+            duration: this.options.animDur,
+            easing: this.options.easing
+          });
+        
+        e.preventDefault();
+        e.stopPropagation();
       },
-*/
       
       /**
        * Handles selection of a team member.
@@ -422,16 +446,8 @@ $(document).ready(function(){
             duration: o.options.animDur,
             easing: o.options.easing
           });
-        // animate handle
-        // since this is a programmatic move, update UI value manually
-        $(o.handle).animate({
-            left: p.handle.toString() + '%'
-          },
-          {
-            duration: o.options.animDur,
-            easing: o.options.easing,
-            complete: function(){ $(this).slider('value', Math.round(p.handle * o.panelRange / 100)); }
-          });
+        // set slider programmatically
+        $(o.slider).slider('value', Math.round(p.handle * o.panelRange / 100));
         
         e.preventDefault();
         e.stopPropagation();
