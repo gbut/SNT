@@ -1390,6 +1390,7 @@ $(document).ready(function(){
 	//	VOID LINKS (HREF="#")
 	//===============================================
 
+/*
   $(function(){
     $('body a').click(function(e){
       var clicked = $(e.target);
@@ -1397,13 +1398,14 @@ $(document).ready(function(){
       if ((typeof clicked) != 'undefined' && $(clicked).attr('href') == '#') e.preventDefault();
     });
   });
-/*
+*/
   $(function(){
     $('body').click(function(e){
       var clicked = $(e.target);
       if (clicked.attr('href')=='#' || clicked.closest('a[href="#"]').length) { e.stopPropagation(); e.preventDefault(); }
     });
   });
+/*
 */
 
 	//===============================================
