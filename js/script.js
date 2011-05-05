@@ -1959,12 +1959,19 @@ $(document).ready(function(){
   }
   
   //===============================================
-  //  Height handling for template t01a (Craft detail)
+  //  Height handling for template t01a (Craft detail)~~~
   //===============================================
 
   if ($('body').hasClass('t01a')) {
-    $('body').height($('#content').outerHeight(true) + $('footer').outerHeight(true));
-    $('#craftDetail .mask').height($('#content').outerHeight(true));
+    
+    // set initial height
+    setHeightNonfixed();
+
+    // change height on window resize
+    $(window).resize(function() {
+      window.setTimeout(function(){ setHeightNonfixedResize(); }, 100);
+    });
+    
   }
   
   //===============================================
@@ -2403,4 +2410,43 @@ function setHeight(obj) {
   ht = $(window).height() - $('header').outerHeight(true) - $('footer').outerHeight(true);
   if (ht > parseFloat(obj.css('min-height')))
     obj.height(ht);
+}
+
+/**
+ * Handle dynamic height for pages without fixed footer
+ */
+
+function setHeightNonfixed() {
+  
+  htContent = $('#t01').height() + $('footer').outerHeight(true) + parseFloat($('#craftDetail .inner').css('padding-top'));
+  htWindow = $(window).height() - $('header').outerHeight(true);
+
+  if (htContent > htWindow) {
+    htBody = htContent;
+    htInner = $('#t01').height();
+  } else {
+    htBody = htWindow;
+    htInner = $(window).height() - $('header').outerHeight(true) - $('footer').outerHeight(true) - parseFloat($('#craftDetail .inner').css('padding-top'));
+  }
+
+  $('body').height(htBody);
+  $('#craftDetail .inner').height(htInner);
+  $('#craftDetail .mask').height($('#craftDetail .inner').outerHeight(true));    
+  $('footer').show();
+
+}
+
+function setHeightNonfixedResize() {
+  
+  htContent = $('#t01').height() + parseFloat($('#craftDetail .inner').css('padding-top'));
+  htWindow = $(window).height() - $('header').outerHeight(true);
+
+  if (htContent < htWindow) {
+    htBody = htWindow;
+    htInner = htWindow - $('footer').outerHeight(true) - parseFloat($('#craftDetail .inner').css('padding-top'));
+    $('body').height(htBody);
+    $('#craftDetail .inner').height(htInner);
+    $('#craftDetail .mask').height($('#craftDetail .inner').outerHeight(true));    
+  }
+  
 }
