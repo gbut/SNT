@@ -13,16 +13,16 @@
         <h3>Private Client Area</h3>
         <ul class="benefits">
           <li>
-            <h4>High-touch Service &amp; Support</h4>
-            <p>Extensive resources on RMS Models and Tools.</p>
+            <h4>Document Library &amp; Product Support</h4>
+            <p>Extensive resources on RMS models and software</p>
           </li>
           <li>
-            <h4>The RMS Client Library</h4>
-            <p>Comprehensive Catastrophe Updates.</p>
+            <h4>Catastrophe Updates</h4>
+            <p>Latest news &amp; modeling parameters for recent events</p>
           </li>
           <li>
             <h4>Capital Markets Resources</h4>
-            <p>Paradex Indices &amp; ILS Portfolio Management</p>
+            <p>Parametric indices &amp; ILS portfolio management</p>
           </li>
         </ul>
         <fieldset>
