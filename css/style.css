@@ -3822,17 +3822,21 @@ textarea.error {
   background-color:     #f2e3e3
 }
 
-#job_apply label[generated],
-#contact label[generated] {
+#job_apply label.error,
+#contact label.error {
   line-height:          240%;
   color:                #6f0d24;
   text-align:           right;
   width:                250px;
   height:               33px;
   margin:               0;
-  position:             absolute;
+  position:             absolute !important;
   top:                  0;
   left:                 390px;
+}
+.ie7 #job_apply label.error,
+.ie7 #contact label.error {
+  top:                  -1px;
 }
 
 /* / error handling */
