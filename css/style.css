@@ -3923,6 +3923,17 @@ textarea.error {
   margin:               0;
 }
 
+#contact #confirmation h4 {
+  font-size:            120%;
+  margin:               20px 0 25px;
+}
+#contact #confirmation label {
+  font-weight:          bold;
+  height:               auto;
+  margin:               0 6px 0 0;
+}
+
+
 #job_apply .btnLinkedIn {
   margin:               0 0 10px 121px;
 }
@@ -3935,17 +3946,20 @@ textarea.error {
 
 #contact form {
   width:                674px;
-  margin:               10px 10px 0 0;
+  margin:               0 10px 0 0;
   padding-right:        28px;
   float:                left;
 }
 
 #contact h3 {
-  padding:              0 0 15px 0;
+  padding:              10px 0 15px 0;
 }
 
 #contact aside section {
+  margin-top:           0;
   padding-bottom:       10px;
+  position:             relative;
+  top:                  -2px;
 }
 #contact aside .support {
   margin-bottom:        15px;

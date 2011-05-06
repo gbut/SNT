@@ -3,14 +3,14 @@
 
   <div class="top clearfix">
   
-    <form name="contact_form" method="post" action="contact.asp" id="contact_form">
-      <input type="hidden" name="urlSendTo" value="contact.asp?sent=y" />
-      <input type="hidden" name="urlFromPath" value="contact.asp" />        
-      <input type="hidden" name="txtCompany" value="UNANSWERED" />        
-      <input type="hidden" name="txtFax" value="" />    
-      <input type="hidden" name="Action" value="Send" />
-
-      <h3>Get In <em>Touch</em></h3>
+    <h3>Get In <em>Touch</em></h3>
+    
+    <form name="contact_form" method="" action="" id="contact_form">
+      <input type="hidden" id="urlSendTo" name="urlSendTo" value="contact.asp?sent=y" />
+      <input type="hidden" id="urlFromPath" name="urlFromPath" value="contact.asp" />        
+      <input type="hidden" id="txtCompany" name="txtCompany" value="UNANSWERED" />        
+      <input type="hidden" id="txtFax" name="txtFax" value="" />    
+      <input type="hidden" id="Action" name="Action" value="Send" />
 
       <fieldset>
         <div class="field">
@@ -31,7 +31,6 @@
         </div>
         <button type="submit" class="btn btnLg btnSubmit">Send</button>
       </fieldset>
-        
     </form>
   
     <aside clear="clearfix">
