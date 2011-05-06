@@ -1804,7 +1804,7 @@ $(document).ready(function(){
   $('#passionCont').tabs({
     fx: { opacity:'toggle', duration:400 },
     create: function(e, ui) {
-      $(e.target).tabs('rotate', 4000);
+      $(e.target).tabs('rotate', 6000);
     }
   });
   
