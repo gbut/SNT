@@ -13,7 +13,7 @@
     
       <div class="hd">
         <h2>Catastrophe fieldwork:</h2>
-        <h3>Improving risk models in the wake of disaster.</h3>
+        <h3>Improving risk models in the wake of disaster</h3>
       </div>
     
       <p>Model development at RMS is more than just number crunching; it’s a blend of science and art that relies on each developer’s ability to think critically and creatively. Fieldwork provides real-world experience that enhances our judgment and intuition. That means better models, better understanding, and, ultimately, better preparation for when the next disaster strikes.</p>

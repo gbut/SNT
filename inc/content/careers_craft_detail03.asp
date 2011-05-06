@@ -13,7 +13,7 @@
     
       <div class="hd">
         <h2>Visualizing and analyzing the future:</h2>
-        <h3>Designing a next generation application suite.</h3>
+        <h3>Designing a next generation application suite</h3>
       </div>
     
       <p>Building the software that drives catastrophe models is a complex, multivariate problem. The work doesn’t stop with just delivering models, but perhaps more importantly extends to providing our diverse customer base with durable, flexible, purpose-built solutions that turn data visualization and analytic output into actionable insight.</p>

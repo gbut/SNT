@@ -2016,26 +2016,62 @@ $(document).ready(function(){
     });
     
   }
-  
+
   //===============================================
   //  Form validation
   //===============================================
 
+  // Contact
   if ($('#contact_form').length) {
-
     var validator = $("#contact_form").validate({
       messages: {
         email: {
           email: "Please enter a valid email address."
         }
       },
+      submitHandler: function(form) {
+        
+       // user input
+        var name = $('input#name').val();
+        var email = $('input#email').val();
+        var tel = $('input#tel').val();
+        var message = $('textarea#message').val();
+
+        // hidden fields
+        var urlSendTo = $('input#urlSendTo').val();
+        var urlFromPath = $('input#urlFromPath').val();
+        var txtCompany = $('input#txtCompany').val();
+        var txtFax = $('input#txtFax').val();
+        var Action = $('input#Action').val();
+
+        var dataString = 'name='+ name + '&email=' + email + '&tel=' + tel + '&message=' + message;
+        dataString += '&urlSendTo='+ urlSendTo + '&urlFromPath=' + urlFromPath + '&txtCompany=' + txtCompany + '&txtFax=' + txtFax + '&Action=' + Action;
+
+        $.ajax({
+          type: 'POST',
+          url: '/about/contact_email.asp',
+          data: dataString,
+          success: function() {
+            $('#contact_form').html('<div id="confirmation"></div>');
+            $('#confirmation').html('<h4>Thanks. Your message has been sent.</h4>')
+            .append('<p><label>Name:</label> '+name+'</p>')
+            .append('<p><label>Email:</label> '+email+'</p>')
+            .append('<p><label>Telephone:</label> '+tel+'</p>')
+            .append('<p><label>Message:</label> '+message+'</p>')
+            .hide()
+            .fadeIn(2000);
+          }
+        });
+        return false;
+
+      },
       debug:false
     });
-
   }
 
+  // Jobvite apply
   if ($('#jvform').length) {
-    
+
     // default value isn't a valid entry
     jQuery.validator.addMethod("defaultInvalid", function(value, element) {
       return value != element.defaultValue;

@@ -13,7 +13,7 @@
     
       <div class="hd">
         <h2>The art of modeling:</h2>
-        <h3>Uniting advances in computing power with scientific expertise.</h3>
+        <h3>Uniting advances in computing power with scientific expertise</h3>
       </div>
     
       <p>Most catastrophe (cat) models that describe weather related phenomena, such as hurricanes, floods, or storm surges rely on the same fundamental physical equations that are also being used by numerical weather and climate prediction models or by hydrological and hydraulic models. So what does that mean for cat modeling?</p>
