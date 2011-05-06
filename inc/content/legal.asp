@@ -83,6 +83,10 @@
       <h4>1. Ownership</h4>
 
       <p>This website, including any and all content, text, data, information and images ("Content"), and any copyrights, trademarks, patents, trade secrets or other intellectual property rights in such Content ("Intellectual Property Rights"), is the property of RMS or its licensors. You may not use any Content of this website unless specifically permitted by the Content or these Terms of Use.</p>
+      <p>ALM, RiskBrowser, RiskLink, RiskSearch, RiskOnline, the RMS logo, and RMS are registered trademarks of Risk Management Solutions, Inc.</p>
+      <p>ExposureRefine, ExposureSource, and RiskTools are trademarks of Risk Management Solutions, Inc.</p>
+      <p>IRAS is a trademark licensed exclusively to Risk Management Solutions, Inc. by Stanford University.</p>
+      <p>All other trademarks are the property of their respective owners.</p>
 
       <h4>2. Use of this Website</h4>
 
