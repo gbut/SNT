@@ -2031,7 +2031,7 @@ $(document).ready(function(){
       },
       submitHandler: function(form) {
         
-       // user input
+        // user input
         var name = $('input#name').val();
         var email = $('input#email').val();
         var tel = $('input#tel').val();
@@ -2044,13 +2044,10 @@ $(document).ready(function(){
         var txtFax = $('input#txtFax').val();
         var Action = $('input#Action').val();
 
-        var dataString = 'name='+ name + '&email=' + email + '&tel=' + tel + '&message=' + message;
-        dataString += '&urlSendTo='+ urlSendTo + '&urlFromPath=' + urlFromPath + '&txtCompany=' + txtCompany + '&txtFax=' + txtFax + '&Action=' + Action;
-
         $.ajax({
           type: 'POST',
           url: '/about/contact_email.asp',
-          data: dataString,
+          data: $("#contact_form").serialize(),
           success: function() {
             $('#contact_form').html('<div id="confirmation"></div>');
             $('#confirmation').html('<h4>Thanks. Your message has been sent.</h4>')
