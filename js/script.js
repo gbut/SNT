@@ -992,11 +992,12 @@ $(document).ready(function(){
     /*
     rms_todo: remove gbl_env and non-rms code (else)
     */
+    var _apiKey   = (gbl_env == "rms") ? 'cbb8d2b3a67c49c898993b46985fd79a' : '6958c0768228458b9e5dc12c39f28486';
     var _lpServer = (gbl_env == "rms") ? 'server.iad.liveperson.net' : 'dev.liveperson.net';
     var _lpNumber = (gbl_env == "rms") ? '44448599' : 'P16777301';
     lpChatConfig = {
-      apiKey : '6958c0768228458b9e5dc12c39f28486', // application key.
-      lpServer : _lpServer, // server. test=dev.liveperson.net ; live=server.iad.liveperson.net
+      apiKey : _apiKey, // application key. live=cbb8d2b3a67c49c898993b46985fd79a ; test=6958c0768228458b9e5dc12c39f28486
+      lpServer : _lpServer, // server. live=server.iad.liveperson.net ; test=dev.liveperson.net
       lpNumber : _lpNumber, // account number. Production account=44448599 ; Small business test account=P16777301
       sessVar : 'SV!',
       skillUDE : 'skill',
