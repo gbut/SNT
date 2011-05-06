@@ -394,12 +394,11 @@
 
         <section class="clearfix">
           <div class="col3double">
-            <p><strong>Life expectancy, the impact of lifestyle choices, and the toll that catastrophic events can take in terms of human lives lost can all have a dramatic impact on business as well as governments.</strong> From disaster response planning to pensions, insurance, and government policy, being prepared for the future takes careful financial and logistical planning and preparation. It's essential to gain the best possible understanding of how long people will live, what factors drive longevity, and what happens when catastrophe strikes.</p>
+            <p><strong>Life expectancy, the impact of lifestyle choices, and the toll that catastrophic events can take in terms of human lives lost can all have a dramatic impact on business as well as governments.</strong> From disaster response planning to pensions, insurance, and government policy, being prepared for the future depends on the best possible understanding of how long people will live, what factors drive longevity, and what can happen when catastrophe strikes.</p>
             <p><cite>[Right: In the influenza pandemic of 1918, large numbers of people were treated in temporary wards. A future pandemic could similarly overwhelm healthcare providers, insurers, and local and federal governments.]</cite></p>
           </div>
           <div class="col3">
             <img src="/img/models/longevity-pandemic.jpg" alt="Influenza Pandemic of 1918" />
-            <!-- <p class="caption">In the influenza pandemic of 1918, large numbers of people were treated in temporary wards. A future pandemic could similarly overwhelm healthcare providers, insurers, and local and federal governments.</p> -->
           </div>
         </section>
 
@@ -407,18 +406,37 @@
           <h3>Longevity Models</h3>
           <div class="col3">
             <img src="/img/models/longevity-liabilities-chart.jpg" alt="Chart: Annuities Liability Exceedance Probability" />
-            <h5>Industry-shaping models for longevity and health</h5>
-            <p>RMS longevity and mortality models help a wide range of industries and government agencies maintain the appropriate financial infrastructure and societal response mechanisms for today's probable injury, illness, or death scenarios. Based on a wide variety of scientific drivers and inputs, our models take into account infectious diseases, natural catastrophes, and terrorist attacks as well as individual lifestyle choices and medical and scientific breakthroughs that can affect current or future longevity trends.</p>
+            <h5>Modeling Longevity Risk</h5>
+            <p>Grounded in medical science, the RMS Longevity Risk Model analyzes the complex interplay of factors expected to drive future mortality rates:</p>
+            <ul>
+              <li>Lifestyle trends</li>
+              <li>Environment</li>
+              <li>Medical intervention</li>
+              <li>Regenerative medicine</li>
+              <li>Strategies to slow aging</li>
+            </ul>
+            <p>Output from the Longevity Risk Model can be used to assess capital requirements for pension and annuity longevity risk for internal planning or regulatory requirements, inform risk transfer decisions, and quantify and optimize the correlation between longevity and mortality portfolios.</p>
           </div>
           <div class="col3">
             <img src="/img/models/longevity-timeline.jpg" alt="Chart: Mortality Improvement Over Time" />
-            <h5>Superior analytics from our specialized team</h5>
-            <p>A specialized team of experienced modelers, medical specialists and analysts, biological mathematicians, and health statisticians, together with experts in a variety of other fields, collaborate to ensure RMS life and health models lead the world in innovative analytics. We take into account the latest epidemiological studies, clinical trial data, and medical models to provide state-of-the-art knowledge and insight. Our models include changes in lifestyle and resulting risk factors such as smoking, diet, obesity, and general attitudes to health, together with improvements in medical care, drug development, and treatments.</p>
+            <h5>Modeling Excess Mortality Risk</h5>
+            <p>RMS leads the industry in modeling potential sources of excess mortality risk, including infectious diseases, terrorism, and earthquakes. These models incorporate scientific and medical data as well as claims information from historical events around the world. Model output can be used to:</p>
+            <ul>
+              <li>Understand the drivers and magnitude of excess mortality risk by line, country, and peril</li>
+              <li>Inform risk transfer decisions</li>
+              <li>Monitor and manage risk concentrations in key urban areas</li>
+            </ul>
           </div>
           <div class="col3">
             <img src="/img/models/longevity-drug-development.gif" alt="Chart: Drug Development by the US FDA" />
-            <h5>Projecting the impact of breakthrough medical technologies</h5>
-            <p>To quantify probabilities related to breakthroughs in medical science, RMS catalogs current medical research and investment in the biosciences, tracks thousands of drugs currently in the pipeline for FDA approval, and projects social changes in lifestyle risk factors and healthcare treatment patterns. The resulting model provides a timeline estimate for probable improvements in lifespan due to advances in medical technologies.</p>
+            <h5>Underwriting and Portfolio Management</h5>
+            <p>Mortality analytics informed by medical science achieve a higher level of granularity than is possible using conventional actuarial techniques. RMS analytics enable businesses to:</p>
+            <ul>
+              <li>Capture the interaction of risk factor variables and conduct predictive modeling of lifespans using characteristics such as lifestyle, medical history, and medical testing</li>
+              <li>Incorporate analytics based on disease studies, clinical trial data, and medical models</li>
+              <li>Differentiate policy applicants based on individual health risk</li>
+              <li>Assess the relative impact of a wide variety of risk factors and medical treatments on mortality</li>
+            </ul>
           </div>
         </section>
 
