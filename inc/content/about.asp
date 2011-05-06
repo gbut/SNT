@@ -40,7 +40,7 @@
         <dl>
           <dt>Hemant H. Shah</dt>
           <dd>President and<br />Chief Executive Officer</dd>
-          <dd class="loc">Newark, California</dd>
+          <dd class="loc">California, US</dd>
           <dd class="img1">
             <img src="/img/staff/leader_shah_bw.jpg" />
             <img src="/img/staff/leader_shah_c.jpg" />
@@ -64,7 +64,7 @@
         <dl>
           <dt>Robert Bentley</dt>
           <dd>Chief Operating Officer</dd>
-          <dd class="loc">Hackensack, New Jersey</dd>
+          <dd class="loc">New Jersey, US</dd>
           <dd class="img1">
             <img src="/img/staff/leader_bentley_bw.jpg" />
             <img src="/img/staff/leader_bentley_c.jpg" />
@@ -111,7 +111,7 @@
         <dl>
           <dt>Stephen Robertson</dt>
           <dd>Chief Finance Officer</dd>
-          <dd class="loc">Newark, California</dd>
+          <dd class="loc">California, US</dd>
           <dd class="img1">
             <img src="/img/staff/leader_robertson_bw.jpg" />
             <img src="/img/staff/leader_robertson_c.jpg" />
@@ -129,7 +129,7 @@
         <dl>
           <dt>Philippe Stephan</dt>
           <dd>Chief Technology Officer</dd>
-          <dd class="loc">Newark, California</dd>
+          <dd class="loc">California, US</dd>
           <dd class="img1">
             <img src="/img/staff/leader_stephan_bw.jpg" />
             <img src="/img/staff/leader_stephan_c.jpg" />
