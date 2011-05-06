@@ -24,7 +24,7 @@
 
       <p>RMS employs some of the world’s best software engineers; it takes a special breed of person who can tackle first-of-kind engineering problems while understanding the science and mathematics behind the models. And for many of us, this new platform is the project we waited our whole career to find. From petascale algorithms to file systems customized for big data sets, this platform has presented unique problems that have been solved, and re-solved, and re-solved again to make sure we’re getting it right.</p>
 
-      <p>We’ve now spent two years designing a next generation platform that is as fast, efficient, and powerful as anything available in the commercial market. No legacy code, no limits on innovation. We’re using best of breed mainstream technologies like Microsoft, Nvidia, and Microstrategy where it makes sense, and building our own leading-edge software where out of the box solutions fall short. We can’t wait to share it with the world.</p>
+      <p>We’ve now spent two years designing a next generation platform that is as fast, scalable, efficient, and powerful as anything available in the commercial market. No legacy code, no limits on innovation. We’re using best of breed mainstream technologies from Microsoft, Nvidia, and MicroStrategy where it makes sense, and building our own leading-edge software where out of the box solutions fall short. We can’t wait to share it with the world.</p>
       
     </section>
 
