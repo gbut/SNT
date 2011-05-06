@@ -97,7 +97,7 @@
 
       <h4>3. User Content</h4>
 
-      <p>Except as provided in the [Privacy Policy], or in a written agreement that you or your employer has with RMS, any Content that you submit to RMS using this website or in connection with this website ("User Content") will be deemed non-confidential and RMS may disclose it to any party without your permission. You agree that, except as provided in the [Privacy Policy] or in a written agreement with RMS, you grant to RMS a worldwide, royalty-free, perpetual, irrevocable, sublicenseable, non-exclusive right and license to translate, reproduce, sell, publish, distribute, modify, adapt, display, perform, promote, link to or use, in any form or media, any User Content. RMS is not obligated to use or post any Content you submit, and makes no representations or warranties regarding any User Content on this website.</p>
+      <p>Except as provided in the <a href="#" class="tab_privacy">Privacy Policy</a>, or in a written agreement that you or your employer has with RMS, any Content that you submit to RMS using this website or in connection with this website ("User Content") will be deemed non-confidential and RMS may disclose it to any party without your permission. You agree that, except as provided in the [Privacy Policy] or in a written agreement with RMS, you grant to RMS a worldwide, royalty-free, perpetual, irrevocable, sublicenseable, non-exclusive right and license to translate, reproduce, sell, publish, distribute, modify, adapt, display, perform, promote, link to or use, in any form or media, any User Content. RMS is not obligated to use or post any Content you submit, and makes no representations or warranties regarding any User Content on this website.</p>
       <p>You agree not to submit to RMS or this website any User Content that you are not authorized to submit, and that User Content does not and will not infringe upon any other party's Intellectual Property Rights. RMS undertakes no obligation to verify your right to use User Content or submit it to this website.</p>
 
       <h4>4. Registration and Passwords</h4>
@@ -144,7 +144,7 @@
       <h4>11. Dispute Resolution, Choice of Law, Etc.</h4>
 
       <p>All disputes relating to this website and your use of this website, including but not limited to breaches of these Terms of Use and the Privacy Policy, shall be governed by the laws of California without giving effect to any law or rule that would cause the laws of any other jurisdiction to be applied. You consent to the exclusive jurisdiction of and venue in the State and Federal courts of Santa Clara County, California, and agree that venue in such courts is appropriate.</p>
-      <p>If a court of competent jurisdiction finds that any provision of these Terms of Use or the <a href="#" class="tab_privacy">Privacy Policy</a>is invalid or unenforceable, such provision will be deemed stricken without effect on the remaining provisions, which shall remain in full force and effect.</p>
+      <p>If a court of competent jurisdiction finds that any provision of these Terms of Use or the <a href="#" class="tab_privacy">Privacy Policy</a> is invalid or unenforceable, such provision will be deemed stricken without effect on the remaining provisions, which shall remain in full force and effect.</p>
 
       <h4>12. Modification or Termination</h4>
 
