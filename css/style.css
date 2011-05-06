@@ -1106,6 +1106,7 @@ header nav ul.sf-menu li ul li ul.snavItems {
 }
 header nav ul.sf-menu li ul li ul.snavItems li {
   font-size:            100%;
+  left:                 0;
 }
 header nav ul.sf-menu li ul li ul.snavItems li a,
 header nav ul.sf-menu li.sfHover ul li ul.snavItems li a {
@@ -1114,8 +1115,10 @@ header nav ul.sf-menu li.sfHover ul li ul.snavItems li a {
   text-transform:       none;
   height:               auto;
   padding:              9px 0 6px;
+/*
   border:               1px solid #c0c0c0;
   border-width:         1px 0 0;
+*/
   background:           none;
   display:              block;
 }
@@ -1210,12 +1213,14 @@ header nav ul.sf-menu li ul.sn.careers li ul.snavItems li a {
 }
 header nav ul.sf-menu li ul.sn.careers li ul.snavItems li a {
   color:                #636363;
-  border-style:         dotted;
+/*  border-style:         dotted;*/
 }
 
+/*
 header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
   border:               none;
 }
+*/
 
 /* / Global Nav */
 
