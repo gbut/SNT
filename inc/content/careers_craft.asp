@@ -18,7 +18,7 @@
           <img src="/img/craft/craft_01.jpg" />
           <div>
             <h3>The scale of things to come:</h3>
-            Building a powerful new platform.
+            Building a powerful new platform
             <a href="/careers/craft/craft01.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
@@ -27,7 +27,7 @@
           <img src="/img/craft/craft_02.jpg" />
           <div>
             <h3>Catastrophe fieldwork:</h3>
-            Improving risk models in the wake of disaster.
+            Improving risk models in the wake of disaster
             <a href="/careers/craft/craft02.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
@@ -36,7 +36,7 @@
           <img src="/img/craft/craft_03.jpg" />
           <div>
             <h3>Visualizing and analyzing the future:</h3>
-            Designing a next generation application suite.
+            Designing a next generation application suite
             <a href="/careers/craft/craft03.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
@@ -47,7 +47,7 @@
           <img src="/img/craft/craft_04.jpg" />
           <div>
             <h3>The art of modeling:</h3>
-            Uniting advances in computing power with scientific expertise.
+            Uniting advances in computing power with scientific expertise
             <a href="/careers/craft/craft04.asp" title="Read">Read <em>&raquo;</em></a>
           </div>
         </section>
