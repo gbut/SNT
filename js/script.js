@@ -31,12 +31,15 @@ var gbl_env = "";
 
 switch(window.location.hostname)
 {
-   case "cateamsite03":
-   case "www.rms.com":
-     gbl_env = "rms";
-     break;
-   default:
-     gbl_env = "";
+  case "cateamsite03":
+    gbl_env = "rms_test";
+    break;
+  case "www.rms.com":
+  case "rms.com":
+    gbl_env = "rms_prod";
+    break; 
+  default:
+    gbl_env = "";
 }
 
 /* RMS code section. end */
@@ -992,9 +995,9 @@ $(document).ready(function(){
     /*
     rms_todo: remove gbl_env and non-rms code (else)
     */
-    var _apiKey   = (gbl_env == "rms") ? 'cbb8d2b3a67c49c898993b46985fd79a' : '6958c0768228458b9e5dc12c39f28486';
-    var _lpServer = (gbl_env == "rms") ? 'server.iad.liveperson.net' : 'dev.liveperson.net';
-    var _lpNumber = (gbl_env == "rms") ? '44448599' : 'P16777301';
+    var _apiKey   = (gbl_env == "rms_prod") ? 'cbb8d2b3a67c49c898993b46985fd79a' : '6958c0768228458b9e5dc12c39f28486';
+    var _lpServer = (gbl_env == "rms_prod") ? 'server.iad.liveperson.net' : 'dev.liveperson.net';
+    var _lpNumber = (gbl_env == "rms_prod") ? '44448599' : 'P16777301';
     lpChatConfig = {
       apiKey : _apiKey, // application key. live=cbb8d2b3a67c49c898993b46985fd79a ; test=6958c0768228458b9e5dc12c39f28486
       lpServer : _lpServer, // server. live=server.iad.liveperson.net ; test=dev.liveperson.net
