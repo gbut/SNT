@@ -2342,6 +2342,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   overflow:             hidden;
   cursor:               pointer;
 }
+#home .hd a:hover #cta_text,
+#home .hd a:active #cta_text {
+ color:                 #c3151c;
+}
 
 #home .hd a #cta_text span {
   display:              block;
@@ -2453,6 +2457,12 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
   padding:              1px 2px 3px;
   display:              inline-block;
   background-color:     #212121;
+}
+#home #ribbon ul li p a:hover,
+#home #ribbon ul li p a:active,
+#home #ribbon ul li p a:hover em,
+#home #ribbon ul li p a:active em {
+  color:                #c3151c;
 }
 .ie7 #home #ribbon ul li p a em {
   cursor:               pointer;

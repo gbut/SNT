@@ -155,7 +155,7 @@
         </a>
       </div>
       <div class="office">
-        <h5>Chicago</h5>
+        <h5>Midwest U.S.</h5>
         <a href="#" class="peoria">
           621 SW Commercial<br />
           Suite D<br />
@@ -165,7 +165,6 @@
             Fax: 1.309.637.6750
           </div>
         </a>
-        <h5>Bloomington</h5>
         <a href="#" class="bloomington">
           7900 International Drive, Suite 970<br />
           Bloomington, MN 55425
