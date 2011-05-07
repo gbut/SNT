@@ -2956,12 +2956,22 @@ body.isHome footer {
 }
 .ie8 #risk ul#caseStudiesNav li a .imgCont {
   width:                88px;
+  height:               51px;
 }
 #risk ul#caseStudiesNav li a .imgCont.cs2 {
   background-position:  0 -52px;
 }
 #risk ul#caseStudiesNav li a .imgCont.cs3 {
   background-position:  0 -104px;
+}
+.ie8 #risk ul#caseStudiesNav li a .imgCont.cs1 {
+  background-position:  -1px 0;
+}
+.ie8 #risk ul#caseStudiesNav li a .imgCont.cs2 {
+  background-position:  -1px -52px;
+}
+.ie8 #risk ul#caseStudiesNav li a .imgCont.cs3 {
+  background-position:  -1px -104px;
 }
 
 #risk section.caseStudies .rt dl {
