@@ -38,8 +38,9 @@ switch(window.location.hostname)
   case "rms.com":
     gbl_env = "rms_prod";
     break; 
-  default:
-    gbl_env = "";
+        
+    default:
+      gbl_env = "";
 }
 
 /* RMS code section. end */
@@ -269,7 +270,7 @@ $(document).ready(function(){
       /*
       rms_todo: remove gbl_env and non-rms code (else)
       */
-      if (gbl_env == "rms")
+      if (gbl_env == "rms_prod" || gbl_env == "rms_test")
       {
         $.ajax({
           type: "POST",
