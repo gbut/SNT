@@ -1597,6 +1597,9 @@ a.close:active {
 #nextgen #presenterNav ul li a {
   width:                160px;
 }
+#risk #presenterNav ul li a.wide {
+  width:                170px;
+}
 
 #presenterNav ul li a span {
   position:             relative;
@@ -2977,6 +2980,9 @@ body.isHome footer {
 }
 #risk .col3double {
   width:                611px;
+}
+#risk .col3.padBtm {
+  padding-bottom:       20px;
 }
 
 #risk .col3 ul {

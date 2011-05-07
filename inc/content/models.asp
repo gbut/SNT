@@ -21,7 +21,7 @@
           <span class="imgCont vid1">Video #1<span class="play"></span></span>
           <span class="multiline">Model Development</span>
         </a></li>
-        <li><a href="http://player.vimeo.com/video/23183385?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce&amp;autoplay=1">
+        <li><a href="http://player.vimeo.com/video/23183385?title=0&amp;byline=0&amp;portrait=0&amp;color=a4b4ce&amp;autoplay=1" class="wide">
           <span class="imgCont vid2">Video #2<span class="play"></span></span>
           <span class="multiline">Europe Windstorm Model</span>
         </a></li>
@@ -395,17 +395,15 @@
         <section class="clearfix">
           <div class="col3double">
             <p><strong>Life expectancy, the impact of lifestyle choices, and the toll that catastrophic events can take in terms of human lives lost can all have a dramatic impact on business as well as governments.</strong> From disaster response planning to pensions, insurance, and government policy, being prepared for the future depends on the best possible understanding of how long people will live, what factors drive longevity, and what can happen when catastrophe strikes.</p>
-            <p><cite>[Right: In the influenza pandemic of 1918, large numbers of people were treated in temporary wards. A future pandemic could similarly overwhelm healthcare providers, insurers, and local and federal governments.]</cite></p>
           </div>
-          <div class="col3">
-            <img src="/img/models/longevity-pandemic.jpg" alt="Influenza Pandemic of 1918" />
+          <div class="col3 padBtm">
+            <img src="/img/models/longevity-infectious-disease.jpg" alt="Infectious Disease Spread Over Time" />
           </div>
         </section>
 
         <section class="clearfix">
-          <h3>Longevity Models</h3>
           <div class="col3">
-            <img src="/img/models/longevity-liabilities-chart.jpg" alt="Chart: Annuities Liability Exceedance Probability" />
+            <img src="/img/models/longevity-chart1.jpg" alt="Chart: Modeling Longevity Risk" />
             <h5>Modeling Longevity Risk</h5>
             <p>Grounded in medical science, the RMS Longevity Risk Model analyzes the complex interplay of factors expected to drive future mortality rates:</p>
             <ul>
@@ -418,7 +416,7 @@
             <p>Output from the Longevity Risk Model can be used to assess capital requirements for pension and annuity longevity risk for internal planning or regulatory requirements, inform risk transfer decisions, and quantify and optimize the correlation between longevity and mortality portfolios.</p>
           </div>
           <div class="col3">
-            <img src="/img/models/longevity-timeline.jpg" alt="Chart: Mortality Improvement Over Time" />
+            <img src="/img/models/longevity-chart2.jpg" alt="Chart: Modeling Excess Mortality Risk" />
             <h5>Modeling Excess Mortality Risk</h5>
             <p>RMS leads the industry in modeling potential sources of excess mortality risk, including infectious diseases, terrorism, and earthquakes. These models incorporate scientific and medical data as well as claims information from historical events around the world. Model output can be used to:</p>
             <ul>
@@ -428,7 +426,7 @@
             </ul>
           </div>
           <div class="col3">
-            <img src="/img/models/longevity-drug-development.gif" alt="Chart: Drug Development by the US FDA" />
+            <img src="/img/models/longevity-chart3.jpg" alt="Chart: Underwriting and Portfolio Management" />
             <h5>Underwriting and Portfolio Management</h5>
             <p>Mortality analytics informed by medical science achieve a higher level of granularity than is possible using conventional actuarial techniques. RMS analytics enable businesses to:</p>
             <ul>
