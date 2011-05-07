@@ -23,7 +23,7 @@
   
     <!-- + content -->
     <section id="content" class="clearfix">
-      <!--#include virtual="/inc/content/risk.asp" -->
+      <!--#include virtual="/inc/content/models.asp" -->
     </section>
     <!-- / content -->
       

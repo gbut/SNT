@@ -44,7 +44,7 @@
     <div class="rt">
       <span class="imgCont"><img src="/img/photo_hshah.jpg" alt="Hemant Shah, CEO" /></span>
       <blockquote>
-        <p><em>RMS was founded to solve problems no one thought could be solved.</em> Then as now, we're leading the way.</p>
+        <p><em>RMS was founded to solve problems no one thought could be solved.</em> Today, the problems are exponentially more complex. That makes what we do all the more meaningful.</p>
         <p class="attr">&mdash; <em>Hemant Shah</em>, Founder and CEO</p>
       </blockquote>
     </div>
