@@ -582,6 +582,10 @@ $(document).ready(function(){
       this.emailCancel.bind('click', { obj: self }, self.closeEmailTranscript);
       this.emailSend.bind('click', { obj: self }, function(){ self.emailForm.submit(); });
       
+      // 'open in new window' seems to interrupt the chat in FF4; disable here
+      var ua = $.browser;
+      if (ua.mozilla && ua.version.slice(0,1) == '2' ) this.btnPopup.hide();
+            
       // email form validation
       this.emailForm.validate({
         messages: {
@@ -732,7 +736,6 @@ $(document).ready(function(){
         
         // delete session key
         $.cookie('chatsessionkey', null);
-        console.log('endChat: ' + $.cookie('chatsessionkey'));
 
         // if in popup, close window
         // if in main win, reset screen
@@ -775,6 +778,10 @@ $(document).ready(function(){
       addChatText: function(by, text, klass) {
         var who = (by != null) ? '<span class="who">' + by + ': </span>' : '';
         var str = who + text.replace(/\n/gi, '<br />');
+        /*
+        rms_todo: remove gbl_env and non-rms code - dev user automatically adds "(DEV Only)" to each line
+        */
+        if (gbl_env != "rms_prod") str = str.replace('(DEV Only)', '');
         this.threadArea.append($('<div class="' + klass + '">' + str + '</div>')).scrollTop(50000);
       },
 
@@ -871,14 +878,12 @@ $(document).ready(function(){
        * @type undefined
        */
       onChatAvailable: function(availObj) {
-        console.log('onChatAvailable');
         if (availObj.availability == true) {
           if (!_cw.inPopup) {
             _cw.btnStart.css({ top: _cw.options.topVisible });
           } else {
             // resume session started in parent window
             _cw.lpc.resumeChat($.cookie('chatsessionkey'));
-            console.log('onChatAvailable: ' + $.cookie('chatsessionkey'));
           }
         } else {
           if (_cw.instant.length) {
@@ -897,7 +902,6 @@ $(document).ready(function(){
         if (!_cw.inPopup) {
           // save session key in case user launches popup
           $.cookie('chatsessionkey', _cw.lpc.sessionkey);
-          console.log('onChatInit: ' + $.cookie('chatsessionkey'));
         }
       },
 
@@ -911,6 +915,10 @@ $(document).ready(function(){
         if (!_cw.inPopup) {
           // save agent name
           var nm = _cw.lpc.getAgentName();
+          /*
+          rms_todo: remove gbl_env and non-rms code - dev user automatically adds "(DEV Only)" to each line
+          */
+          if (gbl_env != "rms_prod") nm = nm.replace('(DEV Only)', '');
           $.cookie('chatagentname', nm);
           _cw.agentNameCont.html(nm);
         }
