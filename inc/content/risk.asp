@@ -11,7 +11,7 @@
         </div>
       </div>
       <div id="vidOverlay">
-        <iframe src="" width="626" height="356" scrolling="no" frameborder="0" id="vidFrame"></iframe>
+        <iframe src="/blank.asp" width="626" height="356" scrolling="no" frameborder="0" id="vidFrame"></iframe>
         <a href="#" class="close">Close</a>
       </div>
     </div>
