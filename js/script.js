@@ -45,14 +45,6 @@ switch(window.location.hostname)
 
 /* RMS code section. end */
 
-var debugc = 0;
-function debug(e) {
-  debugc++;
-  if (!$('#debug').length)
-    $('body').append('<div id="debug" style="position:fixed; top:0; z-index:1000; padding:10px 20px 10px 10px; background:#ddd; font-size:80%; height:400px; overflow:auto" />');
-  $('#debug').html($('#debug').html()+debugc+': '+e+'<br />');
-}
-
 function inspect(obj) {
   var str = '';
   for (var i in obj) str += i + ': ' + obj[i] + '\n';
@@ -231,7 +223,7 @@ $(document).ready(function(){
 
       // fade animations will be different for IE
       this.specialFade        = $('html').is('.ie8, .ie7');
-      
+
       // elements
       var self                = this;
       this.container          = $(e);
@@ -327,6 +319,7 @@ $(document).ready(function(){
         // add handler
         var li = $(this);
         $(this).find('a').bind('click', { obj: self, order: (li.data('employee-position') - 1) }, self.selectPerson);
+
       });
       
       // instantiate slider
