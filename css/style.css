@@ -1075,7 +1075,7 @@ header nav ul.sf-menu li ul li .subnavLt {
   text-align:           center;
   width:                225px;
   padding:              7px 24px 0 6px;
-  border-right:         1px solid #dcdcdc;
+  border-right:         1px solid #eee;
   float:                left;
   position:             relative;
   top:                  0;
@@ -1085,7 +1085,7 @@ header nav ul.sf-menu li ul li .subnavRt {
   text-align:           center;
   width:                173px;
   padding:              7px 7px 0 23px;
-  border-left:          1px solid #dcdcdc;
+  border-left:          1px solid #eee;
   float:                left;
   position:             relative;
 }
