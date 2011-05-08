@@ -16,7 +16,7 @@
         <div class="quote">
           &quot;<span class="q">RMS offers an unparalleled developmental opportunity to those early on in their careers.</span>&quot;
           <div class="author">
-            &mdash; <span class="a">Charles Clark</span>, <span class="title"><span class="t">Manager Global Sales Support</span></span>
+            &mdash; <span class="a">Charles Clarke</span>, <span class="title"><span class="t">Manager Global Sales Support</span></span>
           </div>
         </div>
         <div class="photo2">
