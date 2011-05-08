@@ -1904,7 +1904,7 @@ $(document).ready(function(){
         CoolClock.findAndCreateClocks(); // update clocks
     
         // get content
-        hd = $('.office a.'+loc).prev().html();
+        hd = $('.office a.'+loc).prevAll('h5').html();
         details = $('.office a.'+loc).html();
         mapviewer = $('#mapviewers .'+loc).html();
         // fade out previous content and get new
