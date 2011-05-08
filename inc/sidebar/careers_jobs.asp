@@ -16,7 +16,7 @@
         <div class="quote">
           &quot;<span class="q">RMS offers an unparalleled developmental opportunity to those early on in their careers.</span>&quot;
           <div class="author">
-            &mdash; <span class="a">Charles Clarke</span>, <span class="title"><span class="t">Manager Global Sales Support</span></span>
+            &mdash; <span class="a">Charles</span>, <span class="title"><span class="t">Manager Global Sales Support</span></span>
           </div>
         </div>
         <div class="photo2">
@@ -38,7 +38,7 @@
         <div class="quote">
           &quot;<span class="q">RMS is a relaxed environment where talent excels. It is, above all else, an enjoyable place to work.</span>&quot;
           <div class="author">
-            &mdash; <span class="a">Liam Se-Tho</span>, <span class="title"><span class="t">Senior Analyst</span></span>
+            &mdash; <span class="a">Liam</span>, <span class="title"><span class="t">Senior Analyst</span></span>
           </div>
         </div>
         <div class="photo2">
@@ -58,9 +58,9 @@
       <!-- + Quote 3 -->
       <div id="quote3" class="ui-tabs-hide clearfix">
         <div class="quote">
-          &quot;<span class="q">Career opportunities of a large company with seeing the impact of your work of a small company.</span>&quot;
+          &quot;<span class="q">RMS provides the career opportunities of a global organization, while still making me feel like my work makes an impact.</span>&quot;
           <div class="author">
-            &mdash; <span class="a">Peter Aberline</span>, <span class="title"><span class="t">Senior Consultant RiskWorks</span></span>
+            &mdash; <span class="a">Peter</span>, <span class="title"><span class="t">Senior Consultant RiskWorks</span></span>
           </div>
         </div>
         <div class="photo2">
@@ -82,7 +82,7 @@
         <div class="quote">
           &quot;<span class="q">It’s a great challenge and I get to work with intelligent and hard working people. Plus, I learn something new every day!</span>&quot;
           <div class="author">
-            &mdash; <span class="a">James Watson</span>, <span class="title"><span class="t">Principal Account Manager</span></span>
+            &mdash; <span class="a">James</span>, <span class="title"><span class="t">Principal Account Manager</span></span>
           </div>
         </div>
         <div class="photo2">
