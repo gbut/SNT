@@ -1848,33 +1848,12 @@ a.close:active {
   top:                  14px;
 }
 
-/* keyword search
-#job_search form input{
-  width:                290px;
-  -webkit-border-radius:2px;
-  -moz-border-radius:   2px;
-  border-radius:        2px;
-}
-
-#job_search #message {
-  color:                #555;
-  width:                290px;
-}
-
-#job_search #message div {
-  color:                #2e2e2e;
-  margin:               0 0 7px;
-  float:                none;
-}
-*/
-
 #job_search form select {
   font-size:            16px; /* ** to do: browser diffs */
   width:                300px;
   height:               25px;
   padding-top:          2px;
 }
-
 
 /* / Toolbars */
 
@@ -3472,8 +3451,7 @@ body.isHome footer {
   z-index:              10;
 }
 
-.ie7 #careers #team_panel ul li a,
-.ie8 #careers #team_panel ul li a {
+.ie #careers #team_panel ul li a {
   background:           #fff;
   -moz-opacity:         0;
   -ms-filter:           "alpha(opacity=0)";
