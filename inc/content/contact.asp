@@ -74,7 +74,7 @@
   <div id="map">
     <div id="markers">
       <a href="#" class="newark" title="Corporate Headquarters"></a>
-      <a href="#" class="peoria" title="Chicago"></a>
+      <a href="#" class="peoria" title="Peoria"></a>
       <a href="#" class="bloomington" title="Bloomington"></a>
       <a href="#" class="hackensack" title="East Coast U.S."></a>
       <a href="#" class="bermuda" title="Bermuda"></a>
