@@ -6,7 +6,7 @@
 <!--[if (gte IE 9) ]> <html class="no-js ie" lang="en"> <![endif]-->
 <!--[if !(IE)]><!--> <!--<![endif]-->
 <head>
-    <title>RMS - Risk Management Solutions, Inc.</title>
+    <title>RMS - Risk Management Solutions</title>
     <meta name="description" content="" />
     <meta name="author" content="" />
     
