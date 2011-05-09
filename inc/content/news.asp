@@ -300,7 +300,7 @@
     	
           <h4>Client Training</h4>
 
-          	<a href="/Publications/RMS_CCRA_Program.pdf" rel="external" title="View PDF">Certified Catastrophe Risk Analyst (CCRA) Training Program</a>
+          	<a href="/Publications/RMS_CCRA_Program.pdf" rel="external" title="View PDF">CCRA® (Certified Catastrophe Risk Analyst) Training Program</a>
 
           <h4>Retrospective Reports</h4>
 

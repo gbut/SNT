@@ -4001,6 +4001,13 @@ textarea.error {
   margin-bottom:        10px;
   position:             relative;
   background:           #000;
+  
+  -webkit-border-radius:4px 6px;
+  -moz-border-radius:   4px 6px;
+  border-radius:        4px 6px;
+  behavior: url(/js/libs/PIE/PIE.htc);
+  
+  
 }
 #contact #map .gadget {
   width:                912px;
