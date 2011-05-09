@@ -1567,6 +1567,10 @@ a.close:active {
 }
 
 #presenterNav ul {
+  text-align:           center;
+}
+#careers #presenterNav ul {
+  text-align:           left;
   float:                left;
 }
 
