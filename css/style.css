@@ -3706,6 +3706,7 @@ body.isHome footer {
   letter-spacing:       0;
 }
 .ie7 #job_listings .footer { /* stubborn IE7 */
+  width:                642px;
   margin:               0 0 36px;
   position:             relative;
   top:                  36px;
