@@ -149,7 +149,7 @@
       <h4>12. Modification or Termination</h4>
 
       <p>RMS may, in its complete discretion, modify, edit, translate, suspend, restrict access to or terminate this website, Content or any link at any time without liability or prior notice. RMS may also, in its complete discretion, terminate any party's right or access to this website.</p>
-      <p>These Terms of Use were last updated on May 29, 2008. RMS reserves the right to modify, amend, add to, replace or remove these Terms of Use at any time. You are advised to check the Terms of Use, <a href="#" class="tab_privacy">Privacy</a>, and <a href="#" class="tab_terms">Legal</a> links for updates whenever you visit the RMS website.</p>
+      <p>These Terms of Use were last updated on May 29, 2008. RMS reserves the right to modify, amend, add to, replace or remove these Terms of Use at any time. You are advised to check the Terms of Use and <a href="#" class="tab_privacy">Privacy</a>  links for updates whenever you visit the RMS website.</p>
 
       <h4>13. Contacting RMS</h4>
 
