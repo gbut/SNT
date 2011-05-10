@@ -244,7 +244,7 @@ textarea {
      -moz-box-shadow:   inset 1px 2px 2px #d5d5d5; 
   -webkit-box-shadow:   inset 1px 2px 2px #d5d5d5; 
           box-shadow:   inset 1px 2px 2px #d5d5d5;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .ie7 input[type=text],
 .ie8 input[type=text],
@@ -328,7 +328,7 @@ section {
 }
 .btnSm {
   padding:              4px 20px 4px 10px;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .btnSm:hover,
 .btnSm:active,
@@ -363,7 +363,7 @@ section {
      -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
           box-shadow:   0 2px 4px rgba(151,151,151,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .btnLg:hover,
 .btnLg:active,
@@ -401,7 +401,7 @@ section {
      -moz-box-shadow:   0 2px 4px rgba(42,42,42,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(42,42,42,0.5); 
           box-shadow:   0 2px 4px rgba(42,42,42,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .btnLgDark:hover,
 .btnLgDark:active,
@@ -442,7 +442,7 @@ section {
      -moz-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
           box-shadow:   0 2px 4px rgba(0,0,0,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .btnChat:hover,
 .btnChat:active,
@@ -477,7 +477,7 @@ section {
      -moz-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
           box-shadow:   0 2px 4px rgba(0,0,0,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .btnEndChat:hover,
 .btnEndChat:active,
@@ -506,7 +506,7 @@ section {
   background:           url(../img/btns_lt.png) -30px -74px no-repeat, -moz-linear-gradient(top, #c3383d 0%, #c3020a 100%);
   background:           url(../img/btns_lt.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3383d), color-stop(100%,#c3020a));
   -pie-background:      url(/img/btns_lt.png) -30px -74px no-repeat, linear-gradient(#c3383d, #c3020a);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .btnApply:hover,
 .btnApply:active,
@@ -527,7 +527,7 @@ section {
 .btnOpenPositions {
   color:                #b00e13;
   text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
-  width:                137px;
+  width:                139px;
   padding:              11px 12px 8px 40px;
   border:               none;
   background:           #fefefe url(../img/btns_lt.png) -84px -25px no-repeat;
@@ -537,7 +537,7 @@ section {
      -moz-box-shadow:   0 2px 4px rgba(42,42,42,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(42,42,42,0.5); 
           box-shadow:   0 2px 4px rgba(42,42,42,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .btnOpenPositions:hover,
 .btnOpenPositions:active,
@@ -567,7 +567,7 @@ section {
      -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
           box-shadow:   0 2px 4px rgba(151,151,151,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .btnUpload:hover,
 .btnUpload:active,
@@ -597,7 +597,7 @@ section {
      -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
           box-shadow:   0 2px 4px rgba(151,151,151,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .btnLinkedIn:hover,
 .btnLinkedIn:active,
@@ -627,7 +627,7 @@ section {
      -moz-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(0,0,0,0.5); 
           box-shadow:   0 2px 4px rgba(0,0,0,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .btnSubmit:hover,
 .btnSubmit:active,
@@ -657,7 +657,7 @@ section {
      -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
           box-shadow:   0 2px 4px rgba(151,151,151,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .btnMore:hover,
 .btnMore:active,
@@ -711,7 +711,7 @@ header {
      -moz-box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
   -webkit-box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
           box-shadow:   0 0 4px #9c8f85; /* 0px 0px 4px #9c8f85 */
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .ie7 header { /* compensate for dropshadow */
   left:                 -2px;
@@ -758,7 +758,7 @@ header #login {
   left:                 7px;
   overflow:             visible;
   z-index:              100;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 header #login.open {
   -webkit-border-radius:4px 4px 0 0;
@@ -787,7 +787,7 @@ header #login #btnClientLogin {
   background:           -moz-linear-gradient(top, #ffffff 0%, #ebebeb 100%);
   background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb));
   -pie-background:      linear-gradient(#ffffff, #ebebeb);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 header #login.open #btnClientLogin {
   color:                #cdcdcd;
@@ -819,7 +819,7 @@ header #login form {
      -moz-box-shadow:   0 4px 12px rgba(0,0,0,0.7); 
   -webkit-box-shadow:   0 4px 12px rgba(0,0,0,0.7); 
           box-shadow:   0 4px 12px rgba(0,0,0,0.7); 
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 header #login.open form {
 /*  display:              block;*/
@@ -1062,7 +1062,6 @@ header nav ul.sf-menu li ul.sn {
      -moz-box-shadow:   2px 3px 6px -3px #9c8f85; 
   -webkit-box-shadow:   2px 3px 6px -3px #9c8f85; 
           box-shadow:   2px 3px 6px -3px #9c8f85;
-/*  behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 header nav ul.sf-menu li ul li {
@@ -1259,7 +1258,7 @@ header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
   -webkit-border-radius:4px;
   -moz-border-radius:   4px;
   border-radius:        4px;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 #t06 .hd {
@@ -1393,7 +1392,7 @@ aside section {
   -moz-box-shadow:      inset 0 0 5px #ccc;
   -webkit-box-shadow:   inset 0 0 5px #ccc;
   box-shadow:           inset 0 0 5px #ccc; 
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 aside section:first-child,
 aside section.pie_first-child {
@@ -1482,7 +1481,7 @@ aside section.pie_first-child.slvzr-last-child {
   -webkit-border-radius:4px;
   -moz-border-radius:   4px;
   border-radius:        4px;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 #presenter {
@@ -1555,7 +1554,7 @@ a.close:active {
      -moz-box-shadow:   inset 0 -1px 3px #d5d5d5; 
   -webkit-box-shadow:   inset 0 -1px 3px #d5d5d5; 
           box-shadow:   inset 0 -1px 3px #d5d5d5;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 #presenterNav .btnOpenPositions {
@@ -1627,7 +1626,7 @@ a.close:active {
   -webkit-border-radius:4px;
   -moz-border-radius:   4px;
   border-radius:        4px;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 #presenterNav ul li a:hover .imgCont,
 #presenterNav ul li a:active .imgCont {
@@ -1732,7 +1731,7 @@ a.close:active {
   -webkit-border-radius:0;
   -moz-border-radius:   0;
   border-radius:        0;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 #main ul.tabs li.ui-tabs-selected {
   z-index:              10;
@@ -1755,7 +1754,7 @@ a.close:active {
   background:           -moz-linear-gradient(top, #f6f5f5 0%, #d1d0d0 100%);
   background:           -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f5f5), color-stop(100%,#d1d0d0));
   -pie-background:      linear-gradient(#f6f5f5, #d1d0d0);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .ie7 #main ul.tabs li a,
 .ie8 #main ul.tabs li a {
@@ -1948,7 +1947,7 @@ aside #photo .container {
   -webkit-box-shadow:   1px 1px 10px #ccc; 
   box-shadow:           1px 1px 10px #ccc;
   
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 aside #photo .photo2 .container {
   margin-top:           20px;
@@ -2492,7 +2491,7 @@ body.isHome footer {
   -webkit-border-radius:4px;
   -moz-border-radius:   4px;
   border-radius:        4px;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 #risk {
@@ -2565,7 +2564,7 @@ body.isHome footer {
      -moz-box-shadow:   0 3px 7px rgba(90,90,90,0.5); 
   -webkit-box-shadow:   0 3px 7px rgba(90,90,90,0.5); 
           box-shadow:   0 3px 7px rgba(90,90,90,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 #risk section.iWorldMap #mapinfo {
@@ -2587,7 +2586,7 @@ body.isHome footer {
      -moz-box-shadow:   0 3px 7px rgba(90,90,90,0.5); 
   -webkit-box-shadow:   0 3px 7px rgba(90,90,90,0.5); 
           box-shadow:   0 3px 7px rgba(90,90,90,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 #risk section.iWorldMap #mapinfo_panels {
@@ -2935,7 +2934,7 @@ body.isHome footer {
   -webkit-border-radius:6px;
   -moz-border-radius:   6px;
   border-radius:        6px;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .ie8 #risk ul#caseStudiesNav li a .imgCont {
   width:                88px;
@@ -3057,7 +3056,7 @@ body.isHome footer {
      -moz-box-shadow:   0 3px 6px rgba(0,0,0,0.6); 
   -webkit-box-shadow:   0 3px 6px rgba(0,0,0,0.6); 
           box-shadow:   0 3px 6px rgba(0,0,0,0.6);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 #nextgen section.imgLt .imgCont {
@@ -3315,7 +3314,7 @@ body.isHome footer {
      -moz-box-shadow:   1px 1px 6px rgba(0,0,0,0.6); 
   -webkit-box-shadow:   1px 1px 6px rgba(0,0,0,0.6); 
           box-shadow:   1px 1px 6px rgba(0,0,0,0.6);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 #careers .careersHomeIntro .rt blockquote {
@@ -3489,7 +3488,7 @@ body.isHome footer {
   filter:               alpha(opacity=70);
   opacity:              0.7;
   -pie-background:rgba(82,112,174,0.7); /* necessary to render opacity properly */
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 #careers #tooltip {
@@ -3515,7 +3514,7 @@ body.isHome footer {
      -moz-box-shadow:   5px 5px 6px rgba(0,0,0,0.5); 
   -webkit-box-shadow:   5px 5px 6px rgba(0,0,0,0.5); 
           box-shadow:   5px 5px 6px rgba(0,0,0,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .ie7 #careers #tooltip .body { /* border-radius + css3PIE = no border in ie7... at least here */
   border-radius:        0;
@@ -3699,7 +3698,7 @@ body.isHome footer {
   -webkit-border-radius:4px 6px;
   -moz-border-radius:   4px 6px;
   border-radius:        4px 6px;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 .ie7 #job_listings .footer,
 .ie8 #job_listings .footer {
@@ -4018,7 +4017,7 @@ textarea.error {
   -webkit-border-radius:4px 6px;
   -moz-border-radius:   4px 6px;
   border-radius:        4px 6px;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 #contact .office {
@@ -4689,7 +4688,7 @@ body#craft04 {
      -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
           box-shadow:   0 2px 4px rgba(151,151,151,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 /* fix for when captcha is displayed and user reveals 'more services' */
@@ -4872,7 +4871,7 @@ body#craft04 {
      -moz-box-shadow:   0 3px 7px rgba(90,90,90,0.5); 
   -webkit-box-shadow:   0 3px 7px rgba(90,90,90,0.5); 
           box-shadow:   0 3px 7px rgba(90,90,90,0.5);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 #about .bio .image img {
   width:                130px;
@@ -5042,7 +5041,7 @@ body#craft04 {
      -moz-box-shadow:   5px 5px 9px rgba(0,0,0,0.9); 
   -webkit-box-shadow:   5px 5px 9px rgba(0,0,0,0.9); 
           box-shadow:   5px 5px 9px rgba(0,0,0,0.9);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 #chat_win_hd {
@@ -5173,7 +5172,7 @@ body#craft04 {
      -moz-box-shadow:   2px 2px 9px rgba(0,0,0,0.9); 
   -webkit-box-shadow:   2px 2px 9px rgba(0,0,0,0.9); 
           box-shadow:   2px 2px 9px rgba(0,0,0,0.9);
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 #chat_win #lp_email_transcript.visible {
   top:                  -67px;
@@ -5265,7 +5264,7 @@ body#craft04 {
   -webkit-border-radius:5px;
   -moz-border-radius:   5px;
   border-radius:        5px;
-  behavior: url(/js/libs/PIE/PIE.htc);
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
 #main #legalTabs .panel {
@@ -5422,6 +5421,57 @@ img#expando {
 
 /* / *** Flexi-background plugin *** */
 
+/* + *** Single CSS3PIE ref here *** */
+
+input[type=text],
+input[type=password],
+input[type=email],
+textarea,
+.btnSm,
+.btnLg,
+.btnLgDark,
+.btnChat,
+#bg_chat .btnChatCont a,
+.btnEndChat,
+.btnApply,
+.btnOpenPositions,
+.btnUpload,
+.btnLinkedIn,
+.btnSubmit,
+.btnMore,
+header,
+header #login,
+header #login #btnClientLogin,
+header #login form,
+#t02 #main,
+aside section,
+#risk #presenterCont,
+#presenterNav,
+#presenterNav ul li a .imgCont,
+#main ul.tabs li,
+#main ul.tabs li a,
+.sectionCont,
+#risk section.iWorldMap #mapinfo_back_to_models,
+#risk section.iWorldMap #mapinfo,
+#risk ul#caseStudiesNav li a .imgCont,
+#nextgen section .imgCont,
+#careers .careersHomeIntro .rt .imgCont,
+#careers #team_slider .ui-slider-handle,
+#careers #tooltip .body,
+#job_listings .footer,
+#contact #offices,
+#craft aside section,
+.st_sharethis_custom,
+#about .bio .image,
+#chat_win,
+#chat_win #lp_email_transcript,
+#legalTabs
+{
+  behavior: url(/js/libs/PIE/PIE.htc);
+}
+
+/* / *** Single CSS3PIE ref here *** */
+
 
 /* TEMP */
 
@@ -5484,26 +5534,6 @@ ul.index.global li a {
   font-size:2em;
   font-weight:bold;
   color:#000;
-}
-
-
-#buttonsPage #thing {
-  border: 1px solid #696;
-  padding: 60px 0;
-  text-align: center;
-  width: 200px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-box-shadow: #666 0px 2px 3px;
-  -moz-box-shadow: #666 0px 2px 3px;
-  box-shadow: #666 0px 2px 3px;
-  background: #EEFF99;
-  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#EEFF99), to(#66EE33));
-  background: -moz-linear-gradient(#EEFF99, #66EE33);
-  background: linear-gradient(#EEFF99, #66EE33);
-  -pie-background: linear-gradient(#EEFF99, #66EE33);
-  behavior: url(/js/libs/PIE/PIE.htc);
 }
 
 #selectivizrPage section:first-child {
