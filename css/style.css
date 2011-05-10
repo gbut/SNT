@@ -3921,6 +3921,10 @@ textarea.error {
   position:             relative;
   top:                  8px;
 }
+.ie7 #job_apply #confirmation label,
+.ie7 #contact #confirmation  label {
+  top:                  0;
+}
 
 #job_apply input,
 #contact input {
