@@ -4544,12 +4544,17 @@ body#craft04 {
   float:                left;
   position:             relative;
 }
+.ie7 #craft aside section div {
+  line-height:          120%;
+}
 
 #craft aside section h3 {
   font-size:            110%;
   display:              inline;
 }
-
+.ie7 #craft aside section h3 {
+  margin-right:         6px;
+}
 #craft aside section a {
   font-weight:          bold;
   text-transform:       uppercase;
