@@ -170,8 +170,8 @@ body, select, input, textarea {
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
-a, a:active, a:visited { color: #28739c; }
-a:hover { color: #28739c; }
+a, a:visited { color: #28739c; }
+a:active, a:hover { color: #115573; }
 
 
 
@@ -1211,15 +1211,12 @@ header nav ul.sf-menu li ul.sn.careers li ul.snavItems li a {
   padding-left:         34px;
 }
 header nav ul.sf-menu li ul.sn.careers li ul.snavItems li a {
-  color:                #636363;
-/*  border-style:         dotted;*/
+  color:                #7d7d7d;
 }
-
-/*
-header nav ul.sf-menu li ul.sn li ul.snavItems li:first-child a {
-  border:               none;
+header nav ul.sf-menu li ul.sn.careers li ul.snavItems li a:hover,
+header nav ul.sf-menu li ul.sn.careers li ul.snavItems li a:active {
+  color:                #202020;
 }
-*/
 
 /* / Global Nav */
 
@@ -1305,6 +1302,7 @@ footer .wrapper {
   padding:              0 40px;
 }
 
+/*
 footer a:link,
 footer a:visited {
   color:                #414040;
@@ -1313,6 +1311,7 @@ footer a:hover,
 footer a:active {
   color:                #28739c;
 }
+*/
 
 .t01 footer {
   border:               0;
@@ -4562,13 +4561,11 @@ body#craft04 {
   left:                 0;
   top:                  90px;
 }
-#craft aside section a:hover {
-  color:                #115573;
-}
 #craft aside section a em {
   font-size:            120%; 
 }
-#craft aside section a:hover em {
+#craft aside section a:hover em,
+#craft aside section a:active em {
   color:                #b1312e;
 }
 
