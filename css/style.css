@@ -5604,7 +5604,23 @@ ul.index.global li a {
     -webkit-background-size: 68px 105.1px;
     background-position:  0 0;
   }
-
+  
+/* issue re iPad styles, TBD
+  body.t01 {
+    height:               auto;
+    -webkit-background-size: 1758px 790px;
+  }
+  body.t01a {
+    -webkit-background-size: 1320px 900px;
+  }
+  body#craft04 {
+    -webkit-background-size: 1320px 1020px;
+  }
+  .t01 footer {
+    position:             static;
+  }
+*/
+  
   /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
      j.mp/textsizeadjust 
   html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
@@ -5708,6 +5724,21 @@ ul.index.global li a {
   aside .share a.twitter {
     background-position:  0 -31px;
   }
+  
+  body.t01 {
+    height:               auto;
+    -webkit-background-size: 1758px 790px;
+  }
+  body.t01a {
+    -webkit-background-size: 1320px 900px; /* 01-03 are fairly consistent in length */
+  }
+  body#craft04 {
+    -webkit-background-size: 1320px 1020px; /* 04 is longer , needs special treatment */
+  }
+  .t01 footer {
+    position:             static;
+  }
+  
 }
 
 /* in iPad portrait mode, when page gets too short, can't pinch-zoom out enough to see full content width. force height here */
