@@ -5605,21 +5605,19 @@ ul.index.global li a {
     background-position:  0 0;
   }
   
-/* issue re iPad styles, TBD
   body.t01 {
     height:               auto;
     -webkit-background-size: 1758px 790px;
   }
   body.t01a {
-    -webkit-background-size: 1320px 900px;
+    -webkit-background-size: 1758px 2000px; /* 01-03 are fairly consistent in length */
   }
   body#craft04 {
-    -webkit-background-size: 1320px 1020px;
+    -webkit-background-size: 1758px 2300px; /* 04 is longer , needs special treatment */
   }
   .t01 footer {
     position:             static;
   }
-*/
   
   /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
      j.mp/textsizeadjust 
@@ -5650,7 +5648,7 @@ ul.index.global li a {
   }
   body.isHome footer {
     position:             absolute;
-    top:                  690px;
+    top:                  750px;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
@@ -5676,7 +5674,7 @@ ul.index.global li a {
   http://thomasmaier.me/blog/2010/03/04/howto-css-for-the-ipad/
   http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/
 */
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
   body,
   header,
   .contentOuter,
@@ -5737,6 +5735,13 @@ ul.index.global li a {
   }
   .t01 footer {
     position:             static;
+  }
+  
+  body.isHome {
+    height:100%;
+  }
+  .isHome footer {
+    position:             fixed;
   }
   
 }
