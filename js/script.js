@@ -368,7 +368,7 @@ $(document).ready(function(){
       // swipes
       $('#team ul li a').swipe({
         swipe: function(){ self.swipe.apply(self, arguments); },
-        allowPageScroll: "vertical"
+        allowPageScroll: 'vertical'
       });
       
     };

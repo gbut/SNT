@@ -2431,6 +2431,10 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 #home #ribbon ul li p {
   font:                 normal 93%/167% "Lucida Grande",Helvetica,sans-serif;
 }
+.ie7 #home #ribbon ul li p,
+.ie8 #home #ribbon ul li p {
+  padding-right:        25px;
+}
 
 #home #ribbon ul li p a {
   color:                #d4d9e2;
