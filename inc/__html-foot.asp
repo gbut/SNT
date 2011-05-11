@@ -25,7 +25,7 @@
           $(this).children().each(function(i, el){
             var p = $(this).position();
             var w = Math.round(p.left) + 494; // horiz submenu position plus submenu width
-            var fudge = 2;
+            var fudge = 0; /* 2 */
             var lt = (w > navW) ? (navW - w + fudge) : 0;
             var tp = $(this).closest('.ie7').length ? 31 : 29;
             $(this).find('ul.sn').css({'top':tp, 'left':lt});

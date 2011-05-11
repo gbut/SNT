@@ -1016,10 +1016,10 @@ header nav ul.sf-menu li a.pn {
   letter-spacing:       0;
 }
 header nav ul.sf-menu li:first-child a.pn {
-  border-left:          none;
+  border-left-color:    #fff;
 }
 header nav ul.sf-menu li:last-child a.pn {
-  border-right:         none;
+  border-right-color:   #fff;
 }
 header nav ul.sf-menu li.selected {
 /*  border-bottom:        4px solid #c3151c;*/
@@ -1043,6 +1043,12 @@ header nav ul.sf-menu li.sfHover.hasSn a.pn {
 }
 header nav ul.sf-menu li.sfHover a.pn .tl {
   border:               none;
+}
+header nav ul.sf-menu li:first-child.sfHover a.pn {
+  border-left-color:    #dadada;
+}
+header nav ul.sf-menu li:last-child.sfHover a.pn {
+  border-right-color:   #dadada;
 }
 
 header nav ul.sf-menu li ul.sn {
