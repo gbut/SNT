@@ -4370,32 +4370,13 @@ textarea.error {
 /* + Craft */
 
 #craft {
-/*  min-height:           700px;
-  height:               auto !important;
-  height:               700px;
-  position:             relative;
-  background-color:     #0c0a12;
-  background-position:  top center;
-  background-repeat:    no-repeat;
-  background-size:      cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  overflow:             hidden;
-*/  
   min-height:           100%;
   height:               auto !important;
   height:               100%;
   position:             relative;
   width:                100%;
   margin:               82px auto 54px;
-/*  margin:               0 auto;*/
 }
-/*
-#craftDetail.craft {
-  height:               auto;
-  margin-top:           0;
-}
-*/
 
 body#craftIndex {
   background-image:     url(../img/bg_craft.jpg);
@@ -4523,7 +4504,7 @@ body#craft04 {
   -moz-box-shadow:      0;
   -webkit-box-shadow:   0;
   box-shadow:           0;
-  behavior:             url(/js/libs/PIE/PIE.htc);
+  /* behavior:             url(/js/libs/PIE/PIE.htc); */
 }
 
 #craft aside .group {
