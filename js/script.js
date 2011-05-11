@@ -367,8 +367,9 @@ $(document).ready(function(){
       
       // swipes
       $('#team ul li a').swipe({
-        swipe: function(){ self.swipe.apply(self, arguments); },
-        allowPageScroll: 'vertical'
+        swipe : function(){ self.swipe.apply(self, arguments); },
+        //triggerOnTouchEnd : false,
+        allowPageScroll : 'vertical'
       });
       
     };
@@ -1308,6 +1309,9 @@ $(document).ready(function(){
           if (self.active == cc) return;
           if (!ap) return;
           self.selectCountry(cc);
+        }).unbind('touchend').bind('touchend', function(e){ // on iOS, hover and click require separate clicks; combine here
+          e.stopImmediatePropagation();
+          $(this).triggerHandler('click');
         });
       },
 
