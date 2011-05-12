@@ -3,7 +3,7 @@
   <div class="inner clearfix">
     <h2><span>Our destination is in sight.</span></h2>
     <div id="subhd" class="clearfix">
-      <h3><span>Together, we will arrive at the next generation of risk modeling.</span></h3>
+      <h3><span>Together we will deliver the next generation of risk modeling.</span></h3>
       <a href="/nextgen"><span id="cta_text"><span>Learn More <em>&raquo;</em></span></span><span id="cta_bg"><span id="cta_bg_inner"></span></span></a>
     </div>
   </div>
