@@ -2356,9 +2356,9 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #home #ribbon .inner {
   width:                100%;
-  min-height:           124px;
+  min-height:           128px;
   height:               auto !important;
-  height:               124px;
+  height:               128px;
   position:             relative;
   overflow:             hidden;
 }
@@ -2431,6 +2431,7 @@ aside .ui-tabs ul.ui-tabs-nav li.ui-state-hover a,
 
 #home #ribbon ul li p {
   font:                 normal 93%/167% "Lucida Grande",Helvetica,sans-serif;
+  margin-bottom:        14px;
 }
 .ie7 #home #ribbon ul li p,
 .ie8 #home #ribbon ul li p {

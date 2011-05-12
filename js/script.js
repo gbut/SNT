@@ -1041,7 +1041,7 @@ $(document).ready(function(){
 
     var defaults = {
       fadeDur:    600,
-      animDur:    800,
+      animDur:    350,
       easing:     'easeOutQuint'
     };
 
@@ -1076,7 +1076,7 @@ $(document).ready(function(){
 
       // show headline; attach behaviors
       this.hdLine.fadeIn(200);
-      this.t = window.setTimeout(function(){ self.reveal(); }, 1500);
+      this.t = window.setTimeout(function(){ self.revealNav(); }, 1300);
       
     };
 
@@ -1087,11 +1087,76 @@ $(document).ready(function(){
 
     $rh.fn.extend({
       /**
+       * Fades in top/bottom nav and subhead.
+       *
+       * @name revealNav
+       * @type undefined
+       */
+      revealNav: function() {
+        var self = this;
+        if (this.specialFade) {
+          $(this.subhdLine).fadeTo(this.options.fadeDur, 1);
+          $(this.ctaTextSpan).fadeTo(this.options.fadeDur, 1);
+          this.ctaBgInner.fadeTo(this.options.fadeDur, 0.3);
+        } else {
+          $(this.subhdLine).fadeTo(this.options.fadeDur, 1);
+          this.ctaTextSpan.css({ opacity:1 });
+          this.cta.css({ right:0 }).fadeTo(this.options.fadeDur, 1);
+        }
+        this.header.animate({
+            top: 0
+          },
+          {
+            duration: this.options.animDur,
+            easing: this.options.easing,
+            complete: function(){
+              self.footer.animate({
+                  bottom: 0
+                },
+                {
+                  duration: self.options.animDur,
+                  easing: self.options.easing
+                });
+            }
+          });
+/*
+        this.footer.animate({
+            bottom: 0
+          },
+          {
+            duration: this.options.animDur,
+            easing: this.options.easing
+          });
+*/
+        window.clearTimeout(this.t);
+        this.t = window.setTimeout(function(){ self.revealRibbon(); }, this.options.animDur);
+      },
+
+      /**
+       * Reveals ribbon below headlines.
+       *
+       * @name revealRibbon
+       * @type undefined
+       */
+      revealRibbon: function() {
+        if (this.specialFade) {
+          this.ribbon.css({ top:'70%' });
+          this.ribbonBgInner.fadeTo(this.options.fadeDur, 0.3);
+          $(this.ribbonList).fadeTo(this.options.fadeDur, 1);
+        } else {
+          this.ribbonList.css({ opacity:1 });
+          this.ribbon.css({ opacity:0, top:'70%' }).fadeTo(this.options.fadeDur, 1);
+        }
+        window.clearTimeout(this.t);
+      }
+
+      /**
        * Fades in hidden page elements.
        *
        * @name reveal
        * @type undefined
        */
+/*
       reveal: function() {
         if (this.specialFade) {
           $(this.subhdLine).fadeTo(this.options.fadeDur, 1);
@@ -1123,6 +1188,7 @@ $(document).ready(function(){
           });
         window.clearTimeout(this.t);
       }
+*/
 
     });
 
