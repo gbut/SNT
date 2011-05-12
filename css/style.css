@@ -1952,7 +1952,7 @@ aside #photo .container {
   -webkit-box-shadow:   1px 1px 10px #ccc; 
   box-shadow:           1px 1px 10px #ccc;
   
-  /*behavior: url(/js/libs/PIE/PIE.htc);*/
+  behavior: url(/js/libs/PIE/PIE.htc);
 }
 aside #photo .photo2 .container {
   margin-top:           20px;
@@ -1973,6 +1973,7 @@ aside #photo img {
   border-radius:        15px;
 }
 */
+
 aside .photo img,
 aside .photo2 img {
   width:                253px;
