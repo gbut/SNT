@@ -31,7 +31,25 @@
             $(this).find('ul.sn').css({'top':tp, 'left':lt});
           });
         };
-        window.setTimeout(function(){moveSubnavs.call(self);}, 300); // custom fonts must render first, else navW value is off
+        
+        // custom fonts must render first, else navW value is off
+        window.setTimeout(function(){moveSubnavs.call(self);}, 300);
+        
+        // when a menu is open, iOS provides to way to close it
+        $('body').bind('touchend', function(e){
+          var clicked = $(e.target);
+          if ((clicked.get(0).tagName.toLowerCase() != 'nav') && !clicked.closest('nav').length) {
+            $('nav .sfHover').triggerHandler('mouseout');
+/*
+          } else {
+            if ((clicked.hasClass('hasSn') && !clicked.hasClass('sfHover')) || (clicked.closest('.hasSn').length && !clicked.closest('.sfHover').length)) {
+              var c = clicked.closest('.hasSn').length ? $(clicked.closest('.hasSn')) : clicked;
+              e.stopImmediatePropagation();
+              c.triggerHandler('mouseenter');
+            }
+*/
+          }
+        });
       }
     }); 
   </script>
