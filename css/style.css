@@ -5947,20 +5947,48 @@ ul.index.global li a {
   nav,
   #login,
   #presenterNav,
-  #presenter .hero img
+  #presenter .hero img,
+  #careers #presenterCont,
+  #mapinfo_back_to_models,
+  body ul.ui-tabs-nav,
+  #info #banner,
+  #about img.banner,
+  #contact form,
+  #contact #map,
+  #careers section .icon,
+  #craft aside a.btn,
+  #t03 #banner img,
+  #t03 aside,
+  #t04 #banner,
+  #job_search,
+  #job_listings a.show_all,
+  aside section.chat,
+  #footer-links
   {
     display:none;
   }
-  header {
+  #risk section.iWorldMap #mapinfo .globalModels .lt ul li a:after
+  {
+    content:none;
+  }
+  header,
+  #risk section.iWorldMap #mapinfo,
+  #nextgen section .imgCont,
+  #contact aside section,
+  #careers .careersHomeIntro .rt .imgCont,
+  #craft aside section,
+  #t04 aside section:first-child,
+  #t04 aside section.pie_first-child
+  {
     position:relative;
+    top:0;
+    left:0;
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
     box-shadow:none;
   }
   header .headerInner {
     height:auto;
-  }
-  header h1 {
   }
   header h1 a {
     text-indent:0;
@@ -5976,12 +6004,115 @@ ul.index.global li a {
     padding-top:40px;
     position:relative;
   }
-  body .ui-tabs-hide {
+  body .ui-tabs .ui-tabs-hide {
     position:relative;
     display:block !important;
   }
+  body .ui-tabs .ui-tabs .ui-tabs .ui-tabs-hide {
+    display:none !important;
+  }
+  #presenter,
   #presenter .hero {
     height:auto;
   }
-  
+  #risk #banner,
+  #nextgen #banner {
+    height:auto;
+    padding:0;
+  }
+  #risk section.iWorldMap {
+    padding:0;
+  }
+  #risk section.iWorldMap #mapinfo {
+    border:none;
+  }
+  body #nextgen section.imgLt .imgCont,
+  body #nextgen section.imgRt .imgCont {
+    margin:0 0 15px;
+    float:none;
+    display:inline-block;
+  }
+  #info section a:after { /* http://perishablepress.com/press/2010/06/01/wrapping-content/ */
+  	white-space: pre;           /* CSS 2.0 */
+  	white-space: pre-wrap;      /* CSS 2.1 */
+  	white-space: pre-line;      /* CSS 3.0 */
+  	white-space: -pre-wrap;     /* Opera 4-6 */
+  	white-space: -o-pre-wrap;   /* Opera 7 */
+  	white-space: -moz-pre-wrap; /* Mozilla */
+  	white-space: -hp-pre-wrap;  /* HP Printers */
+  	word-wrap: break-word;      /* IE 5+ */
+  }
+  #about dl,
+  #contact aside section,
+  #contact #offices {
+    width:auto;
+    height:auto;
+    border:none;
+    float:none;
+  }
+  #about dd.loc,
+  #about dd.biobody {
+    display:block;
+  }
+  #about dd.img1 {
+    display:block;
+    position:relative;
+    margin:0 0 10px 10px;
+  }
+  #contact aside .share {
+    width:auto;
+    margin:0 0 10px;
+  }
+  aside .share a.facebook,
+  aside .share a.twitter {
+    text-indent:0;
+    width:auto;
+    height:auto;
+    float:none;
+  }
+  aside .share .label {
+    float:none;
+  }
+  body #careers .careersHomeIntro .rt .imgCont {
+    border:none !important;
+  }
+  body #careers #passionCont .passion,
+  body #careers #passionCont.ui-widget {
+    height:auto !important;
+    padding:0 0 10px;
+  }
+  #craft section,
+  #craft aside,
+  #craft aside section {
+    width:auto;
+    margin:0 0 10px;
+    border:none;
+    float:none;
+  }
+  #craft aside .group {
+    position:relative;
+    display:block;
+  }
+  #bg_chat {
+    height:auto;
+  }
+  #bg_chat .notebook {
+    position:relative;
+    top:0;
+  }
+  #legalTabs {
+    border:none;
+  }
+  #main #legalTabs .panel {
+    padding-bottom:40px;
+  }
+  #job_listings article.hide {
+    display:block !important;
+  }
+  #t03 #content {
+    width:auto;
+    margin:0;
+    padding:0;
+    float:none;
+  }
 }
