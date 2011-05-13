@@ -584,7 +584,7 @@ section {
   background:           #d7d7d7 url(../img/v.png) 20px -124px no-repeat;
   -pie-background:      #d7d7d7 url(/img/btns_lt_apply.png) 20px -124px no-repeat;
 }
-
+/* superseded by Jobvite's .jvsecondary
 .btnLinkedIn {
   color:                #999898;
   text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
@@ -597,7 +597,7 @@ section {
      -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
   -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
           box-shadow:   0 2px 4px rgba(151,151,151,0.5);
-  /*behavior: url(/js/libs/PIE/PIE.htc);*/
+  / behavior: url(/js/libs/PIE/PIE.htc); /
 }
 .btnLinkedIn:hover,
 .btnLinkedIn:active,
@@ -614,7 +614,7 @@ section {
   background:           #d7d7d7 url(../img/btns_lt_apply.png) -30px -74px no-repeat;
   -pie-background:      #d7d7d7 url(/img/btns_lt_apply.png) -30px -74px no-repeat;
 }
-
+*/
 .btnSubmit {
   color:                #eee;
   text-shadow:          1px 1px 0 rgba(95,95,95,0.3);
@@ -675,7 +675,55 @@ section {
   -pie-background:      #d7d7d7 none;
 }
 
-/* can;t use PIE for Jobvite hosted code because of cross domain limitation */
+/* from Jobvite for LinkedIn button on Job Apply */
+.jvsecondary {
+  color:                #999898;
+  text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
+  padding:              12px 12px 10px 44px;
+  border-color:         #b8b8b7;
+  background:           #fefefe url(../img/btns_lt_apply.png) -30px -74px no-repeat;
+  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #d7d7d7 100%);
+  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d7d7d7));
+  -pie-background:      url(/img/btns_lt_apply.png) -30px -74px no-repeat, linear-gradient(#fefefe, #d7d7d7);
+     -moz-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+  -webkit-box-shadow:   0 2px 4px rgba(151,151,151,0.5); 
+          box-shadow:   0 2px 4px rgba(151,151,151,0.5);
+  color:                #fff;
+  font:                 700 100%/100% "proxima-nova-1","proxima-nova-2",Arial,sans-serif;
+  letter-spacing:       0.06em;
+  text-transform:       uppercase;
+  text-align:           left;
+  border:               1px solid #878686;
+  display:              inline-block;
+  position:             relative;
+  -webkit-border-radius:4px;
+  -moz-border-radius:   4px;
+  border-radius:        4px;
+  color:                #999898;
+  text-shadow:          1px 1px 0 rgba(255,255,255,0.3);
+  padding:              12px 12px 10px 44px;
+  border-color:         #b8b8b7;
+}
+.jvsecondary img {
+  display:              none;
+}
+.jvsecondary:hover,
+.jvsecondary:active,
+.jvsecondary:visited {
+  color:                #999898;
+}
+.jvsecondary:hover {
+  background:           #fefefe url(../img/btns_lt_apply.png) -30px -74px no-repeat;
+  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -moz-linear-gradient(top, #fefefe 0%, #a4a4a4 100%);
+  background:           url(../img/btns_lt_apply.png) -30px -74px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#a4a4a4));
+  -pie-background:      url(/img/btns_lt_apply.png) -30px -74px no-repeat, linear-gradient(#fefefe, #a4a4a4);
+}
+.jvsecondary:active {
+  background:           #d7d7d7 url(../img/btns_lt_apply.png) -30px -74px no-repeat;
+  -pie-background:      #d7d7d7 url(/img/btns_lt_apply.png) -30px -74px no-repeat;
+}
+
+/* can't use PIE for Jobvite hosted code because of cross domain restriction */
 .ie7 .btnUpload,
 .ie8 .btnUpload,
 .ie7 .jvsecondary,
@@ -685,49 +733,47 @@ section {
   font-size:            90%;
   padding:              14px 40px 16px 44px;
   border:               0;
-  background:           transparent url(../img/btns_ie.png) 0 0 no-repeat !important;
+  background:           transparent url(../img/btns_ie.png) 0 0 no-repeat;
   behavior:             none !important;
 }
 .ie7 #ImportResume.btnUpload:hover,
 .ie7 #ImportResume.btnUpload:active,
 .ie8 #ImportResume.btnUpload:hover,
 .ie8 #ImportResume.btnUpload:active {
-  background-position:  0 -43px !important;
+  background-position:  0 -43px;
 }
 .ie7 .jvsecondary,
 .ie8 .jvsecondary {
   cursor:               pointer;
-  background-position:  0 -86px !important;
+  background-position:  0 -86px;
 }
 .ie7 .jvsecondary:hover,
 .ie7 .jvsecondary:active,
 .ie8 .jvsecondary:hover,
 .ie8 .jvsecondary:active {
-  background-position:  0 -129px !important;
+  background-position:  0 -129px;
 }
 .ie7 #ImportCL.btnUpload,
 .ie8 #ImportCL.btnUpload {
-  background-position:  0 -172px !important;
+  background-position:  0 -172px;
 }
 .ie7 #ImportCL.btnUpload:hover,
 .ie7 #ImportCL.btnUpload:active,
 .ie8 #ImportCL.btnUpload:hover,
 .ie8 #ImportCL.btnUpload:active {
-  background-position:  0 -215px !important;
+  background-position:  0 -215px;
 }
 .ie7 .btnSubmit,
 .ie8 .btnSubmit {
   padding-right:        16px;
-  background-position:  0 -258px !important;
+  background-position:  0 -258px;
 }
 .ie7 .btnSubmit:hover,
 .ie7 .btnSubmit:active,
 .ie8 .btnSubmit:hover,
 .ie8 .btnSubmit:active {
-  background-position:  0 -301px !important;
+  background-position:  0 -301px;
 }
-
-
 
 /* if larger buttons are in a narrow container, relax right padding and let them go full width */
 aside section .btnLg,
@@ -3918,6 +3964,9 @@ textarea.error {
   margin-top:           10px;
   position:             relative;
 }
+.ie7 #jobvite .field {
+  position:             static;
+}
 
 #job_apply a.back {
   color:                #292929;
@@ -3982,6 +4031,7 @@ textarea.error {
 }
 .ie7 #job_apply label,
 .ie7 #contact label {
+  vertical-align:       top;
   position:             relative;
   top:                  8px;
 }
@@ -4021,11 +4071,6 @@ textarea.error {
   font-weight:          bold;
   height:               auto;
   margin:               0 6px 0 0;
-}
-
-
-#job_apply .btnLinkedIn {
-  margin:               0 0 10px 121px;
 }
 
 #job_apply .btnSubmit,
