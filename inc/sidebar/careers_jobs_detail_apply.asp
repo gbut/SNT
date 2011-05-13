@@ -3,7 +3,7 @@
   <section>
 
     <div class="photo">
-      <img src="/img/photo_employee_04.png" alt="Employee Photo" title="Employee Photo">
+      <img src="/img/staff/employee_01_up.png" alt="Employee Photo" title="Employee Photo">
     </div>  
   
     <div class="benefit benefit2">

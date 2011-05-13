@@ -2151,10 +2151,9 @@ $(document).ready(function(){
     }, "");
     
     var validator = $("#jvform").validate({
-// TBD
-//      invalidHandler: function(form, validator) {
-//        $(window.parent.document).scrollTo('0');
-//      },
+      invalidHandler: function(form, validator) {
+        $(window.parent.document).scrollTop(0);
+      },
       messages: {
         jvresume: "This field is required.",
         email: {
