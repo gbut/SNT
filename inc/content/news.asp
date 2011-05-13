@@ -36,8 +36,8 @@
     </dl>
 
     <dl>
-      <dt>October 22-25, 2011</dt>
-      <dd><a href="https://netforum.pci.org/eweb/DynamicPage.aspx?webcode=EventInfo&action=add&evt_key=da9c6f13-4908-4168-96ef-5a05ca47b67b&Paying=" rel="external">PCI Annual Meeting</a></dd>
+      <dt>October 23-26, 2011</dt>
+      <dd><a href="http://www.registration123.com/pci/11Annual/Home.cfm" rel="external">PCI Annual Meeting</a></dd>
       <dd>
         <p>RMS senior executives will be attending this event. To arrange a meeting with our representatives, please contact <a href="mailto:sheriene.hancock@rms.com">Sheriene Hancock</a>.</p>
       </dd>
