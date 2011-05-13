@@ -5892,4 +5892,48 @@ ul.index.global li a {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
+  
+  body {
+    padding:0;
+  }
+  nav,
+  #login,
+  #presenterNav,
+  #presenter .hero img
+  {
+    display:none;
+  }
+  header {
+    position:relative;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+  }
+  header .headerInner {
+    height:auto;
+  }
+  header h1 {
+  }
+  header h1 a {
+    text-indent:0;
+  }
+  header h1 a:before {
+    content: url(/img/logo.png);
+  }
+  .contentOuter {
+    border:none;
+  }
+  #home .hd,
+  #home #ribbon {
+    padding-top:40px;
+    position:relative;
+  }
+  body .ui-tabs-hide {
+    position:relative;
+    display:block !important;
+  }
+  #presenter .hero {
+    height:auto;
+  }
+  
 }
