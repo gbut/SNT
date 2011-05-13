@@ -4785,7 +4785,7 @@ body#craft04 {
 
 /* fix for when captcha is displayed and user reveals 'more services' */
 #stLframe {
-  height: 830px !important;
+  height:               830px !important;
 }
 
 /* / Share */
