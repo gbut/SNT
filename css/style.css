@@ -310,6 +310,7 @@ section {
   -moz-border-radius:   4px;
   border-radius:        4px;
 }
+
 .ie7 .btn,
 .ie8 .btn,
 .ie7 #bg_chat .btnChatCont a,
@@ -778,12 +779,14 @@ section {
 /* if larger buttons are in a narrow container, relax right padding and let them go full width */
 aside section .btnLg,
 aside section .btnApply {
-  padding-right:        9px;
+  padding-right:        5px;
   display:              block;
 }
+/*
 aside section .btnApply {
   padding-right:        19px;
 }
+*/
 aside section.chat {
   padding:              16px;
 }
