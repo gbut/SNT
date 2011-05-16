@@ -3588,12 +3588,17 @@ body.isHome footer {
 }
 
 #careers #team_slider .ui-slider-handle {
+  color:                #fff;
+  font:                 0.85em/1em Helvetica,sans-serif;
+  text-align:           center;
   width:                340px;
-  height:               19px;
+  height:               16px;
   margin-left:          -170px;
+  padding-top:          3px;
   background:           #5270ae;
   border:               none;
   top:                  0;
+  cursor:               pointer;
   -webkit-border-radius:4px;
   -moz-border-radius:   4px;
   border-radius:        4px;

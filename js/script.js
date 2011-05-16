@@ -331,7 +331,7 @@ $(document).ready(function(){
           create: function(e, ui){
             self.handle = $(self.slider.find('a.ui-slider-handle'));
             // hover effect on scrollbar
-            self.handle.hover(
+            $(self.handle).html('&lsaquo; Drag to Meet Us &rsaquo;').hover(
               function(){ $(this).stop().fadeTo(self.options.fadeDur, 0.85); },
               function(){ $(this).stop().fadeTo(self.options.fadeDur, 0.7); }
             );
