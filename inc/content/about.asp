@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <h3>Leadership Team</h3>
+      <h3>Leadership <em>Team</em></h3>
       
       <div class="row clearfix">
         <dl>
