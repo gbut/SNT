@@ -34,7 +34,7 @@
     <section class="iWorldMap clearfix">
 
       <!-- + raphael -->
-      <a href="#" id="mapinfo_back_to_models">RMS Global Models</a>
+      <a href="#" id="mapinfo_back_to_models">&laquo; Back to Models</a>
       <div id="mapinfo">
         <div id="mapinfo_panels">
           <!-- + global models -->
