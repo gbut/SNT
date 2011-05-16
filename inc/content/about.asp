@@ -15,7 +15,7 @@
           <h5>Hemant H. Shah</h5>
         </div>
         <div class="intro">
-          <h3>Our Story</h3>
+          <h3>Our <em>Story</em></h3>
           
           <h4>They said it couldn't be done. We thought otherwise.</h4>
 
