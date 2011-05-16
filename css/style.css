@@ -6006,6 +6006,10 @@ ul.index.global li a {
   .contentOuter {
     border:none;
   }
+  #home {
+    min-height:1px !important;
+    height:auto !important;
+  }
   #home .hd,
   #home #ribbon {
     padding-top:40px;
