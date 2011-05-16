@@ -4119,6 +4119,11 @@ textarea.error {
   margin-bottom:        10px;
   position:             relative;
   background:           #000;
+  border:               6px solid #ccc;
+  -webkit-border-radius:4px;
+  -moz-border-radius:   4px;
+  border-radius:        4px;
+  /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 #contact #map .gadget {
   width:                912px;
@@ -4128,9 +4133,9 @@ textarea.error {
   padding:              0 5px 10px;
   border:               1px solid #b2b2b2;
   background:           #fff;
-  -webkit-border-radius:4px 6px;
-  -moz-border-radius:   4px 6px;
-  border-radius:        4px 6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:   6px;
+  border-radius:        6px;
   /*behavior: url(/js/libs/PIE/PIE.htc);*/
 }
 
@@ -4166,7 +4171,7 @@ textarea.error {
 #contact #clocks {
   position:             absolute;
   bottom:               4px;
-  left:                 12px;
+  left:                 6px;
   z-index:              2;
 }
 
@@ -4187,7 +4192,7 @@ textarea.error {
 }
 
 #map .mask {
-  width:                960px;
+  width:                948px;
   height:               99px;
   position:             absolute;
   bottom:               0;
@@ -5552,6 +5557,7 @@ aside section,
 #careers #team_slider .ui-slider-handle,
 #careers #tooltip .body,
 #job_listings .footer,
+#contact #map,
 #contact #offices,
 #craft aside section,
 .st_sharethis_custom,
