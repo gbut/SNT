@@ -1,7 +1,7 @@
 <!-- + about -->
 <div id="about">
   <div class="hd">
-    <h2><em>About</em> RMS</h2>
+    <h2>About <em>RMS</em></h2>
   </div>
 
   <div class="sectionCont">
