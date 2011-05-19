@@ -5793,8 +5793,6 @@ ul.index.global li a {
     position:             absolute;
     top:                  750px;
   }
-  
-
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
   body.isHome {
@@ -5883,12 +5881,22 @@ ul.index.global li a {
   }
   
   body.isHome {
-    height:100%;
+    height:               100%;
   }
   .isHome footer {
     position:             fixed;
   }
   
+}
+/* correction for Android landscape */
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+  body.isHome {
+    height:               700px;
+  }
+  body.isHome footer {
+    position:             absolute;
+    top:                  675px;
+  }
 }
 
 /* in iPad portrait mode, when page gets too short, can't pinch-zoom out enough to see full content width. force height here */
