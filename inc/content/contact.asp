@@ -76,7 +76,7 @@
       <a href="#" class="newark" title="Corporate Headquarters"></a>
       <a href="#" class="peoria" title="Peoria"></a>
       <a href="#" class="bloomington" title="Bloomington"></a>
-      <a href="#" class="hackensack" title="East Coast U.S."></a>
+      <a href="#" class="hoboken" title="East Coast U.S."></a>
       <a href="#" class="bermuda" title="Bermuda"></a>
       <a href="#" class="london" title="European Headquarters"></a>
       <a href="#" class="paris" title="France"></a>
@@ -100,7 +100,7 @@
         <canvas id="tz02" class="CoolClock:normal:30:noSeconds:-5.0"></canvas>
         Chicago
       </a>
-      <a href="#" class="hackensack">
+      <a href="#" class="hoboken">
         <canvas id="tz03" class="CoolClock:normal:30:noSeconds:-4.0"></canvas>
         New York
       </a>
@@ -176,13 +176,12 @@
       </div>
       <div class="office">
       <h5>East Coast U.S.</h5>
-        <a href="#" class="hackensack">
-          Continental Plaza III<br />
-          433 Hackensack Avenue, 5th Floor<br />
-          Hackensack, NJ 07601
+        <a href="#" class="hoboken">
+          121 River Street<br />
+          Hoboken, NJ 07601
           <div class="tel">
-            Tel: 1.201.498.8600<br />
-            Fax: 1.201.498.8601
+            Tel: 1.201.912.8600<br />
+            Fax: 1.201.912.8601
           </div>
         </a>
       </div>
@@ -303,9 +302,9 @@
 
     </div>
     
-    <div class="hackensack">
+    <div class="hoboken">
 
-      <a href="http://www.bing.com/maps/?v=2&cp=40.9098319999999~-74.034073&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map hackensack" rel="external" title="View Map"></a>
+      <a href="http://www.bing.com/maps/?v=2&cp=40.9098319999999~-74.034073&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" class="map hoboken" rel="external" title="View Map"></a>
     
       <div class="maplinks">
         <a class="largerMap" href="http://www.bing.com/maps/?v=2&cp=40.9098319999999~-74.034073&lvl=15&dir=0&sty=r&cid=58B1D550BC610B44!119&FORM=LMLTCC" rel="external" title="View Map">View Map</a>
