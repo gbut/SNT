@@ -5749,6 +5749,7 @@ ul.index.global li a {
   }
   
   body.t01 {
+    width:                1040px; /* force full width so bg is consistent */
     height:               auto;
     -webkit-background-size: 1758px 790px;
   }
