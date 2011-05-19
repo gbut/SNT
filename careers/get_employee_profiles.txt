@@ -10,7 +10,7 @@
 {
 "fullname":"Alexis",
 "position":"Sr. Analyst",
-"location":"Hackensack, NJ",
+"location":"Hoboken, NJ",
 "img_src":"/img/team/alt/nj_alexis_alt.jpg",
 "biography":{"#cdata-section":"<h6>Interesting fact...</h6><p>I won a Kodak photography contest when I was 8.</p><h6>Secret Talent...</h6><p>I love karaoke (but that's not so secret).</p>"}
 },
@@ -18,7 +18,7 @@
 {
 "fullname":"Yvette",
 "position":"Director, Human Resources",
-"location":"Hackensack, NJ",
+"location":"Hoboken, NJ",
 "img_src":"/img/team/alt/usa.jpg",
 "biography":{"#cdata-section":"<h6>Unusual fact...</h6><p>Served in the US Army Reserves and was qualified as a sharp shooter.</p><h6>Greatest professional accomplishment...</h6><p>Becoming a mom and getting two graduate degrees from Columbia University.</p>"}
 },
@@ -34,7 +34,7 @@
 {
 "fullname":"Emily",
 "position":"Sr. Consultant",
-"location":"Hackensack, NJ",
+"location":"Hoboken, NJ",
 "img_src":"/img/team/alt/nj_emily_alt.jpg",
 "biography":{"#cdata-section":"<h6>When I grew up I wanted to be...</h6><p>An astronaut.</p><h6>Interesting fact...</h6><p>I have backpacked the Presidential Range in the White Mountains.</p>"}
 },
@@ -58,7 +58,7 @@
 {
 "fullname":"Thomas",
 "position":"Sr. Account Associate",
-"location":"Hackensack, NJ",
+"location":"Hoboken, NJ",
 "img_src":"/img/team/alt/nj_thomas_alt.jpg",
 "biography":{"#cdata-section":"<h6>Unusual fact...</h6><p>I was on the TV show \"Wheel of Fortune.\"</p><h6>Pet peeve...</h6><p>Chewing gum.</p>"}
 },
@@ -122,7 +122,7 @@
 {
 "fullname":"Rob",
 "position":"Chief Operating Officer",
-"location":"Hackensack, NJ",
+"location":"Hoboken, NJ",
 "img_src":"/img/team/alt/nj_rob_alt.jpg",
 "biography":{"#cdata-section":"<h6>Interesting fact...</h6><p>I spend over 26 weeks a year on the road.</p><h6>Pet peeve...</h6><p>Ambiguity.</p>"}
 },
@@ -130,7 +130,7 @@
 {
 "fullname":"Yvonne",
 "position":"Administrative Assistant",
-"location":"Hackensack, NJ",
+"location":"Hoboken, NJ",
 "img_src":"/img/team/alt/nj_yvonne_alt.jpg",
 "biography":{"#cdata-section":"<h6>Unusual fact...</h6><p>I was on the kids show \"Romper Room.\"</p><h6>When I grew up I wanted to be...</h6><p>Children's Advocacy Attorney.</p>"}
 },
@@ -146,9 +146,9 @@
 {
 "fullname":"Willie",
 "position":"Analyst",
-"location":"Hackensack, NJ",
+"location":"Hoboken, NJ",
 "img_src":"/img/team/alt/usa.jpg",
-"biography":{"#cdata-section":"<h6>Hobby...</h6><p>Fly fishing.</p><h6>Favorite thing to do in Hackensack area...</h6><p>Eat! Tons of great restaurants.</p>"}
+"biography":{"#cdata-section":"<h6>Hobby...</h6><p>Fly fishing.</p><h6>Favorite thing to do in Hoboken area...</h6><p>Eat! Tons of great restaurants.</p>"}
 },
 
 {
@@ -162,7 +162,7 @@
 {
 "fullname":"Kevin",
 "position":"Consultant",
-"location":"Hackensack, NJ",
+"location":"Hoboken, NJ",
 "img_src":"/img/team/alt/nj_kevin_alt.jpg",
 "biography":{"#cdata-section":"<h6>When I grew up I wanted to be...</h6><p>A meteorologist.</p><h6>My first car was...</h6><p>White Geo Prism with my driver-side mirror duct taped on.</p>"}
 },

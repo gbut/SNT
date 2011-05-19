@@ -10,14 +10,14 @@
 	<employee>
 		<fullname>Alexis</fullname>
 		<position>Sr. Analyst</position>
-		<location>Hackensack, NJ</location>
+		<location>Hoboken, NJ</location>
 		<img_src>/img/team/alt/nj_alexis_alt.jpg</img_src>
 		<biography><![CDATA[<h6>Interesting fact...</h6><p>I won a Kodak photography contest when I was 8.</p><h6>Secret Talent...</h6><p>I love karaoke (but that's not so secret).</p>]]></biography>
 	</employee>
 	<employee>
 		<fullname>Yvette</fullname>
 		<position>Director, Human Resources</position>
-		<location>Hackensack, NJ</location>
+		<location>Hoboken, NJ</location>
 		<img_src>/img/team/alt/usa.jpg</img_src>
 		<biography><![CDATA[<h6>Unusual fact...</h6><p>Served in the US Army Reserves and was qualified as a sharp shooter.</p><h6>Greatest professional accomplishment...</h6><p>Becoming a mom and getting two graduate degrees from Columbia University.</p>]]></biography>
 	</employee>
@@ -31,7 +31,7 @@
 	<employee>
 		<fullname>Emily</fullname>
 		<position>Sr. Consultant</position>
-		<location>Hackensack, NJ</location>
+		<location>Hoboken, NJ</location>
 		<img_src>/img/team/alt/nj_emily_alt.jpg</img_src>
 		<biography><![CDATA[<h6>When I grew up I wanted to be...</h6><p>An astronaut.</p><h6>Interesting fact...</h6><p>I have backpacked the Presidential Range in the White Mountains.</p>]]></biography>
 	</employee>
@@ -52,7 +52,7 @@
 	<employee>
 		<fullname>Thomas</fullname>
 		<position>Sr. Account Associate</position>
-		<location>Hackensack, NJ</location>
+		<location>Hoboken, NJ</location>
 		<img_src>/img/team/alt/nj_thomas_alt.jpg</img_src>
 		<biography><![CDATA[<h6>Unusual fact...</h6><p>I was on the TV show "Wheel of Fortune."</p><h6>Pet peeve...</h6><p>Chewing gum.</p>]]></biography>
 	</employee>
@@ -108,14 +108,14 @@
 	<employee>
 		<fullname>Rob</fullname>
 		<position>Chief Operating Officer</position>
-		<location>Hackensack, NJ</location>
+		<location>Hoboken, NJ</location>
 		<img_src>/img/team/alt/nj_rob_alt.jpg</img_src>
 		<biography><![CDATA[<h6>Interesting fact...</h6><p>I spend over 26 weeks a year on the road.</p><h6>Pet peeve...</h6><p>Ambiguity.</p>]]></biography>
 	</employee>
 	<employee>
 		<fullname>Yvonne</fullname>
 		<position>Administrative Assistant</position>
-		<location>Hackensack, NJ</location>
+		<location>Hoboken, NJ</location>
 		<img_src>/img/team/alt/nj_yvonne_alt.jpg</img_src>
 		<biography><![CDATA[<h6>Unusual fact...</h6><p>I was on the kids show "Romper Room."</p><h6>When I grew up I wanted to be...</h6><p>Children's Advocacy Attorney.</p>]]></biography>
 	</employee>
@@ -129,9 +129,9 @@
 	<employee>
 		<fullname>Willie</fullname>
 		<position>Analyst</position>
-		<location>Hackensack, NJ</location>
+		<location>Hoboken, NJ</location>
 		<img_src>/img/team/alt/usa.jpg</img_src>
-		<biography><![CDATA[<h6>Hobby...</h6><p>Fly fishing.</p><h6>Favorite thing to do in Hackensack area...</h6><p>Eat! Tons of great restaurants.</p>]]></biography>
+		<biography><![CDATA[<h6>Hobby...</h6><p>Fly fishing.</p><h6>Favorite thing to do in Hoboken area...</h6><p>Eat! Tons of great restaurants.</p>]]></biography>
 	</employee>
 	<employee>
 		<fullname>Chau</fullname>
@@ -143,7 +143,7 @@
 	<employee>
 		<fullname>Kevin</fullname>
 		<position>Consultant</position>
-		<location>Hackensack, NJ</location>
+		<location>Hoboken, NJ</location>
 		<img_src>/img/team/alt/nj_kevin_alt.jpg</img_src>
 		<biography><![CDATA[<h6>When I grew up I wanted to be...</h6><p>A meteorologist.</p><h6>My first car was...</h6><p>White Geo Prism with my driver-side mirror duct taped on.</p>]]></biography>
 	</employee>
