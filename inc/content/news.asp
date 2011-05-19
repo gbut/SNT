@@ -10,17 +10,39 @@
     <h3>Upcoming <em>Events</em></h3>
     
     <!-- + UPCOMING EVENTS -->
-
     <dl>
       <dt>May 10-13, 2011</dt>
       <dd><a href="http://guest.cvent.com/d/4dqg2w" rel="external">2011 Client Conference</a></dd>
       <dd>
-        <p>The 2011 RMS Client Conference is being held May 10 - 13 at the Fairmont Scottsdale Princess in Arizona. Click here to view conference details: <a href="http://guest.cvent.com/d/4dqg2w" rel="external">http://guest.cvent.com/d/4dqg2w</a>.</p>
+        <p>The 2011 RMS Client Conference was held May 10 - 13 at the Fairmont Scottsdale Princess in Arizona. Click here to view conference details: <a href="http://guest.cvent.com/d/4dqg2w" rel="external">http://guest.cvent.com/d/4dqg2w</a>.</p>
       </dd>
     </dl>
 
     <dl>
-      <dt>July 14, 2011</dt>
+      <dt>May 24, 2011</dt>
+      <dd><a href="http://guest.cvent.com/d/gdqybl" rel="external">Catastrophe Modeling and Risk Management in Canada</a></dd>
+      <dd>
+        <p>Please join RMS for a complimentary half-day seminar on Catastrophe Modeling and Risk Management in Canada at the Toronto Board of Trade on Tuesday, May 24, 2011 in Toronto, Ontario, Canada. Click here to view the conference agenda: <a href="http://guest.cvent.com/d/gdqybl/6X" rel="external">http://guest.cvent.com/d/gdqybl/6X</a>.
+</p>
+      </dd>
+    </dl>
+
+    <dl>
+      <dt>Jun 21-22, 2011</dt>
+      <dd><a href="http://www.informaglobalevents.com/event/cat-risk-modelling-for-general-insurers-conference-2011" rel="external">Managing Catastrophe Risk</a></dd>
+      <dd>
+        <p>Claire Souch, vice president of nat cat &amp; portfolio solutions, will be speaking on "Responding to Solvency II and the Challenges of Catastrophe Modelling" at the 2011 Forum on Managing Catastrophe Risk in London. </p>
+      </dd>
+    </dl>
+    <dl>
+      <dt>July 12-13, 2011</dt>
+      <dd><a href="http://www.genevaassociation.org/" rel="external">M.O.R.E 25 Seminar</a></dd>
+      <dd>
+        <p>Robert Muir-Wood, chief research officer of RMS will be giving a presentation on "The Modelling Lessons of the New Zealand and Japan Earthquakes" in workshop 4 on July 13 at the Bermuda Underwater Exploration Institute.</p>
+      </dd>
+    </dl>
+    <dl>
+	  <dt>July 14, 2011</dt>
       <dd>Managing Terrorism Risk: 10 Years on From 9/11</dd>
       <dd>
         <p>RMS will host its annual terrorism risk seminar at the Millennium Broadway Hotel on July 14, 2011 in New York City. Registration for this event will open in late May. For further information, please contact <a href="mailto:komal.patel@rms.com">Komal Patel</a>.</p>
@@ -64,7 +86,10 @@
           <h3>News &amp; <em>Announcements</em></h3>
     
           <!-- + NEWS & ANNOUNCEMENTS -->
-    
+          
+            May 16, 2011
+            <a href="/news/NewsPress/Announcement_Miu_v26.asp" title="View Press Release">RMS Releases Enhanced Version of the Miu ILS Portfolio Management Platform</a>
+
             April 12, 2011
             <a href="/news/NewsPress/PR_041211_TohokuEQ.asp" title="View Press Release">RMS Releases Insured Loss Estimate for Tohoku Earthquake and Tsunami</a>
 

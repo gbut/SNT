@@ -5760,7 +5760,7 @@ ul.index.global li a {
   }
   .t01 footer {
     position:             static;
-  }
+  }  
   
   /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
      j.mp/textsizeadjust 
@@ -5793,6 +5793,8 @@ ul.index.global li a {
     position:             absolute;
     top:                  750px;
   }
+  
+
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
   body.isHome {
@@ -5933,7 +5935,6 @@ ul.index.global li a {
     -webkit-background-size: 100% auto;
   }
 }
-
 
 /**
  * Print styles.
