@@ -29,7 +29,7 @@
     </div>
   </div>
 
-  <div class="sectionCont">
+  <div id="iWorldMapCont" class="sectionCont">
   
     <section class="iWorldMap clearfix">
 
