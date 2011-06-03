@@ -1322,7 +1322,7 @@ $(document).ready(function(){
        */
       setup: function() {
         // use Modernizr to check for SVG detection; e.g. Android doesn't support it
-        if (!this.container.closest('.svg').length) return $('#iWorldMapCont').hide();
+        if (!this.container.closest('.svg').length && !this.container.closest('.ie').length) return $('#iWorldMapCont').hide();
         
         // define Raphael object
         this.r = Raphael(this.container.attr('id'), this.options.mapW, this.options.mapH);
