@@ -2293,6 +2293,8 @@ $(document).ready(function(){
           obj = $(this);
           biobody = obj.parent().prev().children('.body');
           w = $('#about .bio .bodyOuter').width();
+          var scs = biobody.children('section');
+          var minLeft = (-scs.length + 1) * scs.eq(0).outerWidth();
           if (obj.is(':first-child')) {
             d = '+='+w+'px';
           } else {
@@ -2303,7 +2305,7 @@ $(document).ready(function(){
             }, 500, function() {
               $('.bio .nav a').removeClass('disable'); // reset links
               // disable nav element for first/last              
-              if ((biobody.css('left') == '0px') || (biobody.css('left') == -biobody.width()+w+'px')) {
+              if ((biobody.css('left') == '0px') || (biobody.css('left') == minLeft+'px')) {
                 obj.addClass('disable');
               }
             });
@@ -2373,7 +2375,7 @@ $(document).ready(function(){
 
       handleBioPages: function() {
         p = $('.bio.default').find('section').length;                       // get number of bio 'pages' (<sections>)
-        $('.bio.default').find('.body').attr('style','');                   // revert width to default
+        $('.bio.default').find('.body').attr('style','').css('left',0);                   // revert width to default
         if (p>1) {
           w = $('.bio.default').find('.body').width() * p;                  // get width according to num of pages
           $('.bio.default').find('.body').width(w);                         // set width

@@ -1,7 +1,7 @@
 <!-- + nav -->
 <nav>
   <ul class="sf-menu clearfix">
-    <li class="hasSn">
+    <li class="hasSn navModels">
       <a href="/models" class="pn" title="Models"><span class="tl">Models</span></a>
       <ul class="sn risk">
         <li class="clearfix">
@@ -35,13 +35,13 @@
         </li>
       </ul>
     </li>
-    <li>
+    <li class="navNextgen">
       <a href="/nextgen" class="pn" title="Next Gen"><span class="tl">Next Gen</span></a>
     </li>
-    <li>
+    <li class="navNews">
       <a href="/news" class="pn" title="News"><span class="tl">News</span></a>
     </li>
-    <li class="hasSn">
+    <li class="hasSn navAbout">
       <a href="/about" class="pn" title="About"><span class="tl">About</span></a>
       <ul class="sn careers">
         <li class="clearfix">
@@ -58,7 +58,7 @@
         </li>
       </ul>
     </li>
-    <li class="hasSn">
+    <li class="hasSn navCareers">
       <a href="/careers" class="pn" title="Careers"><span class="tl">Careers</span></a>
       <ul class="sn careers">
         <li class="clearfix">

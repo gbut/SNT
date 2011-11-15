@@ -1082,16 +1082,16 @@ header nav ul.sf-menu li {
   overflow:             visible;
 }
 /* IE ignores negative right-margin, so we do something less efficient */
-header nav ul.sf-menu li:nth-child(4) {
+header nav ul.sf-menu li.navAbout {
   left:                 1px;
 }
-header nav ul.sf-menu li:nth-child(3) {
+header nav ul.sf-menu li.navNews {
   left:                 2px;
 }
-header nav ul.sf-menu li:nth-child(2) {
+header nav ul.sf-menu li.navNextgen {
   left:                 3px;
 }
-header nav ul.sf-menu li:nth-child(1) {
+header nav ul.sf-menu li.navModels {
   left:                 4px;
 }
 header nav ul.sf-menu li a.pn,
@@ -1118,9 +1118,11 @@ header nav ul.sf-menu li a.pn {
 .ie8 header nav ul.sf-menu li a.pn {
   letter-spacing:       0;
 }
+header nav ul.sf-menu li.navModels a.pn,
 header nav ul.sf-menu li:first-child a.pn {
   border-left-color:    #fff;
 }
+header nav ul.sf-menu li.navCareers a.pn,
 header nav ul.sf-menu li:last-child a.pn {
   border-right-color:   #fff;
 }
